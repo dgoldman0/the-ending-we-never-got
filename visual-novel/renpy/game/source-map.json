@@ -1,0 +1,4854 @@
+{
+  "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
+  "chapters": [
+    [
+      1,
+      "Rovel"
+    ],
+    [
+      6,
+      "Bellweir"
+    ],
+    [
+      10,
+      "The broken promise"
+    ],
+    [
+      18,
+      "Gray Scar"
+    ],
+    [
+      26,
+      "Across the river"
+    ],
+    [
+      32,
+      "Harrow"
+    ],
+    [
+      38,
+      "After Harrow"
+    ],
+    [
+      44,
+      "The witness"
+    ],
+    [
+      50,
+      "The citadel"
+    ],
+    [
+      58,
+      "Bellweir again"
+    ]
+  ],
+  "speakers": [
+    "ADA",
+    "APPRENTICE",
+    "ARCHIVIST",
+    "BARGEMAN",
+    "BOATMAN",
+    "CAPTAIN",
+    "ELIN",
+    "ESCORT",
+    "FERRYMAN",
+    "GOVERNOR",
+    "HEALER",
+    "HEST",
+    "IVEN",
+    "LUCAN",
+    "MARA",
+    "MARREN",
+    "MESSENGER",
+    "MOTHER",
+    "OLAN",
+    "ORRA",
+    "ORREN",
+    "PICKET OFFICER",
+    "PRIEST",
+    "RUNNER",
+    "SCHOLAR",
+    "SENN",
+    "SERAT",
+    "SURGEON",
+    "TESSA",
+    "VALCAIR",
+    "VASK",
+    "WARDEN",
+    "WOMAN"
+  ],
+  "scenes": [
+    {
+      "id": "S001",
+      "chapter": 1,
+      "heading": "INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN",
+      "line": 7,
+      "end": 66,
+      "blocks": [
+        {
+          "line": 9,
+          "speaker": null,
+          "text": "TESSA RUSK, nineteen, steps off a sidewalk, but her other foot lands on polished stone."
+        },
+        {
+          "line": 11,
+          "speaker": null,
+          "text": "Her grocery bag slips from her hand. The milk carton splits against the floor, spilling across the glowing circle beneath her sneakers."
+        },
+        {
+          "line": 13,
+          "speaker": null,
+          "text": "Her phone vibrates. On the screen: MOM — DID YOU GET THE MILK?"
+        },
+        {
+          "line": 15,
+          "speaker": null,
+          "text": "Kneeling strangers watch her. Behind her, the store is still visible through an arch. Tessa runs for it as the street twists out of alignment. A SCHOLAR hauls down a lever; the opening contracts to a line and vanishes. Stone cracks around the arch."
+        },
+        {
+          "line": 17,
+          "speaker": null,
+          "text": "She reaches the empty opening."
+        },
+        {
+          "line": 19,
+          "speaker": "TESSA",
+          "text": "Open it again!"
+        },
+        {
+          "line": 22,
+          "speaker": null,
+          "text": "The scholar holds the lever down. PRELATE SENN is trying to reach her through the spectators when a woman catches his sleeve."
+        },
+        {
+          "line": 24,
+          "speaker": "WOMAN",
+          "text": "My daughter's at the west infirmary. Please, tell her about my daughter--"
+        },
+        {
+          "line": 27,
+          "speaker": null,
+          "text": "A guard draws the woman aside as porters carry a stretcher through the gallery. The patient bites down on a folded cloth."
+        },
+        {
+          "line": 29,
+          "speaker": "SENN",
+          "text": "Come away from the arch. It was breaking apart."
+        },
+        {
+          "line": 32,
+          "speaker": "TESSA",
+          "text": "I could see the store. Get him to open it again, please."
+        },
+        {
+          "line": 35,
+          "speaker": null,
+          "text": "Soldiers block Tessa's way to the scholar. At Senn's gesture they lower their shields, but stay where they are."
+        },
+        {
+          "line": 37,
+          "speaker": "TESSA",
+          "text": "Where did you bring me?"
+        },
+        {
+          "line": 40,
+          "speaker": "SENN",
+          "text": "The royal temple of Rovel. We summoned you to help our healers--"
+        },
+        {
+          "line": 43,
+          "speaker": "TESSA",
+          "text": "I'm not a doctor."
+        },
+        {
+          "line": 46,
+          "speaker": "SENN",
+          "text": "We were searching for the Saint."
+        },
+        {
+          "line": 49,
+          "speaker": "TESSA",
+          "text": "Then you got the wrong person."
+        },
+        {
+          "line": 52,
+          "speaker": null,
+          "text": "She taps her mother's name. NO SERVICE. She tries again while CAPTAIN MARA VENN, thirty-two, approaches with a cloak."
+        },
+        {
+          "line": 54,
+          "speaker": "SENN",
+          "text": "We'll explain everything upstairs. You will go home when this is over; you have my word."
+        },
+        {
+          "line": 57,
+          "speaker": "TESSA",
+          "text": "When what's over?"
+        },
+        {
+          "line": 60,
+          "speaker": null,
+          "text": "The porters call for room. Mara draws her aside for a stretcher, and Tessa sees the crowd closing around the sealed arch."
+        },
+        {
+          "line": 62,
+          "speaker": "TESSA",
+          "text": "My mom doesn't know where I am. You have to get a message to her."
+        },
+        {
+          "line": 65,
+          "speaker": null,
+          "text": "Senn looks to the scholar. Tessa waits for either man to answer while Mara settles the cloak around her."
+        }
+      ]
+    },
+    {
+      "id": "S002",
+      "chapter": 1,
+      "heading": "INT. SAINT'S APARTMENT - NIGHT",
+      "line": 67,
+      "end": 113,
+      "blocks": [
+        {
+          "line": 69,
+          "speaker": null,
+          "text": "Standing on a chair at the open window, Tessa raises her phone toward the sky. Carts crowd the infirmary far below. Something enormous and winged circles the city walls."
+        },
+        {
+          "line": 71,
+          "speaker": null,
+          "text": "The ceremonial dress lies on the floor."
+        },
+        {
+          "line": 73,
+          "speaker": null,
+          "text": "Mara unlocks the door and enters with another covered plate. Tessa climbs down. The door stays open to a guard in the hall."
+        },
+        {
+          "line": 75,
+          "speaker": "TESSA",
+          "text": "That tower over there. Can you take me up?"
+        },
+        {
+          "line": 78,
+          "speaker": "MARA",
+          "text": "In the morning. I'll have to find someone with a key."
+        },
+        {
+          "line": 81,
+          "speaker": "TESSA",
+          "text": "Could you ask the man outside? I keep thinking if I can get a little higher--"
+        },
+        {
+          "line": 84,
+          "speaker": "MARA",
+          "text": "The stairs aren't lit."
+        },
+        {
+          "line": 87,
+          "speaker": "TESSA",
+          "text": "We've got candles."
+        },
+        {
+          "line": 90,
+          "speaker": null,
+          "text": "Mara puts the plate on the table. Tessa takes a candle and makes for the hall, but Mara blocks the doorway."
+        },
+        {
+          "line": 92,
+          "speaker": "TESSA",
+          "text": "I just want to make a call. You can come with me. You can hold the phone, I don't care."
+        },
+        {
+          "line": 95,
+          "speaker": "MARA",
+          "text": "I have orders to keep you in this room tonight."
+        },
+        {
+          "line": 98,
+          "speaker": "TESSA",
+          "text": "And tomorrow?"
+        },
+        {
+          "line": 101,
+          "speaker": null,
+          "text": "Mara looks toward the guard instead of answering. Tessa returns the candle to the table, pulls off the cloak and drops it at Mara's feet."
+        },
+        {
+          "line": 103,
+          "speaker": "TESSA",
+          "text": "Take that with you."
+        },
+        {
+          "line": 106,
+          "speaker": null,
+          "text": "Mara takes the cloak and leaves. The key turns outside."
+        },
+        {
+          "line": 108,
+          "speaker": null,
+          "text": "Tessa's last call dies with the battery. She sets the phone down and drags the chair against the door."
+        },
+        {
+          "line": 110,
+          "speaker": null,
+          "text": "She turns the temple's welcome letter over and begins drawing her mother's kitchen. Her pen tears through the paper."
+        },
+        {
+          "line": 112,
+          "speaker": null,
+          "text": "She starts again in a clean corner, with her mother's chair."
+        }
+      ]
+    },
+    {
+      "id": "S003",
+      "chapter": 1,
+      "heading": "INT. PALACE INFIRMARY - DAY",
+      "line": 114,
+      "end": 173,
+      "blocks": [
+        {
+          "line": 116,
+          "speaker": null,
+          "text": "Three days later. Mara leads Tessa between crowded beds. At the far end, a porter takes a name card off a bed and draws the curtain around it."
+        },
+        {
+          "line": 118,
+          "speaker": null,
+          "text": "IVEN SAYE, twenty-six, tends OLAN'S right hand. Two fingers are missing. Darkness has spread beneath the skin toward his elbow, beyond a line marked that morning."
+        },
+        {
+          "line": 120,
+          "speaker": null,
+          "text": "An older healer passes blue light over the bleeding edges. They close, but the darkness keeps spreading beneath the skin. Olan grips the bedframe until she stops."
+        },
+        {
+          "line": 122,
+          "speaker": null,
+          "text": "The PRIEST with Tessa ushers her forward."
+        },
+        {
+          "line": 124,
+          "speaker": "PRIEST",
+          "text": "Hold the light above his arm, as you've been practicing."
+        },
+        {
+          "line": 127,
+          "speaker": null,
+          "text": "A small white glow gathers between Tessa's hands. It trembles as she looks at the wound."
+        },
+        {
+          "line": 129,
+          "speaker": "TESSA",
+          "text": "I've never done this on a person."
+        },
+        {
+          "line": 132,
+          "speaker": "IVEN",
+          "text": "I'll stay here. Bring the light over the dark part."
+        },
+        {
+          "line": 135,
+          "speaker": "TESSA",
+          "text": "And if they brought the wrong person?"
+        },
+        {
+          "line": 138,
+          "speaker": null,
+          "text": "Olan draws his arm closer, into the edge of the light."
+        },
+        {
+          "line": 140,
+          "speaker": "OLAN",
+          "text": "They were going to take my arm. Please try."
+        },
+        {
+          "line": 143,
+          "speaker": null,
+          "text": "Iven pulls up a stool. Tessa sits beside him and brings the light over Olan's wrist. Beneath it, the darkness fades to ordinary skin."
+        },
+        {
+          "line": 145,
+          "speaker": null,
+          "text": "Olan's grip on the bedframe eases as she follows the discoloration toward his elbow. Iven touches the cleared skin."
+        },
+        {
+          "line": 147,
+          "speaker": "OLAN",
+          "text": "I can feel that."
+        },
+        {
+          "line": 150,
+          "speaker": null,
+          "text": "He turns his arm so she can reach the last dark patch beside the wound. She works back toward it while he settles against the pillow."
+        },
+        {
+          "line": 152,
+          "speaker": null,
+          "text": "The older healer brings a fresh dressing. Tessa's light lingers over Olan's missing fingers."
+        },
+        {
+          "line": 154,
+          "speaker": "TESSA",
+          "text": "And his fingers?"
+        },
+        {
+          "line": 157,
+          "speaker": "IVEN",
+          "text": "They won't grow back."
+        },
+        {
+          "line": 160,
+          "speaker": null,
+          "text": "Olan opens and closes the fingers he has left. Tessa watches until he rests the hand on the blanket."
+        },
+        {
+          "line": 162,
+          "speaker": null,
+          "text": "A mother calls from the next row."
+        },
+        {
+          "line": 164,
+          "speaker": "MOTHER",
+          "text": "She's awake. Could you come now, while she's awake?"
+        },
+        {
+          "line": 167,
+          "speaker": null,
+          "text": "Tessa starts to rise."
+        },
+        {
+          "line": 169,
+          "speaker": "IVEN",
+          "text": "Let me see her first."
+        },
+        {
+          "line": 172,
+          "speaker": null,
+          "text": "He brings her water before going to the family. Tessa sits with the cup untouched, watching Olan fall asleep."
+        }
+      ]
+    },
+    {
+      "id": "S004",
+      "chapter": 1,
+      "heading": "INT. AUDIENCE HALL - DAY",
+      "line": 174,
+      "end": 215,
+      "blocks": [
+        {
+          "line": 176,
+          "speaker": null,
+          "text": "Beneath the sunburst banners, Senn pins the temple badge to Tessa's coat and settles the white mantle over it."
+        },
+        {
+          "line": 178,
+          "speaker": null,
+          "text": "At the door, MARSHAL ORRA holds out orders to a MESSENGER. He offers a blackened stone instead."
+        },
+        {
+          "line": 180,
+          "speaker": "MESSENGER",
+          "text": "One of the new ward anchors, Marshal. The curse got through this one too."
+        },
+        {
+          "line": 183,
+          "speaker": null,
+          "text": "Orra looks from the stone to Tessa as Senn brings her onto the dais."
+        },
+        {
+          "line": 185,
+          "speaker": null,
+          "text": "OLAN stands among the wounded, clapping his good hand against his thigh."
+        },
+        {
+          "line": 187,
+          "speaker": "SENN",
+          "text": "Tomorrow our Saint leaves with the Bellweir convoy. You have seen what she can do. The curse can be broken."
+        },
+        {
+          "line": 190,
+          "speaker": null,
+          "text": "Applause drowns Tessa's first attempt to speak. She catches Senn's sleeve."
+        },
+        {
+          "line": 192,
+          "speaker": "TESSA",
+          "text": "Tomorrow? You said I was coming to see Olan."
+        },
+        {
+          "line": 195,
+          "speaker": "SENN",
+          "text": "He's here. Sit down; they're trying to welcome you."
+        },
+        {
+          "line": 198,
+          "speaker": null,
+          "text": "He guides her toward the ceremonial chair. She steps around it, keeping hold of his sleeve."
+        },
+        {
+          "line": 200,
+          "speaker": "TESSA",
+          "text": "Look at me. When did I agree to go?"
+        },
+        {
+          "line": 203,
+          "speaker": "SENN",
+          "text": "We can talk afterward."
+        },
+        {
+          "line": 206,
+          "speaker": null,
+          "text": "Orra steps onto the dais. Iven waits below with Tessa's bag."
+        },
+        {
+          "line": 208,
+          "speaker": "ORRA",
+          "text": "Saye. Is she ready to travel?"
+        },
+        {
+          "line": 211,
+          "speaker": "IVEN",
+          "text": "I haven't cleared her for anything, Marshal."
+        },
+        {
+          "line": 214,
+          "speaker": null,
+          "text": "Senn looks toward the applauding crowd. Orra signals Iven up, and the prelate has to yield the steps."
+        }
+      ]
+    },
+    {
+      "id": "S005",
+      "chapter": 1,
+      "heading": "INT. INFIRMARY - LATER",
+      "line": 216,
+      "end": 251,
+      "blocks": [
+        {
+          "line": 218,
+          "speaker": null,
+          "text": "Tessa sits by a window overlooking the convoy. Iven puts her bag beside her and starts packing a medical chest."
+        },
+        {
+          "line": 220,
+          "speaker": "TESSA",
+          "text": "You bought me an afternoon."
+        },
+        {
+          "line": 223,
+          "speaker": "IVEN",
+          "text": "At least that."
+        },
+        {
+          "line": 226,
+          "speaker": null,
+          "text": "Below, the mother who called from the next row in the infirmary approaches the wagons."
+        },
+        {
+          "line": 228,
+          "speaker": "TESSA",
+          "text": "She's still down there. What am I supposed to tell her?"
+        },
+        {
+          "line": 231,
+          "speaker": "IVEN",
+          "text": "Let me speak to her."
+        },
+        {
+          "line": 234,
+          "speaker": "TESSA",
+          "text": "And tomorrow? They'll send someone else to ask me."
+        },
+        {
+          "line": 237,
+          "speaker": null,
+          "text": "Iven sets the bottle back in the chest, leaving the lid open."
+        },
+        {
+          "line": 239,
+          "speaker": "IVEN",
+          "text": "I don't know how to stop that."
+        },
+        {
+          "line": 242,
+          "speaker": null,
+          "text": "Below, Mara assigns two of the soldiers who guarded Tessa's room to the convoy."
+        },
+        {
+          "line": 244,
+          "speaker": "TESSA",
+          "text": "Are you coming with me?"
+        },
+        {
+          "line": 247,
+          "speaker": "IVEN",
+          "text": "All the way there and back."
+        },
+        {
+          "line": 250,
+          "speaker": null,
+          "text": "She makes room on the sill. Iven sits with her, leaving the chest open."
+        }
+      ]
+    },
+    {
+      "id": "S006",
+      "chapter": 2,
+      "heading": "EXT. CONVOY CAMP - AFTERNOON",
+      "line": 252,
+      "end": 295,
+      "blocks": [
+        {
+          "line": 254,
+          "speaker": null,
+          "text": "Five weeks on the road. Mara feints around the pane of light Tessa holds between them. Tessa stretches a corner after the staff, thinning the middle; Mara's next stroke cracks through and stops against her padded shoulder."
+        },
+        {
+          "line": 256,
+          "speaker": "TESSA",
+          "text": "I saw where you were going."
+        },
+        {
+          "line": 259,
+          "speaker": "MARA",
+          "text": "Then make me follow you. Back up."
+        },
+        {
+          "line": 262,
+          "speaker": null,
+          "text": "On the next attempt, Tessa backs up with the whole shelter. The staff glances off."
+        },
+        {
+          "line": 264,
+          "speaker": null,
+          "text": "Mara steps inside the shelter, her blue shoulder ward still shining. Tessa lets the white light fade before touching the ward itself; the blue protection dissolves beneath her fingertips. Mara rekindles it when Tessa takes her hand away."
+        },
+        {
+          "line": 266,
+          "speaker": null,
+          "text": "From the fire, Iven applauds. Smoke is rising from the pot behind him."
+        },
+        {
+          "line": 268,
+          "speaker": "TESSA",
+          "text": "Iven, dinner."
+        },
+        {
+          "line": 271,
+          "speaker": null,
+          "text": "Iven lifts the pot off the coals with a cloth. While he scrapes at the bottom, Tessa raises a grain-loaded plank on her light."
+        },
+        {
+          "line": 273,
+          "speaker": null,
+          "text": "Mara raises the staff. Tessa tries to form a second pane between them; the plank immediately sags, and Mara catches its edge."
+        },
+        {
+          "line": 275,
+          "speaker": "MARA",
+          "text": "Too much. Put the sack down first."
+        },
+        {
+          "line": 278,
+          "speaker": null,
+          "text": "Mara hands her a wooden sword once the plank is down. Tessa raises the shelter again, then lowers her casting hand; the light holds while she works the blade."
+        },
+        {
+          "line": 280,
+          "speaker": null,
+          "text": "Mara presses her other side. Tessa switches the sword to her left hand and catches it in her coat, retreating to free it."
+        },
+        {
+          "line": 282,
+          "speaker": null,
+          "text": "Iven arrives with their bowls and sits down between them."
+        },
+        {
+          "line": 284,
+          "speaker": "IVEN",
+          "text": "If you start another round, I'm eating all three."
+        },
+        {
+          "line": 287,
+          "speaker": null,
+          "text": "Tessa lets the shelter fade and puts the sword beside the grain sack. When Iven goes back for the spoons, she trades her bowl for the burned portion he kept for himself."
+        },
+        {
+          "line": 289,
+          "speaker": null,
+          "text": "A road warden arrives with a cart board split by three enormous claw marks."
+        },
+        {
+          "line": 291,
+          "speaker": "WARDEN",
+          "text": "Use the river past Gray Scar. We've closed the high road after a crag cat took a mule."
+        },
+        {
+          "line": 294,
+          "speaker": null,
+          "text": "Mara changes their route while Tessa tries to span a claw mark with her fingers."
+        }
+      ]
+    },
+    {
+      "id": "S007",
+      "chapter": 2,
+      "heading": "INT. ROADSIDE INN - NIGHT",
+      "line": 296,
+      "end": 336,
+      "blocks": [
+        {
+          "line": 298,
+          "speaker": null,
+          "text": "Tessa hovers over one checker before moving another. Iven immediately begins a series of jumps."
+        },
+        {
+          "line": 300,
+          "speaker": "TESSA",
+          "text": "Wait, don't take them off. I thought if I went there you'd have to take this one first."
+        },
+        {
+          "line": 303,
+          "speaker": "IVEN",
+          "text": "Watch where I land."
+        },
+        {
+          "line": 306,
+          "speaker": null,
+          "text": "He repeats the jumps slowly."
+        },
+        {
+          "line": 308,
+          "speaker": "TESSA",
+          "text": "Oh. You knew I was going to do that."
+        },
+        {
+          "line": 311,
+          "speaker": "IVEN",
+          "text": "I was hoping. You nearly didn't."
+        },
+        {
+          "line": 314,
+          "speaker": null,
+          "text": "She starts putting the pieces back. Mara, passing with their room keys, points out a different square."
+        },
+        {
+          "line": 316,
+          "speaker": "MARA",
+          "text": "You could have gone there."
+        },
+        {
+          "line": 319,
+          "speaker": "TESSA",
+          "text": "I was going to! Come here, show me before he changes everything."
+        },
+        {
+          "line": 322,
+          "speaker": null,
+          "text": "Iven moves his chair around so all three can see. Mara leaves a key beside Tessa's cup."
+        },
+        {
+          "line": 324,
+          "speaker": "MARA",
+          "text": "Keep this one. The guards will be downstairs; there's a bolt inside your door."
+        },
+        {
+          "line": 327,
+          "speaker": null,
+          "text": "Tessa picks up the key."
+        },
+        {
+          "line": 329,
+          "speaker": "TESSA",
+          "text": "You don't have another key?"
+        },
+        {
+          "line": 332,
+          "speaker": "MARA",
+          "text": "I don't have one. You'll have to let me in."
+        },
+        {
+          "line": 335,
+          "speaker": null,
+          "text": "Tessa pockets the key and shifts over for Mara."
+        }
+      ]
+    },
+    {
+      "id": "S008",
+      "chapter": 2,
+      "heading": "EXT. BELLWEIR - MARKET SQUARE - DAY",
+      "line": 337,
+      "end": 393,
+      "blocks": [
+        {
+          "line": 339,
+          "speaker": null,
+          "text": "Summer. Tessa sits on the fountain rim, trying to draw the glass heron as it revolves. Every time its head comes around, she adds a hurried line."
+        },
+        {
+          "line": 341,
+          "speaker": null,
+          "text": "ELIN ORR, twenty-two, holds her paper against the breeze, a half-finished translation tucked under her satchel. Spotting a lever beneath the stand, she presses it. The bird stops."
+        },
+        {
+          "line": 343,
+          "speaker": null,
+          "text": "With the bird finally still, Tessa bends over her page and catches Elin looking at the drawing."
+        },
+        {
+          "line": 345,
+          "speaker": "TESSA",
+          "text": "I haven't done the neck yet."
+        },
+        {
+          "line": 348,
+          "speaker": null,
+          "text": "Elin starts laughing. Tessa covers the drawing, hiding the several necks she has already tried."
+        },
+        {
+          "line": 350,
+          "speaker": null,
+          "text": "ADA, eight, squeezes between them with a scraped elbow. Her brother RENN waits behind HEST'S bread stall."
+        },
+        {
+          "line": 352,
+          "speaker": "ADA",
+          "text": "He says you can grow people new heads."
+        },
+        {
+          "line": 355,
+          "speaker": null,
+          "text": "Tessa looks past her at Renn, who is trying not to laugh."
+        },
+        {
+          "line": 357,
+          "speaker": "TESSA",
+          "text": "Tell him to take care of the one he's got. I haven't learned heads yet."
+        },
+        {
+          "line": 360,
+          "speaker": null,
+          "text": "She closes the torn edges of the scrape with light, leaving a pink mark. Hest distributes buns while her husband ORREN drags a bench toward the dock below the square."
+        },
+        {
+          "line": 362,
+          "speaker": "ORREN",
+          "text": "Iven, grab that end, would you?"
+        },
+        {
+          "line": 365,
+          "speaker": null,
+          "text": "As they carry the bench to the dock, Tessa sketches them beside Hest's stall."
+        },
+        {
+          "line": 367,
+          "speaker": "ELIN",
+          "text": "Are you taking all these home?"
+        },
+        {
+          "line": 370,
+          "speaker": "TESSA",
+          "text": "My mom'll want to know who everyone is. This one's supposed to be Iven."
+        },
+        {
+          "line": 373,
+          "speaker": "IVEN",
+          "text": "Supposed to be?"
+        },
+        {
+          "line": 376,
+          "speaker": null,
+          "text": "Back for a second bench, Iven leans over her shoulder. In the drawing his hair sticks up exactly as it does after a night in camp."
+        },
+        {
+          "line": 378,
+          "speaker": "IVEN",
+          "text": "I'm keeping that. You can make a kinder one for your mother."
+        },
+        {
+          "line": 381,
+          "speaker": "TESSA",
+          "text": "It's not finished."
+        },
+        {
+          "line": 384,
+          "speaker": "IVEN",
+          "text": "Don't fix the hair."
+        },
+        {
+          "line": 387,
+          "speaker": null,
+          "text": "He goes back to help Orren. When Mara arrives with the day's messages, Tessa clears a place for her at the fountain."
+        },
+        {
+          "line": 389,
+          "speaker": "TESSA",
+          "text": "We're going out on the river after the clinic. You're coming too."
+        },
+        {
+          "line": 392,
+          "speaker": null,
+          "text": "Mara puts the messages away and sits beside her."
+        }
+      ]
+    },
+    {
+      "id": "S009",
+      "chapter": 2,
+      "heading": "EXT. RIVER BELOW BELLWEIR - LATE AFTERNOON",
+      "line": 394,
+      "end": 433,
+      "blocks": [
+        {
+          "line": 396,
+          "speaker": null,
+          "text": "The city recedes behind Orren's boat. Tessa sketches Iven at the oars from the rear bench, with Mara beside her. The children watch for fish at the bow."
+        },
+        {
+          "line": 398,
+          "speaker": null,
+          "text": "Mara reaches for the spare oars. Tessa catches one handle."
+        },
+        {
+          "line": 400,
+          "speaker": "TESSA",
+          "text": "Leave him. He said he'd row."
+        },
+        {
+          "line": 403,
+          "speaker": "IVEN",
+          "text": "I am rowing."
+        },
+        {
+          "line": 406,
+          "speaker": "MARA",
+          "text": "Into the reeds. Pull harder on the left."
+        },
+        {
+          "line": 409,
+          "speaker": null,
+          "text": "Iven corrects their course, still craning to see the drawing. Tessa lays the spare oar along the gunwale."
+        },
+        {
+          "line": 411,
+          "speaker": "IVEN",
+          "text": "Is that still me?"
+        },
+        {
+          "line": 414,
+          "speaker": "TESSA",
+          "text": "Stop looking around. I'm trying to get your face."
+        },
+        {
+          "line": 417,
+          "speaker": null,
+          "text": "She shows him the picture. Iven tries to splash her with an oar, but she ducks behind Mara and most of the water lands in his own boots."
+        },
+        {
+          "line": 419,
+          "speaker": null,
+          "text": "The children are still laughing when he gets back to rowing."
+        },
+        {
+          "line": 421,
+          "speaker": "TESSA",
+          "text": "You can have it when I'm done."
+        },
+        {
+          "line": 424,
+          "speaker": "IVEN",
+          "text": "I'm going to frame it so your mother can see how you've been treating me."
+        },
+        {
+          "line": 427,
+          "speaker": null,
+          "text": "When Iven brings his oars in, Tessa puts the sketchbook inside her coat and lifts the spare pair toward Mara."
+        },
+        {
+          "line": 429,
+          "speaker": "TESSA",
+          "text": "Will you show me?"
+        },
+        {
+          "line": 432,
+          "speaker": null,
+          "text": "They turn on the bench and fit the oars. Tessa watches Mara's hands through the first few strokes; gradually they begin pulling together, carrying the boat farther from the city."
+        }
+      ]
+    },
+    {
+      "id": "S010",
+      "chapter": 3,
+      "heading": "EXT. HILLS ABOVE BELLWEIR - NIGHT",
+      "line": 434,
+      "end": 485,
+      "blocks": [
+        {
+          "line": 436,
+          "speaker": null,
+          "text": "Eight months after the summoning. Northern troops wait among the trees while GENERAL VASK reports to VALCAIR. The Demon King's black horns sweep back from silver-streaked hair. Captured northern barges crowd the city's dock below them."
+        },
+        {
+          "line": 438,
+          "speaker": null,
+          "text": "Behind his field table, infantry descend the ridge, each company following a hooded lantern. More lights move among the trees than shine in the streets below."
+        },
+        {
+          "line": 440,
+          "speaker": "VASK",
+          "text": "The Saint is at the southern wells. Most of the reserve went with her. Our men have the salt in the gatehouse."
+        },
+        {
+          "line": 443,
+          "speaker": null,
+          "text": "Vask lays the agreement across his battle map."
+        },
+        {
+          "line": 445,
+          "speaker": "VASK",
+          "text": "They've agreed to the inspectors. Sign this and the crews can leave. Lucan asked me to bring it before the attack."
+        },
+        {
+          "line": 448,
+          "speaker": "VALCAIR",
+          "text": "He's left them the locks."
+        },
+        {
+          "line": 451,
+          "speaker": "VASK",
+          "text": "With our men inside. We can get the crews out without taking the city."
+        },
+        {
+          "line": 454,
+          "speaker": "VALCAIR",
+          "text": "And when they close the river again?"
+        },
+        {
+          "line": 457,
+          "speaker": "VASK",
+          "text": "He wants to try it."
+        },
+        {
+          "line": 460,
+          "speaker": "VALCAIR",
+          "text": "I won't leave him having to bargain for a way home every winter."
+        },
+        {
+          "line": 463,
+          "speaker": null,
+          "text": "He returns the agreement unsigned."
+        },
+        {
+          "line": 465,
+          "speaker": "VASK",
+          "text": "The Saint's been asking to go home. She may never agree to fight."
+        },
+        {
+          "line": 468,
+          "speaker": "VALCAIR",
+          "text": "Did they ask her before they brought her? I'm not waiting for them to send her against our wards."
+        },
+        {
+          "line": 471,
+          "speaker": null,
+          "text": "He marks Bellweir and the two fortresses downstream."
+        },
+        {
+          "line": 473,
+          "speaker": "VALCAIR",
+          "text": "All three. Then the summoning chamber."
+        },
+        {
+          "line": 476,
+          "speaker": "VASK",
+          "text": "Those wards hold the houses up, too."
+        },
+        {
+          "line": 479,
+          "speaker": null,
+          "text": "Valcair moves the attack marker onto Bellweir."
+        },
+        {
+          "line": 481,
+          "speaker": "VALCAIR",
+          "text": "Keep the causeway open for anyone who gets out. We go in at nine."
+        },
+        {
+          "line": 484,
+          "speaker": null,
+          "text": "Vask carries the order to the waiting captains. Below them, black grains are poured among the white ward salt."
+        }
+      ]
+    },
+    {
+      "id": "S011",
+      "chapter": 3,
+      "heading": "EXT. BELLWEIR - EAST CAUSEWAY - NIGHT",
+      "line": 486,
+      "end": 531,
+      "blocks": [
+        {
+          "line": 488,
+          "speaker": null,
+          "text": "Tessa's escort returns through the eastern gate as the clock strikes nine. Beyond the gate, a causeway crosses the river into open country."
+        },
+        {
+          "line": 490,
+          "speaker": null,
+          "text": "In the square, black crystal bursts through the glass heron. The ward foundations buckle beneath the houses."
+        },
+        {
+          "line": 492,
+          "speaker": null,
+          "text": "The shattered ward housings are dark. Roofs keep falling into the alleys as people force their way toward the eastern gate."
+        },
+        {
+          "line": 494,
+          "speaker": "MARA",
+          "text": "Give them cover. I'll get the square cleared."
+        },
+        {
+          "line": 497,
+          "speaker": null,
+          "text": "Iven runs for the bakery. Tessa moves into the square and raises a broad white arch over the crowd, backing with them toward the gate. Tiles strike the curve and slide away."
+        },
+        {
+          "line": 499,
+          "speaker": null,
+          "text": "Iven emerges carrying Ada, with Hest and Renn close behind."
+        },
+        {
+          "line": 501,
+          "speaker": "HEST",
+          "text": "Orren went for the apprentices. The blue door, by the steps!"
+        },
+        {
+          "line": 504,
+          "speaker": null,
+          "text": "Orren waves a lantern from the blue doorway, across a rubble-choked alley. Tessa reaches her shelter toward him. A tile punches through its thinning roof beside Iven, and she draws it back."
+        },
+        {
+          "line": 506,
+          "speaker": "TESSA",
+          "text": "Mara! Can your men get to him?"
+        },
+        {
+          "line": 509,
+          "speaker": null,
+          "text": "Mara sends two soldiers, but a burning roof crashes across their path. They scramble back."
+        },
+        {
+          "line": 511,
+          "speaker": null,
+          "text": "A cart jams in the gate. Iven hands Ada to Hest and gets under the shaft; the returning soldiers help him free the wheel."
+        },
+        {
+          "line": 513,
+          "speaker": "IVEN",
+          "text": "Tessa, bring it over the gate! They're still coming!"
+        },
+        {
+          "line": 516,
+          "speaker": null,
+          "text": "Tessa turns the arch toward Orren again. Its far edge leaves Hest crouched over both children as sparks fall around them."
+        },
+        {
+          "line": 518,
+          "speaker": null,
+          "text": "She brings the light back over them. Mara comes up beside her."
+        },
+        {
+          "line": 520,
+          "speaker": "MARA",
+          "text": "Stay with me. We have to get them through."
+        },
+        {
+          "line": 523,
+          "speaker": null,
+          "text": "Hest turns back for Orren, dragging Renn a step with her. He stumbles. She catches him, with Ada clinging to her other hand."
+        },
+        {
+          "line": 525,
+          "speaker": "HEST",
+          "text": "Orren!"
+        },
+        {
+          "line": 528,
+          "speaker": null,
+          "text": "The lantern vanishes in smoke. Hest keeps calling as the crowd carries her and the children toward the gate. Tessa retreats with them, holding the arch, tears cutting through the dust on her face."
+        },
+        {
+          "line": 530,
+          "speaker": null,
+          "text": "Across the river, the northern flag rises above Bellweir: a split white star."
+        }
+      ]
+    },
+    {
+      "id": "S012",
+      "chapter": 3,
+      "heading": "INT. TEMPLE READING ROOM - NIGHT",
+      "line": 532,
+      "end": 542,
+      "blocks": [
+        {
+          "line": 534,
+          "speaker": null,
+          "text": "Elin compares two translations. Both refer to a second drawing that neither contains. The ARCHIVIST returns her request with a third copy of the same text."
+        },
+        {
+          "line": 536,
+          "speaker": "ARCHIVIST",
+          "text": "Your master can ask for the original."
+        },
+        {
+          "line": 539,
+          "speaker": null,
+          "text": "When he turns to another borrower, she takes her master's seal from the papers she carries for him. She stamps the request and writes his name."
+        },
+        {
+          "line": 541,
+          "speaker": null,
+          "text": "Later, alone at the table, she unwraps the original. Four pages have been cut from its binding."
+        }
+      ]
+    },
+    {
+      "id": "S013",
+      "chapter": 3,
+      "heading": "INT. SUMMONING CHAMBER - LATER",
+      "line": 543,
+      "end": 573,
+      "blocks": [
+        {
+          "line": 545,
+          "speaker": null,
+          "text": "The SCHOLAR who closed Tessa's passage has his equipment spread across the floor. Elin lays the book beside him, open at the missing pages."
+        },
+        {
+          "line": 547,
+          "speaker": "ELIN",
+          "text": "Was the book already like this when you used it?"
+        },
+        {
+          "line": 550,
+          "speaker": null,
+          "text": "He recognizes the volume and looks toward the open doorway."
+        },
+        {
+          "line": 552,
+          "speaker": "SCHOLAR",
+          "text": "You're not supposed to have that."
+        },
+        {
+          "line": 555,
+          "speaker": "ELIN",
+          "text": "Did you have those pages? Any copy of them?"
+        },
+        {
+          "line": 558,
+          "speaker": "SCHOLAR",
+          "text": "No."
+        },
+        {
+          "line": 561,
+          "speaker": "ELIN",
+          "text": "Then what were you going to use to send her back?"
+        },
+        {
+          "line": 564,
+          "speaker": null,
+          "text": "He puts down his tool."
+        },
+        {
+          "line": 566,
+          "speaker": "SCHOLAR",
+          "text": "I told Senn I could bring someone through. I never promised him a way back."
+        },
+        {
+          "line": 569,
+          "speaker": null,
+          "text": "Footsteps approach in the hall. He closes the book and pushes it back to her."
+        },
+        {
+          "line": 571,
+          "speaker": "SCHOLAR",
+          "text": "Take it back before morning. And leave my name out of this."
+        }
+      ]
+    },
+    {
+      "id": "S014",
+      "chapter": 3,
+      "heading": "INT. RELIEF WAREHOUSE - WINTER MORNING",
+      "line": 574,
+      "end": 605,
+      "blocks": [
+        {
+          "line": 576,
+          "speaker": null,
+          "text": "Hest stops kneading when Tessa appears in the warehouse doorway, carrying boots."
+        },
+        {
+          "line": 578,
+          "speaker": "HEST",
+          "text": "Anything?"
+        },
+        {
+          "line": 581,
+          "speaker": null,
+          "text": "Tessa shakes her head. Hest goes back to the dough, pressing harder than before. Tessa sets the boots by Ada's bed and starts to leave."
+        },
+        {
+          "line": 583,
+          "speaker": "HEST",
+          "text": "She's awake. You can give them to her."
+        },
+        {
+          "line": 586,
+          "speaker": null,
+          "text": "Ada sits up. One boot goes on easily; Tessa has to loosen the other almost to the toe. Renn watches from the next bed with Orren's old cap in his lap."
+        },
+        {
+          "line": 588,
+          "speaker": "ADA",
+          "text": "Will Dad know where we've gone?"
+        },
+        {
+          "line": 591,
+          "speaker": null,
+          "text": "Tessa keeps working at the laces, although the boot is open now."
+        },
+        {
+          "line": 593,
+          "speaker": "TESSA",
+          "text": "I'll put this address on every notice we send out."
+        },
+        {
+          "line": 596,
+          "speaker": "HEST",
+          "text": "He'd have written if they'd let him. They don't even tell us who's in those camps."
+        },
+        {
+          "line": 599,
+          "speaker": null,
+          "text": "Hest leans over Tessa as she copies Orren from the market drawing onto a separate sheet."
+        },
+        {
+          "line": 601,
+          "speaker": "HEST",
+          "text": "His chin's longer. The scar's underneath, here."
+        },
+        {
+          "line": 604,
+          "speaker": null,
+          "text": "Ada leans against Tessa to watch. Elin waits at the door with a book under her coat."
+        }
+      ]
+    },
+    {
+      "id": "S015",
+      "chapter": 3,
+      "heading": "INT. ELIN'S LODGING - DAY",
+      "line": 606,
+      "end": 650,
+      "blocks": [
+        {
+          "line": 608,
+          "speaker": null,
+          "text": "Elin puts the original beside her translations. Tessa turns to the cut pages, then checks the back of the book."
+        },
+        {
+          "line": 610,
+          "speaker": "TESSA",
+          "text": "Senn said they were working on it. This can't be everything."
+        },
+        {
+          "line": 613,
+          "speaker": "ELIN",
+          "text": "It's all the man who opened the passage had. I asked him."
+        },
+        {
+          "line": 616,
+          "speaker": "TESSA",
+          "text": "But not Senn?"
+        },
+        {
+          "line": 619,
+          "speaker": "ELIN",
+          "text": "Not before you saw it."
+        },
+        {
+          "line": 622,
+          "speaker": null,
+          "text": "Tessa keeps turning pages. She reaches the end and stays there."
+        },
+        {
+          "line": 624,
+          "speaker": "TESSA",
+          "text": "I sat there telling him what I was going to do when I got home, and he just let me talk."
+        },
+        {
+          "line": 627,
+          "speaker": null,
+          "text": "She shuts the book."
+        },
+        {
+          "line": 629,
+          "speaker": "TESSA",
+          "text": "How long have you had this?"
+        },
+        {
+          "line": 632,
+          "speaker": "ELIN",
+          "text": "Last night. I used my master's seal to get it. They may think he sent me."
+        },
+        {
+          "line": 635,
+          "speaker": null,
+          "text": "Tessa looks at the borrowing slip."
+        },
+        {
+          "line": 637,
+          "speaker": "TESSA",
+          "text": "Did he?"
+        },
+        {
+          "line": 640,
+          "speaker": "ELIN",
+          "text": "No. He could lose his place over this."
+        },
+        {
+          "line": 643,
+          "speaker": "TESSA",
+          "text": "Then you have to tell them."
+        },
+        {
+          "line": 646,
+          "speaker": "ELIN",
+          "text": "I will."
+        },
+        {
+          "line": 649,
+          "speaker": null,
+          "text": "Tessa takes the book and gets her coat. At the door, she waits for Elin to join her."
+        }
+      ]
+    },
+    {
+      "id": "S016",
+      "chapter": 3,
+      "heading": "INT. PALACE COUNCIL ROOM - DAY",
+      "line": 651,
+      "end": 774,
+      "blocks": [
+        {
+          "line": 653,
+          "speaker": null,
+          "text": "Tessa sits opposite Senn in the white mantle. Elin opens the damaged book between them. Mara waits at the open door, a guard outside; Orra has come from the convoy yard and still wears her gloves."
+        },
+        {
+          "line": 655,
+          "speaker": null,
+          "text": "Senn picks up the borrowing slip."
+        },
+        {
+          "line": 657,
+          "speaker": "SENN",
+          "text": "Did your master give you this?"
+        },
+        {
+          "line": 660,
+          "speaker": "ELIN",
+          "text": "I used his seal. He didn't know."
+        },
+        {
+          "line": 663,
+          "speaker": "SENN",
+          "text": "Then he will have to explain how--"
+        },
+        {
+          "line": 666,
+          "speaker": "TESSA",
+          "text": "Were the pages missing when you brought me here?"
+        },
+        {
+          "line": 669,
+          "speaker": null,
+          "text": "Senn looks at the book."
+        },
+        {
+          "line": 671,
+          "speaker": "SENN",
+          "text": "Yes."
+        },
+        {
+          "line": 674,
+          "speaker": "TESSA",
+          "text": "And you didn't have another copy?"
+        },
+        {
+          "line": 677,
+          "speaker": "SENN",
+          "text": "We hoped the completed ritual would show us the way back."
+        },
+        {
+          "line": 680,
+          "speaker": null,
+          "text": "For a moment she seems to be waiting for the rest of the answer."
+        },
+        {
+          "line": 682,
+          "speaker": "TESSA",
+          "text": "You've known all this time."
+        },
+        {
+          "line": 685,
+          "speaker": "SENN",
+          "text": "We were losing a town every two weeks. If we had waited for certainty--"
+        },
+        {
+          "line": 688,
+          "speaker": "TESSA",
+          "text": "You kept telling me I could go home."
+        },
+        {
+          "line": 691,
+          "speaker": "SENN",
+          "text": "Would you have gone into the infirmary if I'd told you?"
+        },
+        {
+          "line": 694,
+          "speaker": "TESSA",
+          "text": "I kept going back, didn't I? After Bellweir, when you told me again."
+        },
+        {
+          "line": 697,
+          "speaker": null,
+          "text": "Senn turns to Orra."
+        },
+        {
+          "line": 699,
+          "speaker": "SENN",
+          "text": "There are hospitals depending on her. We cannot let this interrupt--"
+        },
+        {
+          "line": 702,
+          "speaker": "TESSA",
+          "text": "Don't ask her what to do with me."
+        },
+        {
+          "line": 705,
+          "speaker": null,
+          "text": "She pulls the mantle loose as she stands and leaves it across the book."
+        },
+        {
+          "line": 707,
+          "speaker": "SENN",
+          "text": "Captain, take her to her rooms. We will continue this when--"
+        },
+        {
+          "line": 710,
+          "speaker": "TESSA",
+          "text": "No."
+        },
+        {
+          "line": 713,
+          "speaker": null,
+          "text": "The guard steps toward the open doorway. Mara closes the door before he enters."
+        },
+        {
+          "line": 715,
+          "speaker": "MARA",
+          "text": "Marshal. Are those still your orders?"
+        },
+        {
+          "line": 718,
+          "speaker": null,
+          "text": "Orra takes off her gloves."
+        },
+        {
+          "line": 720,
+          "speaker": "ORRA",
+          "text": "Let her finish."
+        },
+        {
+          "line": 723,
+          "speaker": null,
+          "text": "Tessa grips the back of her chair."
+        },
+        {
+          "line": 725,
+          "speaker": "ORRA",
+          "text": "Saye says you've refused the temple twice this week. You've still gone to the warehouse."
+        },
+        {
+          "line": 728,
+          "speaker": "TESSA",
+          "text": "Iven and I can work out where I'm needed. And when Elin finds something, I want to hear it from her."
+        },
+        {
+          "line": 731,
+          "speaker": null,
+          "text": "She looks back at Senn."
+        },
+        {
+          "line": 733,
+          "speaker": "TESSA",
+          "text": "I don't want another promise from you."
+        },
+        {
+          "line": 736,
+          "speaker": null,
+          "text": "Orra looks toward the closed door."
+        },
+        {
+          "line": 738,
+          "speaker": "ORRA",
+          "text": "Captain Venn stays with you on deployments."
+        },
+        {
+          "line": 741,
+          "speaker": "TESSA",
+          "text": "But nobody locks my door."
+        },
+        {
+          "line": 744,
+          "speaker": "ORRA",
+          "text": "Nobody locks your door."
+        },
+        {
+          "line": 747,
+          "speaker": "TESSA",
+          "text": "Tell the guard."
+        },
+        {
+          "line": 750,
+          "speaker": null,
+          "text": "Orra nods to Mara, who opens the door."
+        },
+        {
+          "line": 752,
+          "speaker": "ORRA",
+          "text": "She is not to be confined. Have that entered in the duty book."
+        },
+        {
+          "line": 755,
+          "speaker": null,
+          "text": "The guard acknowledges the order in front of Tessa. Only then does she let go of the back of her chair."
+        },
+        {
+          "line": 757,
+          "speaker": "SENN",
+          "text": "Elin will not be admitted to the collection again."
+        },
+        {
+          "line": 760,
+          "speaker": "ELIN",
+          "text": "Then I'll look elsewhere."
+        },
+        {
+          "line": 763,
+          "speaker": null,
+          "text": "She pulls the book from beneath the mantle. Senn keeps a hand on it."
+        },
+        {
+          "line": 765,
+          "speaker": "SENN",
+          "text": "That stays here."
+        },
+        {
+          "line": 768,
+          "speaker": null,
+          "text": "Tessa looks to Orra."
+        },
+        {
+          "line": 770,
+          "speaker": "ORRA",
+          "text": "I'll have someone copy the pages that are left. The original stays here."
+        },
+        {
+          "line": 773,
+          "speaker": null,
+          "text": "Elin takes her own translations from the satchel. The original remains under Senn's hand as she follows Tessa out."
+        }
+      ]
+    },
+    {
+      "id": "S017",
+      "chapter": 3,
+      "heading": "INT. PALACE COUNCIL CORRIDOR - CONTINUOUS",
+      "line": 775,
+      "end": 792,
+      "blocks": [
+        {
+          "line": 777,
+          "speaker": null,
+          "text": "Beyond the guard, Tessa leans against the wall. Mara approaches while Elin waits with her translations."
+        },
+        {
+          "line": 779,
+          "speaker": "MARA",
+          "text": "I didn't know about the missing pages."
+        },
+        {
+          "line": 782,
+          "speaker": "TESSA",
+          "text": "You knew I wanted to leave."
+        },
+        {
+          "line": 785,
+          "speaker": "MARA",
+          "text": "Yes."
+        },
+        {
+          "line": 788,
+          "speaker": "TESSA",
+          "text": "And you stood in the door."
+        },
+        {
+          "line": 791,
+          "speaker": null,
+          "text": "Tessa takes Elin's arm and leaves with her. Mara follows a few paces behind."
+        }
+      ]
+    },
+    {
+      "id": "S018",
+      "chapter": 4,
+      "heading": "EXT. GRAY SCAR - FERRY APPROACH - AFTERNOON",
+      "line": 793,
+      "end": 829,
+      "blocks": [
+        {
+          "line": 795,
+          "speaker": null,
+          "text": "Second summer. The ferry bell calls across the river as Mara leads families from the upper farms down a wooded trail. Four soldiers carry an injured woman on a litter; Iven and her husband walk beside her."
+        },
+        {
+          "line": 797,
+          "speaker": null,
+          "text": "A dead mule and a wrecked wagon block the turn. A tawny head lifts from the carcass."
+        },
+        {
+          "line": 799,
+          "speaker": null,
+          "text": "A young CRAG CAT, already wolf-sized. Another waits on a branch behind the column."
+        },
+        {
+          "line": 801,
+          "speaker": "MARA",
+          "text": "Bring the litter up. Nobody stays behind it."
+        },
+        {
+          "line": 804,
+          "speaker": null,
+          "text": "One drops at a bearer. Tessa's light catches it as Mara drives the other back with her shield."
+        },
+        {
+          "line": 806,
+          "speaker": null,
+          "text": "Families run for the timber ferryhouse below. Tessa stays with the slower litter, keeping the cats off its bearers."
+        },
+        {
+          "line": 808,
+          "speaker": null,
+          "text": "Iven gets the litter through the ferryhouse door. Mara follows with the last of the families."
+        },
+        {
+          "line": 810,
+          "speaker": null,
+          "text": "Beyond the ferryhouse, an iron gate guards the landing beneath a rock overhang. Two boats wait there, across fifty paces of open bank."
+        },
+        {
+          "line": 812,
+          "speaker": null,
+          "text": "Northerners emerge from another track: six soldiers surrounding families on foot. PRINCE LUCAN, mid-twenties, carries a child, a crossbow slung across his back. His lieutenant, SERAT, supports an injured man. Two crossbowmen cover their retreat, firing in turns as the cats follow the slowest walkers."
+        },
+        {
+          "line": 814,
+          "speaker": null,
+          "text": "Mara recognizes the royal split star. She blocks the doorway with her shield, sword drawn beside it."
+        },
+        {
+          "line": 816,
+          "speaker": "LUCAN",
+          "text": "Let us past. I've got children back there."
+        },
+        {
+          "line": 819,
+          "speaker": null,
+          "text": "A bolt glances off an ADULT CRAG CAT's plated shoulder. Twice the length of a horse, it drives the northern party toward the house while its young circle their wounded."
+        },
+        {
+          "line": 821,
+          "speaker": null,
+          "text": "Lucan returns the child to her mother and takes the wounded man from Serat. Mara's sword stays up as they reach the door."
+        },
+        {
+          "line": 823,
+          "speaker": "LUCAN",
+          "text": "Her first. Let her through."
+        },
+        {
+          "line": 826,
+          "speaker": null,
+          "text": "Mara admits the mother and child, then backs inside to let Lucan through with the wounded man. She keeps her sword toward the soldiers following."
+        },
+        {
+          "line": 828,
+          "speaker": null,
+          "text": "The adult climbs onto the roof after the last soldier enters."
+        }
+      ]
+    },
+    {
+      "id": "S019",
+      "chapter": 4,
+      "heading": "INT. OLD FERRYHOUSE - CONTINUOUS",
+      "line": 830,
+      "end": 878,
+      "blocks": [
+        {
+          "line": 832,
+          "speaker": null,
+          "text": "Tessa catches a splitting rafter on her sanctuary. Packed beneath it, Lucan sees her temple badge and drags his wounded man behind a soldier's warded shield."
+        },
+        {
+          "line": 834,
+          "speaker": "LUCAN",
+          "text": "Keep your magic off him."
+        },
+        {
+          "line": 837,
+          "speaker": null,
+          "text": "Tessa strains beneath the bowing rafter."
+        },
+        {
+          "line": 839,
+          "speaker": "TESSA",
+          "text": "If I stop, that comes down."
+        },
+        {
+          "line": 842,
+          "speaker": null,
+          "text": "Claws hook through the boards. At the rear window, the FERRYMAN shows Mara his key and the landing beyond."
+        },
+        {
+          "line": 844,
+          "speaker": "FERRYMAN",
+          "text": "If we reach that gate, I can lock them out."
+        },
+        {
+          "line": 847,
+          "speaker": null,
+          "text": "Between the house and the boats, a young cat settles beside the path, watching the open window."
+        },
+        {
+          "line": 849,
+          "speaker": null,
+          "text": "Iven helps the woman's husband take a litter handle from an exhausted soldier. Across the room, Serat supports a northern woman, his crossbow propped against the wall."
+        },
+        {
+          "line": 851,
+          "speaker": "MARA",
+          "text": "Let the healer take her. I need you watching the bank."
+        },
+        {
+          "line": 854,
+          "speaker": null,
+          "text": "Serat looks to Lucan."
+        },
+        {
+          "line": 856,
+          "speaker": "LUCAN",
+          "text": "Stay with her a moment."
+        },
+        {
+          "line": 859,
+          "speaker": "TESSA",
+          "text": "Bring her here, beside the litter. The others too."
+        },
+        {
+          "line": 862,
+          "speaker": null,
+          "text": "The roof shifts. Tessa tightens the light beneath it."
+        },
+        {
+          "line": 864,
+          "speaker": "TESSA",
+          "text": "Stay by the litter. If anyone runs ahead, I can't follow them."
+        },
+        {
+          "line": 867,
+          "speaker": null,
+          "text": "Lucan looks from the shelter to the blue ward still burning on Mara's shoulder. Serat keeps hold of the woman while Iven waits beside them."
+        },
+        {
+          "line": 869,
+          "speaker": "LUCAN",
+          "text": "We keep our weapons. And one boat for our people, when we get there."
+        },
+        {
+          "line": 872,
+          "speaker": "MARA",
+          "text": "You have my word."
+        },
+        {
+          "line": 875,
+          "speaker": null,
+          "text": "At Lucan's nod, Serat gives the woman to Iven and retrieves his crossbow. Two northerners take the injured soldier, freeing Lucan to draw his own bow. Mara sheathes her sword and takes the flank with her shield."
+        },
+        {
+          "line": 877,
+          "speaker": null,
+          "text": "The ferryman opens the loading doors. Tessa brings the shelter out with the litter, rafters scraping along its rear edge. Lucan and Serat clear the doors before she lets the roof collapse beneath the adult."
+        }
+      ]
+    },
+    {
+      "id": "S020",
+      "chapter": 4,
+      "heading": "EXT. GRAY SCAR - RIVERBANK - CONTINUOUS",
+      "line": 879,
+      "end": 888,
+      "blocks": [
+        {
+          "line": 881,
+          "speaker": null,
+          "text": "Iven calls a pace the injured woman and litter bearers can manage. Cats prowl beyond the shields; Lucan and Serat cover the rear in turns."
+        },
+        {
+          "line": 883,
+          "speaker": null,
+          "text": "A smaller cat rushes the flank. Mara catches it on her shield, but it scrambles around the rim toward a child. Lucan's bolt knocks it away from the group."
+        },
+        {
+          "line": 885,
+          "speaker": null,
+          "text": "The adult bursts from the wreckage and slams into Tessa's shelter. A white fracture races overhead. She draws the curve tighter, forcing everyone closer as they retreat toward the gate."
+        },
+        {
+          "line": 887,
+          "speaker": null,
+          "text": "The ferryman unlocks and opens the gate. Children pass beneath the rock while the crossbowmen hold the entrance."
+        }
+      ]
+    },
+    {
+      "id": "S021",
+      "chapter": 4,
+      "heading": "EXT. GRAY SCAR - COVERED LANDING - CONTINUOUS",
+      "line": 889,
+      "end": 953,
+      "blocks": [
+        {
+          "line": 891,
+          "speaker": null,
+          "text": "Lucan's families are behind the bars. His boatman takes the last injured soldier aboard, leaving space beside him for the prince."
+        },
+        {
+          "line": 893,
+          "speaker": null,
+          "text": "Iven helps the northern woman aboard, then goes back to the human litter still outside with Mara and Tessa. With the other passengers clear, the cats close around that last group."
+        },
+        {
+          "line": 895,
+          "speaker": "BOATMAN",
+          "text": "We can go, Highness."
+        },
+        {
+          "line": 898,
+          "speaker": null,
+          "text": "Lucan looks back at the litter."
+        },
+        {
+          "line": 900,
+          "speaker": null,
+          "text": "He exchanges his empty crossbow for Serat's loaded one and goes through the gate."
+        },
+        {
+          "line": 902,
+          "speaker": "LUCAN",
+          "text": "Serat. One more with us."
+        },
+        {
+          "line": 905,
+          "speaker": null,
+          "text": "Serat follows with his shield, the empty bow slung over his back. His younger brother comes too."
+        },
+        {
+          "line": 907,
+          "speaker": null,
+          "text": "Lucan's bolt strikes beneath the adult's jaw. He sets the spent bow against the gatepost and takes a litter handle. A young cat leaps at his back, catching Serat's shield instead. Its claws rake the lieutenant's thigh."
+        },
+        {
+          "line": 909,
+          "speaker": null,
+          "text": "Serat's brother drags him inside. Mara covers them while Lucan and Iven bring the litter through. Tessa backs in last and lets her shelter fade as the ferryman shuts the gate."
+        },
+        {
+          "line": 911,
+          "speaker": null,
+          "text": "The adult strikes the gate as the bolt drops. Its paw reaches between the bars, but the passengers are already retreating beneath the rock to the boats."
+        },
+        {
+          "line": 913,
+          "speaker": null,
+          "text": "Iven presses a cloth to Serat's thigh. Tessa's light joins the torn edges and slows the bleeding, but cannot bridge the gouge left by the claw."
+        },
+        {
+          "line": 915,
+          "speaker": "IVEN",
+          "text": "Hold it there while I bind him."
+        },
+        {
+          "line": 918,
+          "speaker": "TESSA",
+          "text": "I can't close the middle."
+        },
+        {
+          "line": 921,
+          "speaker": "IVEN",
+          "text": "He needs the surgeon downstream."
+        },
+        {
+          "line": 924,
+          "speaker": null,
+          "text": "Lucan kneels beside him."
+        },
+        {
+          "line": 926,
+          "speaker": "LUCAN",
+          "text": "Serat. Keep looking at me."
+        },
+        {
+          "line": 929,
+          "speaker": null,
+          "text": "Serat sags against his brother."
+        },
+        {
+          "line": 931,
+          "speaker": "LUCAN",
+          "text": "He isn't answering."
+        },
+        {
+          "line": 934,
+          "speaker": "IVEN",
+          "text": "He's lost too much blood. Get under his shoulders."
+        },
+        {
+          "line": 937,
+          "speaker": null,
+          "text": "Lucan and Serat's brother carry him onto the second boat on a folded cloak. The first leaves with the northern families."
+        },
+        {
+          "line": 939,
+          "speaker": null,
+          "text": "The second boatman looks toward the northern landing. Lucan points downstream instead."
+        },
+        {
+          "line": 941,
+          "speaker": "BOATMAN",
+          "text": "Those are human pickets."
+        },
+        {
+          "line": 944,
+          "speaker": "LUCAN",
+          "text": "I know. Get him there."
+        },
+        {
+          "line": 947,
+          "speaker": null,
+          "text": "When the bearers lower the human woman beside Serat, her husband hesitates at the northern uniforms."
+        },
+        {
+          "line": 949,
+          "speaker": "TESSA",
+          "text": "We're going to our infirmary. Stay beside her."
+        },
+        {
+          "line": 952,
+          "speaker": null,
+          "text": "Tessa kneels between the patients as they pull into the current. Lucan holds Serat steady while Iven binds the wound beneath her light."
+        }
+      ]
+    },
+    {
+      "id": "S022",
+      "chapter": 4,
+      "heading": "EXT. ROVEL RIVER PICKET - DUSK",
+      "line": 954,
+      "end": 1007,
+      "blocks": [
+        {
+          "line": 956,
+          "speaker": null,
+          "text": "The picket helps carry the patients ashore. Its OFFICER recognizes Lucan as he takes a litter handle and signals two men to block his way back to the boat."
+        },
+        {
+          "line": 958,
+          "speaker": "PICKET OFFICER",
+          "text": "Your sword. Leave it on the boards."
+        },
+        {
+          "line": 961,
+          "speaker": null,
+          "text": "Mara steps between them."
+        },
+        {
+          "line": 963,
+          "speaker": "MARA",
+          "text": "He has my word that he can leave."
+        },
+        {
+          "line": 966,
+          "speaker": "PICKET OFFICER",
+          "text": "Let the marshal decide. He can wait here until she answers."
+        },
+        {
+          "line": 969,
+          "speaker": "MARA",
+          "text": "Those people made it here because he went back for them. I gave him safe passage. Put that in your report."
+        },
+        {
+          "line": 972,
+          "speaker": null,
+          "text": "Mara takes Lucan's litter handle. The officer looks at the wounded on the landing, then signals his men aside."
+        },
+        {
+          "line": 974,
+          "speaker": "PICKET OFFICER",
+          "text": "You'll sign the report, Captain."
+        },
+        {
+          "line": 977,
+          "speaker": null,
+          "text": "Serat is carried toward the infirmary."
+        },
+        {
+          "line": 979,
+          "speaker": null,
+          "text": "Lucan calls to Iven."
+        },
+        {
+          "line": 981,
+          "speaker": "LUCAN",
+          "text": "His brother stays with him. I'll send for them when he can travel."
+        },
+        {
+          "line": 984,
+          "speaker": "IVEN",
+          "text": "He'll be looked after."
+        },
+        {
+          "line": 987,
+          "speaker": null,
+          "text": "Before Lucan boards, Tessa offers him Orren's portrait, Hest's address on its back."
+        },
+        {
+          "line": 989,
+          "speaker": "TESSA",
+          "text": "Your men took him from Bellweir with two apprentices. His name's Orren."
+        },
+        {
+          "line": 992,
+          "speaker": "LUCAN",
+          "text": "Which camp?"
+        },
+        {
+          "line": 995,
+          "speaker": "TESSA",
+          "text": "We don't know. His wife hasn't heard anything."
+        },
+        {
+          "line": 998,
+          "speaker": null,
+          "text": "Lucan pockets the portrait."
+        },
+        {
+          "line": 1000,
+          "speaker": "LUCAN",
+          "text": "I'll look for him."
+        },
+        {
+          "line": 1003,
+          "speaker": "TESSA",
+          "text": "Even if it's bad, tell her. Please."
+        },
+        {
+          "line": 1006,
+          "speaker": null,
+          "text": "Lucan leaves by boat. Mara stays to sign the report."
+        }
+      ]
+    },
+    {
+      "id": "S023",
+      "chapter": 4,
+      "heading": "INT. NORTHERN FIELD QUARTERS - NIGHT",
+      "line": 1008,
+      "end": 1052,
+      "blocks": [
+        {
+          "line": 1010,
+          "speaker": null,
+          "text": "Valcair waits by the fire with the patrol's report as Lucan enters, still muddy from the river."
+        },
+        {
+          "line": 1012,
+          "speaker": "VALCAIR",
+          "text": "Where's Serat?"
+        },
+        {
+          "line": 1015,
+          "speaker": "LUCAN",
+          "text": "At their infirmary. His brother stayed with him."
+        },
+        {
+          "line": 1018,
+          "speaker": "VALCAIR",
+          "text": "You left him in a human fortress?"
+        },
+        {
+          "line": 1021,
+          "speaker": "LUCAN",
+          "text": "With a surgeon. He was barely awake when we got there."
+        },
+        {
+          "line": 1024,
+          "speaker": null,
+          "text": "His father puts the report down and draws a chair toward the fire. Lucan remains standing."
+        },
+        {
+          "line": 1026,
+          "speaker": "VALCAIR",
+          "text": "They tried to arrest you."
+        },
+        {
+          "line": 1029,
+          "speaker": "LUCAN",
+          "text": "Their captain kept her word."
+        },
+        {
+          "line": 1032,
+          "speaker": "VALCAIR",
+          "text": "If they'd kept you, we'd be trading forts to get you back."
+        },
+        {
+          "line": 1035,
+          "speaker": "LUCAN",
+          "text": "Serat wouldn't have survived the trip upriver. I wasn't leaving him to die."
+        },
+        {
+          "line": 1038,
+          "speaker": null,
+          "text": "Valcair holds out his hand for the field seal. Lucan leaves it on the table."
+        },
+        {
+          "line": 1040,
+          "speaker": "VALCAIR",
+          "text": "Vask takes your companies. Until I say otherwise, you command no one."
+        },
+        {
+          "line": 1043,
+          "speaker": "LUCAN",
+          "text": "I'd do it again."
+        },
+        {
+          "line": 1046,
+          "speaker": null,
+          "text": "He turns to leave."
+        },
+        {
+          "line": 1048,
+          "speaker": "VALCAIR",
+          "text": "Lucan. Sit down."
+        },
+        {
+          "line": 1051,
+          "speaker": null,
+          "text": "Lucan looks at the chair, still shivering in his wet clothes, then leaves."
+        }
+      ]
+    },
+    {
+      "id": "S024",
+      "chapter": 4,
+      "heading": "EXT. NORTHERN WHARF - MORNING",
+      "line": 1053,
+      "end": 1073,
+      "blocks": [
+        {
+          "line": 1055,
+          "speaker": null,
+          "text": "The command pennant comes down from the household launch Lucan used with his company. His former crew unload the weapons while he lays Orren's portrait on a river chart."
+        },
+        {
+          "line": 1057,
+          "speaker": null,
+          "text": "The boatman who took Serat downstream stays beside him after the crew leaves."
+        },
+        {
+          "line": 1059,
+          "speaker": "BOATMAN",
+          "text": "You won't find names at the stores office. They count work gangs."
+        },
+        {
+          "line": 1062,
+          "speaker": null,
+          "text": "Lucan looks at the camps marked along the quarry cuts."
+        },
+        {
+          "line": 1064,
+          "speaker": "LUCAN",
+          "text": "Can you take me there?"
+        },
+        {
+          "line": 1067,
+          "speaker": "BOATMAN",
+          "text": "I can take you. I can't ask the men to go unpaid."
+        },
+        {
+          "line": 1070,
+          "speaker": null,
+          "text": "Lucan takes out his purse. The boatman names a sum, and he counts it out rather than trying to bargain him down."
+        },
+        {
+          "line": 1072,
+          "speaker": null,
+          "text": "The launch leaves with two paid hands instead of a company."
+        }
+      ]
+    },
+    {
+      "id": "S025",
+      "chapter": 4,
+      "heading": "INT. ROYAL INFIRMARY - CORRIDOR - DAY",
+      "line": 1074,
+      "end": 1106,
+      "blocks": [
+        {
+          "line": 1076,
+          "speaker": null,
+          "text": "Several days later. Serat lies with his leg splinted while Iven checks the healing. His brother is asleep in a chair beside the bed."
+        },
+        {
+          "line": 1078,
+          "speaker": null,
+          "text": "In the corridor, Orra returns Mara's signed account."
+        },
+        {
+          "line": 1080,
+          "speaker": "ORRA",
+          "text": "Your lieutenant takes the patrol until the inquiry is finished. Stay with the medical escort."
+        },
+        {
+          "line": 1083,
+          "speaker": null,
+          "text": "When Orra has gone, Tessa comes out of the ward."
+        },
+        {
+          "line": 1085,
+          "speaker": "TESSA",
+          "text": "Is that about Lucan? You didn't tell me."
+        },
+        {
+          "line": 1088,
+          "speaker": "MARA",
+          "text": "I knew there'd be a report."
+        },
+        {
+          "line": 1091,
+          "speaker": "TESSA",
+          "text": "Then let me tell her what happened. She wasn't there."
+        },
+        {
+          "line": 1094,
+          "speaker": "MARA",
+          "text": "Don't go after her for me. She's got my report."
+        },
+        {
+          "line": 1097,
+          "speaker": null,
+          "text": "Inside the ward, Iven helps Serat lift his heel."
+        },
+        {
+          "line": 1099,
+          "speaker": "TESSA",
+          "text": "They're not taking you away from us?"
+        },
+        {
+          "line": 1102,
+          "speaker": "MARA",
+          "text": "No. Just the patrol."
+        },
+        {
+          "line": 1105,
+          "speaker": null,
+          "text": "They stand together in the doorway while Iven works."
+        }
+      ]
+    },
+    {
+      "id": "S026",
+      "chapter": 5,
+      "heading": "EXT. QUARRY CAMP - LOADING RAMP - DAY",
+      "line": 1107,
+      "end": 1127,
+      "blocks": [
+        {
+          "line": 1109,
+          "speaker": null,
+          "text": "Lucan shows Orren's portrait to men loading stone. A foreman waves him away without looking. Beyond the ramp, a boy has stopped with an empty barrow."
+        },
+        {
+          "line": 1111,
+          "speaker": null,
+          "text": "Lucan walks toward him. The boy goes back to work."
+        },
+        {
+          "line": 1113,
+          "speaker": "LUCAN",
+          "text": "You know him."
+        },
+        {
+          "line": 1116,
+          "speaker": "APPRENTICE",
+          "text": "No."
+        },
+        {
+          "line": 1119,
+          "speaker": null,
+          "text": "Lucan folds the picture, leaving Hest's address visible on the back. The boy reads it before he can stop himself."
+        },
+        {
+          "line": 1121,
+          "speaker": "LUCAN",
+          "text": "She's alive. Both children too."
+        },
+        {
+          "line": 1124,
+          "speaker": null,
+          "text": "The foreman calls the boy's number. He hurries away, leaving Lucan beside the empty barrow."
+        },
+        {
+          "line": 1126,
+          "speaker": null,
+          "text": "Later, as the launch prepares to leave, a stone drops onto its deck. Orren's name is scratched into the chalk coating, with a bed number beneath it. Up on the ramp, the apprentice avoids Lucan's eyes."
+        }
+      ]
+    },
+    {
+      "id": "S027",
+      "chapter": 5,
+      "heading": "EXT. RIVER CAMP - GATE - DAY",
+      "line": 1128,
+      "end": 1172,
+      "blocks": [
+        {
+          "line": 1130,
+          "speaker": null,
+          "text": "Six weeks after Gray Scar. Hest grips Lucan's letter while guards search the cart. Mara submits her sheathed sword to a binding cord."
+        },
+        {
+          "line": 1132,
+          "speaker": null,
+          "text": "Lucan's launch is tied below the camp with food and dressings aboard. The GOVERNOR looks it over before approaching him."
+        },
+        {
+          "line": 1134,
+          "speaker": "GOVERNOR",
+          "text": "The boat stays for the week. We need it at the upper quarry."
+        },
+        {
+          "line": 1137,
+          "speaker": null,
+          "text": "A prisoner stumbles under a load of stone. The foreman hauls him upright by the collar. Tessa watches him stagger back into line."
+        },
+        {
+          "line": 1139,
+          "speaker": "TESSA",
+          "text": "When I'm finished, do you send them straight back up there?"
+        },
+        {
+          "line": 1142,
+          "speaker": "GOVERNOR",
+          "text": "They have work to finish."
+        },
+        {
+          "line": 1145,
+          "speaker": null,
+          "text": "She turns to Lucan."
+        },
+        {
+          "line": 1147,
+          "speaker": "TESSA",
+          "text": "You told me Orren couldn't stand."
+        },
+        {
+          "line": 1150,
+          "speaker": "LUCAN",
+          "text": "The men we treat stay in the infirmary."
+        },
+        {
+          "line": 1153,
+          "speaker": "GOVERNOR",
+          "text": "And who feeds them while the work stops?"
+        },
+        {
+          "line": 1156,
+          "speaker": null,
+          "text": "Lucan looks down at the food aboard his launch."
+        },
+        {
+          "line": 1158,
+          "speaker": "LUCAN",
+          "text": "I will. They get a week to recover, and your healer decides when they're ready."
+        },
+        {
+          "line": 1161,
+          "speaker": null,
+          "text": "The northern HEALER has come out with Serat, who is still on his stick. She waits beside the gate until the governor looks at her."
+        },
+        {
+          "line": 1163,
+          "speaker": "HEALER",
+          "text": "Three more have the blackening. I need her today."
+        },
+        {
+          "line": 1166,
+          "speaker": null,
+          "text": "Lucan signals his boatman to come ashore. The governor looks at the waiting food before opening the gate."
+        },
+        {
+          "line": 1168,
+          "speaker": "GOVERNOR",
+          "text": "One week. You both stay with her. She goes nowhere near the wards."
+        },
+        {
+          "line": 1171,
+          "speaker": null,
+          "text": "Hest is through the gate before he finishes. Lucan stays beside Tessa as prisoners begin unloading the food."
+        }
+      ]
+    },
+    {
+      "id": "S028",
+      "chapter": 5,
+      "heading": "INT. RIVER CAMP - INFIRMARY - CONTINUOUS",
+      "line": 1173,
+      "end": 1193,
+      "blocks": [
+        {
+          "line": 1175,
+          "speaker": null,
+          "text": "Orren tries to stand. Hest catches him as his leg gives way, holding him against her."
+        },
+        {
+          "line": 1177,
+          "speaker": null,
+          "text": "While Hest holds Orren, Tessa works at the next bed. Darkness fades from a laborer's arm. Serat brings her a chair."
+        },
+        {
+          "line": 1179,
+          "speaker": null,
+          "text": "At the work call, Orren reaches for his crutches. Hest catches his hand before he can pull himself up."
+        },
+        {
+          "line": 1181,
+          "speaker": "HEST",
+          "text": "You're staying here."
+        },
+        {
+          "line": 1184,
+          "speaker": null,
+          "text": "He watches the door until the guard passes without calling his name. Only then does he let Iven remove the filthy padding from his splint."
+        },
+        {
+          "line": 1186,
+          "speaker": "ORREN",
+          "text": "Have the children been getting enough to eat?"
+        },
+        {
+          "line": 1189,
+          "speaker": "HEST",
+          "text": "Every day. Ada's got new boots. They're all right, Orren."
+        },
+        {
+          "line": 1192,
+          "speaker": null,
+          "text": "He holds her hand while she tells him about them."
+        }
+      ]
+    },
+    {
+      "id": "S029",
+      "chapter": 5,
+      "heading": "EXT. RIVER CAMPS - SUCCESSIVE VISITS",
+      "line": 1194,
+      "end": 1203,
+      "blocks": [
+        {
+          "line": 1196,
+          "speaker": null,
+          "text": "On the next visit, Hest brings Orren's cap. He wears it while Iven fits the new support to his leg."
+        },
+        {
+          "line": 1198,
+          "speaker": null,
+          "text": "Once the week is over and the boat is his again, Lucan returns with Orren's apprentice to the river chart. The boy points out the upper quarry. The other boy was sent there. Lucan circles it, but when his launch reaches the quarry landing, guards turn him back."
+        },
+        {
+          "line": 1200,
+          "speaker": null,
+          "text": "Next morning he waits across the channel with a boatman from that quarry. A work barge emerges before the guards change. The boatman points out a boy at its winch."
+        },
+        {
+          "line": 1202,
+          "speaker": null,
+          "text": "Lucan calls his name. The boy lifts his head; the guard beside him pulls him back from the rail. Lucan follows the barge in his launch until he has seen where it unloads."
+        }
+      ]
+    },
+    {
+      "id": "S030",
+      "chapter": 5,
+      "heading": "INT. RIVER CAMP - INFIRMARY - EVENING",
+      "line": 1204,
+      "end": 1236,
+      "blocks": [
+        {
+          "line": 1206,
+          "speaker": null,
+          "text": "Lucan puts that landing on the chart for Orren. The apprentice leans over it, smiling for the first time."
+        },
+        {
+          "line": 1208,
+          "speaker": "APPRENTICE",
+          "text": "He always said he'd run away to sea."
+        },
+        {
+          "line": 1211,
+          "speaker": "ORREN",
+          "text": "His mother would have brought him back by the ear."
+        },
+        {
+          "line": 1214,
+          "speaker": null,
+          "text": "Lucan laughs with them. Tessa sketches him from the next bed."
+        },
+        {
+          "line": 1216,
+          "speaker": "LUCAN",
+          "text": "He had this enormous cap on. Kept pushing it up to see who was calling him."
+        },
+        {
+          "line": 1219,
+          "speaker": null,
+          "text": "When he notices the sketch, he straightens his coat and settles into a pose. Tessa lowers her pencil."
+        },
+        {
+          "line": 1221,
+          "speaker": "TESSA",
+          "text": "Go on with the story."
+        },
+        {
+          "line": 1224,
+          "speaker": "LUCAN",
+          "text": "I thought you wanted me to sit still."
+        },
+        {
+          "line": 1227,
+          "speaker": null,
+          "text": "She turns the page toward him: his head thrown back, laughing. He leans closer, forgetting the pose."
+        },
+        {
+          "line": 1229,
+          "speaker": "LUCAN",
+          "text": "Could I keep that one?"
+        },
+        {
+          "line": 1232,
+          "speaker": "TESSA",
+          "text": "When I've finished."
+        },
+        {
+          "line": 1235,
+          "speaker": null,
+          "text": "He stays on the stool while she works, listening to Orren and the apprentice argue about the cap."
+        }
+      ]
+    },
+    {
+      "id": "S031",
+      "chapter": 5,
+      "heading": "EXT. NORTHERN GRAIN WHARF - AUTUMN MORNING",
+      "line": 1237,
+      "end": 1262,
+      "blocks": [
+        {
+          "line": 1239,
+          "speaker": null,
+          "text": "Loaded barges wait for the army's tallymen. Lucan stands on his launch between the bargemen and the waiting carts, with letters from the prisoners' families spread across a hatch."
+        },
+        {
+          "line": 1241,
+          "speaker": "BARGEMAN",
+          "text": "My license feeds six people. Will you feed them when they take it?"
+        },
+        {
+          "line": 1244,
+          "speaker": null,
+          "text": "Lucan looks down the wharf at his household's loaded supply cart."
+        },
+        {
+          "line": 1246,
+          "speaker": "LUCAN",
+          "text": "For as long as that lasts."
+        },
+        {
+          "line": 1249,
+          "speaker": "BARGEMAN",
+          "text": "And then?"
+        },
+        {
+          "line": 1252,
+          "speaker": null,
+          "text": "Lucan has no answer he can offer him. The man climbs aboard and casts off. Two more crews follow; the others stay tied to the wharf."
+        },
+        {
+          "line": 1254,
+          "speaker": null,
+          "text": "Three days later, grain is still under tarpaulins on the same boats. A royal messenger arrives with a one-day exchange order. Lucan finds the quarry apprentice missing from it."
+        },
+        {
+          "line": 1256,
+          "speaker": null,
+          "text": "He takes the messenger to his launch and gives him its ownership papers, keeping the release list."
+        },
+        {
+          "line": 1258,
+          "speaker": "LUCAN",
+          "text": "He comes too. Tell the governor he gets the boat after the boy crosses."
+        },
+        {
+          "line": 1261,
+          "speaker": null,
+          "text": "The messenger looks over the hull before taking the offer back."
+        }
+      ]
+    },
+    {
+      "id": "S032",
+      "chapter": 6,
+      "heading": "EXT. HARROW FORD - COVERED BRIDGE - DAY",
+      "line": 1263,
+      "end": 1304,
+      "blocks": [
+        {
+          "line": 1265,
+          "speaker": null,
+          "text": "A clock stands above the northern tollhouse. Below it, Mara and northern engineers finish inspecting the bridge's empty charge housings. A southern inspector checks two wagons of returned tools with MARREN, the northern stores clerk. They seal the loads and keep matching copies of the cargo numbers."
+        },
+        {
+          "line": 1267,
+          "speaker": null,
+          "text": "Tessa finds Orren and both apprentices on the release list."
+        },
+        {
+          "line": 1269,
+          "speaker": "TESSA",
+          "text": "All three?"
+        },
+        {
+          "line": 1272,
+          "speaker": "LUCAN",
+          "text": "Yes. The governor gets my launch as soon as that boy's across."
+        },
+        {
+          "line": 1275,
+          "speaker": null,
+          "text": "On the northern bank, people have begun packing. One woman is trying to secure a young tree between her bedding and a trunk."
+        },
+        {
+          "line": 1277,
+          "speaker": "TESSA",
+          "text": "Are you going to be able to do this again?"
+        },
+        {
+          "line": 1280,
+          "speaker": "LUCAN",
+          "text": "Let me get through tomorrow. I don't know how much longer the crews will wait."
+        },
+        {
+          "line": 1283,
+          "speaker": null,
+          "text": "Mara takes the inspector's copy: tool wagons behind the last medical carts, just before four. Marren locks the shed and gives its key to the night guard."
+        },
+        {
+          "line": 1285,
+          "speaker": null,
+          "text": "Iven joins them from the medical carts."
+        },
+        {
+          "line": 1287,
+          "speaker": "IVEN",
+          "text": "Hest wants to bring the children. Shall I tell her yes?"
+        },
+        {
+          "line": 1290,
+          "speaker": null,
+          "text": "Tessa turns to Lucan."
+        },
+        {
+          "line": 1292,
+          "speaker": "TESSA",
+          "text": "You'll be with us? The whole way?"
+        },
+        {
+          "line": 1295,
+          "speaker": "LUCAN",
+          "text": "Beside Orren's cart. I'll walk them across myself."
+        },
+        {
+          "line": 1298,
+          "speaker": null,
+          "text": "She gives Iven the list."
+        },
+        {
+          "line": 1300,
+          "speaker": "TESSA",
+          "text": "Tell her they're coming home. All three."
+        },
+        {
+          "line": 1303,
+          "speaker": null,
+          "text": "Iven carries the list to Hest. Lucan helps the woman settle her sapling among her belongings."
+        }
+      ]
+    },
+    {
+      "id": "S033",
+      "chapter": 6,
+      "heading": "INT. VALCAIR'S WAR ROOM - NIGHT",
+      "line": 1305,
+      "end": 1369,
+      "blocks": [
+        {
+          "line": 1307,
+          "speaker": null,
+          "text": "Vask lays the winter agreement beside reports from the grain wharf. Supply carts have returned empty; several towns are withholding their recruits as well."
+        },
+        {
+          "line": 1309,
+          "speaker": "VALCAIR",
+          "text": "He used the household stores to keep those crews ashore?"
+        },
+        {
+          "line": 1312,
+          "speaker": "VASK",
+          "text": "For three days. They'll unload once the families are through. Give him the winter agreement and they'll keep supplying us."
+        },
+        {
+          "line": 1315,
+          "speaker": null,
+          "text": "Valcair looks at the map, where only Bellweir has a northern marker."
+        },
+        {
+          "line": 1317,
+          "speaker": "VALCAIR",
+          "text": "He hasn't asked them to give up a single fort."
+        },
+        {
+          "line": 1320,
+          "speaker": "VASK",
+          "text": "We'd still hold Bellweir."
+        },
+        {
+          "line": 1323,
+          "speaker": "VALCAIR",
+          "text": "Then we sit at Bellweir while they keep the other two forts and the summoning chamber."
+        },
+        {
+          "line": 1326,
+          "speaker": "VASK",
+          "text": "I'm asking you for one winter."
+        },
+        {
+          "line": 1329,
+          "speaker": null,
+          "text": "Valcair pulls the cargo list out from beneath the agreement."
+        },
+        {
+          "line": 1331,
+          "speaker": "VALCAIR",
+          "text": "These two wagons. Hide the charges behind the southern ward plates."
+        },
+        {
+          "line": 1334,
+          "speaker": null,
+          "text": "Vask finds them on the schedule, behind the infirmary carts."
+        },
+        {
+          "line": 1336,
+          "speaker": "VASK",
+          "text": "Our families will be on that bridge."
+        },
+        {
+          "line": 1339,
+          "speaker": "VALCAIR",
+          "text": "Rovel guaranteed their safety. Let the towns ask Rovel what happened."
+        },
+        {
+          "line": 1342,
+          "speaker": null,
+          "text": "Vask pushes the list away."
+        },
+        {
+          "line": 1344,
+          "speaker": "VASK",
+          "text": "My men are waiting for their families. You expect me to tell them it was Rovel's wards?"
+        },
+        {
+          "line": 1347,
+          "speaker": "VALCAIR",
+          "text": "I expect you to take the forts. Tell me how you do that without recruits."
+        },
+        {
+          "line": 1350,
+          "speaker": null,
+          "text": "Vask looks at the unsigned winter agreement."
+        },
+        {
+          "line": 1352,
+          "speaker": "VASK",
+          "text": "I wrote to the families after Bellweir. I told them their children would have the river."
+        },
+        {
+          "line": 1355,
+          "speaker": null,
+          "text": "She pulls the wagon list back."
+        },
+        {
+          "line": 1357,
+          "speaker": "VASK",
+          "text": "My engineers will do it. The captains hear that the southern wards failed."
+        },
+        {
+          "line": 1360,
+          "speaker": null,
+          "text": "Vask marks four o'clock beside the wagon numbers. Valcair writes Lucan's recall: leave the ford before four by the northern road; report to him that evening."
+        },
+        {
+          "line": 1362,
+          "speaker": "VASK",
+          "text": "You can keep your son off it."
+        },
+        {
+          "line": 1365,
+          "speaker": "VALCAIR",
+          "text": "Get him clear before four."
+        },
+        {
+          "line": 1368,
+          "speaker": null,
+          "text": "Vask tears the two wagon numbers from the list and puts them in her pocket. The winter agreement stays unsigned."
+        }
+      ]
+    },
+    {
+      "id": "S034",
+      "chapter": 6,
+      "heading": "INT. RETURN-CARGO SHED - BEFORE DAWN",
+      "line": 1370,
+      "end": 1381,
+      "blocks": [
+        {
+          "line": 1372,
+          "speaker": null,
+          "text": "The two sealed wagons are recalled to have their axles replaced. Marren records Vask's order, but her guards keep him outside while the engineers cut the numbered seals."
+        },
+        {
+          "line": 1374,
+          "speaker": null,
+          "text": "They fasten charges beneath the floors and hide them behind captured southern ward plates. The tools go back on top."
+        },
+        {
+          "line": 1376,
+          "speaker": null,
+          "text": "Vask hands Marren a signed clearance: repaired and reinspected. Both wagons still have their old axles. She waits while he countersigns, then takes the certified copy."
+        },
+        {
+          "line": 1378,
+          "speaker": null,
+          "text": "He keeps his first inspection beneath the duplicate she leaves him."
+        },
+        {
+          "line": 1380,
+          "speaker": null,
+          "text": "The wagons return to the crossing line. The courier carrying Lucan's recall rides ahead of them."
+        }
+      ]
+    },
+    {
+      "id": "S035",
+      "chapter": 6,
+      "heading": "EXT. HARROW FORD - COVERED BRIDGE - DAY",
+      "line": 1382,
+      "end": 1448,
+      "blocks": [
+        {
+          "line": 1384,
+          "speaker": null,
+          "text": "Hest and the children walk beside Orren's stretcher cart."
+        },
+        {
+          "line": 1386,
+          "speaker": "ORREN",
+          "text": "I'm sleeping upstairs. Put a chair on the landing and I'll manage."
+        },
+        {
+          "line": 1389,
+          "speaker": null,
+          "text": "Iven checks the apprentices' belongings while Lucan walks beside Orren. The royal courier calls Lucan back from the bridge entrance."
+        },
+        {
+          "line": 1391,
+          "speaker": "LUCAN",
+          "text": "I'll catch up."
+        },
+        {
+          "line": 1394,
+          "speaker": null,
+          "text": "Tessa stays with Iven as Lucan goes to the waiting rider."
+        },
+        {
+          "line": 1396,
+          "speaker": null,
+          "text": "A sentry stops the tool wagons at their changed seals. The duty officer checks Vask's clearance against the register and waves them through."
+        },
+        {
+          "line": 1398,
+          "speaker": null,
+          "text": "As the wagons reach midspan, Orren's cart nears the southern stone pier. A northern family passes them in the other direction."
+        },
+        {
+          "line": 1400,
+          "speaker": null,
+          "text": "Lucan reads the recall at the north end, then looks at the tollhouse clock. Tessa and Iven are already across most of the bridge."
+        },
+        {
+          "line": 1402,
+          "speaker": null,
+          "text": "He pockets the order and dismisses the courier."
+        },
+        {
+          "line": 1404,
+          "speaker": null,
+          "text": "He stops to help a man retrieve a fallen crutch."
+        },
+        {
+          "line": 1406,
+          "speaker": null,
+          "text": "The clock strikes four."
+        },
+        {
+          "line": 1408,
+          "speaker": null,
+          "text": "The deck bursts beneath the tool wagons. They plunge through it, taking the roof and middle span with them."
+        },
+        {
+          "line": 1410,
+          "speaker": null,
+          "text": "Only the buckled southern end holds, caught on a bent iron brace. Orren's cart skids beneath a falling roof beam."
+        },
+        {
+          "line": 1412,
+          "speaker": null,
+          "text": "Tessa's sanctuary catches the beam above the cart. Renn's leg is trapped beneath the broken axle."
+        },
+        {
+          "line": 1414,
+          "speaker": null,
+          "text": "Mara and a soldier heave the shaft up while Iven crawls in to free him."
+        },
+        {
+          "line": 1416,
+          "speaker": "IVEN",
+          "text": "Take him, Hest. I've got his foot clear."
+        },
+        {
+          "line": 1419,
+          "speaker": null,
+          "text": "Hest pulls Renn clear. Mara and the soldier carry Orren's stretcher onto stone, where Ada and the apprentices wait."
+        },
+        {
+          "line": 1421,
+          "speaker": null,
+          "text": "As Iven follows, the iron brace begins tearing loose. The deck tips, sliding him toward the gorge."
+        },
+        {
+          "line": 1423,
+          "speaker": null,
+          "text": "Tessa kneels on the broken planking beside the pier and catches his wrist in both hands. Her sanctuary still holds the beam."
+        },
+        {
+          "line": 1425,
+          "speaker": null,
+          "text": "Mara braces against the stone and grips Tessa's waist."
+        },
+        {
+          "line": 1427,
+          "speaker": null,
+          "text": "Iven's free hand closes over the edge."
+        },
+        {
+          "line": 1429,
+          "speaker": "TESSA",
+          "text": "Mara, he's got it. Pull!"
+        },
+        {
+          "line": 1432,
+          "speaker": null,
+          "text": "The planking gives way. Mara hauls Tessa back onto stone; Iven's wrist slips from her grip."
+        },
+        {
+          "line": 1434,
+          "speaker": null,
+          "text": "She catches his sleeve. It tears at the shoulder."
+        },
+        {
+          "line": 1436,
+          "speaker": null,
+          "text": "She drops the beam onto the empty cart and throws her light beneath Iven. The falling deck smashes through it."
+        },
+        {
+          "line": 1438,
+          "speaker": null,
+          "text": "Timber and water close over him."
+        },
+        {
+          "line": 1440,
+          "speaker": null,
+          "text": "Tessa fights Mara's grip, trying to reach the edge."
+        },
+        {
+          "line": 1442,
+          "speaker": "TESSA",
+          "text": "Get off me! Iven!"
+        },
+        {
+          "line": 1445,
+          "speaker": null,
+          "text": "A section of roof rolls over in the water. Nothing surfaces beneath it."
+        },
+        {
+          "line": 1447,
+          "speaker": null,
+          "text": "Across the gap, Lucan shouts for ropes. Tessa keeps calling Iven."
+        }
+      ]
+    },
+    {
+      "id": "S036",
+      "chapter": 6,
+      "heading": "EXT. HARROW FORD - SOUTH BANK - LATE AFTERNOON",
+      "line": 1449,
+      "end": 1515,
+      "blocks": [
+        {
+          "line": 1451,
+          "speaker": null,
+          "text": "When Lucan steps off a search boat, Tessa comes down the bank to meet him, Iven's sleeve in her fist. Mara follows."
+        },
+        {
+          "line": 1453,
+          "speaker": "TESSA",
+          "text": "Where were you?"
+        },
+        {
+          "line": 1456,
+          "speaker": "LUCAN",
+          "text": "My father sent a rider. He wanted--"
+        },
+        {
+          "line": 1459,
+          "speaker": "TESSA",
+          "text": "You said you'd be with us."
+        },
+        {
+          "line": 1462,
+          "speaker": null,
+          "text": "Tessa snatches the recall as he takes it out. LEAVE BEFORE FOUR, BY THE NORTHERN ROAD."
+        },
+        {
+          "line": 1464,
+          "speaker": "TESSA",
+          "text": "He told you to leave."
+        },
+        {
+          "line": 1467,
+          "speaker": "LUCAN",
+          "text": "He wanted a report. I thought--"
+        },
+        {
+          "line": 1470,
+          "speaker": "TESSA",
+          "text": "Before four. Before the wagons got there. Did you know?"
+        },
+        {
+          "line": 1473,
+          "speaker": "LUCAN",
+          "text": "No. Tessa, I didn't know."
+        },
+        {
+          "line": 1476,
+          "speaker": "TESSA",
+          "text": "You let me tell Hest it was safe."
+        },
+        {
+          "line": 1479,
+          "speaker": "LUCAN",
+          "text": "I believed him too."
+        },
+        {
+          "line": 1482,
+          "speaker": null,
+          "text": "She steps back as he reaches for her arm."
+        },
+        {
+          "line": 1484,
+          "speaker": "TESSA",
+          "text": "Don't touch me!"
+        },
+        {
+          "line": 1487,
+          "speaker": null,
+          "text": "Soldiers turn at the shout. Mara blocks an officer coming from the landing."
+        },
+        {
+          "line": 1489,
+          "speaker": null,
+          "text": "The recall crumples in Tessa's fist."
+        },
+        {
+          "line": 1491,
+          "speaker": "TESSA",
+          "text": "He had time to get you off that bridge while Iven was still standing beside me."
+        },
+        {
+          "line": 1494,
+          "speaker": "LUCAN",
+          "text": "I stayed. I was still there when it fell."
+        },
+        {
+          "line": 1497,
+          "speaker": "TESSA",
+          "text": "You weren't beside us. I was looking for you."
+        },
+        {
+          "line": 1500,
+          "speaker": null,
+          "text": "At a shout from the water, Tessa hurries to the edge. An empty cart bobs in the branches."
+        },
+        {
+          "line": 1502,
+          "speaker": null,
+          "text": "Lucan follows. She turns on him."
+        },
+        {
+          "line": 1504,
+          "speaker": "TESSA",
+          "text": "Go. Please just go."
+        },
+        {
+          "line": 1507,
+          "speaker": "MARA",
+          "text": "Send anything you find to me. Stay out of our camp."
+        },
+        {
+          "line": 1510,
+          "speaker": null,
+          "text": "Lucan sends his men back to the search and returns to the boat."
+        },
+        {
+          "line": 1512,
+          "speaker": null,
+          "text": "Tessa pockets the recall and stays at the edge, Iven's sleeve in her hand."
+        },
+        {
+          "line": 1514,
+          "speaker": null,
+          "text": "Downriver, the woman with the sapling smooths her husband's coat over his body. Their surviving son holds the little tree."
+        }
+      ]
+    },
+    {
+      "id": "S037",
+      "chapter": 6,
+      "heading": "INT. RELIEF CAMP - NIGHT",
+      "line": 1516,
+      "end": 1554,
+      "blocks": [
+        {
+          "line": 1518,
+          "speaker": null,
+          "text": "Tessa sits beside the screen around Iven's body, his coat across her knees. She tries to fit the torn sleeve to its shoulder."
+        },
+        {
+          "line": 1520,
+          "speaker": null,
+          "text": "Mara reaches for a corner to help. Tessa pulls it away."
+        },
+        {
+          "line": 1522,
+          "speaker": "TESSA",
+          "text": "Leave it. I'm doing it."
+        },
+        {
+          "line": 1525,
+          "speaker": null,
+          "text": "Mara sits on the other stool. For a while there is only the sound of the search parties arriving outside."
+        },
+        {
+          "line": 1527,
+          "speaker": "TESSA",
+          "text": "He had his hand on the edge. You saw him. We only had to pull once more."
+        },
+        {
+          "line": 1530,
+          "speaker": "MARA",
+          "text": "The boards were going. I couldn't hold you both."
+        },
+        {
+          "line": 1533,
+          "speaker": "TESSA",
+          "text": "I know about the boards!"
+        },
+        {
+          "line": 1536,
+          "speaker": null,
+          "text": "Mara says nothing."
+        },
+        {
+          "line": 1538,
+          "speaker": "TESSA",
+          "text": "He was looking at me. He thought I had him."
+        },
+        {
+          "line": 1541,
+          "speaker": null,
+          "text": "Tessa presses the sleeve against her mouth and turns toward the screen."
+        },
+        {
+          "line": 1543,
+          "speaker": "TESSA",
+          "text": "Don't let them take him away yet."
+        },
+        {
+          "line": 1546,
+          "speaker": null,
+          "text": "Mara sits beside her and holds the coat while Tessa cries into the sleeve."
+        },
+        {
+          "line": 1548,
+          "speaker": null,
+          "text": "Outside, Hest fills bowls for the northern searchers. A guard tries to stop them entering the camp."
+        },
+        {
+          "line": 1550,
+          "speaker": "HEST",
+          "text": "That one went into the river after Iven. Move."
+        },
+        {
+          "line": 1553,
+          "speaker": null,
+          "text": "She takes a bowl past the guard. The searcher's hands shake around it."
+        }
+      ]
+    },
+    {
+      "id": "S038",
+      "chapter": 7,
+      "heading": "INT. NORTHERN STORES OFFICE - TWO WEEKS AFTER HARROW",
+      "line": 1555,
+      "end": 1601,
+      "blocks": [
+        {
+          "line": 1557,
+          "speaker": null,
+          "text": "Lucan lays his crossing schedule in front of MARREN, the clerk who inspected the wagons. Two cargo numbers have been circled."
+        },
+        {
+          "line": 1559,
+          "speaker": "LUCAN",
+          "text": "Who reopened them?"
+        },
+        {
+          "line": 1562,
+          "speaker": "MARREN",
+          "text": "They needed axles."
+        },
+        {
+          "line": 1565,
+          "speaker": "LUCAN",
+          "text": "Then show me the old ones."
+        },
+        {
+          "line": 1568,
+          "speaker": null,
+          "text": "Marren looks toward the inner office. Through its open door, an officer has stopped writing."
+        },
+        {
+          "line": 1570,
+          "speaker": "MARREN",
+          "text": "The repairs were certified. I entered them."
+        },
+        {
+          "line": 1573,
+          "speaker": null,
+          "text": "Lucan lowers his voice."
+        },
+        {
+          "line": 1575,
+          "speaker": "LUCAN",
+          "text": "Did you actually see the repair?"
+        },
+        {
+          "line": 1578,
+          "speaker": null,
+          "text": "Vask comes out before Marren answers."
+        },
+        {
+          "line": 1580,
+          "speaker": "VASK",
+          "text": "He's given his statement. I'll have it copied for you."
+        },
+        {
+          "line": 1583,
+          "speaker": "LUCAN",
+          "text": "He was about to answer me."
+        },
+        {
+          "line": 1586,
+          "speaker": "VASK",
+          "text": "He has work to do. Take the copy."
+        },
+        {
+          "line": 1589,
+          "speaker": null,
+          "text": "Marren moves back to his desk. Lucan stays long enough to see him pick up the pen, then leaves without the copy."
+        },
+        {
+          "line": 1591,
+          "speaker": null,
+          "text": "Vask closes the outer door."
+        },
+        {
+          "line": 1593,
+          "speaker": "VASK",
+          "text": "Pack your things. You're going to the upper stores tonight."
+        },
+        {
+          "line": 1596,
+          "speaker": "MARREN",
+          "text": "My wife doesn't even know--"
+        },
+        {
+          "line": 1599,
+          "speaker": "VASK",
+          "text": "We'll send her the address."
+        }
+      ]
+    },
+    {
+      "id": "S039",
+      "chapter": 7,
+      "heading": "EXT. NORTHERN RIVER TOWN - WEEKS LATER",
+      "line": 1602,
+      "end": 1611,
+      "blocks": [
+        {
+          "line": 1604,
+          "speaker": null,
+          "text": "A notice naming the dead hangs beside a royal account of Harrow: SOUTHERN WARDS FAILED DURING SAFE PASSAGE."
+        },
+        {
+          "line": 1606,
+          "speaker": null,
+          "text": "Outside the recruiting hall, the woman with the sapling helps her son into his father's coat. He reads the notice."
+        },
+        {
+          "line": 1608,
+          "speaker": null,
+          "text": "Inside, he gives his name. The recruiter crosses out his earlier refusal."
+        },
+        {
+          "line": 1610,
+          "speaker": null,
+          "text": "His mother stays by the door until the next recruit takes his place."
+        }
+      ]
+    },
+    {
+      "id": "S040",
+      "chapter": 7,
+      "heading": "EXT. OCCUPIED MILL TOWN - WINTER - DAY",
+      "line": 1612,
+      "end": 1636,
+      "blocks": [
+        {
+          "line": 1614,
+          "speaker": null,
+          "text": "SUPER: THREE MONTHS AFTER HARROW"
+        },
+        {
+          "line": 1616,
+          "speaker": null,
+          "text": "Tessa's sanctuary spans the street above an evacuation column, turning falling tiles into the gutters. OLAN brings out the last family, his shield fitted to the fingers he has left."
+        },
+        {
+          "line": 1618,
+          "speaker": null,
+          "text": "A black barrier seals the road ahead. Mara gets the carts beneath a stone loading arch; Tessa lets her shelter go and attacks the barrier."
+        },
+        {
+          "line": 1620,
+          "speaker": null,
+          "text": "White light opens a gap, almost wide enough for a cart. A wardkeeper at the tower window raises both arms; black light pushes the opening closed despite Tessa's continuing light. Mara holds the driver back."
+        },
+        {
+          "line": 1622,
+          "speaker": "ELIN",
+          "text": "At the window!"
+        },
+        {
+          "line": 1625,
+          "speaker": null,
+          "text": "Tessa redirects her light toward him. The wardkeeper ducks behind the masonry; the road stays sealed."
+        },
+        {
+          "line": 1627,
+          "speaker": "MARA",
+          "text": "There's a back street. We'd have to leave the carts."
+        },
+        {
+          "line": 1630,
+          "speaker": null,
+          "text": "Tessa looks at the people who would have to be carried, then at the now-empty window."
+        },
+        {
+          "line": 1632,
+          "speaker": "TESSA",
+          "text": "Keep the carts here. Olan, get me to the tower."
+        },
+        {
+          "line": 1635,
+          "speaker": null,
+          "text": "Olan covers Tessa with his shield as she clears the smaller ward across the side entrance. They squeeze through together."
+        }
+      ]
+    },
+    {
+      "id": "S041",
+      "chapter": 7,
+      "heading": "INT. CURSE TOWER - CONTINUOUS",
+      "line": 1637,
+      "end": 1654,
+      "blocks": [
+        {
+          "line": 1639,
+          "speaker": null,
+          "text": "They climb the narrow stair, Tessa's drawn sword low behind Olan's shield."
+        },
+        {
+          "line": 1641,
+          "speaker": null,
+          "text": "From the top step, Tessa sees the wardkeeper behind the window's thick wall, dark light gathered between his hands. Outside, the road is still sealed."
+        },
+        {
+          "line": 1643,
+          "speaker": null,
+          "text": "Her light strips his armor ward. He drops the road spell, draws his sword and rushes them."
+        },
+        {
+          "line": 1645,
+          "speaker": null,
+          "text": "His blow drives Olan back toward the stairwell. Before he can get around the shield, Tessa thrusts into the side of his neck."
+        },
+        {
+          "line": 1647,
+          "speaker": null,
+          "text": "He catches her wrist as his sword falls. Olan holds him back while she pulls her blade free."
+        },
+        {
+          "line": 1649,
+          "speaker": null,
+          "text": "He collapses beside the stair."
+        },
+        {
+          "line": 1651,
+          "speaker": null,
+          "text": "Below the window, the first cart passes beneath the empty gateway. Mara calls for the next."
+        },
+        {
+          "line": 1653,
+          "speaker": null,
+          "text": "Tessa cannot let go of the hilt. Olan sits her on a step, away from the body, and checks below."
+        }
+      ]
+    },
+    {
+      "id": "S042",
+      "chapter": 7,
+      "heading": "EXT. MILL TOWN - LATER",
+      "line": 1655,
+      "end": 1683,
+      "blocks": [
+        {
+          "line": 1657,
+          "speaker": null,
+          "text": "In the cart, Tessa keeps missing the scabbard. When Mara reaches for her wrist, she jerks away."
+        },
+        {
+          "line": 1659,
+          "speaker": null,
+          "text": "Mara withdraws. Blood has dried between Tessa's fingers."
+        },
+        {
+          "line": 1661,
+          "speaker": "TESSA",
+          "text": "Take it."
+        },
+        {
+          "line": 1664,
+          "speaker": null,
+          "text": "Mara sheathes the sword and unhooks its belt, putting it beneath the seat."
+        },
+        {
+          "line": 1666,
+          "speaker": "TESSA",
+          "text": "I want Iven."
+        },
+        {
+          "line": 1669,
+          "speaker": null,
+          "text": "Mara sits on the step of the cart. Olan waits with the unhitched horse."
+        },
+        {
+          "line": 1671,
+          "speaker": null,
+          "text": "Tessa rubs the marks on her wrist."
+        },
+        {
+          "line": 1673,
+          "speaker": "TESSA",
+          "text": "The man in the tower was pushing Olan toward the stairs."
+        },
+        {
+          "line": 1676,
+          "speaker": "MARA",
+          "text": "You saved him."
+        },
+        {
+          "line": 1679,
+          "speaker": "TESSA",
+          "text": "I can still feel his hand."
+        },
+        {
+          "line": 1682,
+          "speaker": null,
+          "text": "Mara climbs up when Tessa makes room. After a while, Tessa reaches for her hand."
+        }
+      ]
+    },
+    {
+      "id": "S043",
+      "chapter": 7,
+      "heading": "EXT. RIVER PROVINCES - CHANGING SEASONS",
+      "line": 1684,
+      "end": 1710,
+      "blocks": [
+        {
+          "line": 1686,
+          "speaker": null,
+          "text": "Spring. From a bell tower, Tessa fills a lingering curse-cloud with white light. Sunlight reaches the streets. Mara helps her stand as people emerge below."
+        },
+        {
+          "line": 1688,
+          "speaker": null,
+          "text": "At the fortified upper stores, Lucan is refused entry. The guard returns his letter unopened. Marren watches from a high window until someone draws him away."
+        },
+        {
+          "line": 1690,
+          "speaker": null,
+          "text": "The following year, summer. Tessa reaches the last of three attacked villages after its defenders have withdrawn. She searches empty houses before putting away the drawing she began on her previous visit."
+        },
+        {
+          "line": 1692,
+          "speaker": null,
+          "text": "Lucan waits outside the stores with Marren's wife. Her parcel comes back unopened too. She takes it from him and walks away before he can promise to try again."
+        },
+        {
+          "line": 1694,
+          "speaker": null,
+          "text": "Winter. Southern flags rise above the river towns. At the upper stores, troops load their supplies onto barges for retreat."
+        },
+        {
+          "line": 1696,
+          "speaker": null,
+          "text": "Lucan's former boatman finds him at a wharf, repairing the patched hull of a hired fishing boat with Serat."
+        },
+        {
+          "line": 1698,
+          "speaker": "BOATMAN",
+          "text": "They're moving your clerk tomorrow. On the stores barge, under guard."
+        },
+        {
+          "line": 1701,
+          "speaker": null,
+          "text": "Lucan straightens. The river chart spread beside the boat is worn through at that landing."
+        },
+        {
+          "line": 1703,
+          "speaker": "LUCAN",
+          "text": "Which patrol goes with it?"
+        },
+        {
+          "line": 1706,
+          "speaker": "BOATMAN",
+          "text": "Two boats. You can't outrun them in this."
+        },
+        {
+          "line": 1709,
+          "speaker": null,
+          "text": "Lucan studies the narrow channel behind the landing, then looks at the water rising against the wharf. Serat sends his brother to fetch Marren's wife before the guards can reach her."
+        }
+      ]
+    },
+    {
+      "id": "S044",
+      "chapter": 8,
+      "heading": "EXT. UPPER STORES - RIVER LANDING - DAWN",
+      "line": 1711,
+      "end": 1756,
+      "blocks": [
+        {
+          "line": 1713,
+          "speaker": null,
+          "text": "Lucan brings the fishing boat alongside as clerks carry the last crates onto the stores barge. Serat waits at the oars, wearing a plain coat over his uniform."
+        },
+        {
+          "line": 1715,
+          "speaker": null,
+          "text": "Lucan steps onto the landing. Marren sees him and stops, a box held against his chest."
+        },
+        {
+          "line": 1717,
+          "speaker": "LUCAN",
+          "text": "Put it down. Come with me."
+        },
+        {
+          "line": 1720,
+          "speaker": "MARREN",
+          "text": "I told you what happened."
+        },
+        {
+          "line": 1723,
+          "speaker": "LUCAN",
+          "text": "I haven't come for a statement."
+        },
+        {
+          "line": 1726,
+          "speaker": null,
+          "text": "An escort recognizes Lucan. As he approaches, Marren backs toward the barge."
+        },
+        {
+          "line": 1728,
+          "speaker": "ESCORT",
+          "text": "He's under the general's orders."
+        },
+        {
+          "line": 1731,
+          "speaker": null,
+          "text": "Lucan keeps himself between the two men."
+        },
+        {
+          "line": 1733,
+          "speaker": "LUCAN",
+          "text": "Then tell her I took him. Get out of the way."
+        },
+        {
+          "line": 1736,
+          "speaker": null,
+          "text": "He reaches for Marren, who shoves him away. The escort draws his sword."
+        },
+        {
+          "line": 1738,
+          "speaker": null,
+          "text": "Lucan catches the blade on a loose packing lid. Its edge cuts his forearm before he drives the wood into the escort's face, forcing him back against the stacked crates."
+        },
+        {
+          "line": 1740,
+          "speaker": null,
+          "text": "Marren has dropped his box. Lucan holds out a hand again."
+        },
+        {
+          "line": 1742,
+          "speaker": "LUCAN",
+          "text": "They're going to ask why I came for you. Come now."
+        },
+        {
+          "line": 1745,
+          "speaker": null,
+          "text": "This time Marren takes it."
+        },
+        {
+          "line": 1747,
+          "speaker": null,
+          "text": "They jump aboard as Serat pulls off. Shouts follow them from the quay. The patrol boats turn to cut off the main channel."
+        },
+        {
+          "line": 1749,
+          "speaker": null,
+          "text": "Lucan takes the tiller and steers toward the flooded gap behind the landing. The patrol closes as they enter the narrow cut."
+        },
+        {
+          "line": 1751,
+          "speaker": null,
+          "text": "Lucan lines them up with the low stone arch, then drops beside Marren. Serat pulls the oars inside and ducks. The current carries them through, stone scraping canvas from the repaired gunwale."
+        },
+        {
+          "line": 1753,
+          "speaker": null,
+          "text": "The patrol pulls up short of the arch; its high bow cannot pass. Soldiers scramble onto the bank. A bolt punches through the fishing boat's side as Lucan takes the tiller again, holding it straight until the bend conceals them."
+        },
+        {
+          "line": 1755,
+          "speaker": null,
+          "text": "Marren crouches over the leaking seam with his coat pressed against it. "
+        }
+      ]
+    },
+    {
+      "id": "S045",
+      "chapter": 8,
+      "heading": "INT. CITADEL - NORTH INFIRMARY - MORNING",
+      "line": 1757,
+      "end": 1783,
+      "blocks": [
+        {
+          "line": 1759,
+          "speaker": null,
+          "text": "Marren's wife holds him on the edge of the bed, his soaked boots abandoned beneath it."
+        },
+        {
+          "line": 1761,
+          "speaker": null,
+          "text": "Across the ward, a healer binds the cut along Lucan's forearm. Serat brings him word that the guards are at the gate."
+        },
+        {
+          "line": 1763,
+          "speaker": "SERAT",
+          "text": "They want the clerk. And the men who brought him."
+        },
+        {
+          "line": 1766,
+          "speaker": null,
+          "text": "Lucan waits for the healer to tie the dressing before getting up."
+        },
+        {
+          "line": 1768,
+          "speaker": "LUCAN",
+          "text": "I'll go to my father."
+        },
+        {
+          "line": 1771,
+          "speaker": "SERAT",
+          "text": "They aren't taking anyone out of this ward. My men know that."
+        },
+        {
+          "line": 1774,
+          "speaker": null,
+          "text": "Marren calls Lucan back."
+        },
+        {
+          "line": 1776,
+          "speaker": "MARREN",
+          "text": "I signed it. The second clearance."
+        },
+        {
+          "line": 1779,
+          "speaker": null,
+          "text": "Lucan stays beside the bed. Marren cannot look at his wife."
+        },
+        {
+          "line": 1781,
+          "speaker": "LUCAN",
+          "text": "I'll come back after you've slept."
+        }
+      ]
+    },
+    {
+      "id": "S046",
+      "chapter": 8,
+      "heading": "INT. VALCAIR'S PRIVATE ROOM - NIGHT",
+      "line": 1784,
+      "end": 1842,
+      "blocks": [
+        {
+          "line": 1786,
+          "speaker": null,
+          "text": "Valcair stands beside a chair laid with dry clothes. Lucan comes in with his sleeve cut away around the dressing."
+        },
+        {
+          "line": 1788,
+          "speaker": "VALCAIR",
+          "text": "You attacked an escort."
+        },
+        {
+          "line": 1791,
+          "speaker": "LUCAN",
+          "text": "You wouldn't let me speak to him."
+        },
+        {
+          "line": 1794,
+          "speaker": "VALCAIR",
+          "text": "He certified those wagons. He belongs before a court."
+        },
+        {
+          "line": 1797,
+          "speaker": "LUCAN",
+          "text": "He signed what Vask put in front of him."
+        },
+        {
+          "line": 1800,
+          "speaker": "VALCAIR",
+          "text": "So he says. Bring him here and we can hear it properly."
+        },
+        {
+          "line": 1803,
+          "speaker": null,
+          "text": "Lucan stays by the door."
+        },
+        {
+          "line": 1805,
+          "speaker": "LUCAN",
+          "text": "Were you going to let me walk onto that bridge?"
+        },
+        {
+          "line": 1808,
+          "speaker": null,
+          "text": "His father takes a step toward him."
+        },
+        {
+          "line": 1810,
+          "speaker": "VALCAIR",
+          "text": "I sent a rider for you."
+        },
+        {
+          "line": 1813,
+          "speaker": "LUCAN",
+          "text": "What about everyone else?"
+        },
+        {
+          "line": 1816,
+          "speaker": "VALCAIR",
+          "text": "You were supposed to come home."
+        },
+        {
+          "line": 1819,
+          "speaker": "LUCAN",
+          "text": "You could have stopped the wagons!"
+        },
+        {
+          "line": 1822,
+          "speaker": null,
+          "text": "Valcair stops. Lucan has to press his bandaged arm against his side before he can speak again."
+        },
+        {
+          "line": 1824,
+          "speaker": "LUCAN",
+          "text": "I helped them pack. You let me tell them they were going home."
+        },
+        {
+          "line": 1827,
+          "speaker": "VALCAIR",
+          "text": "And how many will die when the next ruler closes the river? When they bring another Saint against us?"
+        },
+        {
+          "line": 1830,
+          "speaker": null,
+          "text": "Valcair looks toward the dry coat on the chair."
+        },
+        {
+          "line": 1832,
+          "speaker": "VALCAIR",
+          "text": "Send the clerk out before dawn. There will be no further arrests if your men stand aside."
+        },
+        {
+          "line": 1835,
+          "speaker": "LUCAN",
+          "text": "They're patients."
+        },
+        {
+          "line": 1838,
+          "speaker": "VALCAIR",
+          "text": "Then don't make me send soldiers among them."
+        },
+        {
+          "line": 1841,
+          "speaker": null,
+          "text": "Lucan leaves. He does not take the coat."
+        }
+      ]
+    },
+    {
+      "id": "S047",
+      "chapter": 8,
+      "heading": "INT. CITADEL - NORTH INFIRMARY - BEFORE DAWN",
+      "line": 1843,
+      "end": 1878,
+      "blocks": [
+        {
+          "line": 1845,
+          "speaker": null,
+          "text": "Lucan returns to find Serat and four captains waiting. Through the open door, orderlies are moving beds away from the windows."
+        },
+        {
+          "line": 1847,
+          "speaker": "LUCAN",
+          "text": "He wants Marren before dawn. After that, he'll send men in here."
+        },
+        {
+          "line": 1850,
+          "speaker": "CAPTAIN",
+          "text": "Give him the clerk. We can still get our wounded north."
+        },
+        {
+          "line": 1853,
+          "speaker": "LUCAN",
+          "text": "The king's sending men who can stand back into the offensive. How far do you think your wagons will get?"
+        },
+        {
+          "line": 1856,
+          "speaker": "CAPTAIN",
+          "text": "Farther than yours if you stay."
+        },
+        {
+          "line": 1859,
+          "speaker": null,
+          "text": "Lucan steps aside. The captain leaves with another officer, taking their companies with them. Serat watches the men file past the windows. Then he brings his own sergeant in."
+        },
+        {
+          "line": 1861,
+          "speaker": "SERAT",
+          "text": "Barricade the west entrance. Keep the river doors clear."
+        },
+        {
+          "line": 1864,
+          "speaker": null,
+          "text": "Lucan puts the citadel plan on an empty bed."
+        },
+        {
+          "line": 1866,
+          "speaker": "LUCAN",
+          "text": "We'll move the patients into the inner court. If they get through here, we fall back behind them."
+        },
+        {
+          "line": 1869,
+          "speaker": null,
+          "text": "The two remaining captains lean over the plan. One marks a firing position Lucan has missed."
+        },
+        {
+          "line": 1871,
+          "speaker": null,
+          "text": "By daylight the outer gate is under attack. Lucan leaves Serat holding it while he draws a separate plan of the route to his father's hall. He marks the old interior passages; Serat corrects the outer guard positions from his men's reports."
+        },
+        {
+          "line": 1873,
+          "speaker": null,
+          "text": "At the edge, Lucan writes: THE WATCHES HAVE CHANGED. CHECK THE APPROACH."
+        },
+        {
+          "line": 1875,
+          "speaker": null,
+          "text": "He writes to Mara asking her to receive Marren and his wife. His personal letter to Tessa goes in the same packet, sealed separately."
+        },
+        {
+          "line": 1877,
+          "speaker": null,
+          "text": "When Mara's answer comes, Serat's brother takes the couple out through the river doors under cover of another attack on the outer gate. Lucan stays at the barricade."
+        }
+      ]
+    },
+    {
+      "id": "S048",
+      "chapter": 8,
+      "heading": "INT. FORWARD CAMP - EXAMINATION TENT - DAY",
+      "line": 1879,
+      "end": 1939,
+      "blocks": [
+        {
+          "line": 1881,
+          "speaker": null,
+          "text": "Marren and his wife sit with Mara and Elin. Their escorts wait outside. Beside Mara's old inspection copy is the statement Elin has taken; two names are still blank."
+        },
+        {
+          "line": 1883,
+          "speaker": null,
+          "text": "Tessa comes in. He starts to stand, then sits when she does."
+        },
+        {
+          "line": 1885,
+          "speaker": "TESSA",
+          "text": "Why did you sign it?"
+        },
+        {
+          "line": 1888,
+          "speaker": "MARREN",
+          "text": "Vask was standing there, waiting for my name."
+        },
+        {
+          "line": 1891,
+          "speaker": "TESSA",
+          "text": "You hadn't looked inside."
+        },
+        {
+          "line": 1894,
+          "speaker": "MARREN",
+          "text": "She wouldn't let me. I thought if I held it up, she'd put me in a work camp."
+        },
+        {
+          "line": 1897,
+          "speaker": "TESSA",
+          "text": "So you signed."
+        },
+        {
+          "line": 1900,
+          "speaker": null,
+          "text": "His wife reaches for his hand. He leaves it on the table."
+        },
+        {
+          "line": 1902,
+          "speaker": "MARREN",
+          "text": "Yes."
+        },
+        {
+          "line": 1905,
+          "speaker": "TESSA",
+          "text": "Did you see the charges?"
+        },
+        {
+          "line": 1908,
+          "speaker": "MARREN",
+          "text": "No. They kept me outside."
+        },
+        {
+          "line": 1911,
+          "speaker": "ELIN",
+          "text": "The gate officer remembers Vask's seal. He let the wagons through on it."
+        },
+        {
+          "line": 1914,
+          "speaker": "TESSA",
+          "text": "Was Lucan at the shed?"
+        },
+        {
+          "line": 1917,
+          "speaker": "MARREN",
+          "text": "I never saw him there."
+        },
+        {
+          "line": 1920,
+          "speaker": "TESSA",
+          "text": "Had he spoken to Vask before the crossing?"
+        },
+        {
+          "line": 1923,
+          "speaker": "MARREN",
+          "text": "I don't know. He got my wife out too."
+        },
+        {
+          "line": 1926,
+          "speaker": "TESSA",
+          "text": "That was afterward."
+        },
+        {
+          "line": 1929,
+          "speaker": null,
+          "text": "Marren looks toward his wife, then pushes the statement back to Elin."
+        },
+        {
+          "line": 1931,
+          "speaker": "MARREN",
+          "text": "Put my name on it. What I signed, too."
+        },
+        {
+          "line": 1934,
+          "speaker": null,
+          "text": "He signs while Tessa watches. Mara takes him and his wife to their quarters."
+        },
+        {
+          "line": 1936,
+          "speaker": null,
+          "text": "Elin gathers the papers, leaving Lucan's letter where Tessa can reach it."
+        },
+        {
+          "line": 1938,
+          "speaker": null,
+          "text": "After a while, Tessa opens it."
+        }
+      ]
+    },
+    {
+      "id": "S049",
+      "chapter": 8,
+      "heading": "INT. FORWARD COMMAND TENT - NIGHT",
+      "line": 1940,
+      "end": 1987,
+      "blocks": [
+        {
+          "line": 1942,
+          "speaker": null,
+          "text": "Nearly four years after the summoning. Elin opens Lucan's plan beside Olan's rough sketch of the exterior stair and landing."
+        },
+        {
+          "line": 1944,
+          "speaker": "TESSA",
+          "text": "You reached the turn?"
+        },
+        {
+          "line": 1947,
+          "speaker": "OLAN",
+          "text": "Yes, but there are twice as many archers as he's put here. The stair's right."
+        },
+        {
+          "line": 1950,
+          "speaker": null,
+          "text": "Tessa crosses out the old guard count on Lucan's plan and marks Olan's positions."
+        },
+        {
+          "line": 1952,
+          "speaker": "TESSA",
+          "text": "How long can you keep the wardkeepers off the towers?"
+        },
+        {
+          "line": 1955,
+          "speaker": "ORRA",
+          "text": "We can drive them out, but the garrison will bring them back. Watch for the towers lighting again."
+        },
+        {
+          "line": 1958,
+          "speaker": null,
+          "text": "Elin indicates the lever behind the throne on Lucan's plan."
+        },
+        {
+          "line": 1960,
+          "speaker": "ELIN",
+          "text": "He says that will release the entrance ward."
+        },
+        {
+          "line": 1963,
+          "speaker": "TESSA",
+          "text": "Has he seen it since the war started?"
+        },
+        {
+          "line": 1966,
+          "speaker": "ELIN",
+          "text": "No. He used it before. That's all we have."
+        },
+        {
+          "line": 1969,
+          "speaker": null,
+          "text": "Tessa leaves a question mark beside it and turns to the stair. Orra places her reserve below it."
+        },
+        {
+          "line": 1971,
+          "speaker": "ORRA",
+          "text": "Send a runner when you have the hall. Then the reserve can get past that gallery."
+        },
+        {
+          "line": 1974,
+          "speaker": null,
+          "text": "Mara places her company at the bend below it."
+        },
+        {
+          "line": 1976,
+          "speaker": "MARA",
+          "text": "We'll keep the western passage clear behind you."
+        },
+        {
+          "line": 1979,
+          "speaker": null,
+          "text": "Tessa marks the route from Mara's bend to the cover inside the hall."
+        },
+        {
+          "line": 1981,
+          "speaker": "TESSA",
+          "text": "Bring your wounded into the hall when Olan calls. I'll cover the landing."
+        },
+        {
+          "line": 1984,
+          "speaker": null,
+          "text": "Mara assigns two men to bring her wounded up."
+        },
+        {
+          "line": 1986,
+          "speaker": null,
+          "text": "Outside, a healer waits while Tessa fastens Iven's bag, then takes it to the wagons."
+        }
+      ]
+    },
+    {
+      "id": "S050",
+      "chapter": 9,
+      "heading": "EXT. CITADEL - LOWER STAIR - PRE-DAWN",
+      "line": 1988,
+      "end": 2013,
+      "blocks": [
+        {
+          "line": 1990,
+          "speaker": null,
+          "text": "Tessa catches Mara's hand at the buckle of her forearm guard. It is trembling."
+        },
+        {
+          "line": 1992,
+          "speaker": null,
+          "text": "Tessa finishes the fastening."
+        },
+        {
+          "line": 1994,
+          "speaker": "TESSA",
+          "text": "When he calls, you come up. Promise me."
+        },
+        {
+          "line": 1997,
+          "speaker": "MARA",
+          "text": "The wounded go first. Then me."
+        },
+        {
+          "line": 2000,
+          "speaker": null,
+          "text": "When Mara starts to draw away, Tessa catches her wrist."
+        },
+        {
+          "line": 2002,
+          "speaker": "TESSA",
+          "text": "I need you to be there afterward."
+        },
+        {
+          "line": 2005,
+          "speaker": null,
+          "text": "Mara hugs her. Tessa buries her face against the familiar coat."
+        },
+        {
+          "line": 2007,
+          "speaker": null,
+          "text": "Olan signals as the last tower goes dark. Mara holds Tessa a moment longer."
+        },
+        {
+          "line": 2009,
+          "speaker": "MARA",
+          "text": "I'll come when he calls."
+        },
+        {
+          "line": 2012,
+          "speaker": null,
+          "text": "Tessa climbs to Olan. At the turn she looks back. Mara hasn't moved."
+        }
+      ]
+    },
+    {
+      "id": "S051",
+      "chapter": 9,
+      "heading": "EXT. CITADEL - NORTH INFIRMARY COURT - DAWN",
+      "line": 2014,
+      "end": 2024,
+      "blocks": [
+        {
+          "line": 2016,
+          "speaker": null,
+          "text": "Beds fill the covered walkway. At the outer gate, Lucan holds a firing slit with two bowmen while Serat moves the last patients into the court."
+        },
+        {
+          "line": 2018,
+          "speaker": null,
+          "text": "The gate cracks under another blow. Lucan waits for the attackers to bunch in the opening before firing. His men shoot with him, forcing the front rank back against those behind it."
+        },
+        {
+          "line": 2020,
+          "speaker": "SERAT",
+          "text": "They're coming around the laundry!"
+        },
+        {
+          "line": 2023,
+          "speaker": null,
+          "text": "Lucan takes one bowman across the court. He has to leave the gate to the other. Serat puts his shield in the abandoned slit as footsteps begin pounding down the passage on their flank."
+        }
+      ]
+    },
+    {
+      "id": "S052",
+      "chapter": 9,
+      "heading": "INT. CITADEL - INNER LANDING - DAWN",
+      "line": 2025,
+      "end": 2049,
+      "blocks": [
+        {
+          "line": 2027,
+          "speaker": null,
+          "text": "The bronze doors are open, but black light seals the entrance. Tessa works at it from behind Olan's shield, Elin crouched beside him. The hall gradually emerges through the thinning ward."
+        },
+        {
+          "line": 2029,
+          "speaker": null,
+          "text": "A runner staggers up from below."
+        },
+        {
+          "line": 2031,
+          "speaker": "RUNNER",
+          "text": "They've reached the bend. Captain Venn is losing men."
+        },
+        {
+          "line": 2034,
+          "speaker": null,
+          "text": "Through the high window, northern soldiers drive the tower team down the steps. A wardkeeper takes their place. The tower brightens, and Tessa's opening begins to close."
+        },
+        {
+          "line": 2036,
+          "speaker": "ELIN",
+          "text": "Now, Tessa."
+        },
+        {
+          "line": 2039,
+          "speaker": null,
+          "text": "Mara's voice carries up the stair. Tessa takes a step toward it."
+        },
+        {
+          "line": 2041,
+          "speaker": null,
+          "text": "The hall vanishes behind the darkening ward. She turns back, strips off her left glove and presses her palm to the frame."
+        },
+        {
+          "line": 2043,
+          "speaker": "TESSA",
+          "text": "Bring the wounded up behind Olan. I'll cut off the ward from inside."
+        },
+        {
+          "line": 2046,
+          "speaker": null,
+          "text": "Tessa squeezes through a narrow break in the ward. Bolts drive Olan behind his shield with Elin and the first wounded soldier."
+        },
+        {
+          "line": 2048,
+          "speaker": null,
+          "text": "The opening closes behind her."
+        }
+      ]
+    },
+    {
+      "id": "S053",
+      "chapter": 9,
+      "heading": "EXT. CITADEL - LOWER STAIR - CONTINUOUS",
+      "line": 2050,
+      "end": 2055,
+      "blocks": [
+        {
+          "line": 2052,
+          "speaker": null,
+          "text": "At the bend, only two men can reach Mara at once. She sends her last uninjured soldier up with a wounded man and closes the gap he leaves."
+        },
+        {
+          "line": 2054,
+          "speaker": null,
+          "text": "Light flashes in the hall's high windows. Mara braces behind her shield."
+        }
+      ]
+    },
+    {
+      "id": "S054",
+      "chapter": 9,
+      "heading": "INT. CITADEL - THRONE HALL - CONTINUOUS",
+      "line": 2056,
+      "end": 2107,
+      "blocks": [
+        {
+          "line": 2058,
+          "speaker": null,
+          "text": "Valcair blocks the way to the throne, spear lowered. Black light seals the joints of his armor."
+        },
+        {
+          "line": 2060,
+          "speaker": null,
+          "text": "Tessa advances with her sword in her right hand, white light gathered in her left."
+        },
+        {
+          "line": 2062,
+          "speaker": "VALCAIR",
+          "text": "Put the sword down. I can still order them to spare the people on the stair."
+        },
+        {
+          "line": 2065,
+          "speaker": "TESSA",
+          "text": "Your seal was on the bridge."
+        },
+        {
+          "line": 2068,
+          "speaker": null,
+          "text": "White light strips a patch of protection from his chest, exposing the metal."
+        },
+        {
+          "line": 2070,
+          "speaker": null,
+          "text": "He sweeps his free hand toward her, sending a blade of darkness through the paving. Tessa catches it on her sanctuary as broken stone batters the curve. Beyond the debris, his protection closes again."
+        },
+        {
+          "line": 2072,
+          "speaker": null,
+          "text": "He drives his spear along her shelter into a pillar. She cuts around the curve at his elbow; black light turns her blade."
+        },
+        {
+          "line": 2074,
+          "speaker": null,
+          "text": "Each attempt to turn her light on him draws another thrust. Tessa circles the pillars toward the dais, keeping her shelter between them."
+        },
+        {
+          "line": 2076,
+          "speaker": null,
+          "text": "He cuts her off at the steps."
+        },
+        {
+          "line": 2078,
+          "speaker": null,
+          "text": "A two-handed thrust cracks her shelter. Before she can rebuild it, Valcair hooks the shaft behind her knees and pulls her down."
+        },
+        {
+          "line": 2080,
+          "speaker": null,
+          "text": "She hits the floor beside the last pillar, close to the dais. Her sword skids past her left shoulder; as she reaches across for it with her right hand, Valcair drives the spear through that hand and pins it to the stone."
+        },
+        {
+          "line": 2082,
+          "speaker": null,
+          "text": "Tessa cries out and curls toward the trapped wrist. A thin curve of light begins gathering over her."
+        },
+        {
+          "line": 2084,
+          "speaker": null,
+          "text": "Valcair wrenches at the spear. Tessa turns her left palm toward him, abandoning her unfinished shelter. Its light floods across his armor, stripping the black protection."
+        },
+        {
+          "line": 2086,
+          "speaker": null,
+          "text": "He tears the point free, ripping her glove and hand. Tessa snatches the sword with her left hand and rolls toward his feet, her injured hand against her chest."
+        },
+        {
+          "line": 2088,
+          "speaker": null,
+          "text": "The spear strikes where her head was."
+        },
+        {
+          "line": 2090,
+          "speaker": null,
+          "text": "His ward tries to close. Tessa holds the white glare on him and rises inside the spear's reach, driving the blade beneath his raised arm."
+        },
+        {
+          "line": 2092,
+          "speaker": null,
+          "text": "This time it enters."
+        },
+        {
+          "line": 2094,
+          "speaker": null,
+          "text": "Valcair grabs her shoulder, but his knees buckle against the lowest step. His spear falls onto the dais."
+        },
+        {
+          "line": 2096,
+          "speaker": null,
+          "text": "Tessa holds the sword until his grip loosens. Then she backs away, letting the light fade. He is still reaching for the spear."
+        },
+        {
+          "line": 2098,
+          "speaker": null,
+          "text": "Olan shouts beyond the doors."
+        },
+        {
+          "line": 2100,
+          "speaker": null,
+          "text": "At the release behind the throne, Tessa cannot move the lever with her left hand. She leans her weight on it."
+        },
+        {
+          "line": 2102,
+          "speaker": null,
+          "text": "The ward across the entrance fades."
+        },
+        {
+          "line": 2104,
+          "speaker": null,
+          "text": "Olan calls the wounded into the hall and sends the runner to Orra. He catches Tessa as she buckles at the entrance."
+        },
+        {
+          "line": 2106,
+          "speaker": null,
+          "text": "Elin binds the wounded hand with a strip from her sleeve while soldiers take cover around them."
+        }
+      ]
+    },
+    {
+      "id": "S055",
+      "chapter": 9,
+      "heading": "EXT. CITADEL - LOWER STAIR - MORNING",
+      "line": 2108,
+      "end": 2137,
+      "blocks": [
+        {
+          "line": 2110,
+          "speaker": null,
+          "text": "Later. Orra's reserve holds the stair and the gallery above it. Soldiers carry the wounded down while Elin helps Tessa past the broken shields at the bend."
+        },
+        {
+          "line": 2112,
+          "speaker": null,
+          "text": "As a healer covers Mara's face, Tessa catches the cloth and drops beside her."
+        },
+        {
+          "line": 2114,
+          "speaker": "TESSA",
+          "text": "Mara."
+        },
+        {
+          "line": 2117,
+          "speaker": null,
+          "text": "Tessa feels for a pulse with her left hand. The healer kneels beside her."
+        },
+        {
+          "line": 2119,
+          "speaker": "HEALER",
+          "text": "I'm sorry."
+        },
+        {
+          "line": 2122,
+          "speaker": null,
+          "text": "She keeps searching."
+        },
+        {
+          "line": 2124,
+          "speaker": "TESSA",
+          "text": "I opened it. Olan called for you."
+        },
+        {
+          "line": 2127,
+          "speaker": null,
+          "text": "Tessa bends over Mara. Elin supports her bandaged hand while she lowers her forehead to Mara's."
+        },
+        {
+          "line": 2129,
+          "speaker": null,
+          "text": "Orra's guards bring Lucan from the north infirmary with two of Serat's men. His coat is torn and he keeps one arm tight against his ribs. He starts toward Tessa, but Olan blocks him. She turns back to Mara."
+        },
+        {
+          "line": 2131,
+          "speaker": null,
+          "text": "Northern soldiers below raise their weapons. Lucan and his men lay their swords on the steps."
+        },
+        {
+          "line": 2133,
+          "speaker": "LUCAN",
+          "text": "Tell Vask the king is dead and we're standing down. Ask her to open the lower gate for the wounded."
+        },
+        {
+          "line": 2136,
+          "speaker": null,
+          "text": "One officer ties a white cloth to his spear and leaves with Orra's terms. The other carries Lucan's stand-down order to his companies."
+        }
+      ]
+    },
+    {
+      "id": "S056",
+      "chapter": 9,
+      "heading": "INT. NORTH INFIRMARY - DAY",
+      "line": 2138,
+      "end": 2154,
+      "blocks": [
+        {
+          "line": 2140,
+          "speaker": null,
+          "text": "A surgeon unwraps Tessa's hand while Elin holds the lamp. Tessa tries to straighten the fingers. They barely move."
+        },
+        {
+          "line": 2142,
+          "speaker": "TESSA",
+          "text": "Can you fix them?"
+        },
+        {
+          "line": 2145,
+          "speaker": "SURGEON",
+          "text": "I can repair some of it. How much movement you'll get back... we have to give it time."
+        },
+        {
+          "line": 2148,
+          "speaker": null,
+          "text": "Tessa tries again."
+        },
+        {
+          "line": 2150,
+          "speaker": "TESSA",
+          "text": "That's the one I draw with."
+        },
+        {
+          "line": 2153,
+          "speaker": null,
+          "text": "Elin sets down the lamp. Tessa takes her hand and holds on."
+        }
+      ]
+    },
+    {
+      "id": "S057",
+      "chapter": 9,
+      "heading": "EXT. CITADEL - LOWER GATE - EVENING",
+      "line": 2155,
+      "end": 2174,
+      "blocks": [
+        {
+          "line": 2157,
+          "speaker": null,
+          "text": "A captain urges Vask to attack the human troops at the lower gate. Medical wagons stand between the armies."
+        },
+        {
+          "line": 2159,
+          "speaker": null,
+          "text": "The herald brings Orra's terms: hold positions and admit healers; no assault troops through the gate."
+        },
+        {
+          "line": 2161,
+          "speaker": "VASK",
+          "text": "We'd be fighting through our wounded. Hold here and let the wagons pass."
+        },
+        {
+          "line": 2164,
+          "speaker": null,
+          "text": "Vask accepts. Across the gate, Orra pulls her troops back behind their line. Sentries stay on both sides as the medical wagons begin moving."
+        },
+        {
+          "line": 2166,
+          "speaker": null,
+          "text": "Lucan reads the reply beside Serat."
+        },
+        {
+          "line": 2168,
+          "speaker": "LUCAN",
+          "text": "Tell her Marren stays under protection. Harrow isn't settled."
+        },
+        {
+          "line": 2171,
+          "speaker": null,
+          "text": "Serat sends the warning back."
+        },
+        {
+          "line": 2173,
+          "speaker": null,
+          "text": "Lucan waits beside his father's covered body. He tucks an exposed hand beneath the cloth and steps aside for the bearers."
+        }
+      ]
+    },
+    {
+      "id": "S058",
+      "chapter": 10,
+      "heading": "EXT. BELLWEIR - MARKET SQUARE - SPRING DAY",
+      "line": 2175,
+      "end": 2215,
+      "blocks": [
+        {
+          "line": 2177,
+          "speaker": null,
+          "text": "Four years after the summoning. New roofs stand between burned walls. The glass heron turns above the fountain with one wing still missing. At the lock, inspectors from both banks let a northern grain barge through."
+        },
+        {
+          "line": 2179,
+          "speaker": null,
+          "text": "Tessa sits on the fountain rim with the temple's offer of rooms and a council seat. Beneath it she is writing: I WILL REMAIN IN BELLWEIR."
+        },
+        {
+          "line": 2181,
+          "speaker": null,
+          "text": "Her right hand rests in a soft brace. She pauses to ease her grip on the pencil in her left."
+        },
+        {
+          "line": 2183,
+          "speaker": null,
+          "text": "Orren comes out of the bakery, leaning on his stick. Inside, Hest and the apprentices argue over a tray of misshapen rolls."
+        },
+        {
+          "line": 2185,
+          "speaker": "ORREN",
+          "text": "Hest says to bring your letter inside. There's room at the table."
+        },
+        {
+          "line": 2188,
+          "speaker": "TESSA",
+          "text": "Tell her I'm almost done."
+        },
+        {
+          "line": 2191,
+          "speaker": null,
+          "text": "As he goes back inside, she hears him tell Hest she'll be another five minutes."
+        },
+        {
+          "line": 2193,
+          "speaker": null,
+          "text": "Elin lays a catalog entry for the summoning book beside the letter. Tessa puts her pencil down to read it."
+        },
+        {
+          "line": 2195,
+          "speaker": "TESSA",
+          "text": "Does it say whether the pages are there?"
+        },
+        {
+          "line": 2198,
+          "speaker": "ELIN",
+          "text": "I've written to ask."
+        },
+        {
+          "line": 2201,
+          "speaker": "TESSA",
+          "text": "Don't go without me when they answer."
+        },
+        {
+          "line": 2204,
+          "speaker": "ELIN",
+          "text": "I wouldn't."
+        },
+        {
+          "line": 2207,
+          "speaker": null,
+          "text": "Tessa slips the reference into her packet of drawings. Her mother's kitchen is there, and Iven with his hair sticking up. She lingers over his face."
+        },
+        {
+          "line": 2209,
+          "speaker": null,
+          "text": "Ada calls from the bakery. Tessa closes the packet and signs her letter."
+        },
+        {
+          "line": 2211,
+          "speaker": null,
+          "text": "Elin walks across the square with her. At the bakery door, Renn struggles past them with an armful of plates."
+        },
+        {
+          "line": 2213,
+          "speaker": null,
+          "text": "Inside, Orren moves a chair to make room. Tessa takes it."
+        },
+        {
+          "line": 2215,
+          "kind": "fade",
+          "text": "FADE TO BLACK."
+        }
+      ]
+    }
+  ]
+}

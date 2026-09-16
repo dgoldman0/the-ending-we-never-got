@@ -1,0 +1,15 @@
+# Local Ren'Py SDKs and distributable builds.
+visual-novel/.tools/
+visual-novel/builds/
+visual-novel/renpy/game/cache/
+visual-novel/renpy/game/saves/
+*.rpyc
+*.rpymc
+**/__pycache__/
+visual-novel/renpy/log.txt
+visual-novel/renpy/traceback.txt
+visual-novel/renpy/errors.txt
+visual-novel/renpy/test-results/
+visual-novel/renpy/game/test-output/
+visual-novel/renpy/test-output/
+visual-novel/renpy/screenshot*.png
