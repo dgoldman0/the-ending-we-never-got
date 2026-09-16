@@ -11,141 +11,144 @@ label s001:
     $ scene_heading = "Royal Temple · Summoning Chamber · Dawn"
     # Source lines 9–9
     $ source_line = 9
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "TESSA RUSK, nineteen, steps off a sidewalk, but her other foot lands on polished stone."
     # Source lines 11–11
     $ source_line = 11
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Her grocery bag slips from her hand. The milk carton splits against the floor, spilling across the glowing circle beneath her sneakers."
     # Source lines 13–13
     $ source_line = 13
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Her phone vibrates. On the screen: MOM — DID YOU GET THE MILK?"
     # Source lines 15–15
     $ source_line = 15
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
-    "Kneeling strangers watch her. Behind her, the store is still visible through an arch. Tessa runs for it as the street twists out of alignment. A SCHOLAR hauls down a lever; the opening contracts to a line and vanishes. Stone cracks around the arch."
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Kneeling strangers watch her. Behind her, the store is still visible through an arch. Tessa runs for it as the street twists out of alignment."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "A SCHOLAR hauls down a lever; the opening contracts to a line and vanishes. Stone cracks around the arch."
     # Source lines 17–17
     $ source_line = 17
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She reaches the empty opening."
     # Source lines 19–20
     $ source_line = 19
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Open it again!"
     # Source lines 22–22
     $ source_line = 22
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The scholar holds the lever down. PRELATE SENN is trying to reach her through the spectators when a woman catches his sleeve."
     # Source lines 24–25
     $ source_line = 24
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "WOMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["WOMAN"] "My daughter's at the west infirmary. Please, tell her about my daughter--"
     # Source lines 27–27
     $ source_line = 27
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A guard draws the woman aside as porters carry a stretcher through the gallery. The patient bites down on a folded cloth."
     # Source lines 29–30
     $ source_line = 29
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Come away from the arch. It was breaking apart."
     # Source lines 32–33
     $ source_line = 32
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I could see the store. Get him to open it again, please."
     # Source lines 35–35
     $ source_line = 35
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Soldiers block Tessa's way to the scholar. At Senn's gesture they lower their shields, but stay where they are."
     # Source lines 37–38
     $ source_line = 37
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Where did you bring me?"
     # Source lines 40–41
     $ source_line = 40
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "The royal temple of Rovel. We summoned you to help our healers--"
     # Source lines 43–44
     $ source_line = 43
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I'm not a doctor."
     # Source lines 46–47
     $ source_line = 46
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "We were searching for the Saint."
     # Source lines 49–50
     $ source_line = 49
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Then you got the wrong person."
     # Source lines 52–52
     $ source_line = 52
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She taps her mother's name. NO SERVICE. She tries again while CAPTAIN MARA VENN, thirty-two, approaches with a cloak."
     # Source lines 54–55
     $ source_line = 54
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "We'll explain everything upstairs. You will go home when this is over; you have my word."
     # Source lines 57–58
     $ source_line = 57
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "When what's over?"
     # Source lines 60–60
     $ source_line = 60
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The porters call for room. Mara draws her aside for a stretcher, and Tessa sees the crowd closing around the sealed arch."
     # Source lines 62–63
     $ source_line = 62
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "My mom doesn't know where I am. You have to get a message to her."
     # Source lines 65–65
     $ source_line = 65
-    $ scene_art = "art/backgrounds/chamber-closed.png"
-    $ scene_art_alt = "The return arch is sealed stone, newly cracked. Severe pale light fills the chamber."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Senn looks to the scholar. Tessa waits for either man to answer while Mara settles the cloak around her."
     $ completed_scenes = max(completed_scenes, 1)
     jump s002
@@ -160,111 +163,111 @@ label s002:
     $ scene_heading = "Saint'S Apartment · Night"
     # Source lines 69–69
     $ source_line = 69
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Standing on a chair at the open window, Tessa raises her phone toward the sky. Carts crowd the infirmary far below. Something enormous and winged circles the city walls."
     # Source lines 71–71
     $ source_line = 71
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The ceremonial dress lies on the floor."
     # Source lines 73–73
     $ source_line = 73
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara unlocks the door and enters with another covered plate. Tessa climbs down. The door stays open to a guard in the hall."
     # Source lines 75–76
     $ source_line = 75
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "That tower over there. Can you take me up?"
     # Source lines 78–79
     $ source_line = 78
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "In the morning. I'll have to find someone with a key."
     # Source lines 81–82
     $ source_line = 81
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Could you ask the man outside? I keep thinking if I can get a little higher--"
     # Source lines 84–85
     $ source_line = 84
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "The stairs aren't lit."
     # Source lines 87–88
     $ source_line = 87
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "We've got candles."
     # Source lines 90–90
     $ source_line = 90
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara puts the plate on the table. Tessa takes a candle and makes for the hall, but Mara blocks the doorway."
     # Source lines 92–93
     $ source_line = 92
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I just want to make a call. You can come with me. You can hold the phone, I don't care."
     # Source lines 95–96
     $ source_line = 95
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "I have orders to keep you in this room tonight."
     # Source lines 98–99
     $ source_line = 98
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And tomorrow?"
     # Source lines 101–101
     $ source_line = 101
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara looks toward the guard instead of answering. Tessa returns the candle to the table, pulls off the cloak and drops it at Mara's feet."
     # Source lines 103–104
     $ source_line = 103
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Take that with you."
     # Source lines 106–106
     $ source_line = 106
-    $ scene_art = "art/backgrounds/apartment-open.png"
-    $ scene_art_alt = "A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right."
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara takes the cloak and leaves. The key turns outside."
     # Source lines 108–108
     $ source_line = 108
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa's last call dies with the battery. She sets the phone down and drags the chair against the door."
     # Source lines 110–110
     $ source_line = 110
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She turns the temple's welcome letter over and begins drawing her mother's kitchen. Her pen tears through the paper."
     # Source lines 112–112
     $ source_line = 112
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She starts again in a clean corner, with her mother's chair."
     $ completed_scenes = max(completed_scenes, 2)
     jump s003
@@ -279,147 +282,147 @@ label s003:
     $ scene_heading = "Palace Infirmary · Day"
     # Source lines 116–116
     $ source_line = 116
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Three days later. Mara leads Tessa between crowded beds. At the far end, a porter takes a name card off a bed and draws the curtain around it."
     # Source lines 118–118
     $ source_line = 118
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "IVEN SAYE, twenty-six, tends OLAN'S right hand. Two fingers are missing. Darkness has spread beneath the skin toward his elbow, beyond a line marked that morning."
     # Source lines 120–120
     $ source_line = 120
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "An older healer passes blue light over the bleeding edges. They close, but the darkness keeps spreading beneath the skin. Olan grips the bedframe until she stops."
     # Source lines 122–122
     $ source_line = 122
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The PRIEST with Tessa ushers her forward."
     # Source lines 124–125
     $ source_line = 124
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "PRIEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["PRIEST"] "Hold the light above his arm, as you've been practicing."
     # Source lines 127–127
     $ source_line = 127
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A small white glow gathers between Tessa's hands. It trembles as she looks at the wound."
     # Source lines 129–130
     $ source_line = 129
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I've never done this on a person."
     # Source lines 132–133
     $ source_line = 132
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I'll stay here. Bring the light over the dark part."
     # Source lines 135–136
     $ source_line = 135
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And if they brought the wrong person?"
     # Source lines 138–138
     $ source_line = 138
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan draws his arm closer, into the edge of the light."
     # Source lines 140–141
     $ source_line = 140
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "OLAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["OLAN"] "They were going to take my arm. Please try."
     # Source lines 143–143
     $ source_line = 143
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven pulls up a stool. Tessa sits beside him and brings the light over Olan's wrist. Beneath it, the darkness fades to ordinary skin."
     # Source lines 145–145
     $ source_line = 145
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan's grip on the bedframe eases as she follows the discoloration toward his elbow. Iven touches the cleared skin."
     # Source lines 147–148
     $ source_line = 147
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "OLAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["OLAN"] "I can feel that."
     # Source lines 150–150
     $ source_line = 150
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He turns his arm so she can reach the last dark patch beside the wound. She works back toward it while he settles against the pillow."
     # Source lines 152–152
     $ source_line = 152
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The older healer brings a fresh dressing. Tessa's light lingers over Olan's missing fingers."
     # Source lines 154–155
     $ source_line = 154
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And his fingers?"
     # Source lines 157–158
     $ source_line = 157
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "They won't grow back."
     # Source lines 160–160
     $ source_line = 160
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan opens and closes the fingers he has left. Tessa watches until he rests the hand on the blanket."
     # Source lines 162–162
     $ source_line = 162
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A mother calls from the next row."
     # Source lines 164–165
     $ source_line = 164
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MOTHER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MOTHER"] "She's awake. Could you come now, while she's awake?"
     # Source lines 167–167
     $ source_line = 167
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa starts to rise."
     # Source lines 169–170
     $ source_line = 169
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Let me see her first."
     # Source lines 172–172
     $ source_line = 172
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He brings her water before going to the family. Tessa sits with the cup untouched, watching Olan fall asleep."
     $ completed_scenes = max(completed_scenes, 3)
     jump s004
@@ -434,99 +437,99 @@ label s004:
     $ scene_heading = "Audience Hall · Day"
     # Source lines 176–176
     $ source_line = 176
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Beneath the sunburst banners, Senn pins the temple badge to Tessa's coat and settles the white mantle over it."
     # Source lines 178–178
     $ source_line = 178
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the door, MARSHAL ORRA holds out orders to a MESSENGER. He offers a blackened stone instead."
     # Source lines 180–181
     $ source_line = 180
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MESSENGER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MESSENGER"] "One of the new ward anchors, Marshal. The curse got through this one too."
     # Source lines 183–183
     $ source_line = 183
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra looks from the stone to Tessa as Senn brings her onto the dais."
     # Source lines 185–185
     $ source_line = 185
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "OLAN stands among the wounded, clapping his good hand against his thigh."
     # Source lines 187–188
     $ source_line = 187
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Tomorrow our Saint leaves with the Bellweir convoy. You have seen what she can do. The curse can be broken."
     # Source lines 190–190
     $ source_line = 190
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Applause drowns Tessa's first attempt to speak. She catches Senn's sleeve."
     # Source lines 192–193
     $ source_line = 192
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Tomorrow? You said I was coming to see Olan."
     # Source lines 195–196
     $ source_line = 195
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "He's here. Sit down; they're trying to welcome you."
     # Source lines 198–198
     $ source_line = 198
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He guides her toward the ceremonial chair. She steps around it, keeping hold of his sleeve."
     # Source lines 200–201
     $ source_line = 200
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Look at me. When did I agree to go?"
     # Source lines 203–204
     $ source_line = 203
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "We can talk afterward."
     # Source lines 206–206
     $ source_line = 206
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra steps onto the dais. Iven waits below with Tessa's bag."
     # Source lines 208–209
     $ source_line = 208
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Saye. Is she ready to travel?"
     # Source lines 211–212
     $ source_line = 211
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I haven't cleared her for anything, Marshal."
     # Source lines 214–214
     $ source_line = 214
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Senn looks toward the applauding crowd. Orra signals Iven up, and the prelate has to yield the steps."
     $ completed_scenes = max(completed_scenes, 4)
     jump s005
@@ -541,81 +544,81 @@ label s005:
     $ scene_heading = "Infirmary · Later"
     # Source lines 218–218
     $ source_line = 218
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa sits by a window overlooking the convoy. Iven puts her bag beside her and starts packing a medical chest."
     # Source lines 220–221
     $ source_line = 220
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You bought me an afternoon."
     # Source lines 223–224
     $ source_line = 223
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "At least that."
     # Source lines 226–226
     $ source_line = 226
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Below, the mother who called from the next row in the infirmary approaches the wagons."
     # Source lines 228–229
     $ source_line = 228
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "She's still down there. What am I supposed to tell her?"
     # Source lines 231–232
     $ source_line = 231
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Let me speak to her."
     # Source lines 234–235
     $ source_line = 234
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And tomorrow? They'll send someone else to ask me."
     # Source lines 237–237
     $ source_line = 237
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven sets the bottle back in the chest, leaving the lid open."
     # Source lines 239–240
     $ source_line = 239
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I don't know how to stop that."
     # Source lines 242–242
     $ source_line = 242
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Below, Mara assigns two of the soldiers who guarded Tessa's room to the convoy."
     # Source lines 244–245
     $ source_line = 244
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Are you coming with me?"
     # Source lines 247–248
     $ source_line = 247
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "All the way there and back."
     # Source lines 250–250
     $ source_line = 250
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She makes room on the sill. Iven sits with her, leaving the chest open."
     $ completed_scenes = max(completed_scenes, 5)
     $ unlocked_round = 1
@@ -633,111 +636,111 @@ label s006:
     $ scene_heading = "Convoy Camp · Afternoon"
     # Source lines 254–254
     $ source_line = 254
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Five weeks on the road. Mara feints around the pane of light Tessa holds between them. Tessa stretches a corner after the staff, thinning the middle; Mara's next stroke cracks through and stops against her padded shoulder."
     # Source lines 256–257
     $ source_line = 256
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I saw where you were going."
     # Source lines 259–260
     $ source_line = 259
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Then make me follow you. Back up."
     # Source lines 262–262
     $ source_line = 262
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "On the next attempt, Tessa backs up with the whole shelter. The staff glances off."
     # Source lines 264–264
     $ source_line = 264
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara steps inside the shelter, her blue shoulder ward still shining. Tessa lets the white light fade before touching the ward itself; the blue protection dissolves beneath her fingertips. Mara rekindles it when Tessa takes her hand away."
     # Source lines 266–266
     $ source_line = 266
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "From the fire, Iven applauds. Smoke is rising from the pot behind him."
     # Source lines 268–269
     $ source_line = 268
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Iven, dinner."
     # Source lines 271–271
     $ source_line = 271
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven lifts the pot off the coals with a cloth. While he scrapes at the bottom, Tessa raises a grain-loaded plank on her light."
     # Source lines 273–273
     $ source_line = 273
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara raises the staff. Tessa tries to form a second pane between them; the plank immediately sags, and Mara catches its edge."
     # Source lines 275–276
     $ source_line = 275
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Too much. Put the sack down first."
     # Source lines 278–278
     $ source_line = 278
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara hands her a wooden sword once the plank is down. Tessa raises the shelter again, then lowers her casting hand; the light holds while she works the blade."
     # Source lines 280–280
     $ source_line = 280
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara presses her other side. Tessa switches the sword to her left hand and catches it in her coat, retreating to free it."
     # Source lines 282–282
     $ source_line = 282
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven arrives with their bowls and sits down between them."
     # Source lines 284–285
     $ source_line = 284
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "If you start another round, I'm eating all three."
     # Source lines 287–287
     $ source_line = 287
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa lets the shelter fade and puts the sword beside the grain sack. When Iven goes back for the spoons, she trades her bowl for the burned portion he kept for himself."
     # Source lines 289–289
     $ source_line = 289
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A road warden arrives with a cart board split by three enormous claw marks."
     # Source lines 291–292
     $ source_line = 291
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "WARDEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["WARDEN"] "Use the river past Gray Scar. We've closed the high road after a crag cat took a mule."
     # Source lines 294–294
     $ source_line = 294
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara changes their route while Tessa tries to span a claw mark with her fingers."
     $ completed_scenes = max(completed_scenes, 6)
     jump s007
@@ -752,93 +755,93 @@ label s007:
     $ scene_heading = "Roadside Inn · Night"
     # Source lines 298–298
     $ source_line = 298
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa hovers over one checker before moving another. Iven immediately begins a series of jumps."
     # Source lines 300–301
     $ source_line = 300
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Wait, don't take them off. I thought if I went there you'd have to take this one first."
     # Source lines 303–304
     $ source_line = 303
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Watch where I land."
     # Source lines 306–306
     $ source_line = 306
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He repeats the jumps slowly."
     # Source lines 308–309
     $ source_line = 308
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Oh. You knew I was going to do that."
     # Source lines 311–312
     $ source_line = 311
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I was hoping. You nearly didn't."
     # Source lines 314–314
     $ source_line = 314
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She starts putting the pieces back. Mara, passing with their room keys, points out a different square."
     # Source lines 316–317
     $ source_line = 316
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "You could have gone there."
     # Source lines 319–320
     $ source_line = 319
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I was going to! Come here, show me before he changes everything."
     # Source lines 322–322
     $ source_line = 322
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven moves his chair around so all three can see. Mara leaves a key beside Tessa's cup."
     # Source lines 324–325
     $ source_line = 324
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Keep this one. The guards will be downstairs; there's a bolt inside your door."
     # Source lines 327–327
     $ source_line = 327
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa picks up the key."
     # Source lines 329–330
     $ source_line = 329
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You don't have another key?"
     # Source lines 332–333
     $ source_line = 332
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "I don't have one. You'll have to let me in."
     # Source lines 335–335
     $ source_line = 335
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa pockets the key and shifts over for Mara."
     $ completed_scenes = max(completed_scenes, 7)
     jump s008
@@ -853,135 +856,135 @@ label s008:
     $ scene_heading = "Bellweir · Market Square · Day"
     # Source lines 339–339
     $ source_line = 339
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Summer. Tessa sits on the fountain rim, trying to draw the glass heron as it revolves. Every time its head comes around, she adds a hurried line."
     # Source lines 341–341
     $ source_line = 341
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "ELIN ORR, twenty-two, holds her paper against the breeze, a half-finished translation tucked under her satchel. Spotting a lever beneath the stand, she presses it. The bird stops."
     # Source lines 343–343
     $ source_line = 343
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "With the bird finally still, Tessa bends over her page and catches Elin looking at the drawing."
     # Source lines 345–346
     $ source_line = 345
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I haven't done the neck yet."
     # Source lines 348–348
     $ source_line = 348
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin starts laughing. Tessa covers the drawing, hiding the several necks she has already tried."
     # Source lines 350–350
     $ source_line = 350
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "ADA, eight, squeezes between them with a scraped elbow. Her brother RENN waits behind HEST'S bread stall."
     # Source lines 352–353
     $ source_line = 352
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ADA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ADA"] "He says you can grow people new heads."
     # Source lines 355–355
     $ source_line = 355
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa looks past her at Renn, who is trying not to laugh."
     # Source lines 357–358
     $ source_line = 357
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Tell him to take care of the one he's got. I haven't learned heads yet."
     # Source lines 360–360
     $ source_line = 360
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She closes the torn edges of the scrape with light, leaving a pink mark. Hest distributes buns while her husband ORREN drags a bench toward the dock below the square."
     # Source lines 362–363
     $ source_line = 362
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORREN"] "Iven, grab that end, would you?"
     # Source lines 365–365
     $ source_line = 365
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "As they carry the bench to the dock, Tessa sketches them beside Hest's stall."
     # Source lines 367–368
     $ source_line = 367
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Are you taking all these home?"
     # Source lines 370–371
     $ source_line = 370
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "My mom'll want to know who everyone is. This one's supposed to be Iven."
     # Source lines 373–374
     $ source_line = 373
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Supposed to be?"
     # Source lines 376–376
     $ source_line = 376
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Back for a second bench, Iven leans over her shoulder. In the drawing his hair sticks up exactly as it does after a night in camp."
     # Source lines 378–379
     $ source_line = 378
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I'm keeping that. You can make a kinder one for your mother."
     # Source lines 381–382
     $ source_line = 381
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "It's not finished."
     # Source lines 384–385
     $ source_line = 384
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Don't fix the hair."
     # Source lines 387–387
     $ source_line = 387
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He goes back to help Orren. When Mara arrives with the day's messages, Tessa clears a place for her at the fountain."
     # Source lines 389–390
     $ source_line = 389
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "We're going out on the river after the clinic. You're coming too."
     # Source lines 392–392
     $ source_line = 392
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara puts the messages away and sits beside her."
     $ completed_scenes = max(completed_scenes, 8)
     jump s009
@@ -996,93 +999,93 @@ label s009:
     $ scene_heading = "River Below Bellweir · Late Afternoon"
     # Source lines 396–396
     $ source_line = 396
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The city recedes behind Orren's boat. Tessa sketches Iven at the oars from the rear bench, with Mara beside her. The children watch for fish at the bow."
     # Source lines 398–398
     $ source_line = 398
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara reaches for the spare oars. Tessa catches one handle."
     # Source lines 400–401
     $ source_line = 400
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Leave him. He said he'd row."
     # Source lines 403–404
     $ source_line = 403
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I am rowing."
     # Source lines 406–407
     $ source_line = 406
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Into the reeds. Pull harder on the left."
     # Source lines 409–409
     $ source_line = 409
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven corrects their course, still craning to see the drawing. Tessa lays the spare oar along the gunwale."
     # Source lines 411–412
     $ source_line = 411
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Is that still me?"
     # Source lines 414–415
     $ source_line = 414
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Stop looking around. I'm trying to get your face."
     # Source lines 417–417
     $ source_line = 417
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She shows him the picture. Iven tries to splash her with an oar, but she ducks behind Mara and most of the water lands in his own boots."
     # Source lines 419–419
     $ source_line = 419
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The children are still laughing when he gets back to rowing."
     # Source lines 421–422
     $ source_line = 421
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You can have it when I'm done."
     # Source lines 424–425
     $ source_line = 424
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "I'm going to frame it so your mother can see how you've been treating me."
     # Source lines 427–427
     $ source_line = 427
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When Iven brings his oars in, Tessa puts the sketchbook inside her coat and lifts the spare pair toward Mara."
     # Source lines 429–430
     $ source_line = 429
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Will you show me?"
     # Source lines 432–432
     $ source_line = 432
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They turn on the bench and fit the oars. Tessa watches Mara's hands through the first few strokes; gradually they begin pulling together, carrying the boat farther from the city."
     $ completed_scenes = max(completed_scenes, 9)
     jump s010
@@ -1098,117 +1101,117 @@ label s010:
     $ scene_heading = "Hills Above Bellweir · Night"
     # Source lines 436–436
     $ source_line = 436
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Eight months after the summoning. Northern troops wait among the trees while GENERAL VASK reports to VALCAIR. The Demon King's black horns sweep back from silver-streaked hair. Captured northern barges crowd the city's dock below them."
     # Source lines 438–438
     $ source_line = 438
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Behind his field table, infantry descend the ridge, each company following a hooded lantern. More lights move among the trees than shine in the streets below."
     # Source lines 440–441
     $ source_line = 440
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "The Saint is at the southern wells. Most of the reserve went with her. Our men have the salt in the gatehouse."
     # Source lines 443–443
     $ source_line = 443
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask lays the agreement across his battle map."
     # Source lines 445–446
     $ source_line = 445
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "They've agreed to the inspectors. Sign this and the crews can leave. Lucan asked me to bring it before the attack."
     # Source lines 448–449
     $ source_line = 448
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "He's left them the locks."
     # Source lines 451–452
     $ source_line = 451
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "With our men inside. We can get the crews out without taking the city."
     # Source lines 454–455
     $ source_line = 454
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "And when they close the river again?"
     # Source lines 457–458
     $ source_line = 457
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "He wants to try it."
     # Source lines 460–461
     $ source_line = 460
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "I won't leave him having to bargain for a way home every winter."
     # Source lines 463–463
     $ source_line = 463
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He returns the agreement unsigned."
     # Source lines 465–466
     $ source_line = 465
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "The Saint's been asking to go home. She may never agree to fight."
     # Source lines 468–469
     $ source_line = 468
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Did they ask her before they brought her? I'm not waiting for them to send her against our wards."
     # Source lines 471–471
     $ source_line = 471
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He marks Bellweir and the two fortresses downstream."
     # Source lines 473–474
     $ source_line = 473
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "All three. Then the summoning chamber."
     # Source lines 476–477
     $ source_line = 476
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "Those wards hold the houses up, too."
     # Source lines 479–479
     $ source_line = 479
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair moves the attack marker onto Bellweir."
     # Source lines 481–482
     $ source_line = 481
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Keep the causeway open for anyone who gets out. We go in at nine."
     # Source lines 484–484
     $ source_line = 484
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask carries the order to the waiting captains. Below them, black grains are poured among the white ward salt."
     $ completed_scenes = max(completed_scenes, 10)
     jump s011
@@ -1223,117 +1226,117 @@ label s011:
     $ scene_heading = "Bellweir · East Causeway · Night"
     # Source lines 488–488
     $ source_line = 488
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa's escort returns through the eastern gate as the clock strikes nine. Beyond the gate, a causeway crosses the river into open country."
     # Source lines 490–490
     $ source_line = 490
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "In the square, black crystal bursts through the glass heron. The ward foundations buckle beneath the houses."
     # Source lines 492–492
     $ source_line = 492
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The shattered ward housings are dark. Roofs keep falling into the alleys as people force their way toward the eastern gate."
     # Source lines 494–495
     $ source_line = 494
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Give them cover. I'll get the square cleared."
     # Source lines 497–497
     $ source_line = 497
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven runs for the bakery. Tessa moves into the square and raises a broad white arch over the crowd, backing with them toward the gate. Tiles strike the curve and slide away."
     # Source lines 499–499
     $ source_line = 499
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven emerges carrying Ada, with Hest and Renn close behind."
     # Source lines 501–502
     $ source_line = 501
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "Orren went for the apprentices. The blue door, by the steps!"
     # Source lines 504–504
     $ source_line = 504
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orren waves a lantern from the blue doorway, across a rubble-choked alley. Tessa reaches her shelter toward him. A tile punches through its thinning roof beside Iven, and she draws it back."
     # Source lines 506–507
     $ source_line = 506
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Mara! Can your men get to him?"
     # Source lines 509–509
     $ source_line = 509
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara sends two soldiers, but a burning roof crashes across their path. They scramble back."
     # Source lines 511–511
     $ source_line = 511
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A cart jams in the gate. Iven hands Ada to Hest and gets under the shaft; the returning soldiers help him free the wheel."
     # Source lines 513–514
     $ source_line = 513
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Tessa, bring it over the gate! They're still coming!"
     # Source lines 516–516
     $ source_line = 516
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa turns the arch toward Orren again. Its far edge leaves Hest crouched over both children as sparks fall around them."
     # Source lines 518–518
     $ source_line = 518
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She brings the light back over them. Mara comes up beside her."
     # Source lines 520–521
     $ source_line = 520
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Stay with me. We have to get them through."
     # Source lines 523–523
     $ source_line = 523
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest turns back for Orren, dragging Renn a step with her. He stumbles. She catches him, with Ada clinging to her other hand."
     # Source lines 525–526
     $ source_line = 525
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "Orren!"
     # Source lines 528–528
     $ source_line = 528
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The lantern vanishes in smoke. Hest keeps calling as the crowd carries her and the children toward the gate. Tessa retreats with them, holding the arch, tears cutting through the dust on her face."
     # Source lines 530–530
     $ source_line = 530
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Across the river, the northern flag rises above Bellweir: a split white star."
     $ completed_scenes = max(completed_scenes, 11)
     jump s012
@@ -1348,27 +1351,27 @@ label s012:
     $ scene_heading = "Temple Reading Room · Night"
     # Source lines 534–534
     $ source_line = 534
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin compares two translations. Both refer to a second drawing that neither contains. The ARCHIVIST returns her request with a third copy of the same text."
     # Source lines 536–537
     $ source_line = 536
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ARCHIVIST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ARCHIVIST"] "Your master can ask for the original."
     # Source lines 539–539
     $ source_line = 539
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When he turns to another borrower, she takes her master's seal from the papers she carries for him. She stamps the request and writes his name."
     # Source lines 541–541
     $ source_line = 541
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Later, alone at the table, she unwraps the original. Four pages have been cut from its binding."
     $ completed_scenes = max(completed_scenes, 12)
     jump s013
@@ -1383,69 +1386,69 @@ label s013:
     $ scene_heading = "Summoning Chamber · Later"
     # Source lines 545–545
     $ source_line = 545
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The SCHOLAR who closed Tessa's passage has his equipment spread across the floor. Elin lays the book beside him, open at the missing pages."
     # Source lines 547–548
     $ source_line = 547
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Was the book already like this when you used it?"
     # Source lines 550–550
     $ source_line = 550
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He recognizes the volume and looks toward the open doorway."
     # Source lines 552–553
     $ source_line = 552
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SCHOLAR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SCHOLAR"] "You're not supposed to have that."
     # Source lines 555–556
     $ source_line = 555
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Did you have those pages? Any copy of them?"
     # Source lines 558–559
     $ source_line = 558
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SCHOLAR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SCHOLAR"] "No."
     # Source lines 561–562
     $ source_line = 561
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Then what were you going to use to send her back?"
     # Source lines 564–564
     $ source_line = 564
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He puts down his tool."
     # Source lines 566–567
     $ source_line = 566
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SCHOLAR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SCHOLAR"] "I told Senn I could bring someone through. I never promised him a way back."
     # Source lines 569–569
     $ source_line = 569
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Footsteps approach in the hall. He closes the book and pushes it back to her."
     # Source lines 571–572
     $ source_line = 571
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SCHOLAR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SCHOLAR"] "Take it back before morning. And leave my name out of this."
     $ completed_scenes = max(completed_scenes, 13)
     jump s014
@@ -1460,75 +1463,75 @@ label s014:
     $ scene_heading = "Relief Warehouse · Winter Morning"
     # Source lines 576–576
     $ source_line = 576
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest stops kneading when Tessa appears in the warehouse doorway, carrying boots."
     # Source lines 578–579
     $ source_line = 578
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "Anything?"
     # Source lines 581–581
     $ source_line = 581
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa shakes her head. Hest goes back to the dough, pressing harder than before. Tessa sets the boots by Ada's bed and starts to leave."
     # Source lines 583–584
     $ source_line = 583
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "She's awake. You can give them to her."
     # Source lines 586–586
     $ source_line = 586
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Ada sits up. One boot goes on easily; Tessa has to loosen the other almost to the toe. Renn watches from the next bed with Orren's old cap in his lap."
     # Source lines 588–589
     $ source_line = 588
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ADA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ADA"] "Will Dad know where we've gone?"
     # Source lines 591–591
     $ source_line = 591
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa keeps working at the laces, although the boot is open now."
     # Source lines 593–594
     $ source_line = 593
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I'll put this address on every notice we send out."
     # Source lines 596–597
     $ source_line = 596
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "He'd have written if they'd let him. They don't even tell us who's in those camps."
     # Source lines 599–599
     $ source_line = 599
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest leans over Tessa as she copies Orren from the market drawing onto a separate sheet."
     # Source lines 601–602
     $ source_line = 601
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "His chin's longer. The scar's underneath, here."
     # Source lines 604–604
     $ source_line = 604
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Ada leans against Tessa to watch. Elin waits at the door with a book under her coat."
     $ completed_scenes = max(completed_scenes, 14)
     jump s015
@@ -1543,99 +1546,99 @@ label s015:
     $ scene_heading = "Elin'S Lodging · Day"
     # Source lines 608–608
     $ source_line = 608
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin puts the original beside her translations. Tessa turns to the cut pages, then checks the back of the book."
     # Source lines 610–611
     $ source_line = 610
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Senn said they were working on it. This can't be everything."
     # Source lines 613–614
     $ source_line = 613
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "It's all the man who opened the passage had. I asked him."
     # Source lines 616–617
     $ source_line = 616
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "But not Senn?"
     # Source lines 619–620
     $ source_line = 619
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Not before you saw it."
     # Source lines 622–622
     $ source_line = 622
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa keeps turning pages. She reaches the end and stays there."
     # Source lines 624–625
     $ source_line = 624
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I sat there telling him what I was going to do when I got home, and he just let me talk."
     # Source lines 627–627
     $ source_line = 627
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She shuts the book."
     # Source lines 629–630
     $ source_line = 629
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "How long have you had this?"
     # Source lines 632–633
     $ source_line = 632
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Last night. I used my master's seal to get it. They may think he sent me."
     # Source lines 635–635
     $ source_line = 635
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa looks at the borrowing slip."
     # Source lines 637–638
     $ source_line = 637
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Did he?"
     # Source lines 640–641
     $ source_line = 640
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "No. He could lose his place over this."
     # Source lines 643–644
     $ source_line = 643
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Then you have to tell them."
     # Source lines 646–647
     $ source_line = 646
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "I will."
     # Source lines 649–649
     $ source_line = 649
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa takes the book and gets her coat. At the door, she waits for Elin to join her."
     $ completed_scenes = max(completed_scenes, 15)
     jump s016
@@ -1650,279 +1653,279 @@ label s016:
     $ scene_heading = "Palace Council Room · Day"
     # Source lines 653–653
     $ source_line = 653
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa sits opposite Senn in the white mantle. Elin opens the damaged book between them. Mara waits at the open door, a guard outside; Orra has come from the convoy yard and still wears her gloves."
     # Source lines 655–655
     $ source_line = 655
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Senn picks up the borrowing slip."
     # Source lines 657–658
     $ source_line = 657
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Did your master give you this?"
     # Source lines 660–661
     $ source_line = 660
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "I used his seal. He didn't know."
     # Source lines 663–664
     $ source_line = 663
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Then he will have to explain how--"
     # Source lines 666–667
     $ source_line = 666
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Were the pages missing when you brought me here?"
     # Source lines 669–669
     $ source_line = 669
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Senn looks at the book."
     # Source lines 671–672
     $ source_line = 671
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Yes."
     # Source lines 674–675
     $ source_line = 674
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And you didn't have another copy?"
     # Source lines 677–678
     $ source_line = 677
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "We hoped the completed ritual would show us the way back."
     # Source lines 680–680
     $ source_line = 680
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "For a moment she seems to be waiting for the rest of the answer."
     # Source lines 682–683
     $ source_line = 682
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You've known all this time."
     # Source lines 685–686
     $ source_line = 685
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "We were losing a town every two weeks. If we had waited for certainty--"
     # Source lines 688–689
     $ source_line = 688
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You kept telling me I could go home."
     # Source lines 691–692
     $ source_line = 691
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Would you have gone into the infirmary if I'd told you?"
     # Source lines 694–695
     $ source_line = 694
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I kept going back, didn't I? After Bellweir, when you told me again."
     # Source lines 697–697
     $ source_line = 697
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Senn turns to Orra."
     # Source lines 699–700
     $ source_line = 699
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "There are hospitals depending on her. We cannot let this interrupt--"
     # Source lines 702–703
     $ source_line = 702
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Don't ask her what to do with me."
     # Source lines 705–705
     $ source_line = 705
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She pulls the mantle loose as she stands and leaves it across the book."
     # Source lines 707–708
     $ source_line = 707
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Captain, take her to her rooms. We will continue this when--"
     # Source lines 710–711
     $ source_line = 710
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "No."
     # Source lines 713–713
     $ source_line = 713
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The guard steps toward the open doorway. Mara closes the door before he enters."
     # Source lines 715–716
     $ source_line = 715
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Marshal. Are those still your orders?"
     # Source lines 718–718
     $ source_line = 718
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra takes off her gloves."
     # Source lines 720–721
     $ source_line = 720
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Let her finish."
     # Source lines 723–723
     $ source_line = 723
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa grips the back of her chair."
     # Source lines 725–726
     $ source_line = 725
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Saye says you've refused the temple twice this week. You've still gone to the warehouse."
     # Source lines 728–729
     $ source_line = 728
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Iven and I can work out where I'm needed. And when Elin finds something, I want to hear it from her."
     # Source lines 731–731
     $ source_line = 731
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She looks back at Senn."
     # Source lines 733–734
     $ source_line = 733
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I don't want another promise from you."
     # Source lines 736–736
     $ source_line = 736
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra looks toward the closed door."
     # Source lines 738–739
     $ source_line = 738
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Captain Venn stays with you on deployments."
     # Source lines 741–742
     $ source_line = 741
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "But nobody locks my door."
     # Source lines 744–745
     $ source_line = 744
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Nobody locks your door."
     # Source lines 747–748
     $ source_line = 747
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Tell the guard."
     # Source lines 750–750
     $ source_line = 750
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra nods to Mara, who opens the door."
     # Source lines 752–753
     $ source_line = 752
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "She is not to be confined. Have that entered in the duty book."
     # Source lines 755–755
     $ source_line = 755
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The guard acknowledges the order in front of Tessa. Only then does she let go of the back of her chair."
     # Source lines 757–758
     $ source_line = 757
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "Elin will not be admitted to the collection again."
     # Source lines 760–761
     $ source_line = 760
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Then I'll look elsewhere."
     # Source lines 763–763
     $ source_line = 763
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She pulls the book from beneath the mantle. Senn keeps a hand on it."
     # Source lines 765–766
     $ source_line = 765
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SENN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SENN"] "That stays here."
     # Source lines 768–768
     $ source_line = 768
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa looks to Orra."
     # Source lines 770–771
     $ source_line = 770
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "I'll have someone copy the pages that are left. The original stays here."
     # Source lines 773–773
     $ source_line = 773
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin takes her own translations from the satchel. The original remains under Senn's hand as she follows Tessa out."
     $ completed_scenes = max(completed_scenes, 16)
     jump s017
@@ -1937,39 +1940,39 @@ label s017:
     $ scene_heading = "Palace Council Corridor · Continuous"
     # Source lines 777–777
     $ source_line = 777
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Beyond the guard, Tessa leans against the wall. Mara approaches while Elin waits with her translations."
     # Source lines 779–780
     $ source_line = 779
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "I didn't know about the missing pages."
     # Source lines 782–783
     $ source_line = 782
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You knew I wanted to leave."
     # Source lines 785–786
     $ source_line = 785
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Yes."
     # Source lines 788–789
     $ source_line = 788
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "And you stood in the door."
     # Source lines 791–791
     $ source_line = 791
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa takes Elin's arm and leaves with her. Mara follows a few paces behind."
     $ completed_scenes = max(completed_scenes, 17)
     $ unlocked_round = 2
@@ -1987,100 +1990,102 @@ label s018:
     $ scene_heading = "Gray Scar · Ferry Approach · Afternoon"
     # Source lines 795–795
     $ source_line = 795
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Second summer. The ferry bell calls across the river as Mara leads families from the upper farms down a wooded trail. Four soldiers carry an injured woman on a litter; Iven and her husband walk beside her."
     # Source lines 797–797
     $ source_line = 797
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A dead mule and a wrecked wagon block the turn. A tawny head lifts from the carcass."
     # Source lines 799–799
     $ source_line = 799
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A young CRAG CAT, already wolf-sized. Another waits on a branch behind the column."
     # Source lines 801–802
     $ source_line = 801
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Bring the litter up. Nobody stays behind it."
     # Source lines 804–804
     $ source_line = 804
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "One drops at a bearer. Tessa's light catches it as Mara drives the other back with her shield."
     # Source lines 806–806
     $ source_line = 806
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Families run for the timber ferryhouse below. Tessa stays with the slower litter, keeping the cats off its bearers."
     # Source lines 808–808
     $ source_line = 808
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven gets the litter through the ferryhouse door. Mara follows with the last of the families."
     # Source lines 810–810
     $ source_line = 810
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Beyond the ferryhouse, an iron gate guards the landing beneath a rock overhang. Two boats wait there, across fifty paces of open bank."
     # Source lines 812–812
     $ source_line = 812
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Northerners emerge from another track: six soldiers surrounding families on foot. PRINCE LUCAN, mid-twenties, carries a child, a crossbow slung across his back. His lieutenant, SERAT, supports an injured man."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Two crossbowmen cover their retreat, firing in turns as the cats follow the slowest walkers."
     # Source lines 814–814
     $ source_line = 814
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara recognizes the royal split star. She blocks the doorway with her shield, sword drawn beside it."
     # Source lines 816–817
     $ source_line = 816
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Let us past. I've got children back there."
     # Source lines 819–819
     $ source_line = 819
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A bolt glances off an ADULT CRAG CAT's plated shoulder. Twice the length of a horse, it drives the northern party toward the house while its young circle their wounded."
     # Source lines 821–821
     $ source_line = 821
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan returns the child to her mother and takes the wounded man from Serat. Mara's sword stays up as they reach the door."
     # Source lines 823–824
     $ source_line = 823
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Her first. Let her through."
     # Source lines 826–826
     $ source_line = 826
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara admits the mother and child, then backs inside to let Lucan through with the wounded man. She keeps her sword toward the soldiers following."
     # Source lines 828–828
     $ source_line = 828
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The adult climbs onto the roof after the last soldier enters."
     $ completed_scenes = max(completed_scenes, 18)
     jump s019
@@ -2095,117 +2100,117 @@ label s019:
     $ scene_heading = "Old Ferryhouse · Continuous"
     # Source lines 832–832
     $ source_line = 832
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa catches a splitting rafter on her sanctuary. Packed beneath it, Lucan sees her temple badge and drags his wounded man behind a soldier's warded shield."
     # Source lines 834–835
     $ source_line = 834
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Keep your magic off him."
     # Source lines 837–837
     $ source_line = 837
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa strains beneath the bowing rafter."
     # Source lines 839–840
     $ source_line = 839
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "If I stop, that comes down."
     # Source lines 842–842
     $ source_line = 842
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Claws hook through the boards. At the rear window, the FERRYMAN shows Mara his key and the landing beyond."
     # Source lines 844–845
     $ source_line = 844
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "FERRYMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["FERRYMAN"] "If we reach that gate, I can lock them out."
     # Source lines 847–847
     $ source_line = 847
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Between the house and the boats, a young cat settles beside the path, watching the open window."
     # Source lines 849–849
     $ source_line = 849
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven helps the woman's husband take a litter handle from an exhausted soldier. Across the room, Serat supports a northern woman, his crossbow propped against the wall."
     # Source lines 851–852
     $ source_line = 851
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Let the healer take her. I need you watching the bank."
     # Source lines 854–854
     $ source_line = 854
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat looks to Lucan."
     # Source lines 856–857
     $ source_line = 856
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Stay with her a moment."
     # Source lines 859–860
     $ source_line = 859
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Bring her here, beside the litter. The others too."
     # Source lines 862–862
     $ source_line = 862
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The roof shifts. Tessa tightens the light beneath it."
     # Source lines 864–865
     $ source_line = 864
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Stay by the litter. If anyone runs ahead, I can't follow them."
     # Source lines 867–867
     $ source_line = 867
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks from the shelter to the blue ward still burning on Mara's shoulder. Serat keeps hold of the woman while Iven waits beside them."
     # Source lines 869–870
     $ source_line = 869
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "We keep our weapons. And one boat for our people, when we get there."
     # Source lines 872–873
     $ source_line = 872
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "You have my word."
     # Source lines 875–875
     $ source_line = 875
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At Lucan's nod, Serat gives the woman to Iven and retrieves his crossbow. Two northerners take the injured soldier, freeing Lucan to draw his own bow. Mara sheathes her sword and takes the flank with her shield."
     # Source lines 877–877
     $ source_line = 877
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The ferryman opens the loading doors. Tessa brings the shelter out with the litter, rafters scraping along its rear edge. Lucan and Serat clear the doors before she lets the roof collapse beneath the adult."
     $ completed_scenes = max(completed_scenes, 19)
     jump s020
@@ -2220,27 +2225,27 @@ label s020:
     $ scene_heading = "Gray Scar · Riverbank · Continuous"
     # Source lines 881–881
     $ source_line = 881
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven calls a pace the injured woman and litter bearers can manage. Cats prowl beyond the shields; Lucan and Serat cover the rear in turns."
     # Source lines 883–883
     $ source_line = 883
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A smaller cat rushes the flank. Mara catches it on her shield, but it scrambles around the rim toward a child. Lucan's bolt knocks it away from the group."
     # Source lines 885–885
     $ source_line = 885
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The adult bursts from the wreckage and slams into Tessa's shelter. A white fracture races overhead. She draws the curve tighter, forcing everyone closer as they retreat toward the gate."
     # Source lines 887–887
     $ source_line = 887
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The ferryman unlocks and opens the gate. Children pass beneath the rock while the crossbowmen hold the entrance."
     $ completed_scenes = max(completed_scenes, 20)
     jump s021
@@ -2255,159 +2260,159 @@ label s021:
     $ scene_heading = "Gray Scar · Covered Landing · Continuous"
     # Source lines 891–891
     $ source_line = 891
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan's families are behind the bars. His boatman takes the last injured soldier aboard, leaving space beside him for the prince."
     # Source lines 893–893
     $ source_line = 893
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven helps the northern woman aboard, then goes back to the human litter still outside with Mara and Tessa. With the other passengers clear, the cats close around that last group."
     # Source lines 895–896
     $ source_line = 895
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "We can go, Highness."
     # Source lines 898–898
     $ source_line = 898
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks back at the litter."
     # Source lines 900–900
     $ source_line = 900
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He exchanges his empty crossbow for Serat's loaded one and goes through the gate."
     # Source lines 902–903
     $ source_line = 902
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Serat. One more with us."
     # Source lines 905–905
     $ source_line = 905
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat follows with his shield, the empty bow slung over his back. His younger brother comes too."
     # Source lines 907–907
     $ source_line = 907
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan's bolt strikes beneath the adult's jaw. He sets the spent bow against the gatepost and takes a litter handle. A young cat leaps at his back, catching Serat's shield instead. Its claws rake the lieutenant's thigh."
     # Source lines 909–909
     $ source_line = 909
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat's brother drags him inside. Mara covers them while Lucan and Iven bring the litter through. Tessa backs in last and lets her shelter fade as the ferryman shuts the gate."
     # Source lines 911–911
     $ source_line = 911
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The adult strikes the gate as the bolt drops. Its paw reaches between the bars, but the passengers are already retreating beneath the rock to the boats."
     # Source lines 913–913
     $ source_line = 913
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven presses a cloth to Serat's thigh. Tessa's light joins the torn edges and slows the bleeding, but cannot bridge the gouge left by the claw."
     # Source lines 915–916
     $ source_line = 915
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Hold it there while I bind him."
     # Source lines 918–919
     $ source_line = 918
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I can't close the middle."
     # Source lines 921–922
     $ source_line = 921
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "He needs the surgeon downstream."
     # Source lines 924–924
     $ source_line = 924
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan kneels beside him."
     # Source lines 926–927
     $ source_line = 926
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Serat. Keep looking at me."
     # Source lines 929–929
     $ source_line = 929
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat sags against his brother."
     # Source lines 931–932
     $ source_line = 931
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He isn't answering."
     # Source lines 934–935
     $ source_line = 934
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "He's lost too much blood. Get under his shoulders."
     # Source lines 937–937
     $ source_line = 937
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan and Serat's brother carry him onto the second boat on a folded cloak. The first leaves with the northern families."
     # Source lines 939–939
     $ source_line = 939
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The second boatman looks toward the northern landing. Lucan points downstream instead."
     # Source lines 941–942
     $ source_line = 941
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "Those are human pickets."
     # Source lines 944–945
     $ source_line = 944
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I know. Get him there."
     # Source lines 947–947
     $ source_line = 947
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When the bearers lower the human woman beside Serat, her husband hesitates at the northern uniforms."
     # Source lines 949–950
     $ source_line = 949
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "We're going to our infirmary. Stay beside her."
     # Source lines 952–952
     $ source_line = 952
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa kneels between the patients as they pull into the current. Lucan holds Serat steady while Iven binds the wound beneath her light."
     $ completed_scenes = max(completed_scenes, 21)
     jump s022
@@ -2422,123 +2427,123 @@ label s022:
     $ scene_heading = "Rovel River Picket · Dusk"
     # Source lines 956–956
     $ source_line = 956
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The picket helps carry the patients ashore. Its OFFICER recognizes Lucan as he takes a litter handle and signals two men to block his way back to the boat."
     # Source lines 958–959
     $ source_line = 958
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "PICKET OFFICER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["PICKET OFFICER"] "Your sword. Leave it on the boards."
     # Source lines 961–961
     $ source_line = 961
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara steps between them."
     # Source lines 963–964
     $ source_line = 963
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "He has my word that he can leave."
     # Source lines 966–967
     $ source_line = 966
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "PICKET OFFICER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["PICKET OFFICER"] "Let the marshal decide. He can wait here until she answers."
     # Source lines 969–970
     $ source_line = 969
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Those people made it here because he went back for them. I gave him safe passage. Put that in your report."
     # Source lines 972–972
     $ source_line = 972
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara takes Lucan's litter handle. The officer looks at the wounded on the landing, then signals his men aside."
     # Source lines 974–975
     $ source_line = 974
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "PICKET OFFICER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["PICKET OFFICER"] "You'll sign the report, Captain."
     # Source lines 977–977
     $ source_line = 977
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat is carried toward the infirmary."
     # Source lines 979–979
     $ source_line = 979
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan calls to Iven."
     # Source lines 981–982
     $ source_line = 981
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "His brother stays with him. I'll send for them when he can travel."
     # Source lines 984–985
     $ source_line = 984
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "He'll be looked after."
     # Source lines 987–987
     $ source_line = 987
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Before Lucan boards, Tessa offers him Orren's portrait, Hest's address on its back."
     # Source lines 989–990
     $ source_line = 989
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Your men took him from Bellweir with two apprentices. His name's Orren."
     # Source lines 992–993
     $ source_line = 992
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Which camp?"
     # Source lines 995–996
     $ source_line = 995
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "We don't know. His wife hasn't heard anything."
     # Source lines 998–998
     $ source_line = 998
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan pockets the portrait."
     # Source lines 1000–1001
     $ source_line = 1000
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I'll look for him."
     # Source lines 1003–1004
     $ source_line = 1003
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Even if it's bad, tell her. Please."
     # Source lines 1006–1006
     $ source_line = 1006
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan leaves by boat. Mara stays to sign the report."
     $ completed_scenes = max(completed_scenes, 22)
     jump s023
@@ -2553,99 +2558,99 @@ label s023:
     $ scene_heading = "Northern Field Quarters · Night"
     # Source lines 1010–1010
     $ source_line = 1010
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair waits by the fire with the patrol's report as Lucan enters, still muddy from the river."
     # Source lines 1012–1013
     $ source_line = 1012
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Where's Serat?"
     # Source lines 1015–1016
     $ source_line = 1015
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "At their infirmary. His brother stayed with him."
     # Source lines 1018–1019
     $ source_line = 1018
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "You left him in a human fortress?"
     # Source lines 1021–1022
     $ source_line = 1021
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "With a surgeon. He was barely awake when we got there."
     # Source lines 1024–1024
     $ source_line = 1024
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His father puts the report down and draws a chair toward the fire. Lucan remains standing."
     # Source lines 1026–1027
     $ source_line = 1026
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "They tried to arrest you."
     # Source lines 1029–1030
     $ source_line = 1029
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Their captain kept her word."
     # Source lines 1032–1033
     $ source_line = 1032
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "If they'd kept you, we'd be trading forts to get you back."
     # Source lines 1035–1036
     $ source_line = 1035
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Serat wouldn't have survived the trip upriver. I wasn't leaving him to die."
     # Source lines 1038–1038
     $ source_line = 1038
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair holds out his hand for the field seal. Lucan leaves it on the table."
     # Source lines 1040–1041
     $ source_line = 1040
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Vask takes your companies. Until I say otherwise, you command no one."
     # Source lines 1043–1044
     $ source_line = 1043
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I'd do it again."
     # Source lines 1046–1046
     $ source_line = 1046
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He turns to leave."
     # Source lines 1048–1049
     $ source_line = 1048
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Lucan. Sit down."
     # Source lines 1051–1051
     $ source_line = 1051
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks at the chair, still shivering in his wet clothes, then leaves."
     $ completed_scenes = max(completed_scenes, 23)
     jump s024
@@ -2660,51 +2665,51 @@ label s024:
     $ scene_heading = "Northern Wharf · Morning"
     # Source lines 1055–1055
     $ source_line = 1055
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The command pennant comes down from the household launch Lucan used with his company. His former crew unload the weapons while he lays Orren's portrait on a river chart."
     # Source lines 1057–1057
     $ source_line = 1057
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The boatman who took Serat downstream stays beside him after the crew leaves."
     # Source lines 1059–1060
     $ source_line = 1059
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "You won't find names at the stores office. They count work gangs."
     # Source lines 1062–1062
     $ source_line = 1062
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks at the camps marked along the quarry cuts."
     # Source lines 1064–1065
     $ source_line = 1064
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Can you take me there?"
     # Source lines 1067–1068
     $ source_line = 1067
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "I can take you. I can't ask the men to go unpaid."
     # Source lines 1070–1070
     $ source_line = 1070
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan takes out his purse. The boatman names a sum, and he counts it out rather than trying to bargain him down."
     # Source lines 1072–1072
     $ source_line = 1072
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The launch leaves with two paid hands instead of a company."
     $ completed_scenes = max(completed_scenes, 24)
     jump s025
@@ -2719,75 +2724,75 @@ label s025:
     $ scene_heading = "Royal Infirmary · Corridor · Day"
     # Source lines 1076–1076
     $ source_line = 1076
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Several days later. Serat lies with his leg splinted while Iven checks the healing. His brother is asleep in a chair beside the bed."
     # Source lines 1078–1078
     $ source_line = 1078
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "In the corridor, Orra returns Mara's signed account."
     # Source lines 1080–1081
     $ source_line = 1080
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Your lieutenant takes the patrol until the inquiry is finished. Stay with the medical escort."
     # Source lines 1083–1083
     $ source_line = 1083
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When Orra has gone, Tessa comes out of the ward."
     # Source lines 1085–1086
     $ source_line = 1085
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Is that about Lucan? You didn't tell me."
     # Source lines 1088–1089
     $ source_line = 1088
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "I knew there'd be a report."
     # Source lines 1091–1092
     $ source_line = 1091
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Then let me tell her what happened. She wasn't there."
     # Source lines 1094–1095
     $ source_line = 1094
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Don't go after her for me. She's got my report."
     # Source lines 1097–1097
     $ source_line = 1097
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Inside the ward, Iven helps Serat lift his heel."
     # Source lines 1099–1100
     $ source_line = 1099
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "They're not taking you away from us?"
     # Source lines 1102–1103
     $ source_line = 1102
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "No. Just the patrol."
     # Source lines 1105–1105
     $ source_line = 1105
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They stand together in the doorway while Iven works."
     $ completed_scenes = max(completed_scenes, 25)
     jump s026
@@ -2803,51 +2808,51 @@ label s026:
     $ scene_heading = "Quarry Camp · Loading Ramp · Day"
     # Source lines 1109–1109
     $ source_line = 1109
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan shows Orren's portrait to men loading stone. A foreman waves him away without looking. Beyond the ramp, a boy has stopped with an empty barrow."
     # Source lines 1111–1111
     $ source_line = 1111
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan walks toward him. The boy goes back to work."
     # Source lines 1113–1114
     $ source_line = 1113
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "You know him."
     # Source lines 1116–1117
     $ source_line = 1116
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "APPRENTICE"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["APPRENTICE"] "No."
     # Source lines 1119–1119
     $ source_line = 1119
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan folds the picture, leaving Hest's address visible on the back. The boy reads it before he can stop himself."
     # Source lines 1121–1122
     $ source_line = 1121
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "She's alive. Both children too."
     # Source lines 1124–1124
     $ source_line = 1124
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The foreman calls the boy's number. He hurries away, leaving Lucan beside the empty barrow."
     # Source lines 1126–1126
     $ source_line = 1126
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Later, as the launch prepares to leave, a stone drops onto its deck. Orren's name is scratched into the chalk coating, with a bed number beneath it. Up on the ramp, the apprentice avoids Lucan's eyes."
     $ completed_scenes = max(completed_scenes, 26)
     jump s027
@@ -2862,105 +2867,105 @@ label s027:
     $ scene_heading = "River Camp · Gate · Day"
     # Source lines 1130–1130
     $ source_line = 1130
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Six weeks after Gray Scar. Hest grips Lucan's letter while guards search the cart. Mara submits her sheathed sword to a binding cord."
     # Source lines 1132–1132
     $ source_line = 1132
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan's launch is tied below the camp with food and dressings aboard. The GOVERNOR looks it over before approaching him."
     # Source lines 1134–1135
     $ source_line = 1134
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "GOVERNOR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["GOVERNOR"] "The boat stays for the week. We need it at the upper quarry."
     # Source lines 1137–1137
     $ source_line = 1137
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A prisoner stumbles under a load of stone. The foreman hauls him upright by the collar. Tessa watches him stagger back into line."
     # Source lines 1139–1140
     $ source_line = 1139
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "When I'm finished, do you send them straight back up there?"
     # Source lines 1142–1143
     $ source_line = 1142
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "GOVERNOR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["GOVERNOR"] "They have work to finish."
     # Source lines 1145–1145
     $ source_line = 1145
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She turns to Lucan."
     # Source lines 1147–1148
     $ source_line = 1147
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You told me Orren couldn't stand."
     # Source lines 1150–1151
     $ source_line = 1150
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "The men we treat stay in the infirmary."
     # Source lines 1153–1154
     $ source_line = 1153
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "GOVERNOR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["GOVERNOR"] "And who feeds them while the work stops?"
     # Source lines 1156–1156
     $ source_line = 1156
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks down at the food aboard his launch."
     # Source lines 1158–1159
     $ source_line = 1158
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I will. They get a week to recover, and your healer decides when they're ready."
     # Source lines 1161–1161
     $ source_line = 1161
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The northern HEALER has come out with Serat, who is still on his stick. She waits beside the gate until the governor looks at her."
     # Source lines 1163–1164
     $ source_line = 1163
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEALER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEALER"] "Three more have the blackening. I need her today."
     # Source lines 1166–1166
     $ source_line = 1166
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan signals his boatman to come ashore. The governor looks at the waiting food before opening the gate."
     # Source lines 1168–1169
     $ source_line = 1168
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "GOVERNOR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["GOVERNOR"] "One week. You both stay with her. She goes nowhere near the wards."
     # Source lines 1171–1171
     $ source_line = 1171
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest is through the gate before he finishes. Lucan stays beside Tessa as prisoners begin unloading the food."
     $ completed_scenes = max(completed_scenes, 27)
     jump s028
@@ -2975,51 +2980,51 @@ label s028:
     $ scene_heading = "River Camp · Infirmary · Continuous"
     # Source lines 1175–1175
     $ source_line = 1175
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orren tries to stand. Hest catches him as his leg gives way, holding him against her."
     # Source lines 1177–1177
     $ source_line = 1177
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "While Hest holds Orren, Tessa works at the next bed. Darkness fades from a laborer's arm. Serat brings her a chair."
     # Source lines 1179–1179
     $ source_line = 1179
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the work call, Orren reaches for his crutches. Hest catches his hand before he can pull himself up."
     # Source lines 1181–1182
     $ source_line = 1181
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "You're staying here."
     # Source lines 1184–1184
     $ source_line = 1184
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He watches the door until the guard passes without calling his name. Only then does he let Iven remove the filthy padding from his splint."
     # Source lines 1186–1187
     $ source_line = 1186
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORREN"] "Have the children been getting enough to eat?"
     # Source lines 1189–1190
     $ source_line = 1189
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "Every day. Ada's got new boots. They're all right, Orren."
     # Source lines 1192–1192
     $ source_line = 1192
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He holds her hand while she tells him about them."
     $ completed_scenes = max(completed_scenes, 28)
     jump s029
@@ -3034,27 +3039,27 @@ label s029:
     $ scene_heading = "River Camps · Successive Visits"
     # Source lines 1196–1196
     $ source_line = 1196
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "On the next visit, Hest brings Orren's cap. He wears it while Iven fits the new support to his leg."
     # Source lines 1198–1198
     $ source_line = 1198
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Once the week is over and the boat is his again, Lucan returns with Orren's apprentice to the river chart. The boy points out the upper quarry. The other boy was sent there. Lucan circles it, but when his launch reaches the quarry landing, guards turn him back."
     # Source lines 1200–1200
     $ source_line = 1200
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Next morning he waits across the channel with a boatman from that quarry. A work barge emerges before the guards change. The boatman points out a boy at its winch."
     # Source lines 1202–1202
     $ source_line = 1202
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan calls his name. The boy lifts his head; the guard beside him pulls him back from the rail. Lucan follows the barge in his launch until he has seen where it unloads."
     $ completed_scenes = max(completed_scenes, 29)
     jump s030
@@ -3069,75 +3074,75 @@ label s030:
     $ scene_heading = "River Camp · Infirmary · Evening"
     # Source lines 1206–1206
     $ source_line = 1206
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan puts that landing on the chart for Orren. The apprentice leans over it, smiling for the first time."
     # Source lines 1208–1209
     $ source_line = 1208
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "APPRENTICE"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["APPRENTICE"] "He always said he'd run away to sea."
     # Source lines 1211–1212
     $ source_line = 1211
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORREN"] "His mother would have brought him back by the ear."
     # Source lines 1214–1214
     $ source_line = 1214
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan laughs with them. Tessa sketches him from the next bed."
     # Source lines 1216–1217
     $ source_line = 1216
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He had this enormous cap on. Kept pushing it up to see who was calling him."
     # Source lines 1219–1219
     $ source_line = 1219
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When he notices the sketch, he straightens his coat and settles into a pose. Tessa lowers her pencil."
     # Source lines 1221–1222
     $ source_line = 1221
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Go on with the story."
     # Source lines 1224–1225
     $ source_line = 1224
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I thought you wanted me to sit still."
     # Source lines 1227–1227
     $ source_line = 1227
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She turns the page toward him: his head thrown back, laughing. He leans closer, forgetting the pose."
     # Source lines 1229–1230
     $ source_line = 1229
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Could I keep that one?"
     # Source lines 1232–1233
     $ source_line = 1232
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "When I've finished."
     # Source lines 1235–1235
     $ source_line = 1235
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He stays on the stool while she works, listening to Orren and the apprentice argue about the cap."
     $ completed_scenes = max(completed_scenes, 30)
     jump s031
@@ -3152,63 +3157,63 @@ label s031:
     $ scene_heading = "Northern Grain Wharf · Autumn Morning"
     # Source lines 1239–1239
     $ source_line = 1239
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Loaded barges wait for the army's tallymen. Lucan stands on his launch between the bargemen and the waiting carts, with letters from the prisoners' families spread across a hatch."
     # Source lines 1241–1242
     $ source_line = 1241
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BARGEMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BARGEMAN"] "My license feeds six people. Will you feed them when they take it?"
     # Source lines 1244–1244
     $ source_line = 1244
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan looks down the wharf at his household's loaded supply cart."
     # Source lines 1246–1247
     $ source_line = 1246
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "For as long as that lasts."
     # Source lines 1249–1250
     $ source_line = 1249
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BARGEMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BARGEMAN"] "And then?"
     # Source lines 1252–1252
     $ source_line = 1252
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan has no answer he can offer him. The man climbs aboard and casts off. Two more crews follow; the others stay tied to the wharf."
     # Source lines 1254–1254
     $ source_line = 1254
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Three days later, grain is still under tarpaulins on the same boats. A royal messenger arrives with a one-day exchange order. Lucan finds the quarry apprentice missing from it."
     # Source lines 1256–1256
     $ source_line = 1256
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He takes the messenger to his launch and gives him its ownership papers, keeping the release list."
     # Source lines 1258–1259
     $ source_line = 1258
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He comes too. Tell the governor he gets the boat after the boy crosses."
     # Source lines 1261–1261
     $ source_line = 1261
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The messenger looks over the hull before taking the offer back."
     $ completed_scenes = max(completed_scenes, 31)
     $ unlocked_round = 3
@@ -3226,100 +3231,102 @@ label s032:
     $ scene_heading = "Harrow Ford · Covered Bridge · Day"
     # Source lines 1265–1265
     $ source_line = 1265
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A clock stands above the northern tollhouse. Below it, Mara and northern engineers finish inspecting the bridge's empty charge housings. A southern inspector checks two wagons of returned tools with MARREN, the northern stores clerk."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They seal the loads and keep matching copies of the cargo numbers."
     # Source lines 1267–1267
     $ source_line = 1267
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa finds Orren and both apprentices on the release list."
     # Source lines 1269–1270
     $ source_line = 1269
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "All three?"
     # Source lines 1272–1273
     $ source_line = 1272
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Yes. The governor gets my launch as soon as that boy's across."
     # Source lines 1275–1275
     $ source_line = 1275
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "On the northern bank, people have begun packing. One woman is trying to secure a young tree between her bedding and a trunk."
     # Source lines 1277–1278
     $ source_line = 1277
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Are you going to be able to do this again?"
     # Source lines 1280–1281
     $ source_line = 1280
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Let me get through tomorrow. I don't know how much longer the crews will wait."
     # Source lines 1283–1283
     $ source_line = 1283
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara takes the inspector's copy: tool wagons behind the last medical carts, just before four. Marren locks the shed and gives its key to the night guard."
     # Source lines 1285–1285
     $ source_line = 1285
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven joins them from the medical carts."
     # Source lines 1287–1288
     $ source_line = 1287
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Hest wants to bring the children. Shall I tell her yes?"
     # Source lines 1290–1290
     $ source_line = 1290
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa turns to Lucan."
     # Source lines 1292–1293
     $ source_line = 1292
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You'll be with us? The whole way?"
     # Source lines 1295–1296
     $ source_line = 1295
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Beside Orren's cart. I'll walk them across myself."
     # Source lines 1298–1298
     $ source_line = 1298
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She gives Iven the list."
     # Source lines 1300–1301
     $ source_line = 1300
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Tell her they're coming home. All three."
     # Source lines 1303–1303
     $ source_line = 1303
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven carries the list to Hest. Lucan helps the woman settle her sapling among her belongings."
     $ completed_scenes = max(completed_scenes, 32)
     jump s033
@@ -3334,147 +3341,147 @@ label s033:
     $ scene_heading = "Valcair'S War Room · Night"
     # Source lines 1307–1307
     $ source_line = 1307
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask lays the winter agreement beside reports from the grain wharf. Supply carts have returned empty; several towns are withholding their recruits as well."
     # Source lines 1309–1310
     $ source_line = 1309
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "He used the household stores to keep those crews ashore?"
     # Source lines 1312–1313
     $ source_line = 1312
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "For three days. They'll unload once the families are through. Give him the winter agreement and they'll keep supplying us."
     # Source lines 1315–1315
     $ source_line = 1315
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair looks at the map, where only Bellweir has a northern marker."
     # Source lines 1317–1318
     $ source_line = 1317
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "He hasn't asked them to give up a single fort."
     # Source lines 1320–1321
     $ source_line = 1320
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "We'd still hold Bellweir."
     # Source lines 1323–1324
     $ source_line = 1323
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Then we sit at Bellweir while they keep the other two forts and the summoning chamber."
     # Source lines 1326–1327
     $ source_line = 1326
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "I'm asking you for one winter."
     # Source lines 1329–1329
     $ source_line = 1329
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair pulls the cargo list out from beneath the agreement."
     # Source lines 1331–1332
     $ source_line = 1331
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "These two wagons. Hide the charges behind the southern ward plates."
     # Source lines 1334–1334
     $ source_line = 1334
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask finds them on the schedule, behind the infirmary carts."
     # Source lines 1336–1337
     $ source_line = 1336
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "Our families will be on that bridge."
     # Source lines 1339–1340
     $ source_line = 1339
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Rovel guaranteed their safety. Let the towns ask Rovel what happened."
     # Source lines 1342–1342
     $ source_line = 1342
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask pushes the list away."
     # Source lines 1344–1345
     $ source_line = 1344
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "My men are waiting for their families. You expect me to tell them it was Rovel's wards?"
     # Source lines 1347–1348
     $ source_line = 1347
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "I expect you to take the forts. Tell me how you do that without recruits."
     # Source lines 1350–1350
     $ source_line = 1350
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask looks at the unsigned winter agreement."
     # Source lines 1352–1353
     $ source_line = 1352
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "I wrote to the families after Bellweir. I told them their children would have the river."
     # Source lines 1355–1355
     $ source_line = 1355
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She pulls the wagon list back."
     # Source lines 1357–1358
     $ source_line = 1357
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "My engineers will do it. The captains hear that the southern wards failed."
     # Source lines 1360–1360
     $ source_line = 1360
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask marks four o'clock beside the wagon numbers. Valcair writes Lucan's recall: leave the ford before four by the northern road; report to him that evening."
     # Source lines 1362–1363
     $ source_line = 1362
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "You can keep your son off it."
     # Source lines 1365–1366
     $ source_line = 1365
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Get him clear before four."
     # Source lines 1368–1368
     $ source_line = 1368
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask tears the two wagon numbers from the list and puts them in her pocket. The winter agreement stays unsigned."
     $ completed_scenes = max(completed_scenes, 33)
     jump s034
@@ -3489,33 +3496,33 @@ label s034:
     $ scene_heading = "Return-Cargo Shed · Before Dawn"
     # Source lines 1372–1372
     $ source_line = 1372
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The two sealed wagons are recalled to have their axles replaced. Marren records Vask's order, but her guards keep him outside while the engineers cut the numbered seals."
     # Source lines 1374–1374
     $ source_line = 1374
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They fasten charges beneath the floors and hide them behind captured southern ward plates. The tools go back on top."
     # Source lines 1376–1376
     $ source_line = 1376
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask hands Marren a signed clearance: repaired and reinspected. Both wagons still have their old axles. She waits while he countersigns, then takes the certified copy."
     # Source lines 1378–1378
     $ source_line = 1378
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He keeps his first inspection beneath the duplicate she leaves him."
     # Source lines 1380–1380
     $ source_line = 1380
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The wagons return to the crossing line. The courier carrying Lucan's recall rides ahead of them."
     $ completed_scenes = max(completed_scenes, 34)
     jump s035
@@ -3530,183 +3537,183 @@ label s035:
     $ scene_heading = "Harrow Ford · Covered Bridge · Day"
     # Source lines 1384–1384
     $ source_line = 1384
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest and the children walk beside Orren's stretcher cart."
     # Source lines 1386–1387
     $ source_line = 1386
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORREN"] "I'm sleeping upstairs. Put a chair on the landing and I'll manage."
     # Source lines 1389–1389
     $ source_line = 1389
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven checks the apprentices' belongings while Lucan walks beside Orren. The royal courier calls Lucan back from the bridge entrance."
     # Source lines 1391–1392
     $ source_line = 1391
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I'll catch up."
     # Source lines 1394–1394
     $ source_line = 1394
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa stays with Iven as Lucan goes to the waiting rider."
     # Source lines 1396–1396
     $ source_line = 1396
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A sentry stops the tool wagons at their changed seals. The duty officer checks Vask's clearance against the register and waves them through."
     # Source lines 1398–1398
     $ source_line = 1398
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "As the wagons reach midspan, Orren's cart nears the southern stone pier. A northern family passes them in the other direction."
     # Source lines 1400–1400
     $ source_line = 1400
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan reads the recall at the north end, then looks at the tollhouse clock. Tessa and Iven are already across most of the bridge."
     # Source lines 1402–1402
     $ source_line = 1402
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He pockets the order and dismisses the courier."
     # Source lines 1404–1404
     $ source_line = 1404
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He stops to help a man retrieve a fallen crutch."
     # Source lines 1406–1406
     $ source_line = 1406
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The clock strikes four."
     # Source lines 1408–1408
     $ source_line = 1408
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The deck bursts beneath the tool wagons. They plunge through it, taking the roof and middle span with them."
     # Source lines 1410–1410
     $ source_line = 1410
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Only the buckled southern end holds, caught on a bent iron brace. Orren's cart skids beneath a falling roof beam."
     # Source lines 1412–1412
     $ source_line = 1412
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa's sanctuary catches the beam above the cart. Renn's leg is trapped beneath the broken axle."
     # Source lines 1414–1414
     $ source_line = 1414
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara and a soldier heave the shaft up while Iven crawls in to free him."
     # Source lines 1416–1417
     $ source_line = 1416
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "IVEN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["IVEN"] "Take him, Hest. I've got his foot clear."
     # Source lines 1419–1419
     $ source_line = 1419
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Hest pulls Renn clear. Mara and the soldier carry Orren's stretcher onto stone, where Ada and the apprentices wait."
     # Source lines 1421–1421
     $ source_line = 1421
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "As Iven follows, the iron brace begins tearing loose. The deck tips, sliding him toward the gorge."
     # Source lines 1423–1423
     $ source_line = 1423
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa kneels on the broken planking beside the pier and catches his wrist in both hands. Her sanctuary still holds the beam."
     # Source lines 1425–1425
     $ source_line = 1425
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara braces against the stone and grips Tessa's waist."
     # Source lines 1427–1427
     $ source_line = 1427
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Iven's free hand closes over the edge."
     # Source lines 1429–1430
     $ source_line = 1429
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Mara, he's got it. Pull!"
     # Source lines 1432–1432
     $ source_line = 1432
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The planking gives way. Mara hauls Tessa back onto stone; Iven's wrist slips from her grip."
     # Source lines 1434–1434
     $ source_line = 1434
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She catches his sleeve. It tears at the shoulder."
     # Source lines 1436–1436
     $ source_line = 1436
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She drops the beam onto the empty cart and throws her light beneath Iven. The falling deck smashes through it."
     # Source lines 1438–1438
     $ source_line = 1438
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Timber and water close over him."
     # Source lines 1440–1440
     $ source_line = 1440
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa fights Mara's grip, trying to reach the edge."
     # Source lines 1442–1443
     $ source_line = 1442
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Get off me! Iven!"
     # Source lines 1445–1445
     $ source_line = 1445
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A section of roof rolls over in the water. Nothing surfaces beneath it."
     # Source lines 1447–1447
     $ source_line = 1447
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Across the gap, Lucan shouts for ropes. Tessa keeps calling Iven."
     $ completed_scenes = max(completed_scenes, 35)
     jump s036
@@ -3721,153 +3728,153 @@ label s036:
     $ scene_heading = "Harrow Ford · South Bank · Late Afternoon"
     # Source lines 1451–1451
     $ source_line = 1451
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When Lucan steps off a search boat, Tessa comes down the bank to meet him, Iven's sleeve in her fist. Mara follows."
     # Source lines 1453–1454
     $ source_line = 1453
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Where were you?"
     # Source lines 1456–1457
     $ source_line = 1456
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "My father sent a rider. He wanted--"
     # Source lines 1459–1460
     $ source_line = 1459
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You said you'd be with us."
     # Source lines 1462–1462
     $ source_line = 1462
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa snatches the recall as he takes it out. LEAVE BEFORE FOUR, BY THE NORTHERN ROAD."
     # Source lines 1464–1465
     $ source_line = 1464
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "He told you to leave."
     # Source lines 1467–1468
     $ source_line = 1467
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He wanted a report. I thought--"
     # Source lines 1470–1471
     $ source_line = 1470
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Before four. Before the wagons got there. Did you know?"
     # Source lines 1473–1474
     $ source_line = 1473
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "No. Tessa, I didn't know."
     # Source lines 1476–1477
     $ source_line = 1476
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You let me tell Hest it was safe."
     # Source lines 1479–1480
     $ source_line = 1479
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I believed him too."
     # Source lines 1482–1482
     $ source_line = 1482
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She steps back as he reaches for her arm."
     # Source lines 1484–1485
     $ source_line = 1484
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Don't touch me!"
     # Source lines 1487–1487
     $ source_line = 1487
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Soldiers turn at the shout. Mara blocks an officer coming from the landing."
     # Source lines 1489–1489
     $ source_line = 1489
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The recall crumples in Tessa's fist."
     # Source lines 1491–1492
     $ source_line = 1491
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "He had time to get you off that bridge while Iven was still standing beside me."
     # Source lines 1494–1495
     $ source_line = 1494
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I stayed. I was still there when it fell."
     # Source lines 1497–1498
     $ source_line = 1497
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You weren't beside us. I was looking for you."
     # Source lines 1500–1500
     $ source_line = 1500
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At a shout from the water, Tessa hurries to the edge. An empty cart bobs in the branches."
     # Source lines 1502–1502
     $ source_line = 1502
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan follows. She turns on him."
     # Source lines 1504–1505
     $ source_line = 1504
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Go. Please just go."
     # Source lines 1507–1508
     $ source_line = 1507
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "Send anything you find to me. Stay out of our camp."
     # Source lines 1510–1510
     $ source_line = 1510
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan sends his men back to the search and returns to the boat."
     # Source lines 1512–1512
     $ source_line = 1512
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa pockets the recall and stays at the edge, Iven's sleeve in her hand."
     # Source lines 1514–1514
     $ source_line = 1514
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Downriver, the woman with the sapling smooths her husband's coat over his body. Their surviving son holds the little tree."
     $ completed_scenes = max(completed_scenes, 36)
     jump s037
@@ -3882,93 +3889,93 @@ label s037:
     $ scene_heading = "Relief Camp · Night"
     # Source lines 1518–1518
     $ source_line = 1518
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa sits beside the screen around Iven's body, his coat across her knees. She tries to fit the torn sleeve to its shoulder."
     # Source lines 1520–1520
     $ source_line = 1520
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara reaches for a corner to help. Tessa pulls it away."
     # Source lines 1522–1523
     $ source_line = 1522
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Leave it. I'm doing it."
     # Source lines 1525–1525
     $ source_line = 1525
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara sits on the other stool. For a while there is only the sound of the search parties arriving outside."
     # Source lines 1527–1528
     $ source_line = 1527
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "He had his hand on the edge. You saw him. We only had to pull once more."
     # Source lines 1530–1531
     $ source_line = 1530
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "The boards were going. I couldn't hold you both."
     # Source lines 1533–1534
     $ source_line = 1533
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I know about the boards!"
     # Source lines 1536–1536
     $ source_line = 1536
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara says nothing."
     # Source lines 1538–1539
     $ source_line = 1538
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "He was looking at me. He thought I had him."
     # Source lines 1541–1541
     $ source_line = 1541
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa presses the sleeve against her mouth and turns toward the screen."
     # Source lines 1543–1544
     $ source_line = 1543
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Don't let them take him away yet."
     # Source lines 1546–1546
     $ source_line = 1546
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara sits beside her and holds the coat while Tessa cries into the sleeve."
     # Source lines 1548–1548
     $ source_line = 1548
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Outside, Hest fills bowls for the northern searchers. A guard tries to stop them entering the camp."
     # Source lines 1550–1551
     $ source_line = 1550
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEST"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEST"] "That one went into the river after Iven. Move."
     # Source lines 1553–1553
     $ source_line = 1553
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She takes a bowl past the guard. The searcher's hands shake around it."
     $ completed_scenes = max(completed_scenes, 37)
     jump s038
@@ -3984,105 +3991,105 @@ label s038:
     $ scene_heading = "Northern Stores Office · Two Weeks After Harrow"
     # Source lines 1557–1557
     $ source_line = 1557
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan lays his crossing schedule in front of MARREN, the clerk who inspected the wagons. Two cargo numbers have been circled."
     # Source lines 1559–1560
     $ source_line = 1559
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Who reopened them?"
     # Source lines 1562–1563
     $ source_line = 1562
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "They needed axles."
     # Source lines 1565–1566
     $ source_line = 1565
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Then show me the old ones."
     # Source lines 1568–1568
     $ source_line = 1568
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren looks toward the inner office. Through its open door, an officer has stopped writing."
     # Source lines 1570–1571
     $ source_line = 1570
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "The repairs were certified. I entered them."
     # Source lines 1573–1573
     $ source_line = 1573
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan lowers his voice."
     # Source lines 1575–1576
     $ source_line = 1575
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Did you actually see the repair?"
     # Source lines 1578–1578
     $ source_line = 1578
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask comes out before Marren answers."
     # Source lines 1580–1581
     $ source_line = 1580
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "He's given his statement. I'll have it copied for you."
     # Source lines 1583–1584
     $ source_line = 1583
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He was about to answer me."
     # Source lines 1586–1587
     $ source_line = 1586
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "He has work to do. Take the copy."
     # Source lines 1589–1589
     $ source_line = 1589
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren moves back to his desk. Lucan stays long enough to see him pick up the pen, then leaves without the copy."
     # Source lines 1591–1591
     $ source_line = 1591
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask closes the outer door."
     # Source lines 1593–1594
     $ source_line = 1593
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "Pack your things. You're going to the upper stores tonight."
     # Source lines 1596–1597
     $ source_line = 1596
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "My wife doesn't even know--"
     # Source lines 1599–1600
     $ source_line = 1599
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "We'll send her the address."
     $ completed_scenes = max(completed_scenes, 38)
     jump s039
@@ -4097,27 +4104,27 @@ label s039:
     $ scene_heading = "Northern River Town · Weeks Later"
     # Source lines 1604–1604
     $ source_line = 1604
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A notice naming the dead hangs beside a royal account of Harrow: SOUTHERN WARDS FAILED DURING SAFE PASSAGE."
     # Source lines 1606–1606
     $ source_line = 1606
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Outside the recruiting hall, the woman with the sapling helps her son into his father's coat. He reads the notice."
     # Source lines 1608–1608
     $ source_line = 1608
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Inside, he gives his name. The recruiter crosses out his earlier refusal."
     # Source lines 1610–1610
     $ source_line = 1610
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His mother stays by the door until the next recruit takes his place."
     $ completed_scenes = max(completed_scenes, 39)
     jump s040
@@ -4132,63 +4139,63 @@ label s040:
     $ scene_heading = "Occupied Mill Town · Winter · Day"
     # Source lines 1614–1614
     $ source_line = 1614
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "SUPER: THREE MONTHS AFTER HARROW"
     # Source lines 1616–1616
     $ source_line = 1616
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa's sanctuary spans the street above an evacuation column, turning falling tiles into the gutters. OLAN brings out the last family, his shield fitted to the fingers he has left."
     # Source lines 1618–1618
     $ source_line = 1618
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A black barrier seals the road ahead. Mara gets the carts beneath a stone loading arch; Tessa lets her shelter go and attacks the barrier."
     # Source lines 1620–1620
     $ source_line = 1620
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "White light opens a gap, almost wide enough for a cart. A wardkeeper at the tower window raises both arms; black light pushes the opening closed despite Tessa's continuing light. Mara holds the driver back."
     # Source lines 1622–1623
     $ source_line = 1622
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "At the window!"
     # Source lines 1625–1625
     $ source_line = 1625
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa redirects her light toward him. The wardkeeper ducks behind the masonry; the road stays sealed."
     # Source lines 1627–1628
     $ source_line = 1627
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "There's a back street. We'd have to leave the carts."
     # Source lines 1630–1630
     $ source_line = 1630
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa looks at the people who would have to be carried, then at the now-empty window."
     # Source lines 1632–1633
     $ source_line = 1632
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Keep the carts here. Olan, get me to the tower."
     # Source lines 1635–1635
     $ source_line = 1635
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan covers Tessa with his shield as she clears the smaller ward across the side entrance. They squeeze through together."
     $ completed_scenes = max(completed_scenes, 40)
     jump s041
@@ -4203,51 +4210,51 @@ label s041:
     $ scene_heading = "Curse Tower · Continuous"
     # Source lines 1639–1639
     $ source_line = 1639
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They climb the narrow stair, Tessa's drawn sword low behind Olan's shield."
     # Source lines 1641–1641
     $ source_line = 1641
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "From the top step, Tessa sees the wardkeeper behind the window's thick wall, dark light gathered between his hands. Outside, the road is still sealed."
     # Source lines 1643–1643
     $ source_line = 1643
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Her light strips his armor ward. He drops the road spell, draws his sword and rushes them."
     # Source lines 1645–1645
     $ source_line = 1645
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His blow drives Olan back toward the stairwell. Before he can get around the shield, Tessa thrusts into the side of his neck."
     # Source lines 1647–1647
     $ source_line = 1647
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He catches her wrist as his sword falls. Olan holds him back while she pulls her blade free."
     # Source lines 1649–1649
     $ source_line = 1649
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He collapses beside the stair."
     # Source lines 1651–1651
     $ source_line = 1651
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Below the window, the first cart passes beneath the empty gateway. Mara calls for the next."
     # Source lines 1653–1653
     $ source_line = 1653
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa cannot let go of the hilt. Olan sits her on a step, away from the body, and checks below."
     $ completed_scenes = max(completed_scenes, 41)
     jump s042
@@ -4262,69 +4269,69 @@ label s042:
     $ scene_heading = "Mill Town · Later"
     # Source lines 1657–1657
     $ source_line = 1657
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "In the cart, Tessa keeps missing the scabbard. When Mara reaches for her wrist, she jerks away."
     # Source lines 1659–1659
     $ source_line = 1659
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara withdraws. Blood has dried between Tessa's fingers."
     # Source lines 1661–1662
     $ source_line = 1661
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Take it."
     # Source lines 1664–1664
     $ source_line = 1664
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara sheathes the sword and unhooks its belt, putting it beneath the seat."
     # Source lines 1666–1667
     $ source_line = 1666
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I want Iven."
     # Source lines 1669–1669
     $ source_line = 1669
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara sits on the step of the cart. Olan waits with the unhitched horse."
     # Source lines 1671–1671
     $ source_line = 1671
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa rubs the marks on her wrist."
     # Source lines 1673–1674
     $ source_line = 1673
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "The man in the tower was pushing Olan toward the stairs."
     # Source lines 1676–1677
     $ source_line = 1676
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "You saved him."
     # Source lines 1679–1680
     $ source_line = 1679
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I can still feel his hand."
     # Source lines 1682–1682
     $ source_line = 1682
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara climbs up when Tessa makes room. After a while, Tessa reaches for her hand."
     $ completed_scenes = max(completed_scenes, 42)
     jump s043
@@ -4339,69 +4346,69 @@ label s043:
     $ scene_heading = "River Provinces · Changing Seasons"
     # Source lines 1686–1686
     $ source_line = 1686
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Spring. From a bell tower, Tessa fills a lingering curse-cloud with white light. Sunlight reaches the streets. Mara helps her stand as people emerge below."
     # Source lines 1688–1688
     $ source_line = 1688
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the fortified upper stores, Lucan is refused entry. The guard returns his letter unopened. Marren watches from a high window until someone draws him away."
     # Source lines 1690–1690
     $ source_line = 1690
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The following year, summer. Tessa reaches the last of three attacked villages after its defenders have withdrawn. She searches empty houses before putting away the drawing she began on her previous visit."
     # Source lines 1692–1692
     $ source_line = 1692
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan waits outside the stores with Marren's wife. Her parcel comes back unopened too. She takes it from him and walks away before he can promise to try again."
     # Source lines 1694–1694
     $ source_line = 1694
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Winter. Southern flags rise above the river towns. At the upper stores, troops load their supplies onto barges for retreat."
     # Source lines 1696–1696
     $ source_line = 1696
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan's former boatman finds him at a wharf, repairing the patched hull of a hired fishing boat with Serat."
     # Source lines 1698–1699
     $ source_line = 1698
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "They're moving your clerk tomorrow. On the stores barge, under guard."
     # Source lines 1701–1701
     $ source_line = 1701
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan straightens. The river chart spread beside the boat is worn through at that landing."
     # Source lines 1703–1704
     $ source_line = 1703
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Which patrol goes with it?"
     # Source lines 1706–1707
     $ source_line = 1706
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "BOATMAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["BOATMAN"] "Two boats. You can't outrun them in this."
     # Source lines 1709–1709
     $ source_line = 1709
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan studies the narrow channel behind the landing, then looks at the water rising against the wharf. Serat sends his brother to fetch Marren's wife before the guards can reach her."
     $ completed_scenes = max(completed_scenes, 43)
     $ unlocked_round = 4
@@ -4419,117 +4426,117 @@ label s044:
     $ scene_heading = "Upper Stores · River Landing · Dawn"
     # Source lines 1713–1713
     $ source_line = 1713
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan brings the fishing boat alongside as clerks carry the last crates onto the stores barge. Serat waits at the oars, wearing a plain coat over his uniform."
     # Source lines 1715–1715
     $ source_line = 1715
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan steps onto the landing. Marren sees him and stops, a box held against his chest."
     # Source lines 1717–1718
     $ source_line = 1717
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Put it down. Come with me."
     # Source lines 1720–1721
     $ source_line = 1720
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "I told you what happened."
     # Source lines 1723–1724
     $ source_line = 1723
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I haven't come for a statement."
     # Source lines 1726–1726
     $ source_line = 1726
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "An escort recognizes Lucan. As he approaches, Marren backs toward the barge."
     # Source lines 1728–1729
     $ source_line = 1728
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ESCORT"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ESCORT"] "He's under the general's orders."
     # Source lines 1731–1731
     $ source_line = 1731
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan keeps himself between the two men."
     # Source lines 1733–1734
     $ source_line = 1733
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Then tell her I took him. Get out of the way."
     # Source lines 1736–1736
     $ source_line = 1736
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He reaches for Marren, who shoves him away. The escort draws his sword."
     # Source lines 1738–1738
     $ source_line = 1738
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan catches the blade on a loose packing lid. Its edge cuts his forearm before he drives the wood into the escort's face, forcing him back against the stacked crates."
     # Source lines 1740–1740
     $ source_line = 1740
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren has dropped his box. Lucan holds out a hand again."
     # Source lines 1742–1743
     $ source_line = 1742
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "They're going to ask why I came for you. Come now."
     # Source lines 1745–1745
     $ source_line = 1745
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "This time Marren takes it."
     # Source lines 1747–1747
     $ source_line = 1747
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "They jump aboard as Serat pulls off. Shouts follow them from the quay. The patrol boats turn to cut off the main channel."
     # Source lines 1749–1749
     $ source_line = 1749
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan takes the tiller and steers toward the flooded gap behind the landing. The patrol closes as they enter the narrow cut."
     # Source lines 1751–1751
     $ source_line = 1751
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan lines them up with the low stone arch, then drops beside Marren. Serat pulls the oars inside and ducks. The current carries them through, stone scraping canvas from the repaired gunwale."
     # Source lines 1753–1753
     $ source_line = 1753
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The patrol pulls up short of the arch; its high bow cannot pass. Soldiers scramble onto the bank. A bolt punches through the fishing boat's side as Lucan takes the tiller again, holding it straight until the bend conceals them."
     # Source lines 1755–1755
     $ source_line = 1755
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren crouches over the leaking seam with his coat pressed against it. "
     $ completed_scenes = max(completed_scenes, 44)
     jump s045
@@ -4544,63 +4551,63 @@ label s045:
     $ scene_heading = "Citadel · North Infirmary · Morning"
     # Source lines 1759–1759
     $ source_line = 1759
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren's wife holds him on the edge of the bed, his soaked boots abandoned beneath it."
     # Source lines 1761–1761
     $ source_line = 1761
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Across the ward, a healer binds the cut along Lucan's forearm. Serat brings him word that the guards are at the gate."
     # Source lines 1763–1764
     $ source_line = 1763
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SERAT"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SERAT"] "They want the clerk. And the men who brought him."
     # Source lines 1766–1766
     $ source_line = 1766
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan waits for the healer to tie the dressing before getting up."
     # Source lines 1768–1769
     $ source_line = 1768
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I'll go to my father."
     # Source lines 1771–1772
     $ source_line = 1771
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SERAT"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SERAT"] "They aren't taking anyone out of this ward. My men know that."
     # Source lines 1774–1774
     $ source_line = 1774
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren calls Lucan back."
     # Source lines 1776–1777
     $ source_line = 1776
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "I signed it. The second clearance."
     # Source lines 1779–1779
     $ source_line = 1779
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan stays beside the bed. Marren cannot look at his wife."
     # Source lines 1781–1782
     $ source_line = 1781
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I'll come back after you've slept."
     $ completed_scenes = max(completed_scenes, 45)
     jump s046
@@ -4615,129 +4622,129 @@ label s046:
     $ scene_heading = "Valcair'S Private Room · Night"
     # Source lines 1786–1786
     $ source_line = 1786
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair stands beside a chair laid with dry clothes. Lucan comes in with his sleeve cut away around the dressing."
     # Source lines 1788–1789
     $ source_line = 1788
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "You attacked an escort."
     # Source lines 1791–1792
     $ source_line = 1791
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "You wouldn't let me speak to him."
     # Source lines 1794–1795
     $ source_line = 1794
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "He certified those wagons. He belongs before a court."
     # Source lines 1797–1798
     $ source_line = 1797
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He signed what Vask put in front of him."
     # Source lines 1800–1801
     $ source_line = 1800
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "So he says. Bring him here and we can hear it properly."
     # Source lines 1803–1803
     $ source_line = 1803
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan stays by the door."
     # Source lines 1805–1806
     $ source_line = 1805
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Were you going to let me walk onto that bridge?"
     # Source lines 1808–1808
     $ source_line = 1808
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His father takes a step toward him."
     # Source lines 1810–1811
     $ source_line = 1810
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "I sent a rider for you."
     # Source lines 1813–1814
     $ source_line = 1813
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "What about everyone else?"
     # Source lines 1816–1817
     $ source_line = 1816
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "You were supposed to come home."
     # Source lines 1819–1820
     $ source_line = 1819
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "You could have stopped the wagons!"
     # Source lines 1822–1822
     $ source_line = 1822
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair stops. Lucan has to press his bandaged arm against his side before he can speak again."
     # Source lines 1824–1825
     $ source_line = 1824
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "I helped them pack. You let me tell them they were going home."
     # Source lines 1827–1828
     $ source_line = 1827
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "And how many will die when the next ruler closes the river? When they bring another Saint against us?"
     # Source lines 1830–1830
     $ source_line = 1830
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair looks toward the dry coat on the chair."
     # Source lines 1832–1833
     $ source_line = 1832
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Send the clerk out before dawn. There will be no further arrests if your men stand aside."
     # Source lines 1835–1836
     $ source_line = 1835
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "They're patients."
     # Source lines 1838–1839
     $ source_line = 1838
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Then don't make me send soldiers among them."
     # Source lines 1841–1841
     $ source_line = 1841
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan leaves. He does not take the coat."
     $ completed_scenes = max(completed_scenes, 46)
     jump s047
@@ -4752,87 +4759,87 @@ label s047:
     $ scene_heading = "Citadel · North Infirmary · Before Dawn"
     # Source lines 1845–1845
     $ source_line = 1845
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan returns to find Serat and four captains waiting. Through the open door, orderlies are moving beds away from the windows."
     # Source lines 1847–1848
     $ source_line = 1847
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "He wants Marren before dawn. After that, he'll send men in here."
     # Source lines 1850–1851
     $ source_line = 1850
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "CAPTAIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["CAPTAIN"] "Give him the clerk. We can still get our wounded north."
     # Source lines 1853–1854
     $ source_line = 1853
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "The king's sending men who can stand back into the offensive. How far do you think your wagons will get?"
     # Source lines 1856–1857
     $ source_line = 1856
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "CAPTAIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["CAPTAIN"] "Farther than yours if you stay."
     # Source lines 1859–1859
     $ source_line = 1859
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan steps aside. The captain leaves with another officer, taking their companies with them. Serat watches the men file past the windows. Then he brings his own sergeant in."
     # Source lines 1861–1862
     $ source_line = 1861
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SERAT"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SERAT"] "Barricade the west entrance. Keep the river doors clear."
     # Source lines 1864–1864
     $ source_line = 1864
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan puts the citadel plan on an empty bed."
     # Source lines 1866–1867
     $ source_line = 1866
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "We'll move the patients into the inner court. If they get through here, we fall back behind them."
     # Source lines 1869–1869
     $ source_line = 1869
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The two remaining captains lean over the plan. One marks a firing position Lucan has missed."
     # Source lines 1871–1871
     $ source_line = 1871
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "By daylight the outer gate is under attack. Lucan leaves Serat holding it while he draws a separate plan of the route to his father's hall. He marks the old interior passages; Serat corrects the outer guard positions from his men's reports."
     # Source lines 1873–1873
     $ source_line = 1873
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the edge, Lucan writes: THE WATCHES HAVE CHANGED. CHECK THE APPROACH."
     # Source lines 1875–1875
     $ source_line = 1875
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He writes to Mara asking her to receive Marren and his wife. His personal letter to Tessa goes in the same packet, sealed separately."
     # Source lines 1877–1877
     $ source_line = 1877
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When Mara's answer comes, Serat's brother takes the couple out through the river doors under cover of another attack on the outer gate. Lucan stays at the barricade."
     $ completed_scenes = max(completed_scenes, 47)
     jump s048
@@ -4847,135 +4854,135 @@ label s048:
     $ scene_heading = "Forward Camp · Examination Tent · Day"
     # Source lines 1881–1881
     $ source_line = 1881
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren and his wife sit with Mara and Elin. Their escorts wait outside. Beside Mara's old inspection copy is the statement Elin has taken; two names are still blank."
     # Source lines 1883–1883
     $ source_line = 1883
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa comes in. He starts to stand, then sits when she does."
     # Source lines 1885–1886
     $ source_line = 1885
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Why did you sign it?"
     # Source lines 1888–1889
     $ source_line = 1888
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "Vask was standing there, waiting for my name."
     # Source lines 1891–1892
     $ source_line = 1891
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You hadn't looked inside."
     # Source lines 1894–1895
     $ source_line = 1894
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "She wouldn't let me. I thought if I held it up, she'd put me in a work camp."
     # Source lines 1897–1898
     $ source_line = 1897
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "So you signed."
     # Source lines 1900–1900
     $ source_line = 1900
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His wife reaches for his hand. He leaves it on the table."
     # Source lines 1902–1903
     $ source_line = 1902
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "Yes."
     # Source lines 1905–1906
     $ source_line = 1905
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Did you see the charges?"
     # Source lines 1908–1909
     $ source_line = 1908
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "No. They kept me outside."
     # Source lines 1911–1912
     $ source_line = 1911
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "The gate officer remembers Vask's seal. He let the wagons through on it."
     # Source lines 1914–1915
     $ source_line = 1914
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Was Lucan at the shed?"
     # Source lines 1917–1918
     $ source_line = 1917
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "I never saw him there."
     # Source lines 1920–1921
     $ source_line = 1920
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Had he spoken to Vask before the crossing?"
     # Source lines 1923–1924
     $ source_line = 1923
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "I don't know. He got my wife out too."
     # Source lines 1926–1927
     $ source_line = 1926
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "That was afterward."
     # Source lines 1929–1929
     $ source_line = 1929
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Marren looks toward his wife, then pushes the statement back to Elin."
     # Source lines 1931–1932
     $ source_line = 1931
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARREN"] "Put my name on it. What I signed, too."
     # Source lines 1934–1934
     $ source_line = 1934
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He signs while Tessa watches. Mara takes him and his wife to their quarters."
     # Source lines 1936–1936
     $ source_line = 1936
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin gathers the papers, leaving Lucan's letter where Tessa can reach it."
     # Source lines 1938–1938
     $ source_line = 1938
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "After a while, Tessa opens it."
     $ completed_scenes = max(completed_scenes, 48)
     jump s049
@@ -4990,111 +4997,111 @@ label s049:
     $ scene_heading = "Forward Command Tent · Night"
     # Source lines 1942–1942
     $ source_line = 1942
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Nearly four years after the summoning. Elin opens Lucan's plan beside Olan's rough sketch of the exterior stair and landing."
     # Source lines 1944–1945
     $ source_line = 1944
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "You reached the turn?"
     # Source lines 1947–1948
     $ source_line = 1947
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "OLAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["OLAN"] "Yes, but there are twice as many archers as he's put here. The stair's right."
     # Source lines 1950–1950
     $ source_line = 1950
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa crosses out the old guard count on Lucan's plan and marks Olan's positions."
     # Source lines 1952–1953
     $ source_line = 1952
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "How long can you keep the wardkeepers off the towers?"
     # Source lines 1955–1956
     $ source_line = 1955
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "We can drive them out, but the garrison will bring them back. Watch for the towers lighting again."
     # Source lines 1958–1958
     $ source_line = 1958
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin indicates the lever behind the throne on Lucan's plan."
     # Source lines 1960–1961
     $ source_line = 1960
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "He says that will release the entrance ward."
     # Source lines 1963–1964
     $ source_line = 1963
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Has he seen it since the war started?"
     # Source lines 1966–1967
     $ source_line = 1966
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "No. He used it before. That's all we have."
     # Source lines 1969–1969
     $ source_line = 1969
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa leaves a question mark beside it and turns to the stair. Orra places her reserve below it."
     # Source lines 1971–1972
     $ source_line = 1971
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORRA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORRA"] "Send a runner when you have the hall. Then the reserve can get past that gallery."
     # Source lines 1974–1974
     $ source_line = 1974
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara places her company at the bend below it."
     # Source lines 1976–1977
     $ source_line = 1976
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "We'll keep the western passage clear behind you."
     # Source lines 1979–1979
     $ source_line = 1979
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa marks the route from Mara's bend to the cover inside the hall."
     # Source lines 1981–1982
     $ source_line = 1981
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Bring your wounded into the hall when Olan calls. I'll cover the landing."
     # Source lines 1984–1984
     $ source_line = 1984
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara assigns two men to bring her wounded up."
     # Source lines 1986–1986
     $ source_line = 1986
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Outside, a healer waits while Tessa fastens Iven's bag, then takes it to the wagons."
     $ completed_scenes = max(completed_scenes, 49)
     $ unlocked_round = 5
@@ -5112,63 +5119,63 @@ label s050:
     $ scene_heading = "Citadel · Lower Stair · Pre-Dawn"
     # Source lines 1990–1990
     $ source_line = 1990
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa catches Mara's hand at the buckle of her forearm guard. It is trembling."
     # Source lines 1992–1992
     $ source_line = 1992
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa finishes the fastening."
     # Source lines 1994–1995
     $ source_line = 1994
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "When he calls, you come up. Promise me."
     # Source lines 1997–1998
     $ source_line = 1997
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "The wounded go first. Then me."
     # Source lines 2000–2000
     $ source_line = 2000
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "When Mara starts to draw away, Tessa catches her wrist."
     # Source lines 2002–2003
     $ source_line = 2002
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I need you to be there afterward."
     # Source lines 2005–2005
     $ source_line = 2005
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara hugs her. Tessa buries her face against the familiar coat."
     # Source lines 2007–2007
     $ source_line = 2007
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan signals as the last tower goes dark. Mara holds Tessa a moment longer."
     # Source lines 2009–2010
     $ source_line = 2009
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "MARA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["MARA"] "I'll come when he calls."
     # Source lines 2012–2012
     $ source_line = 2012
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa climbs to Olan. At the turn she looks back. Mara hasn't moved."
     $ completed_scenes = max(completed_scenes, 50)
     jump s051
@@ -5183,27 +5190,27 @@ label s051:
     $ scene_heading = "Citadel · North Infirmary Court · Dawn"
     # Source lines 2016–2016
     $ source_line = 2016
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Beds fill the covered walkway. At the outer gate, Lucan holds a firing slit with two bowmen while Serat moves the last patients into the court."
     # Source lines 2018–2018
     $ source_line = 2018
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The gate cracks under another blow. Lucan waits for the attackers to bunch in the opening before firing. His men shoot with him, forcing the front rank back against those behind it."
     # Source lines 2020–2021
     $ source_line = 2020
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SERAT"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SERAT"] "They're coming around the laundry!"
     # Source lines 2023–2023
     $ source_line = 2023
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan takes one bowman across the court. He has to leave the gate to the other. Serat puts his shield in the abandoned slit as footsteps begin pounding down the passage on their flank."
     $ completed_scenes = max(completed_scenes, 51)
     jump s052
@@ -5218,63 +5225,63 @@ label s052:
     $ scene_heading = "Citadel · Inner Landing · Dawn"
     # Source lines 2027–2027
     $ source_line = 2027
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The bronze doors are open, but black light seals the entrance. Tessa works at it from behind Olan's shield, Elin crouched beside him. The hall gradually emerges through the thinning ward."
     # Source lines 2029–2029
     $ source_line = 2029
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A runner staggers up from below."
     # Source lines 2031–2032
     $ source_line = 2031
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "RUNNER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["RUNNER"] "They've reached the bend. Captain Venn is losing men."
     # Source lines 2034–2034
     $ source_line = 2034
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Through the high window, northern soldiers drive the tower team down the steps. A wardkeeper takes their place. The tower brightens, and Tessa's opening begins to close."
     # Source lines 2036–2037
     $ source_line = 2036
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "Now, Tessa."
     # Source lines 2039–2039
     $ source_line = 2039
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Mara's voice carries up the stair. Tessa takes a step toward it."
     # Source lines 2041–2041
     $ source_line = 2041
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The hall vanishes behind the darkening ward. She turns back, strips off her left glove and presses her palm to the frame."
     # Source lines 2043–2044
     $ source_line = 2043
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Bring the wounded up behind Olan. I'll cut off the ward from inside."
     # Source lines 2046–2046
     $ source_line = 2046
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa squeezes through a narrow break in the ward. Bolts drive Olan behind his shield with Elin and the first wounded soldier."
     # Source lines 2048–2048
     $ source_line = 2048
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The opening closes behind her."
     $ completed_scenes = max(completed_scenes, 52)
     jump s053
@@ -5289,15 +5296,15 @@ label s053:
     $ scene_heading = "Citadel · Lower Stair · Continuous"
     # Source lines 2052–2052
     $ source_line = 2052
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the bend, only two men can reach Mara at once. She sends her last uninjured soldier up with a wounded man and closes the gap he leaves."
     # Source lines 2054–2054
     $ source_line = 2054
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Light flashes in the hall's high windows. Mara braces behind her shield."
     $ completed_scenes = max(completed_scenes, 53)
     jump s054
@@ -5312,147 +5319,147 @@ label s054:
     $ scene_heading = "Citadel · Throne Hall · Continuous"
     # Source lines 2058–2058
     $ source_line = 2058
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair blocks the way to the throne, spear lowered. Black light seals the joints of his armor."
     # Source lines 2060–2060
     $ source_line = 2060
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa advances with her sword in her right hand, white light gathered in her left."
     # Source lines 2062–2063
     $ source_line = 2062
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VALCAIR"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VALCAIR"] "Put the sword down. I can still order them to spare the people on the stair."
     # Source lines 2065–2066
     $ source_line = 2065
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Your seal was on the bridge."
     # Source lines 2068–2068
     $ source_line = 2068
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "White light strips a patch of protection from his chest, exposing the metal."
     # Source lines 2070–2070
     $ source_line = 2070
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He sweeps his free hand toward her, sending a blade of darkness through the paving. Tessa catches it on her sanctuary as broken stone batters the curve. Beyond the debris, his protection closes again."
     # Source lines 2072–2072
     $ source_line = 2072
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He drives his spear along her shelter into a pillar. She cuts around the curve at his elbow; black light turns her blade."
     # Source lines 2074–2074
     $ source_line = 2074
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Each attempt to turn her light on him draws another thrust. Tessa circles the pillars toward the dais, keeping her shelter between them."
     # Source lines 2076–2076
     $ source_line = 2076
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He cuts her off at the steps."
     # Source lines 2078–2078
     $ source_line = 2078
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A two-handed thrust cracks her shelter. Before she can rebuild it, Valcair hooks the shaft behind her knees and pulls her down."
     # Source lines 2080–2080
     $ source_line = 2080
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She hits the floor beside the last pillar, close to the dais. Her sword skids past her left shoulder; as she reaches across for it with her right hand, Valcair drives the spear through that hand and pins it to the stone."
     # Source lines 2082–2082
     $ source_line = 2082
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa cries out and curls toward the trapped wrist. A thin curve of light begins gathering over her."
     # Source lines 2084–2084
     $ source_line = 2084
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair wrenches at the spear. Tessa turns her left palm toward him, abandoning her unfinished shelter. Its light floods across his armor, stripping the black protection."
     # Source lines 2086–2086
     $ source_line = 2086
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "He tears the point free, ripping her glove and hand. Tessa snatches the sword with her left hand and rolls toward his feet, her injured hand against her chest."
     # Source lines 2088–2088
     $ source_line = 2088
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The spear strikes where her head was."
     # Source lines 2090–2090
     $ source_line = 2090
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "His ward tries to close. Tessa holds the white glare on him and rises inside the spear's reach, driving the blade beneath his raised arm."
     # Source lines 2092–2092
     $ source_line = 2092
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "This time it enters."
     # Source lines 2094–2094
     $ source_line = 2094
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Valcair grabs her shoulder, but his knees buckle against the lowest step. His spear falls onto the dais."
     # Source lines 2096–2096
     $ source_line = 2096
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa holds the sword until his grip loosens. Then she backs away, letting the light fade. He is still reaching for the spear."
     # Source lines 2098–2098
     $ source_line = 2098
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan shouts beyond the doors."
     # Source lines 2100–2100
     $ source_line = 2100
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "At the release behind the throne, Tessa cannot move the lever with her left hand. She leans her weight on it."
     # Source lines 2102–2102
     $ source_line = 2102
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The ward across the entrance fades."
     # Source lines 2104–2104
     $ source_line = 2104
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Olan calls the wounded into the hall and sends the runner to Orra. He catches Tessa as she buckles at the entrance."
     # Source lines 2106–2106
     $ source_line = 2106
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin binds the wounded hand with a strip from her sleeve while soldiers take cover around them."
     $ completed_scenes = max(completed_scenes, 54)
     jump s055
@@ -5467,75 +5474,75 @@ label s055:
     $ scene_heading = "Citadel · Lower Stair · Morning"
     # Source lines 2110–2110
     $ source_line = 2110
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Later. Orra's reserve holds the stair and the gallery above it. Soldiers carry the wounded down while Elin helps Tessa past the broken shields at the bend."
     # Source lines 2112–2112
     $ source_line = 2112
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "As a healer covers Mara's face, Tessa catches the cloth and drops beside her."
     # Source lines 2114–2115
     $ source_line = 2114
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Mara."
     # Source lines 2117–2117
     $ source_line = 2117
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa feels for a pulse with her left hand. The healer kneels beside her."
     # Source lines 2119–2120
     $ source_line = 2119
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "HEALER"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["HEALER"] "I'm sorry."
     # Source lines 2122–2122
     $ source_line = 2122
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "She keeps searching."
     # Source lines 2124–2125
     $ source_line = 2124
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "I opened it. Olan called for you."
     # Source lines 2127–2127
     $ source_line = 2127
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa bends over Mara. Elin supports her bandaged hand while she lowers her forehead to Mara's."
     # Source lines 2129–2129
     $ source_line = 2129
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orra's guards bring Lucan from the north infirmary with two of Serat's men. His coat is torn and he keeps one arm tight against his ribs. He starts toward Tessa, but Olan blocks him. She turns back to Mara."
     # Source lines 2131–2131
     $ source_line = 2131
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Northern soldiers below raise their weapons. Lucan and his men lay their swords on the steps."
     # Source lines 2133–2134
     $ source_line = 2133
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Tell Vask the king is dead and we're standing down. Ask her to open the lower gate for the wounded."
     # Source lines 2136–2136
     $ source_line = 2136
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "One officer ties a white cloth to his spear and leaves with Orra's terms. The other carries Lucan's stand-down order to his companies."
     $ completed_scenes = max(completed_scenes, 55)
     jump s056
@@ -5550,39 +5557,39 @@ label s056:
     $ scene_heading = "North Infirmary · Day"
     # Source lines 2140–2140
     $ source_line = 2140
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A surgeon unwraps Tessa's hand while Elin holds the lamp. Tessa tries to straighten the fingers. They barely move."
     # Source lines 2142–2143
     $ source_line = 2142
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Can you fix them?"
     # Source lines 2145–2146
     $ source_line = 2145
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "SURGEON"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["SURGEON"] "I can repair some of it. How much movement you'll get back... we have to give it time."
     # Source lines 2148–2148
     $ source_line = 2148
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa tries again."
     # Source lines 2150–2151
     $ source_line = 2150
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "That's the one I draw with."
     # Source lines 2153–2153
     $ source_line = 2153
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin sets down the lamp. Tessa takes her hand and holds on."
     $ completed_scenes = max(completed_scenes, 56)
     jump s057
@@ -5597,51 +5604,51 @@ label s057:
     $ scene_heading = "Citadel · Lower Gate · Evening"
     # Source lines 2157–2157
     $ source_line = 2157
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "A captain urges Vask to attack the human troops at the lower gate. Medical wagons stand between the armies."
     # Source lines 2159–2159
     $ source_line = 2159
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "The herald brings Orra's terms: hold positions and admit healers; no assault troops through the gate."
     # Source lines 2161–2162
     $ source_line = 2161
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "VASK"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["VASK"] "We'd be fighting through our wounded. Hold here and let the wagons pass."
     # Source lines 2164–2164
     $ source_line = 2164
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Vask accepts. Across the gate, Orra pulls her troops back behind their line. Sentries stay on both sides as the medical wagons begin moving."
     # Source lines 2166–2166
     $ source_line = 2166
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan reads the reply beside Serat."
     # Source lines 2168–2169
     $ source_line = 2168
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "LUCAN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["LUCAN"] "Tell her Marren stays under protection. Harrow isn't settled."
     # Source lines 2171–2171
     $ source_line = 2171
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Serat sends the warning back."
     # Source lines 2173–2173
     $ source_line = 2173
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Lucan waits beside his father's covered body. He tucks an exposed hand beneath the cloth and steps aside for the bearers."
     $ completed_scenes = max(completed_scenes, 57)
     jump s058
@@ -5657,99 +5664,99 @@ label s058:
     $ scene_heading = "Bellweir · Market Square · Spring Day"
     # Source lines 2177–2177
     $ source_line = 2177
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Four years after the summoning. New roofs stand between burned walls. The glass heron turns above the fountain with one wing still missing. At the lock, inspectors from both banks let a northern grain barge through."
     # Source lines 2179–2179
     $ source_line = 2179
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa sits on the fountain rim with the temple's offer of rooms and a council seat. Beneath it she is writing: I WILL REMAIN IN BELLWEIR."
     # Source lines 2181–2181
     $ source_line = 2181
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Her right hand rests in a soft brace. She pauses to ease her grip on the pencil in her left."
     # Source lines 2183–2183
     $ source_line = 2183
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Orren comes out of the bakery, leaning on his stick. Inside, Hest and the apprentices argue over a tray of misshapen rolls."
     # Source lines 2185–2186
     $ source_line = 2185
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ORREN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ORREN"] "Hest says to bring your letter inside. There's room at the table."
     # Source lines 2188–2189
     $ source_line = 2188
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Tell her I'm almost done."
     # Source lines 2191–2191
     $ source_line = 2191
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "As he goes back inside, she hears him tell Hest she'll be another five minutes."
     # Source lines 2193–2193
     $ source_line = 2193
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin lays a catalog entry for the summoning book beside the letter. Tessa puts her pencil down to read it."
     # Source lines 2195–2196
     $ source_line = 2195
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Does it say whether the pages are there?"
     # Source lines 2198–2199
     $ source_line = 2198
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "I've written to ask."
     # Source lines 2201–2202
     $ source_line = 2201
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "TESSA"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["TESSA"] "Don't go without me when they answer."
     # Source lines 2204–2205
     $ source_line = 2204
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = "ELIN"
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     cast["ELIN"] "I wouldn't."
     # Source lines 2207–2207
     $ source_line = 2207
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Tessa slips the reference into her packet of drawings. Her mother's kitchen is there, and Iven with his hair sticking up. She lingers over his face."
     # Source lines 2209–2209
     $ source_line = 2209
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Ada calls from the bakery. Tessa closes the packet and signs her letter."
     # Source lines 2211–2211
     $ source_line = 2211
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Elin walks across the square with her. At the bakery door, Renn struggles past them with an armful of plates."
     # Source lines 2213–2213
     $ source_line = 2213
-    $ scene_art = None
-    $ scene_art_alt = ""
     $ scene_speaker = None
+    $ source_page = 0
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
     "Inside, Orren moves a chair to make room. Tessa takes it."
     $ completed_scenes = max(completed_scenes, 58)
     jump original_ending

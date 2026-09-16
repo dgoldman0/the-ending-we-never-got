@@ -1,8 +1,10 @@
 # Original-timeline visual novel — adaptation brief
 
-Status: CURRENT DIRECTION, requested on 16 September 2026. A complete first VN structure is now sketched; Ren'Py implementation and new scene dialogue have not started. Chapter boundaries, investigation controls and pacing treatments remain proposals for discussion.
+Status: FIRST PLAYABLE BUILD, 16 September 2026. All 58 original screenplay scenes, ten chapters, five optional investigation invitations, six inquiries and the complete ending through **“Do you wish to save Tessa?”** are implemented. Run [play.sh](play.sh); see [build instructions](renpy/README.md) and [QA](renpy/QA.md).
 
-## Start with the VN sketch
+Art production currently covers the opening chapter with eight transparent sprite states for Tessa, Mara, Iven and Senn, nine state-specific backgrounds, controlled GIMP lighting and local prop/costume repairs. These are reviewed working assets, not user-approved final art. Later scenes retain their screenplay text and await production assets. Existing tone studies are references, not copied runtime scenes. See the [runtime manifest and review](art/runtime/README.md).
+
+## Adaptation structure
 
 - [Route outline](outline.md): ten candidate chapters from summoning through postwar Bellweir and the question **“Do you wish to save Tessa?”**
 - [Complete scene map](scene-map.md): all 58 screenplay scenes, their chapter placement and proposed full-scene or compressed treatment.
@@ -10,7 +12,7 @@ Status: CURRENT DIRECTION, requested on 16 September 2026. A complete first VN s
 - [Pacing and time skips](pacing.md): use the screenplay's existing gaps and compact repeated visits/campaign seasons to make room for investigation.
 - [Ending storyboard](ending.md): preserve the complete original ending, then address the player. Response outcomes and an incursion continuation remain open.
 
-The screenplay remains the story authority. The sketch separately marks presentation proposals, new historical material that needs writing, and the existing bridge-seal attribution question. It does not rewrite the source to suit a proposed mechanic.
+The screenplay remains the story authority. The design documents separately mark presentation proposals, new historical material that needs writing, and the existing bridge-seal attribution question. The implementation preserves every screenplay action and spoken word; it has not yet applied the proposed additional montage compression. [Investigation content](investigation-content.md) records the current reliable historical context and its limits. It does not rewrite the source to suit a proposed mechanic.
 
 ## Setting and character development
 
@@ -18,7 +20,7 @@ The first physical-design pass is documented in [character appearances and wardr
 
 The subsequent [north-infirmary scene study](art/scene-studies/north-infirmary/README.md) uses stormy daylight, following the user's correction. Together with the summoning study it anchors the user's three lighting registers in the [visual direction](art/visual-direction.md). Individual asset selection and production-ready scene coverage remain separate.
 
-See the [art-development index](art/README.md) for current studies and close-up review requirements. Prompt records are kept separately under `art/prompts/`. The [completed summoning visual](art/scene-studies/summoning/README.md) uses the user's selected infirmary Tessa likeness and depicts arrival at the threshold, with her dropped groceries beside her and modern Earth still visible. It replaces the rejected attempts, with a targeted carton repair and shared chamber-lighting treatment in GIMP. Its PNG and layered XCF have been reviewed; user assessment is pending.
+See the [art-development index](art/README.md) for current studies and close-up review requirements. Prompt records are kept separately under `art/prompts/`. The [summoning tone study](art/scene-studies/summoning/README.md) uses the user's selected infirmary Tessa likeness and depicts arrival at the threshold, with her dropped groceries beside her and modern Earth still visible. It replaces the rejected attempts, with a targeted carton repair and shared chamber-lighting treatment in GIMP. It remains a reference study; the runtime opening uses new separate background, grocery, portrait and lighting components.
 
 ## Scope
 
@@ -48,20 +50,20 @@ This is a player discovery, not a planned revelation to Tessa, Iven, Mara, Elin 
 
 Humanity's initiating aggression does not excuse Valcair's present atrocities or remove Vask's responsibility. Historical truth, responsibility for Harrow, and Tessa's personal trust are related but distinct matters.
 
-## Investigation and player agency — proposed design
+## Investigation and player agency
 
 Investigation is something the player does to learn more. The first design proposes a separate investigation interface, five rounds at quiet boundaries, inspectable views, comparisons and explicit findings. It keeps player discoveries separate from character knowledge and does not advance story time. No consumable clue economy, countdown, survival score or repeat-play requirement is proposed.
 
-For the first sketch, player control concerns reading pace, optional investigation and revisiting unlocked material. Essential relationships and consequences remain in the main route. Conversation branches and their effects would require a further decision and connected writing; no false rescue choices are introduced to make the interface appear interactive.
+In the first playable build, player control concerns reading pace, optional investigation and revisiting unlocked material. Essential relationships and consequences remain in the main route. Conversation branches and their effects would require a further decision and connected writing; no false rescue choices are introduced to make the interface appear interactive.
 
 The sketch retains the screenplay's scenes outside Tessa's viewpoint, including Harrow's planning. Its modern investigation therefore examines events, evidence and limited witness knowledge rather than pretending the player has not seen the order. This viewpoint treatment remains a reviewable proposal.
 
-## Next development steps
+## Remaining production
 
-1. Review the complete chapter map, proposed viewpoint, time skips and investigation structure; distinguish changes in presentation from changes in events.
-2. Develop the ancient opening sequence and actual historical exhibits around the established first-Saint anchor. Preserve the cast's knowledge boundaries.
-3. Adapt chapter 01, S001–S005, and R01 as the first representative slice. Draft connected interactions only where the conversion needs new prose.
-4. Establish a Ren'Py prototype with suitable placeholders, then compare straight-through and investigative reading. Use that experience to assess pacing and production scope before expanding.
+1. Review the opening in play and develop the remaining original-route cast, expressions, action shots, backgrounds and period/injury changes under the runtime manifest. The first chapter's dialogue portraits do not replace its still-unillustrated physical action shots and supporting cast.
+2. Develop specific ancient historical exhibits only when their facts are authored. Current investigation labels reliable underlying history as context and does not fabricate archival quotations or transfer it to the cast.
+3. Assess reading pace with the existing screenplay time skips before applying the proposed further compression. The complete source route and investigative route already reach the same original ending.
+4. Produce and review audio, transitions and further platform builds. The endpoint still ends at the player question; no response outcome or incursion route is invented.
 
 ## Working references
 

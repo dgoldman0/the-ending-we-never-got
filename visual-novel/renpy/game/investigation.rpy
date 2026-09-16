@@ -29,6 +29,7 @@ screen investigation():
                     text 'YOUR READING NOTES' style 'caption_text'
                     for cid in available_cases():
                         textbutton (('Done: ' if cid in findings else '') + cases[cid]['title']):
+                            id ('case_' + cid)
                             xfill True
                             selected cid == selected_case
                             action [SetScreenVariable('selected_case', cid), SetScreenVariable('selected_evidence', None), SetScreenVariable('show_question', False), SetScreenVariable('feedback', '')]

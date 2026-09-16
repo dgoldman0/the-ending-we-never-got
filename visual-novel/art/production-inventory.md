@@ -2,13 +2,17 @@
 
 Scope: all original-timeline character keys, screenplay scene keys, reusable location states, creatures and story props. This is a production queue, not a claim that every asset already exists. Each new render requires its own source brief and manual review under [the visual direction](visual-direction.md).
 
+## Runtime implementation
+
+The [opening runtime batch](runtime/README.md) now supplies eight sprite states across Tessa, Mara, Iven and Senn, and nine background states across S001–S005. Its [manifest](runtime/manifest.json) and [review](runtime/review.md) govern reuse. No earlier key or tone study automatically counts as an implemented game sprite or complete scene. Supporting opening cast/action shots and S006–S058 production remain queued.
+
 ## Character coverage
 
 The developed [character designs](../../characters/original-visuals.md) govern these keys. Tessa retains the selected infirmary likeness. New keys are reviewed working designs until the user selects them. The first six baselines were generated, corrected in GIMP and manually reviewed; Tessa's old costume was subsequently superseded. Her [new wardrobe keys](character-keys/tessa/README.md) cover early work, a complete public ceremony ensemble and late campaign trousers, plus an early movement sheet. The user responded positively to the early long ensemble and explicitly retained trousers for fieldwear. The convoy composition still uses the old clothes. Remaining characters and variants stay queued.
 
 | Character/group | Required keys and state changes | Status |
 | --- | --- | --- |
-| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [New early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) reviewed; winter, intermediate fieldwear and postwar costume pending. Arrival remains in existing scene studies. Old costumes archived; postwar physical-state study separate. |
+| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [New early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) reviewed; winter, intermediate fieldwear and postwar costume pending. Arrival, phone, cloak, first treatment and ceremony now have separate runtime sprites for the opening. Old costumes archived; postwar physical-state study separate. |
 | Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | [Reviewed baseline](character-keys/iven/README.md); remaining variants planned |
 | Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | [Reviewed baseline](character-keys/mara/README.md); variants planned |
 | Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | [Reviewed baseline](character-keys/elin/README.md); variants planned |
@@ -51,9 +55,9 @@ Every source scene is listed in order below. A row is coverage, not a completed 
 | --- | --- | --- | --- |
 | S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 7 | [Existing tone study](scene-studies/summoning/README.md) |
 | S002 | INT. SAINT'S APARTMENT - NIGHT | 67 | [Working scene study](scene-studies/locked-apartment/README.md); costume prop provisional |
-| S003 | INT. PALACE INFIRMARY - DAY | 114 | Planned; brief required |
-| S004 | INT. AUDIENCE HALL - DAY | 174 | Planned; brief required |
-| S005 | INT. INFIRMARY - LATER | 216 | Planned; brief required |
+| S003 | INT. PALACE INFIRMARY - DAY | 114 | Runtime ward background and Tessa/Iven close dialogue portraits; treatment action and supporting cast pending |
+| S004 | INT. AUDIENCE HALL - DAY | 174 | Runtime hall, banners and Tessa/Senn dialogue portraits; supporting cast and sleeve-grip action pending |
+| S005 | INT. INFIRMARY - LATER | 216 | Runtime window/chest/convoy background and close dialogue portraits |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 252 | [Draft composition](scene-studies/convoy-meal/README.md); Tessa wardrobe redesign; final visual review pending |
 | S007 | INT. ROADSIDE INN - NIGHT | 296 | Planned; brief required |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 337 | Planned; brief required |

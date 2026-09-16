@@ -2,6 +2,7 @@ default current_scene = 0
 default current_chapter = 1
 default completed_scenes = 0
 default source_line = 0
+default source_page = 0
 default scene_location = ""
 default scene_heading = ""
 default scene_art = None
@@ -36,22 +37,66 @@ init python:
         if not scene_speaker:
             return []
         if current_scene == 1 and source_line >= 19:
-            result = [('tessa-arrival-bright', .27)]
+            tessa = 'tessa-phone' if source_line >= 52 else 'tessa-arrival'
+            result = [(tessa + '-bright', .27)]
             if source_line >= 29:
                 result.append(('senn-ceremonial-bright', .72))
             return result
         if current_scene == 2 and 75 <= source_line <= 104:
-            tessa = 'tessa-cloaked' if source_line < 100 else 'tessa-arrival'
+            tessa = 'tessa-cloaked' if source_line < 101 else 'tessa-phone'
             return [(tessa + '-dark', .27), ('mara-indoor-dark', .72)]
+        if current_scene == 3:
+            return [('tessa-first-treatment-ordinary', .27), ('iven-treatment-ordinary', .72)]
+        if current_scene == 4 and 187 <= source_line <= 204:
+            return [('tessa-ceremony-bright', .27), ('senn-ceremonial-bright', .72)]
+        if current_scene == 4 and source_line == 211:
+            return [('iven-treatment-bright', .53)]
+        if current_scene == 5:
+            return [('iven-treatment-ordinary', .27), ('tessa-ceremony-ordinary', .72)]
         return []
+
+    def scene_background(scene, line, page):
+        # A reviewed whitelist. No fallback to old studies or the wrong period.
+        name, description = None, ''
+        if scene == 1:
+            if line == 9:
+                name = 'chamber-open'
+                description = 'An open arch joins a cold modern street to the glaring pale temple. Its threshold meets the circle.'
+            elif line < 15 or (line == 15 and page == 0):
+                name = 'chamber-open-spill'
+                description = 'The grocery bag and split milk carton lie just inside the threshold. The modern street remains visible.'
+            else:
+                name = 'chamber-closed'
+                description = 'The return arch is sealed, newly cracked; the fallen groceries remain beside its threshold. Severe light fills the room.'
+        elif scene == 2:
+            name = ('apartment-barricaded' if line >= 108 else
+                    'apartment-open' if 73 <= line < 106 else 'apartment-closed')
+            description = 'A very dark apartment: cold window at left, small candle pool and a discarded ivory dress at the wardrobe.'
+            description += {'apartment-open': ' The door is open to the guarded hall.',
+                            'apartment-closed': ' The door is closed; the chair remains at the window.',
+                            'apartment-barricaded': ' The chair now stands against the closed door.'}[name]
+        elif scene == 3:
+            name = 'palace-infirmary'
+            description = 'Pale insistent daylight across the ward. Beds, curtains and basins leave a clear treatment aisle.'
+        elif scene == 4:
+            name = 'audience-hall'
+            description = 'Harsh light fills the audience hall. Twelve-ray temple banners hang above the ceremonial chair and wounded spectators.'
+        elif scene == 5:
+            name = 'infirmary-window'
+            description = 'A broad infirmary window sill overlooks the convoy. The medical chest is open; the travel bag rests at the far end of the sill.'
+        return ('art/backgrounds/' + name + '.png', description) if name else (None, '')
 
     def mark_evidence(eid):
         viewed_evidence.add(eid)
+        # Investigation edits occur inside a menu interaction. Preserve them
+        # when loading a save made before that interaction returns to script.
+        renpy.retain_after_load()
 
     def resolve_case(case_id, answer):
         case = cases[case_id]
         if answer == case['answer']:
             findings.add(case_id)
+            renpy.retain_after_load()
         # A Function screen action must return None: a bool would end the
         # interaction and eject the reader before feedback can be displayed.
 
@@ -127,7 +172,9 @@ screen story_stage():
                 if renpy.loadable('art/sprites/' + sprite + '.png'):
                     add ('art/sprites/' + sprite + '.png'):
                         xcenter int(1540 * pos) ypos 50
-                        xysize (690, 1035)
+                        # Close portraits keep treatment and sleeve-grip hands
+                        # outside the frame; these are not action tableaux.
+                        xysize ((1240, 1860) if current_scene in (3, 4, 5) or (current_scene == 2 and 90 <= source_line < 101) else (690, 1035))
     else:
         add Solid(scene_palette()) xpos 100 ypos 110 xsize 1720 ysize 610
         add Solid('#78968b') xpos 150 ypos 165 xsize 3 ysize 68

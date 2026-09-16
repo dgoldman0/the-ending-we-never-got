@@ -31,10 +31,14 @@ init python:
     build.classify('game/testcases.rpyc', None)
     build.classify('**/test-output/**', None)
     build.classify('**/saves/**', None)
-    build.classify('**/*.txt', None)
+    build.classify('review/**', None)
+    build.classify('QA.md', None)
+    build.classify('README.md', None)
+    # Build patterns use first match; license exceptions precede exclusions.
     build.classify('game/fonts/*LICENSE*', 'all')
     build.classify('game/fonts/*NOTICE*', 'all')
     build.classify('game/fonts/Apache-2.0.txt', 'all')
+    build.classify('**/*.txt', None)
 
 default persistent.large_text = False
 default persistent.reduced_motion = False

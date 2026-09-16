@@ -80,19 +80,19 @@ def adapt():
                 speakers.add(who)
             text = ' '.join(block)
             scene['blocks'].append({'line': start + 1, 'speaker': who, 'text': text})
-            art = None
-            alt = ''
-            if n == 1 and start + 1 >= 17:
-                art = 'art/backgrounds/chamber-closed.png'
-                alt = 'The return arch is sealed stone, newly cracked. Severe pale light fills the chamber.'
-            if n == 2 and 73 <= start + 1 < 107:
-                art = 'art/backgrounds/apartment-open.png'
-                alt = 'A very dark apartment, cold window at left, candle on the table, open door to the guarded hall at right.'
             out += [f'    # Source lines {start + 1}–{i}',
-                    f'    $ source_line = {start + 1}', f'    $ scene_art = {q(art) if art else "None"}',
-                    f'    $ scene_art_alt = {q(alt)}',
+                    f'    $ source_line = {start + 1}',
                     f'    $ scene_speaker = {q(who) if who else "None"}']
-            for page in pages(text):
+            scene_pages = pages(text)
+            if n == 1 and start + 1 == 15:
+                # Two visual states occur inside one source paragraph. Preserve
+                # every word while changing the arch after the closure beat.
+                before, marker, after = text.partition('A SCHOLAR')
+                assert marker
+                scene_pages = [before.rstrip(), marker + after]
+            for page_index, page in enumerate(scene_pages):
+                out += [f'    $ source_page = {page_index}',
+                        '    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)']
                 # Literal braces/brackets in source must not become Ren'Py expressions.
                 page = page.replace('[', '[[').replace('{', '{{')
                 out.append(f'    cast[{q(who)}] {q(page)}' if who else f'    {q(page)}')

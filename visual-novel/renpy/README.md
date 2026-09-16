@@ -6,6 +6,10 @@ The complete original route is implemented: 58 source scenes, ten chapters, five
 
 This is a first playable edition under active art production. The scene studies are reference material, not runtime illustrations. Purpose-built transparent sprites, scene-state backgrounds and GIMP lighting variants are being integrated and manually reviewed. Unillustrated scenes retain their source text; early sprites are not silently reused across later ages, injuries or outfits. No music, voice or sound has been produced yet.
 
+## Standalone Linux build
+
+The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` contains the engine and runtime assets. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Rebuild it with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. This packages the same first playable edition and its current art coverage, not a completed illustrated release.
+
 ## Reading and state
 
 Click, Space or Enter advances. Page Up/mouse wheel up rolls back; Esc opens or returns from menus. Save/load, reading history, larger text, fullscreen, reduced motion, image descriptions and Ren'Py self-voicing are available. Investigations pause the story and return to the same reading point. All knowledge state is per playthrough/save, not global completion data.

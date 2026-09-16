@@ -70,6 +70,11 @@ The scholar can be stationed at the lever before pulling it; that does not make 
 
 ## Generation, GIMP and preventing drift
 
+- **Runtime correction, 16 September:** the user rejected copying the tone/archetype studies into the game as its visual presentation. Those images establish direction; they are not a substitute for producing scene backgrounds, transparent character sprites, expressions and state-specific components. Do not promote a study to runtime simply because it already exists.
+- Build and inspect actual layered scenes in Ren'Py. Characters must receive the same directional light and exposure as their surroundings. Dark scenes should be very dark; bright scenes should approach painful brightness across the dramatic area. A normally exposed sprite pasted onto an extreme background fails this check.
+- Maintain an explicit runtime manifest: source scene/beat, character and age, wardrobe, pose/expression, injury and prop state, background state, illumination, and review status. Default-deny reuse across unreviewed periods. A convenient pose is not proof of source-consistent blocking.
+- Inspect the game at actual window sizes with dialogue, controls and focus indicators visible. Check clipped text, face/prop occlusion, sprite edges, scale/perspective, keyboard navigation, and exact return from menus. Run story traversal and save/rollback tests separately from visual inspection; passing either is not a substitute for the other.
+
 - Use the current built-in image-generation tool and applicable imagegen skill for generative work. Do not silently switch to a separately billed API workflow. **GIMP is available locally** (2.10.36 verified on 16 September 2026); use it for controlled editing, masks, component corrections, grading and inspection crops where needed. Do not claim the only available operation is another full regeneration.
 - Start from the screenplay brief, written designs and user-selected references. **Do not use a rejected image as the next likeness or composition reference.** Repeated edits of an already drifting output compound the error.
 - Give each operation a defined purpose and invariants. Afterward, compare against the approved reference and source brief, not just the immediately preceding output. If identity, proportions or staging have drifted, repair or replace that component before proceeding.

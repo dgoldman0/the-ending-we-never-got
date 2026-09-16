@@ -1,0 +1,231 @@
+{
+  "status": "First opening production batch, manually reviewed working assets; not user approval",
+  "source": "screenplay/original-timeline/source.fountain",
+  "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
+  "runtime_scope": "S001–S005 only; later scenes default to prose. No reuse across later ages, winter, Harrow, deaths or hand injury.",
+  "framing": "Dialogue portraits are removed on narrated action. Close framing excludes hands during treatment, sleeve gripping, candle movement and the seated window conversation. No body region is stretched or horizontally flipped.",
+  "sprites": [
+    {
+      "id": "tessa-arrival",
+      "character": "Tessa Rusk",
+      "apparent_age": 19,
+      "allowed_beats": "S001:19–49",
+      "wardrobe": "Blue hoodie, cream T-shirt, straight jeans, canvas sneakers",
+      "pose_expression": "frightened questioning; empty hands",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "bright"
+      ],
+      "master": "sprites/tessa-arrival.xcf",
+      "neutral": "sprites/tessa-arrival-neutral.png",
+      "generation": "sprites/tessa-arrival-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "tessa-phone",
+      "character": "Tessa Rusk",
+      "apparent_age": 19,
+      "allowed_beats": "S001:54–62; S002:103",
+      "wardrobe": "Same arrival clothes, no cloak",
+      "pose_expression": "urgent questioning; green phone in anatomical left hand",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "bright",
+        "dark"
+      ],
+      "master": "sprites/tessa-phone.xcf",
+      "neutral": "sprites/tessa-phone-neutral.png",
+      "generation": "sprites/tessa-phone-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "tessa-cloaked",
+      "character": "Tessa Rusk",
+      "apparent_age": 19,
+      "allowed_beats": "S002:75–98",
+      "wardrobe": "Arrival clothes under gray wool cloak",
+      "pose_expression": "frightened; green phone in anatomical left hand",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "dark"
+      ],
+      "master": "sprites/tessa-cloaked.xcf",
+      "neutral": "sprites/tessa-cloaked-neutral.png",
+      "generation": "sprites/tessa-cloaked-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "tessa-first-treatment",
+      "character": "Tessa Rusk",
+      "apparent_age": 19,
+      "allowed_beats": "S003 dialogue",
+      "wardrobe": "Ivory under-robe, long mineral-blue working Saint robe; no badge or mantle yet",
+      "pose_expression": "worried attention; hands excluded by treatment close framing",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "ordinary"
+      ],
+      "master": "sprites/tessa-first-treatment.xcf",
+      "neutral": "sprites/tessa-first-treatment-neutral.png",
+      "generation": "sprites/tessa-first-treatment-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "tessa-ceremony",
+      "character": "Tessa Rusk",
+      "apparent_age": 19,
+      "allowed_beats": "S004:187–203; S005 dialogue",
+      "wardrobe": "Celadon under-robe, full lapis coat, broad waistband, white/gold mantle, twelve-ray badge, ivory slippers",
+      "pose_expression": "anger and refusal; hands excluded during sleeve-grip conversation",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "bright",
+        "ordinary"
+      ],
+      "master": "sprites/tessa-ceremony.xcf",
+      "neutral": "sprites/tessa-ceremony-neutral.png",
+      "generation": "sprites/tessa-ceremony-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "mara-indoor",
+      "character": "Mara Venn",
+      "apparent_age": 32,
+      "allowed_beats": "S002:75–103",
+      "wardrobe": "Slate coat, padded vest, forearm guards, boots, one brass captain bar",
+      "pose_expression": "controlled concern, hands lowered, sword sheathed",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "dark"
+      ],
+      "master": "sprites/mara-indoor.xcf",
+      "neutral": "sprites/mara-indoor-neutral.png",
+      "generation": "sprites/mara-indoor-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "senn-ceremonial",
+      "character": "Prelate Senn",
+      "apparent_age": "late fifties",
+      "allowed_beats": "S001:29–62; S004:187–203",
+      "wardrobe": "Cream and wheat robes, brass clasp, repaired twelve-ray embroidery",
+      "pose_expression": "persuasive concern; one hand at ribs",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "bright"
+      ],
+      "master": "sprites/senn-ceremonial.xcf",
+      "neutral": "sprites/senn-ceremonial-neutral.png",
+      "generation": "sprites/senn-ceremonial-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    },
+    {
+      "id": "iven-treatment",
+      "character": "Iven Saye",
+      "apparent_age": 26,
+      "allowed_beats": "S003 dialogue; S004:211; S005 dialogue",
+      "wardrobe": "Olive coat, linen shirt, treatment apron, charcoal trousers, boots",
+      "pose_expression": "attentive concern; treatment hands outside close frame",
+      "injuries": "None; both hands intact",
+      "reviewed_light": [
+        "ordinary",
+        "bright"
+      ],
+      "master": "sprites/iven-treatment.xcf",
+      "neutral": "sprites/iven-treatment-neutral.png",
+      "generation": "sprites/iven-treatment-generated.png",
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "chamber-open",
+      "allowed_beats": "S001:9",
+      "light": "bright",
+      "state": "Arch open, lever up, no cracks or fallen groceries; modern Earth retains a separately masked exposure.",
+      "master": "backgrounds/chamber-open.xcf",
+      "export": "../../renpy/game/art/backgrounds/chamber-open.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "chamber-open-spill",
+      "allowed_beats": "S001:11–15 page 0",
+      "light": "bright",
+      "state": "Same arch; independently placed bag and bottom-split carton/milk at the landing.",
+      "master": "backgrounds/chamber-open-spill.xcf",
+      "export": "../../renpy/game/art/backgrounds/chamber-open-spill.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "chamber-closed",
+      "allowed_beats": "S001:15 page 1 onward",
+      "light": "bright",
+      "state": "Closed cracked arch, lever down; same grocery location. Operator and physical action are not yet illustrated.",
+      "master": "backgrounds/chamber-closed.xcf",
+      "export": "../../renpy/game/art/backgrounds/chamber-closed.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "apartment-closed",
+      "allowed_beats": "S002:69–71 and 106",
+      "light": "dark",
+      "state": "Door closed; chair below window; limp offered dress at wardrobe.",
+      "master": "backgrounds/apartment-closed.xcf",
+      "export": "../../renpy/game/art/backgrounds/apartment-closed.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "apartment-open",
+      "allowed_beats": "S002:73–103",
+      "light": "dark",
+      "state": "Door open to guarded hall; chair below window; corrected limp dress.",
+      "master": "backgrounds/apartment-open.xcf",
+      "export": "../../renpy/game/art/backgrounds/apartment-open.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "apartment-barricaded",
+      "allowed_beats": "S002:108–112",
+      "light": "dark",
+      "state": "Door closed; same chair moved against door; window place empty.",
+      "master": "backgrounds/apartment-barricaded.xcf",
+      "export": "../../renpy/game/art/backgrounds/apartment-barricaded.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "palace-infirmary",
+      "allowed_beats": "S003",
+      "light": "ordinary",
+      "state": "Pale ward, curtains, beds and treatment aisle. Foreground Olan/action is outside this background plate.",
+      "master": "backgrounds/palace-infirmary.xcf",
+      "export": "../../renpy/game/art/backgrounds/palace-infirmary.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "audience-hall",
+      "allowed_beats": "S004",
+      "light": "bright",
+      "state": "Ceremonial chair and twelve-ray banners; subordinate wounded spectator extras.",
+      "master": "backgrounds/audience-hall.xcf",
+      "export": "../../renpy/game/art/backgrounds/audience-hall.png",
+      "review_status": "Final full export and in-game state inspected"
+    },
+    {
+      "id": "infirmary-window",
+      "allowed_beats": "S005",
+      "light": "ordinary",
+      "state": "Broad sill, convoy below, open medical chest, travel bag at end of sill; no cast invented in background.",
+      "master": "backgrounds/infirmary-window.xcf",
+      "export": "../../renpy/game/art/backgrounds/infirmary-window.png",
+      "review_status": "Final full export and in-game state inspected"
+    }
+  ],
+  "review": "review.md",
+  "not_yet_produced": [
+    "Animated or staged arrival/run/lever action, scholar and crowd components",
+    "Olan and his precise missing digits, older healer, priest, messenger, Orra",
+    "Further expressions, full action poses and period-specific main cast",
+    "S006–S058 backgrounds and sprites, growing children, winter, intermediate campaign, injured and postwar outfits",
+    "Sound, music, performance"
+  ]
+}

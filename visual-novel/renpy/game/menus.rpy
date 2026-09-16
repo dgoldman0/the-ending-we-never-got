@@ -1,14 +1,15 @@
 screen main_menu():
     tag menu
     add Solid('#10252b')
-    if renpy.loadable('art/bellweir-heron-intact.png'):
-        add 'art/bellweir-heron-intact.png' xysize (1920, 1080) fit 'cover'
+    if renpy.loadable('art/backgrounds/apartment-closed.png'):
+        add 'art/backgrounds/apartment-closed.png' xysize (1920, 1080)
+        add 'art/sprites/tessa-cloaked-dark.png' xpos 915 ypos 40 xysize (930, 1395)
     add Solid('#10252bf5') xsize 830 ysize 1080
     vbox:
-        xpos 100 ypos 138 xsize 680 spacing 30
+        xpos 100 ypos 90 xsize 680 spacing 18
         text 'THE ORIGINAL TIMELINE' style 'caption_text'
         text 'The Ending\nWe Never Got' style 'title_text'
-        null height 28
+        null height 12
         textbutton 'Begin' id 'main_begin' action Start() xsize 500
         textbutton 'Continue' action Continue() sensitive renpy.can_load('1-1') or renpy.newest_slot() is not None xsize 500
         textbutton 'Load a saved game' action ShowMenu('load') xsize 500
@@ -59,6 +60,7 @@ screen file_slots(title, saving):
                 spacing 24
                 for slot in range(1, 7):
                     button:
+                        id ('file_slot_' + str(slot))
                         xsize 445 ysize 300
                         action (FileSave(slot) if saving else FileLoad(slot))
                         vbox:
@@ -97,7 +99,7 @@ screen preferences():
                 textbutton 'Reduced motion' action ToggleField(persistent, 'reduced_motion')
                 textbutton 'Image descriptions' action ToggleField(persistent, 'art_descriptions')
                 textbutton 'Self-voicing' action Preference('self voicing', 'toggle')
-            text 'Keyboard: Space / Enter advances; Page Up rolls back; Esc returns or opens the menu. Use Tab and the arrow keys to focus controls. Press V to toggle self-voicing.' style 'prose_text'
+            text 'Keyboard: Space / Enter advances; Page Up rolls back; Esc returns or opens the menu. Use the arrow keys to focus controls and Enter to activate them. Press V to toggle self-voicing.' style 'prose_text'
             text 'There are no timed choices, hidden hotspots or flashing effects. Scene brightness is intentional; menus and dialogue stay on opaque dark panels.' color '#aabeba' size 25
 
 screen history():
@@ -144,8 +146,8 @@ screen confirm(message, yes_action, no_action):
             text message style 'prose_text'
             hbox:
                 spacing 25
-                textbutton 'Confirm' action yes_action
-                textbutton 'Cancel' action no_action
+                textbutton 'Confirm' id 'confirm_yes' action yes_action
+                textbutton 'Cancel' id 'confirm_no' action no_action
     key 'game_menu' action no_action
 
 screen notify(message):

@@ -1,5 +1,7 @@
 # Narrative time and room for investigation
 
+Implementation update: the first playable route retains every screenplay action and spoken line, including its existing time skips. The additional compression below remains a proposal; automated traversal duration is not a measured human reading time.
+
 Status: FIRST PACING PROPOSAL. The user asked to make room for investigation by considering narrative time skips. Rebuild 11 already contains substantial jumps and two montage headings. Preserve that compression where the intervening days do not contain a necessary interaction; do not turn every elapsed week into playable errands.
 
 **Story time and reading time are separate.** Ten minutes spent investigating does not leave Tessa standing at a bridge for ten minutes or cause a missed rescue. A time card advances the world only at an authored transition. Investigation is outside that clock.

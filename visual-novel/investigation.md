@@ -2,6 +2,8 @@
 
 Status: WORKING GAMEPLAY PROPOSAL. The user wants enough investigation to discover additional information, including **humans initiating the ancient war through the first Saint summoning**. That connection is now a user-established historical anchor. Tessa's summoning is a later event. The exact first Saint, dates, commissioning individuals, first operation and Valcair's firsthand involvement remain to be developed.
 
+Implementation update: the [first playable build](renpy/README.md) implements the five invitations and six inquiries. [Content provenance](investigation-content.md) distinguishes its reliable context cards from the archival exhibits still proposed below.
+
 The investigator is the **player**. Tessa, original Iven, original Mara, Elin and Lucan do not acquire the ancient truth through these screens. Read with the [route outline](outline.md), [pacing plan](pacing.md), [knowledge boundaries](../story/knowledge-and-reveals.md) and [war history](../worldbuilding/war-and-history.md).
 
 ## A mode with things to do

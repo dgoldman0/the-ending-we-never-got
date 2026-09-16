@@ -2,6 +2,7 @@
 
 The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
 
+- [runtime/](runtime/README.md): separate opening sprites, background states, editable GIMP masters, [manifest](runtime/manifest.json) and [manual review](runtime/review.md). The runtime uses no copies of the tone studies.
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.
 - `character-references/`: reusable likeness references, with their selection status recorded in the character and scene notes.
 - [character-keys/](character-keys/README.md): labeled full-body keys with age, wardrobe state, manual review and GIMP files.
