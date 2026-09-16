@@ -2,18 +2,29 @@
 
 These are actual unresolved matters, not invitations to discard the protected project.
 
-## Structure and narrative
+## Active priority — original-timeline Ren'Py VN
+
+The focus changed on 16 September 2026. See the [adaptation brief](../visual-novel/README.md). Preparation is documented; implementation has not started.
+
+- Map Rebuild 11 into candidate VN chapters and identify where relationships, investigations and transitions need expansion.
+- Decide viewpoint, including whether the player sees Valcair's orders and other events outside Tessa's presence.
+- Decide player agency, branching and the mechanics of player investigation. Alternate endings are not established.
+- Develop how the player investigates and learns that humans initiated the war: the underlying events, available evidence and discovery sequence. The original cast does not acquire that knowledge through player unlocks. The premise is already preserved in the history notes; the detailed account is not complete.
+- Choose mandatory versus optional presentation of that history, without requiring future reincarnated fans to forget reliable source lore.
+- Define an initial playable slice, presentation and asset needs before full production. Engine choice is Ren'Py; release title, platforms and VN playtime remain open.
+
+## Deferred wider-story structure and narrative
 
 - Reconcile the altered timeline with the substantially rebuilt original: first cooperation, Lucan's agency, resistant investigations, tampered-cargo Harrow and changed trust.
 - Preserve a climax that completes an outstanding development. The old altered draft cancels the war too early, then repeatedly celebrates a settled result.
-- Reassess the original opening's allocation. The approximately thirty-minute intention remains; the current reading copy has 57 screenplay pages. Runtime is unmeasured, and a new line pass should not silently become a structural rewrite.
+- If returning to the larger screen story, reassess the original opening's allocation. Its approximately thirty-minute intention and 57-page reading copy do not define VN playtime. Screenplay runtime remains unmeasured.
 - Decide the precise form of early partial recognition among Neri/Iven/Mara while keeping Neri's full history private until late.
 - Determine how the explicit deeper VN lore changes the altered fans' actions and what evidence local people receive. Do not invent a mystery that requires fans to forget known lore.
 
 ## World and powers
 
 - Planet/realm naming, complete geography, distances and demographics are not established.
-- The detailed ancient aggression and Valcair's personal relation to it need deliberate choices; do not restore the deleted reveal to the original opening.
+- The detailed ancient aggression and Valcair's personal relation to it need deliberate choices for the active VN reveal. The existing screenplay remains unchanged; distinguish new VN discoveries from its established knowledge boundaries.
 - Neri's exact age, total familiar count and the private reveal's numerical values remain draft parameters.
 - The complete reincarnation mechanism, continuity of the familiar company and relationship between the fans' Earth and Tessa's Earth remain open.
 - Final rules for Neri's doorway to Tessa's home must account for the summoning mechanism and preserved limits without inventing a new constraint merely for drama.

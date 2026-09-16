@@ -2,6 +2,8 @@
 
 This directory preserves the outer story that was missing from the repository. It is **development material**, not a newly revised screenplay. The last integrated version was The Ending We Never Got, Editorial Revision 3; original-route work has since advanced through Rebuild 11.
 
+Current status (16 September 2026): incursion-timeline development is deferred while work focuses on an [original-timeline Ren'Py VN](../../visual-novel/README.md). The questions about Neri and the reincarnated Iven/Mara remain available for a later return.
+
 Read [premise](../../project/premise.md), [knowledge boundaries](../knowledge-and-reveals.md), [event ripples](event-ripples.md), and the [recovered sequence register](recovered-sequences.md).
 
 ## Protected course

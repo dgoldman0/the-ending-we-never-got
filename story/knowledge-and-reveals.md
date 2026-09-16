@@ -2,6 +2,12 @@
 
 Status: protected boundaries plus a recovered draft disclosure sequence. See [continuity](../project/continuity.md).
 
+## Scope of the matrix
+
+The original-route column below describes Rebuild 11. In the active Ren'Py adaptation, the player can investigate and learn that humans initiated the war. This discovery is for the player; it does not change the original cast's knowledge in the matrix. Record player discoveries separately from character knowledge as the adaptation develops. The evidence, timing and interface remain open. See the [VN brief](../visual-novel/README.md).
+
+The incursion/altered timeline and its late disclosures remain deferred. The presentation order below belongs to the larger double-isekai story, not a requirement to append Neri's birth to the original-only VN.
+
 | Subject | Original route | Altered route before disclosure | Late/private development |
 |---|---|---|---|
 | Tessa was taken from Earth | Tessa and those she tells know | Same; reincarnated fans also understand Earth references | Not equivalent to knowing the VN exists |

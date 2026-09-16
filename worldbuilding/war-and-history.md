@@ -8,7 +8,7 @@ The northern campaign seeks control of the river fortresses and removal of the s
 
 Human civilians know current northern brutality: attacks, destruction, displacement and missing relatives. Northern civilians have their own losses and grievances. Both sides' experiences affect how encounters begin. Bounded medical or rescue cooperation is possible without proving that the entire conflict could be solved by one pleasant conversation.
 
-## Deeper history — protected knowledge restriction
+## Deeper history — premise and screenplay knowledge restriction
 
 The proposed underlying history is that humanity began the warfare long ago and subsequently forgot, obscured or recast that aggression. Valcair's extreme distrust is rooted in that history. Detailed campaigns, dates, the exact prior agreement, what he witnessed, and whether every proposed memory belongs in final canon remain development decisions.
 
@@ -17,6 +17,10 @@ The revelation was removed from the current original opening. Tessa, original Iv
 This history can be explicit, reliable optional lore in the source visual novel. Attentive players may know exactly what happened. The altered reincarnators can use that knowledge from the beginning; no artificial disputed-lore device or forced forgetting is required to reserve a discovery for Neri.
 
 An audience-only hint was discussed, but the latest original opening contains no such historical revelation. Do not restore a flashback or its orphaned scar/monument/document callbacks during an unrelated edit.
+
+### Current VN direction — 16 September 2026
+
+The player can learn the human origins of the war through investigation in the original-timeline Ren'Py adaptation. This develops the explicit source lore described above. It does not give Tessa, Iven, Mara, Elin or Lucan that knowledge; their existing boundaries remain in effect. The evidence, timing and presentation of player discoveries are still to be designed. See the [adaptation brief](../visual-novel/README.md).
 
 ## Harrow and culpability
 

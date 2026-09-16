@@ -2,6 +2,8 @@
 
 Status: protected direction unless a paragraph explicitly says draft or open. Recovered from the user's decisions in the development conversation; the earlier integrated screenplay supplies additional draft examples.
 
+Current production focus (16 September 2026): adapt Tessa's original timeline into a Ren'Py visual novel. The larger narrative and its incursion continuation below remain preserved for later work. Their framing and original-opening duration do not set the scope or playtime of the current VN. See the [adaptation brief](../visual-novel/README.md).
+
 ## The story being told
 
 Neri adored a fictional heroine while living as an ordinary human in roughly the present-day/near-future era. She then survived into an ageless civilization, lived for millions of years, and became an Astravus with an immense company of bonded nonhuman companions. After reincarnation into a young High Human body in another world, she eventually recognizes that world as the setting of the visual novel she loved when she was young.

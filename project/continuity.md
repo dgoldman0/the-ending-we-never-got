@@ -9,6 +9,12 @@
 
 A later correction overrides an older scene. Archiving a proposal does not approve it. Keep PROTECTED, CURRENT DRAFT, EARLIER DRAFT and OPEN distinctions visible.
 
+## Current adaptation scope — 16 September 2026
+
+The user has shifted active work to a Ren'Py VN covering only the original timeline. Neri's incursion and the reincarnated Iven/Mara development are deferred. Rebuild 11 remains the source baseline, with additional detail and a reveal of humanity's initiating aggression planned for VN development. See the [adaptation brief](../visual-novel/README.md).
+
+The player can uncover humanity's initiating aggression through investigation. This is player knowledge; the historical knowledge restrictions for Tessa, Iven, Mara, Elin and Lucan remain in effect. The discovery's evidence, timing and presentation are open, not its recipient. This change does not authorize different deaths, injuries or endings.
+
 ## Protected boundaries
 
 - Tessa is involuntarily summoned as an ordinary girl; she did not ask to fight this world's war. The idea of removing her isekai origin was discussed and rejected in favor of Saint summoning.
