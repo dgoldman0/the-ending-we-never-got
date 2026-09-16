@@ -2,6 +2,8 @@
 
 Six baseline working keys and two Tessa state studies, with source/state briefs and manual review. Layered GIMP files accompany assets that received local corrections. These establish reusable visual references; user selection and scene variants remain separate. Read the [full production inventory](../production-inventory.md) for remaining cast and wardrobe/injury states.
 
+**Tessa's fantasy wardrobe is now under redesign**, including fieldwear. Her rows below are archived working studies, not settled clothing references; see the [audit and proposed direction](tessa/wardrobe-redesign.md). The postwar study's emotional/physical changes remain separate from its disputed clothes.
+
 | Character | Age and role | Visual | Review / GIMP |
 | --- | --- | --- | --- |
 | Tessa Rusk | 19 at arrival; early convoy | [PNG](tessa/baseline-v1.png) | [Review](tessa/README.md) · [XCF](tessa/baseline-v1.xcf) |

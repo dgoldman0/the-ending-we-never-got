@@ -2,6 +2,8 @@
 
 Status: manually reviewed working study, version 4, 16 September 2026. **Not user-approved.** Versions 1–2 were rejected for clothing/emotional continuity; version 3 was rejected as merely pouty. They are not references.
 
+**Wardrobe status:** the user's subsequent objection to the whole clothing direction also puts these domestic garments under redesign. Retain this only as a working emotional/physical-state study, not a costume reference. See [wardrobe redesign](wardrobe-redesign.md). Neither identity nor condition depends on retaining the cardigan/trousers outfit.
+
 [Full PNG](postwar-v4.png). Native size: 1024 × 1536. [Generation prompt](../../prompts/characters/tessa-postwar-v4.txt).
 
 ## Source and design

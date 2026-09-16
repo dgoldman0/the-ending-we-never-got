@@ -2,6 +2,8 @@
 
 Status: reviewed working visual, 16 September 2026. User selection remains separate.
 
+**Later correction:** the user questioned this everyday/field clothing direction. This image is now a costume study under revision, not a wardrobe reference for further scenes. Read [the wardrobe redesign](wardrobe-redesign.md). The review below records the earlier rendering checks; it does not resolve the design objection.
+
 [Full PNG](baseline-v1.png) · [GIMP XCF](baseline-v1.xcf). Native size: 1024 × 1536.
 
 Source: [developed character design](../../../../characters/original-visuals.md#tessa-rusk) and [visual direction](../../visual-direction.md). State: First convoy, nineteen; healthy, before Bellweir's destruction.

@@ -12,7 +12,7 @@ The [summoning arrival](scene-studies/summoning/summoning-arrival.png) anchors t
 
 Retain naturalistic painted faces, ordinary anatomy, tactile cloth, mineral colors and architectural depth. Use the user's original pictures as rough material and illustration references; their gods, crowns and robots are not story content. Keep the modern Earth view distinct from the temple's materials and palette. Honor each location's written construction instead of spreading the summoning chamber's ornament everywhere.
 
-Character keys need clear skin, fabric and silhouette reference. Use a simple, slightly insistent ordinary-light presentation; do not permanently bake the bright or dismal extreme into every portrait. Scene variants apply the appropriate illumination to that same identity. A painful atmosphere is not a requirement for every character to frown.
+Character keys need clear skin, fabric and silhouette reference. Use a simple, slightly insistent ordinary-light presentation; do not permanently bake the bright or dismal extreme into every portrait. Scene variants apply the appropriate illumination to that same identity. A painful atmosphere is not a requirement for every character to frown. It also must not excuse leaving postwar Tessa physically untouched: her later key must carry the visible aging and battering the user requested, independently of the wardrobe redesign.
 
 ## Production and manual review
 

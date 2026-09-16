@@ -2,6 +2,8 @@
 
 Status: manually reviewed working costume key, version 2, 16 September 2026. User selection remains separate. The first version reused the travel outfit and was rejected.
 
+**Later correction:** the user questioned the overall Saint wardrobe even after the garment changes. This formal design is under revision and must not be used as the settled clothing base. See [wardrobe redesign](wardrobe-redesign.md). Pixel/anatomy and badge checks below are historical checks, not approval of the design direction.
+
 [Full PNG](formal-v2.png) · [Layered GIMP file](formal-v2.xcf). Native size: 1024 × 1536. [Generation prompt](../../prompts/characters/tessa-formal-v2.txt).
 
 ## Source and design

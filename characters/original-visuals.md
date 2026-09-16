@@ -14,6 +14,8 @@ Read with [character relationships](ensemble.md), [Tessa's arc](tessa.md), [sett
 
 **Wardrobe progression:**
 
+**Under redesign following the user's latest correction.** The user questioned the entire Saint wardrobe, including work/campaign attire. The fantasy clothing choices below record the previous approach and must not be reused as active production instructions. See the [wardrobe audit and new proposal](../visual-novel/art/character-keys/tessa/wardrobe-redesign.md). Earth arrival clothing and source-required mantle, badge, glove and brace states remain separate constraints. A generated image is not evidence that the old clothing direction was approved.
+
 | Period | Working clothing and retained details |
 |---|---|
 | Grocery errand / arrival | Faded blue zip hoodie, cream cotton T-shirt, dark straight-leg jeans, off-white canvas sneakers with a worn right toe. Phone in a plain dark-green case; grocery bag carried in one hand. The milk wets the shoes and lower trouser legs. |

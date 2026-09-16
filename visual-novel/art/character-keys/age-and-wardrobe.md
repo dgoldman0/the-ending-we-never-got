@@ -4,6 +4,8 @@ The user requested formal Saint clothing and attention to the years covered by t
 
 ## Tessa
 
+**Wardrobe direction under redesign:** the user has questioned the entire Saint clothing system, including fieldwear. The garment choices in this table are superseded production proposals; preserve its ages and source states, but use [the wardrobe audit](tessa/wardrobe-redesign.md) before developing new clothes. Existing rendered outfits are not current costume references.
+
 | State | Appearance and costume | Continuity |
 | --- | --- | --- |
 | Arrival, nineteen | Modern hoodie, T-shirt, jeans and sneakers; healthy hands | Selected face remains recognizable. Milk belongs to the arrival state. |
