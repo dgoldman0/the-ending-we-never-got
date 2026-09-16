@@ -15,7 +15,8 @@ screen main_menu():
         textbutton 'Load a saved game' action ShowMenu('load') xsize 500
         textbutton 'Settings' action ShowMenu('preferences') xsize 500
         textbutton 'About this edition' action ShowMenu('about') xsize 500
-        textbutton 'Quit' action Quit(confirm=True) xsize 500
+        if not renpy.emscripten:
+            textbutton 'Quit' action Quit(confirm=True) xsize 500
     text 'A story of home, obligation, and what survives.' xpos 100 ypos 970 size 23 color '#b2c2b9'
 
 screen menu_frame(title):
@@ -56,6 +57,8 @@ screen file_slots(title, saving):
         vbox:
             spacing 25
             text 'Choose a slot. Saves keep your story position and your investigation together.' size 25 color '#bdcfc6'
+            if renpy.emscripten:
+                text 'Saves stay in this browser. The top-left browser menu can export or import a backup.' size 23 color '#bdcfc6'
             grid 3 2:
                 spacing 24
                 for slot in range(1, 7):

@@ -1,0 +1,19 @@
+# Ren'Py web: first matching rule applies. '-' bundles before play; '+' streams.
+# Bundle the reviewed opening composites so inspection never starts with blurry
+# progressive placeholders. Other variants/future assets can load when needed.
+- image game/art/backgrounds/**
+- image game/art/sprites/tessa-arrival-bright.png
+- image game/art/sprites/tessa-phone-bright.png
+- image game/art/sprites/tessa-phone-dark.png
+- image game/art/sprites/tessa-cloaked-dark.png
+- image game/art/sprites/tessa-first-treatment-ordinary.png
+- image game/art/sprites/tessa-ceremony-bright.png
+- image game/art/sprites/tessa-ceremony-ordinary.png
+- image game/art/sprites/mara-indoor-dark.png
+- image game/art/sprites/senn-ceremonial-bright.png
+- image game/art/sprites/iven-treatment-ordinary.png
+- image game/art/sprites/iven-treatment-bright.png
+- image game/gui/**
++ image game/**
++ music game/audio/**
++ voice game/voice/**

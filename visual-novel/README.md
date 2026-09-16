@@ -2,6 +2,8 @@
 
 Status: FIRST PLAYABLE BUILD, 16 September 2026. All 58 original screenplay scenes, ten chapters, five optional investigation invitations, six inquiries and the complete ending through **“Do you wish to save Tessa?”** are implemented. Run [play.sh](play.sh); see [build instructions](renpy/README.md) and [QA](renpy/QA.md).
 
+For browser inspection, run `./visual-novel/play-web.sh` from the repository root. It serves the actual Ren'Py web build at **http://127.0.0.1:8042/** and opens your browser. Keep the terminal open; Ctrl+C stops the server. Rebuild after game changes with [build-web.sh](build-web.sh). The browser edition uses the same story, investigations and runtime artwork.
+
 Art production currently covers the opening chapter with eight transparent sprite states for Tessa, Mara, Iven and Senn, nine state-specific backgrounds, controlled GIMP lighting and local prop/costume repairs. These are reviewed working assets, not user-approved final art. Later scenes retain their screenplay text and await production assets. Existing tone studies are references, not copied runtime scenes. See the [runtime manifest and review](art/runtime/README.md).
 
 ## Adaptation structure

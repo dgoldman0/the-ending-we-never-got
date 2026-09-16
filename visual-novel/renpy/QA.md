@@ -35,3 +35,11 @@ The complete prose route and investigations are playable. Art is an opening-chap
 ## Local Linux package
 
 A standalone Linux archive is built under `visual-novel/builds/` using [build-linux.sh](../build-linux.sh). The extracted package was launched independently of the development SDK and its actual title screen was captured and visually inspected. Packaging excludes development tests, review captures and working XCFs; the font license/notice files are explicitly included before the general text-file exclusion.
+
+## Local browser preview
+
+The matching official 8.5.3 Web Platform Support archive was checksum-verified and used to build `builds/web/` and `builds/web.zip`. [play-web.sh](../play-web.sh) serves the export on loopback; [build-web.sh](../build-web.sh) reproduces it. The initial game archive is 40.4 MiB, with the nine current backgrounds and eleven used sprite/light variants bundled at full resolution. Font licenses remain included; tests, working XCFs and review captures are excluded.
+
+The actual WebAssembly game loaded in an isolated Chromium browser at 1440×900. The title, introduction and chapter transition were exercised, followed by actual keyboard traversal into S001's bright dialogue and S002's dark apartment. Browser captures were opened for visual inspection. Initial title inspection reported no JavaScript page or console errors. The source adapter check and native lint still pass.
+
+Browser save persistence, export/import, fullscreen, complete traversal and other browsers have **not** completed verification. The attempted automated save check stopped in its test harness before reaching Save; it does not count as a browser save/load pass. Desktop results above must not be relabeled as web results. This is a local inspection build; its successful launch does not certify presentation quality.
