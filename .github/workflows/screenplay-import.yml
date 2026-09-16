@@ -20,4 +20,15 @@ jobs:
           AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
           git -c http.extraheader="AUTHORIZATION: basic $AUTH" clone --single-branch --branch screenplay-import-staging "https://github.com/${REPOSITORY}.git" staging
           test "$(git -C staging rev-parse HEAD)" = "$STAGING_SHA"
-          python3 staging/screenplay/.import/import_history.py
+          if python3 staging/screenplay/.import/import_history.py > import-result.txt 2>&1; then
+            cat import-result.txt
+          else
+            cat import-result.txt
+            cp import-result.txt staging/screenplay/.import/FAILURE.txt
+            git -C staging config user.name 'Screenplay history import'
+            git -C staging config user.email 'screenplay-history-import@users.noreply.github.com'
+            git -C staging add screenplay/.import/FAILURE.txt
+            git -C staging commit -m 'Record import failure without changing main'
+            git -C staging -c http.extraheader="AUTHORIZATION: basic $AUTH" push origin HEAD:screenplay-import-staging
+            exit 1
+          fi
