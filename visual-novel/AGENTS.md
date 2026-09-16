@@ -58,14 +58,15 @@ The scholar can be stationed at the lever before pulling it; that does not make 
 ## Atmosphere and lighting
 
 - Follow the scene's circumstances. `DAY` does not mean sunny. The established north-infirmary interpretation is a **stormy, dreary day**.
-- The original timeline's bright scenes should be almost uncomfortably, nearly blindingly bright; darker scenes should be drearier than usual. The goal is a painful atmosphere, not attractive generic fantasy lighting.
+- The user has established three levels for the original timeline: **bright scenes are uncomfortably, nearly blindingly bright; ordinary scenes retain a milder visual discomfort; dismal scenes visibly feel dismal.** Ordinary daylight must not become a completely comfortable default. Preserve believable circumstances, readable action and moments of human warmth within that atmosphere.
+- The [summoning arrival](art/scene-studies/summoning/summoning-arrival.png) and [storm infirmary](art/scene-studies/north-infirmary/north-infirmary-storm.png) are the user's two scene studies for visual tone. Their role is now established; this does not approve every incidental design or replace the written continuity. Follow [the visual direction](art/visual-direction.md) for application and review.
 - Evaluate brightness where the player actually looks: faces, gestures and the central dramatic area. A glaring floor beneath a comfortably exposed scene does not satisfy the brief.
 - **Do not solve that by spotlighting Tessa.** Brightness must belong coherently to the chamber and affect its surfaces and occupants. An isolated light column, halo or white haze around her is another failure, not the requested correction.
 - Preserve physically useful differences between materials and between the two worlds. Do not apply a common palette or indiscriminate exposure change that erases the portal's distinction. Allow deliberate highlight loss without losing the scene's essential action or anatomy.
 
 ## Generation, GIMP and preventing drift
 
-- Use the current built-in image-generation tool and applicable imagegen skill for generative work. Do not silently switch to a separately billed API workflow. Use the available GIMP installation for controlled editing and compositing where it improves the result.
+- Use the current built-in image-generation tool and applicable imagegen skill for generative work. Do not silently switch to a separately billed API workflow. **GIMP is available locally** (2.10.36 verified on 16 September 2026); use it for controlled editing, masks, component corrections, grading and inspection crops where needed. Do not claim the only available operation is another full regeneration.
 - Start from the screenplay brief, written designs and user-selected references. **Do not use a rejected image as the next likeness or composition reference.** Repeated edits of an already drifting output compound the error.
 - Give each operation a defined purpose and invariants. Afterward, compare against the approved reference and source brief, not just the immediately preceding output. If identity, proportions or staging have drifted, repair or replace that component before proceeding.
 - Use separate components when they provide needed control: character, supporting figures, environment, portal view, props, contact shadows and shared lighting. Review an important figure's face and full body before placing it in a scene. Do not regenerate the whole cast to fix a background or a small prop.
@@ -75,7 +76,7 @@ The scholar can be stationed at the lever before pulling it; that does not make 
 
 ## Review before presenting or building on an image
 
-Inspect the full composition at intended viewing size, then native-resolution crops of important faces, bodies, hands, feet, prop contact and mechanisms. Compare Tessa directly to the storm-infirmary likeness. Check the whole body as well as the face.
+Manually inspect the actual pixels of every selected image: open the full composition at intended viewing size, then native-resolution crops of important faces, bodies, hands, feet, prop contact and mechanisms. A successful tool call, prompt checklist, automated score or contact sheet alone is not this review. Compare Tessa directly to the storm-infirmary likeness. Check the whole body as well as the face. Record observations, corrections and remaining limitations per asset; never mark unseen output reviewed.
 
 Recheck the cast roster, exact beat, route, dropped objects, wardrobe, injury state, lever operation, world boundary and lighting distribution. Review the final GIMP export after editing; an earlier generation's review does not clear the composite. Confirm that the XCF opens and its visible layers reproduce the delivered PNG.
 

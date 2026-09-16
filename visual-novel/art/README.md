@@ -1,10 +1,12 @@
 # Visual development
 
+The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
+
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.
 - `character-references/`: reusable likeness references, with their selection status recorded in the character and scene notes.
 - `prompts/`: generation/edit prompt records, grouped by scene. Single-use prompts belong here, not alongside deliverable images or in project guidance directories.
 
-The user's supplied pictures are rough style references. They do not add their pictured people, mythology, objects or settings to this story. Original-route bright scenes should approach uncomfortable, nearly blinding brightness; darker scenes should feel drearier than usual. Choose light appropriate to the particular scene. The infirmary uses stormy daylight; the summoning arrival study explores intense ritual illumination.
+The user's supplied pictures are rough style references. They do not add their pictured people, mythology, objects or settings to this story. Choose light appropriate to the particular scene and the three established registers. Built-in image generation and local GIMP editing are both available; every selected output requires manual visual inspection.
 
 ## Current studies
 
