@@ -16,9 +16,9 @@ For this study, the northern ward has weathered celadon plaster, modest carved p
 
 ## Iteration and visual review
 
-1. [Initial prompt](prompt-v1.txt): established the three-person encounter, injury on Tessa's anatomical right and support from Elin on her left. The result was too photographic and uniformly brown/distressed for the intended reference relationship.
-2. [Painting revision](prompt-v2.txt): increased painted surfaces, mineral colors and restrained architectural ornament. Its bright lighting remained wrong for this moment; the user explicitly requested a stormy day.
-3. [Weather correction / final generation prompt](prompt-v3.txt): rain and cold overcast daylight, no direct sunlight, restrained amber lamp. This is the current image.
+1. [Initial prompt](../../prompts/north-infirmary/prompt-v1.txt): established the three-person encounter, injury on Tessa's anatomical right and support from Elin on her left. The result was too photographic and uniformly brown/distressed for the intended reference relationship.
+2. [Painting revision](../../prompts/north-infirmary/prompt-v2.txt): increased painted surfaces, mineral colors and restrained architectural ornament. Its bright lighting remained wrong for this moment; the user explicitly requested a stormy day.
+3. [Weather correction / final generation prompt](../../prompts/north-infirmary/prompt-v3.txt): rain and cold overcast daylight, no direct sunlight, restrained amber lamp. This is the current image.
 
 Reviewed the generated storm scene for the right-hand injury, retained fingers, separate arms, the healthy left hand's contact with Elin, the surgeon's treatment, subdued expressions, lamp placement, visible torn blouse cuff and readable setting. Elin uses both hands around the clasp; the source does not prohibit this. The image uses the new working appearances rather than previously approved character art. Exact skin-color and likeness consistency across future images still needs character reference development.
 

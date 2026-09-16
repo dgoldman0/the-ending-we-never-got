@@ -1,0 +1,8 @@
+Use case: precise-object-edit.
+Edit only the fallen milk carton and the milk immediately touching it in the provided summoning-scene illustration. Preserve the entire scene, faces, bodies, architecture, lighting, clothing, bag, fruit, phone, hand placement, composition and colors outside this small object area.
+
+The carton in the lower foreground currently looks like it simply has an open pouring spout. The screenplay explicitly requires a PAPERBOARD MILK CARTON THAT SPLIT ON IMPACT WITH THE STONE FLOOR.
+
+Replace that single carton with the same modest-size blue-and-white unbranded paperboard milk carton lying on its side, visibly dented at a lower corner and SPLIT ALONG ITS SIDE/BOTTOM SEAM. Show a small irregular flap of torn laminated paperboard curling outward, exposed white paper fibers at that break, and opaque milk leaking from this torn seam onto the existing puddle. Keep the carton recognizably an ordinary modern grocery carton. Its normal screw cap is CLOSED and attached to the intact pouring spout; no milk flows from that spout. Do not add another carton, a bottle, ceramic jug, text label, arrows, dramatic splash, magical glow or additional trash. The rupture should read at the scene's natural scale, not as a giant close-up.
+
+Everything else must remain exactly as it is: Tessa in a blue modern hoodie, jeans and sneakers at the closed cracked arch, ordinary smartphone held close to her body, both hands healthy; scholar holding the ritual lever; Senn delayed by the mother catching his sleeve; kneeling people and distant stretcher; cold early daylight and small warm lamps. No change to Tessa's age, anatomy, expression or right hand on the stone. Same landscape dimensions; no added text, border or interface.
