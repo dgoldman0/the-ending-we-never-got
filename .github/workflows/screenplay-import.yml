@@ -1,0 +1,23 @@
+name: Import recovered screenplay history
+on:
+  push:
+    branches: [screenplay-import-staging]
+    paths: [screenplay/.import/READY.json]
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Fetch staging input and import verified history
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          STAGING_SHA: ${{ github.sha }}
+        run: |
+          set -eu
+          AUTH=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c http.extraheader="AUTHORIZATION: basic $AUTH" clone --single-branch --branch screenplay-import-staging "https://github.com/${REPOSITORY}.git" staging
+          test "$(git -C staging rev-parse HEAD)" = "$STAGING_SHA"
+          python3 staging/screenplay/.import/import_history.py
