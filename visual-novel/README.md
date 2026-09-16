@@ -1,20 +1,23 @@
 # Original-timeline visual novel — adaptation brief
 
-Status: FIRST PLAYABLE BUILD, 16 September 2026. All 58 original screenplay scenes, ten chapters, five optional investigation invitations, six inquiries and the complete ending through **“Do you wish to save Tessa?”** are implemented. Run [play.sh](play.sh); see [build instructions](renpy/README.md) and [QA](renpy/QA.md).
+Status: **PRESENTATION RESET, 16 September 2026.** The user rejected the first playable game's interface, UX and artwork. **Look closer / Threads** is the accepted reader-discovery direction; its replacement interaction is not implemented yet. Read the [presentation audit and redesign brief](presentation-redesign.md) and [interaction contract](investigation.md) before extending the game.
+
+The existing build remains a functional inspection baseline: all 58 original screenplay scenes, ten chapters and the complete ending through **“Do you wish to save Tessa?”** are traversable. Its five discovery invitations and six card/quiz inquiries are superseded. Run [play.sh](play.sh); see [build instructions](renpy/README.md) and [technical QA](renpy/QA.md). Technical completion does not certify the presentation.
 
 For browser inspection, run `./visual-novel/play-web.sh` from the repository root. It serves the actual Ren'Py web build at **http://127.0.0.1:8042/** and opens your browser. Keep the terminal open; Ctrl+C stops the server. Rebuild after game changes with [build-web.sh](build-web.sh). The browser edition uses the same story, investigations and runtime artwork.
 
-Art production currently covers the opening chapter with eight transparent sprite states for Tessa, Mara, Iven and Senn, nine state-specific backgrounds, controlled GIMP lighting and local prop/costume repairs. These are reviewed working assets, not user-approved final art. Later scenes retain their screenplay text and await production assets. Existing tone studies are references, not copied runtime scenes. See the [runtime manifest and review](art/runtime/README.md).
+The current runtime contains eight transparent sprite states for Tessa, Mara, Iven and Senn, nine state-specific backgrounds and their editable GIMP sources. The user rejected their presentation; they require reassessment and must not become the default for another production batch. Later scenes still lack artwork. Established tone and likeness references remain in force. See the [runtime status and review](art/runtime/README.md).
 
 ## Adaptation structure
 
 - [Route outline](outline.md): ten candidate chapters from summoning through postwar Bellweir and the question **“Do you wish to save Tessa?”**
 - [Complete scene map](scene-map.md): all 58 screenplay scenes, their chapter placement and proposed full-scene or compressed treatment.
-- [Player investigation](investigation.md): five rounds with inspections, comparisons and a developing historical inquiry into humans initiating the war through the first Saint summoning.
+- [Look closer / Threads](investigation.md): accepted reader inspection and connected discovery, including the historical thread about humans initiating the war through the first Saint summoning. Candidate availability and historical content still need development.
+- [Presentation redesign](presentation-redesign.md): observed failures, retained references and the next integrated visual/interaction sample.
 - [Pacing and time skips](pacing.md): use the screenplay's existing gaps and compact repeated visits/campaign seasons to make room for investigation.
 - [Ending storyboard](ending.md): preserve the complete original ending, then address the player. Response outcomes and an incursion continuation remain open.
 
-The screenplay remains the story authority. The design documents separately mark presentation proposals, new historical material that needs writing, and the existing bridge-seal attribution question. The implementation preserves every screenplay action and spoken word; it has not yet applied the proposed additional montage compression. [Investigation content](investigation-content.md) records the current reliable historical context and its limits. It does not rewrite the source to suit a proposed mechanic.
+The screenplay remains the story authority. The design documents separately mark accepted interaction principles, presentation proposals, new historical material that needs writing, and the existing bridge-seal attribution question. The implementation preserves every screenplay action and spoken word; it has not yet applied the proposed additional montage compression. [Legacy discovery content](investigation-content.md) records what the rejected card/quiz implementation contains. Its provenance is not evidence of a successful discovery experience.
 
 ## Setting and character development
 
@@ -30,7 +33,7 @@ Build a visual novel around Tessa's original timeline. [Rebuild 11](../screenpla
 
 Neri's incursion and the reincarnated versions of Iven and Mara are deferred. The active adaptation covers Tessa's story through postwar Bellweir, then the user-requested question **“Do you wish to save Tessa?”** to the player. It does not require an incursion continuation to be developed first or settle what an answer initiates. In this timeline, Iven and Mara have real local lives and no Earth or VN memories.
 
-Ren'Py is the chosen engine. The current sketch proposes one original route with optional player investigation; event-changing branches are not approved. Release title, platforms, final interface, production assets, budget and measured playtime remain open. **A Light for the Last Winter** is an earlier working title for the in-fiction VN, not an approved title for this release. The screenplay opening's approximate thirty-minute intention is not a VN playtime requirement.
+Ren'Py is the chosen engine, with local desktop and browser inspection builds. One original route has optional Look closer / Threads discovery; event-changing branches are not approved. Release title, final interface, production assets, budget and measured playtime remain open. **A Light for the Last Winter** is an earlier working title for the in-fiction VN, not an approved title for this release. The screenplay opening's approximate thirty-minute intention is not a VN playtime requirement.
 
 ## Narrative baseline
 
@@ -48,22 +51,22 @@ The **player can learn through investigation that humans started the ancient war
 
 Rebuild 11 omits this revelation. Existing notes already allow explicit, reliable optional lore in the source VN. The player can discover that lore while the original cast's knowledge boundaries remain intact.
 
-This is a player discovery, not a planned revelation to Tessa, Iven, Mara, Elin or Lucan. Do not transfer unlocked player knowledge into their dialogue or decisions. The [investigation sketch](investigation.md) proposes a sequence of player-only historical exhibits and comparisons. Those new records still need to be authored; their appearance in the plan does not put them in a character's possession.
+This is a player discovery, not a planned revelation to Tessa, Iven, Mara, Elin or Lucan. Do not transfer unlocked player knowledge into their dialogue or decisions. [Look closer / Threads](investigation.md) can lead from inspected details into additional authored material or historical cutaways. The specific historical scenes and records still need to be written. These knowledge restrictions guide development and must not appear as disclaimers in the player interface.
 
 Humanity's initiating aggression does not excuse Valcair's present atrocities or remove Vask's responsibility. Historical truth, responsibility for Harrow, and Tessa's personal trust are related but distinct matters.
 
-## Investigation and player agency
+## Reader discovery and agency
 
-Investigation is something the player does to learn more. The first design proposes a separate investigation interface, five rounds at quiet boundaries, inspectable views, comparisons and explicit findings. It keeps player discoveries separate from character knowledge and does not advance story time. No consumable clue economy, countdown, survival score or repeat-play requirement is proposed.
+**Look closer** lets the player inspect illustrated details, bring related moments alongside them and follow connections into additional material. **Threads** revisits those relationships. The player acts as a reader with editorial access; there is no player body, first-person travel, inventory or questioning of characters. Return preserves the exact narrative point. There are no comprehension quizzes, answer grading or mandatory clue quotas.
 
-In the first playable build, player control concerns reading pace, optional investigation and revisiting unlocked material. Essential relationships and consequences remain in the main route. Conversation branches and their effects would require a further decision and connected writing; no false rescue choices are introduced to make the interface appear interactive.
+The current build's explanation cards and quizzes are a superseded implementation, not a starting template to rename. Essential relationships and consequences remain in the main route. Conversation branches and their effects would require a further decision and connected writing; no false rescue choices are introduced to make the interface appear interactive.
 
 The sketch retains the screenplay's scenes outside Tessa's viewpoint, including Harrow's planning. Its modern investigation therefore examines events, evidence and limited witness knowledge rather than pretending the player has not seen the order. This viewpoint treatment remains a reviewable proposal.
 
 ## Remaining production
 
-1. Review the opening in play and develop the remaining original-route cast, expressions, action shots, backgrounds and period/injury changes under the runtime manifest. The first chapter's dialogue portraits do not replace its still-unillustrated physical action shots and supporting cast.
-2. Develop specific ancient historical exhibits only when their facts are authored. Current investigation labels reliable underlying history as context and does not fabricate archival quotations or transfer it to the cast.
+1. Rebuild a coherent representative sequence under the [presentation brief](presentation-redesign.md): title, bright and dark reading, acting, action, typography and one actual Look closer connection. Establish the intended standard in play before expanding another art batch.
+2. Author the additional historical material and its connections. Replace the card/quiz implementation with the accepted reader interaction. Keep production caveats in documentation and historical knowledge separate from cast state.
 3. Assess reading pace with the existing screenplay time skips before applying the proposed further compression. The complete source route and investigative route already reach the same original ending.
 4. Produce and review audio, transitions and further platform builds. The endpoint still ends at the player question; no response outcome or incursion route is invented.
 

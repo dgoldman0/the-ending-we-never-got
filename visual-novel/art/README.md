@@ -1,5 +1,7 @@
 # Visual development
 
+**Presentation reset, 16 September 2026:** the user rejected the current game's artwork and interface. Read the [audit and redesign brief](../presentation-redesign.md) before extending the runtime set. Existing selected likeness/tone references remain valid; the rejected presentation must not become its own style standard.
+
 The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
 
 - [runtime/](runtime/README.md): separate opening sprites, background states, editable GIMP masters, [manifest](runtime/manifest.json) and [manual review](runtime/review.md). The runtime uses no copies of the tone studies.

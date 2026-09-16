@@ -20,7 +20,7 @@ An audience-only hint was discussed, but the latest original opening contains no
 
 ### Current VN direction — 16 September 2026
 
-The player can learn the human origins of the war and the first Saint summoning's initiating role through investigation in the original-timeline Ren'Py adaptation. This does not give Tessa, Iven, Mara, Elin or Lucan that knowledge. The [investigation sketch](../visual-novel/investigation.md) now proposes a sequence of contemporary records, later accounts and corroboration shown directly to the player. These are exhibit roles for new writing, not historical artifacts already established by the screenplay. See the [adaptation brief](../visual-novel/README.md).
+The player can learn the human origins of the war and the first Saint summoning's initiating role through **Look closer / Threads**, the accepted reader-discovery direction for the original-timeline Ren'Py adaptation. The player inspects details and follows connections into additional authored material, with no body or actions in the fiction. This does not give Tessa, Iven, Mara, Elin or Lucan that knowledge; the restriction belongs in authoring, not a player-facing disclaimer. The [interaction contract](../visual-novel/investigation.md) allows historical cutaways and source material as possible forms. Specific scenes, records and their facts still need development; this agreement does not restore an old flashback or establish new ancient events. See the [adaptation brief](../visual-novel/README.md).
 
 ## Harrow and culpability
 

@@ -1,5 +1,7 @@
 # Runtime art production
 
+**Status: current presentation rejected by the user, 16 September 2026.** The existing batch is retained for comparison and functional testing. Reassess components in the [integrated redesign](../../presentation-redesign.md) before reuse or expansion. The historical production/review notes below do not certify acceptable art direction, acting, composition or lighting.
+
 This folder holds purpose-built backgrounds, sprites, expression components and their editable sources. Earlier scene studies remain reference material. The user rejected the initial attempt to use copies of those studies as the game presentation; those runtime copies have been removed.
 
 ## Opening production brief

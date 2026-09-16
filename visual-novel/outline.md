@@ -2,6 +2,8 @@
 
 Status: FIRST STRUCTURAL PROPOSAL, 16 September 2026. Requested scope: the original timeline through its ending, followed by **“Do you wish to save Tessa?”** The [Rebuild 11 screenplay](../screenplay/original-timeline/source.fountain) drives events, dialogue, chronology and character knowledge. This document proposes a VN presentation; it does not revise the manuscript or establish a playable game.
 
+**Subsequent decision:** a complete functional route now exists, but the user rejected its presentation and quiz-based discovery. [Look closer / Threads](investigation.md) is the accepted reader interaction. References below to five rounds are candidate story groupings, not mandatory quiz screens. Follow the [presentation redesign brief](presentation-redesign.md) for the next implementation stage.
+
 Read with the [complete scene map](scene-map.md), [player investigation sketch](investigation.md), [pacing and time skips](pacing.md), [ending sequence](ending.md) and [adaptation brief](README.md). Chapter titles and boundaries are working labels.
 
 ## The experience to build
@@ -14,7 +16,7 @@ Proposed reading flow:
 
 `Rovel → Bellweir → The broken promise → Gray Scar → Across the river → Harrow → After Harrow → The witness → The citadel → Bellweir again → final question`
 
-At the quiet boundaries identified below, the player can investigate, revisit already unlocked material, or continue. Five substantial investigation rounds include object/record inspection, comparison and a historical sequence establishing that humans began the ancient conflict through the first Saint summoning. There is no proposed clue quota, relationship score, countdown or requirement to replay the tragedy to reach the question.
+The player can Look closer at meaningful details, follow connections into additional authored material, and revisit them through Threads. The five quiet boundaries below remain candidate availability points; avoid turning them into obligatory interruptions. The historical thread establishes that humans began the ancient conflict through the first Saint summoning. There is no clue quota, comprehension quiz, relationship score, countdown or requirement to replay the tragedy to reach the question.
 
 Make room for this through the screenplay's existing time jumps and compact illustrated narration for repeated visits and campaigning. Preserve the interactions that establish attachment and change relationships. The [pacing plan](pacing.md) identifies the specific stretches to compress and the causes each transition must retain.
 
@@ -158,7 +160,7 @@ The [ending storyboard](ending.md) specifies the proposed flow and where this sk
 | Source events and order | All 58 scenes accounted for in sequence; selected passages become compact narrative bridges or montages | Screenplay baseline; presentation may compress without deleting causal events |
 | Chapter breaks and names | Ten sections, with a short epilogue as chapter 10 | VN presentation proposal; not equal-length episodes |
 | Viewpoint | Keep source cutaways and use concise external narration | Proposal preserving existing information order |
-| Player control | Reading pace, optional inspections/comparisons and revisiting unlocked material | Proposal; no event-changing branches approved |
+| Player control | Reading pace; Look closer at details and follow connections; revisit through Threads | Reader interaction accepted; player has no body or actions in the fiction; event-changing branches remain unapproved |
 | Everyday relationships | Keep existing humor, meals, drawing and reunions mandatory; assess pacing before adding more | Additional conversations would need separate drafting and downstream review |
 | History investigation | Explicit player-only discovery that humans initiated the ancient war through the first Saint summoning | User-established anchor; evidence, detailed events and presentation proposed separately |
 | Narrative time skips | Retain existing jumps; compress successive visits and seasonal campaigning | User-requested pacing consideration; see the specific proposals in the pacing plan |
@@ -168,10 +170,10 @@ The [ending storyboard](ending.md) specifies the proposed flow and where this sk
 | Final question | Add after the complete original ending and fade | Explicit user request; answers and continuation not settled |
 | Runtime and production scope | Estimate after adapting and reading a sample segment | No conversion of screenplay runtime or art inventory into a claimed VN length |
 
-## First implementation slice after this sketch
+## Replacement presentation sample
 
-Use chapter 01, S001–S005, followed by R01 as the first coherent slice. It tests action-to-VN conversion, intimate dialogue, readable magic, an institutional scene, a quiet ending and a player-only investigation round. Use placeholders for missing poses and set states; existing tone studies are references rather than substitutes for every beat.
+The first playable route already implements this structure; its visuals and quiz system were rejected. The next sample must meet the [integrated redesign brief](presentation-redesign.md): coherent scene direction and acting, bright/dark lighting, reading and utility screens, and an actual inspect/connect/return interaction. Placeholders can support explicitly labeled layout experiments but cannot clear the finished presentation sample. Existing tone studies remain references.
 
-The slice should begin at the interrupted stride and end with the same knowledge and relationships as the screenplay's window-seat scene. Test a straight-through read and a read with all optional inspections. Both must reach the same departure state, with no lost essential dialogue or historical knowledge assigned to Tessa. Judge pacing from that experience before expanding scenes or adding relationship branches.
+Preserve source knowledge and relationships in both straight-through and optional-discovery reads. Test exact return and saved reader discoveries, then judge pacing at ordinary reading speed. The current route's passing tests do not approve its visual direction or the proposed replacement.
 
 This pass delivers the full route sketch and its review points. Ren'Py files, new dialogue, historical exhibits and additional art are not produced by this outline.

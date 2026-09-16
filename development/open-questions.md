@@ -4,14 +4,14 @@ These are actual unresolved matters, not invitations to discard the protected pr
 
 ## Active priority — original-timeline Ren'Py VN
 
-The focus changed on 16 September 2026. See the [adaptation brief](../visual-novel/README.md). The [first complete route sketch](../visual-novel/outline.md), [58-scene map](../visual-novel/scene-map.md), [investigation proposal](../visual-novel/investigation.md), [pacing plan](../visual-novel/pacing.md) and [ending storyboard](../visual-novel/ending.md) are now available. These are reviewable proposals; implementation has not started.
+The focus changed on 16 September 2026. A complete functional Ren'Py route and local browser preview now exist, but the user rejected the interface, UX and artwork. **Look closer / Threads** is the accepted reader-discovery direction. See the [adaptation brief](../visual-novel/README.md), [interaction contract](../visual-novel/investigation.md) and [presentation redesign](../visual-novel/presentation-redesign.md). The route structure, historical particulars and replacement visual designs remain subject to their recorded development status.
 
 - Review ten proposed chapters and their complete scene coverage. The current pacing proposal retains existing time jumps and compresses successive visits/seasonal campaigns while preserving key interactions.
 - Review the proposal to retain the screenplay's cutaways, including Valcair's orders. This makes Harrow investigation a comparison of events, public claims and limited testimony rather than an unknown culprit mystery.
-- Review player agency: one original route, optional inspections/comparisons and five investigation rounds. Event-changing branches are not established.
+- Implement the accepted reader agency: inspect details, bring related views alongside them, follow connections into additional authored material, and revisit through Threads. No player body, in-world actions or comprehension quizzes. Exact availability points remain to be designed; event-changing branches are not established.
 - Develop the ancient sequence and actual exhibits showing that humans initiated the war through the first Saint summoning. This connection is now user-established; its exact events, dates, first Saint and preserved records remain to be written. The original cast does not acquire this knowledge through player unlocks.
-- Evaluate the proposed optional historical investigation and its reading load in a prototype. Explicit, reliable findings remain available to attentive players without requiring future reincarnated fans to forget them.
-- Adapt and prototype chapter 01 plus R01 as the proposed first slice. Engine choice is Ren'Py; release title, platforms and measured playtime remain open.
+- Author and test the optional historical discovery rather than substituting explanatory cards and recall questions. Explicit, reliable history remains available to attentive players without requiring future reincarnated fans to forget it.
+- Establish a finished representative sequence integrating artwork, acting, lighting, reading UI and discovery before expanding asset production. The prior batch is a rejected presentation, not an approved visual baseline. Engine choice is Ren'Py; final release scope and measured playtime remain open.
 - The ending now explicitly includes the player-facing question “Do you wish to save Tessa?” after the complete original Bellweir scene. Decide answer labels, response handling and any subsequent continuation separately; the present sketch stops at the question.
 
 ## Deferred wider-story structure and narrative

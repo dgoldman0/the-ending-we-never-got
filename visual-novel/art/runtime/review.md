@@ -1,6 +1,8 @@
 # Opening runtime art review — 16 September 2026
 
-Status: reviewed **working production batch**, restricted to S001–S005. No claim of user approval or complete illustration of the route. The [manifest](manifest.json) gives each character's age, wardrobe, props, injury state, light and permitted source beats. The screenplay remains unchanged.
+Status: **PRESENTATION REJECTED BY THE USER, 16 September 2026.** The earlier observations below are retained as a historical production record. They do not override the rejection or clear these assets for reuse. The [new audit](../../presentation-redesign.md) identifies failures in composition, performance, integration, rendering and lighting, alongside interface and discovery problems. Reassess components against selected references and the source; do not use this batch as an approved reference set.
+
+The batch is restricted to S001–S005. The [manifest](manifest.json) retains each character's age, wardrobe, props, injury state, light and source bounds for that assessment. The screenplay remains unchanged.
 
 ## Actual production and corrections
 

@@ -1,5 +1,7 @@
 # Original timeline — visual direction
 
+**Current presentation status:** the user rejected the first playable interface, UX and runtime art. Follow the [presentation redesign brief](../presentation-redesign.md). The established references and lighting registers below remain requirements; the existing runtime renders are not an approved way to achieve them. Global whitening/darkening and separately posed cutouts failed to create a coherent finished scene.
+
 The user established the summoning and storm-infirmary studies as the two visual-tone anchors and requested the middle register on 16 September 2026. This direction applies to the original timeline. It does not change the screenplay's events, characters or knowledge.
 
 | Scene register | Required treatment | Review question |

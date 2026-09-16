@@ -1,5 +1,7 @@
 # The original timeline — playable build
 
+**Current status:** this is the existing inspection build. The user rejected its visual presentation and card/quiz discovery mechanic. [Look closer / Threads](../investigation.md) is the accepted replacement direction, with a [broader presentation redesign](../presentation-redesign.md) pending. A working export does not mean those changes are already implemented.
+
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
 The complete original route is implemented: 58 source scenes, ten chapters, five optional investigation invitations, six inquiries, and the complete Bellweir ending followed by **Do you wish to save Tessa?** There is no playable rescue continuation or invented answer outcome.

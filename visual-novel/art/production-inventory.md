@@ -4,6 +4,8 @@ Scope: all original-timeline character keys, screenplay scene keys, reusable loc
 
 ## Runtime implementation
 
+**Presentation rejected:** the user rejected the first playable visuals and interface. Existing coverage entries below describe files that exist, not completed acceptable art. The next priority is the [integrated presentation sample](../presentation-redesign.md); reassess the opening components before treating them as reusable production standards or expanding the queue.
+
 The [opening runtime batch](runtime/README.md) now supplies eight sprite states across Tessa, Mara, Iven and Senn, and nine background states across S001–S005. Its [manifest](runtime/manifest.json) and [review](runtime/review.md) govern reuse. No earlier key or tone study automatically counts as an implemented game sprite or complete scene. Supporting opening cast/action shots and S006–S058 production remain queued.
 
 ## Character coverage

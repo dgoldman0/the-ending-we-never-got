@@ -1,5 +1,5 @@
 {
-  "status": "First opening production batch, manually reviewed working assets; not user approval",
+  "status": "Presentation rejected by the user, 16 September 2026; existing opening batch retained for comparison and functional testing",
   "source": "screenplay/original-timeline/source.fountain",
   "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
   "runtime_scope": "S001–S005 only; later scenes default to prose. No reuse across later ages, winter, Harrow, deaths or hand injury.",
@@ -19,7 +19,8 @@
       "master": "sprites/tessa-arrival.xcf",
       "neutral": "sprites/tessa-arrival-neutral.png",
       "generation": "sprites/tessa-arrival-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "tessa-phone",
@@ -36,7 +37,8 @@
       "master": "sprites/tessa-phone.xcf",
       "neutral": "sprites/tessa-phone-neutral.png",
       "generation": "sprites/tessa-phone-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "tessa-cloaked",
@@ -52,7 +54,8 @@
       "master": "sprites/tessa-cloaked.xcf",
       "neutral": "sprites/tessa-cloaked-neutral.png",
       "generation": "sprites/tessa-cloaked-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "tessa-first-treatment",
@@ -68,7 +71,8 @@
       "master": "sprites/tessa-first-treatment.xcf",
       "neutral": "sprites/tessa-first-treatment-neutral.png",
       "generation": "sprites/tessa-first-treatment-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "tessa-ceremony",
@@ -85,7 +89,8 @@
       "master": "sprites/tessa-ceremony.xcf",
       "neutral": "sprites/tessa-ceremony-neutral.png",
       "generation": "sprites/tessa-ceremony-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "mara-indoor",
@@ -101,7 +106,8 @@
       "master": "sprites/mara-indoor.xcf",
       "neutral": "sprites/mara-indoor-neutral.png",
       "generation": "sprites/mara-indoor-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "senn-ceremonial",
@@ -117,7 +123,8 @@
       "master": "sprites/senn-ceremonial.xcf",
       "neutral": "sprites/senn-ceremonial-neutral.png",
       "generation": "sprites/senn-ceremonial-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "iven-treatment",
@@ -134,7 +141,8 @@
       "master": "sprites/iven-treatment.xcf",
       "neutral": "sprites/iven-treatment-neutral.png",
       "generation": "sprites/iven-treatment-generated.png",
-      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states"
+      "review_status": "Native face/hand/body/feet review and in-game opening composites inspected; limited to listed states",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     }
   ],
   "backgrounds": [
@@ -145,7 +153,8 @@
       "state": "Arch open, lever up, no cracks or fallen groceries; modern Earth retains a separately masked exposure.",
       "master": "backgrounds/chamber-open.xcf",
       "export": "../../renpy/game/art/backgrounds/chamber-open.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "chamber-open-spill",
@@ -154,7 +163,8 @@
       "state": "Same arch; independently placed bag and bottom-split carton/milk at the landing.",
       "master": "backgrounds/chamber-open-spill.xcf",
       "export": "../../renpy/game/art/backgrounds/chamber-open-spill.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "chamber-closed",
@@ -163,7 +173,8 @@
       "state": "Closed cracked arch, lever down; same grocery location. Operator and physical action are not yet illustrated.",
       "master": "backgrounds/chamber-closed.xcf",
       "export": "../../renpy/game/art/backgrounds/chamber-closed.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "apartment-closed",
@@ -172,7 +183,8 @@
       "state": "Door closed; chair below window; limp offered dress at wardrobe.",
       "master": "backgrounds/apartment-closed.xcf",
       "export": "../../renpy/game/art/backgrounds/apartment-closed.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "apartment-open",
@@ -181,7 +193,8 @@
       "state": "Door open to guarded hall; chair below window; corrected limp dress.",
       "master": "backgrounds/apartment-open.xcf",
       "export": "../../renpy/game/art/backgrounds/apartment-open.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "apartment-barricaded",
@@ -190,7 +203,8 @@
       "state": "Door closed; same chair moved against door; window place empty.",
       "master": "backgrounds/apartment-barricaded.xcf",
       "export": "../../renpy/game/art/backgrounds/apartment-barricaded.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "palace-infirmary",
@@ -199,7 +213,8 @@
       "state": "Pale ward, curtains, beds and treatment aisle. Foreground Olan/action is outside this background plate.",
       "master": "backgrounds/palace-infirmary.xcf",
       "export": "../../renpy/game/art/backgrounds/palace-infirmary.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "audience-hall",
@@ -208,7 +223,8 @@
       "state": "Ceremonial chair and twelve-ray banners; subordinate wounded spectator extras.",
       "master": "backgrounds/audience-hall.xcf",
       "export": "../../renpy/game/art/backgrounds/audience-hall.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     },
     {
       "id": "infirmary-window",
@@ -217,7 +233,8 @@
       "state": "Broad sill, convoy below, open medical chest, travel bag at end of sill; no cast invented in background.",
       "master": "backgrounds/infirmary-window.xcf",
       "export": "../../renpy/game/art/backgrounds/infirmary-window.png",
-      "review_status": "Final full export and in-game state inspected"
+      "review_status": "Final full export and in-game state inspected",
+      "presentation_status": "Part of rejected runtime presentation; reassessment required"
     }
   ],
   "review": "review.md",
@@ -227,5 +244,7 @@
     "Further expressions, full action poses and period-specific main cast",
     "S006–S058 backgrounds and sprites, growing children, winter, intermediate campaign, injured and postwar outfits",
     "Sound, music, performance"
-  ]
+  ],
+  "presentation_review": "../../presentation-redesign.md",
+  "reuse_policy": "Reassess each component in the integrated redesign before reuse. Earlier inspection notes are historical, not approval; rejected runtime renders must not serve as likeness/style/composition authorities. Established selected references and written designs remain in force."
 }

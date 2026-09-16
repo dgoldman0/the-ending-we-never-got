@@ -1,5 +1,7 @@
 # First playable QA — 16 September 2026
 
+**Current assessment: presentation rejected by the user.** The technical and historical inspection results below remain records of what was tested, not evidence that the interface or artwork is good enough. The [presentation audit](../presentation-redesign.md) supersedes the earlier favorable aesthetic assessment. The card/quiz tests exercise a superseded mechanic; replacement tests must verify [Look closer / Threads](../investigation.md), not force the redesign to retain quizzes for an old passing suite.
+
 Engine: local official Ren'Py 8.5.3 SDK. Source: Rebuild 11, SHA256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
 
 The adapter preserves all 58 scenes and every action/dialogue word in order. An independent comparison stripped only metadata, scene headings, speaker cues and the final fade, then compared the emitted prose with the Fountain source. Additional pacing cuts have not been made. The arch-closing source paragraph is split across two advances so its open and closed images occur in order.

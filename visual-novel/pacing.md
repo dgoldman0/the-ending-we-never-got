@@ -2,6 +2,8 @@
 
 Implementation update: the first playable route retains every screenplay action and spoken line, including its existing time skips. The additional compression below remains a proposal; automated traversal duration is not a measured human reading time.
 
+**Current interaction decision:** [Look closer / Threads](investigation.md) replaces the rejected card/quiz design. References below to investigation and rounds mean optional reader discovery at candidate story spans, not actions performed by the player as a character or five compulsory menu interruptions.
+
 Status: FIRST PACING PROPOSAL. The user asked to make room for investigation by considering narrative time skips. Rebuild 11 already contains substantial jumps and two montage headings. Preserve that compression where the intervening days do not contain a necessary interaction; do not turn every elapsed week into playable errands.
 
 **Story time and reading time are separate.** Ten minutes spent investigating does not leave Tessa standing at a bridge for ten minutes or cause a missed rescue. A time card advances the world only at an authored transition. Investigation is outside that clock.
@@ -47,6 +49,6 @@ The original route's mandatory information stays in the story even when a relate
 
 ## Reading rhythm
 
-Use the five [investigation rounds](investigation.md) as invitations at settled boundaries: after the first window-seat scene, the hearing's corridor, the exchange negotiations, the seasonal sequence and the final preparations. Keep entry optional and allow unfinished rounds to be resumed later. Do not interrupt Iven's death, the coat scene, the mill-town cart exchange, the stair assault or the bakery ending with an unlock notice.
+The five [candidate discovery spans](investigation.md) end at settled boundaries: the first window-seat scene, the hearing's corridor, the exchange negotiations, the seasonal sequence and the final preparations. Use them to plan availability while designing scene-level opportunities to Look closer. Keep entry optional and connections revisitable through Threads. Do not interrupt Iven's death, the coat scene, the mill-town cart exchange, the stair assault or the bakery ending with an unlock notice or force a full-screen checkpoint at every boundary.
 
 Measure the first playable chapter both straight through and with R01 completed. Track dialogue, action/narration, transitions and investigation separately. Only then estimate the full game's reading time. The current optional investigation allowance is a design target, not grounds to shorten every emotional scene to fit an untested total runtime.
