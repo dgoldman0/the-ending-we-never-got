@@ -2,6 +2,8 @@
 
 Status: current original-route facts plus clearly identified earlier altered-draft material. This is a gazetteer of the work we have, not a newly invented atlas. The planet's name, continental map, full northern polity name, distances and complete social history remain open.
 
+The original VN now has [working location designs](original-locations.md) covering the settings used in Rebuild 11: construction, everyday life, room layouts, action geography and changes over time. New physical details are identified as adaptation choices; they do not establish a full atlas or an art style.
+
 ## Current original setting
 
 **Rovel.** The human royal/temple center where Tessa is summoned. Its temple, palace, infirmaries, archives, council rooms and convoy arrangements place religious and military authority in her daily life. Senn directs the summoning program; Marshal Orra represents military command. Their interests overlap but their powers are not interchangeable. The current draft's concession to Elin is limited; an order does not make every archive or official cooperative.

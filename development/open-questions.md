@@ -31,6 +31,10 @@ The focus changed on 16 September 2026. See the [adaptation brief](../visual-nov
 
 ## Characters and visual development
 
+The original VN's first [character](../characters/original-visuals.md), [location](../worldbuilding/original-locations.md) and [prop/effect](../visual-novel/visual-continuity.md) descriptions now fill the practical appearance gaps. New details remain labeled working designs. A subsequent [north-infirmary image study](../visual-novel/art/scene-studies/north-infirmary/README.md) explores the user's rough style references; final character likenesses and the project-wide art style remain open. A source ambiguity about Tessa attributing the bridge seal to Valcair is recorded in the continuity notes for later dialogue review; the screenplay is unchanged.
+
+The following character questions concern the deferred incursion timeline:
+
 - Keep the recovered familiar names and designs available, but confirm the working roster and individual personalities during the altered pass.
 - Confirm exact Neri appearance/costume keys; user preference is youthful, pretty and tomboyish, around eighteen or nineteen. Do not treat rejected generated images as approved models.
 - Confirm final Tessa/Lucan romantic course and the nature of Neri/Tessa intimacy. Preserve affection without assuming an exclusive romantic configuration from incidental staging.

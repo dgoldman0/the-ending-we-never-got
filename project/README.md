@@ -19,6 +19,8 @@ The player can discover through investigation that humans initiated the ancient 
 5. [Original-timeline outline](../story/original-timeline.md), [altered-timeline plan](../story/altered-timeline/README.md), and [knowledge/reveal matrix](../story/knowledge-and-reveals.md)
 6. [Archetype references](../references/archetypes.md) and [working method](../development/working-method.md)
 
+For the active VN's physical design, read [character visuals](../characters/original-visuals.md), [location designs](../worldbuilding/original-locations.md), and [prop/effect continuity](../visual-novel/visual-continuity.md). These contain new working decisions, not previously approved artwork.
+
 ## Current manuscript
 
 [Staged Rebuild 11, original Tessa timeline](../screenplay/original-timeline/source.fountain) is the current detailed screenplay. Its source SHA-256 is `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. This documentation import does not edit it.

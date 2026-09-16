@@ -1,5 +1,7 @@
 # Supporting cast and relationship boundaries
 
+The [original-timeline visual designs](original-visuals.md) provide new working appearances, clothing and injury continuity for this cast, including recurring civilians and smaller roles. They supplement the relationships below without adopting altered-route memories or biographies.
+
 ## Iven Saye
 
 Current original draft: twenty-six at introduction; experienced healer, Tessa's professional ally and friend. His occupation does not exhaust his personality. Checkers, shared meals and the way he makes room for her matter. He dies rescuing Renn at Harrow.
@@ -24,7 +26,7 @@ His rescue at Gray Scar is voluntary after his own people are safe. Current deve
 
 Tessa challenges a transport bargain supporting quarry labor. His effectiveness is compatible with misjudgment; trusting his father helps expose people at Harrow. Her later suspicion and refusal of intimacy survive practical cooperation. He cannot take Tessa's climactic victory away from her.
 
-Earlier altered draft: riding, boot-lining, translating letters, a southern visit and eventual romance. Those scene ideas are reusable only after restoring his current individuality and the changed causes. His exact appearance and final romance are open.
+Earlier altered draft: riding, boot-lining, translating letters, a southern visit and eventual romance. Those scene ideas are reusable only after restoring his current individuality and the changed causes. His appearance now has a [working original-VN design](original-visuals.md#lucan); the altered romantic course remains open.
 
 ## Valcair — Demon King
 

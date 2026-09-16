@@ -30,6 +30,8 @@ The late discovery that her life was fiction to her friends is personal, not jus
 
 ## Working design and props
 
+For the original VN, [appearance and wardrobe](original-visuals.md#tessa-rusk) now supplies a concrete working face, build, hair and clothing progression. Those are new adaptation choices, separately labeled from source facts. The subsequent [north-infirmary scene study](../visual-novel/art/scene-studies/north-infirmary/README.md) is an initial visual interpretation, not a locked character model.
+
 Drawings, notebook, dead/restored phone, traveling coat, temple mantle and badge, learned sword use, white sanctuary and the final hand brace form a visual vocabulary. The coat must evolve with circumstance rather than remaining an unchanged base costume under every new layer.
 
 Jo Rusk is the mother's working name from the earlier altered draft. The kitchen, home photographs and familiar clothes make the lost Earth tangible. Exact Earth location is unpinned; old British vocabulary and location flavor must not be treated as current nationality canon.

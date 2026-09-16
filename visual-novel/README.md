@@ -2,6 +2,12 @@
 
 Status: CURRENT DIRECTION, requested on 16 September 2026. This is preparation for a Ren'Py adaptation; no game implementation or new scenes have been created yet.
 
+## Setting and character development
+
+The first physical-design pass is documented in [character appearances and wardrobe](../characters/original-visuals.md), [locations and everyday setting](../worldbuilding/original-locations.md), and [objects, effects and visual continuity](visual-continuity.md). These documents distinguish established source anchors from newly filled-in working details. They cover the original cast and screenplay locations. That pass did not generate images or select an art style.
+
+The subsequent [north-infirmary scene study](art/scene-studies/north-infirmary/README.md) explores the user's rough style references in a generated illustration with a GIMP comparison file. Its current version uses stormy daylight, following the user's correction. This is a scene study, not a locked project-wide art style.
+
 ## Scope
 
 Build a visual novel around Tessa's original timeline. [Rebuild 11](../screenplay/original-timeline/source.fountain) supplies the detailed narrative baseline, supported by the [original story map](../story/original-timeline.md), character notes and worldbuilding. Player investigation can uncover additional detail and historical context.
