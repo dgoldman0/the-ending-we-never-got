@@ -1,35 +1,36 @@
-# Summoning — arrival study
+# Summoning — arrival
 
-Status: new composition generated, edited in GIMP and visually reviewed. Awaiting the user's assessment; this does not lock character likenesses or the project-wide art style.
+Completed visual for review: [summoning-arrival.png](summoning-arrival.png), 1672 × 941. Editable work: [summoning-arrival.xcf](summoning-arrival.xcf). This is a new complete scene, not a user-approved design. Earlier summoning images and the stopped composite are rejected/incomplete references; their prompt records remain identified as such.
 
-- [Scene image](summoning-arrival.png): native 1672 × 941 PNG.
-- [Editable GIMP file](summoning-arrival.xcf): original generated image and a separate store-sign cleanup layer.
-- [Generation prompt](../../prompts/summoning/restart-v1.txt).
+## Scene brief
 
-## Screenplay moment
+Source: the opening interaction in [Rebuild 11](../../../../screenplay/original-timeline/source.fountain). Depict the instant after the bag drops and the phone vibrates, before Tessa runs back and the scholar pulls the lever. The arch is open and uncracked. Senn's reaching gesture, the pleading woman, stretcher traffic and Mara's cloak belong to later beats.
 
-Tessa has just arrived on the polished stone, her dropped milk carton has split, and her phone has vibrated. The ordinary grocery-store street remains visible through the arch. She has not yet run toward it, and the scholar has not pulled the lever down. This depicts the opening arrival in [Rebuild 11](../../../../screenplay/original-timeline/source.fountain), before the arch closes and cracks.
+Visible cast: Tessa; the unnamed scholar at the raised lever; two subordinate kneeling spectators representing the screenplay's unnamed strangers. The extras have no added names, relationships or dramatic actions. The scholar follows the working [character design](../../../../characters/original-visuals.md).
 
-Her modern blue zip hoodie, cream shirt, jeans, sneakers and green phone case follow the [working character designs](../../../../characters/original-visuals.md). Both hands are uninjured. The carton has an impact rupture and a closed cap; the milk crosses the floor circle. Senn begins reaching toward her while strangers kneel at the edges. The phone screen faces Tessa, so its message is not readable in this view.
+Blocking: Tessa has landed one ordinary stride inside the arch, on the near edge of the circle that reaches its threshold. Sidewalk, sill, shoes and return path read continuously. Her sneakers, fallen grocery bag, split carton and connected milk spill form a compact group at that landing point. The bag falls below her now-empty hand, not at the center of the decorative floor. The scholar can reach the lever's grip. Witnesses leave her return route open.
 
-## Light and style
+Likeness: the central Tessa in [north-infirmary storm](../north-infirmary/north-infirmary-storm.png), isolated in the [face reference](../../character-references/tessa/north-infirmary-face.png). Preserve that identity at nineteen, healthy and clean, in the modern blue zip hoodie, cream shirt, straight jeans, off-white sneakers and green-cased phone. Check ordinary adult proportions and grounded feet as well as the face.
 
-The user's five rough references informed pale carved stone, botanical relief, mineral blue-green recesses, brass and tactile cloth. Their pictured deities, crowns and robots are not story elements. The circle, polished floor and milk flare toward white, with Tessa's face and clothing kept readable. This is the first replacement study toward the requested nearly blinding exposure; whether it feels sufficiently painful remains an aesthetic review point.
+World boundary: the temple uses ivory carved stone, restrained celadon, botanical relief and brass. Earth is an ordinary modern grocery storefront with aluminum/glass, concrete, asphalt and a separate cool gray/commercial palette. Temple motifs and colors stop at the arch. The phone screen faces Tessa, so its message need not be readable from this view.
 
-The new near-frontal face and separated figures replace the rejected strained expression and crowded mechanism. No rejected scene image or infirmary likeness was used as a generation reference.
+Camera and light: a natural three-quarter view from inside the room, with Tessa large enough to read and her whole body and landing visible. Brightness belongs to the entire chamber and its occupants, including the central face-height area. No isolated halo, spotlight or vertical haze around Tessa, and no comfortably exposed upper scene above a glaring floor. GIMP finishing follows anatomy, staging and contact review.
 
-## Review and GIMP work
+## Production and review
 
-Reviewed the whole composition and actual-resolution crops of Tessa's face and hands, the scholar's hand and lever, the carton and feet, and Senn. The lever now has one visible pivot, a continuous handle and one hand on its terminal grip. Tessa's arms connect coherently to her hands, and her expression avoids the previous sharply twisted pose.
+The built-in image generator produced a coherent full scene from the selected Tessa likeness, the user's Sanctuary and Mountaintop material/painting references, and a [working modern-store reference](earth-store-reference.png). The store reference supplies only Earth architecture and palette; it is an intermediate input, not another finished scene or a user-approved location. No rejected summoning composition served as the new layout or likeness reference. The [prompt index](../../prompts/summoning/README.md) distinguishes current operations from earlier attempts.
 
-GIMP removed an invented supermarket name from the distant store sign. The correction is a small feathered gradient on its own transparent layer, with the original pixels preserved below it. The sign crop and full exported image were reviewed after correction. The XCF contains a flattened generated scene plus that cleanup layer; it does not contain independently painted characters or scenery.
+The base render incorrectly poured milk through an open cap. A targeted edit of a small crop closed the cap and added a torn lower panel. GIMP 2.10.36 composited that repair through a tight feathered mask, preserving the surrounding shoes, bag and floor. GIMP then raised exposure across the chamber and its occupants, using a broad soft mask to reduce that change over Earth, followed by restrained shared highlight bloom. The light treatment covers walls, faces and clothing as well as the floor.
 
-Remaining design differences are recorded rather than silently adopted: the scholar reads younger than his provisional forties design, Senn has more extensive sunburst decoration than the wardrobe brief, and Tessa's hair is gathered higher than the proposed low ponytail. These are unresolved study details, not changes to the character-design document. No screenplay text was changed.
+The XCF has four visible layers:
 
-## Generation record
+1. Original complete scene, retained beneath the corrections.
+2. Masked carton repair.
+3. A merged exposure-treated copy with an editable Earth-balance mask.
+4. Shared highlight bloom with an editable mask and opacity.
 
-Generated with the built-in image tool after the usage-reset retry succeeded. No separate API fallback was used.
+The figures are painted into the complete-scene base; these are not separately posed character sprites. Exposure curves are baked into a separate copy, not live adjustment filters. If the underlying scene or carton is changed, rebuild the merged exposure and bloom copies to carry that change through.
 
-- [Rejected composition prompt](../../prompts/summoning/prompt-v1.txt): the closed-arch composition had unacceptable facial, hand/mechanism and lighting problems. It is not a deliverable or reference to develop further.
-- [Unexecuted carton correction](../../prompts/summoning/prompt-v2.txt): the earlier tool call returned `usage_limit_reached`; no edited image resulted.
-- [Fresh-scene prompt](../../prompts/summoning/restart-v1.txt): produced the current arrival composition using the five original style references.
+Final review covered the complete export and native-resolution crops of Tessa's face and full body, both hands and shoes, the scholar's face/grip/lever, and the grocery cluster. Tessa was compared directly with the selected infirmary face. The threshold remains immediately behind her, the bag is beside her feet beneath her empty hand, the carton has a closed cap and an impact rupture, and the scholar's lever remains raised. The two side figures are unnamed kneeling spectators, not additional named cast. The modern store retains separate materials and colors; the chamber's bright treatment extends through the central dramatic area without an isolated light column on Tessa.
+
+The saved XCF was reopened in GIMP and exported again; its visible layers reproduce the delivered PNG pixel for pixel. The screenplay is unchanged. The user's assessment of the completed image is still pending.

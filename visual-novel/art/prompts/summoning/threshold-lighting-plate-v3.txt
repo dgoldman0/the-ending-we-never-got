@@ -1,0 +1,12 @@
+Use case: lighting-weather.
+This is an INTERMEDIATE LIGHTING PLATE for subsequent compositing in GIMP, not the finished atmospheric treatment.
+
+Edit the supplied scene while strictly preserving its composition, all object positions, exact people and faces, body proportions, expressions, clothes, hands, feet, the doorway threshold and street, raised lever, architecture, groceries and camera.
+
+REMOVE the isolated vertical column of white haze surrounding the woman. Remove the special glow and bleached exposure on her face, hair and shoulders. There must be NO special illumination centered on her, no halo, no shaft, no brighter air wrapped around her silhouette. She is an ordinary person in the room.
+
+Reconstruct the scene under EVEN, DIFFUSE, COOL-IVORY INTERIOR LIGHT shared by the entire chamber: the woman's face, the scholar's face, the spectators, both stone jambs, the broad right-hand stone wall, foliage, floor and ceiling-facing relief all receive the same ambient illumination. The chamber is bright, with soft shallow shadows. No hard sunlight, no localized spotlight, no golden backlit glow and no hero lighting. Keep natural surface colors and medium-light values readable throughout this intermediate plate so they can be graded together. The circle can retain a fine luminous inlay but no column emerges from it. No fog cloud obscures only one subject.
+
+The ordinary modern street remains visible through the arch and is a physically separate, more subdued exterior, not the source of a blinding sunbeam. The intense final atmosphere will be added uniformly in GIMP across the TEMPLE volume, rather than generated around the woman.
+
+Preserve her natural unretouched facial anatomy and age nineteen. No beautifying, waxy smoothing, enlarged eyes, doll face or stylization changes. Preserve original aspect ratio and resolution. No new props, text or elements.

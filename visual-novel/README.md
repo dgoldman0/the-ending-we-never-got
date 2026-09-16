@@ -8,7 +8,7 @@ The first physical-design pass is documented in [character appearances and wardr
 
 The subsequent [north-infirmary scene study](art/scene-studies/north-infirmary/README.md) explores the user's rough style references in a generated illustration with a GIMP comparison file. Its current version uses stormy daylight, following the user's correction. This is a scene study, not a locked project-wide art style.
 
-See the [art-development index](art/README.md) for current studies and close-up review requirements. Prompt records are kept separately under `art/prompts/`. The first summoning image was rejected; a [new arrival study](art/scene-studies/summoning/README.md) has been generated, reviewed in close-up and edited in GIMP. Its character details and lighting remain open to the user's assessment.
+See the [art-development index](art/README.md) for current studies and close-up review requirements. Prompt records are kept separately under `art/prompts/`. The [completed summoning visual](art/scene-studies/summoning/README.md) uses the user's selected infirmary Tessa likeness and depicts arrival at the threshold, with her dropped groceries beside her and modern Earth still visible. It replaces the rejected attempts, with a targeted carton repair and shared chamber-lighting treatment in GIMP. Its PNG and layered XCF have been reviewed; user assessment is pending.
 
 ## Scope
 

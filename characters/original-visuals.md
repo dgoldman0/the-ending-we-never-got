@@ -6,6 +6,8 @@ Read with [character relationships](ensemble.md), [Tessa's arc](tessa.md), [sett
 
 ## Tessa Rusk
 
+**Visual likeness reference:** the user selected Tessa in the [north-infirmary storm image](../visual-novel/art/scene-studies/north-infirmary/north-infirmary-storm.png) as the appearance to retain. A [face crop](../visual-novel/art/character-references/tessa/north-infirmary-face.png) isolates that reference. Preserve her facial structure and the painting's treatment across new scenes. For arrival, render the same person at nineteen, healthy and in her modern clothes; do not carry the infirmary injury, dirt, exhaustion or field costume backward. Later failed summoning studies are not likeness references.
+
 **Source anchors:** nineteen at arrival; American; right-handed drawing before the final injury; coat, temple badge and white mantle; sneakers at summoning; soft right-hand brace at the four-year endpoint. Her appearance beyond these details was not established.
 
 **Working design:** about 165 cm, ordinary build, becoming stronger through walking, rowing and training. Light warm-brown skin; an oval face with a broad expressive mouth, straight brows and dark-brown eyes. Chestnut-brown, slightly wavy hair falls just below her shoulders. She usually gathers it into a low ponytail for work, leaving shorter strands at her temples. Her face remains recognizable at twenty-three; changed bearing and daily habits carry the elapsed years. A small uneven front tooth is visible when she laughs. No magical change to her eyes or hair accompanies becoming a Saint.

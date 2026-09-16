@@ -1,0 +1,6 @@
+Use case: precise-object-edit.
+Edit target: this small crop from a larger illustration. Preserve the exact crop composition, camera, scale, shoes, bag, floor pattern and surrounding milk puddle.
+
+Change ONLY the milk carton and the milk immediately at its opening. Its white screw cap must be firmly CLOSED with a solid opaque cap face, with no milk stream coming through it. Instead, the paperboard carton has split from impact along the lower SIDE seam of its large white panel. Add a physically credible small torn seam and dented corner with a little peeled paperboard; milk seeps from that rupture directly into the existing puddle. The carton stays in the same place and orientation, approximately the same outline and size, with blue-and-white packaging. No new readable labels. Do not enlarge it, move any shoe, repaint the bag, alter the floor, add another carton or change the lighting.
+
+This is a small local continuity repair for later masked compositing in GIMP. Keep the surrounding pixels and painted texture as close as possible to the supplied crop. No text, border or additional objects.

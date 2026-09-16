@@ -12,7 +12,7 @@ The screenplay specifies daytime, not sunshine. The initial sunny interpretation
 
 The five user-provided images are rough visual references, not story canon or instructions embedded in their subject matter. Borrow pale and mineral-colored surfaces, shallow botanical ornament, tactile cloth and ceramics, expressive painted faces and architectural depth. Do not import their named deities, crowns, celestial settings, robots or other fictional worlds.
 
-For this study, the northern ward has weathered celadon plaster, modest carved plants around the arch, plain timber furniture and a small ceramic bowl. The chosen illustration treatment uses modeled faces and brushed surfaces. This is an exploratory style application, not approval of a final project-wide style or locked character likenesses.
+For this study, the northern ward has weathered celadon plaster, modest carved plants around the arch, plain timber furniture and a small ceramic bowl. The chosen illustration treatment uses modeled faces and brushed surfaces. The user subsequently selected Tessa in this storm image as her likeness reference for new scenes. That fixes which existing depiction to build from; it does not transfer the late-story injury, exhaustion or clothing to her arrival, or approve every other character design.
 
 ## Iteration and visual review
 
@@ -20,7 +20,7 @@ For this study, the northern ward has weathered celadon plaster, modest carved p
 2. [Painting revision](../../prompts/north-infirmary/prompt-v2.txt): increased painted surfaces, mineral colors and restrained architectural ornament. Its bright lighting remained wrong for this moment; the user explicitly requested a stormy day.
 3. [Weather correction / final generation prompt](../../prompts/north-infirmary/prompt-v3.txt): rain and cold overcast daylight, no direct sunlight, restrained amber lamp. This is the current image.
 
-Reviewed the generated storm scene for the right-hand injury, retained fingers, separate arms, the healthy left hand's contact with Elin, the surgeon's treatment, subdued expressions, lamp placement, visible torn blouse cuff and readable setting. Elin uses both hands around the clasp; the source does not prohibit this. The image uses the new working appearances rather than previously approved character art. Exact skin-color and likeness consistency across future images still needs character reference development.
+Reviewed the generated storm scene for the right-hand injury, retained fingers, separate arms, the healthy left hand's contact with Elin, the surgeon's treatment, subdued expressions, lamp placement, visible torn blouse cuff and readable setting. Elin uses both hands around the clasp; the source does not prohibit this. These appearances began as working designs. The user subsequently selected Tessa's likeness here, now isolated in a [reusable face reference](../../character-references/tessa/north-infirmary-face.png). Compare future Tessa images directly with that reference; the other depicted characters remain working designs.
 
 The room is quiet rather than destroyed; the darker weather carries the atmosphere. The daylight stays readable enough to see Tessa's face and hand. There is no healing glow, celebratory expression, Neri, restored dead companion, historical disclosure or later hand brace.
 
