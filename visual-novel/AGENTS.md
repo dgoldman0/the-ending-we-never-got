@@ -81,6 +81,10 @@ Manually inspect the actual pixels of every selected image: open the full compos
 
 Recheck the cast roster, exact beat, route, dropped objects, wardrobe, injury state, lever operation, world boundary and lighting distribution. Review the final GIMP export after editing; an earlier generation's review does not clear the composite. Confirm that the XCF opens and its visible layers reproduce the delivered PNG.
 
+Review emotional continuity as carefully as anatomy and costume. The user rejected postwar Tessa looking happy, casually confident and untouched by the war. At about twenty-three she carries Iven's and Mara's deaths, damaged trust/intimacy with Lucan, lasting injury to her drawing hand and no reliable way home. Show that weight through attention, eyes, mouth, posture and how she protects her hand; clean new clothes do not mean recovery is complete. Do not replace this with dirt, invented scars, exaggerated aging or a single cosmetic frown. Moments of warmth must arise from the actual scene, not a default cheerful character-model pose.
+
+The subsequent "pouty" revision was also rejected. War must visibly have aged and battered her: drawn facial volume, weathered skin, prematurely etched tension, sleep loss, neglected grooming and whole-body wear are appropriate working design choices. Keeping her chronologically twenty-three does not require an untouched youthful face. Do not soften all of those changes into "slight" expression adjustments. When a reference keeps preserving the rejected polish, restart from the written design without image inputs, then compare identity manually afterward. Reference fidelity is not permission to freeze her condition across four years.
+
 When a check fails, correct it or explicitly leave the study incomplete. Do not claim it fits the screenplay merely because all requested objects appear somewhere. Do not present a list of unresolved fundamental problems as a completed quality pass or rely on the user to rediscover them.
 
 Generation outputs may be displayed automatically. Make an intermediate component's limited purpose clear before the call when it could be mistaken for a finished scene. Do not repeatedly show a known failure as progress while promising to fix it later.
@@ -97,3 +101,7 @@ Inspect faction symbols as specific shapes. The human temple uses a brass sun di
 - Distinguish user-selected references, working studies, rejected attempts, intermediate components and final assets. A commit or an assistant's favorable review is not user approval. Do not overwrite or silently promote a selected reference with a new generation.
 - **Status when these instructions were added:** the user selected the north-infirmary storm Tessa as the likeness reference. The summoning attempts were rejected or stopped; no summoning scene has been approved. Old summoning review notes saying “awaiting assessment” or claiming successful review do not override the subsequent corrections in this file.
 - Commit at reasonable progress points with detailed messages, as required by the root instructions. Keep the commit scoped to the completed work; preserve unrelated or unfinished working-tree changes.
+
+# Image Generation
+
+Avoid force feeding existing images into image generation, and when used ensure that they are not dominating over desired changes. Use a combination of image generation tool and GIMP to expertly generate tailored, consistent works.

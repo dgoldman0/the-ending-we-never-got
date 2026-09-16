@@ -8,10 +8,10 @@ The developed [character designs](../../characters/original-visuals.md) govern t
 
 | Character/group | Required keys and state changes | Status |
 | --- | --- | --- |
-| Tessa | Early convoy key; arrival; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Reviewed baseline](character-keys/tessa/README.md); remaining variants planned |
+| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Baseline](character-keys/tessa/README.md), [formal](character-keys/tessa/formal.md) and [postwar v4 study](character-keys/tessa/postwar.md) reviewed; v4 is not user-approved; remaining variants planned |
 | Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | [Reviewed baseline](character-keys/iven/README.md); remaining variants planned |
-| Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | In production |
-| Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | In production |
+| Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | [Reviewed baseline](character-keys/mara/README.md); variants planned |
+| Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | [Reviewed baseline](character-keys/elin/README.md); variants planned |
 | Lucan | Bottle-green coat/horns; crossbow and field authority; informal camp; left-forearm dressing and torn citadel coat | [Reviewed baseline](character-keys/lucan/README.md); remaining variants planned |
 | Valcair | Armored spear key; private charcoal/red layers; active black ward and cleared joints; no circlet in final fight | [Reviewed baseline](character-keys/valcair/README.md); remaining variants planned |
 | Vask | Plum field coat/armor; indoor vest; distinct seal and dispatch wallet | Planned |
