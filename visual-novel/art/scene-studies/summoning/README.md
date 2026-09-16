@@ -1,21 +1,35 @@
-# Summoning — restart
+# Summoning — arrival study
 
-Status: initial composition rejected by the user; no replacement image has been completed.
+Status: new composition generated, edited in GIMP and visually reviewed. Awaiting the user's assessment; this does not lock character likenesses or the project-wide art style.
 
-The first attempted scene showed Tessa at the closed arch. Its strained facial proportions, hand/lever geometry and ordinary midtone lighting were not acceptable. The full-scene review failed to catch problems evident in close-up. That image is not a visual reference or a deliverable to develop further.
+- [Scene image](summoning-arrival.png): native 1672 × 941 PNG.
+- [Editable GIMP file](summoning-arrival.xcf): original generated image and a separate store-sign cleanup layer.
+- [Generation prompt](../../prompts/summoning/restart-v1.txt).
 
-## New composition
+## Screenplay moment
 
-Return to the actual arrival: Tessa has just landed on the stone, the milk carton has split, her phone vibrates, and the grocery-store street remains visible through the arch for a moment. She has not yet run toward it. This is one frame of the existing opening, not a montage of arrival and aftermath.
+Tessa has just arrived on the polished stone, her dropped milk carton has split, and her phone has vibrated. The ordinary grocery-store street remains visible through the arch. She has not yet run toward it, and the scholar has not pulled the lever down. This depicts the opening arrival in [Rebuild 11](../../../../screenplay/original-timeline/source.fountain), before the arch closes and cracks.
 
-Tessa is the large foreground figure, with a near-frontal face and an ordinary uninjured nineteen-year-old appearance. The new composition should not inherit the battle-worn infirmary likeness or the rejected summoning expression. Fewer individually prominent background figures leave room for readable faces and coherent bodies. The scholar's mechanism is a simple pivoted lever on one bracket, with one hand on its grip; no elaborate ornamental machine assembled from disconnected rods.
+Her modern blue zip hoodie, cream shirt, jeans, sneakers and green phone case follow the [working character designs](../../../../characters/original-visuals.md). Both hands are uninjured. The carton has an impact rupture and a closed cap; the milk crosses the floor circle. Senn begins reaching toward her while strangers kneel at the edges. The phone screen faces Tessa, so its message is not readable in this view.
 
-The circle gives off nearly blinding ivory-white ritual light. Stone, spilled milk and parts of the room flare in it, while Tessa's important facial planes remain readable. It should feel invasive and uncomfortable, not like ordinary well-exposed interior daylight. The soft organic ornament and mineral hues of the rough style references survive in the less exposed areas. No halo, magical costume, injury or delighted heroic pose.
+## Light and style
 
-## Prompt record and generation status
+The user's five rough references informed pale carved stone, botanical relief, mineral blue-green recesses, brass and tactile cloth. Their pictured deities, crowns and robots are not story elements. The circle, polished floor and milk flare toward white, with Tessa's face and clothing kept readable. This is the first replacement study toward the requested nearly blinding exposure; whether it feels sufficiently painful remains an aesthetic review point.
 
-- [Rejected composition prompt](../../prompts/summoning/prompt-v1.txt).
-- [Unexecuted carton correction](../../prompts/summoning/prompt-v2.txt): the built-in tool returned `usage_limit_reached`; no edited image resulted.
-- [Fresh-scene prompt](../../prompts/summoning/restart-v1.txt): ready for a new generation using the original style references, not the rejected scene.
+The new near-frontal face and separated figures replace the rejected strained expression and crowded mechanism. No rejected scene image or infirmary likeness was used as a generation reference.
 
-The configured API credential is present, but a separate API fallback requires explicit user confirmation before a paid generation request. No API request has been made. This document does not claim that the replacement has been generated or visually reviewed.
+## Review and GIMP work
+
+Reviewed the whole composition and actual-resolution crops of Tessa's face and hands, the scholar's hand and lever, the carton and feet, and Senn. The lever now has one visible pivot, a continuous handle and one hand on its terminal grip. Tessa's arms connect coherently to her hands, and her expression avoids the previous sharply twisted pose.
+
+GIMP removed an invented supermarket name from the distant store sign. The correction is a small feathered gradient on its own transparent layer, with the original pixels preserved below it. The sign crop and full exported image were reviewed after correction. The XCF contains a flattened generated scene plus that cleanup layer; it does not contain independently painted characters or scenery.
+
+Remaining design differences are recorded rather than silently adopted: the scholar reads younger than his provisional forties design, Senn has more extensive sunburst decoration than the wardrobe brief, and Tessa's hair is gathered higher than the proposed low ponytail. These are unresolved study details, not changes to the character-design document. No screenplay text was changed.
+
+## Generation record
+
+Generated with the built-in image tool after the usage-reset retry succeeded. No separate API fallback was used.
+
+- [Rejected composition prompt](../../prompts/summoning/prompt-v1.txt): the closed-arch composition had unacceptable facial, hand/mechanism and lighting problems. It is not a deliverable or reference to develop further.
+- [Unexecuted carton correction](../../prompts/summoning/prompt-v2.txt): the earlier tool call returned `usage_limit_reached`; no edited image resulted.
+- [Fresh-scene prompt](../../prompts/summoning/restart-v1.txt): produced the current arrival composition using the five original style references.
