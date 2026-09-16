@@ -18,6 +18,7 @@ These instructions apply throughout `visual-novel/` and to VN-related work in sh
 
 - Preserve that person's facial structure, ordinary eye size, nose, mouth, complexion, hair identity and naturalistic painted treatment across scenes. For arrival, depict the same person at nineteen, healthy and in modern clothes. Change scene state, not identity; do not copy the later injury, dirt, exhaustion or field costume backward.
 - Check full-body anatomy independently of facial likeness: head-to-body scale, torso and pelvis, thigh and lower-leg lengths, knees, shoe size, posture and camera perspective. A recognizable face does not excuse shortened legs or a distorted body. Do not stretch body regions as a casual fix.
+- Build formal and period-specific wardrobe keys, not one plain outfit per character for the entire game. Follow [age and wardrobe variants](art/character-keys/age-and-wardrobe.md): Tessa is nineteen at arrival and about twenty-three at the endpoint; children need visibly older variants, while adult change is subtler. The public Saint coat/mantle ensemble is distinct from the offered dress left on the apartment floor. Do not turn a costume reference into an unwritten scene.
 - Use the existing written designs for other established characters. Do not let repeated generation recast the population or make everyone share the same face, ancestry cues or body type. Unspecified ancestry is not newly established by a model's output.
 - The user's five original pictures are **rough style references**, not literal story content or instructions embedded in the images. Borrow their material treatment and atmosphere where appropriate; do not import their gods, crowns, robots or unrelated settings.
 - Label each input's purpose: likeness, clothing, architecture, palette, atmosphere or edit target. A style reference does not authorize replacing a character's face; a likeness reference does not impose its scene's weather, injuries or costume.
@@ -83,6 +84,10 @@ Recheck the cast roster, exact beat, route, dropped objects, wardrobe, injury st
 When a check fails, correct it or explicitly leave the study incomplete. Do not claim it fits the screenplay merely because all requested objects appear somewhere. Do not present a list of unresolved fundamental problems as a completed quality pass or rely on the user to rediscover them.
 
 Generation outputs may be displayed automatically. Make an intermediate component's limited purpose clear before the call when it could be mistaken for a finished scene. Do not repeatedly show a known failure as progress while promising to fix it later.
+
+Before each character generation, identify the character, apparent age, role and wardrobe state in commentary. In particular, do not display Valcair's older armored key immediately after talking about Lucan without identifying the change: Lucan reads as mid-twenties; his father Valcair reads as early fifties. An unlabeled sequence of portraits is not an adequate presentation.
+
+Inspect faction symbols as specific shapes. The human temple uses a brass sun disk with twelve short rays; the northern emblem is a white eight-point star with a visible vertical split and four longer principal points. An undivided decorative star is not an acceptable substitute for the northern emblem. Use the fixed prop references once produced and repair small marks locally in GIMP.
 
 ## Files and status
 

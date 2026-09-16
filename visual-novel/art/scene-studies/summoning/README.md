@@ -1,6 +1,6 @@
 # Summoning — arrival
 
-Completed visual for review: [summoning-arrival.png](summoning-arrival.png), 1672 × 941. Editable work: [summoning-arrival.xcf](summoning-arrival.xcf). This is a new complete scene, not a user-approved design. Earlier summoning images and the stopped composite are rejected/incomplete references; their prompt records remain identified as such.
+Established bright-tone study: [summoning-arrival.png](summoning-arrival.png), 1672 × 941. Editable work: [summoning-arrival.xcf](summoning-arrival.xcf). The user adopted this and the storm infirmary as visual-tone anchors; incidental designs remain working choices. Earlier summoning images and the stopped composite are rejected/incomplete references; their prompt records remain identified as such.
 
 ## Scene brief
 
@@ -33,4 +33,4 @@ The figures are painted into the complete-scene base; these are not separately p
 
 Final review covered the complete export and native-resolution crops of Tessa's face and full body, both hands and shoes, the scholar's face/grip/lever, and the grocery cluster. Tessa was compared directly with the selected infirmary face. The threshold remains immediately behind her, the bag is beside her feet beneath her empty hand, the carton has a closed cap and an impact rupture, and the scholar's lever remains raised. The two side figures are unnamed kneeling spectators, not additional named cast. The modern store retains separate materials and colors; the chamber's bright treatment extends through the central dramatic area without an isolated light column on Tessa.
 
-The saved XCF was reopened in GIMP and exported again; its visible layers reproduce the delivered PNG pixel for pixel. The screenplay is unchanged. The user's assessment of the completed image is still pending.
+The saved XCF was reopened in GIMP and exported again; its visible layers reproduce the delivered PNG pixel for pixel. The screenplay is unchanged. The user's subsequent tone instruction is recorded in [the visual direction](../../visual-direction.md).

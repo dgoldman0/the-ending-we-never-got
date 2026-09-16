@@ -1,0 +1,13 @@
+Use case: illustration-story.
+Asset type: original-timeline visual novel character key, one complete adult figure, portrait 2:3 composition. This is a reusable costume/identity reference pose, not a new story scene.
+STYLE: Naturalistic painted illustration matching the reference's modeled human faces and tactile brushed cloth, with visible restrained paint texture. Avoid glossy CGI, doll-like skin, anime eyes, hyper-glamour or photomontage. Reference people must not recast a different character.
+COMPOSITION: One full figure from crown/horns to soles, ordinary 7–7.5-head human proportions, long enough thighs and lower legs, natural feet, comfortable margins. Three-quarter frontal stance on a simple continuous pale stone-gray backdrop, faint grounded contact shadow. Normal lens at chest level; no foreshortening, heroic low angle or giant head. Hands anatomically coherent; no repeated person, inset portrait or text.
+LIGHT: Ordinary register, slightly insistent diffuse pale light across whole figure/background, mildly uncomfortable without erasing skin complexion or fabric colors. No spotlight, halo, backlit cutout or extreme summoning whiteout. Keep working color and anatomy readable.
+
+CHARACTER: Elin Orr.
+STATE: Early Bellweir scholar, twenty-two; everyday skirt outfit and intact sleeves.
+DEVELOPED DESIGN: Woman about 160 cm, compact adult build, DEEP-BROWN skin, round cheeks tapering to small chin, dark eyes and tightly curled BLACK hair in a SHORT TWIST at the back with one escaped forehead curl. Alert sociable face, easy small smile, not permanently squinting. Ocher-brown WOOL jacket, pale linen blouse, DARK TEAL full practical skirt to above boot ankles with underlayers, sturdy flat boots. Stiff board-backed brown document satchel. Hold a small closed worn book against ribs with one forearm; other hand relaxed visible, occasional ink mark. No glasses, modern objects, magic light, torn sleeve or field trousers in this state. Reference scene's woman at right is a secondary existing depiction, not the central Tessa; follow Elin's distinct written features and hairstyle.
+INPUT ROLES: Image 1 is PAINTING/MATERIAL treatment only, plus the woman on its right as a secondary depiction of Elin.
+No additional props or invented insignia, no background story event. Keep body, clothing and held equipment physically connected.
+
+REFERENCE STATE CHECK: Clean, maintained everyday clothing, natural woven material, no generalized mud, blood or storm-infirmary dirt. Visible relaxed hands outside pockets wherever equipment permits, so their anatomy can be inspected. No slouching fashion-model pose. Keep the specific build, age and skin tone; avoid giving the cast a shared youthful glamorous face.

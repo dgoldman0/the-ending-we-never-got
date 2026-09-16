@@ -1,0 +1,11 @@
+Use case: illustration-story.
+Asset type: original-timeline visual novel character key, one complete adult figure, portrait 2:3 composition. This is a reusable costume/identity reference pose, not a new story scene.
+STYLE: Naturalistic painted illustration matching the reference's modeled human faces and tactile brushed cloth, with visible restrained paint texture. Avoid glossy CGI, doll-like skin, anime eyes, hyper-glamour or photomontage. Reference people must not recast a different character.
+COMPOSITION: One full figure from crown/horns to soles, ordinary 7–7.5-head human proportions, long enough thighs and lower legs, natural feet, comfortable margins. Three-quarter frontal stance on a simple continuous pale stone-gray backdrop, faint grounded contact shadow. Normal lens at chest level; no foreshortening, heroic low angle or giant head. Hands anatomically coherent; no repeated person, inset portrait or text.
+LIGHT: Ordinary register, slightly insistent diffuse pale light across whole figure/background, mildly uncomfortable without erasing skin complexion or fabric colors. No spotlight, halo, backlit cutout or extreme summoning whiteout. Keep working color and anatomy readable.
+
+CHARACTER: Tessa Rusk.
+STATE: First convoy, nineteen; healthy, before Bellweir's destruction.
+DEVELOPED DESIGN: About 165 cm, ordinary build. Preserve the exact selected storm-infirmary woman's facial identity, natural brown eyes, substantial nose, broad mouth, straight brows, freckles, light warm-brown skin and chestnut low ponytail. Healthy clean skin and relaxed attentive expression, a trace of warmth. Hip-length locally made blue wool coat with inner sketchbook pocket, pale linen shirt, brown straight trousers, fitted ankle boots. Small brass sunburst badge pinned to coat, twelve short rays. No white mantle for this informal traveling reference. Both hands healthy. No modern hoodie or jeans in this period.
+INPUT ROLES: Image 1 is the PRIMARY exact Tessa likeness. Image 2 is painted material treatment only; remove its injuries/dirt/exhaustion, do not change identity.
+No additional props or invented insignia, no background story event. Keep body, clothing and held equipment physically connected.

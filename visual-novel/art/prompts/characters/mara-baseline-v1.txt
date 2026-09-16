@@ -1,0 +1,13 @@
+Use case: illustration-story.
+Asset type: original-timeline visual novel character key, one complete adult figure, portrait 2:3 composition. This is a reusable costume/identity reference pose, not a new story scene.
+STYLE: Naturalistic painted illustration matching the reference's modeled human faces and tactile brushed cloth, with visible restrained paint texture. Avoid glossy CGI, doll-like skin, anime eyes, hyper-glamour or photomontage. Reference people must not recast a different character.
+COMPOSITION: One full figure from crown/horns to soles, ordinary 7–7.5-head human proportions, long enough thighs and lower legs, natural feet, comfortable margins. Three-quarter frontal stance on a simple continuous pale stone-gray backdrop, faint grounded contact shadow. Normal lens at chest level; no foreshortening, heroic low angle or giant head. Hands anatomically coherent; no repeated person, inset portrait or text.
+LIGHT: Ordinary register, slightly insistent diffuse pale light across whole figure/background, mildly uncomfortable without erasing skin complexion or fabric colors. No spotlight, halo, backlit cutout or extreme summoning whiteout. Keep working color and anatomy readable.
+
+CHARACTER: Mara Venn.
+STATE: Early convoy captain, thirty-two; healthy baseline equipment.
+DEVELOPED DESIGN: Woman about 176 cm, substantial shoulders and strong solid legs, medium OLIVE-BROWN skin. Squared jaw, slightly heavy eyelids, hazel eyes, thick dark-brown hair braided and pinned LOW at nape. Strong nose with modest bend. Thirty-two, mature capable woman, not elderly, not teenage beauty. Slate-blue military coat over padded vest, practical trousers and tall boots, simple forearm guards and one narrow brass captain's bar at collar. Left arm carries a plain practical shield low beside her left leg; right hand relaxed and fully visible. Sword sheathed at left hip for right-hand draw; no sword in left hand. Armor modest, no giant fantasy pauldrons. Ward inactive for the baseline; no magical glow. Calm alert face with capacity for warmth, no scars or injuries invented.
+INPUT ROLES: Image 1 is PAINTING/MATERIAL treatment only. Do not copy any reference person's face, sex or clothing.
+No additional props or invented insignia, no background story event. Keep body, clothing and held equipment physically connected.
+
+REFERENCE STATE CHECK: Clean, maintained everyday clothing, natural woven material, no generalized mud, blood or storm-infirmary dirt. Visible relaxed hands outside pockets wherever equipment permits, so their anatomy can be inspected. No slouching fashion-model pose. Keep the specific build, age and skin tone; avoid giving the cast a shared youthful glamorous face.

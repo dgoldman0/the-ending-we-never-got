@@ -1,0 +1,11 @@
+Use case: illustration-story.
+Asset type: original-timeline visual novel character key, one complete adult figure, portrait 2:3 composition. This is a reusable costume/identity reference pose, not a new story scene.
+STYLE: Naturalistic painted illustration matching the reference's modeled human faces and tactile brushed cloth, with visible restrained paint texture. Avoid glossy CGI, doll-like skin, anime eyes, hyper-glamour or photomontage. Reference people must not recast a different character.
+COMPOSITION: One full figure from crown/horns to soles, ordinary 7–7.5-head human proportions, long enough thighs and lower legs, natural feet, comfortable margins. Three-quarter frontal stance on a simple continuous pale stone-gray backdrop, faint grounded contact shadow. Normal lens at chest level; no foreshortening, heroic low angle or giant head. Hands anatomically coherent; no repeated person, inset portrait or text.
+LIGHT: Ordinary register, slightly insistent diffuse pale light across whole figure/background, mildly uncomfortable without erasing skin complexion or fabric colors. No spotlight, halo, backlit cutout or extreme summoning whiteout. Keep working color and anatomy readable.
+
+CHARACTER: Iven Saye.
+STATE: Early convoy, twenty-six; alive, before Harrow, coat intact.
+DEVELOPED DESIGN: Man about 179 cm, long limbs, broad hands, slight softness at the middle rather than athletic-cut musculature. Medium-brown skin, long face, wide nose, brown eyes, thick BLACK CURLS cropped short at sides and unruly on top. Clean-shaven, quiet amused attentive expression and one subtly raised brow. Open-neck undyed linen shirt, charcoal trousers, OLIVE knee-length coat with deep side pockets, laced boots. Brown medical satchel worn by a broad woven strap with visibly replaced PALE fastening tab. No treatment apron or winter cloak for this traveling key. No torn sleeve, injuries or stethoscope. Distinct male face, not a masculine version of Tessa.
+INPUT ROLES: Image 1 is PAINTING/MATERIAL treatment only. Do not copy any reference person's face, sex or clothing.
+No additional props or invented insignia, no background story event. Keep body, clothing and held equipment physically connected.

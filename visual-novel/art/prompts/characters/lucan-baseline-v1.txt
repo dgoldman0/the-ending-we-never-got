@@ -1,0 +1,13 @@
+Use case: illustration-story.
+Asset type: original-timeline visual novel character key, one complete adult figure, portrait 2:3 composition. This is a reusable costume/identity reference pose, not a new story scene.
+STYLE: Naturalistic painted illustration matching the reference's modeled human faces and tactile brushed cloth, with visible restrained paint texture. Avoid glossy CGI, doll-like skin, anime eyes, hyper-glamour or photomontage. Reference people must not recast a different character.
+COMPOSITION: One full figure from crown/horns to soles, ordinary 7–7.5-head human proportions, long enough thighs and lower legs, natural feet, comfortable margins. Three-quarter frontal stance on a simple continuous pale stone-gray backdrop, faint grounded contact shadow. Normal lens at chest level; no foreshortening, heroic low angle or giant head. Hands anatomically coherent; no repeated person, inset portrait or text.
+LIGHT: Ordinary register, slightly insistent diffuse pale light across whole figure/background, mildly uncomfortable without erasing skin complexion or fabric colors. No spotlight, halo, backlit cutout or extreme summoning whiteout. Keep working color and anatomy readable.
+
+CHARACTER: Lucan.
+STATE: Mid-twenties; uninjured before Gray Scar, royal field clothing.
+DEVELOPED DESIGN: Man about 185 cm, lean with strong upper back; warm MEDIUM-BROWN skin, long face, BROAD mouth, gray-green natural eyes, near-black hair to jaw tied loosely back. TWO SMOOTH DARK HORNS curve BACKWARD CLOSE TO SKULL, small restrained swept curves, not antlers or giant ram spirals. Ordinary humanlike ears, hands, feet, no tail or wings or glowing eyes. Dark BOTTLE-GREEN well-tailored riding coat, pale shirt, charcoal trousers, scuffed tall boots. Small white divided eight-point star badge, narrow vertical division and four longer principal points. Offset crossbow strap and practical sheathed sword; crossbow secured at his back, no extended combat pose. Clean-shaven, particular human face with warmth and self-possession, not smug glamour. No wounds, crown, gold jewelry or dress cloak.
+INPUT ROLES: Image 1 is PAINTING/MATERIAL treatment only. Do not copy any reference person's face, sex or clothing.
+No additional props or invented insignia, no background story event. Keep body, clothing and held equipment physically connected.
+
+REFERENCE STATE CHECK: Clean, maintained everyday clothing, natural woven material, no generalized mud, blood or storm-infirmary dirt. Visible relaxed hands outside pockets wherever equipment permits, so their anatomy can be inspected. No slouching fashion-model pose. Keep the specific build, age and skin tone; avoid giving the cast a shared youthful glamorous face.

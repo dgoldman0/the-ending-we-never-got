@@ -4,6 +4,8 @@ The [visual direction](visual-direction.md) fixes the three scene registers requ
 
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.
 - `character-references/`: reusable likeness references, with their selection status recorded in the character and scene notes.
+- [character-keys/](character-keys/README.md): labeled full-body keys with age, wardrobe state, manual review and GIMP files.
+- [prop-keys/](prop-keys/emblems/README.md): fixed story-object references; institutional emblems are the first pair.
 - `prompts/`: generation/edit prompt records, grouped by scene. Single-use prompts belong here, not alongside deliverable images or in project guidance directories.
 
 The user's supplied pictures are rough style references. They do not add their pictured people, mythology, objects or settings to this story. Choose light appropriate to the particular scene and the three established registers. Built-in image generation and local GIMP editing are both available; every selected output requires manual visual inspection.
@@ -11,7 +13,7 @@ The user's supplied pictures are rough style references. They do not add their p
 ## Current studies
 
 - [North infirmary](scene-studies/north-infirmary/README.md): storm-day interpretation following the user's weather correction; its central Tessa is the user-selected likeness reference.
-- [Summoning](scene-studies/summoning/README.md): complete arrival scene with Tessa and her groceries at the threshold, a distinct modern Earth view, a local carton repair and chamber-wide exposure work in GIMP. PNG and layered XCF have been checked; user assessment is pending. Earlier summoning attempts are superseded.
+- [Summoning](scene-studies/summoning/README.md): the user-established bright tone study, with Tessa and her groceries at the threshold and a distinct modern Earth view. Earlier summoning attempts are superseded.
 
 ## Review before presenting a candidate as ready
 

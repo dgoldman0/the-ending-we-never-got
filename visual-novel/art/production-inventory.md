@@ -4,16 +4,16 @@ Scope: all original-timeline character keys, screenplay scene keys, reusable loc
 
 ## Character coverage
 
-The developed [character designs](../../characters/original-visuals.md) govern these keys. Tessa retains the selected infirmary likeness. Other new keys are reviewed working designs until the user selects them. The first production batch establishes Tessa, Iven, Mara, Elin, Lucan and Valcair, followed by early scene keys using those identities.
+The developed [character designs](../../characters/original-visuals.md) govern these keys. Tessa retains the selected infirmary likeness. Other new keys are reviewed working designs until the user selects them. The first six [character keys](character-keys/README.md) have been generated, corrected in GIMP and manually reviewed. Early scene keys now use those identities; remaining characters and variants stay queued.
 
 | Character/group | Required keys and state changes | Status |
 | --- | --- | --- |
-| Tessa | Early convoy key; arrival; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | In production; existing arrival and infirmary studies remain references |
-| Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | In production |
+| Tessa | Early convoy key; arrival; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Reviewed baseline](character-keys/tessa/README.md); remaining variants planned |
+| Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | [Reviewed baseline](character-keys/iven/README.md); remaining variants planned |
 | Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | In production |
 | Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | In production |
-| Lucan | Bottle-green coat/horns; crossbow and field authority; informal camp; left-forearm dressing and torn citadel coat | In production |
-| Valcair | Armored spear key; private charcoal/red layers; active black ward and cleared joints; no circlet in final fight | In production |
+| Lucan | Bottle-green coat/horns; crossbow and field authority; informal camp; left-forearm dressing and torn citadel coat | [Reviewed baseline](character-keys/lucan/README.md); remaining variants planned |
+| Valcair | Armored spear key; private charcoal/red layers; active black ward and cleared joints; no circlet in final fight | [Reviewed baseline](character-keys/valcair/README.md); remaining variants planned |
 | Vask | Plum field coat/armor; indoor vest; distinct seal and dispatch wallet | Planned |
 | Senn | Public cream/wheat robes; private charcoal robe | Planned |
 | Orra | Deep-blue command coat; field cloak/breastplate; three collar bars | Planned |
