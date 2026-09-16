@@ -1,6 +1,8 @@
 # Tessa — rebuilding the wardrobe
 
-Status: design discussion, 16 September 2026. The user questioned the whole Saint wardrobe, including working and campaign clothes. Generation is paused while the clothing direction is reconsidered. This document is a proposal, not a selected costume or permission to treat a new silhouette as canon.
+Status: active redesign, 16 September 2026. The user authorized the layered sacred-garment direction. An early working key, movement sheet, complete ceremonial outfit and late campaign key have now been generated, locally corrected in GIMP and manually reviewed. Winter, intermediate fieldwear and postwar personal clothing remain to be developed. The old costume system remains superseded.
+
+**User response to the first new working key:** “Good good,” with the explicit clarification that trousers remain appropriate, particularly in the trenches. The long early ensemble received a positive response; it is not a universal silhouette imposed on every later outfit. Campaign clothing may visibly expose practical trousers. Sacred identity must come from a coherent design, not from banning a garment category.
 
 ## What failed
 
@@ -25,24 +27,24 @@ The missing work is a coherent clothing tradition for this world's Saint: recogn
 
 Sources: [Rebuild 11](../../../../screenplay/original-timeline/source.fountain), especially lines 7–113, 174–215, 252–295, 394–433, 651–773, 830–878 and 2029–2215. The manuscript remains unchanged.
 
-## A coherent direction to explore
+## Current clothing family
 
 Use the original style guides' weighted drapery, botanical woven borders, mineral colors and substantial handcrafted textiles as clothing design principles. The guides are rough references, not instructions to copy a goddess costume or supply Tessa with a crown.
 
-The leading proposal is a **long, layered Saint silhouette**: a close-sleeved undergarment, a shaped outer coat with robe-like construction, overlapping/divided skirt panels and a woven waist fastening. Garments should be recognizable by their cut even before a badge is visible. A dress beneath a protective outer garment is an alternative being discussed; the choice is not settled here.
+The early working and formal keys use a **long, layered Saint silhouette**: a close-sleeved under-robe, a shaped outer coat with robe-like construction, divided skirt panels and a woven waist fastening. The campaign key shortens the outer garment and exposes practical trousers. The shared yoke, borders, mineral colors and cloth construction connect these distinct outfits before the badge is legible.
 
-Possible material family: warm ivory or unbleached linen, mineral blue and muted green woven cloth, restrained dull gold worked into edges and structural bands. Ornament should relate across collar, fastening, cuffs and hem rather than accumulate as unrelated brooches. Exact colors and motif placements remain provisional. No new magical function is assigned to clothing.
+Current material family: warm ivory or unbleached linen, mineral blue and muted green woven cloth, restrained dull gold worked into edges and structural bands. Ornament relates across yoke, fastening, cuffs and hem. The formal outfit changes the under-robe, coat, waistband and shoes as well as adding the mantle. Specific colors and motifs remain working designs. No magical function is assigned to clothing.
 
 | State | Construction and purpose to develop |
 | --- | --- |
-| Institution-dressed public Saint | A complete ceremonial ensemble: long shaped outer coat, deliberately composed underlayers, substantial textile borders and the source's separate white mantle and badge. Its construction communicates the importance the institution assigns her. |
-| Early working Saint | A distinct, washable and less cumbersome ensemble retaining the same long vertical silhouette and textile vocabulary. Sleeves clear the hands; skirts can move. It can still catch the training sword before she learns how to manage it. |
-| Experienced campaign Saint | A different purpose-made garment: divided skirts, secured panels, sleeves fitted at the wrist, protective quilting placed where useful, weather layers, and unobstructed belt/hand access. Underlayers and boots support movement without becoming the whole visual identity. Repairs and wear accumulate in a specific chronology. |
+| Institution-dressed public Saint | [Ceremonial key](ceremonial-saint.md): celadon under-robe, long lapis brocade coat, broad woven waistband, ivory slippers, white/gold mantle and visible temple badge. Reviewed working design. |
+| Early working Saint | [Working key and movement sheet](working-saint.md): ivory close-sleeved under-robe, long short-sleeved blue robe-coat, botanical borders, narrow girdle and russet boots. Positive user response to the standing ensemble; step/drawing sheet reviewed separately. |
+| Experienced campaign Saint | [Campaign key](campaign-saint.md): shorter divided coat, visible charcoal trousers, close sleeves, padded underlayer, calf boots and sword hanger. The user explicitly permits trousers. Reviewed at about twenty-three before the assault, with both hands intact and Mara still alive. Weather layers remain pending. |
 | Winter | Warmth through heavier woven layers, lining and a weather covering related to the same construction, not an unrelated modern overcoat. |
 | Postwar personal clothing | Softer and easier to fasten one-handed, visibly of the adopted world's clothing tradition. Work out what she keeps, alters or abandons now that the temple no longer directs her life. The grief, physical aging and damaged right hand persist independently of the costume choice. |
 
 ## Review before further wardrobe production
 
-Resolve the base silhouette before rendering another batch. Examine the whole outfit, including undergarments and footwear; adding an ornate layer over a disputed base repeats the problem. Check seated work, a long stride, rowing, kneeling, sword draw, casting and sleeve removal against the actual garment openings. Match the level of wear and institutional association to the story period.
+Examine the whole outfit, including undergarments and footwear. The new movement sheet shows a supported step and seated right-handed drawing. It does not show the source-required inner pocket, prove a long stride or validate rowing, kneeling, a full sword draw and casting. Resolve those specific mechanics when adapting the relevant action. Match wear and institutional association to the story period; neutral costume poses do not establish new events.
 
-Existing Tessa fantasy costume keys and the convoy image are **design studies under revision**, not clothing references for more scenes. The postwar image can retain its separate emotional-state study status; that does not clear its costume. The selected infirmary face remains the likeness anchor, but its clothing is not an approved wardrobe system. Other characters' designs and the three lighting registers are unaffected by this correction.
+The **old baseline, formal-v2, postwar cardigan and convoy image** are superseded costume studies, not clothing references for new scenes. The postwar image retains separate emotional/physical-state study status; that does not clear its costume. The selected infirmary face remains the likeness anchor, but its clothing is not an approved wardrobe system. Other characters' designs and the three lighting registers are unaffected.

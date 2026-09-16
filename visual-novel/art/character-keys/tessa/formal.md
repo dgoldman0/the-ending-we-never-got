@@ -1,6 +1,6 @@
 # Tessa — public Saint ensemble, nineteen
 
-Status: manually reviewed working costume key, version 2, 16 September 2026. User selection remains separate. The first version reused the travel outfit and was rejected.
+Status: archived formal costume study, version 2, 16 September 2026. Replaced by the [new ceremonial Saint ensemble](ceremonial-saint.md). The first version reused the travel outfit and was rejected; the second changed garments but retained the subsequently disputed overall clothing approach.
 
 **Later correction:** the user questioned the overall Saint wardrobe even after the garment changes. This formal design is under revision and must not be used as the settled clothing base. See [wardrobe redesign](wardrobe-redesign.md). Pixel/anatomy and badge checks below are historical checks, not approval of the design direction.
 

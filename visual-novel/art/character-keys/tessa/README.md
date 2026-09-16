@@ -1,8 +1,21 @@
 # Tessa Rusk — character key
 
-Status: reviewed working visual, 16 September 2026. User selection remains separate.
+The user responded positively to the new long working-Saint ensemble and clarified that Tessa may still wear trousers, particularly in the trenches. The revised clothing family now has three full-body keys and a movement study. The later variants remain manually reviewed working designs, not user-selected assets.
 
-**Later correction:** the user questioned this everyday/field clothing direction. This image is now a costume study under revision, not a wardrobe reference for further scenes. Read [the wardrobe redesign](wardrobe-redesign.md). The review below records the earlier rendering checks; it does not resolve the design objection.
+| State | Image / editable GIMP file | Source and manual review |
+| --- | --- | --- |
+| Early working Saint, nineteen | [PNG](working-saint-v1.png) · [XCF](working-saint-v1.xcf) | [Working outfit](working-saint.md) |
+| Same early outfit, step and seated drawing | [PNG](working-saint-movement-v1.png) · [XCF](working-saint-movement-v1.xcf) | [Movement review](working-saint.md#manual-review) |
+| Public ceremony, nineteen | [PNG](ceremonial-saint-v1.png) · [XCF](ceremonial-saint-v1.xcf) | [Complete formal outfit](ceremonial-saint.md) |
+| Late campaign, about twenty-three, before the assault | [PNG](campaign-saint-v1.png) · [XCF](campaign-saint-v1.xcf) | [Field outfit with trousers](campaign-saint.md) |
+
+See the [wardrobe audit](wardrobe-redesign.md) and [age/state table](../age-and-wardrobe.md). Winter, intermediate fieldwear and postwar personal clothing remain pending. The selected storm-infirmary face remains the likeness anchor across periods.
+
+## Archived baseline
+
+Historical rendering review, 16 September 2026. This costume is superseded; use the new keys above.
+
+The user questioned this everyday/field clothing direction. The review below records earlier rendering checks; it does not resolve that design objection or make this a reference for further scenes.
 
 [Full PNG](baseline-v1.png) · [GIMP XCF](baseline-v1.xcf). Native size: 1024 × 1536.
 

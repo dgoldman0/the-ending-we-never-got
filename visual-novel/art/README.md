@@ -10,7 +10,7 @@ The [visual direction](visual-direction.md) fixes the three scene registers requ
 
 The user's supplied pictures are rough style references. They do not add their pictured people, mythology, objects or settings to this story. Choose light appropriate to the particular scene and the three established registers. Built-in image generation and local GIMP editing are both available; every selected output requires manual visual inspection.
 
-**Current wardrobe issue:** Tessa's complete fantasy clothing direction is under redesign, including everyday and campaign clothes. Read the [wardrobe audit](character-keys/tessa/wardrobe-redesign.md). Existing renders are not approval of that clothing system.
+**Current wardrobe direction:** Tessa now has [new early working, ceremonial and campaign keys, plus a movement sheet](character-keys/tessa/README.md). The user responded positively to the long early ensemble and explicitly retained trousers, especially in the trenches. The later variants remain reviewed working designs. Read the [wardrobe audit](character-keys/tessa/wardrobe-redesign.md) before developing winter, intermediate fieldwear or postwar clothes; the old jacket, formal trouser suit and cardigan are archived.
 
 ## Current studies
 
