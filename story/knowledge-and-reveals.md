@@ -4,7 +4,7 @@ Status: protected boundaries plus a recovered draft disclosure sequence. See [co
 
 ## Scope of the matrix
 
-The original-route column below describes Rebuild 11. In the active Ren'Py adaptation, the player can investigate and learn that humans initiated the war. This discovery is for the player; it does not change the original cast's knowledge in the matrix. Record player discoveries separately from character knowledge as the adaptation develops. The evidence, timing and interface remain open. See the [VN brief](../visual-novel/README.md).
+The original-route column below describes Rebuild 11. In the active Ren'Py adaptation, the player can investigate and learn that humans initiated the ancient war through the first Saint summoning. This discovery is for the player; it does not change the original cast's knowledge in the matrix. The [investigation proposal](../visual-novel/investigation.md) separates viewed evidence and established player findings from story progress. Evidence content and the detailed historical chain still need writing. See the [VN brief](../visual-novel/README.md).
 
 The incursion/altered timeline and its late disclosures remain deferred. The presentation order below belongs to the larger double-isekai story, not a requirement to append Neri's birth to the original-only VN.
 
@@ -17,7 +17,7 @@ The incursion/altered timeline and its late disclosures remain deferred. The pre
 | Neri's immense lifespan | Neri absent | Iven/Mara assume a roughly contemporary young fan; she assumes they lived into the later civilization | Only Tessa, Iven and Mara learn the full scale |
 | Neri is High Human | Neri absent | Locals notice oddities and feats without knowing the species classification | Private late disclosure to the same three |
 | Astravus and extent of the bond | Neri absent | Visible companions and surprising coordination are only part of the truth | Private memories and retrospective links reveal the integrated history and wider company |
-| Humanity initiated the ancient war | Not revealed to Tessa, Iven, Mara, Elin or Lucan | Explicit optional source lore may already be known to the reincarnated fans | Can inform changed action; Neri need not discover it first |
+| Humanity initiated the ancient war through the first Saint summoning | Not revealed to Tessa, Iven, Mara, Elin or Lucan; discoverable by the VN player | Explicit optional source lore may already be known to the reincarnated fans | Can inform changed action; Neri need not discover it first |
 | Valcair ordered Harrow sabotage | Audience sees the original order; Tessa initially has incomplete information | In the older altered draft the company contains the attempt before casualties | Do not automatically copy its easy intercepted-order proof into a new draft |
 | Lucan's state of knowledge at Harrow | His denial does not settle Tessa's suspicion; Marren's evidence has limits | Changed events may produce different suspicion, evidence and relationship consequences | Determine from the new sequence, not from original-route residue |
 | How to return Tessa to Earth | No verified route; search ongoing at the ending | Earlier draft Neri/Pell trace the surviving connection and restore access | Keep a voluntary choice to stay/return distinct from coercion |

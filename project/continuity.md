@@ -13,7 +13,9 @@ A later correction overrides an older scene. Archiving a proposal does not appro
 
 The user has shifted active work to a Ren'Py VN covering only the original timeline. Neri's incursion and the reincarnated Iven/Mara development are deferred. Rebuild 11 remains the source baseline, with additional detail and a reveal of humanity's initiating aggression planned for VN development. See the [adaptation brief](../visual-novel/README.md).
 
-The player can uncover humanity's initiating aggression through investigation. This is player knowledge; the historical knowledge restrictions for Tessa, Iven, Mara, Elin and Lucan remain in effect. The discovery's evidence, timing and presentation are open, not its recipient. This change does not authorize different deaths, injuries or endings.
+The player can uncover humanity's initiating aggression through investigation. The user explicitly connects that ancient beginning to the **first Saint summoning**; Tessa's summoning is a later event. This is player knowledge; the restrictions for Tessa, Iven, Mara, Elin and Lucan remain in effect. The [VN investigation sketch](../visual-novel/investigation.md) proposes evidence functions and discovery order; exact historical events and exhibits still need writing. This does not authorize different deaths or injuries in the original route.
+
+The user has requested the full original VN through postwar Bellweir, followed by **“Do you wish to save Tessa?”** addressed to the player. The [route sketch](../visual-novel/outline.md) preserves the original ending before that question. Answer outcomes and the incursion continuation remain undecided. Existing time skips and compact narrative transitions can make room for investigation; presentation changes must retain the screenplay's causal and relationship developments.
 
 ## Protected boundaries
 

@@ -4,11 +4,11 @@ This is the project-wide working reference, recovered on 16 September 2026. The 
 
 ## Current focus — original-timeline visual novel
 
-The active project is a **Ren'Py visual novel of Tessa's original timeline**, starting from Rebuild 11, with player investigation revealing additional detail. Read the [VN adaptation brief](../visual-novel/README.md) first. This focus change was requested on 16 September 2026; preparation currently consists of planning documents, with no playable Ren'Py project yet.
+The active project is a **Ren'Py visual novel of Tessa's original timeline**, starting from Rebuild 11, with player investigation revealing additional detail. Read the [VN adaptation brief](../visual-novel/README.md) and [complete first route sketch](../visual-novel/outline.md). Ten proposed chapters cover all 58 screenplay scenes through postwar Bellweir, then ask the player **“Do you wish to save Tessa?”** Story, investigation and pacing plans are documented; no playable Ren'Py project exists yet.
 
 The incursion timeline—Neri's presence and Iven/Mara's reincarnated fan memories—is deferred. Its existing material remains available for later development. Original Iven and Mara remain natives without those memories.
 
-The player can discover through investigation that humans initiated the ancient war. The [existing history notes](../worldbuilding/war-and-history.md) preserve that premise; the evidence and presentation still need design. This discovery belongs to the player and does not grant the original cast that knowledge. Rebuild 11 remains the screenplay baseline.
+The player can discover that humans initiated the ancient war through the first Saint summoning. The [investigation sketch](../visual-novel/investigation.md) proposes five rounds and a historical evidence chain; the actual new exhibits still need writing. This knowledge belongs to the player. The [pacing plan](../visual-novel/pacing.md) uses existing time jumps and compressed visits/campaigning to make room for investigation. Rebuild 11 remains the unchanged screenplay baseline.
 
 ## Read in this order
 

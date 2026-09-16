@@ -4,14 +4,15 @@ These are actual unresolved matters, not invitations to discard the protected pr
 
 ## Active priority — original-timeline Ren'Py VN
 
-The focus changed on 16 September 2026. See the [adaptation brief](../visual-novel/README.md). Preparation is documented; implementation has not started.
+The focus changed on 16 September 2026. See the [adaptation brief](../visual-novel/README.md). The [first complete route sketch](../visual-novel/outline.md), [58-scene map](../visual-novel/scene-map.md), [investigation proposal](../visual-novel/investigation.md), [pacing plan](../visual-novel/pacing.md) and [ending storyboard](../visual-novel/ending.md) are now available. These are reviewable proposals; implementation has not started.
 
-- Map Rebuild 11 into candidate VN chapters and identify where relationships, investigations and transitions need expansion.
-- Decide viewpoint, including whether the player sees Valcair's orders and other events outside Tessa's presence.
-- Decide player agency, branching and the mechanics of player investigation. Alternate endings are not established.
-- Develop how the player investigates and learns that humans initiated the war: the underlying events, available evidence and discovery sequence. The original cast does not acquire that knowledge through player unlocks. The premise is already preserved in the history notes; the detailed account is not complete.
-- Choose mandatory versus optional presentation of that history, without requiring future reincarnated fans to forget reliable source lore.
-- Define an initial playable slice, presentation and asset needs before full production. Engine choice is Ren'Py; release title, platforms and VN playtime remain open.
+- Review ten proposed chapters and their complete scene coverage. The current pacing proposal retains existing time jumps and compresses successive visits/seasonal campaigns while preserving key interactions.
+- Review the proposal to retain the screenplay's cutaways, including Valcair's orders. This makes Harrow investigation a comparison of events, public claims and limited testimony rather than an unknown culprit mystery.
+- Review player agency: one original route, optional inspections/comparisons and five investigation rounds. Event-changing branches are not established.
+- Develop the ancient sequence and actual exhibits showing that humans initiated the war through the first Saint summoning. This connection is now user-established; its exact events, dates, first Saint and preserved records remain to be written. The original cast does not acquire this knowledge through player unlocks.
+- Evaluate the proposed optional historical investigation and its reading load in a prototype. Explicit, reliable findings remain available to attentive players without requiring future reincarnated fans to forget them.
+- Adapt and prototype chapter 01 plus R01 as the proposed first slice. Engine choice is Ren'Py; release title, platforms and measured playtime remain open.
+- The ending now explicitly includes the player-facing question “Do you wish to save Tessa?” after the complete original Bellweir scene. Decide answer labels, response handling and any subsequent continuation separately; the present sketch stops at the question.
 
 ## Deferred wider-story structure and narrative
 
@@ -24,7 +25,7 @@ The focus changed on 16 September 2026. See the [adaptation brief](../visual-nov
 ## World and powers
 
 - Planet/realm naming, complete geography, distances and demographics are not established.
-- The detailed ancient aggression and Valcair's personal relation to it need deliberate choices for the active VN reveal. The existing screenplay remains unchanged; distinguish new VN discoveries from its established knowledge boundaries.
+- The human-initiated conflict's connection to the first Saint summoning is established. Its detailed initiating operation and Valcair's personal relation to it need deliberate choices for the VN reveal. The screenplay remains unchanged; distinguish player discoveries from character knowledge.
 - Neri's exact age, total familiar count and the private reveal's numerical values remain draft parameters.
 - The complete reincarnation mechanism, continuity of the familiar company and relationship between the fans' Earth and Tessa's Earth remain open.
 - Final rules for Neri's doorway to Tessa's home must account for the summoning mechanism and preserved limits without inventing a new constraint merely for drama.

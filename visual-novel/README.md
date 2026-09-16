@@ -1,12 +1,22 @@
 # Original-timeline visual novel — adaptation brief
 
-Status: CURRENT DIRECTION, requested on 16 September 2026. This is preparation for a Ren'Py adaptation; no game implementation or new scenes have been created yet.
+Status: CURRENT DIRECTION, requested on 16 September 2026. A complete first VN structure is now sketched; Ren'Py implementation and new scene dialogue have not started. Chapter boundaries, investigation controls and pacing treatments remain proposals for discussion.
+
+## Start with the VN sketch
+
+- [Route outline](outline.md): ten candidate chapters from summoning through postwar Bellweir and the question **“Do you wish to save Tessa?”**
+- [Complete scene map](scene-map.md): all 58 screenplay scenes, their chapter placement and proposed full-scene or compressed treatment.
+- [Player investigation](investigation.md): five rounds with inspections, comparisons and a developing historical inquiry into humans initiating the war through the first Saint summoning.
+- [Pacing and time skips](pacing.md): use the screenplay's existing gaps and compact repeated visits/campaign seasons to make room for investigation.
+- [Ending storyboard](ending.md): preserve the complete original ending, then address the player. Response outcomes and an incursion continuation remain open.
+
+The screenplay remains the story authority. The sketch separately marks presentation proposals, new historical material that needs writing, and the existing bridge-seal attribution question. It does not rewrite the source to suit a proposed mechanic.
 
 ## Setting and character development
 
 The first physical-design pass is documented in [character appearances and wardrobe](../characters/original-visuals.md), [locations and everyday setting](../worldbuilding/original-locations.md), and [objects, effects and visual continuity](visual-continuity.md). These documents distinguish established source anchors from newly filled-in working details. They cover the original cast and screenplay locations. That pass did not generate images or select an art style.
 
-The subsequent [north-infirmary scene study](art/scene-studies/north-infirmary/README.md) explores the user's rough style references in a generated illustration with a GIMP comparison file. Its current version uses stormy daylight, following the user's correction. This is a scene study, not a locked project-wide art style.
+The subsequent [north-infirmary scene study](art/scene-studies/north-infirmary/README.md) uses stormy daylight, following the user's correction. Together with the summoning study it anchors the user's three lighting registers in the [visual direction](art/visual-direction.md). Individual asset selection and production-ready scene coverage remain separate.
 
 See the [art-development index](art/README.md) for current studies and close-up review requirements. Prompt records are kept separately under `art/prompts/`. The [completed summoning visual](art/scene-studies/summoning/README.md) uses the user's selected infirmary Tessa likeness and depicts arrival at the threshold, with her dropped groceries beside her and modern Earth still visible. It replaces the rejected attempts, with a targeted carton repair and shared chamber-lighting treatment in GIMP. Its PNG and layered XCF have been reviewed; user assessment is pending.
 
@@ -14,9 +24,9 @@ See the [art-development index](art/README.md) for current studies and close-up 
 
 Build a visual novel around Tessa's original timeline. [Rebuild 11](../screenplay/original-timeline/source.fountain) supplies the detailed narrative baseline, supported by the [original story map](../story/original-timeline.md), character notes and worldbuilding. Player investigation can uncover additional detail and historical context.
 
-Neri's incursion and the reincarnated versions of Iven and Mara are deferred. The larger double-isekai premise remains available, but the active adaptation covers Tessa's story through postwar Bellweir. It does not require an incursion continuation to be developed first. In this timeline, Iven and Mara have real local lives and no Earth or VN memories.
+Neri's incursion and the reincarnated versions of Iven and Mara are deferred. The active adaptation covers Tessa's story through postwar Bellweir, then the user-requested question **“Do you wish to save Tessa?”** to the player. It does not require an incursion continuation to be developed first or settle what an answer initiates. In this timeline, Iven and Mara have real local lives and no Earth or VN memories.
 
-Ren'Py is the chosen engine. Release title, platforms, visual presentation, interface, assets, budget, playtime and branching structure remain open. **A Light for the Last Winter** is an earlier working title for the in-fiction VN, not an approved title for this release. The screenplay opening's approximate thirty-minute intention is not a VN playtime requirement.
+Ren'Py is the chosen engine. The current sketch proposes one original route with optional player investigation; event-changing branches are not approved. Release title, platforms, final interface, production assets, budget and measured playtime remain open. **A Light for the Last Winter** is an earlier working title for the in-fiction VN, not an approved title for this release. The screenplay opening's approximate thirty-minute intention is not a VN playtime requirement.
 
 ## Narrative baseline
 
@@ -30,28 +40,28 @@ Adaptation can expand scenes and change presentation. Track additions and their 
 
 ## Human origins of the war
 
-The **player can learn through investigation that humans started the ancient war**. The premise already exists in [war and history](../worldbuilding/war-and-history.md) and [project continuity](../project/continuity.md). Humanity later forgot, obscured or recast that aggression, which underlies Valcair's distrust. Specific campaigns, dates, participants, agreements and Valcair's firsthand experience are still unresolved.
+The **player can learn through investigation that humans started the ancient war through the first Saint summoning**. The user has explicitly connected the initiating aggression to that first summoning; Tessa's is later. See [war and history](../worldbuilding/war-and-history.md) and [project continuity](../project/continuity.md). Humanity later forgot, obscured or recast that aggression, which underlies Valcair's distrust. The precise first operation, campaigns, dates, participants, agreements and Valcair's firsthand experience are still unresolved.
 
 Rebuild 11 omits this revelation. Existing notes already allow explicit, reliable optional lore in the source VN. The player can discover that lore while the original cast's knowledge boundaries remain intact.
 
-This is a player discovery, not a planned revelation to Tessa, Iven, Mara, Elin or Lucan. Do not transfer unlocked player knowledge into their dialogue or decisions. Design how the player investigates, what evidence they encounter, and when that material becomes accessible. The interface and presentation remain open; the intended learner is established.
+This is a player discovery, not a planned revelation to Tessa, Iven, Mara, Elin or Lucan. Do not transfer unlocked player knowledge into their dialogue or decisions. The [investigation sketch](investigation.md) proposes a sequence of player-only historical exhibits and comparisons. Those new records still need to be authored; their appearance in the plan does not put them in a character's possession.
 
 Humanity's initiating aggression does not excuse Valcair's present atrocities or remove Vask's responsibility. Historical truth, responsibility for Harrow, and Tessa's personal trust are related but distinct matters.
 
-## Investigation and player agency — open design
+## Investigation and player agency — proposed design
 
-Investigation is something the player does to learn more. Its detailed gameplay and presentation remain to be designed. No clue economy, time limit, investigation hub or repeat-play requirement is established by this brief. Track player discoveries separately from character knowledge.
+Investigation is something the player does to learn more. The first design proposes a separate investigation interface, five rounds at quiet boundaries, inspectable views, comparisons and explicit findings. It keeps player discoveries separate from character knowledge and does not advance story time. No consumable clue economy, countdown, survival score or repeat-play requirement is proposed.
 
-Before writing branches, decide what the player controls and what those choices can change. Possibilities to evaluate include conversational approach, time with people, access to evidence and optional context. These are options for discussion, not selected mechanics. Record how any branches reconnect and carry knowledge and relationship consequences forward.
+For the first sketch, player control concerns reading pace, optional investigation and revisiting unlocked material. Essential relationships and consequences remain in the main route. Conversation branches and their effects would require a further decision and connected writing; no false rescue choices are introduced to make the interface appear interactive.
 
-The screenplay includes scenes outside Tessa's viewpoint, including the planning of Harrow. Choose deliberately which remain visible to the player. Suspense and investigation will differ if the player already knows what Tessa is trying to establish.
+The sketch retains the screenplay's scenes outside Tessa's viewpoint, including Harrow's planning. Its modern investigation therefore examines events, evidence and limited witness knowledge rather than pretending the player has not seen the order. This viewpoint treatment remains a reviewable proposal.
 
 ## Next development steps
 
-1. Map the original screenplay into candidate VN chapters, identifying dramatic scenes, compressed transitions, offscreen events and opportunities for ordinary life. The first pass should expose decisions rather than commit to a full branching script.
-2. Develop the historical investigation: establish the underlying events, evidence available to the player and discovery sequence. Preserve the cast's existing knowledge boundaries.
-3. Choose viewpoint, player agency and investigation mechanics, then outline one representative playable segment with its entry and exit conditions.
-4. Establish the Ren'Py project and a small playable slice using suitable placeholders. Choose the presentation and asset workflow from that concrete experience before expanding production.
+1. Review the complete chapter map, proposed viewpoint, time skips and investigation structure; distinguish changes in presentation from changes in events.
+2. Develop the ancient opening sequence and actual historical exhibits around the established first-Saint anchor. Preserve the cast's knowledge boundaries.
+3. Adapt chapter 01, S001–S005, and R01 as the first representative slice. Draft connected interactions only where the conversion needs new prose.
+4. Establish a Ren'Py prototype with suitable placeholders, then compare straight-through and investigative reading. Use that experience to assess pacing and production scope before expanding.
 
 ## Working references
 

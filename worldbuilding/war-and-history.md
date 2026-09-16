@@ -10,7 +10,7 @@ Human civilians know current northern brutality: attacks, destruction, displacem
 
 ## Deeper history — premise and screenplay knowledge restriction
 
-The proposed underlying history is that humanity began the warfare long ago and subsequently forgot, obscured or recast that aggression. Valcair's extreme distrust is rooted in that history. Detailed campaigns, dates, the exact prior agreement, what he witnessed, and whether every proposed memory belongs in final canon remain development decisions.
+The user-established underlying history is that humanity began the ancient conflict through the **first Saint summoning**, then subsequently forgot, obscured or recast that aggression. Tessa's summoning is later; do not collapse the two events. Valcair's extreme distrust is rooted in that history. The precise initiating operation, the first Saint's identity and agency, detailed campaigns, dates, the exact prior agreement and what Valcair personally witnessed remain development decisions.
 
 The revelation was removed from the current original opening. Tessa, original Iven, original Mara, Elin and Lucan do not discover it there. The prince does not secretly understand the complete historical cause of his father's beliefs.
 
@@ -20,7 +20,7 @@ An audience-only hint was discussed, but the latest original opening contains no
 
 ### Current VN direction — 16 September 2026
 
-The player can learn the human origins of the war through investigation in the original-timeline Ren'Py adaptation. This develops the explicit source lore described above. It does not give Tessa, Iven, Mara, Elin or Lucan that knowledge; their existing boundaries remain in effect. The evidence, timing and presentation of player discoveries are still to be designed. See the [adaptation brief](../visual-novel/README.md).
+The player can learn the human origins of the war and the first Saint summoning's initiating role through investigation in the original-timeline Ren'Py adaptation. This does not give Tessa, Iven, Mara, Elin or Lucan that knowledge. The [investigation sketch](../visual-novel/investigation.md) now proposes a sequence of contemporary records, later accounts and corroboration shown directly to the player. These are exhibit roles for new writing, not historical artifacts already established by the screenplay. See the [adaptation brief](../visual-novel/README.md).
 
 ## Harrow and culpability
 
