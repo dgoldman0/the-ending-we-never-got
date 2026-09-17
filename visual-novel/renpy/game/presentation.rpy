@@ -11,6 +11,9 @@ init python:
         return current_scene == 2 and source_line >= 112
 
     def current_art_description():
+        shot = opening_shot()
+        if opening_ready(shot):
+            return shot['alt']
         if side_reading():
             return 'Tessa leans over the welcome letter in her plain blue hoodie. Her right hand draws her mother’s chair. The dead phone lies beside the page; candlelight leaves most of the locked room in darkness.'
         if composed_scene():

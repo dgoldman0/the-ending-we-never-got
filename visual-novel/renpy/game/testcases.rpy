@@ -46,6 +46,48 @@ testcase original_reading_and_discovery:
     assert eval not closer_here()
     assert eval not available_details()
 
+testcase opening_scene_states:
+    click id 'main_begin'
+    click id 'begin_reading'
+    click id 'chapter_continue'
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-009-arrival.png'
+    advance until eval source_line == 11
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-011-milk.png'
+    advance until eval source_line == 13
+    screenshot 'opening-013-phone.png'
+    advance until eval source_line == 15 and source_page == 0
+    screenshot 'opening-015-return.png'
+    advance until eval source_line == 19
+    screenshot 'opening-019-closed.png'
+    advance until eval source_line == 24
+    screenshot 'opening-024-mother.png'
+    advance until eval source_line == 27
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-027-release.png'
+    advance until eval source_line == 32
+    screenshot 'opening-032-raised.png'
+    advance until eval source_line == 35
+    screenshot 'opening-035-lowered.png'
+    advance until eval source_line == 49
+    screenshot 'opening-049-refusal.png'
+    advance until eval source_line == 52
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-052-call.png'
+    advance until eval source_line == 54
+    screenshot 'opening-054-promise.png'
+    advance until eval source_line == 62
+    screenshot 'opening-062-mother-message.png'
+    advance until eval source_line == 65
+    screenshot 'opening-065-cloak.png'
+    advance until eval source_line == 69
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-069-window.png'
+    advance until eval source_line == 81
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-081-night-exchange.png'
+
 
 testcase discovery_save_and_restore:
     click id 'main_begin'

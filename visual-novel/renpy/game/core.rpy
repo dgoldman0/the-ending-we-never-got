@@ -136,7 +136,10 @@ screen chapter_title(number, title):
 screen story_stage():
     zorder -5
     add Solid('#0b1419')
-    if composed_scene():
+    $ shot = opening_shot()
+    if opening_ready(shot):
+        use opening_stage(shot)
+    elif composed_scene():
         add composed_scene() xysize (1920, 1080)
     elif art_available():
         # Legacy coverage is still being replaced; never put old cutouts on a new CG.
@@ -156,12 +159,12 @@ screen story_stage():
             xpos 160 ypos 390 xsize 1480 spacing 24
             text chapter_names[current_chapter-1] style 'caption_text'
             text scene_location.replace(' · ', '\n') font 'fonts/EBGaramond12-Regular.ttf' size 75 color '#c7c6b9'
-    add 'art/interface/top-veil.svg'
-    text "[current_chapter:02d]   [chapter_names[current_chapter-1]]" xpos 72 ypos 30 style 'caption_text' size 18
-    text scene_location xpos 72 ypos 61 size 17 color '#ddd6c6'
+    # The scene itself carries place; retain the label in image descriptions.
 
 screen say(who, what):
-    if side_reading():
+    if current_scene <= 3:
+        use composed_reading(who,what)
+    elif side_reading():
         add 'art/interface/title-veil.svg'
         window:
             id 'window'
@@ -198,9 +201,9 @@ screen say(who, what):
 
 screen quick_menu():
     zorder 100
-    add Solid('#0b1419e8') ypos 1026 ysize 54
+    add 'art/opening/ui/rail.svg' ypos 1018
     hbox:
-        xpos 145 ypos 1027 spacing 18
+        xpos 98 ypos 1027 spacing 24
         textbutton 'Back' action Rollback() style 'quiet_button'
         textbutton 'History' action ShowMenu('history') style 'quiet_button'
         if closer_here():
@@ -209,7 +212,7 @@ screen quick_menu():
             textbutton 'Threads' action ShowMenu('threads') style 'quiet_button'
         textbutton 'Save' action ShowMenu('save') style 'quiet_button'
         textbutton 'Menu' action ShowMenu('preferences') style 'quiet_button'
-    text 'SPACE TO CONTINUE' xpos 1560 ypos 1043 size 16 color '#a9a99d'
+    text 'CONTINUE  ›' xpos 1660 ypos 1042 size 17 color '#c9b693' kerning 1.8
 
 screen ending_breath():
     modal True
