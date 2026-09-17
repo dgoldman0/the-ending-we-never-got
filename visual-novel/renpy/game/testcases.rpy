@@ -87,6 +87,67 @@ testcase opening_scene_states:
     advance until eval source_line == 81
     assert eval opening_ready(opening_shot())
     screenshot 'opening-081-night-exchange.png'
+    advance until eval source_line == 90
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-090-door-block.png'
+    advance until eval source_line == 101
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-101-cloak-discarded.png'
+    advance until eval source_line == 106
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-106-locked.png'
+    advance until eval source_line == 108
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-108-barricade.png'
+    advance until eval source_line == 110
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-110-drawing.png'
+    advance until eval source_line == 112
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-112-restart.png'
+    advance until eval source_line == 116
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-116-ward.png'
+    advance until eval source_line == 120
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-120-blue-healing.png'
+    advance until eval source_line == 124
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-124-priest.png'
+    advance until eval source_line == 129
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-129-tessa-hesitates.png'
+    advance until eval source_line == 132
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-132-iven-reassures.png'
+    advance until eval source_line == 140
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-140-olan-plea.png'
+    advance until eval source_line == 145
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-145-purification.png'
+    advance until eval source_line == 150
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-150-last-patch.png'
+    advance until eval source_line == 154
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-154-missing-fingers.png'
+    advance until eval source_line == 157
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-157-iven-answer.png'
+    advance until eval source_line == 160
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-160-rested-hand.png'
+    advance until eval source_line == 164
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-164-mother-calls.png'
+    advance until eval source_line == 169
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-169-iven-wait.png'
+    advance until eval source_line == 172
+    assert eval opening_ready(opening_shot())
+    screenshot 'opening-172-water.png'
+
 
 
 testcase discovery_save_and_restore:
@@ -169,3 +230,31 @@ testcase original_ending_without_discovery:
     click id 'ending_title'
     click id 'main_begin'
     assert eval not ending_reached and not followed_connections
+
+
+testcase opening_large_text:
+    click id 'main_begin'
+    click id 'begin_reading'
+    click id 'chapter_continue'
+    $ persistent.large_text = True
+    advance until eval source_line == 54
+    screenshot 'opening-large-promise.png'
+    advance until eval source_line == 92
+    screenshot 'opening-large-doorway.png'
+    advance until eval source_line == 101
+    screenshot 'opening-large-cloak.png'
+    advance until eval source_line == 112
+    click id 'look_closer'
+    click id 'inspect_drawing'
+    screenshot 'opening-large-inspection.png'
+    click id 'bring_alongside'
+    click id 'follow_connection'
+    screenshot 'opening-large-connection.png'
+    click id 'menu_return'
+    assert eval source_line == 112 and source_page == 0
+    advance until eval source_line == 124
+    screenshot 'opening-large-priest.png'
+    advance until eval source_line == 140
+    screenshot 'opening-large-olan.png'
+    advance until eval source_line == 164
+    screenshot 'opening-large-mother.png'

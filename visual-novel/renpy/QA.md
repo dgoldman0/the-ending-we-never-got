@@ -1,3 +1,7 @@
+# Latest checkpoint: 0.3.0 rejected and incomplete
+
+The user rejected the new opening’s lighting and interface, and the missing cast after that opening. No visual completion gate is cleared. Native functionality passed four cases / 56 assertions; a separate larger-text case passed its return-state assertion but exposed further visual collisions. The web export launched as 0.3.0; connected browser review remains incomplete. Earlier records below are history, not current artistic clearance.
+
 # QA — rejected presentation checkpoint, 16 September 2026
 
 **Current result: presentation failed. Substantial work remains.** The user rejected the partial replacement as well as the first playable. The [scene completion gates](../presentation-redesign.md#scene-completion-gates) supersede favorable aesthetic observations below. The current build lacks cast/performance coverage, speaker-positioned dialogue and a convincing interface. The opening's lever placement also needs spatial redesign. It is not a finished connected visual sequence.

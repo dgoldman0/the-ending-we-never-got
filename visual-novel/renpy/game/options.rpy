@@ -3,7 +3,7 @@ init python:
     gui.init(1920, 1080)
 
 define config.name = "The Ending We Never Got"
-define config.version = "0.2.0"
+define config.version = "0.3.0"
 define config.check_conflicting_properties = True
 define config.save_directory = "the-ending-we-never-got-original-v1"
 define config.window = "auto"
@@ -25,9 +25,15 @@ define config.allow_skipping = False
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 define build.name = "TheEndingWeNeverGot"
-define build.version = "0.2.0"
+define build.version = "0.3.0"
 
 init python:
+    # Only source-mapped opening art enters distribution; working variants stay local.
+    import json
+    for asset in json.loads(renpy.file('opening-assets.json').read()):
+        build.classify('game/' + asset, 'all')
+    build.classify('game/art/opening/**', None)
+    build.classify('game/art/sprites/**', None)
     build.classify('game/testcases.rpy', None)
     build.classify('game/testcases.rpyc', None)
     build.classify('**/test-output/**', None)

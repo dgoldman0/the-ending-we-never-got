@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><linearGradient id="veil"><stop stop-color="#081319" stop-opacity=".95"/><stop offset=".37" stop-color="#081319" stop-opacity=".88"/><stop offset=".59" stop-color="#081319" stop-opacity=".27"/><stop offset=".80" stop-color="#081319" stop-opacity="0"/></linearGradient><linearGradient id="gold" x2="0" y2="1"><stop stop-color="#dcc291" stop-opacity=".6"/><stop offset=".5" stop-color="#ac7b55" stop-opacity=".15"/><stop offset="1" stop-color="#dcc291" stop-opacity=".62"/></linearGradient></defs>
+<path fill="url(#veil)" d="M0 0h1920v1080H0z"/>
+<g fill="none" stroke="url(#gold)" stroke-width="1.2"><path d="M54 1020V319Q54 62 309 62H766 M1858 174V1020H1493 M309 46H824 M38 326V905"/><path d="M75 920V450C75 400 110 366 110 313 M76 786c38-12 50-34 46-60-29 6-45 26-46 60 M75 710c-29-16-35-38-26-59 24 11 32 30 26 59 M76 620c34-12 49-37 42-57-27 4-40 26-42 57"/></g>
+<g stroke="#d1b17e" fill="none" stroke-width="1" opacity=".6"><path d="M156 212h98 M278 212h62 M156 627h215 M398 627h116"/><path d="M254 207l5 5-5 5 M276 207l-5 5 5 5"/></g>
+<path d="M372 620l7 5-4 10 10-4 5 8" fill="none" stroke="#ae7764" opacity=".8"/>
+</svg>

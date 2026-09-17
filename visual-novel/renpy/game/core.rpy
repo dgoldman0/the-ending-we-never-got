@@ -124,7 +124,7 @@ screen reading_intro():
 
 screen chapter_title(number, title):
     modal True
-    add Solid('#0b1419')
+    use original_backdrop
     add Solid('#9e8965') xalign 0.5 ypos 343 xsize 1 ysize 56
     vbox:
         xalign 0.5 ypos 439 spacing 18

@@ -4,13 +4,13 @@ init python:
     detail_views = {
         'drawing': {
             'title': 'The torn page',
-            'image': 'art/cg/detail-drawing.png',
+            'image': 'art/opening/cg/detail-drawing.png',
             'caption': 'A kitchen interrupted. A chair begun again.',
             'description': 'A short tear cuts the abandoned attempt. In a clean corner, blue pen lines begin a wooden kitchen chair. The paper belongs to the temple; the room she draws does not.',
         },
         'phone': {
             'title': 'The dead phone',
-            'image': 'art/cg/detail-phone.png',
+            'image': 'art/opening/cg/detail-phone.png',
             'caption': 'The last thing her mother asked for was milk.',
             'description': 'The same dark-green case. The screen is now black. Her mother’s message arrived before the opening closed; every call since has failed.',
         },

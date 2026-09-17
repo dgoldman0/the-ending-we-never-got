@@ -22,8 +22,7 @@ init python:
 
 # Vector UI assets contain only tonal scrims, not substitute illustrations.
 screen original_backdrop():
-    add 'art/cg/mothers-chair.png' xysize (1920, 1080)
-    add Solid('#0b1216ed')
+    add 'art/opening/ui/menu-ornament.svg'
 
 style title_text:
     font 'fonts/EBGaramond12-Regular.ttf'
@@ -45,7 +44,7 @@ style caption_text:
 
 style button:
     background None
-    hover_background Solid('#e0d3b31b')
+    hover_background Frame('art/opening/ui/focus.png',30,20,30,20)
     selected_background Solid('#e0d3b321')
     padding (18, 12)
 
@@ -63,7 +62,7 @@ style quiet_button_text is button_text:
     size 22
 
 style hero_button is button:
-    padding (0, 9)
+    padding (24, 10)
     xsize 390
 style hero_button_text is button_text:
     font 'fonts/EBGaramond12-Regular.ttf'

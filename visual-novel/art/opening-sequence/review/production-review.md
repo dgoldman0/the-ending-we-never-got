@@ -1,5 +1,8 @@
 # Connected opening review
 
+**Latest assessment: presentation rejected by the user, incomplete draft.** The user found the lighting too normal, the interface cheap and insufficiently designed, and characters disappearing before the illustrated portion ended. Earlier favorable visual observations below were too permissive and do not clear any scene. Native functional tests passed (4 cases / 56 assertions, plus a separate larger-text case); they establish neither atmosphere nor artistic quality. Browser 0.3.0 launched, but its connected review was interrupted by this rejection. The user requested a checkpoint, realignment and continued production.
+
+
 Working production after the user's “Proceed,” not user approval. Source text remains Rebuild 11. Do not use the superseded v2 checklist as clearance.
 
 ## First integrated review — 16 September

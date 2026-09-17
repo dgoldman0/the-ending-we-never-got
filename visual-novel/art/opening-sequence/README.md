@@ -32,7 +32,9 @@ Apartment: high window on the west wall; one chair at that window until line 108
 | 110–112 | Right-handed drawing, small tear, restart on clean corner with mother's chair | Intimate drawing illustration; prose outside face/hands; real Look closer detail |
 | S003 116–125 | Occupied ward; Mara leads Tessa; porter closes curtain; Iven/Olan/older healer/priest; corruption survives blue healing | Establish ensemble, then treatment framing |
 | 127–148 | Tessa's hesitation, Iven supports, Olan requests help; seated purification clears darkness | Speaker anchors follow seated treatment arrangement |
-| 150–166 | Missing fingers remain; mother calls, Iven gives water and leaves; Tessa watches sleeping Olan | Hand insert and actor reactions; no restoration of fingers |
+| 150–157 | Last dark patch clears; light lingers at missing fingers; Tessa asks and Iven explains their permanence | Tessa left, Iven centre; hands remain visible |
+| 160–169 | Olan rests his hand; mother calls from the next row; Tessa starts to rise and Iven asks her to wait | Preserve mother and Iven still beside Tessa; no premature cup |
+| 172 | Iven has brought water and gone to the next family; Tessa watches sleeping Olan, cup untouched | Quiet seated aftermath, no magic or restored fingers |
 
 ## Visual and interaction direction
 

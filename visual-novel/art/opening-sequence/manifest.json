@@ -1,0 +1,2307 @@
+{
+  "source": "screenplay/original-timeline/source.fountain",
+  "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
+  "scope": "Connected S001–S003 representative opening; S004–S058 not visually complete",
+  "authority": "New working production, not user approval. Selected Tessa identity is north-infirmary-storm. Generated cast images are working references only.",
+  "reuse": "Default deny outside listed source scene/beat/page and illumination. Do not reuse across later ages, injuries or wardrobe periods.",
+  "excluded": "Unintegrated Iven/Tessa ward cutouts and ward-conversation plate fail scale/eyeline gate; standalone mara-doorway has clipped hand. Retain raw work for provenance, exclude from build. Old v2 presentation remains rejected.",
+  "actors": {
+    "Tessa19": {
+      "age": 19,
+      "likeness": "art/character-references/tessa/north-infirmary-face-only.png",
+      "hair": "chestnut loose low ponytail",
+      "condition": "healthy arrival; first three days only; no later right-hand injury"
+    },
+    "Senn-late50s": {
+      "age": "late50s",
+      "hair": "full gray crown, modest thinning; not bald",
+      "wardrobe": "wheat/cream robe, plain round brass toggle"
+    },
+    "Mara32": {
+      "age": 32,
+      "hair": "low braided bun",
+      "wardrobe": "slateblue coat over charcoal vest; one collar bar; left-hip sword"
+    },
+    "Iven26": {
+      "age": 26,
+      "hair": "full unruly black curls; clean shaven",
+      "wardrobe": "olive working coat, linen apron; no temple emblem"
+    },
+    "Olan-late20s": {
+      "age": "late20s",
+      "hair": "auburn curls",
+      "condition": "right ring/little fingers missing; never restored; dark corruption separate from closed wound edges"
+    }
+  },
+  "shots": [
+    {
+      "scene": "S001",
+      "source_line": 9,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/arrival.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Tessa steps across a modern store threshold into the glaring temple, carrying her groceries and phone. Kneeling strangers watch. The scholar stands at a separate lever station across the room, leaving the arch clear.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 11,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/milk-impact.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "The paperboard carton has split at its bottom corner. Milk connects the tear to the spill over the circle and Tessa’s sneakers. Her bag lies beside her at the threshold.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 13,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/phone-message.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "In Tessa’s right hand, her green-cased phone shows her mother’s message asking about the milk. The fallen groceries and modern sidewalk remain beyond it.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 15,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/attempted-return.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Tessa runs back toward the arch, reaching for the modern store as it twists away. Her groceries stay at the landing point; the scholar reaches for his remote lever.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 15,
+      "source_page": 1,
+      "speaker": null,
+      "image": "art/opening/cg/closure.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 17,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/closure.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 19,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/closure.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 22,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/pleading-mother.png",
+      "actors": [],
+      "anchors": {
+        "WOMAN": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A worried mother catches Senn’s sleeve. A guard approaches her while two porters carry a patient biting a folded cloth through the gallery.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 24,
+      "source_page": 0,
+      "speaker": "WOMAN",
+      "image": "art/opening/cg/pleading-mother.png",
+      "actors": [],
+      "anchors": {
+        "WOMAN": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A worried mother catches Senn’s sleeve. A guard approaches her while two porters carry a patient biting a folded cloth through the gallery.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 27,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/woman-release.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "The guard guides the mother aside. She has released Senn’s sleeve; the injured patient passes behind them on a stretcher.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 29,
+      "source_page": 0,
+      "speaker": "SENN",
+      "image": "art/opening/bg/arch-guards-raised.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields are raised.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 32,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/arch-guards-raised.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields are raised.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 35,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 37,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 40,
+      "source_page": 0,
+      "speaker": "SENN",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-refusal-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 43,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-refusal-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 46,
+      "source_page": 0,
+      "speaker": "SENN",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-refusal-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 49,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-refusal-bright.png",
+          "x": 100,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1120,
+          "y": 60,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 52,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/mara-cloak-corrected-bright.png",
+          "x": 780,
+          "y": 140,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1280,
+          "y": 70,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/tessa-phone-bright.png",
+          "x": 50,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 54,
+      "source_page": 0,
+      "speaker": "SENN",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/mara-cloak-corrected-bright.png",
+          "x": 780,
+          "y": 140,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1280,
+          "y": 70,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 50,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 57,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/arch-conversation.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/mara-cloak-corrected-bright.png",
+          "x": 780,
+          "y": 140,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/senn-speaking-bright.png",
+          "x": 1280,
+          "y": 70,
+          "w": 620,
+          "h": 930
+        },
+        {
+          "image": "art/opening/sprites/tessa-question-bright.png",
+          "x": 50,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "SENN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 60,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/stretcher-passes.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara guides Tessa aside by the upper arm while carrying the folded cloak. Porters pass behind them. The crowd gathers at the sealed arch; Tessa appeals to Senn.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 62,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/stretcher-passes.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara guides Tessa aside by the upper arm while carrying the folded cloak. Porters pass behind them. The crowd gathers at the sealed arch; Tessa appeals to Senn.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S001",
+      "source_line": 65,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/unanswered-cloak.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Mara settles the gray cloak on Tessa’s shoulders. Tessa waits with her phone in her hands while Senn turns away toward the scholar.",
+      "period_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "Mara32",
+        "temple-extras"
+      ],
+      "illumination": "shared severe dawn; Earth separately exposed",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 69,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/apartment-window.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        800,
+        500,
+        950
+      ],
+      "state": "Tessa stands on the window chair, raising her phone toward the night sky. The ivory dress lies discarded below the wardrobe. Carts crowd the distant infirmary beneath an enormous winged silhouette.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 71,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/apartment-window.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        800,
+        500,
+        950
+      ],
+      "state": "Tessa stands on the window chair, raising her phone toward the night sky. The ivory dress lies discarded below the wardrobe. Carts crowd the distant infirmary beneath an enormous winged silhouette.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 73,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 75,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 78,
+      "source_page": 0,
+      "speaker": "MARA",
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 81,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 84,
+      "source_page": 0,
+      "speaker": "MARA",
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 87,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/bg/apartment-open.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-cloaked-night.png",
+          "x": 70,
+          "y": 75,
+          "w": 700,
+          "h": 1050
+        },
+        {
+          "image": "art/opening/sprites/mara-supper-night.png",
+          "x": 1100,
+          "y": 40,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 90,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/blocked-doorway.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 92,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/blocked-doorway.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 95,
+      "source_page": 0,
+      "speaker": "MARA",
+      "image": "art/opening/cg/blocked-doorway.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 98,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/blocked-doorway.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "MARA": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 101,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/cloak-discarded.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          560,
+          730
+        ]
+      },
+      "reading": [
+        90,
+        540,
+        750
+      ],
+      "state": "The candle is back on the table. Tessa has dropped the cloak at Mara’s feet; Mara looks toward the hall guard instead of answering.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 103,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/cloak-discarded.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          560,
+          730
+        ]
+      },
+      "reading": [
+        90,
+        540,
+        750
+      ],
+      "state": "The candle is back on the table. Tessa has dropped the cloak at Mara’s feet; Mara looks toward the hall guard instead of answering.",
+      "period_cast": [
+        "Tessa19",
+        "Mara32",
+        "hall-guard"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 106,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/bg/apartment-locked.png",
+      "actors": [
+        {
+          "image": "art/opening/sprites/tessa-refusal-night.png",
+          "x": 660,
+          "y": 65,
+          "w": 700,
+          "h": 1050
+        }
+      ],
+      "anchors": {},
+      "reading": null,
+      "state": "Mara and the cloak have gone. The door has shut. Tessa stands alone, still holding the phone; both supper plates remain untouched.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 108,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/chair-barricade.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        95,
+        565,
+        700
+      ],
+      "state": "Tessa pushes the window chair against the locked door. Her dead phone now lies flat on the table. The other chair stays at the table.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 110,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/drawing-letter.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        96,
+        575,
+        650
+      ],
+      "state": "With her healthy right hand, Tessa draws on the reverse of the welcome letter. A small tear interrupts the kitchen; she starts her mother’s chair in a clean corner. The dead phone lies beside the paper.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S002",
+      "source_line": 112,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/drawing-restart.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        96,
+        575,
+        650
+      ],
+      "state": "With her healthy right hand, Tessa draws on the reverse of the welcome letter. A small tear interrupts the kitchen; she starts her mother’s chair in a clean corner. The dead phone lies beside the paper.",
+      "period_cast": [
+        "Tessa19"
+      ],
+      "illumination": "very dark; cold window and small warm candle pool",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 116,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/ward-entrance.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Mara leads Tessa through the occupied ward. At the far end a porter removes a name card and closes a curtain. Iven and the older healer tend Olan beside them.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 118,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/blue-healing.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Iven supports Olan’s injured right hand. Blue healing closes the missing-finger edges while the dark branching discoloration passes the ink boundary toward his elbow. His left hand grips the bed rail.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 120,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/blue-healing.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Iven supports Olan’s injured right hand. Blue healing closes the missing-finger edges while the dark branching discoloration passes the ink boundary toward his elbow. His left hand grips the bed rail.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 122,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/ward-standing-unlit.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. Tessa has not formed the light yet.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 124,
+      "source_page": 0,
+      "speaker": "PRIEST",
+      "image": "art/opening/cg/ward-standing-unlit.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. Tessa has not formed the light yet.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 127,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 129,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 132,
+      "source_page": 0,
+      "speaker": "IVEN",
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 135,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 138,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 140,
+      "source_page": 0,
+      "speaker": "OLAN",
+      "image": "art/opening/cg/ward-standing-light.png",
+      "actors": [],
+      "anchors": {
+        "PRIEST": [
+          92,
+          1010,
+          760
+        ],
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          620,
+          1010,
+          820
+        ],
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 143,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/first-purification.png",
+      "actors": [],
+      "anchors": {
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 145,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/first-purification.png",
+      "actors": [],
+      "anchors": {
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 147,
+      "source_page": 0,
+      "speaker": "OLAN",
+      "image": "art/opening/cg/first-purification.png",
+      "actors": [],
+      "anchors": {
+        "OLAN": [
+          1010,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 150,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/last-patch.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Olan has turned his arm. Tessa works back toward the last dark patch beside the wound; the rest of the arm is clear.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 152,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/purification-cleared.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          720,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 154,
+      "source_page": 0,
+      "speaker": "TESSA",
+      "image": "art/opening/cg/purification-cleared.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          720,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 157,
+      "source_page": 0,
+      "speaker": "IVEN",
+      "image": "art/opening/cg/purification-cleared.png",
+      "actors": [],
+      "anchors": {
+        "TESSA": [
+          92,
+          1010,
+          820
+        ],
+        "IVEN": [
+          720,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 160,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/rested-hand.png",
+      "actors": [],
+      "anchors": {},
+      "reading": [
+        96,
+        355,
+        650
+      ],
+      "state": "Olan’s injured right hand rests on the blanket, freshly dressed. The remaining fingers have relaxed. The corruption is gone; the missing fingers have not returned.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 162,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/treatment-pause.png",
+      "actors": [],
+      "anchors": {
+        "MOTHER": [
+          860,
+          1010,
+          820
+        ],
+        "IVEN": [
+          630,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 164,
+      "source_page": 0,
+      "speaker": "MOTHER",
+      "image": "art/opening/cg/treatment-pause.png",
+      "actors": [],
+      "anchors": {
+        "MOTHER": [
+          860,
+          1010,
+          820
+        ],
+        "IVEN": [
+          630,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 167,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/treatment-pause.png",
+      "actors": [],
+      "anchors": {
+        "MOTHER": [
+          860,
+          1010,
+          820
+        ],
+        "IVEN": [
+          630,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 169,
+      "source_page": 0,
+      "speaker": "IVEN",
+      "image": "art/opening/cg/treatment-pause.png",
+      "actors": [],
+      "anchors": {
+        "MOTHER": [
+          860,
+          1010,
+          820
+        ],
+        "IVEN": [
+          630,
+          1010,
+          820
+        ]
+      },
+      "reading": null,
+      "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    },
+    {
+      "scene": "S003",
+      "source_line": 172,
+      "source_page": 0,
+      "speaker": null,
+      "image": "art/opening/cg/after-first-treatment.png",
+      "actors": [],
+      "anchors": {},
+      "reading": null,
+      "state": "Tessa sits with the cup of water untouched while Olan falls asleep. Iven has gone to the mother and daughter in the next row. The arm is clear; the missing fingers remain dressed.",
+      "period_cast": [
+        "Tessa19",
+        "Iven26",
+        "Olan-late20s",
+        "elder-healer",
+        "priest",
+        "ward-extras"
+      ],
+      "illumination": "insistent ordinary pale daylight",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+    }
+  ],
+  "presentation_status": "Rejected by user: lighting too normal, UI cheap, incomplete cast coverage. All scene gates reopened."
+}

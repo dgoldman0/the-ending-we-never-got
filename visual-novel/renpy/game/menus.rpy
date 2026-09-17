@@ -1,14 +1,13 @@
 screen main_menu():
     tag menu
-    add 'art/cg/mothers-chair.png' xysize (1920, 1080)
-    add 'art/interface/title-veil.svg'
-    add Solid('#baa17a') xpos 122 ypos 206 xsize 62 ysize 2
-    text 'THE ORIGINAL TIMELINE' xpos 122 ypos 242 style 'caption_text'
+    add 'art/opening/cg/drawing-restart.png' xysize (1920, 1080)
+    add 'art/opening/ui/title-ornament.svg'
+    text 'THE ORIGINAL TIMELINE' xpos 156 ypos 242 style 'caption_text'
     text 'The Ending\nWe Never Got':
-        xpos 112 ypos 295 xsize 780
-        style 'title_text' size 112
+        xpos 146 ypos 307 xsize 780
+        style 'title_text' size 116
     vbox:
-        xpos 120 ypos 630 spacing 8
+        xpos 138 ypos 664 spacing 10
         if renpy.newest_slot() is not None:
             textbutton 'Continue' action Continue() style 'hero_button'
             textbutton 'Begin again' id 'main_begin' action Start()
@@ -19,7 +18,7 @@ screen main_menu():
             textbutton 'Load' action ShowMenu('load') style 'quiet_button'
             textbutton 'Settings' action ShowMenu('preferences') style 'quiet_button'
             textbutton 'About' action ShowMenu('about') style 'quiet_button'
-    text 'A life interrupted.' xpos 122 ypos 967:
+    text 'A life interrupted.' xpos 156 ypos 967:
         font 'fonts/EBGaramond12-Italic.ttf' size 29 color '#b6ad9b'
     if not renpy.emscripten:
         textbutton 'Quit' action Quit(confirm=True) xpos 1730 ypos 958 style 'quiet_button'
@@ -42,7 +41,6 @@ screen menu_frame(title):
         id 'menu_return'
         action Return()
         xalign 0.91 ypos 112 style 'quiet_button'
-    add Solid('#ada08755') xpos 160 ypos 202 xsize 1600 ysize 1
     frame:
         background None
         xpos 160 ypos 240 xsize 1600 ysize 790
