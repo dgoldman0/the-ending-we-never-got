@@ -1,6 +1,6 @@
 # The original timeline — playable build
 
-**Current runtime: 0.3.2 / `d0c3020`, rejected and incomplete.** The [full design review](../reviews/2026-09-17-full-design-review/README.md) found structural conversation, interface, pacing and discovery failures, including in the mapped opening. The [realigned experience brief](../presentation-redesign.md) defines the next connected S001–S005 milestone and completion gates. This documentation pass does not rebuild or change the game. The [route ledger](../art/route-coverage.md) records 66 mapped opening pages, 29 room-only pages and 757 prose-only pages.
+**Current runtime: 0.4.0-dev, a working Rovel candidate.** The first 95 reading pages (S001–S005) now have source-specific performances and scene art; 757 later pages remain prose-only. Rich illustrations and compact speaker/listener frames work together. See [current evidence and limits](../reviews/2026-09-17-rovel-work/README.md), the [experience gates](../presentation-redesign.md), and the [full-route ledger](../art/route-coverage.md). Version 0.3.2 remains the rejected comparison baseline.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 

@@ -1,0 +1,5385 @@
+{
+  "snapshot": {
+    "time": "2026-09-17T12:51:38.374806+00:00",
+    "files": [
+      {
+        "name": "blue-healing-repair.xcf",
+        "bytes": 41405654,
+        "mtime_ns": 1789645090196920865,
+        "sha256": "55951eda0403fd49932da104692c441120a08a1e14404522afcbec95ffd5829b"
+      },
+      {
+        "name": "ceremony-applause.xcf",
+        "bytes": 12785530,
+        "mtime_ns": 1789647090397699092,
+        "sha256": "d269fb9b54f91fa6324b5199ff1d75b6b69c4dc92c479b6683eb02276a32485f"
+      },
+      {
+        "name": "ceremony-dais.xcf",
+        "bytes": 13117845,
+        "mtime_ns": 1789645173298488697,
+        "sha256": "8b42dacfd64bd7cdcb9f5282ecfa6ba0299fd6a0664207499fdd6789c19c5231"
+      },
+      {
+        "name": "ceremony-intervention.xcf",
+        "bytes": 13481850,
+        "mtime_ns": 1789648342698996704,
+        "sha256": "a39ae140a6e64cc875defc45a24b34480a25c70fc71dc97e730da1dd5b148cbe"
+      },
+      {
+        "name": "ceremony-mantle.xcf",
+        "bytes": 13229088,
+        "mtime_ns": 1789644349902081239,
+        "sha256": "e30b9d28d4e067b49413a0a73cd757e5b2dc0ef4e11a61d9de7ef72fdaa19d86"
+      },
+      {
+        "name": "ceremony-orders.xcf",
+        "bytes": 13451047,
+        "mtime_ns": 1789644904484089396,
+        "sha256": "d45941161ced1cfbc84cd61a29676be9179f17f1f5fc75abb10d00c350db57af"
+      },
+      {
+        "name": "ceremony-refusal.xcf",
+        "bytes": 13194800,
+        "mtime_ns": 1789645867806325598,
+        "sha256": "684ab35f9058905a063cdb5e5469e0a4372df9148ba4e23c665b641f47e9a7a4"
+      },
+      {
+        "name": "ceremony-refused-chair.xcf",
+        "bytes": 17410616,
+        "mtime_ns": 1789646424050503259,
+        "sha256": "2bc2ab287d93f6f5db74622d9247fdfd20db4c4a5165abf0edcf2ae51905f9f3"
+      },
+      {
+        "name": "ceremony-yield.xcf",
+        "bytes": 12583014,
+        "mtime_ns": 1789649215896890880,
+        "sha256": "3c7f0ffff61150ca69a5fe95b1b6c691790b198c8307acd8571fe1e88075f482"
+      },
+      {
+        "name": "iven-attentive.xcf",
+        "bytes": 2329335,
+        "mtime_ns": 1789644203695244318,
+        "sha256": "26bb4e02d573315905827bf1d67841e6d20cfe99e9090ca538f753a64703c20c"
+      },
+      {
+        "name": "iven-concerned.xcf",
+        "bytes": 2360115,
+        "mtime_ns": 1789644205535217912,
+        "sha256": "8e54cbbf3f28162f5668be06a010601dbbd891c3f5059e08ab363be26375be25"
+      },
+      {
+        "name": "mara-controlled.xcf",
+        "bytes": 3109495,
+        "mtime_ns": 1789644026535808730,
+        "sha256": "16bd4aaba3670fcfa0ede894ad2d2840a75758c701818796a2ba43439578fa17"
+      },
+      {
+        "name": "mara-uneasy.xcf",
+        "bytes": 3101219,
+        "mtime_ns": 1789644030745729225,
+        "sha256": "f9c4d690d700977e55a0d7e269c44a652ed32e2079682c74a3ab4b0203459d3f"
+      },
+      {
+        "name": "messenger.xcf",
+        "bytes": 2281521,
+        "mtime_ns": 1789644566067691400,
+        "sha256": "7e910d7a2ff3d3636291e770876300ecd223c52ba9701555135ba192f0322418"
+      },
+      {
+        "name": "mother.xcf",
+        "bytes": 2242391,
+        "mtime_ns": 1789644560205785703,
+        "sha256": "27995d5db74bf22085c7bc65006ea800618fd678199940bbc80f0b924c2cbee3"
+      },
+      {
+        "name": "olan.xcf",
+        "bytes": 3738948,
+        "mtime_ns": 1789644555139867108,
+        "sha256": "5a47d7ef643fabac3a135a56f32ba80b7ae1459b0f728c1d2de5f1a6853edb3e"
+      },
+      {
+        "name": "orra.xcf",
+        "bytes": 2227122,
+        "mtime_ns": 1789644563981724971,
+        "sha256": "9da11889406238a7752ed78025708831b196cb49fa72ed874a34ea29f8930ea1"
+      },
+      {
+        "name": "petitioner.xcf",
+        "bytes": 2329613,
+        "mtime_ns": 1789644562070755713,
+        "sha256": "7b0d903cbef6c6c279fd2a1e1bd9767f7e4712183eb3c29ce4aabba3eeb4b470"
+      },
+      {
+        "name": "priest.xcf",
+        "bytes": 2150851,
+        "mtime_ns": 1789644557817824086,
+        "sha256": "9bb9001b77ade77a4bce1e4e5b3fcb6eb3f07fbf718145c5dd6c567cffe3f341"
+      },
+      {
+        "name": "purification-cleared-repair.xcf",
+        "bytes": 32213436,
+        "mtime_ns": 1789646755973020546,
+        "sha256": "97def3ff9cbddd22a9ece6f2060b0ea5c2829376281d44243124c518b8a72a32"
+      },
+      {
+        "name": "reading-surface.xcf",
+        "bytes": 6330162,
+        "mtime_ns": 1789643797475147793,
+        "sha256": "b0c24062483e7a5ab796462f7be24f509eaeaea922a7e7fc2169961f5fe062ae"
+      },
+      {
+        "name": "senn-assuring.xcf",
+        "bytes": 1171780,
+        "mtime_ns": 1789643429836194233,
+        "sha256": "8146fce3c00514f0e89ded7e326d9c1b002d61e6e2c37190f0031f9a85c25db3"
+      },
+      {
+        "name": "senn-evasive.xcf",
+        "bytes": 1172017,
+        "mtime_ns": 1789643432070150971,
+        "sha256": "2a43e5472d067048abb92b0c39f65ed8fa1131ed90477453283235fdbca2e639"
+      },
+      {
+        "name": "senn-listening.xcf",
+        "bytes": 1171633,
+        "mtime_ns": 1789643430953172601,
+        "sha256": "0187b9de659a54ae9cbf85e586a04a98a4482f9dcf98a5f53338d8dc14c1213e"
+      },
+      {
+        "name": "tessa-listening.xcf",
+        "bytes": 9281891,
+        "mtime_ns": 1789643794294208263,
+        "sha256": "fa97468a3ee22b8d48dc40e7bb53eea3e7b8ac9aa24ac09287cf775848f1ea10"
+      },
+      {
+        "name": "tessa-resolute.xcf",
+        "bytes": 9305278,
+        "mtime_ns": 1789643770863653888,
+        "sha256": "2355efba19e112453e089ffcde1899d06a7bb75c95d5ebd3b88e15a5e37a35fa"
+      },
+      {
+        "name": "tessa-startled.xcf",
+        "bytes": 9331266,
+        "mtime_ns": 1789643758403891016,
+        "sha256": "807c175c918752b1581cd94c8bea30f8a62827606d237bde810d0797217c087b"
+      },
+      {
+        "name": "tessa-wounded.xcf",
+        "bytes": 9301612,
+        "mtime_ns": 1789643782648429707,
+        "sha256": "0fcb6f6e39d7a0a93c151a52c0225d02be93a790a1c3a7b13c43105fbae59746"
+      },
+      {
+        "name": "window-packing.xcf",
+        "bytes": 13897906,
+        "mtime_ns": 1789649220629812990,
+        "sha256": "59b8ea3dce4d55c7863dfb5ff030697f0a02bc71ad1f38994e615ef507759e4f"
+      },
+      {
+        "name": "window-pause.xcf",
+        "bytes": 18585644,
+        "mtime_ns": 1789649226332719089,
+        "sha256": "a657c6451c09e2ebd0c1671d9929e3a3b4d1e083ed2963cd72e3b1b5751a8a60"
+      },
+      {
+        "name": "window-together.xcf",
+        "bytes": 18676684,
+        "mtime_ns": 1789649231936626763,
+        "sha256": "b51db461dc0fae6947e594c684adce5bd8ca13416421c48e71f42a8c72f072a6"
+      }
+    ]
+  },
+  "verified_at": "2026-09-17T12:58:43.075587+00:00",
+  "changed_masters_since_snapshot": [],
+  "new_masters_after_snapshot": [
+    "last-patch-arm-turn.xcf",
+    "ward-assessment.xcf"
+  ],
+  "changed_runtime_since_copy": [],
+  "masters": [
+    {
+      "name": "blue-healing-repair",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "01 INTENSE - default - enable only this grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false,
+          "children": [
+            {
+              "name": "Curtain source clone - remove old shoulder remnant #1",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Apron and upper sleeve - graded blue-final source - editable contour mask #1",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Preserved pre-repair scene - all faces, hands, injury and light #1",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": false
+            }
+          ]
+        },
+        {
+          "name": "02 SOFTENED - enable only this grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false,
+          "children": [
+            {
+              "name": "Curtain source clone - remove old shoulder remnant",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Apron and upper sleeve - graded blue-final source - editable contour mask",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Preserved pre-repair scene - all faces, hands, injury and light",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": false
+            }
+          ]
+        },
+        {
+          "name": "SOURCE - raw blue-final - ungraded, untransformed, hidden",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-applause",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Right hand: thumb/index/middle survive; masked local repair",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Standing Olan and applause, preserved source",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-dais",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Retained source, reviewed staging and performance",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-intervention",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Orra only: military coat, trousers, gloves; no Saint mantle",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Background",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-mantle",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Retained source, reviewed staging and performance",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-orders",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Retained source, reviewed staging and performance",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-refusal",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Fixed human temple emblem: twelve short rays",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Cloth repair beneath corrected badge, feathered local donor",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Retained modeled brass disk over fixed ray geometry",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Retained source, reviewed staging and performance",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-refused-chair",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Local closed grip and cloth fold, editable feathered mask",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Original chair-refusal scene; all identity/geometry preserved",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "ceremony-yield",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Retained temple badge, fixed twelve-ray geometry",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Background",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "iven-attentive",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "iven-concerned",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "mara-controlled",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "mara-uneasy",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "messenger",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "mother",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "olan",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "orra",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "petitioner",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "priest",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "purification-cleared-repair",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "01 INTENSE - default - enable only this grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false,
+          "children": [
+            {
+              "name": "Aligned first-purification jaw and neck - editable local mask #1",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Preserved pre-repair cleared scene - cast, treatment and expression #1",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": false
+            }
+          ]
+        },
+        {
+          "name": "02 SOFTENED - enable only this grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false,
+          "children": [
+            {
+              "name": "Aligned first-purification jaw and neck - editable local mask",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": true
+            },
+            {
+              "name": "Preserved pre-repair cleared scene - cast, treatment and expression",
+              "visible": true,
+              "opacity": 100.0,
+              "has_mask": false
+            }
+          ]
+        },
+        {
+          "name": "SOURCE - raw first-purification - ungraded, untransformed, hidden",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "reading-surface",
+      "size": [
+        1600,
+        438
+      ],
+      "layers": [
+        {
+          "name": "02 Quiet-panel texture repair, complete border retained",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Remove stray alpha; preserve all four crafted edges",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Unmodified generated complete frame",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "senn-assuring",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "senn-evasive",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "senn-listening",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense bright - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "tessa-listening",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened formal-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened formal-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened working-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense working-ordinary - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-cloak-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-cloak-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "tessa-resolute",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened formal-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened formal-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened working-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense working-ordinary - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-cloak-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-cloak-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "tessa-startled",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened formal-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened formal-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened working-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense working-ordinary - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-cloak-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-cloak-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "tessa-wounded",
+      "size": [
+        512,
+        512
+      ],
+      "layers": [
+        {
+          "name": "Softened formal-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-ordinary - editable scene grade",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened formal-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense formal-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened working-ordinary - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense working-ordinary - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-cloak-night - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-cloak-night - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Softened arrival-bright - from same source",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Intense arrival-bright - editable scene grade",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "00 Identity/expression crop - no costume or prop inference",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": true
+        }
+      ]
+    },
+    {
+      "name": "window-packing",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "00 Retained source, reviewed staging and performance",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "window-pause",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Iven stops: empty hands on chest, bottle returned; local state mask",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Background",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    },
+    {
+      "name": "window-together",
+      "size": [
+        1672,
+        941
+      ],
+      "layers": [
+        {
+          "name": "02 Softened, same corrected scene",
+          "visible": false,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "01 Intense, shared environmental exposure",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        },
+        {
+          "name": "Iven joins offered sill; old standing position cleared; local state mask",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": true
+        },
+        {
+          "name": "Background",
+          "visible": true,
+          "opacity": 100.0,
+          "has_mask": false
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "master": "blue-healing-repair",
+      "export": "blue-healing-repair--visible.png",
+      "runtime": "art/opening/cg/blue-healing.png",
+      "kind": "saved default",
+      "layer": "01 INTENSE - default - enable only this grade",
+      "runtime_sha256": "39d49a662dd9dd505bc63b08d02c4372dd43ab46a8a342d7a0fda6e590d23c59",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "7893975b880ebf9d3323303dc92433845cc5d12e5b98a5369b500912a6250ab4"
+    },
+    {
+      "master": "blue-healing-repair",
+      "export": "blue-healing-repair--layer-0.png",
+      "runtime": "art/opening/cg/blue-healing.png",
+      "kind": "grade/variant",
+      "layer": "01 INTENSE - default - enable only this grade",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "39d49a662dd9dd505bc63b08d02c4372dd43ab46a8a342d7a0fda6e590d23c59",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a2c22dc7e99eade16446b5b02a7ede295ad46da568a4908bb6a905737aa105d8"
+    },
+    {
+      "master": "blue-healing-repair",
+      "export": "blue-healing-repair--layer-1.png",
+      "runtime": "art/softened/opening/cg/blue-healing.png",
+      "kind": "grade/variant",
+      "layer": "02 SOFTENED - enable only this grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "7e2d328175e8452e19e48deb6c44bf63b666a526a089760bdb93a2784d1fea44",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "d4154bf5827daa3020dbe7df62454e3f5f675f458b6998c18178cabed62736ec"
+    },
+    {
+      "master": "ceremony-applause",
+      "export": "ceremony-applause--visible.png",
+      "runtime": "art/rovel/cg/ceremony-applause.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "4c52ebbe27549df3cdf1f6bb5a9942b936f1a6142c8b8b4a2dff7aee2aab508a",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "0307ffe6dd470fa8779c94613e1e4961fd720caf9aa3e5a2228c11fdda0e7334"
+    },
+    {
+      "master": "ceremony-applause",
+      "export": "ceremony-applause--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-applause.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "8108de0654a93d016df31ce93f4a0f519b0a10b2ab9aecd4d364d13973d5bf75",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "567a5bd5994eacb9e30ce217cb821ee4a0c5ed6a0c9bedc0138b10acbb761c01"
+    },
+    {
+      "master": "ceremony-applause",
+      "export": "ceremony-applause--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-applause.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "4c52ebbe27549df3cdf1f6bb5a9942b936f1a6142c8b8b4a2dff7aee2aab508a",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "d9290cb41ebcce03a49301ace6497d8dcab2725af6e8cd1f0bbe365a1317c53a"
+    },
+    {
+      "master": "ceremony-dais",
+      "export": "ceremony-dais--visible.png",
+      "runtime": "art/rovel/cg/ceremony-dais.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "d5f02b2b930a86bf2e1cee8078ff235af10ff1344dd3b1b087347d126c66c531",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e3c5b38e9a7c6b4b10d1627b8b2699da4d610815f14bc8f46c51fbfc6bdd6ef2"
+    },
+    {
+      "master": "ceremony-dais",
+      "export": "ceremony-dais--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-dais.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "889e4abdfe64051cff290cb3fe2ef82abe718ec4eaba5acc9bd3c3a671298880",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4b8d1c243e46de8577a4091e917145f52f17b47a74fe36477fb6e095a610e85d"
+    },
+    {
+      "master": "ceremony-dais",
+      "export": "ceremony-dais--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-dais.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "d5f02b2b930a86bf2e1cee8078ff235af10ff1344dd3b1b087347d126c66c531",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "1c77f328cd06c7e9be6d198efdaa6cacc81486188d095c6c188bd961853fc107"
+    },
+    {
+      "master": "ceremony-intervention",
+      "export": "ceremony-intervention--visible.png",
+      "runtime": "art/rovel/cg/ceremony-intervention.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "f04e84b9e964e0b95f85b4477cf7e393032df943beeb45d73f27183189ae7623",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e7540525f3538c7bb0d129a422690b5ebd2a5c4562f4bdab46de7ab834fab1fe"
+    },
+    {
+      "master": "ceremony-intervention",
+      "export": "ceremony-intervention--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-intervention.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "22d477a519389562ba53d62d8c841e206d5073f9575f11d06f6d99ce5d27aedf",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "df7ed2118b8aa49e12c8ecaebadec5bc95d28286c24b3ad804621118b06e4f1b"
+    },
+    {
+      "master": "ceremony-intervention",
+      "export": "ceremony-intervention--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-intervention.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "f04e84b9e964e0b95f85b4477cf7e393032df943beeb45d73f27183189ae7623",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a53c9347a05bbfe481f44f2c6eb3d7ce3fc737092f298a1a358b8971c1d70f1e"
+    },
+    {
+      "master": "ceremony-mantle",
+      "export": "ceremony-mantle--visible.png",
+      "runtime": "art/rovel/cg/ceremony-mantle.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "9d45bc14399bd85347e01d6eaecd44006b491b58a2832098a3e2d45e43dc3bfe",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "d23cd8b9a458939ba98c6e1b371b3f82f56650caf178819884ebcaae8ff15f00"
+    },
+    {
+      "master": "ceremony-mantle",
+      "export": "ceremony-mantle--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-mantle.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "56d292a7c46c39159aa33fd94e9a2869b1f5de7d1764cf47eba3638b56c06d3e",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "95dd092fa76da2a01b5442225a43114023fa410696bb85ea7fe16966d3011400"
+    },
+    {
+      "master": "ceremony-mantle",
+      "export": "ceremony-mantle--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-mantle.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "9d45bc14399bd85347e01d6eaecd44006b491b58a2832098a3e2d45e43dc3bfe",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "39d4275ca899830749c92c084913a71b77f6c67af2d678d97fe668e04e1509df"
+    },
+    {
+      "master": "ceremony-orders",
+      "export": "ceremony-orders--visible.png",
+      "runtime": "art/rovel/cg/ceremony-orders.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "c1ab02809ace42cbcebc740ca7aedd9fc9c3730b3ebfdf7a3e13e33e3cc81949",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "906cfbe96215fa7d3e00a3ee1562ed8a03594dcc7044836190700b686d47f777"
+    },
+    {
+      "master": "ceremony-orders",
+      "export": "ceremony-orders--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-orders.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "cfce92bac05c9d09af77eadaee594ade0ae568cf646b275e38f6b56057408f3a",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "794b941f9c27e57f184a699b7db768b6ce39fc48252a58a9b1816d9f2860fb44"
+    },
+    {
+      "master": "ceremony-orders",
+      "export": "ceremony-orders--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-orders.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "c1ab02809ace42cbcebc740ca7aedd9fc9c3730b3ebfdf7a3e13e33e3cc81949",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "21100072c84988b46396dfdd6e74286e93ada1a41de1d0c4c5790332aed3f233"
+    },
+    {
+      "master": "ceremony-refusal",
+      "export": "ceremony-refusal--visible.png",
+      "runtime": "art/rovel/cg/ceremony-refusal.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "e8d1f4afa43da5668ba691443ef5d7a8b450804250af4374d3894423e70d776d",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2acfd7aa27abfd07b366383e8f1190c1de5538c734bee8a49ae8b70114c470cf"
+    },
+    {
+      "master": "ceremony-refusal",
+      "export": "ceremony-refusal--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-refusal.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "7479e9e9963d53eed1f3f0e46a42ef086eced01386443ce8e51c608fbab6904b",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "9a7ac454c257408f7e9d01156f2cd526b7add014e23d28ce5b5c147abca96506"
+    },
+    {
+      "master": "ceremony-refusal",
+      "export": "ceremony-refusal--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-refusal.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "e8d1f4afa43da5668ba691443ef5d7a8b450804250af4374d3894423e70d776d",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "c8843fa73e2bdfc4bc561f0d36e81d9c718e00379df72410144d8d41bbe486cf"
+    },
+    {
+      "master": "ceremony-refused-chair",
+      "export": "ceremony-refused-chair--visible.png",
+      "runtime": "art/rovel/cg/ceremony-refused-chair.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "441551bf293afa2e756a19349a6bb3ba201fe92651761624e096e1f92add2609",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "caadbab9aed4ca2009dbf264f9b1c0d55cf68d252e252bc679c8774907169753"
+    },
+    {
+      "master": "ceremony-refused-chair",
+      "export": "ceremony-refused-chair--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-refused-chair.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "09927feb2dce2a15c4a229aa8c97c0c4af20c3046bb76b2cda6ac49b8e171d2b",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2e97128d5381d50d6075fdb28d4a7acfc3cd34af8f4d3c5817c3d7b8fe8a54c0"
+    },
+    {
+      "master": "ceremony-refused-chair",
+      "export": "ceremony-refused-chair--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-refused-chair.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "441551bf293afa2e756a19349a6bb3ba201fe92651761624e096e1f92add2609",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e03d38104bf8f65dcaa10b61f9a20d242cc9d44d5413e0055f24f570f088ebe4"
+    },
+    {
+      "master": "ceremony-yield",
+      "export": "ceremony-yield--visible.png",
+      "runtime": "art/rovel/cg/ceremony-yield.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "44ceac5ee6a9dcde8f542891821b9871e9385f2f98e878f14e77ab34d3a0d264",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4eb68cff7dc5b5c00c76582ef498132d2bc9d3da331b123b2d8594cb806c05bd"
+    },
+    {
+      "master": "ceremony-yield",
+      "export": "ceremony-yield--layer-0.png",
+      "runtime": "art/softened/rovel/cg/ceremony-yield.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "d17567c36658db88f0065db5ad881470545d7894cf8a5a8a03bbd4eb2c75ede9",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "35c2b9df64c958bdc84ef8e0e756ab22e5d1b3b091e131be0c08f010fa291fe3"
+    },
+    {
+      "master": "ceremony-yield",
+      "export": "ceremony-yield--layer-1.png",
+      "runtime": "art/rovel/cg/ceremony-yield.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "44ceac5ee6a9dcde8f542891821b9871e9385f2f98e878f14e77ab34d3a0d264",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "63379c6500b040a1e8b4d47ec30c654403331b667b85a9fb9081b67e72b81ae5"
+    },
+    {
+      "master": "iven-attentive",
+      "export": "iven-attentive--visible.png",
+      "runtime": "art/rovel/portraits/iven-attentive-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "e0985651b46bc4372ccbd0bdc63489d818bc6f39c6f1085f7ef6585716eb6d8e",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a54fc5934872acf62cc26649962ac714e3f2be67d3ac62f723ffe920cfec3a19"
+    },
+    {
+      "master": "iven-attentive",
+      "export": "iven-attentive--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/iven-attentive-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "eda280f53ab58a8a80f517529c642b23eaec70d43989f2d41db448c2eb494624",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e4b73118f4093bc019fe1379bdc51cc6f9be64fa73e52342e11d8b8b965635a5"
+    },
+    {
+      "master": "iven-attentive",
+      "export": "iven-attentive--layer-1.png",
+      "runtime": "art/rovel/portraits/iven-attentive-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "e0985651b46bc4372ccbd0bdc63489d818bc6f39c6f1085f7ef6585716eb6d8e",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "0326f053a249d04727c059d9d2e2a213fcfe4c57631e072fe3416d7304b13d7f"
+    },
+    {
+      "master": "iven-attentive",
+      "export": "iven-attentive--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/iven-attentive-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "51782e05499fc28ca42a307f0a7bef71f22bf5d5a9cc151d38a0de5d87d2419e",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "14aa0d17861ea906e872c754fbed76c6f2733e56fd0f6af63b4c393d7e124987"
+    },
+    {
+      "master": "iven-attentive",
+      "export": "iven-attentive--layer-3.png",
+      "runtime": "art/rovel/portraits/iven-attentive-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "182481d2373aab1a59dcaff6ebe474bebf9df87b26524733891140c25cd7cb3c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "25121c6e3cf1adcdf09adb3df7af890e7dcf0fdd3781f20575603af09125cd45"
+    },
+    {
+      "master": "iven-concerned",
+      "export": "iven-concerned--visible.png",
+      "runtime": "art/rovel/portraits/iven-concerned-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "770e48bc367c95245a991488d9956b2c2072467f555d5a29d5c9c3743b0c56f1",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a51d28d9d4c6d868ee164a32e2ef47885e725f51e7c462538069254daed2bdc0"
+    },
+    {
+      "master": "iven-concerned",
+      "export": "iven-concerned--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/iven-concerned-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "688fce8c3429933950d9c7ac260b99c9d54a299de449dd63dc7daaf29b3b3c87",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6a2df2c3319d85e2dcea8d03da2622294aa5f901c9b94cdfe9d00c52317f9f35"
+    },
+    {
+      "master": "iven-concerned",
+      "export": "iven-concerned--layer-1.png",
+      "runtime": "art/rovel/portraits/iven-concerned-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "770e48bc367c95245a991488d9956b2c2072467f555d5a29d5c9c3743b0c56f1",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "25884e6b863e89661f850f7e3413b3efcebd297716d9a20d44f5d85cd047499c"
+    },
+    {
+      "master": "iven-concerned",
+      "export": "iven-concerned--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/iven-concerned-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "397280342a96aa61d02af1af5704b1263926fa107c6a1631941ca7b3320de745",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "90e5a41c4120f16da69269a7f010850d912caf736295f2f0c37457c3b33c50bb"
+    },
+    {
+      "master": "iven-concerned",
+      "export": "iven-concerned--layer-3.png",
+      "runtime": "art/rovel/portraits/iven-concerned-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "b3017fbe02c873ddfe2a1408ac2440045485c15810f30ba945f8ebbe11e1533e",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "66e7e654fa215e079fcdbdf9961c9860d0082bc36d6bf7bde3731bfc1e33a34d"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--visible.png",
+      "runtime": "art/rovel/portraits/mara-controlled-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "e627500f4bd2503996ead350065be8edce6480bc47f63256c912ee5d93b735b0",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6092a5cb73bb3eb27ad6ed4fb68e7a8036c90400e9be6904e1b31afc31065272"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/mara-controlled-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "530746c761ffa767c7f76392e90a72d5a72accda1c67992f3a231845d753a5b8",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "db5fe43adc99fc36a681ae7223cabe162eb3a663309f21ef862b7ee0abe85e5f"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-1.png",
+      "runtime": "art/rovel/portraits/mara-controlled-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "e627500f4bd2503996ead350065be8edce6480bc47f63256c912ee5d93b735b0",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "1fc70cd7896ad28500e815b29a655efb3cc4632387fd2c533a4ecd70f6513cd4"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/mara-controlled-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened night - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "06eb08d695a38e8fc8ca0377b97bfb807367e40133bcb07646a54a2d5673e09c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "dc956e7dc7fceea6bf77a11287d700c02c9074eaed70e5d32adb9ec80adc43cd"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-3.png",
+      "runtime": "art/rovel/portraits/mara-controlled-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense night - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "21b7c846691845eadc019d977c21e898ce6cd7163a8a7485ef1f3734a7ed4d3d",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4f63454f683939be530b1f6b142b8787ed702e40ba2549a648c4dfbda8fd1641"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/mara-controlled-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "dd60533f92bd4ffd7b9ab0f70f0d0e88d2cf99e8d83c2bc1475db582853d1fbb",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "f03de7ff48d03681c8e14208427e569204b9804a9ea9ef3450f4916476ce1f31"
+    },
+    {
+      "master": "mara-controlled",
+      "export": "mara-controlled--layer-5.png",
+      "runtime": "art/rovel/portraits/mara-controlled-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "f9b9b2c9b7932a3e910b9c991de1d3d99a6d8a527cc5f558bb29c8036a0a0778",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "52360f2b74a70735747ba6c1b2e627accfa965c7d618e0c4d988f3f3d4648618"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--visible.png",
+      "runtime": "art/rovel/portraits/mara-uneasy-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "6d2073e817b79e78d9f042a8d3c7ab530443ffa0e147f59f121854d251438ab6",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3dc915a080ab130cb55a8f5c1551910f55a16bf258d047cee1e92e06eec6611f"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/mara-uneasy-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "c36b6f1cb7d8ce9dae6bcae8042566b27e3d12d3160b886c0da47faaaa2fa39d",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "01ba454745742e21a3e280accb55960d46119d43c6364718e2bf0e6d0311c90e"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-1.png",
+      "runtime": "art/rovel/portraits/mara-uneasy-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "6d2073e817b79e78d9f042a8d3c7ab530443ffa0e147f59f121854d251438ab6",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6fa510bdaadc05993d5e7e8ee6d4378aac610b6c2ea9c5d5cb92eff3fa2d0a7f"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/mara-uneasy-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened night - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "bbee006840cbfc9d37938462fd0f8eb8119ec723918f0174be59bba06a3e4b96",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e14fa1a16b31f981ba8dbf449623bad597734d618fd6e0a315bf43d043690202"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-3.png",
+      "runtime": "art/rovel/portraits/mara-uneasy-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense night - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "1f601180638957cf377460dda0d3a11c2bea731c93e98d52255bc186d5728ee6",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3fb483caf45a3215a98f28c454283b6c92962dda09da2e533d24d025cd26d2c2"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/mara-uneasy-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "51c3d4c7cfb1410ee5fccf285f3d7baa43252765bc8f2d0836c16d6f2f446e5d",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "b81350d6926c7d840d04b9d9527b33b1f94ff1e92465b8b9d4dfe1c6065511f4"
+    },
+    {
+      "master": "mara-uneasy",
+      "export": "mara-uneasy--layer-5.png",
+      "runtime": "art/rovel/portraits/mara-uneasy-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "runtime_sha256": "b6f75da3aec5e059bc79e8b6b6b667d3b308e036c181c7bd617708ec51b56571",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "afd14f562ff0b23e0a844f3bd2cf23cd7f3728b8c5a22a6682270890803a008e"
+    },
+    {
+      "master": "messenger",
+      "export": "messenger--visible.png",
+      "runtime": "art/rovel/portraits/messenger-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "65a6599f377f3fd4c8a1b32a28824b07f799a73f727ee0dbb675142c8f57a738",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "14297f317e92d894a0ab462688b9cc47a7ba3507e164ae818045bf205119ade8"
+    },
+    {
+      "master": "messenger",
+      "export": "messenger--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/messenger-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "5f90c34a634319b8607435550f019d6345d72801387d16c328d94347e02fc4e1",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4ce4e6eb0b307c70a5427f9a25282c5358f2a17f81598e9f65dba866a76f9f78"
+    },
+    {
+      "master": "messenger",
+      "export": "messenger--layer-1.png",
+      "runtime": "art/rovel/portraits/messenger-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "65a6599f377f3fd4c8a1b32a28824b07f799a73f727ee0dbb675142c8f57a738",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "809e7e126031ac5935b3c906e6c8306fdb76ad03783c06f84f1771841aaa5b21"
+    },
+    {
+      "master": "mother",
+      "export": "mother--visible.png",
+      "runtime": "art/rovel/portraits/mother-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "693615bda524505c7ed2d5ce066c81493154eb7a1b7a515528ca1e8e48ea2f15",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "0bb2f2619c027e30be85e2e5342f51d71efd585b41bc598a1d533db2d68fa366"
+    },
+    {
+      "master": "mother",
+      "export": "mother--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/mother-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "8c7224efffaaf2581bd0af0d67002038a9974697e6b0da1b1ec3f3c548ad5ae4",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "7dcdb232fb82df397065830921ebd9294ec65f79c1b3d3c6cc2e651fdefe4363"
+    },
+    {
+      "master": "mother",
+      "export": "mother--layer-1.png",
+      "runtime": "art/rovel/portraits/mother-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "693615bda524505c7ed2d5ce066c81493154eb7a1b7a515528ca1e8e48ea2f15",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "88dcac5a8ff941f552edd0b7d72d1cd0635ddce0a28799481371196349c35970"
+    },
+    {
+      "master": "olan",
+      "export": "olan--visible.png",
+      "runtime": "art/rovel/portraits/olan-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "490ca73bfdcb928c9f6b4682d60fbcc6c3e25ba79d0560265aa5ff864710d45c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a43f56d8fcf9c8249f3a1f6a88fda4e379fc3cc7fc939d5648d357cbec2e4078"
+    },
+    {
+      "master": "olan",
+      "export": "olan--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/olan-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "9a94175ab63c5c48acd6e26769eb745c93e93fdf631c8a01cade9c871e4033cd",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6d993cc5377d0b607dbfcffaa4d56cdce9161b76cc1821d0be0798150e8eac7d"
+    },
+    {
+      "master": "olan",
+      "export": "olan--layer-1.png",
+      "runtime": "art/rovel/portraits/olan-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "490ca73bfdcb928c9f6b4682d60fbcc6c3e25ba79d0560265aa5ff864710d45c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "25eab0e3326210ad42f3fe533ac4884d9e295f920c0f4b5e429fed2b62ec38d0"
+    },
+    {
+      "master": "olan",
+      "export": "olan--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/olan-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "e9ffa507ff784c3303f5510eaab184da7fd0391c4c1b3a016fff16e6e16697ad",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6aea89d04700d123d4b91a70f71afa94532633eb423353652aa09e62c893e88f"
+    },
+    {
+      "master": "olan",
+      "export": "olan--layer-3.png",
+      "runtime": "art/rovel/portraits/olan-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "runtime_sha256": "279371b29b898ca6919f949893bc8faadc7891de8ea1234a602d6857f20a286e",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e2d1ce26d782217248321b3f42f3ba81b977e30a8032bd6d35dd74128ea645f9"
+    },
+    {
+      "master": "orra",
+      "export": "orra--visible.png",
+      "runtime": "art/rovel/portraits/orra-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "e0c5bbeb1be6d2f9e773495ea6be99dbda7c7c37947e11523cec5a0cb1062f00",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "cb2b2dc3ecbf2b7425ec28cb180d67715a95f090326306fff051fc77a0a2e98c"
+    },
+    {
+      "master": "orra",
+      "export": "orra--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/orra-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "8da064267330dba698879e47c9d72769658c9f29e017beeffbcebdb0bfc7ed07",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a2d4715f080c01b8b225ee0dfe0e119886fc5f4a7f099d9935cac43c56aebbac"
+    },
+    {
+      "master": "orra",
+      "export": "orra--layer-1.png",
+      "runtime": "art/rovel/portraits/orra-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "e0c5bbeb1be6d2f9e773495ea6be99dbda7c7c37947e11523cec5a0cb1062f00",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "c814378e3852b2e3bede680cbd948c2aaaaeabd1227134fd523e31a19365560f"
+    },
+    {
+      "master": "petitioner",
+      "export": "petitioner--visible.png",
+      "runtime": "art/rovel/portraits/petitioner-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "d41b17d2c6b30af6150ed2199ecc9e482ff8c35c0fe7858ef540712b94af255b",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "95180bea421892e49e4ba1f426fa6ff5ccbbb30989c8befba0246e71cc40a3b7"
+    },
+    {
+      "master": "petitioner",
+      "export": "petitioner--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/petitioner-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "a71d5003c9b84911fa098725d5428c251d2936c69b6b2b125eab723fda49a381",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "8921dd7084154ff72899f83431d7bc03863fcac6976d84d60789817d0c8d1db5"
+    },
+    {
+      "master": "petitioner",
+      "export": "petitioner--layer-1.png",
+      "runtime": "art/rovel/portraits/petitioner-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "d41b17d2c6b30af6150ed2199ecc9e482ff8c35c0fe7858ef540712b94af255b",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4e1dcec344ec17f3dbb61d03f2a0338e8d60fca29f8c5afeac084114d494ab38"
+    },
+    {
+      "master": "priest",
+      "export": "priest--visible.png",
+      "runtime": "art/rovel/portraits/priest-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense ordinary - editable scene grade",
+      "runtime_sha256": "55e3a3910daf8578b8087b9feb75d3c105940bda5385ac47db7bad9c64599a83",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "63754988d652dcb8685adcf0af2b207a6e7e6a8360e462c7767a3bc47928eb9c"
+    },
+    {
+      "master": "priest",
+      "export": "priest--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/priest-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "d5d1c20bc7f26513dce692f20d29094741efd0ac77222dc304b2884631e3fe87",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "b140f0a8fb406f38c05d4e82346c45a17f8f1d71534835d43de5e6e07f6f80bf"
+    },
+    {
+      "master": "priest",
+      "export": "priest--layer-1.png",
+      "runtime": "art/rovel/portraits/priest-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "55e3a3910daf8578b8087b9feb75d3c105940bda5385ac47db7bad9c64599a83",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "c76ff6b8ef0fd48963c68db0dd1fe34fb117b60a932b65ef051a2596b23abf18"
+    },
+    {
+      "master": "purification-cleared-repair",
+      "export": "purification-cleared-repair--visible.png",
+      "runtime": "art/opening/cg/purification-cleared.png",
+      "kind": "saved default",
+      "layer": "01 INTENSE - default - enable only this grade",
+      "runtime_sha256": "7621a875a687713a64cab75ef1563763a2e66069fb0c221d5bfbaf6f30399a04",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "57c6faf4e7dbded99313b0f3043c4f319eea5e3d23a58c43323d9d8a1b0de209"
+    },
+    {
+      "master": "purification-cleared-repair",
+      "export": "purification-cleared-repair--layer-0.png",
+      "runtime": "art/opening/cg/purification-cleared.png",
+      "kind": "grade/variant",
+      "layer": "01 INTENSE - default - enable only this grade",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "7621a875a687713a64cab75ef1563763a2e66069fb0c221d5bfbaf6f30399a04",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "044c3aaadfc70b5fe2f50e7877b507f32e69fd1447bcd4c177275255a223e1b9"
+    },
+    {
+      "master": "purification-cleared-repair",
+      "export": "purification-cleared-repair--layer-1.png",
+      "runtime": "art/softened/opening/cg/purification-cleared.png",
+      "kind": "grade/variant",
+      "layer": "02 SOFTENED - enable only this grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "ab9c0faf11aab36b3b3bbc93b4eacf1ed596f2b8ffee6cba4313bdf81af8a1bd",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6431d7338eef53c4a3d6273ac10710e6bd8d07c788200f86471a2f0dfd8fd774"
+    },
+    {
+      "master": "reading-surface",
+      "export": "reading-surface--visible.png",
+      "runtime": "art/rovel/ui/reading-surface.png",
+      "kind": "saved default",
+      "layer": "01 Remove stray alpha; preserve all four crafted edges",
+      "runtime_sha256": "7ab23518406c2efe4afcefbe215387e9b5c9440d308f355f38af9a79fcd51429",
+      "size": [
+        1600,
+        438
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "38a27669c860aaa372bf40ebc3844203edb471b50d5a73fffea8c7ba1e4d6d78"
+    },
+    {
+      "master": "reading-surface",
+      "export": "reading-surface--layer-0.png",
+      "runtime": "art/rovel/ui/quiet-surface.png",
+      "kind": "alternate layer",
+      "layer": "02 Quiet-panel texture repair, complete border retained",
+      "index": 0,
+      "grade_indices": [],
+      "runtime_sha256": "5e3b083fd95a6da6a1427c697cdb91b0f1f7e1c2edf762b8bbd7dcea95dfddb8",
+      "size": [
+        1600,
+        438
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e2cdcc8f07a90dcfbd34f9f953442c8c7547a0631715dd0c53fcdd73d7f5efbe"
+    },
+    {
+      "master": "senn-assuring",
+      "export": "senn-assuring--visible.png",
+      "runtime": "art/rovel/portraits/senn-assuring-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "099925c9cd1605ac67c27128db1e322d2bf871974b39235a024bcd2a4687ee4c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a83768a646bb7058a4c9df88640032934d309fd080ed493179828bce10bba3c7"
+    },
+    {
+      "master": "senn-assuring",
+      "export": "senn-assuring--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/senn-assuring-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "14d26578ab888e993378482010d29c60c7b4e6bfcc4a8a13c57a32bc42696ebb",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "62d900854483d1855e4ccc7a3ede96daee79f735895b223e796e79a8b77f6669"
+    },
+    {
+      "master": "senn-assuring",
+      "export": "senn-assuring--layer-1.png",
+      "runtime": "art/rovel/portraits/senn-assuring-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "099925c9cd1605ac67c27128db1e322d2bf871974b39235a024bcd2a4687ee4c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "557f258b9f338e9b4ebb45323519866df3f69d80736b3d4d7d0d1f7c8d076689"
+    },
+    {
+      "master": "senn-evasive",
+      "export": "senn-evasive--visible.png",
+      "runtime": "art/rovel/portraits/senn-evasive-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "99d493d3abea2a063a78362b2b7d71e4c03261fb725c4b5fd1db546d9ae2948f",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "40981da3eb887a3c70a6d96fd103850b561a36607ccbaf2ff01d37672268a373"
+    },
+    {
+      "master": "senn-evasive",
+      "export": "senn-evasive--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/senn-evasive-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "afd2b0c946d788088c855f095365272789e3cc484a7face5e68ccdfbc8aba172",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e337c3e75121bd1b065de0969c4bf030e117a0d5ecd61a0115e93859550c3fef"
+    },
+    {
+      "master": "senn-evasive",
+      "export": "senn-evasive--layer-1.png",
+      "runtime": "art/rovel/portraits/senn-evasive-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "99d493d3abea2a063a78362b2b7d71e4c03261fb725c4b5fd1db546d9ae2948f",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a24b86daa854c95d4656e5d36709fa75423261ffef3a3863172170894345014e"
+    },
+    {
+      "master": "senn-listening",
+      "export": "senn-listening--visible.png",
+      "runtime": "art/rovel/portraits/senn-listening-bright.png",
+      "kind": "saved default",
+      "layer": "Intense bright - editable scene grade",
+      "runtime_sha256": "577b063bbbb664786f07341bc731c0cf88818f4f9886031a794aa4afa957c904",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a58f607d0b4ff19cbbd38362be6a0087c3627fff2a15bf9bdf821bc9dafe8feb"
+    },
+    {
+      "master": "senn-listening",
+      "export": "senn-listening--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/senn-listening-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened bright - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "b0f86e18d13722f8ded6ee18af8499284c11187bfc4ad298f83aff8f72c7aeaa",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "46fd1edef81c214091ca2ae1f82938a7bba3bbac8db9f94af7d0fdee86ccb821"
+    },
+    {
+      "master": "senn-listening",
+      "export": "senn-listening--layer-1.png",
+      "runtime": "art/rovel/portraits/senn-listening-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense bright - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "577b063bbbb664786f07341bc731c0cf88818f4f9886031a794aa4afa957c904",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        254
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "47b35ffdc1088169676fee115097fe07daa6e854af192bb67dd8c6036e571ad9"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--visible.png",
+      "runtime": "art/rovel/portraits/tessa-listening-formal-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "runtime_sha256": "d7a6b880cc1bf0da1ba8e84194e72084afab271e8c2a74cf81c5e0deac83fe00",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "42d662986fd3e5fe6bd632522cc04eb688bd4e10f8ec4cbd5fb3fb214b6b5823"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "363beb7c17ceb12906781e1aa3ca661b350a0b88ddff4a4a5ea485caa89dd458",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "593b8d2f719c798310e555607b189baaf090e4392ef8adc4115783957de0d5a1"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-1.png",
+      "runtime": "art/rovel/portraits/tessa-listening-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "d7a6b880cc1bf0da1ba8e84194e72084afab271e8c2a74cf81c5e0deac83fe00",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "42560a8c0a60ee3b83cb96dcd823336490253a2986a50b8d6198a502b8d5855a"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "41f8b9593e0e73ec6c7f691cafb4ba2c86a95296f65956cde6e5f7fc201de339",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "393a04bd6b728afdfead44864346048cb5d02236f4588dca6051bf9883451775"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-3.png",
+      "runtime": "art/rovel/portraits/tessa-listening-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "01b315f5181cc2abd0baa154014117eb0670a6b4f571697fe8db338f13f3bd43",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "ff66476542223e303529d622c1c55cf5d0eac2fe35dd3ea4bcf77877315b52f2"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened working-ordinary - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "9fba597b9026f23a79bc2f3a74b3f7cd2939b5692c745b0aed0c2495b762f130",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "30335d49e864ce31822def82281ed1ce54cf5d5e48a3645000dd2f13474be47c"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-5.png",
+      "runtime": "art/rovel/portraits/tessa-listening-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense working-ordinary - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "3ae50591284ff29f78dd1f2931ece1167ec193edae584dcfe620cfb85d6f98e4",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e0b60ef93ef279f3f19437d520744eeed784a5bfd6a147d8abec93a11b161cc6"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-6.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-night - from same source",
+      "index": 6,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "a941a4145c70c622cdd404a0e1897146d1c71c59f077439ed1890012cd4a062f",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "90db3d98c48fce4fd7a09e9f5eb284ac46913ac2fda13cbd8d593173314b19c4"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-7.png",
+      "runtime": "art/rovel/portraits/tessa-listening-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-night - editable scene grade",
+      "index": 7,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "721a2f831db5afe07f4bb591f6aca53f05a26f4559851c7bbf0ca2c814490175",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "35a3f39cddc357c3e20871559e27f1a9693cd43fd8600dec3b6757bc17688f3a"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-8.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-cloak-night - from same source",
+      "index": 8,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "54e27b797aeb9262c6e4bdf26a58a63cac0613a4de0b5fcbe54011d276433907",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3465a6ba177813850a2cdb3acaad94897133a9c98782d9514c6f5e6265902edb"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-9.png",
+      "runtime": "art/rovel/portraits/tessa-listening-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-cloak-night - editable scene grade",
+      "index": 9,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "9e0d27a5a70848a11455f0f9542c9a538d6d38adbd0e7b7a7c54187a2b868bf7",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "f3641826e79ca61079596b3412f0a397544c360575091e1cf4b3fdf9bef3145e"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-10.png",
+      "runtime": "art/softened/rovel/portraits/tessa-listening-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-bright - from same source",
+      "index": 10,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "df014c1979b09e38a760bc586888b2a3ef45c9d63036d70cd7a8425aa2fa9b19",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "ca5845828b9124db940b5f0cf4bd18a2e5566b9e4e9e2071ea7baba37a360caf"
+    },
+    {
+      "master": "tessa-listening",
+      "export": "tessa-listening--layer-11.png",
+      "runtime": "art/rovel/portraits/tessa-listening-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-bright - editable scene grade",
+      "index": 11,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "00c9bef21e5582e2acd1749c6c3c93a026dfce4b9ea5aa63d5a55303bdcfa147",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "15c78d1414c2f4565870567b3c9940a5032bb5760460b1770b6fbceba76d95c0"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--visible.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-formal-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "runtime_sha256": "933896d422497513cca5f50e6c0220bf85d49324877639d3c5ec27a4f9865b0a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "75996885643d2a34ae133a6d1441ec487ebe8122a06c36ae3f039083e3a5e3e0"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "70a8359e48584239a633f4dd33c1125a8e7db4728a163495fa66f25b27d0facc",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "f9147ec9a62c3e06ed8c49b8279e45c5e424d268dc9e0e94745a56139e1a6181"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-1.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "933896d422497513cca5f50e6c0220bf85d49324877639d3c5ec27a4f9865b0a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e6cbf70172e1b12edec42bbb5b8902e74512e1e0fc446fab00c1db066d2dae09"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "8928839e3f218731329d71a307d3034e714adf0465daf9d2b505876bfa8d9631",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "05c07511cff263e80eb31840e89bf9332b80d1e9036b0df2ce67258dbfd77bc0"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-3.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "1730e8353ea3cac2d459eaf665d759cdf9966f6ef2be03e768f76f2b0c6fbc36",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "174a7514f5adcf0bb660426cd74ea7340f0a3baf80ba2d67bb9a4ca4b4363320"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened working-ordinary - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "3d974597ab5f5135862d8409b4be44a9dec5257c510d271f99be343c3ededf7b",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "7b4aeb736b41a8339434c215e7b31573d328a0aaf9a799a9cf42b6bdaca21b4c"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-5.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense working-ordinary - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "6f7dda56b948b094c7a881d20a6c05c5bb91e91e77954d6d059ebda3bc58b9ef",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "61b8c8506a83514c459c41c59ce820f829ab677ba7c885f0166c5201205cb90a"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-6.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-night - from same source",
+      "index": 6,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "2f7c30d51be87f1d43559ece7e1a5e64e4370b72330f30a8ee498ad84c1fb4e5",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "be533c2fdad5b0e9110c915a6e5defa87c815cf199bf657b00c9b0619b9bd718"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-7.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-night - editable scene grade",
+      "index": 7,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "9ad8af4877c896b1bdc485ecf428d5b51204961c23ee6c90a026c8e60fe52f54",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "e1dbcee307121845e3a28123e3bd079f2e396766ebe29ecde54aab318f7d8590"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-8.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-cloak-night - from same source",
+      "index": 8,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "a0e0e27e02477d410b4111ba7ba659a391dc976c18997a65085e53785c777160",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "ed57537b0ab8c8706530aac4840054578f035eb3be29e0f7f03efe6c3b0518de"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-9.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-cloak-night - editable scene grade",
+      "index": 9,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "d8109d9d5c72db334f3eebdac69d5601002dfbf86edc0e7a86aea5633c8c7fee",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "aef74dabc3ea497bb8be76eeff076a1151a32e26db5b253739718efe61b26629"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-10.png",
+      "runtime": "art/softened/rovel/portraits/tessa-resolute-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-bright - from same source",
+      "index": 10,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "da672859f4eeac3973aad042ef8dfefffd7e0e91c2e401e7a3c20453f255f63a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "121805ca0f0ffa761f24369f132b5a119a3216c1fd12bef65d531320f2b0588c"
+    },
+    {
+      "master": "tessa-resolute",
+      "export": "tessa-resolute--layer-11.png",
+      "runtime": "art/rovel/portraits/tessa-resolute-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-bright - editable scene grade",
+      "index": 11,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "ef1eba73126a1e3f9d7d04277482bdf2ccb8f03dae0b85ef89fe76ce6657348b",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3feb08600498d4ac622bdfa7300c6c5a43de5a5c8895cf69bb010add88efedf1"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--visible.png",
+      "runtime": "art/rovel/portraits/tessa-startled-formal-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "runtime_sha256": "678af3ba52b710d0cf8f3771c809fd0d153d13f67a8b89625e69201e2d41df9a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2e97466c60390861dbec7886d13fbe0f74c2617ccab90204d33f1b45eb75daa9"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "f9a6b108f14440bea13dd177feb722e5be084b908f35b3db676713045bbae739",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "fb59976f5a021214b1978e67e987ba468ae5db0ff6298b2b8244e92c045aee19"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-1.png",
+      "runtime": "art/rovel/portraits/tessa-startled-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "678af3ba52b710d0cf8f3771c809fd0d153d13f67a8b89625e69201e2d41df9a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "cf689a729f6e53527483aa81be5438c31f14fe245b7b13c1ffaee58d2e1d8fc6"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "c8f80e117049c0389c1c86845d77d7ea7107aae6b4f9242b57ab4674b3dde3a5",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "4b20a339c213f4043ac45727266cfd3d5418f54b9524a8907891b99698b80a76"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-3.png",
+      "runtime": "art/rovel/portraits/tessa-startled-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "bb41fcb60c452fe33b95dab98be8eea6e041716cc1aac008a1f8947e5eb135e9",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "90b6c66ee6ec8240a2eabcd299694109016b5e89cef78821d3adf35a9072bdc5"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened working-ordinary - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "2c588e946c4d88177019778cf655ab59cba518244f28f7ded93e9721c80967d0",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "d2f9e0d4e277c2e97d8513c89f7c2dc3dbfaab5e3ce9dacb3c2984fa185e8286"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-5.png",
+      "runtime": "art/rovel/portraits/tessa-startled-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense working-ordinary - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "026784da86e67a51009f46324d0163ba613d32a3a727e33a93a13cedd9661493",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3329b601342a4870e5a158ae048d9e1a73185b8237226dc3927b2912b6c3a6bc"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-6.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-night - from same source",
+      "index": 6,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "17b833d66852641985f324fed03e595ec8f9e389d6e31c67d12905cdd978fd2a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "d4ff39b1e7d2ff6ffe182b58dcc9896160d7a1a2c1893ebf061ac1c5e04d6662"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-7.png",
+      "runtime": "art/rovel/portraits/tessa-startled-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-night - editable scene grade",
+      "index": 7,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "3ee6cda08ea9caed2ef34c2fb4e21036e48e65868823fa072ed5b18bb5a228a0",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "82e1cdd3935f4ce52ed6b1c99b3135fd032df230f62b46584956f83858b41d06"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-8.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-cloak-night - from same source",
+      "index": 8,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "8e4e41cf7063a85c99955626bab12cf02f30c277d1155997ae0649600268c498",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "6424dd1fb28c3aadc651b646d246821a548b3bbbcd674b2d339533c48fa454e7"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-9.png",
+      "runtime": "art/rovel/portraits/tessa-startled-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-cloak-night - editable scene grade",
+      "index": 9,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "0e3501b3284331d7871b57e1990c6f9809e911a7185c817ae3d96c8674253fd7",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "9fafd08e13af100cdd4af5d82008387da65dd64dbc3322cf5451f1ade22db5cc"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-10.png",
+      "runtime": "art/softened/rovel/portraits/tessa-startled-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-bright - from same source",
+      "index": 10,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "1b503919ee5f32d21fabee2cc83e4e346c42afa792aad2b7a027f586a53a30fb",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "421358e12a14d02f4e9e37fadc518b69bacf3df974051e0dd87d6b1e49c0ea9f"
+    },
+    {
+      "master": "tessa-startled",
+      "export": "tessa-startled--layer-11.png",
+      "runtime": "art/rovel/portraits/tessa-startled-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-bright - editable scene grade",
+      "index": 11,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "a9bea6259f4c8b104eb269b774ac81e6f2d88656e1ad1970c4450cff0de4b2bc",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2fe327b7cb436419fa622ea7a4f33253b0202717cb90b6804dd9c26caa96915b"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--visible.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-formal-ordinary.png",
+      "kind": "saved default",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "runtime_sha256": "c6466083d92458b40b47ad7741d624fbfca00f171d8ff6c5298f84c549835f02",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "3184c01519536ac4382e3b69edc6cf71801bb25e7f00fce365a9f069491a0b99"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-0.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-ordinary - from same source",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "ab1e6faa362020719e9466b15cdf829191caab5c0400a18531d66d9e6d4f22cc",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "c00176b3051f469adf7499e4661dfc7d2768ed71cbbcb5f06b98ba8213369c71"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-1.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-formal-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-ordinary - editable scene grade",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "c6466083d92458b40b47ad7741d624fbfca00f171d8ff6c5298f84c549835f02",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "ea14651b85f46fd8decdaba6c4bfc7ce8352d8a6f135dde74de78a7358b84fab"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-2.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened formal-bright - from same source",
+      "index": 2,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "f8f573be0a1049a710f5b1845d504f7db529ead0783f10972df3521d82590d30",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "68b10cafccf7f1194c3fefb6283686e4793209f5fad9e41ad897c5d2ac677a9c"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-3.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-formal-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense formal-bright - editable scene grade",
+      "index": 3,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "15324dcd31715ee15381fd9856dfefdba9f0ec02c073a24d22c2c7ddfaac698b",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "eb02185e61b1165637fec54cd9217b60941dba6353938d8d01d9c1c205b58c53"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-4.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Softened working-ordinary - from same source",
+      "index": 4,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "4bf42829e729bebdab73f78083da62ca8a8475d6d9227c7d502f17267d100ba8",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "a3eb511d78660e4758b564b496b3d5a4d0fa579dc1f9a79ff98ab046f937c3c9"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-5.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-working-ordinary.png",
+      "kind": "grade/variant",
+      "layer": "Intense working-ordinary - editable scene grade",
+      "index": 5,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "4b62ff01977a779bcdeb54de065afa75e6530368d74a55edaa9f9e6c977eca18",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2ef214402099ae000df4b1f4520c6b1a6a8b13db02c0cb6de9302ef02110ca96"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-6.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-night - from same source",
+      "index": 6,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "3ed92239d1df4395b9ea59f69da6e39e64ff33f15e5d3cd9750e12b575fdec20",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "02c45c140c53160d26c16b5985723a11153e26ba9f8578cf052503bb75865734"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-7.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-arrival-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-night - editable scene grade",
+      "index": 7,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "43224c96ebfb77fe6b17c068b9af07e1c9bcfd761c92c7fe2787bcfdca3e71da",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "aa8262bf3a51fcfa72a89ae6df992c93ba1a77214c80379131bcdd62843e187c"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-8.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-cloak-night - from same source",
+      "index": 8,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "79895fa6af425549565830cb81bbbd90869d7b608baadda9dde1dbe8145fa80a",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "aae987179d204aa578808e8a4e2c1e11b3215e969e45d620134137564929e6d2"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-9.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-arrival-cloak-night.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-cloak-night - editable scene grade",
+      "index": 9,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "d818ec790c4f0f4c42475efba90b8640bc6030c632c1826382c56f7866eaad0c",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "c5b02019a57271bf3717a7af657a06182d9fac19fc560836e9e0c7ea2d3824f6"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-10.png",
+      "runtime": "art/softened/rovel/portraits/tessa-wounded-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Softened arrival-bright - from same source",
+      "index": 10,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "c60a321e723652e864079266993f5809565e349000dbeb2629ce9e2bfb4d6660",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "542eb554e0bd9fda06b5fcf4d2285454f3097b1f84ac2fadf607f928b474a937"
+    },
+    {
+      "master": "tessa-wounded",
+      "export": "tessa-wounded--layer-11.png",
+      "runtime": "art/rovel/portraits/tessa-wounded-arrival-bright.png",
+      "kind": "grade/variant",
+      "layer": "Intense arrival-bright - editable scene grade",
+      "index": 11,
+      "grade_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "runtime_sha256": "aef62911edd106f3a2e747ce345004b6a979decc9df0b839f284ee2f5591feba",
+      "size": [
+        512,
+        512
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "2f94320345feff903f36f67bea8eb6cb7b20c282d4f701d39cacdce89f213117"
+    },
+    {
+      "master": "window-packing",
+      "export": "window-packing--visible.png",
+      "runtime": "art/rovel/cg/window-packing.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "e56e7236de3fc60a264809b96d099a7cf3567cedb35a93773771d63c21e9b511",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "7eeb69d754d7906af64b3f257c147d14e23c5ee8e3446dd6aa7b288e9fc485dc"
+    },
+    {
+      "master": "window-packing",
+      "export": "window-packing--layer-0.png",
+      "runtime": "art/softened/rovel/cg/window-packing.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "c680d48b3cbf3bf0b13e73c11c6805aeb37bb9046fa58e027102dd49f36afd0c",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "ab699e869611c031f130ceb56f9cee31809586378be68e38b0b8336d4185dd35"
+    },
+    {
+      "master": "window-packing",
+      "export": "window-packing--layer-1.png",
+      "runtime": "art/rovel/cg/window-packing.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "e56e7236de3fc60a264809b96d099a7cf3567cedb35a93773771d63c21e9b511",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "49e35316ab4fa9d9d3843303c0921536296ab6ebfe99a46e5fb37a5575c1706a"
+    },
+    {
+      "master": "window-pause",
+      "export": "window-pause--visible.png",
+      "runtime": "art/rovel/cg/window-pause.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "0a52d3f9fef4bcd39606064656fdd771b6d01020b434ab9c0238b839cc9aa71c",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "949d06ee3c0bd1ec840a44e804fa7860fb4587a38af0f2344c0c0313c4bea9c0"
+    },
+    {
+      "master": "window-pause",
+      "export": "window-pause--layer-0.png",
+      "runtime": "art/softened/rovel/cg/window-pause.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "4cc463567d41efac1344e20e9d187f1ed40e1747363dcb9aae6466a42b3b1d8d",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "986d8508f1c7b92c46268309c7bc302e8db89e9d22214694abbe1fa12796ffb9"
+    },
+    {
+      "master": "window-pause",
+      "export": "window-pause--layer-1.png",
+      "runtime": "art/rovel/cg/window-pause.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "0a52d3f9fef4bcd39606064656fdd771b6d01020b434ab9c0238b839cc9aa71c",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "f52ec9270b5ff6e43111bef4e4d8817ace5551857473478f16b7ac6bd5f63284"
+    },
+    {
+      "master": "window-together",
+      "export": "window-together--visible.png",
+      "runtime": "art/rovel/cg/window-together.png",
+      "kind": "saved default",
+      "layer": "01 Intense, shared environmental exposure",
+      "runtime_sha256": "6cbb5d66e973b265e9b122d7925b722f96c1acd67515dba4e3c861fad778ff21",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "40569002f23ec227fcf04e441716a19316e126669c5a08c1666d040df6ca3a94"
+    },
+    {
+      "master": "window-together",
+      "export": "window-together--layer-0.png",
+      "runtime": "art/softened/rovel/cg/window-together.png",
+      "kind": "grade/variant",
+      "layer": "02 Softened, same corrected scene",
+      "index": 0,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "83f209f7e531764b2a3a6c553bbd03d04e365ea037a6dccbf2a0f4cd53063dea",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "f82892db6fd909e45027c642461c8cf5d5146a7f44718c39e590d47393d6f504"
+    },
+    {
+      "master": "window-together",
+      "export": "window-together--layer-1.png",
+      "runtime": "art/rovel/cg/window-together.png",
+      "kind": "grade/variant",
+      "layer": "01 Intense, shared environmental exposure",
+      "index": 1,
+      "grade_indices": [
+        0,
+        1
+      ],
+      "runtime_sha256": "6cbb5d66e973b265e9b122d7925b722f96c1acd67515dba4e3c861fad778ff21",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "changed_rgba_pixels": 0,
+      "exact_match": true,
+      "export_sha256": "0cff2d1d68dc45d4e48c8f0c283cc72deac949de1b08d8ca58a37e10f9bcb10e"
+    }
+  ]
+}

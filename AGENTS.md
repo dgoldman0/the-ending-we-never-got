@@ -8,6 +8,8 @@ The accepted reader interaction is **Look closer / Threads**. Runtime `d0c3020` 
 
 When revising the game and rebuilding, make sure that the game experience is beautiful, fluid, and enjoyable. Evaluate the full dimensions of the game experience from start to completion, rather than simply considering individual components.
 
+**Latest rejection, 17 September 2026:** the user rejected the 0.4.0-dev Rovel attempt for its ugly, intrusive interface and poorly composed compact portraits. It is another failed attempt, retained for diagnosis; see the [rejection and historical review](visual-novel/reviews/2026-09-17-rovel-work/README.md). Earlier favorable inspection notes do not clear it. Preserve the requirement to blend richly detailed scene illustrations with compact speaker/listener frames; the failed execution does not cancel that requirement.
+
 ## Commit
 
 ### Messages

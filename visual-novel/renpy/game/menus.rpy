@@ -2,13 +2,13 @@ screen main_menu():
     tag menu
     add lighting_art('art/opening/cg/drawing-restart.png') xysize (1920, 1080)
     add 'art/interface-original/title-veil.svg'
-    add 'art/interface-original/crest.png' xpos -97 ypos 214 xysize (365,433) alpha 0.85
-    text 'THE ORIGINAL TIMELINE' xpos 225 ypos 242 style 'caption_text'
+    text 'THE ORIGINAL TIMELINE' xpos 145 ypos 200 style 'caption_text' kerning 3
     text 'The Ending\nWe Never Got':
-        xpos 215 ypos 307 xsize 780
-        style 'title_text' size 116
+        xpos 137 ypos 265 xsize 840
+        style 'title_text' size 112
+    add Solid('#b19a6e') xpos 148 ypos 577 xysize (490,1)
     vbox:
-        xpos 207 ypos 664 spacing 10
+        xpos 125 ypos 615 spacing 18
         if renpy.newest_slot() is not None:
             textbutton 'Continue' action Continue() style 'hero_button'
             textbutton 'Begin again' id 'main_begin' action Start()
@@ -19,7 +19,7 @@ screen main_menu():
             textbutton 'Load' action ShowMenu('load') style 'quiet_button'
             textbutton 'Settings' action ShowMenu('preferences') style 'quiet_button'
             textbutton 'About' action ShowMenu('about') style 'quiet_button'
-    text 'A life interrupted.' xpos 156 ypos 967:
+    text 'A life interrupted.' xpos 145 ypos 947:
         font 'fonts/EBGaramond12-Italic.ttf' size 29 color '#b6ad9b'
     if not renpy.emscripten:
         textbutton 'Quit' action Quit(confirm=True) xpos 1730 ypos 958 style 'quiet_button'
@@ -65,15 +65,18 @@ screen file_slots(title, saving):
                 for slot in range(1, 7):
                     button:
                         id ('file_slot_' + str(slot))
-                        xsize 514 ysize 305
-                        padding (10, 10)
+                        xsize 514 ysize 337
+                        padding (15, 15)
                         action (FileSave(slot) if saving else FileLoad(slot))
                         background Solid('#ffffff07')
                         hover_background Solid('#cfb38724')
                         vbox:
-                            spacing 10
-                            add FileScreenshot(slot) xysize (494, 247)
-                            text FileTime(slot, format='%b %d · %H:%M', empty='An empty place') size 21 color '#bdb6a6'
+                            spacing 7
+                            fixed:
+                                xysize (484,216) clipping True
+                                add FileScreenshot(slot) xysize (384,216) xpos 50
+                            text rovel_slot_place(slot) size 23 color '#dfd3c0' xsize 480
+                            text FileTime(slot, format='%b %d · %H:%M', empty='') size 19 color '#bdb6a6'
             hbox:
                 spacing 10
                 for page in range(1, 6):
@@ -103,7 +106,7 @@ screen preferences():
                 textbutton 'Image descriptions' action ToggleField(persistent, 'art_descriptions')
                 textbutton 'Self-voicing' action Preference('self voicing', 'toggle')
             vbox:
-                xsize 695 spacing 20
+                xsize 695 spacing 16
                 text 'DISPLAY' style 'caption_text'
                 hbox:
                     spacing 12
@@ -122,8 +125,8 @@ screen preferences():
                 text 'Softened reduces bright glare and lifts deep shadows. Change it at any time.' size 21 color '#b6b0a2'
                 null height 14
                 text 'AT YOUR PACE' style 'caption_text'
-                text 'Space or Enter turns the page. Page Up returns to an earlier line. Escape opens or closes the menu.' style 'prose_text'
-                text 'Arrow keys move between controls; Enter selects. Press V for self-voicing. Look closer offers the same details through labeled controls and the image.' size 24 color '#bdb7ab' line_spacing 9
+                text 'Space or Enter turns the page. Page Up returns to an earlier line. Escape opens or closes the menu.' style 'prose_text' size 29 line_spacing 6
+                text 'Arrow keys move between controls; Enter selects. Press V for self-voicing. Look closer offers labeled controls beside its images.' size 24 color '#bdb7ab' line_spacing 6
 
 screen history():
     tag menu

@@ -1,6 +1,6 @@
 # Original timeline — experience and production requirements
 
-**Active realignment — 17 September 2026.** This is the current experience brief and production plan. The user requested project realignment after the [full design review](reviews/2026-09-17-full-design-review/README.md), committed at `529a359`. Runtime `d0c3020` / web 0.3.2 remains an incomplete, rejected presentation. This realignment changes requirements, status and work order; it does not change the game or clear a scene.
+**Active production requirements — 17 September 2026.** The user authorized production after realignment following the [full design review](reviews/2026-09-17-full-design-review/README.md). Runtime `d0c3020` / web 0.3.2 remains the rejected baseline. **0.4.0-dev is a new working candidate**, with S001–S005 integrated for review. [Current evidence and limits](reviews/2026-09-17-rovel-work/README.md) determine its status; neither this brief nor a successful build clears a scene.
 
 ## Goal and scope
 
@@ -59,6 +59,8 @@ These are working implementation directions, not approved frame artwork or pixel
 
 Do not lock every exchange to giant standing sprites or make every sentence a full illustration. Compact framing needs designed expressions and identity consistency, not indiscriminate crops of rejected renders. Narration has a related but distinct treatment; its appearance is not a cue to remove actors.
 
+**Preserve the blend.** Rich, detailed scene art remains central to arrivals, physical action, ceremonies and quiet relationship moments. Compact frames support faster exchanges within that illustrated sequence. They are an additional presentation mode, not a replacement of detailed scene work. The current Rovel plan contains 38 action pages, 10 quiet pages and 47 compact exchange pages; those counts describe this sequence and are not a quota for later scenes.
+
 Actual interface materials and ornament remain design work. Aged metal, mineral surfaces and botanical forms are possible references, not a requirement to preserve the current gilt frame or cropped crest. Make complete edges and appropriate variants for their intended sizes. Native text and controls need room, legible hierarchy and matching visible/hit/focus areas. Keep utility positions stable when Look closer appears; distinguish advancement, rollback and return from inspection. Saves need recognizable narrative context.
 
 Compose title, starting flow, chapter transitions, reading, inspection, Threads, history, saves, settings and endpoint as one visual language. Resolve redundant starts and interruptions through flow design. Review long/short lines and larger text in the complete screen. Correct reading surfaces without lifting scene exposure into a comfortable default.
@@ -107,8 +109,8 @@ Record build/scene/source span, platform/window/settings, what was actually read
 
 ## Current baseline and open work
 
-The [ledger](art/route-coverage.md) records **66 mapped opening pages, 29 room-only pages and 757 prose-only pages**, across 852 reading pages / 849 source reading blocks. None is cleared by those counts. The full review reproduced unfinished frame edges, cast gaps and a Threads caption partly outside its hit area. It did not reproduce offscreen story glyphs in tested layouts; that limited result does not dismiss the user's report or clear the UI.
+The [ledger](art/route-coverage.md) now records **95 mapped opening pages and 757 prose-only pages**, across 852 reading pages / 849 source reading blocks. S004–S005 have source-specific cast/action coverage rather than the earlier empty-room fallback. Availability counts do not clear their experience gates. The rejected baseline and its documented UI/cast failures remain comparison evidence.
 
-Still to develop: actual compact frames and interface artwork/type scale, transitions/chapter pauses, meaningful introductory discovery, ancient history/evidence, remaining wardrobe/age/performance variants, sound, measured pace and endpoint response storage/revisit behavior. These are design work, not reasons to reopen settled scope, Tessa's selected identity, lighting registers/Softened, reader-only agency, the first-summoning war origin, source consequences or the placement of Yes after the final scene.
+The candidate implements compact performances, related dialogue/narration/utility surfaces, a single Begin and three direct reader comparisons. Remaining work includes final connected-experience clearance, later scene coverage and transitions, ancient history/evidence, later wardrobe/age/performance variants, sound, human reading-duration measurements and endpoint response storage/revisit behavior. These are not reasons to reopen settled scope, Tessa's identity, lighting/Softened, reader-only agency, the first-summoning war origin, source consequences or the placement of Yes.
 
-Realignment is complete when the active project documents agree on these requirements and work order. It gives no runtime, image or scene-quality clearance.
+The authorized production sequence remains linear: resolve the Rovel experience gates before expanding its presentation into another art batch. Detailed work and review records distinguish implemented components from experience clearance.

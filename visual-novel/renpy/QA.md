@@ -1,6 +1,6 @@
 # QA — current experience failed; requirements realigned
 
-**17 September 2026:** runtime 0.3.2 / `d0c3020` remains rejected. The [full design review](../reviews/2026-09-17-full-design-review/README.md), committed at `529a359`, supersedes earlier favorable component observations. The current realignment changes documentation only; no engine tests, rebuild or new visual clearance are claimed for it.
+**17 September 2026: 0.4.0-dev working candidate.** See [current review](../reviews/2026-09-17-rovel-work/README.md) for native/browser evidence, manual inspection and remaining experience gates. Native functional tests pass 7 cases / 152 assertions; this does not clear art or later route coverage. The evidence below is historical and retains its original limits.
 
 The review traversed all **852 reading pages / 849 source reading blocks**. It manually inspected selected screens and interactions, not all 852 pages at human reading pace. It found no compact speaker-frame mode, excessive dialogue-box movement, frozen reactions, unfinished frame edges, weak discovery payoff, unstable controls and a Threads caption partly outside its hit area. The [ledger](../art/route-coverage.md) records 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. The final question exists, but its intended Yes choice does not.
 

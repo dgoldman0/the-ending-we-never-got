@@ -1,14 +1,20 @@
 # Route presentation coverage
 
-This is a production ledger, not visual clearance. The complete screenplay remains traversable; absent illustrations and cast remain defects. Both checkpoint `f3acb5e` and the subsequent web 0.3.2 presentation remain rejected. The [17 September full design review](../reviews/2026-09-17-full-design-review/README.md) traversed all 852 reading pages: 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. The table below counts the 849 source reading blocks; three blocks split into an additional page. No scene is cleared by those counts or the audit.
+This is a production ledger, not visual clearance. The complete original route remains in scope: all 58 screenplay scenes, the complete Bellweir ending and fade, then “Do you wish to save Tessa?” Post-Yes presentation remains deferred. Absent illustrations and cast remain defects.
+
+**Working status, 17 September 2026: `0.4.0-dev`.** The current [Rovel presentation map](../renpy/game/rovel.rpy) covers all 95 reading pages in S001–S005: 24, 18, 24, 16 and 13 pages respectively. It blends composed scene illustrations, action and quiet inserts with compact speaker/listener frames for rapid dialogue. There are 38 action pages, 10 quiet pages and 47 compact dialogue pages; these are presentation modes, not completed-art or experience scores. Art corrections, integration and the main thread's connected review are ongoing. No scene-completion gate or user approval is recorded for this working build.
+
+The remaining **757 reading pages in S006–S058 are still prose-only**, with scene and cast production missing. All 852 reading pages remain in the runtime; the next milestone has not shortened the route. The table counts 849 source reading blocks because three blocks split into an additional page. The final fade is a separate transition, not a reading block.
+
+Both checkpoint `f3acb5e` and web 0.3.2 remain rejected. The [17 September full design review](../reviews/2026-09-17-full-design-review/README.md) recorded that older build's 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. Those historical counts do not describe the new S001–S005 mapping, and neither mapping nor asset presence clears the earlier experience failures.
 
 | Scene | Source location | Reading blocks | Current coverage |
 | --- | --- | ---: | --- |
-| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | Mapped CG/sprite performance; experience rejected |
-| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | Mapped CG/sprite performance; experience rejected |
-| S003 | INT. PALACE INFIRMARY - DAY | 24 | Mapped CG/sprite performance; experience rejected |
-| S004 | INT. AUDIENCE HALL - DAY | 16 | Legacy background only; present cast missing — FAILED |
-| S005 | INT. INFIRMARY - LATER | 13 | Legacy background only; present cast missing — FAILED |
+| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | 24 pages mapped: sequential arrival/closure art, staged exchanges and compact cast frames; correction/integration review ongoing |
+| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | 18 pages mapped: night action, compact exchanges and quiet drawing inserts; correction/integration review ongoing |
+| S003 | INT. PALACE INFIRMARY - DAY | 24 | 24 pages mapped: assessment/treatment states, compact exchanges and recovery inserts; correction/integration review ongoing |
+| S004 | INT. AUDIENCE HALL - DAY | 16 | 16 pages mapped: ceremony, doorway and applause inserts, compact exchanges and separate intervention/yield states; correction/integration review ongoing |
+| S005 | INT. INFIRMARY - LATER | 13 | 13 pages mapped: packing/window scene, compact exchanges, courtyard inserts and shared window seat; correction/integration review ongoing |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 18 | Prose only; scene and cast production missing |
 | S007 | INT. ROADSIDE INN - NIGHT | 15 | Prose only; scene and cast production missing |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 22 | Prose only; scene and cast production missing |
@@ -61,8 +67,10 @@ This is a production ledger, not visual clearance. The complete screenplay remai
 | S055 | EXT. CITADEL - LOWER STAIR - MORNING | 12 | Prose only; scene and cast production missing |
 | S056 | INT. NORTH INFIRMARY - DAY | 6 | Prose only; scene and cast production missing |
 | S057 | EXT. CITADEL - LOWER GATE - EVENING | 8 | Prose only; scene and cast production missing |
-| S058 | EXT. BELLWEIR - MARKET SQUARE - SPRING DAY | 17 | Prose only; scene and cast production missing |
+| S058 | EXT. BELLWEIR - MARKET SQUARE - SPRING DAY | 16 | Prose only; scene and cast production missing; final fade retained separately |
 
-The critical current boundary is S003 → S004: source narration moves into a public ceremony with Senn, Tessa, Orra, a messenger, Olan and Iven, while the old runtime supplies only a room. S004 → S005 likewise requires Tessa and Iven, plus intentional inserts of the mother, Mara and guards below. Re-enabling retired portrait assets does not clear these scenes.
+The outstanding production boundary is now **S005 → S006**: the authored Rovel presentation ends and the convoy camp begins with prose-only coverage. That loss of scene/cast presentation remains a full-route defect. It must not be hidden by truncating the story or implied to be covered by the opening's compact frames.
 
-A scene clears only after its complete source interaction, performances, lighting, composed interface, discovery/return behavior and adjacent transitions have been inspected in the running build. Technical traversal is recorded separately.
+Within the milestone, S003 → S004 and S004 → S005 remain explicit review boundaries. The map now requires the ceremony's Senn, Tessa, Orra, messenger, Olan and Iven, followed by Tessa and Iven at the infirmary window and editorial inserts of the mother, Mara and guards below. The former room-only pages have new authored performance coverage; their complete acting, garment/prop continuity, staging and transitions still require connected review. Re-enabling retired portrait assets does not clear these scenes.
+
+A scene clears only after its complete source interaction, performances, both lighting preferences, composed interface, discovery/return behavior and adjacent transitions have been inspected in the running build. The scene art and compact frames must work together without disappearing cast, identity drift, obstructed action or awkward reading flow. Technical traversal and file checks are recorded separately; neither clears the visual experience.

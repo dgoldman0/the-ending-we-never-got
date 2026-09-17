@@ -3,7 +3,7 @@ init python:
     gui.init(1920, 1080)
 
 define config.name = "The Ending We Never Got"
-define config.version = "0.3.2"
+define config.version = "0.4.0-dev"
 define config.check_conflicting_properties = True
 define config.save_directory = "the-ending-we-never-got-original-v1"
 define config.window = "auto"
@@ -25,7 +25,7 @@ define config.allow_skipping = False
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 define build.name = "TheEndingWeNeverGot"
-define build.version = "0.3.2"
+define build.version = "0.4.0-dev"
 
 init python:
     # Only source-mapped opening art enters distribution; working variants stay local.
@@ -41,6 +41,8 @@ init python:
     build.classify('game/art/sprites/**', None)
     build.classify('game/testcases.rpy', None)
     build.classify('game/testcases.rpyc', None)
+    build.classify('game/rovel-review.rpy', None)
+    build.classify('game/rovel-review.rpyc', None)
     build.classify('**/test-output/**', None)
     build.classify('**/saves/**', None)
     build.classify('review/**', None)
@@ -51,6 +53,34 @@ init python:
     build.classify('game/fonts/*NOTICE*', 'all')
     build.classify('game/fonts/Apache-2.0.txt', 'all')
     build.classify('**/*.txt', None)
+
+init 20 python:
+    def _configure_rovel_distribution():
+        # This runs after descriptor/discovery/lighting initialization. Keep all
+        # temporary names local: init Python otherwise shares the story store.
+        required = set(rovel_required_assets())
+        required.update(item['image'] for item in detail_views.values())
+        required.update(path for path in renpy.list_files()
+                        if path.startswith('art/rovel/ui/')
+                        and path.lower().endswith(('.png', '.svg', '.webp')))
+        required = {path for path in required if path.startswith('art/rovel/')}
+        required.update(LIGHTING_VARIANTS[path] for path in tuple(required)
+                        if path in LIGHTING_VARIANTS)
+        directories = set()
+        for path in required:
+            pieces = path.split('/')
+            directories.update('/'.join(pieces[:count]) for count in range(1, len(pieces)))
+        # Directory traversal and first-match classification both matter. Only
+        # referenced scene/portrait/detail files and runtime UI exports enter the
+        # package; unused variants and editable masters stay outside it.
+        for directory in sorted(directories, key=lambda path: (path.count('/'), path)):
+            build.classify('game/' + directory + '/', 'all')
+        for path in sorted(required):
+            build.classify('game/' + path, 'all')
+        build.classify('game/art/rovel/**', None)
+        build.classify('game/art/softened/rovel/**', None)
+
+    _configure_rovel_distribution()
 
 default persistent.large_text = False
 default persistent.reduced_motion = False

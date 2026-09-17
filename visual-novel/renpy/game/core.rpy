@@ -82,10 +82,11 @@ label start:
     $ followed_connections = set()
     $ ending_reached = False
     $ return_to_question = False
-    call screen reading_intro
     jump s001
 
 label chapter_card(number, title):
+    if number == 1:
+        return
     window hide
     hide screen story_stage
     call screen chapter_title(number, title)
@@ -136,8 +137,11 @@ screen chapter_title(number, title):
 screen story_stage():
     zorder -5
     add Solid('#0b1419')
+    $ beat = current_rovel_beat()
     $ shot = opening_shot()
-    if opening_assets_available(shot):
+    if beat:
+        use rovel_stage(beat)
+    elif opening_assets_available(shot):
         use opening_stage(shot)
     elif composed_scene():
         add lighting_art(composed_scene()) xysize (1920, 1080)
@@ -162,36 +166,7 @@ screen story_stage():
     # The scene itself carries place; retain the label in image descriptions.
 
 screen say(who, what):
-    if current_scene <= 3:
-        use composed_reading(who,what)
-    elif side_reading():
-        add 'art/interface/title-veil.svg'
-        window:
-            id 'window'
-            background None
-            xpos 125 ypos 343 xsize 650 ysize 520
-            text what:
-                id 'what'
-                xsize 640
-                font 'fonts/CharisSIL-Regular.ttf'
-                size (38 if persistent.large_text else 34)
-                line_spacing 12
-                color '#eee4d4'
-    else:
-        add 'art/interface/reading-veil.svg'
-        window:
-            id 'window'
-            background None
-            xpos 160 ypos 794 xsize 1600 ysize 230
-            if who:
-                text who id 'who' ypos 0 size 23 color '#ddc59c' font 'fonts/ClearSans-Regular.ttf'
-            text what:
-                id 'what'
-                ypos (40 if who else 0) xsize 1600
-                size (36 if persistent.large_text else 32)
-                font 'fonts/CharisSIL-Regular.ttf'
-                line_spacing 5
-                color '#eee4d4'
+    use rovel_reading(who,what)
     if persistent.art_descriptions and (art_available() or composed_scene()):
         frame:
             background Solid('#0b1419ed')
@@ -202,18 +177,24 @@ screen say(who, what):
 screen quick_menu():
     zorder 100
     add Solid('#080f13f5') ypos 1018 ysize 62
-    add 'art/interface-original/gilt-lip.png' xpos 90 ypos 1004 xysize (1740, 28) alpha 0.65
-    hbox:
-        xpos 98 ypos 1027 spacing 24
-        textbutton 'Back' action Rollback() style 'quiet_button'
-        textbutton 'History' action ShowMenu('history') style 'quiet_button'
-        if closer_here():
-            textbutton 'Look closer' id 'look_closer' action ShowMenu('look_closer') style 'quiet_button' text_color '#eed0a0'
-        if available_details():
-            textbutton 'Threads' action ShowMenu('threads') style 'quiet_button'
-        textbutton 'Save' action ShowMenu('save') style 'quiet_button'
-        textbutton 'Menu' action ShowMenu('preferences') style 'quiet_button'
-    text 'CONTINUE  ›' xpos 1660 ypos 1042 size 17 color '#c9b693' kerning 1.8
+    textbutton 'Back' xpos 70 ypos 1023 xsize 135 action Rollback() style 'quiet_button'
+    textbutton 'History' xpos 218 ypos 1023 xsize 155 action ShowMenu('history') style 'quiet_button'
+    textbutton 'Look closer':
+        id 'look_closer'
+        xpos 390 ypos 1023 xsize 230
+        action (ShowMenu('look_closer') if closer_here() else None)
+        style 'quiet_button'
+    textbutton 'Threads':
+        xpos 638 ypos 1023 xsize 175
+        action (ShowMenu('threads') if available_details() else None)
+        style 'quiet_button'
+    textbutton 'Save' xpos 830 ypos 1023 xsize 135 action ShowMenu('save') style 'quiet_button'
+    textbutton 'Menu' xpos 986 ypos 1023 xsize 145 action ShowMenu('preferences') style 'quiet_button'
+    textbutton 'Continue  ›':
+        id 'reading_continue'
+        xpos 1630 ypos 1023 xsize 245
+        action Return()
+        style 'quiet_button'
 
 screen ending_breath():
     modal True

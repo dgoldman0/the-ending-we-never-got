@@ -11,6 +11,10 @@ init python:
         return current_scene == 2 and source_line >= 112
 
     def current_art_description():
+        beat = current_rovel_beat()
+        if beat:
+            faces = [face['alt'] for face in (beat.get('speaker'), beat.get('listener')) if face]
+            return beat['stage']['alt'] + (' ' + ' '.join(faces) if faces else '')
         shot = opening_shot()
         if opening_assets_available(shot):
             return shot['alt']
@@ -21,9 +25,8 @@ init python:
         return scene_art_alt
 
 screen original_backdrop():
-    add 'art/interface-original/mineral-surface.png'
-    add 'art/interface-original/crest.png' xpos -70 ypos 240 xysize (260, 309) alpha 0.55
-    add 'art/interface-original/gilt-lip.png' xpos 190 ypos 204 xysize (1600, 22) alpha 0.6
+    add Solid('#080f18')
+    add Frame('art/rovel/ui/quiet-surface.png',80,55,100,60) xpos 45 ypos 90 xysize (1830,955)
 
 style title_text:
     font 'fonts/EBGaramond12-Regular.ttf'
@@ -64,7 +67,7 @@ style button_text:
 style quiet_button is button:
     padding (15, 9)
 style quiet_button_text is button_text:
-    size 22
+    size 26
 
 style hero_button is button:
     padding (24, 10)

@@ -1,0 +1,579 @@
+{
+  "verified_at": "2026-09-17T13:27:27.585863+00:00",
+  "identity_reference": "visual-novel/art/rovel/review/details/senn-identity-original.png",
+  "original_sheet": "visual-novel/art/rovel/raw/senn-expressions-v1.png",
+  "specs": {
+    "mantle": {
+      "box": [
+        870,
+        0,
+        280,
+        290
+      ],
+      "poly": [
+        48,
+        5,
+        150,
+        3,
+        208,
+        20,
+        241,
+        57,
+        246,
+        131,
+        221,
+        186,
+        193,
+        216,
+        166,
+        241,
+        146,
+        259,
+        102,
+        271,
+        79,
+        256,
+        59,
+        247,
+        37,
+        241,
+        26,
+        219,
+        22,
+        177,
+        29,
+        139,
+        33,
+        99,
+        34,
+        54
+      ]
+    },
+    "dais": {
+      "box": [
+        885,
+        35,
+        135,
+        150
+      ],
+      "poly": [
+        37,
+        10,
+        79,
+        8,
+        108,
+        25,
+        121,
+        58,
+        118,
+        85,
+        103,
+        111,
+        88,
+        123,
+        76,
+        136,
+        54,
+        143,
+        40,
+        126,
+        21,
+        119,
+        10,
+        108,
+        12,
+        87,
+        16,
+        65,
+        20,
+        39
+      ]
+    },
+    "refusal": {
+      "box": [
+        410,
+        0,
+        300,
+        290
+      ],
+      "poly": [
+        86,
+        0,
+        215,
+        0,
+        274,
+        18,
+        286,
+        60,
+        280,
+        109,
+        277,
+        160,
+        280,
+        183,
+        271,
+        207,
+        259,
+        230,
+        240,
+        250,
+        209,
+        255,
+        175,
+        253,
+        145,
+        273,
+        130,
+        281,
+        93,
+        256,
+        68,
+        239,
+        47,
+        211,
+        31,
+        195,
+        25,
+        151,
+        32,
+        94,
+        53,
+        37
+      ]
+    },
+    "refused-chair": {
+      "box": [
+        547,
+        0,
+        182,
+        180
+      ],
+      "poly": [
+        54,
+        1,
+        120,
+        0,
+        151,
+        7,
+        166,
+        28,
+        164,
+        70,
+        161,
+        103,
+        163,
+        122,
+        148,
+        144,
+        124,
+        153,
+        105,
+        155,
+        91,
+        173,
+        71,
+        163,
+        50,
+        151,
+        35,
+        141,
+        22,
+        125,
+        13,
+        115,
+        13,
+        84,
+        19,
+        48,
+        34,
+        16
+      ]
+    },
+    "intervention": {
+      "box": [
+        1140,
+        20,
+        170,
+        165
+      ],
+      "poly": [
+        52,
+        11,
+        93,
+        10,
+        125,
+        28,
+        136,
+        62,
+        132,
+        94,
+        116,
+        121,
+        106,
+        135,
+        91,
+        145,
+        72,
+        151,
+        58,
+        139,
+        41,
+        132,
+        31,
+        123,
+        23,
+        110,
+        25,
+        84,
+        29,
+        62,
+        32,
+        34
+      ]
+    },
+    "yield": {
+      "box": [
+        1180,
+        20,
+        135,
+        145
+      ],
+      "poly": [
+        25,
+        8,
+        70,
+        8,
+        104,
+        25,
+        117,
+        60,
+        116,
+        92,
+        101,
+        117,
+        83,
+        126,
+        73,
+        142,
+        57,
+        133,
+        47,
+        118,
+        28,
+        114,
+        17,
+        103,
+        13,
+        82,
+        14,
+        53,
+        16,
+        32
+      ]
+    }
+  },
+  "masters": [
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-mantle-identity-repair.xcf",
+      "sha256": "e8659857c35cfe7629da87e219e9efe7d176516755aca131c1dd27fccbc0d8c9"
+    },
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-dais-identity-repair.xcf",
+      "sha256": "e2563bcb6e2e9ecbb517cbed01729852912a3174314ab7b063ab32c3c2daf3de"
+    },
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-refusal-identity-repair.xcf",
+      "sha256": "feadbf75e30d0b6b5a13c0382291353993eee0063013d1bbe59b06c9140a7a02"
+    },
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-refused-chair-identity-repair.xcf",
+      "sha256": "bc760a4a03ae1866b69085b270728df12bd663db0e2cef9f7c2ae7c8fecc717f"
+    },
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-intervention-identity-repair.xcf",
+      "sha256": "e6c32b19f653869e208f1b45aea7d8b000fc89083addbbf5e6be654a452afe0f"
+    },
+    {
+      "path": "visual-novel/art/rovel/masters/ceremony-yield-identity-repair.xcf",
+      "sha256": "14ad1fb7324c0f0f541a1e8d24ad6b939f6d380400a1bc8c8760dbd479e349e4"
+    }
+  ],
+  "comparisons": [
+    {
+      "scene": "mantle",
+      "grade": "intense",
+      "changed_pixels": 46684,
+      "outside_head_crop": 0,
+      "bbox": [
+        891,
+        2,
+        1117,
+        272
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-mantle.png",
+      "runtime_sha256": "3e4bfdf27bed14af0067e01a98cf1bd509cdce73fa50dcf8d151d2a66f3390f0",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "mantle",
+      "grade": "softened",
+      "changed_pixels": 47901,
+      "outside_head_crop": 0,
+      "bbox": [
+        891,
+        2,
+        1117,
+        272
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-mantle.png",
+      "runtime_sha256": "8c35db61ee17ee25af4d69b0c0aadd8c8e07e530ea6e691a1d8ec4efd731404f",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "dais",
+      "grade": "intense",
+      "changed_pixels": 11036,
+      "outside_head_crop": 0,
+      "bbox": [
+        894,
+        43,
+        1006,
+        179
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-dais.png",
+      "runtime_sha256": "3c1d8311283eaeb582766235fcfcc771e0509d53e91aa3b4610d5327c93b7895",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "dais",
+      "grade": "softened",
+      "changed_pixels": 11276,
+      "outside_head_crop": 0,
+      "bbox": [
+        894,
+        43,
+        1006,
+        179
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-dais.png",
+      "runtime_sha256": "d81890eb24249d3f04f8c94f0c20a2643c4b3b72ed0b852c6e50e46dc92929e0",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "refusal",
+      "grade": "intense",
+      "changed_pixels": 56363,
+      "outside_head_crop": 0,
+      "bbox": [
+        435,
+        0,
+        694,
+        282
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-refusal.png",
+      "runtime_sha256": "40a1dfc9a3d42b055432eb445f55eae93759ed13ada382c175316373d4dc68ad",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "refusal",
+      "grade": "softened",
+      "changed_pixels": 59435,
+      "outside_head_crop": 0,
+      "bbox": [
+        434,
+        0,
+        696,
+        282
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-refusal.png",
+      "runtime_sha256": "85b4b893416558668e73713aa2be948d798ca94636fe0c031a32caa51bd08164",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "refused-chair",
+      "grade": "intense",
+      "changed_pixels": 19475,
+      "outside_head_crop": 0,
+      "bbox": [
+        559,
+        0,
+        713,
+        174
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-refused-chair.png",
+      "runtime_sha256": "c76410164626025d5a1e4ff3b83b9b5439a400c4fd22f74679d29034f6db308d",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "refused-chair",
+      "grade": "softened",
+      "changed_pixels": 21268,
+      "outside_head_crop": 0,
+      "bbox": [
+        559,
+        0,
+        713,
+        174
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-refused-chair.png",
+      "runtime_sha256": "259ab590447fcc220c51587cd8040083eb1b0316008b1e90637372cfaccb7faa",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "intervention",
+      "grade": "intense",
+      "changed_pixels": 11551,
+      "outside_head_crop": 0,
+      "bbox": [
+        1163,
+        29,
+        1277,
+        172
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-intervention.png",
+      "runtime_sha256": "d72d1c17fe826a341670760e5ae127e172733e383050046b8cf88aaf9df98eb6",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "intervention",
+      "grade": "softened",
+      "changed_pixels": 12534,
+      "outside_head_crop": 0,
+      "bbox": [
+        1162,
+        29,
+        1277,
+        172
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-intervention.png",
+      "runtime_sha256": "a7ee922aa61645854a3ad07a87b49efb685b94c966fd64d6bf68a70196d62387",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "yield",
+      "grade": "intense",
+      "changed_pixels": 9690,
+      "outside_head_crop": 0,
+      "bbox": [
+        1192,
+        27,
+        1298,
+        163
+      ],
+      "runtime": "visual-novel/renpy/game/art/rovel/cg/ceremony-yield.png",
+      "runtime_sha256": "673e4a5332cbf6add9bb5c58110f49eaf6240e2a83a8eb5dd44332e0bcf2592e",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "scene": "yield",
+      "grade": "softened",
+      "changed_pixels": 10930,
+      "outside_head_crop": 0,
+      "bbox": [
+        1192,
+        27,
+        1298,
+        163
+      ],
+      "runtime": "visual-novel/renpy/game/art/softened/rovel/cg/ceremony-yield.png",
+      "runtime_sha256": "bedcb937dea56b87aed2367db4e3d8d823eb528c06ea978a8c56fd53f639322b",
+      "reopened_exact": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "size": [
+        1672,
+        941
+      ]
+    }
+  ]
+}

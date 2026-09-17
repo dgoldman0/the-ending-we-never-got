@@ -1,0 +1,36 @@
+# S005 courtyard cutaways — production record
+
+Working assets for source lines 226 and 242, not selected likeness references or a scene-gate pass. Main thread retains integration and final review ownership.
+
+## Before generation
+
+The complete window interaction was read. Tessa and Iven remain upstairs throughout both cuts. The camera looks down into the courtyard visible in `raw/window-packing-v1.png`: pale stone, cream canvas wagons, loading crates, olive trees and the pale arcade/cypress background. This is editorial reframing of that same place, not another world or a player travelling downstairs. The unseen part of the yard is provisional connective geometry; no new story event is supplied by it.
+
+- **226:** after Iven buys Tessa an afternoon, the same mother from the next ward row approaches the wagons. Dark skin, close curls and faded yellow headwrap match the supporting head and `after-first-treatment`. Her loose pale linen dress follows the visible ward clothing. She approaches alone; no daughter is brought downstairs. A few distant loading workers already established through the window may remain subordinate. Tessa/Iven, Mara and guards are not added to this beat. Her hands are empty and she is not boarding a wagon, speaking to a newly invented official or receiving anything.
+- **242:** after Iven returns the bottle and admits he cannot stop the requests, Mara assigns two of the former apartment guards to the convoy. Mara is thirty-two, olive-brown, square-jawed, dark hair braided and pinned low; slate-blue coat, practical trousers/boots and one brass captain's collar bar. The apartment guard shown in `apartment-open` and `blocked-doorway` wears a plain dark cap, high-collared slate-blue knee-length coat, belt, trousers and tall boots. Only one guard's face is clearly established there; do not invent a prominent new casting for the second. Use modest distance/rear three-quarter views, preserving the already visible uniform. Exactly Mara and two guards form the dramatic group; a restrained directional gesture toward the convoy represents the assignment. No battle, marching army, papers, badges of northern allegiance or new exchange.
+
+The cropped courtyard input supplies materials/wagon design and spatial context only; character inputs supply identity or guard clothing only. Their previous lighting, pose, indoor setting and other figures must not control the new shot. Full figures and useful hands/gestures stay above the lower reading panel. Ordinary afternoon light should remain mildly uncomfortable, with bright pale paving and cooler shadows, less dazzling than the ceremony. GIMP will provide paired Intense/Softened grades from the same master, with source and grade layers preserved.
+
+## Production and manual review
+
+Both scenes were generated with the current built-in image generator, followed by one targeted placement edit each. Initial `*-v1.png` outputs placed feet below the reading-panel boundary; those placements are not the delivered composition. The `*-placement-v2.png` components move the figures farther into the same courtyard with uniform perspective scaling. Prompts are in `art/prompts/rovel/convoy-{mother,guards}*.txt`.
+
+GIMP 2.10.36 finishing used the separate scratch script `/tmp/vn-convoy-finish.scm`; the shared `tools/finish-rovel.scm` was not changed. Each master retains the initial source and a feathered placement mask that includes the newly occupied and vacated paving. The guards master also retains separate adjacent-wool donor layers removing the unsupported cap rank mark and extra collar marks, plus one local brass captain bar. Intense and Softened are separate full-composite grade layers from that same corrected staging. They use the current ordinary-day color balance and curves from the Rovel sequence, not the ceremony glare curve.
+
+The first guards mask did not include the far ends of the old figures' shadows. Full-frame inspection caught detached dark patches in the foreground; the final mask extends across the entire vacated shadow area. Both final grades were opened again after that correction. The final foreground has coherent paving and no detached old cast shadows.
+
+Observed manually at full composition and native detail:
+
+- **Mother, 226:** dark complexion, close curls and yellow headwrap remain recognizable against the supporting head and the earlier bedside appearance. Plain pale linen and brown skirt cloth; hands empty; forward stride and shoes contact the paving. Her attention is toward the wagon approach rather than toward the viewer. She is alone; three smaller civilian loaders remain at the already established wagons. No daughter, new exchange, boarding action or upstairs cast is added. Both feet are now above the lower reading area. Her face and fingers are necessarily small in this elevated editorial view; it is not a new close likeness key.
+- **Mara/guards, 242:** three military figures only, with two subordinate civilian loaders at the wagons. Mara's squared profile, low dark braid, practical coat/boots and single captain bar are present. Her open hand indicates the convoy while the two guards listen. The nearer guard preserves the plain cap/high collar/belt/coat/boots silhouette seen at the apartment door; the second is predominantly rear view. Hands, arms, full legs and boot contacts were inspected. No drawn weapons, documents, new insignia, march or extra foreground person. The view keeps all three full figures above the reading-panel boundary. The original doorway guard's face was low-detail, so exact facial matching beyond that reference's limited resolution is not claimed.
+- **Place and light:** both views look down from the same window-side context onto cream canvas wagons, pale paving, loading crates and olive/cypress vegetation. The guards view looks more steeply down at the nearby group and omits the farther arcade from its crop. The yard beyond the small original window glimpse remains provisional connective geometry. Intense increases the harsh pale reflection and cool shadow contrast across the scene; Softened restores canvas/paving detail and reduces that discomfort without changing people or staging. The relation to the window shots still needs the main thread's connected in-game review.
+
+Final full compositions opened in both grades; final native detail crops are `review/details/convoy-mother-final-native.png` and `review/details/convoy-guards-final-native.png`. Both layered XCFs were saved, closed, loaded again in GIMP and exported from their visible default layers. Pixel comparison found exact matches to the corresponding delivered Intense PNGs. No game code, lighting manifest, shared finishing script or source text was edited.
+
+## Delivered files and remaining gate
+
+- `renpy/game/art/rovel/cg/convoy-mother.png` and `convoy-guards.png`
+- `renpy/game/art/softened/rovel/cg/convoy-mother.png` and `convoy-guards.png`
+- `art/rovel/masters/convoy-mother.xcf` and `convoy-guards.xcf`
+
+The PNGs are 1672×941, matching the source illustration family. These are reviewed working components ready for the main thread's independent opening and connected runtime check. No user selection, scene-gate approval, browser review or whole-experience clearance is claimed.
