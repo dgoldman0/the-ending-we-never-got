@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>An afternoon · composition comparison</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#111b1f;color:#e9e3d8;font:16px system-ui,sans-serif}main{max-width:1600px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}h1{font:normal 28px Georgia,serif;margin:0}a{color:#d6ac77}nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 14px}button{border:1px solid #536060;background:transparent;color:#cad0ca;padding:11px 18px;font:inherit;cursor:pointer}button[aria-pressed=true]{color:#172226;background:#dfd8c9;border-color:#dfd8c9}button:focus-visible,a:focus-visible{outline:3px solid #d6ac77;outline-offset:4px}figure{margin:0}img{width:100%;height:auto;display:block}figcaption{color:#acb6b1;margin-top:14px;line-height:1.5}details{margin-top:24px;max-width:900px;line-height:1.6}summary{cursor:pointer;color:#d6ac77}p{margin-bottom:0}
+</style>
+<main>
+<header><h1>An afternoon · three compositions</h1><a href="/">Play the short exchange →</a></header>
+<nav aria-label="Choose a composition">
+<button data-image="study-01-caption.png" aria-pressed="false">1 · Inset caption</button>
+<button data-image="study-02-column.png" aria-pressed="false">2 · Side column</button>
+<button data-image="study-03-folio.png" aria-pressed="true">3 · Below the illustration</button>
+</nav>
+<figure><img id="screen" src="comparisons/study-03-folio.png" alt="The complete Ren’Py screen: full infirmary illustration above paired busts and Tessa’s question."><figcaption>Identical scene, line and portraits in each version. Select a composition to compare it at the same size.</figcaption></figure>
+<details><summary>Implementation choice and limits</summary><p>The short exchange develops version 3. The whole illustration remains visible, and the compact pair sits beside the line. The tradeoff is a smaller painting and broad side margins. Version 1 keeps the painting larger but covers part of it; version 2 spreads reading and acting across a greater distance. These are working judgments for this passage, not established approval or a claim that one layout suits every scene.</p></details>
+</main>
+<script>
+const screen=document.getElementById('screen');
+for(const b of document.querySelectorAll('button')) b.addEventListener('click',()=>{for(const other of document.querySelectorAll('button'))other.setAttribute('aria-pressed',String(other===b));screen.src='comparisons/'+b.dataset.image;screen.alt='Complete Ren’Py screen for '+b.textContent+'; same infirmary scene, paired busts and Tessa’s question.';});
+</script>
+</html>

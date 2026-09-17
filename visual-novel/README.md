@@ -1,6 +1,8 @@
 # Original-timeline visual novel — adaptation brief
 
-Status: **ANOTHER FAILED ATTEMPT: 0.4.0-dev — 17 September 2026**, archived at `1bb6d76`. The user rejected its intrusive/ugly interface and poorly composed compact portraits. Read the [failure analysis](reviews/2026-09-17-rovel-rejection/README.md) and [visual production controls](production-controls.md). Current work is documentation/control only. **Look closer / Threads** and the [experience requirements](presentation-redesign.md) remain in force; the execution is rejected.
+**Controlled pass:** the user authorized the isolated [An afternoon proof](prototypes/window/README.md). It compares complete layouts and finishes the short S005 exchange; the main runtime remains rejected, with no rollout authorized by this delivery.
+
+Status: **ANOTHER FAILED ATTEMPT: 0.4.0-dev — 17 September 2026**, archived at `1bb6d76`. The user rejected its intrusive/ugly interface and poorly composed compact portraits. Read the [failure analysis](reviews/2026-09-17-rovel-rejection/README.md) and [visual production controls](production-controls.md). The later controlled pass is isolated from this failed runtime. **Look closer / Threads** and the [experience requirements](presentation-redesign.md) remain in force; the execution is rejected.
 
 The goal is a beautiful, fluid, engaging and **entertainingly painful** original-timeline playthrough that makes the reader care about Tessa and want to save her at the end. Compact character frames for rapid exchanges, deliberate listener reactions, coherent reading/navigation, scene-specific performance and meaningful discovery are core requirements. The next production delivery, when requested, is a bounded design proof, followed by the complete **S001–S005 Rovel sequence** after that direction is established. The full scope remains all 58 scenes and the original endpoint.
 
@@ -8,7 +10,7 @@ The existing text route is traversable: all 58 original screenplay scenes, ten w
 
 For browser inspection, run `./visual-novel/play-web.sh` from the repository root. It serves the actual Ren'Py web build at **http://127.0.0.1:8042/** and opens your browser. Keep the terminal open; Ctrl+C stops the server. Rebuild after game changes with [build-web.sh](build-web.sh). The browser edition uses the same story, investigations and runtime artwork.
 
-The [route ledger](art/route-coverage.md) records 66 mapped opening pages, 29 room-only pages without the required cast, and 757 prose-only pages: 852 reading pages from 849 source reading blocks. The mapped opening also fails the experience review. **Settings → Lighting → Softened** reduces glare and opens shadows without changing story or discovery state; Intense remains the default. [Lighting provenance](art/lighting/README.md) records the recovered exports and GIMP alternates. This working feature does not clear the surrounding game.
+The [route ledger](art/route-coverage.md) records 95 mapped S001–S005 pages with rejected presentation, and 757 prose-only pages: 852 reading pages from 849 source reading blocks. The mapped opening also fails the experience review. **Settings → Lighting → Softened** reduces glare and opens shadows without changing story or discovery state; Intense remains the default. [Lighting provenance](art/lighting/README.md) records the recovered exports and GIMP alternates. This working feature does not clear the surrounding game.
 
 ## Adaptation structure
 

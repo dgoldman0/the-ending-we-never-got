@@ -8,7 +8,7 @@ The previous session inspected the images and accepted obvious visual faults. It
 
 **Documentation cannot guarantee better visual judgment.** Nor does another model using the same assumptions provide independent artistic validation. These controls make the standard concrete, require demonstrated visual discrimination and keep an unproven judgment from directing hours of production. If a model cannot recognize the illustrated defects below, it has not demonstrated fitness to approve the visual direction. Repeating a review ritual does not qualify it.
 
-The current request authorizes the failed-attempt commit and documentation/control update. It does not authorize new scene art, a UI redesign or portrait repairs. A diagnostic question calls for an answer; do not infer permission to edit from it. Later instructions can authorize production, and routine work already authorized needs no repeated permission request.
+The archive/control request did not authorize art or interface changes. The user subsequently requested implementation of the controlled pass; the isolated [window proof](prototypes/window/README.md) is that bounded production delivery. A diagnostic question calls for an answer; do not infer permission to edit from it. Later instructions can authorize production, and routine work already authorized needs no repeated permission request.
 
 ## Establish the standard with actual pictures
 
@@ -76,4 +76,4 @@ Source fidelity, state, geometry, accessibility, masks, exports and packaging re
 
 There is no new build gate, automatic visual score or production-state JSON. Scripts do not repair model perception. The spending control is the small early delivery and demonstrated visual direction. The artistic control is concrete comparison and judgments borne out by the pictures and external feedback. Neither guarantees success; they expose failure earlier and reduce repeated expansion of weak work.
 
-Keep current status consistent in instructions, the experience brief, route ledger and runtime/QA guides. Preserve historical reviews under explicit superseded labels. Commit useful progress accurately; commits do not confer artistic approval. End this task with the failed archive and documentation/control update, not another unrequested production attempt.
+Keep current status consistent in instructions, the experience brief, route ledger and runtime/QA guides. Preserve historical reviews under explicit superseded labels. Commit useful progress accurately; commits do not confer artistic approval. The archive/control task ended at `ff71fa3`. The later authorized proof is a separate delivery; stop there for visual feedback before expansion.

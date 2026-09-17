@@ -1,6 +1,6 @@
 # Original timeline — experience and production requirements
 
-**Active requirements after another rejection — 17 September 2026.** Version **0.4.0-dev is failed**, archived at `1bb6d76`; see the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). Its 95 mapped pages do not clear the UI or portraits. Version 0.3.2 also remains rejected. The [visual production controls](production-controls.md) address the wrong visual judgments that earlier reviews accepted. Current work is documentation/control only; future production first delivers a small finished design proof.
+**Active requirements after another rejection — 17 September 2026.** Version **0.4.0-dev is failed**, archived at `1bb6d76`; see the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). Its 95 mapped pages do not clear the UI or portraits. Version 0.3.2 also remains rejected. The [visual production controls](production-controls.md) address the wrong visual judgments that earlier reviews accepted. The user subsequently authorized the controlled pass. The isolated [window proof](prototypes/window/README.md) is the small design delivery; its direction remains unestablished until feedback. No rollout or complete-scene clearance follows from producing it.
 
 ## Goal and scope
 

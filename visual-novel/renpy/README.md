@@ -1,6 +1,6 @@
 # The original timeline — playable build
 
-**Current runtime: 0.4.0-dev, rejected and archived at `1bb6d76`.** Its interface and compact portrait presentation failed. The first 95 reading pages (S001–S005) have mapped performances/art; 757 later pages remain prose-only. These are inventory facts, not quality clearance. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md), [production controls](../production-controls.md) and [route ledger](../art/route-coverage.md). The current task is documentation/control only; future production begins with a bounded proof.
+**Current runtime: 0.4.0-dev, rejected and archived at `1bb6d76`.** Its interface and compact portrait presentation failed. The first 95 reading pages (S001–S005) have mapped performances/art; 757 later pages remain prose-only. These are inventory facts, not quality clearance. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md), [production controls](../production-controls.md) and [route ledger](../art/route-coverage.md). The subsequently authorized [window proof](../prototypes/window/README.md) is a separate small delivery. Run it separately; this main runtime has not been replaced or cleared.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 

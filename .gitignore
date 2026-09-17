@@ -13,3 +13,12 @@ visual-novel/renpy/test-results/
 visual-novel/renpy/game/test-output/
 visual-novel/renpy/test-output/
 visual-novel/renpy/screenshot*.png
+
+# Isolated visual proofs: retain reviewed evidence, ignore engine scratch.
+visual-novel/prototypes/*/game/cache/
+visual-novel/prototypes/*/game/saves/
+visual-novel/prototypes/*/log.txt
+visual-novel/prototypes/*/errors.txt
+visual-novel/prototypes/*/traceback.txt
+visual-novel/prototypes/*/tests/
+visual-novel/prototypes/*/test-results/
