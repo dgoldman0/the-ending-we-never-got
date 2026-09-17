@@ -1,6 +1,8 @@
 # Presentation redesign
 
-Status: **active realignment after rejected checkpoint `f3acb5e` — 16 September 2026.** The user rejected the S001–S003 revision as well as its predecessors: comfortable lighting, cheap interface treatment, and disappearing cast beyond the opening. Their current instruction authorizes continued work. The current opening has source-specific staging and 66 mapped reading states, but no visual clearance. See [the opening review](art/opening-sequence/review/production-review.md). [Look closer / Threads](investigation.md) remains the accepted reader interaction.
+Status: **full design review after the user stopped piecemeal fixes — 17 September 2026.** Web 0.3.2 / `d0c3020` remains rejected and incomplete. Read [the full experience review, priorities and runtime evidence](reviews/2026-09-17-full-design-review/README.md) before further production. The review identifies missing compact character frames, unstable reading positions, repetitive acting, unfinished interface construction, discovery friction and absent route performances. It does not clear the opening or resume implementation.
+
+The earlier `f3acb5e` checkpoint was also rejected: comfortable lighting, cheap interface treatment, and disappearing cast beyond the opening. The subsequent opening still has only 66 mapped reading states. Earlier production authorization and review observations do not override the user's later stop and review request. [Look closer / Threads](investigation.md) remains the accepted reader interaction.
 
 ## Latest correction and production priorities
 

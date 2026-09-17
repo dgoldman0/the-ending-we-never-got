@@ -1,12 +1,12 @@
 # Route presentation coverage
 
-This is a production ledger, not visual clearance. The complete screenplay remains playable; absent illustrations and cast remain defects. Checkpoint `f3acb5e` records the rejected opening presentation. The new lighting/interface pass is under inspection.
+This is a production ledger, not visual clearance. The complete screenplay remains traversable; absent illustrations and cast remain defects. Both checkpoint `f3acb5e` and the subsequent web 0.3.2 presentation remain rejected. The [17 September full design review](../reviews/2026-09-17-full-design-review/README.md) traversed all 852 reading pages: 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. The table below counts the 849 source reading blocks; three blocks split into an additional page. No scene is cleared by those counts or the audit.
 
 | Scene | Source location | Reading blocks | Current coverage |
 | --- | --- | ---: | --- |
-| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | Mapped CG/sprite performance; renewed light/UI under review |
-| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | Mapped CG/sprite performance; renewed light/UI under review |
-| S003 | INT. PALACE INFIRMARY - DAY | 24 | Mapped CG/sprite performance; renewed light/UI under review |
+| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | Mapped CG/sprite performance; experience rejected |
+| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | Mapped CG/sprite performance; experience rejected |
+| S003 | INT. PALACE INFIRMARY - DAY | 24 | Mapped CG/sprite performance; experience rejected |
 | S004 | INT. AUDIENCE HALL - DAY | 16 | Legacy background only; present cast missing — FAILED |
 | S005 | INT. INFIRMARY - LATER | 13 | Legacy background only; present cast missing — FAILED |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 18 | Prose only; scene and cast production missing |

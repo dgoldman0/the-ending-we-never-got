@@ -1,0 +1,134 @@
+{
+  "review_date": "2026-09-17",
+  "runtime_commit": "d0c3020",
+  "web_version": "0.3.2",
+  "browser": "Chromium, isolated review profile",
+  "virtual_canvas": [
+    1920,
+    1080
+  ],
+  "route_capture_viewport": [
+    1280,
+    720
+  ],
+  "additional_manually_inspected_viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      960,
+      540
+    ]
+  ],
+  "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
+  "scenes": 58,
+  "source_reading_blocks": 849,
+  "reading_pages": 852,
+  "mapped_opening_pages": 66,
+  "room_only_pages": 29,
+  "prose_only_pages": 757,
+  "extra_pages": [
+    {
+      "scene": 1,
+      "source_line": 15,
+      "page": 1
+    },
+    {
+      "scene": 18,
+      "source_line": 812,
+      "page": 1
+    },
+    {
+      "scene": 32,
+      "source_line": 1265,
+      "page": 1
+    }
+  ],
+  "retained_screenshots": 18,
+  "per_scene_pages": {
+    "S001": 24,
+    "S002": 18,
+    "S003": 24,
+    "S004": 16,
+    "S005": 13,
+    "S006": 18,
+    "S007": 15,
+    "S008": 22,
+    "S009": 15,
+    "S010": 19,
+    "S011": 19,
+    "S012": 4,
+    "S013": 11,
+    "S014": 12,
+    "S015": 16,
+    "S016": 46,
+    "S017": 6,
+    "S018": 17,
+    "S019": 19,
+    "S020": 4,
+    "S021": 26,
+    "S022": 20,
+    "S023": 16,
+    "S024": 8,
+    "S025": 12,
+    "S026": 8,
+    "S027": 17,
+    "S028": 8,
+    "S029": 4,
+    "S030": 12,
+    "S031": 10,
+    "S032": 17,
+    "S033": 24,
+    "S034": 5,
+    "S035": 30,
+    "S036": 25,
+    "S037": 15,
+    "S038": 17,
+    "S039": 4,
+    "S040": 10,
+    "S041": 8,
+    "S042": 11,
+    "S043": 11,
+    "S044": 19,
+    "S045": 10,
+    "S046": 21,
+    "S047": 14,
+    "S048": 22,
+    "S049": 18,
+    "S050": 10,
+    "S051": 4,
+    "S052": 10,
+    "S053": 2,
+    "S054": 24,
+    "S055": 12,
+    "S056": 6,
+    "S057": 8,
+    "S058": 16
+  },
+  "measurement_result": "No standard-text story window outside canvas or measured text below footer; cropped decorative edges reproduced visually. Legacy window extends six virtual pixels under footer without measured text overlap.",
+  "reproduced_interaction_defect": {
+    "screen": "Threads",
+    "viewport": [
+      1280,
+      720
+    ],
+    "caption_click": [
+      185,
+      373
+    ],
+    "caption_result": "Threads remains open",
+    "image_click": [
+      250,
+      270
+    ],
+    "image_result": "Look closer detail opens"
+  },
+  "limitations": [
+    "Automated traversal does not measure natural reading pace or constitute manual inspection of every page.",
+    "Manual visual inspection used consecutive opening and representative later captures plus menus and discovery.",
+    "Targeted Larger checks only; no new native-build or assistive-technology regression.",
+    "No runtime changes or art production in this review."
+  ],
+  "status": "Rejected incomplete presentation; no scene cleared by this audit."
+}
