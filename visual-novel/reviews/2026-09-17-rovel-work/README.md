@@ -4,6 +4,8 @@
 
 The earlier inspection account below is preserved as historical evidence of what the session produced and claimed to check. Its positive visual observations did not detect or prevent these failures. The presentation, interface and portrait treatment are **FAILED**, not merely awaiting final review. Technical results retain their stated scope; they cannot override this rejection. No new engine tests or rebuild were performed to archive the attempt.
 
+The subsequent [failure analysis](../2026-09-17-rovel-rejection/README.md) and [production controls](../../production-controls.md) govern recovery. The failed archive is `1bb6d76`.
+
 ## Historical production and inspection account
 
 17 September 2026. Production resumed after requirements commit `e6f04ff`. This checkpoint replaces the opening presentation with a connected working candidate; it does not declare the full game complete or imply user approval. The rejected 0.3.2 build remains historical comparison evidence.

@@ -2,7 +2,7 @@
 
 Status: FIRST STRUCTURAL PROPOSAL, 16 September 2026. Requested scope: the original timeline through its ending, followed by **“Do you wish to save Tessa?”** The [Rebuild 11 screenplay](../screenplay/original-timeline/source.fountain) drives events, dialogue, chronology and character knowledge. This document proposes a VN presentation; it does not revise the manuscript or establish a playable game.
 
-**Current alignment, 17 September:** the full text route exists, but runtime 0.3.2 and its first-night discovery presentation remain rejected. The quizzes are removed. [Look closer / Threads](investigation.md) is the accepted reader role. R01–R05 below are candidate availability spans, not compulsory rounds or menu interruptions. Follow the [active experience brief](presentation-redesign.md), including compact conversation frames, stable reading, complete performances and the connected S001–S005 milestone. This outline does not establish completion.
+**Current alignment, 17 September:** the full text route exists, but both 0.3.2 and 0.4.0-dev are rejected. Read the [production controls](production-controls.md): a bounded design proof precedes further sequence production. The quizzes are removed. [Look closer / Threads](investigation.md) is the accepted reader role. R01–R05 below are candidate availability spans, not compulsory rounds or menu interruptions. Follow the [active experience brief](presentation-redesign.md), including compact conversation frames, stable reading, complete performances and the connected S001–S005 milestone. This outline does not establish completion.
 
 Read with the [complete scene map](scene-map.md), [player investigation sketch](investigation.md), [pacing and time skips](pacing.md), [ending sequence](ending.md) and [adaptation brief](README.md). Chapter titles and boundaries are working labels.
 
@@ -172,7 +172,7 @@ The [ending storyboard](ending.md) specifies the proposed flow and where this sk
 
 ## Replacement presentation sample
 
-The source route implements the current chapter structure; its presentation is rejected and quizzes are removed. The next milestone is the complete [S001–S005 experience](presentation-redesign.md#next-playable-milestone--complete-rovel-sequence), including compact/staged dialogue, reaction and action, all three lighting registers where appropriate, both lighting preferences, coherent utilities and worthwhile discovery/return. Placeholders can support labeled development layouts but cannot clear that milestone. Existing tone studies remain references.
+The source route implements the current chapter structure; its presentation is rejected and quizzes are removed. After the bounded proof delivery, the connected milestone is the complete [S001–S005 experience](presentation-redesign.md#next-playable-milestone--complete-rovel-sequence), including compact/staged dialogue, reaction and action, all three lighting registers where appropriate, both lighting preferences, coherent utilities and worthwhile discovery/return. Placeholders can support labeled development layouts but cannot clear that milestone. Existing tone studies remain references.
 
 Preserve source knowledge and relationships in both straight-through and optional-discovery reads. Test exact return and saved reader discoveries, then judge pacing at ordinary reading speed. The current route's passing tests do not approve its visual direction or the proposed replacement.
 

@@ -1,6 +1,6 @@
 # Ceremony and the borrowed afternoon
 
-Working production brief for original-route S004–S005, source lines 174–250. This targets the first cast-coverage break after the newly staged opening; it is not a new story sequence or approved art. **The gap is still open:** only the first raw mantle component has been generated, and none of this sequence is integrated into runtime.
+Historical unfinished production brief for original-route S004–S005, source lines 174–250. This directory contains only the first raw mantle study. The later Rovel attempt produced separate S004–S005 components under `art/rovel/` and integrated them, then was rejected and archived at `1bb6d76`. Follow the [production controls](../../production-controls.md); neither this study nor that failed attempt is a cleared production direction.
 
 ## Source, cast and chronology
 

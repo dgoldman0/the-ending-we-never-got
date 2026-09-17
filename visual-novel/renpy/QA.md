@@ -1,12 +1,16 @@
 # QA — current experience failed; requirements realigned
 
-**17 September 2026: 0.4.0-dev working candidate.** See [current review](../reviews/2026-09-17-rovel-work/README.md) for native/browser evidence, manual inspection and remaining experience gates. Native functional tests pass 7 cases / 152 assertions; this does not clear art or later route coverage. The evidence below is historical and retains its original limits.
+**17 September 2026: 0.4.0-dev FAILED**, archived at `1bb6d76`. The UI and compact portrait execution were rejected after prior inspection. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md) and [production controls](../production-controls.md). The prior native result was 7 cases / 152 assertions; that historical technical result cannot clear this presentation. No new engine pass is implied by the control update.
+
+The current task permits documentation/control only. Future production first delivers a small finished design proof. The earlier session already inspected the pictures and accepted obvious defects; the correction centers on actual visual examples, comparative judgment and demonstrated direction. Read final screens before prompts/audit prose, and distinguish source, export, geometry and packaging evidence from artistic judgment. The producing model’s favorable review alone cannot clear another batch. No build gate or automated visual score is introduced.
+
+## Historical full review of 0.3.2
 
 The review traversed all **852 reading pages / 849 source reading blocks**. It manually inspected selected screens and interactions, not all 852 pages at human reading pace. It found no compact speaker-frame mode, excessive dialogue-box movement, frozen reactions, unfinished frame edges, weak discovery payoff, unstable controls and a Threads caption partly outside its hit area. The [ledger](../art/route-coverage.md) records 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. The final question exists, but its intended Yes choice does not.
 
 Geometry checks did not reproduce offscreen story glyphs in the tested layouts. They do not dismiss the user's clipping report or clear the interface. Native/browser results, manual pixel inspection, continuous human-paced reading and automated traversal must remain distinct evidence.
 
-The next build must meet the [experience and completion gates](../presentation-redesign.md#scene-completion-gates) across connected S001–S005, including compact conversations/listener reactions, cast through narration, interface/flow, discovery and return, both lighting preferences, standard/larger text and mouse/keyboard. Record build, source span, window/platform, actual manual scope and concrete failures. A technical pass cannot clear a failed experience or missing later scenes. Final-route verification must eventually exercise the deliberate Yes affordance after S058/fade, without developing the deferred post-Yes interface.
+The subsequent connected milestone must meet the [experience and completion gates](../presentation-redesign.md#scene-completion-gates) across S001–S005 after the bounded proof. Include compact conversations/listener reactions, cast through narration, interface/flow, discovery and return, both lighting preferences, standard/larger text and mouse/keyboard. Record build, source span, window/platform, actual manual scope and concrete failures. Final-route verification must eventually exercise the deliberate Yes affordance after S058/fade, without developing the deferred post-Yes interface.
 
 ## Historical 0.3.2 component and functional evidence
 

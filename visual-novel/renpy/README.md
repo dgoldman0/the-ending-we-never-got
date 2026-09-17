@@ -1,16 +1,16 @@
 # The original timeline — playable build
 
-**Current runtime: 0.4.0-dev, a working Rovel candidate.** The first 95 reading pages (S001–S005) now have source-specific performances and scene art; 757 later pages remain prose-only. Rich illustrations and compact speaker/listener frames work together. See [current evidence and limits](../reviews/2026-09-17-rovel-work/README.md), the [experience gates](../presentation-redesign.md), and the [full-route ledger](../art/route-coverage.md). Version 0.3.2 remains the rejected comparison baseline.
+**Current runtime: 0.4.0-dev, rejected and archived at `1bb6d76`.** Its interface and compact portrait presentation failed. The first 95 reading pages (S001–S005) have mapped performances/art; 757 later pages remain prose-only. These are inventory facts, not quality clearance. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md), [production controls](../production-controls.md) and [route ledger](../art/route-coverage.md). The current task is documentation/control only; future production begins with a bounded proof.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
 The original text route is traversable: 58 source scenes, ten working chapters, and the complete Bellweir ending followed by **Do you wish to save Tessa?** The question currently offers only Return to title. The intended Yes affordance remains unfinished; all post-Yes UI/UX and continuation are deferred. Text traversal is not completion of this visual novel.
 
-The current opening maps 66 reading states across arrival, attempted return, the closed-arch exchange, the guarded apartment and first treatment. Scene illustrations alternate with transparent cast images and positioned dialogue; the required compact conversation system and adequate reactions remain missing. GIMP masters retain source-state repairs and separate exposure layers. Retired first-playable cutouts remain disabled. S004–S005 lack their required cast; S006–S058 use prose/location cards. No music, voice or sound has been produced yet.
+The archived opening maps 95 reading pages across S001–S005, with scene illustrations, action states and compact portraits. The user rejected the resulting presentation despite this coverage. GIMP masters retain source repairs and paired exposure layers. S004–S005 now have mapped cast/action rather than the earlier room-only fallback; S006–S058 still use prose/location cards. No music, voice or sound has been produced yet.
 
 ## Standalone Linux build
 
-The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, rejected first playable package; it does not include this checkpoint's changes. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Rebuild from current source with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. Neither edition is a completed illustrated release.
+The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, rejected first playable package; it does not include this checkpoint's changes. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Create a diagnostic export from current source with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. Neither edition is a completed illustrated release.
 
 ## Reading and state
 
@@ -52,6 +52,7 @@ After changing scripts or art, rebuild and refresh the page:
 
 ```sh
 python3 visual-novel/tools/adapt_screenplay.py --check
+python3 visual-novel/tools/check-rovel-plan.py
 ./visual-novel/play.sh lint
 ./visual-novel/play.sh test --overwrite-screenshots
 ```

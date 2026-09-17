@@ -2,7 +2,7 @@
 
 Implementation update: the first playable route retains every screenplay action and spoken line, including its existing time skips. The additional compression below remains a proposal; automated traversal duration is not a measured human reading time.
 
-**Realignment, 17 September:** runtime 0.3.2's flow remains rejected. Follow the [active experience brief](presentation-redesign.md): map dramatic beats to compact conversation, staged action, reaction and quiet holds instead of treating source paragraph length as a finished reading rhythm. Establish the complete S001–S005 sequence before extrapolating pacing across the route. Source preservation and attractive individual images do not demonstrate that these transitions work in play.
+**Current status, 17 September:** both 0.3.2 and 0.4.0-dev remain rejected. The [production controls](production-controls.md) require a bounded design proof before renewed sequence production. Follow the [active experience brief](presentation-redesign.md): map dramatic beats to compact conversation, staged action, reaction and quiet holds instead of treating source paragraph length as a finished reading rhythm. Deliver the bounded proof, then establish the complete S001–S005 sequence before extrapolating pacing across the route. Source preservation and attractive individual images do not demonstrate that these transitions work in play.
 
 **Current interaction decision:** [Look closer / Threads](investigation.md) replaces the rejected card/quiz design. References below to investigation and rounds mean optional reader discovery at candidate story spans, not actions performed by the player as a character or five compulsory menu interruptions.
 

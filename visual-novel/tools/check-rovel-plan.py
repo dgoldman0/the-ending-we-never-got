@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate authored Rovel coverage and required assets without starting Ren'Py.
+"""Validate Rovel source coverage and assets without prescribing a visual design.
 
 Default: missing scene/portrait/Softened files fail the asset gate. --plan-only
 checks source/presentation invariants while still reporting those missing files;
@@ -80,29 +80,24 @@ def check_plan(plan):
         beat = get(*key)
         assert beat['source'] == key, key
         assert beat['review'] == 'unreviewed-in-rovel', 'A descriptor cannot clear an experience'
-        assert beat['mode'] in ('compact', 'action', 'quiet'), key
+        assert beat['mode'] in ('compact', 'staged', 'action', 'quiet'), key
         assert beat['stage']['image'] and beat['stage']['alt'] and beat['framing'], key
         assert beat['cast'] and set(beat['cast']) <= set(beat['present_cast']), key
         assert beat['grade'] == {1: 'bright', 2: 'night', 3: 'ordinary', 4: 'bright', 5: 'ordinary'}[key[0]], key
         actual_speaker = beat['speaker']['who'] if beat['speaker'] else None
         assert actual_speaker == source_speaker, (key, actual_speaker, source_speaker)
-        if source_speaker:
-            assert beat['mode'] == 'compact', key
-            assert not beat['stage']['actors'], 'Compact exchange must not restore giant fixed-gesture cutouts'
-        else:
-            assert beat['mode'] != 'compact' and beat['speaker'] is None, key
         for role in ('speaker', 'listener'):
             portrait = beat[role]
             if not portrait:
                 continue
             assert portrait['who'] in beat['cast'], (key, role, portrait['who'])
-            assert portrait['framing'] == 'face-only-no-costume-or-props', key
+            assert portrait['framing'], 'Record the deliberate framing; head-only is not required'
             if portrait['who'] == 'TESSA':
                 assert '-' + beat['wardrobe'] + '-' in portrait['image'], (key, portrait['image'])
         if beat['speaker'] and beat['listener']:
             assert beat['speaker']['who'] != beat['listener']['who'], key
-        for forbidden in ('anchors', 'reading_x', 'reading_y', 'reading_w', 'dialogue_position'):
-            assert forbidden not in beat, 'Reading geometry belongs to the stable screen, not speaker data'
+        # Mode, portrait composition, cast visibility and reading geometry need
+        # visual direction. Do not enforce the rejected layout as source canon.
 
     # No mutable descriptor returned to a screen may leak into another reading
     # point or survive rollback as a separately advanced presentation cursor.
@@ -201,9 +196,9 @@ def main():
             print('  Missing: ' + path)
         for path in identical:
             print('  Identical Intense/Softened files: ' + path)
-        print('Visual, UI and connected-experience gates remain UNREVIEWED.')
+        print('The 0.4.0-dev UI and portraits were rejected. This check cannot assess a replacement visually.')
         return 0 if args.plan_only else 1
-    print('Required files/pairs exist; visual, UI and connected-experience gates remain UNREVIEWED.')
+    print('Required files/pairs exist. The 0.4.0-dev UI and portraits were rejected; file checks cannot clear a replacement.')
     return 0
 
 

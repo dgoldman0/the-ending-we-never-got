@@ -1,6 +1,6 @@
 # Visual development
 
-**Realigned 17 September 2026:** runtime 0.3.2 remains rejected and incomplete. Read the [active experience brief](../presentation-redesign.md) and [full design review](../reviews/2026-09-17-full-design-review/README.md). The next playable milestone is a complete connected S001–S005 sequence. Existing selected likeness/tone references remain valid; rejected presentation components must not become their own style standard.
+**Rejected again, 17 September 2026:** 0.4.0-dev is archived at `1bb6d76`; 0.3.2 also remains rejected. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md), [production controls](../production-controls.md) and [experience brief](../presentation-redesign.md). Current work is documentation/control only. Future production first delivers a bounded design proof, then the connected S001–S005 milestone. Selected likeness/tone references remain valid; rejected components must not become their own style standard.
 
 The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
 
@@ -8,7 +8,7 @@ The [visual direction](visual-direction.md) fixes the three scene registers requ
 - [interface-original/](interface-original/README.md): rejected painted interface pass and GIMP masters, retained for diagnosis; not an approved frame design.
 - [lighting/](lighting/README.md): persistent Intense/Softened choice, recovered exports, matched variants and review evidence.
 - [Route coverage](route-coverage.md): all 58 scenes, with incomplete cast and artwork explicitly marked.
-- [runtime/](runtime/README.md): the rejected first batch, retained for provenance. Its temporary S004/S005 room plates still require replacement; current opening art is produced separately.
+- [runtime/](runtime/README.md): the rejected first batch, retained for provenance. The 0.4.0-dev attempt replaced its S004/S005 room-only coverage, but that new presentation also failed.
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.
 - `character-references/`: reusable likeness references, with their selection status recorded in the character and scene notes.
 - [character-keys/](character-keys/README.md): labeled full-body keys with age, wardrobe state, manual review and GIMP files.

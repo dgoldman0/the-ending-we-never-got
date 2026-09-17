@@ -2,7 +2,7 @@
 
 This is a production ledger, not visual clearance. The complete original route remains in scope: all 58 screenplay scenes, the complete Bellweir ending and fade, then “Do you wish to save Tessa?” Post-Yes presentation remains deferred. Absent illustrations and cast remain defects.
 
-**Working status, 17 September 2026: `0.4.0-dev`.** The current [Rovel presentation map](../renpy/game/rovel.rpy) covers all 95 reading pages in S001–S005: 24, 18, 24, 16 and 13 pages respectively. It blends composed scene illustrations, action and quiet inserts with compact speaker/listener frames for rapid dialogue. There are 38 action pages, 10 quiet pages and 47 compact dialogue pages; these are presentation modes, not completed-art or experience scores. Art corrections, integration and the main thread's connected review are ongoing. No scene-completion gate or user approval is recorded for this working build.
+**Rejected status, 17 September 2026: `0.4.0-dev`, archived at `1bb6d76`.** The current [Rovel presentation map](../renpy/game/rovel.rpy) covers all 95 reading pages in S001–S005: 24, 18, 24, 16 and 13 pages respectively. It blends composed scene illustrations, action and quiet inserts with compact speaker/listener frames for rapid dialogue. There are 38 action pages, 10 quiet pages and 47 compact dialogue pages; these are presentation modes, not completed-art or experience scores. The user rejected the interface and compact portrait execution after the session's inspection. These presentation gates are failed. The [production controls](../production-controls.md) permit documentation/control work now; future production starts with a bounded proof before the connected milestone.
 
 The remaining **757 reading pages in S006–S058 are still prose-only**, with scene and cast production missing. All 852 reading pages remain in the runtime; the next milestone has not shortened the route. The table counts 849 source reading blocks because three blocks split into an additional page. The final fade is a separate transition, not a reading block.
 
@@ -10,11 +10,11 @@ Both checkpoint `f3acb5e` and web 0.3.2 remain rejected. The [17 September full 
 
 | Scene | Source location | Reading blocks | Current coverage |
 | --- | --- | ---: | --- |
-| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | 24 pages mapped: sequential arrival/closure art, staged exchanges and compact cast frames; correction/integration review ongoing |
-| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | 18 pages mapped: night action, compact exchanges and quiet drawing inserts; correction/integration review ongoing |
-| S003 | INT. PALACE INFIRMARY - DAY | 24 | 24 pages mapped: assessment/treatment states, compact exchanges and recovery inserts; correction/integration review ongoing |
-| S004 | INT. AUDIENCE HALL - DAY | 16 | 16 pages mapped: ceremony, doorway and applause inserts, compact exchanges and separate intervention/yield states; correction/integration review ongoing |
-| S005 | INT. INFIRMARY - LATER | 13 | 13 pages mapped: packing/window scene, compact exchanges, courtyard inserts and shared window seat; correction/integration review ongoing |
+| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | 24 pages mapped: sequential arrival/closure art, staged exchanges and compact cast frames; presentation rejected; bounded design proof required |
+| S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | 18 pages mapped: night action, compact exchanges and quiet drawing inserts; presentation rejected; bounded design proof required |
+| S003 | INT. PALACE INFIRMARY - DAY | 24 | 24 pages mapped: assessment/treatment states, compact exchanges and recovery inserts; presentation rejected; bounded design proof required |
+| S004 | INT. AUDIENCE HALL - DAY | 16 | 16 pages mapped: ceremony, doorway and applause inserts, compact exchanges and separate intervention/yield states; presentation rejected; bounded design proof required |
+| S005 | INT. INFIRMARY - LATER | 13 | 13 pages mapped: packing/window scene, compact exchanges, courtyard inserts and shared window seat; presentation rejected; bounded design proof required |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 18 | Prose only; scene and cast production missing |
 | S007 | INT. ROADSIDE INN - NIGHT | 15 | Prose only; scene and cast production missing |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 22 | Prose only; scene and cast production missing |

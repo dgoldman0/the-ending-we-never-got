@@ -1,6 +1,6 @@
 # Original timeline — experience and production requirements
 
-**Active production requirements — 17 September 2026.** The user authorized production after realignment following the [full design review](reviews/2026-09-17-full-design-review/README.md). Runtime `d0c3020` / web 0.3.2 remains the rejected baseline. **0.4.0-dev is a new working candidate**, with S001–S005 integrated for review. [Current evidence and limits](reviews/2026-09-17-rovel-work/README.md) determine its status; neither this brief nor a successful build clears a scene.
+**Active requirements after another rejection — 17 September 2026.** Version **0.4.0-dev is failed**, archived at `1bb6d76`; see the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). Its 95 mapped pages do not clear the UI or portraits. Version 0.3.2 also remains rejected. The [visual production controls](production-controls.md) address the wrong visual judgments that earlier reviews accepted. Current work is documentation/control only; future production first delivers a small finished design proof.
 
 ## Goal and scope
 
@@ -21,6 +21,7 @@ The current adapter preserves every screenplay word. Presentation and narration 
 | User decisions and [local instructions](AGENTS.md) | Binding corrections, selected references and task scope; newer user direction takes precedence |
 | Screenplay, [character designs](../characters/original-visuals.md), [locations](../worldbuilding/original-locations.md), [continuity](visual-continuity.md) | Source facts and explicitly labeled working physical designs; unspecified details do not become canon through a render |
 | This brief | Experience requirements, next milestone, production order and completion gates |
+| [Visual production controls](production-controls.md) | Concrete failure examples, comparative visual judgment, an early finished proof and demonstrated direction before expansion; technical checks cannot supply artistic judgment |
 | [Outline](outline.md), [scene map](scene-map.md), [pacing](pacing.md), [ending](ending.md) | Full-route structure and adaptation proposals; chapter boundaries are not fixed story facts |
 | [Discovery contract](investigation.md) | Reader agency, content payoff, knowledge separation and historical authoring scope |
 | [Visual direction](art/visual-direction.md) and selected references | Likeness, materials, lighting and image review; a tone study is not a runtime scene |
@@ -59,15 +60,23 @@ These are working implementation directions, not approved frame artwork or pixel
 
 Do not lock every exchange to giant standing sprites or make every sentence a full illustration. Compact framing needs designed expressions and identity consistency, not indiscriminate crops of rejected renders. Narration has a related but distinct treatment; its appearance is not a cue to remove actors.
 
+The rejected Rovel implementation's head-only portraits, universal compact-dialogue mode, removal of stage actors and large fixed reading panel are not requirements. Follow the [portrait and layout standards](production-controls.md#compose-portraits-before-automating-crops). Compose text, people and controls together; a portrait file's presence does not prove good attribution or acting. Evaluate short replies as critically as long paragraphs, with important scene action visible while UI remains present.
+
 **Preserve the blend.** Rich, detailed scene art remains central to arrivals, physical action, ceremonies and quiet relationship moments. Compact frames support faster exchanges within that illustrated sequence. They are an additional presentation mode, not a replacement of detailed scene work. The current Rovel plan contains 38 action pages, 10 quiet pages and 47 compact exchange pages; those counts describe this sequence and are not a quota for later scenes.
 
 Actual interface materials and ornament remain design work. Aged metal, mineral surfaces and botanical forms are possible references, not a requirement to preserve the current gilt frame or cropped crest. Make complete edges and appropriate variants for their intended sizes. Native text and controls need room, legible hierarchy and matching visible/hit/focus areas. Keep utility positions stable when Look closer appears; distinguish advancement, rollback and return from inspection. Saves need recognizable narrative context.
 
 Compose title, starting flow, chapter transitions, reading, inspection, Threads, history, saves, settings and endpoint as one visual language. Resolve redundant starts and interruptions through flow design. Review long/short lines and larger text in the complete screen. Correct reading surfaces without lifting scene exposure into a comfortable default.
 
+## Next production delivery — bounded design proof
+
+When production is requested, compare two or three materially different complete layouts using the same real scene/text; finish one short connected exchange. Read the complete source interaction first. Include speaker/listener changes, an action/narration beat, real short/long dialogue and relevant lighting/text-size conditions. Include a worthwhile discovery/return where it belongs to the passage. Preserve detailed illustrations. The [controls](production-controls.md) define visual comparison, portrait composition and the early delivery boundary.
+
+Deliver the actual alternatives, recommendation and proof before expanding them. The producing model’s favorable review cannot alone establish the new direction after these failures; use the user’s response to the concrete result, or a visual reviewer explicitly designated by the user. Resolve obvious defects first. This delivery does not clear a whole source scene or reduce the route scope.
+
 ## Next playable milestone — complete Rovel sequence
 
-**Target: title/start through S001–S005, ending with Tessa making room for Iven on the window sill.** This replaces the narrower S001–S003 production target. It is a milestone within the full route, not authorization to truncate the screenplay or hide later gaps.
+**Subsequent connected target: title/start through S001–S005, ending with Tessa making room for Iven on the window sill.** Begin after the proof has established the visual direction through actual evidence and response. This is a milestone within the full route, not permission to truncate the screenplay or hide later gaps.
 
 | Scene | What the milestone must prove |
 | --- | --- |
@@ -83,17 +92,18 @@ Read the complete source interactions and the [working spatial plan](art/opening
 
 ## Production order
 
-1. **Design connected reading flow and performances.** Map beats to modes, important listener, expression/gesture change, reading location, transition and intentional hold. Resolve compact frames and utility layout with real dialogue. Rough layout experiments are development artifacts, not completed art.
-2. **Produce the components needed for that sequence.** Use written designs and selected references, the current built-in image generator for tailored visuals, and GIMP for masks, repairs, composites, grading and useful layered masters. Compare to authoritative likeness and source state after each operation. Restart without image inputs when references keep forcing a rejected feature. Do not begin another generic batch of every character key.
-3. **Integrate and review S001–S005 continuously.** Correct failed experience gates before expanding the design into another batch. Keep full-route gaps visible in the ledger. Planning and historical authoring can proceed without claiming production clearance.
-4. **Carry the proven design through the route.** Give S006–S009's training, meal, checkers, market and boat the same care as spectacle. Follow the [chapter arcs](outline.md), preserving displacement, Gray Scar cooperation, reunion/laughing portrait, Harrow and its aftermath, accumulated war wear, Mara's final exchange and Bellweir's continuing life. Recheck recurring places, ages, outfits and living/dead boundaries.
-5. **Complete discovery and the original endpoint.** Author the initiating history and reliable player-facing connections before producing artifacts/cutaways. Integrate optional availability without interrupting losses or requiring knowledge. Complete S058, its fade and a deliberate Yes affordance at the final question; response handling must respect the deferred post-Yes scope in [ending.md](ending.md).
+1. **Honor the current task and establish a visual standard.** The present documentation task does not authorize production. On a later production request, open the illustrated failure examples and authoritative references. Make complete-screen alternatives before generating isolated frame or portrait components; explain the actual visual differences.
+2. **Compare layouts and finish the proof.** Map its beats to modes, important listener, expression/gesture, reading location, transition and intentional hold. Produce only the components needed for that proof. Use selected references, the built-in generator and controlled GIMP work; inspect actual final composites. Resolve visible failures before technical audit expansion.
+3. **Deliver the finished proof before further production.** Retain the comparison, connected-play evidence, candid visual verdict and open defects. Establish direction from the concrete result and response; missing response is not approval. Routine corrections already authorized need no repeated permission request.
+4. **Integrate and review S001–S005 against the established visual examples.** Address the actual response and compare later screens to the demonstrated standard, including utilities/discovery and entry/exit transitions. Failed or uncertain visual quality stops expansion. Keep full-route gaps visible in the ledger.
+5. **Carry the proven design through the route in small connected increments.** Give S006–S009's training, meal, checkers, market and boat the same care as spectacle. Follow the [chapter arcs](outline.md), preserving displacement, Gray Scar cooperation, reunion/laughing portrait, Harrow and its aftermath, accumulated war wear, Mara's final exchange and Bellweir's continuing life. Recheck recurring places, ages, outfits and living/dead boundaries.
+6. **Complete discovery and the original endpoint.** Author the initiating history and reliable player-facing connections before producing artifacts/cutaways. Integrate optional availability without interrupting losses or requiring knowledge. Complete S058, its fade and a deliberate Yes affordance at the final question; response handling must respect the deferred post-Yes scope in [ending.md](ending.md).
 
 Audio must eventually support spaces, performance, transitions and silence; music cannot rescue weak acting or flow. Its absence remains production work. Measure reading duration in human-paced play, separately with and without discovery, rather than inferring it from automated traversal.
 
 ## Scene completion gates
 
-The unit of completion is a connected scene, its entry/exit transitions and any optional reader detour. These are internal quality gates, not new user-permission steps. Failure sends work back to the affected design/component; it blocks completion claims and expanding a failed presentation into another batch. Already authorized corrections do not require another approval request.
+The unit of completion is a connected scene, its entry/exit transitions and any optional reader detour. A bounded proof has its own limited verdict and cannot clear a whole scene. These are internal quality gates, not permission requests for routine edits. Failure or missing required evidence blocks expansion under the [production controls](production-controls.md); already authorized corrections continue within their scope. Mark the rejected Rovel interface and portrait presentation failed, not merely awaiting another review.
 
 | Gate | Required evidence | Failure and response |
 | --- | --- | --- |
@@ -111,6 +121,6 @@ Record build/scene/source span, platform/window/settings, what was actually read
 
 The [ledger](art/route-coverage.md) now records **95 mapped opening pages and 757 prose-only pages**, across 852 reading pages / 849 source reading blocks. S004–S005 have source-specific cast/action coverage rather than the earlier empty-room fallback. Availability counts do not clear their experience gates. The rejected baseline and its documented UI/cast failures remain comparison evidence.
 
-The candidate implements compact performances, related dialogue/narration/utility surfaces, a single Begin and three direct reader comparisons. Remaining work includes final connected-experience clearance, later scene coverage and transitions, ancient history/evidence, later wardrobe/age/performance variants, sound, human reading-duration measurements and endpoint response storage/revisit behavior. These are not reasons to reopen settled scope, Tessa's identity, lighting/Softened, reader-only agency, the first-summoning war origin, source consequences or the placement of Yes.
+The failed implementation contains compact performances, dialogue/narration/utility surfaces, a single Begin and three direct reader comparisons. The UI/portrait direction requires a new bounded proof; it is not a final-polish task. Remaining route work includes later scene coverage/transitions, ancient history/evidence, wardrobe/age/performance variants, sound, human reading-duration measurements and endpoint response storage/revisit behavior. These are not reasons to reopen settled scope, Tessa's identity, lighting/Softened, reader-only agency, the first-summoning war origin, source consequences or the placement of Yes.
 
-The authorized production sequence remains linear: resolve the Rovel experience gates before expanding its presentation into another art batch. Detailed work and review records distinguish implemented components from experience clearance.
+Current authorization ends with the archive and documentation/control update. When production is requested, establish and deliver the small finished proof first. The next sequence must follow a demonstrated visual direction rather than another self-certified batch. Detailed records distinguish actual visual judgments from component availability and technical evidence.

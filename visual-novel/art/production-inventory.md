@@ -4,9 +4,9 @@ Scope: all original-timeline character keys, screenplay scene keys, reusable loc
 
 ## Runtime implementation
 
-**Realigned 17 September 2026; runtime 0.3.2 remains rejected.** Existing files are not completed acceptable art. The [active experience brief](../presentation-redesign.md) requires a complete connected S001–S005 milestone before further batch expansion. The [route ledger](route-coverage.md) records actual integration; this inventory records production needs and available studies.
+**Rejected again, 17 September 2026:** 0.4.0-dev is archived at `1bb6d76`; prior 0.3.2 is also rejected. The [production controls](../production-controls.md) require a bounded design proof before any new S001–S005 rollout. This inventory is not an authorized batch queue. Current work is documentation/control only; the [route ledger](route-coverage.md) records actual integration.
 
-The [first runtime batch](runtime/README.md) is historical: its character cutouts are disabled in the current game. Its manifest and favorable review do not authorize reuse. Current [opening components](opening-sequence/README.md) map 66 reading states in S001–S003; S004–S005 have 29 room-only pages without required cast, and S006–S058 have 757 location/text pages. All remain incomplete. A study, a mapped state, a manual asset inspection, an integrated scene and an experience gate pass are different statuses.
+The [first runtime batch](runtime/README.md) is historical: its character cutouts are disabled in the current game. Its manifest and favorable review do not authorize reuse. The failed Rovel attempt maps 95 reading pages in S001–S005, including cast/action coverage in S004–S005; S006–S058 still have 757 prose-only pages. Its interface and compact portraits were rejected. All scenes remain incomplete. A study, a mapped state, a manual asset inspection, an integrated scene and an experience gate pass are different statuses.
 
 ## Character coverage
 
@@ -14,7 +14,7 @@ The developed [character designs](../../characters/original-visuals.md) govern t
 
 | Character/group | Required keys and state changes | Status |
 | --- | --- | --- |
-| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) have working asset reviews; winter, intermediate fieldwear and postwar costume pending. S001–S003 contain unapproved mapped performances; S004–S005 have no active character coverage. Old costumes archived; postwar physical-state study separate. |
+| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) have working asset reviews; winter, intermediate fieldwear and postwar costume pending. S001–S005 contain mapped performances in the rejected Rovel attempt. Old costumes archived; postwar physical-state study separate. |
 | Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | [Reviewed baseline](character-keys/iven/README.md); remaining variants planned |
 | Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | [Reviewed baseline](character-keys/mara/README.md); variants planned |
 | Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | [Reviewed baseline](character-keys/elin/README.md); variants planned |
@@ -51,15 +51,15 @@ Do not collapse different people into one reusable portrait because their dialog
 
 ## Scene coverage
 
-Every source scene is listed in order below. A row is not a completed scene brief: read its full interaction and adjacent staging before generation. Repeated locations need different action/state keys where the screenplay changes them. Available studies do not establish runtime coverage or the next batch order; the connected S001–S005 milestone comes first.
+Every source scene is listed in order below. A row is not a completed scene brief: read its full interaction and adjacent staging before generation. Repeated locations need different action/state keys where the screenplay changes them. Available studies do not establish runtime coverage or the next batch order; the bounded design proof precedes a new connected S001–S005 rollout.
 
 | ID | Source scene | Source line | Status |
 | --- | --- | --- | --- |
 | S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 7 | Mapped arrival/closure and dialogue components; presentation rejected. [Tone study](scene-studies/summoning/README.md) is a separate reference. |
 | S002 | INT. SAINT'S APARTMENT - NIGHT | 67 | Mapped night components; presentation rejected. [Study](scene-studies/locked-apartment/README.md) is not runtime clearance. |
 | S003 | INT. PALACE INFIRMARY - DAY | 114 | Mapped treatment and ensemble components; performance/experience incomplete, not a cleared scene. |
-| S004 | INT. AUDIENCE HALL - DAY | 174 | Room-only runtime; required cast, formal wardrobe and sleeve-grip/action coverage missing. |
-| S005 | INT. INFIRMARY - LATER | 216 | Room-only runtime; Tessa/Iven interaction and other source action missing. |
+| S004 | INT. AUDIENCE HALL - DAY | 174 | Cast, formal wardrobe and source-action states mapped in 0.4.0-dev; presentation rejected and not cleared. |
+| S005 | INT. INFIRMARY - LATER | 216 | Tessa/Iven, window/chest and courtyard states mapped in 0.4.0-dev; presentation rejected and not cleared. |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 252 | Runtime prose only. [Draft study](scene-studies/convoy-meal/README.md) uses superseded Tessa wardrobe; final visual review pending. |
 | S007 | INT. ROADSIDE INN - NIGHT | 296 | Planned; brief required |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 337 | Planned; brief required |

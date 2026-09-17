@@ -1,6 +1,6 @@
 # Opening sequence production
 
-**Realigned 17 September 2026.** This folder holds the rejected S001–S003 component baseline and provisional spatial plan. The [active experience brief](../../presentation-redesign.md) now targets the complete connected **S001–S005** sequence before further batch expansion. The current pass aligns documentation; the stopped art batch has not resumed. Rebuild 11 remains the source. No post-Yes work.
+**Current status, 17 September 2026:** this folder holds rejected S001–S003 components and a provisional spatial plan. The subsequent 0.4.0-dev Rovel attempt also failed and is archived at `1bb6d76`. Follow the [production controls](../../production-controls.md): documentation/control work now, a bounded design proof when production is requested, then the complete S001–S005 milestone. Rebuild 11 remains the source. No post-Yes work.
 
 ## Spatial plan — working adaptation geometry
 
@@ -49,5 +49,5 @@ Sprites and compact portraits are scene-specific performances with appropriate i
 ## Gate record
 
 - Source/blocking: the room plan is a provisional solution to threshold/control/gallery access. Verify it through sequential action and actual images; reading the source and writing coordinates do not clear staging.
-- Current experience: rejected. S001–S003 mappings do not establish good conversation or flow; S004–S005 have no active cast coverage. The full connected milestone is not built or cleared.
+- Current experience: rejected. The Rovel attempt maps S001–S005 with cast/action, but the user rejected its interface and compact portraits. The connected milestone is not cleared.
 - Apply every [completion gate](../../presentation-redesign.md#scene-completion-gates) to the next integrated sequence. Record manual scope, failed/unreviewed items and corrections separately from technical passes; no earlier review grants clearance.

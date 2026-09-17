@@ -1,0 +1,71 @@
+{
+  "failed_commit": "1bb6d767fc1b6cac910c34aaecec3ab11dd37921",
+  "native_capture_ui_sha256": "64259f202d1ab8e3d441ce6e31e6dbf3ef874bfc6b0e33b1df4892b7bc1a3f5c",
+  "scope": "Four native captures match the retained capture UI source; two web captures retain their original limits. Selected images were visually inspected; no whole-experience clearance.",
+  "files": [
+    {
+      "file": "evidence/short-reply.png",
+      "retained_source": "/tmp/vn-root-rovel-review/captures/s001-032-0-intense.png",
+      "source_page": [
+        1,
+        32,
+        0
+      ],
+      "lighting": "Intense",
+      "sha256": "04c26463ebf23728f771e3b712c7b82e68e6366b9cddca0ccbfa1c24fe4a0715",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    },
+    {
+      "file": "evidence/treatment.png",
+      "retained_source": "/tmp/vn-root-rovel-review/captures/s003-124-0-intense.png",
+      "source_page": [
+        3,
+        124,
+        0
+      ],
+      "lighting": "Intense",
+      "sha256": "40bf4874bcf41a82e14f4023e506eba5270f9c7d1643a86b4f19f8e69d2a37fb",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    },
+    {
+      "file": "evidence/ceremony.png",
+      "retained_source": "/tmp/vn-root-rovel-review/captures/s004-208-0-intense.png",
+      "source_page": [
+        4,
+        208,
+        0
+      ],
+      "lighting": "Intense",
+      "sha256": "dca5ae8f4a67cb7050ac0b44876fe1f5bd05e968e3636ddbbaedd79091e747c7",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    },
+    {
+      "file": "evidence/window.png",
+      "retained_source": "/tmp/vn-root-rovel-review/captures/s005-239-0-softened.png",
+      "source_page": [
+        5,
+        239,
+        0
+      ],
+      "lighting": "Softened",
+      "sha256": "52bd8e60ff1cdb7837e4162ae31bb37e8b5b48f58057420dbaa450b27fedd691",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    },
+    {
+      "file": "evidence/night.png",
+      "retained_source": "/tmp/vn-web-review/root-night-040.png",
+      "source_page": null,
+      "lighting": "Intense",
+      "sha256": "0161f1971a975897eb7be52cd1ec9a22ce9585b7f647bbe17d3bde6c0333e0ce",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    },
+    {
+      "file": "evidence/discovery.png",
+      "retained_source": "/tmp/vn-web-review/root-promise-intense-final.png",
+      "source_page": null,
+      "lighting": "Intense",
+      "sha256": "83c36fba0951d7deeadd228ce5aa54e6260a4fa3d3f2e338d9ea8709236efb00",
+      "capture_kind": "retained prior-session runtime screenshot; no new playthrough"
+    }
+  ]
+}

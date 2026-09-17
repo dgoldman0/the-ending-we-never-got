@@ -1,6 +1,8 @@
-# Rovel production — connected S001–S005
+# Historical failed Rovel production — connected S001–S005
 
-Production resumed by the user on 17 September 2026 after requirements commit `e6f04ff`. This is the main-thread design record under the [experience brief](../../presentation-redesign.md), not a gate pass. Subagents may audit source or implement bounded components; the main thread reviews their output before dependent work. No parallel art direction or changes to the screenplay.
+**Superseded:** 0.4.0-dev was rejected and archived at `1bb6d76`. The [failure analysis](../../reviews/2026-09-17-rovel-rejection/README.md) and [production controls](../../production-controls.md) govern recovery. This account records the failed direction and work order; it does not authorize resuming them.
+
+Production resumed by the user on 17 September 2026 after requirements commit `e6f04ff`. This is the main-thread design record under the [experience brief](../../presentation-redesign.md), not a gate pass. That session used bounded component/audit delegation with main-thread review. This is historical task organization, not an instruction to start agents now. The screenplay was unchanged.
 
 ## Presentation contract
 
@@ -25,4 +27,4 @@ The first-night page/phone inspection becomes a small optional view, without fou
 4. Connected S001–S005 integration including discovery and utility screens; correct failures before extending beyond the milestone.
 5. Native/browser functional checks, source preservation, save/rollback and both lighting modes. Separate manual experience observations from automated coverage.
 
-Current status: 0.4.0-dev integrates all 95 source pages of S001–S005 as a working candidate. See [main review and gate limits](../../reviews/2026-09-17-rovel-work/README.md) for actual manual/native/browser evidence and remaining work. The stopped ceremony raw image was not promoted to an approved reference. The richly illustrated scenes remain interleaved with compact frames. The small brown leather travel bag is a provisional prop design, distinct from arrival groceries; its material is not a screenplay fact.
+Archived inventory: the rejected 0.4.0-dev attempt integrates all 95 source pages of S001–S005. See [main review and gate limits](../../reviews/2026-09-17-rovel-work/README.md) for actual manual/native/browser evidence and remaining work. The stopped ceremony raw image was not promoted to an approved reference. The richly illustrated scenes remain interleaved with compact frames. The small brown leather travel bag is a provisional prop design, distinct from arrival groceries; its material is not a screenplay fact.
