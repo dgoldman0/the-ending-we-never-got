@@ -11,6 +11,9 @@ default scene_speaker = None
 default unlocked_round = 0
 default viewed_evidence = set()
 default findings = set()
+# Legacy fields above remain readable in old saves; discovery uses these sets.
+default inspected_details = set()
+default followed_connections = set()
 default ending_reached = False
 default return_to_question = False
 
@@ -32,27 +35,8 @@ init python:
         return '#263d41'
 
     def scene_sprites():
-        # Dialogue portraits, not frozen depictions of narrated physical action.
-        # Each tuple is a reviewed period/pose/light state and portrait position.
-        if not scene_speaker:
-            return []
-        if current_scene == 1 and source_line >= 19:
-            tessa = 'tessa-phone' if source_line >= 52 else 'tessa-arrival'
-            result = [(tessa + '-bright', .27)]
-            if source_line >= 29:
-                result.append(('senn-ceremonial-bright', .72))
-            return result
-        if current_scene == 2 and 75 <= source_line <= 104:
-            tessa = 'tessa-cloaked' if source_line < 101 else 'tessa-phone'
-            return [(tessa + '-dark', .27), ('mara-indoor-dark', .72)]
-        if current_scene == 3:
-            return [('tessa-first-treatment-ordinary', .27), ('iven-treatment-ordinary', .72)]
-        if current_scene == 4 and 187 <= source_line <= 204:
-            return [('tessa-ceremony-bright', .27), ('senn-ceremonial-bright', .72)]
-        if current_scene == 4 and source_line == 211:
-            return [('iven-treatment-bright', .53)]
-        if current_scene == 5:
-            return [('iven-treatment-ordinary', .27), ('tessa-ceremony-ordinary', .72)]
+        # Retired batch: its faces/poses must not reappear around replacement CGs.
+        # New character performances need their own reviewed shot/state coverage.
         return []
 
     def scene_background(scene, line, page):
@@ -86,19 +70,6 @@ init python:
             description = 'A broad infirmary window sill overlooks the convoy. The medical chest is open; the travel bag rests at the far end of the sill.'
         return ('art/backgrounds/' + name + '.png', description) if name else (None, '')
 
-    def mark_evidence(eid):
-        viewed_evidence.add(eid)
-        # Investigation edits occur inside a menu interaction. Preserve them
-        # when loading a save made before that interaction returns to script.
-        renpy.retain_after_load()
-
-    def resolve_case(case_id, answer):
-        case = cases[case_id]
-        if answer == case['answer']:
-            findings.add(case_id)
-            renpy.retain_after_load()
-        # A Function screen action must return None: a bool would end the
-        # interaction and eject the reader before feedback can be displayed.
 
 label start:
     $ current_scene = 0
@@ -107,6 +78,8 @@ label start:
     $ unlocked_round = 0
     $ viewed_evidence = set()
     $ findings = set()
+    $ inspected_details = set()
+    $ followed_connections = set()
     $ ending_reached = False
     $ return_to_question = False
     call screen reading_intro
@@ -119,9 +92,7 @@ label chapter_card(number, title):
     return
 
 label investigation_invitation(number):
-    window hide
-    hide screen story_stage
-    call screen inquiry_invitation(number)
+    # Old source grouping boundaries no longer interrupt the reading.
     return
 
 label original_ending:
@@ -140,95 +111,105 @@ image black = Solid('#080f13')
 
 screen reading_intro():
     modal True
-    add Solid('#101f26')
+    use original_backdrop
+    add Solid('#baa17a') xpos 260 ypos 305 xsize 70 ysize 2
     vbox:
-        xpos 330 ypos 215 xsize 1260 spacing 34
-        text "THE ORIGINAL TIMELINE" style "caption_text"
+        xpos 260 ypos 354 xsize 1300 spacing 30
         text "A life interrupted." style "title_text"
-        text "Read at your own pace. Click, press Space or Enter to advance. Mouse wheel up or Page Up revisits earlier lines; Esc opens the menu." style "prose_text"
-        text "Between chapters, you can examine what you have seen. Investigation belongs to you, the reader. It does not change what Tessa or her companions know, and time does not pass while you investigate." style "prose_text"
-        text "The story includes war, bereavement and lasting injury." color '#aabeba'
-        textbutton "Begin" id "begin_reading" action Return()
+        text "Click, Space or Enter to turn the page. Escape opens the menu." style "prose_text"
+        text "When a detail stays with you, look closer." font 'fonts/EBGaramond12-Italic.ttf' size 38 color '#d5c8af'
+        text "War, bereavement and lasting injury." size 22 color '#a8a799'
+        null height 15
+        textbutton "Begin" id "begin_reading" action Return() style 'hero_button'
 
 screen chapter_title(number, title):
     modal True
-    add Solid('#101f26')
+    add Solid('#0b1419')
+    add Solid('#9e8965') xalign 0.5 ypos 343 xsize 1 ysize 56
     vbox:
-        xalign 0.5 yalign 0.45 spacing 22
-        text "CHAPTER [number:02d]" style 'caption_text' xalign 0.5
+        xalign 0.5 ypos 439 spacing 18
+        text "[number:02d]" style 'caption_text' xalign 0.5
         text title style 'title_text' xalign 0.5
-        null height 45
+        null height 72
         textbutton "Continue" id "chapter_continue" action Return() xalign 0.5
 
 screen story_stage():
     zorder -5
-    add Solid('#0e1c23')
-    if art_available():
+    add Solid('#0b1419')
+    if composed_scene():
+        add composed_scene() xysize (1920, 1080)
+    elif art_available():
+        # Legacy coverage is still being replaced; never put old cutouts on a new CG.
         fixed:
-            xpos 190 ypos 76 xsize 1540 ysize 700
-            clipping True
-            add scene_art xysize (1540, 867) ypos -62
+            xsize 1920 ysize 1080 clipping True
+            add scene_art xysize (1920, 1080)
             for sprite, pos in scene_sprites():
                 if renpy.loadable('art/sprites/' + sprite + '.png'):
                     add ('art/sprites/' + sprite + '.png'):
-                        xcenter int(1540 * pos) ypos 50
-                        # Close portraits keep treatment and sleeve-grip hands
-                        # outside the frame; these are not action tableaux.
-                        xysize ((1240, 1860) if current_scene in (3, 4, 5) or (current_scene == 2 and 90 <= source_line < 101) else (690, 1035))
+                        xcenter int(1920 * pos) ypos 60
+                        xysize ((1320, 1980) if current_scene in (3, 4, 5) or (current_scene == 2 and 90 <= source_line < 101) else (830, 1245))
     else:
-        add Solid(scene_palette()) xpos 100 ypos 110 xsize 1720 ysize 610
-        add Solid('#78968b') xpos 150 ypos 165 xsize 3 ysize 68
+        # Honest prose coverage. No substitute portrait or unrelated scene study.
+        add Solid('#111b20')
+        add Solid('#ac9873') xpos 160 ypos 325 xsize 65 ysize 2
         vbox:
-            xpos 195 ypos 168 xsize 1450 spacing 23
-            text chapter_names[current_chapter-1].upper() style 'caption_text'
-            text scene_location.replace(' · ', '\n'):
-                font 'fonts/CharisSIL-Regular.ttf'
-                size 48
-                color '#d8dfd3'
-    text "[current_chapter:02d]  /  [chapter_names[current_chapter-1]]" xpos 100 ypos 29 style 'caption_text'
-    if art_available():
-        text scene_location xpos 100 ypos 784 style 'caption_text'
+            xpos 160 ypos 390 xsize 1480 spacing 24
+            text chapter_names[current_chapter-1] style 'caption_text'
+            text scene_location.replace(' · ', '\n') font 'fonts/EBGaramond12-Regular.ttf' size 75 color '#c7c6b9'
+    add 'art/interface/top-veil.svg'
+    text "[current_chapter:02d]   [chapter_names[current_chapter-1]]" xpos 72 ypos 30 style 'caption_text' size 18
+    text scene_location xpos 72 ypos 61 size 17 color '#ddd6c6'
 
 screen say(who, what):
-    style_prefix 'say'
-    window:
-        id 'window'
-        background Solid('#0e1c23')
-        xpos 100 ypos 826 xsize 1720 ysize 200
-        if who:
-            text who id 'who' xpos 36 ypos 3 size 25 color '#d9c699' font 'fonts/ClearSans-Medium.ttf'
-        text what:
-            id 'what'
-            xpos 36 ypos (44 if who else 15)
-            xsize 1620
-            size (36 if persistent.large_text else 30)
-            font 'fonts/CharisSIL-Regular.ttf'
-            line_spacing 7
-    if art_available() and persistent.art_descriptions:
+    if side_reading():
+        add 'art/interface/title-veil.svg'
+        window:
+            id 'window'
+            background None
+            xpos 125 ypos 343 xsize 650 ysize 520
+            text what:
+                id 'what'
+                xsize 640
+                font 'fonts/CharisSIL-Regular.ttf'
+                size (38 if persistent.large_text else 34)
+                line_spacing 12
+                color '#eee4d4'
+    else:
+        add 'art/interface/reading-veil.svg'
+        window:
+            id 'window'
+            background None
+            xpos 160 ypos 794 xsize 1600 ysize 230
+            if who:
+                text who id 'who' ypos 0 size 23 color '#ddc59c' font 'fonts/ClearSans-Regular.ttf'
+            text what:
+                id 'what'
+                ypos (40 if who else 0) xsize 1600
+                size (36 if persistent.large_text else 32)
+                font 'fonts/CharisSIL-Regular.ttf'
+                line_spacing 5
+                color '#eee4d4'
+    if persistent.art_descriptions and (art_available() or composed_scene()):
         frame:
-            background Solid('#0e1c23ef')
-            xpos 360 ypos 642 xsize 1200 padding (20, 14)
-            text scene_art_alt size 24
+            background Solid('#0b1419ed')
+            xpos 950 ypos 110 xsize 860 padding (24, 20)
+            text current_art_description() size 23 color '#e8dfcf'
     use quick_menu
 
 screen quick_menu():
     zorder 100
+    add Solid('#0b1419e8') ypos 1026 ysize 54
     hbox:
-        xpos 120 ypos 1026 spacing 12
+        xpos 145 ypos 1027 spacing 18
         textbutton 'Back' action Rollback() style 'quiet_button'
         textbutton 'History' action ShowMenu('history') style 'quiet_button'
-        textbutton 'Investigate' action ShowMenu('investigation') sensitive unlocked_round > 0 style 'quiet_button'
+        if closer_here():
+            textbutton 'Look closer' id 'look_closer' action ShowMenu('look_closer') style 'quiet_button' text_color '#eed0a0'
+        if available_details():
+            textbutton 'Threads' action ShowMenu('threads') style 'quiet_button'
         textbutton 'Save' action ShowMenu('save') style 'quiet_button'
-        textbutton 'Load' action ShowMenu('load') style 'quiet_button'
-        textbutton 'Settings' action ShowMenu('preferences') style 'quiet_button'
-    text 'CLICK / SPACE TO CONTINUE' xpos 1480 ypos 1041 size 18 color '#8fa7a5'
-
-style quiet_button is button:
-    background None
-    hover_background Solid('#233940')
-    padding (15, 7)
-style quiet_button_text is button_text:
-    size 23
+        textbutton 'Menu' action ShowMenu('preferences') style 'quiet_button'
+    text 'SPACE TO CONTINUE' xpos 1560 ypos 1043 size 16 color '#a9a99d'
 
 screen ending_breath():
     modal True

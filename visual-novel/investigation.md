@@ -1,6 +1,6 @@
 # Look closer / Threads — reader discovery
 
-Status: **ACCEPTED INTERACTION DIRECTION, 16 September 2026.** The user accepted **Look closer** for examining details and following connections, with **Threads** for revisiting those connections. The player participates as a reader. The current explanation-card/quiz implementation is rejected and has not yet been replaced. See the [broader presentation redesign](presentation-redesign.md).
+Status: **ACCEPTED INTERACTION DIRECTION, 16 September 2026.** The user accepted **Look closer** for examining details and following connections, with **Threads** for revisiting those connections. The player participates as a reader. The explanation-card/quiz screens have been replaced by a first-night visual inspection and connection prototype. That prototype belongs to the rejected, unfinished presentation checkpoint; acceptance of the interaction contract does not approve its execution. The broader historical threads remain to be authored and implemented. See the [broader presentation redesign](presentation-redesign.md).
 
 The discovery must include **humans initiating the ancient war through the first Saint summoning**. Tessa's summoning is a later event. That historical anchor is established; the exact first Saint, dates, commissioning individuals, first operation and Valcair's firsthand involvement remain to be developed. The interaction agreement does not invent those facts or approve particular historical scenes.
 
@@ -88,4 +88,6 @@ Do not allow chapter selection, save loading or Threads to expose future story d
 
 ## Still to develop
 
-Implement the actual inspection/connection sample in the redesigned presentation. Author the ancient opening sequence and choose the additional material's forms, viewpoints and provenance. Test return, saves, accessible navigation and reading load. The legacy card/quiz system remains in the current inspection build; it is not an implementation of this accepted design.
+The first-night sample now lets the reader enlarge the drawing or dead phone, bring them alongside one another, follow the connection, revisit it through Threads and return to line 112. It uses the two actual visual details and the earlier milk message; the short connecting passage is new editorial VN writing, not new character dialogue. There are no answer choices, evidence quotas or mandatory chapter interruptions. Native tests cover exact return, rollback and per-save discoveries.
+
+The remaining source-backed connections and ancient opening sequence still require authoring and production. The removed quiz cards are not retained as a substitute for that history. The first Saint / human initiation reveal remains required, but is not implemented by this first-night sample.

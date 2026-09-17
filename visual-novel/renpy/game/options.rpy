@@ -3,10 +3,11 @@ init python:
     gui.init(1920, 1080)
 
 define config.name = "The Ending We Never Got"
-define config.version = "0.1.0"
+define config.version = "0.2.0"
 define config.check_conflicting_properties = True
 define config.save_directory = "the-ending-we-never-got-original-v1"
 define config.window = "auto"
+define _game_menu_screen = "preferences"
 define config.window_show_transition = None
 define config.window_hide_transition = None
 define config.enter_transition = None
@@ -24,7 +25,7 @@ define config.allow_skipping = False
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 define build.name = "TheEndingWeNeverGot"
-define build.version = "0.1.0"
+define build.version = "0.2.0"
 
 init python:
     build.classify('game/testcases.rpy', None)

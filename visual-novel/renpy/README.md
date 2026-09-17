@@ -1,20 +1,20 @@
 # The original timeline — playable build
 
-**Current status:** this is the existing inspection build. The user rejected its visual presentation and card/quiz discovery mechanic. [Look closer / Threads](../investigation.md) is the accepted replacement direction, with a [broader presentation redesign](../presentation-redesign.md) pending. A working export does not mean those changes are already implemented.
+**Current status: rejected, unfinished checkpoint.** The user rejected this partial replacement as well as the first build. Its two CGs, revised screens and first-night **Look closer / Threads** prototype do not form a complete visual sequence. Many scenes lack their actors; speaker-positioned dialogue, opening staging, visual quality and the historical discovery chain remain unfinished. See [coverage](../art/presentation-v2/manifest.json), [the redesign brief and gates](../presentation-redesign.md) and [QA](QA.md). The current task stops at committing the checkpoint and discussing the realignment.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
-The complete original route is implemented: 58 source scenes, ten chapters, five optional investigation invitations, six inquiries, and the complete Bellweir ending followed by **Do you wish to save Tessa?** There is no playable rescue continuation or invented answer outcome.
+The complete original text route is traversable: 58 source scenes, ten chapters, and the complete Bellweir ending followed by **Do you wish to save Tessa?** This is not a completed visual adaptation. There is no playable rescue continuation or invented answer outcome.
 
-This is a first playable edition under active art production. The scene studies are reference material, not runtime illustrations. Purpose-built transparent sprites, scene-state backgrounds and GIMP lighting variants are being integrated and manually reviewed. Unillustrated scenes retain their source text; early sprites are not silently reused across later ages, injuries or outfits. No music, voice or sound has been produced yet.
+The current CGs depict the sealed-arch exchange (S001 lines 29–49) and the drawing restart (S002 line 112). Their GIMP masters retain local masks and lighting corrections; their existence does not clear the rejected presentation. The old character cutouts are disabled, leaving missing cast coverage that must be replaced. Room plates outside these beats remain temporary, and most later scenes have only source text. No music, voice or sound has been produced yet.
 
 ## Standalone Linux build
 
-The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` contains the engine and runtime assets. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Rebuild it with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. This packages the same first playable edition and its current art coverage, not a completed illustrated release.
+The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, rejected first playable package; it does not include this checkpoint's changes. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Rebuild from current source with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. Neither edition is a completed illustrated release.
 
 ## Reading and state
 
-Click, Space or Enter advances. Page Up/mouse wheel up rolls back; Esc opens or returns from menus. Save/load, reading history, larger text, fullscreen, reduced motion, image descriptions and Ren'Py self-voicing are available. Investigations pause the story and return to the same reading point. All knowledge state is per playthrough/save, not global completion data.
+Click, Space or Enter advances. Page Up/mouse wheel up rolls back; Esc opens or returns from menus. Save/load, reading history, larger text, fullscreen, reduced motion, image descriptions and Ren'Py self-voicing are available. Look closer and Threads return to the same reading point. All knowledge state is per playthrough/save, not global completion data.
 
 ## Browser preview
 
@@ -26,7 +26,7 @@ From the repository root:
 
 Open **http://127.0.0.1:8042/** if the browser does not open automatically. Leave that terminal running; Ctrl+C stops the local server. `--no-open` suppresses automatic browser launch, and `--port 8043` selects another port. Use a consistent URL and port to retain access to the same browser saves.
 
-This runs the actual Ren'Py game through WebAssembly, including its current sprites, lighting, investigations and ending. It needs HTTP: opening the exported `index.html` directly with `file://` is not supported. The server binds only to this computer and serves only the exported game directory. It sends the WebAssembly MIME type and revalidates files so rebuilt art is not hidden by stale HTTP caches.
+This runs the actual Ren'Py game through WebAssembly, including its current scene art, Look closer / Threads and ending. It needs HTTP: opening the exported `index.html` directly with `file://` is not supported. The server binds only to this computer and serves only the exported game directory. It sends the WebAssembly MIME type and revalidates files so rebuilt art is not hidden by stale HTTP caches.
 
 Saves are local to this browser/site, separate from desktop saves. Use the **≡ menu at the top left → Export Saves** for a backup or **Import Saves** to restore one. Closing a tab does not create a manual save; use the game's Save control first. Clearing browser site data removes its local saves.
 
@@ -38,13 +38,13 @@ After changing scripts or art, rebuild and refresh the page:
 
 `play-web.sh` builds automatically only if no web build exists. The reusable export is `builds/web/`; `builds/web.zip` contains the same distribution for a static web host. These generated files remain outside Git. The build requires the Ren'Py 8.5.3 SDK **and matching Web Platform Support**, both from the [official release page](https://www.renpy.org/release/8.5.3). Extract the latter's `web/` directory into the SDK directory; use `RENPY_SDK` for a nondefault installation. The installed web archive was checked against official SHA256 `954db897e65f51ea63cb2fb7b203d02be0447f4e22069514020bbe6c6691fdfc`.
 
-`progressive_download.txt` bundles the current opening backgrounds and used sprite variants before play, so inspection starts at full image quality. Other variants load on demand. The initial game archive is about 41 MiB plus the engine. Browser-specific verification is recorded in [QA.md](QA.md); desktop test results alone do not certify this port.
+`progressive_download.txt` bundles the current scene/interface images before play, so inspection starts at full image quality. Retired character cutouts are not preloaded. Browser-specific verification is recorded in [QA.md](QA.md); desktop test results alone do not certify this port.
 
 ## Source and investigation
 
 `game/story.rpy` and `game/source-map.json` are generated by `../tools/adapt_screenplay.py`. Every action and spoken line is retained; paragraph breaks may become additional reading advances. Existing time skips remain in the narration. Edit the Fountain source only under its own instructions, then regenerate and review. Do not edit generated dialogue to compensate for an art mistake.
 
-`game/inquiry-data.rpy` contains the additional player-facing prose. See [its provenance and boundaries](../investigation-content.md). Historical context is labeled as context, not presented as fabricated ancient quotations or documents possessed by the cast.
+`game/inquiry-data.rpy` contains the first-night details and per-save discovery operations. The connecting passage in `investigation.rpy` juxtaposes the drawing, dead phone and earlier milk message. The historical reveal remains required but is not implemented by this sample; its authored material is still to develop. The old quiz prose is retained in Git history, not in the game.
 
 ## Development checks
 
@@ -56,4 +56,4 @@ python3 visual-novel/tools/adapt_screenplay.py --check
 
 The native engine tests exercise the actual screens and full route. They create captures under `renpy/test-output/`, which must be opened and inspected; passing tests does not certify visual quality. The QA record distinguishes tested controls, inspected composites and remaining production work.
 
-Generated `.rpyc`, caches, test saves, local SDKs and test captures are ignored. Bundled fonts retain their licenses in `game/fonts/`. Scene prompts belong under `art/prompts/runtime/`; editable assets and review notes belong under `art/runtime/`.
+Generated `.rpyc`, caches, test saves, local SDKs and test captures are ignored. Bundled fonts retain their licenses in `game/fonts/`. New prompts are under `art/prompts/presentation-v2/`; editable masters, raw components and reviews are under `art/presentation-v2/`. The older runtime directory records the rejected batch.

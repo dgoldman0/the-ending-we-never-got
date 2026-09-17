@@ -1,6 +1,14 @@
 # Presentation redesign
 
-Status: the user rejected the first playable game's interface, UX and artwork on 16 September 2026. The interaction direction in [Look closer / Threads](investigation.md) is accepted. The visual solutions below are the next development brief, not approved replacement designs. No replacement presentation is implemented by this document.
+Status: **rejected, unfinished checkpoint — 16 September 2026.** The user rejected both the first playable presentation and the partial replacement. The replacement contains two CGs, revised screens and a first-night discovery prototype, but fails to deliver complete scenes or the requested UI quality. Current instruction: commit the work with this status, then discuss the realignment before further production. See [the review record](art/presentation-v2/review.md) and [runtime coverage](art/presentation-v2/manifest.json). The [Look closer / Threads](investigation.md) interaction contract remains accepted; neither implementation's appearance is approved.
+
+## Why the replacement failed
+
+The work treated individual images and functioning screens as units of completion. The user requires an illustrated, performed playthrough. Removing inconsistent sprites left the cast absent instead of producing consistent replacements. For example, the current infirmary screen describes Mara leading Tessa between crowded beds and a porter drawing a curtain, while showing an empty room. This contradicts the source in plain view. The two new CGs cover individual beats and cannot carry the surrounding actions or conversations.
+
+The user also requires dialogue boxes positioned with each speaker. The current general reading overlay does not deliver that. Restrained buttons, serif type and scrims have not established a beautiful interface expressing this timeline's pain. Checking isolated screenshots, crops and save-state behavior did not test the connected experience adequately.
+
+The opening needs a fresh spatial design. The assistant's lever position immediately beside the portal obstructs access and operation. A hand reaching a lever in one image is not proof that the scene can happen. Its exact replacement position remains to be designed and checked against Tessa's route, the scholar's access and the sequence of closure.
 
 ## What remains established
 
@@ -8,7 +16,7 @@ Rebuild 11 drives the story through the complete original ending and the separat
 
 The existing source adaptation, save/rollback infrastructure and local web export can support the replacement. Their technical operation does not make the visual experience acceptable. The current runtime assets remain on disk for comparison; their presence and earlier review records confer no approval.
 
-## Audit of the current presentation
+## Earlier first-build audit — retained context
 
 Reopened the actual title, summoning, apartment, ceremony and discovery captures. The findings concern what the player sees across those screens, not whether individual files were generated or exported successfully.
 
@@ -27,7 +35,9 @@ Representative rejected captures: [title](renpy/review/28-packaged-title.png), [
 
 ## Direction to develop
 
-The scene should command attention first. Typography and controls should feel deliberately placed within the novel's presentation, with readable text and visible keyboard focus. Explore a larger, immersive illustration field with a restrained reading region; settle exact layout, typography, material treatment and transitions in the running game. No specific new art style or final interface layout is approved by this brief.
+The interface must be beautiful in its own right and express the strain of this timeline. Compose its materials, ornament, typography, spacing and transitions with the scene's emotional focus. Restraint alone is not an identity. Develop a coherent treatment informed by the selected references without importing unrelated religious imagery. Beauty and human warmth must make attachment possible; pain cannot be reduced to a dark overlay. Exact visual motifs remain design work, not new canon.
+
+Use dialogue boxes positioned beside the visible speaker, with shot-specific anchors and a clear reading order. Faces, hands, interactions and inspection details must remain visible. Plan box placement alongside character blocking, including long lines and larger text. Offscreen speech needs a deliberate, identifiable treatment. Narration must be distinct, and characters remain present during narrated reactions. Do not let boxes jump arbitrarily, obscure a listener's reaction or make the reader hunt for the next line.
 
 Develop one consistent visual language across title, dialogue, narrative action, close inspection, connections and utility screens. Keep utility navigation concise and predictable. Retain history, save/load, larger text, reduced motion and descriptive access. Inspection targets need keyboard/list equivalents and clearly discoverable affordances; attention should be rewarded without pixel hunting.
 
@@ -35,15 +45,26 @@ Treat brightness as scene direction. Shape space with source light, reflected li
 
 The built-in image generator and GIMP are both available. Start replacements from source briefs, written designs and selected references. Use GIMP for meaningful masks, local repair, compositing and controlled lighting; retain editable sources. Repeated full-scene generation and unexamined global grading are not substitutes for art direction. Do not use the rejected runtime batch as its own identity/style standard.
 
-## Next development sequence
+## Scene completion gates
 
-1. **Shot and interface composition:** design the title and connected summoning-to-apartment reading sequence together. Identify the action, reaction and object inserts needed by the screenplay before producing assets. Test the reading layout with real short and long lines. Layout studies must be explicitly labeled as such.
-2. **Finished visual sample:** produce and integrate a representative bright exchange and dark exchange with the correct participants, active expressions, staging and lighting. Carry a short stretch of narration and dialogue so the sample demonstrates continuity rather than one flattering screenshot.
-3. **Actual discovery sample:** build one inspect → related detail → connection → return interaction. The cut binding, translations and earlier promise offer a source-backed candidate after those scenes have been encountered. Exact selection and presentation remain development choices; do not reveal later evidence early or invent the missing pages' contents.
-4. **Browser review:** inspect the integrated result at 1280×720 and a larger browser window, including larger text, keyboard focus, controls, menu return and image/detail readability. Check the three lighting registers across the eventual sample set. Test saving after a discovery and returning to the same place after reload separately from aesthetic review.
-5. **Production expansion:** apply the demonstrated visual language to the remaining cast and scenes, with explicit action/expression/age/outfit coverage. Preserve scene-specific direction; a template that makes every encounter look identical has failed even if its assets are consistent.
+The production unit is a complete connected scene, followed by review of its transitions into adjacent scenes. These are self-enforced quality gates, not additional requests for user permission. A failed gate remains failed until the defect is corrected and the affected sequence is reviewed again. Record source beats, evidence and unresolved defects in the scene's review record.
 
-These are work stages, not approval requests. The current user instruction locks the discovery concept and calls for a broader presentation reset; it does not approve an unseen replacement or settle the unresolved ancient history.
+| Gate | Required evidence before moving on | Fail conditions |
+| --- | --- | --- |
+| 1. Source and physical staging | Beat map with everyone present, entrances/exits, actions, props and emotional changes. Room plan and sequential storyboard tracing the actual movements, routes and mechanisms. For summoning, show arrival, attempted return, lever operation, closure and subsequent approaches as distinct moments. | Unreachable control, obstructed threshold, unexplained relocation, misplaced groceries, conflated beats or invented participant. Do not advance to polished art with unresolved geometry. |
+| 2. Cast and performance coverage | Every beat has an intentional shot and an account of its participants. Produce the needed sprites, expressions, poses, wardrobe and chronological states; interleave high-quality action illustrations, inserts and reaction shots where the scene calls for them. A listener's reaction matters as well as a speaker's mouth. | Empty background standing in for present actors, characters disappearing during narration, frozen expressions across incompatible lines or a single CG stretched over incompatible action. Deliberate establishing/empty shots need a story reason. |
+| 3. Art and identity | Compare selected output to the written design and established likeness at full frame and native detail. Inspect anatomy, age, hairline, symbols, clothing, injury, contact, perspective and light. Use the built-in generator for tailored assets and GIMP for controlled masks/composites/corrections; inspect final exports and their actual game composites. | Identity drift, copied reference costume/state, conspicuous cutouts, malformed anatomy or lighting that misses the dramatic focus. A rejected output cannot become the next identity baseline. An XCF or successful generation is not a pass. |
+| 4. Composed interface and emotion | Review title, narration, speaker-positioned boxes and utility screens as one visual language. Test real short/long lines, larger text and keyboard focus at 1280×720 and a larger window. Judge whether it draws attention to people, makes speech immediately attributable and sustains beautiful, painful atmosphere. | Generic controls laid over a picture, obscured faces/gestures, unstable dialogue placement, weak contrast/readability or emotional treatment detached from the scene. Bright, ordinary and dismal scenes must retain their distinct discomfort without making text unusable. |
+| 5. Continuous play and discovery | Manually read the entire sequence in the running web game at normal pace, including every transition and return from Look closer/Threads. Keep representative captures and a beat-coverage record; inspect changes at native resolution as well. Verify discovery reveals something meaningful and returns exactly, without making the reader a character. | Reviewing only flattering screenshots, unaccounted beats, wrong scene state after a menu, exposition cards masquerading as visual discovery or calling a technically traversable route visually complete. |
+| 6. Technical and source regression | Check source preservation, state, save/load, rollback and the final ending/question sequence separately. Report browser and native results separately, including incomplete checks. | Test results used as aesthetic clearance; historical discovery declared complete because quizzes were removed; the final question or any hopeful transition brought forward. All post-Yes presentation remains deferred. |
+
+## Production order after discussion
+
+Rebuild the opening's room plan and sequential staging first. Compose dialogue placement and character blocking in that storyboard. Then produce and integrate its sprites, expression/action variants and high-quality scene illustrations together, reviewing each finished segment in play before expanding it. Do not finish a generic UI in isolation, queue a batch of stills, or remove failed actors without replacing their performances.
+
+The first complete sequence must include the summoning and its aftermath, Mara's first-night exchange, and Tessa alone afterward with one working Look closer connection. This provides both severe brightness and real darkness, action and intimate dialogue, several speakers and solitude. Extend through an ordinary-light scene to verify the third register. The present two CGs and first-night prototype may be assessed for salvage individually; they do not waive any gate.
+
+Only expand production after that connected sample meets the gates. Then apply the same scene-level coverage and review to the remaining route, tracking actual cast/action coverage rather than counting images or imported screenplay scenes. The historical war-origin material still needs deliberate authoring and visual development under the accepted interaction contract.
 
 ## How to judge the next build
 

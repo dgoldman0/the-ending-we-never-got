@@ -1,0 +1,46 @@
+{
+  "status": "REJECTED, UNFINISHED PRESENTATION CHECKPOINT — 2026-09-16. Individual inspections below do not clear the assets or connected experience.",
+  "gate_status": "Failed: missing cast/performance coverage, speaker-positioned dialogue, interface quality, opening lever access and adequate continuous visual review. See ../../presentation-redesign.md.",
+  "source": "screenplay/original-timeline/source.fountain, Rebuild 11",
+  "source_sha256": "e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88",
+  "scope": "Original timeline only. No post-Yes presentation.",
+  "assets": [
+    {
+      "runtime": "renpy/game/art/cg/sealed-arch.png",
+      "master": "masters/sealed-arch.xcf",
+      "source_beats": "S001 lines 29–49, after closure and before Mara's cloak",
+      "characters": "Tessa, 19, healthy hands, plain modern blue hoodie/cream T-shirt/jeans; Senn, late fifties, cream ceremonial robe; distant source-supported soldiers",
+      "acting": "Tessa turns from the sealed arch toward Senn, demanding an answer. Senn attempts to reassure her without touching her.",
+      "props": "Arch sealed and cracked; groceries and lever outside this medium shot; no cloak or Saint badge on Tessa",
+      "lighting": "Severe reflected dawn across both people and pale stone; local GIMP curves with a shared feathered mask, not a white overlay",
+      "invariants": "Pre-edit face, hairline and geometry retained. The user-rejected balding head edit is excluded.",
+      "review": "Full export, native face crops and actual bright reading screen viewed. No new head substitution accepted. Not a likeness key or approval of the full sequence."
+    },
+    {
+      "runtime": "renpy/game/art/cg/mothers-chair.png",
+      "master": "masters/mothers-chair.xcf",
+      "source_beats": "S002 line 112, after the tear and restart; also the title's authored composition",
+      "characters": "Tessa alone, 19; uninjured right hand draws, left hand steadies the letter; plain arrival hoodie and T-shirt",
+      "acting": "Concentrated homesickness after Mara leaves and the last call fails; not later-war exhaustion",
+      "props": "Dead dark-green phone; welcome letter reversed; short pen tear; chair sketch restarted in a clean corner; second room chair at desk, window chair at door",
+      "lighting": "Small candle pool; cool night window; most of the room stays very dark",
+      "editable_components": "Original face/hands/room; separately masked plain clothing; separately masked smooth paper and short tear; registered 192x139 clean-paper component removing the premature counter sketch",
+      "review": "Full export, face, hands, paper and phone inspected; text placed left to preserve face, pen grip and drawing; actual 1440x900 and 1280x720 browser captures reviewed"
+    },
+    {
+      "runtime": "renpy/game/art/cg/detail-drawing.png",
+      "source": "GIMP crop of corrected mother's-chair composite; no invented document text",
+      "availability": "S002 line 112 onward; in-scene Look closer at that beat and later Threads"
+    },
+    {
+      "runtime": "renpy/game/art/cg/detail-phone.png",
+      "source": "GIMP crop of corrected mother's-chair composite; screen stays dead",
+      "availability": "S002 line 112 onward; no future knowledge when loading an earlier save"
+    }
+  ],
+  "rejected": [
+    "Senn head correction from prompt 04: user rejected increased baldness and divergence; not copied into runtime or used as a reference",
+    "GIMP clone/heal paper patches: visible rectangular seams; replaced by a separately generated paper-only component and feathered mask"
+  ],
+  "remaining": "Substantial rework required. Redesign the initial room and accessible lever station, compose a beautiful and emotionally expressive UI with speaker-positioned dialogue, and produce continuous cast/acting coverage with sprites and high-quality scene illustrations. Disabling old cutouts left missing actors; two CGs do not repair that regression. Existing room plates and remaining performances are unfinished. Current instruction: commit this checkpoint, then discuss before further production."
+}
