@@ -2,9 +2,11 @@
 
 Implementation update: the first playable route retains every screenplay action and spoken line, including its existing time skips. The additional compression below remains a proposal; automated traversal duration is not a measured human reading time.
 
+**Realignment, 17 September:** runtime 0.3.2's flow remains rejected. Follow the [active experience brief](presentation-redesign.md): map dramatic beats to compact conversation, staged action, reaction and quiet holds instead of treating source paragraph length as a finished reading rhythm. Establish the complete S001–S005 sequence before extrapolating pacing across the route. Source preservation and attractive individual images do not demonstrate that these transitions work in play.
+
 **Current interaction decision:** [Look closer / Threads](investigation.md) replaces the rejected card/quiz design. References below to investigation and rounds mean optional reader discovery at candidate story spans, not actions performed by the player as a character or five compulsory menu interruptions.
 
-Status: FIRST PACING PROPOSAL. The user asked to make room for investigation by considering narrative time skips. Rebuild 11 already contains substantial jumps and two montage headings. Preserve that compression where the intervening days do not contain a necessary interaction; do not turn every elapsed week into playable errands.
+Status: FIRST PACING PROPOSAL. The user asked to make room for investigation by considering narrative time skips. Rebuild 11 already contains substantial jumps and two montage headings. Preserve that compression where the intervening days do not contain a necessary interaction; do not turn every elapsed week into playable errands. Time cards below are provisional transition treatments, not a requirement for a separate click-through screen at every boundary.
 
 **Story time and reading time are separate.** Ten minutes spent investigating does not leave Tessa standing at a bridge for ten minutes or cause a missed rescue. A time card advances the world only at an authored transition. Investigation is outside that clock.
 
@@ -51,4 +53,4 @@ The original route's mandatory information stays in the story even when a relate
 
 The five [candidate discovery spans](investigation.md) end at settled boundaries: the first window-seat scene, the hearing's corridor, the exchange negotiations, the seasonal sequence and the final preparations. Use them to plan availability while designing scene-level opportunities to Look closer. Keep entry optional and connections revisitable through Threads. Do not interrupt Iven's death, the coat scene, the mill-town cart exchange, the stair assault or the bakery ending with an unlock notice or force a full-screen checkpoint at every boundary.
 
-Measure the first playable chapter both straight through and with R01 completed. Track dialogue, action/narration, transitions and investigation separately. Only then estimate the full game's reading time. The current optional investigation allowance is a design target, not grounds to shorten every emotional scene to fit an untested total runtime.
+Measure the connected S001–S005 milestone both straight through and with its optional introductory discovery. Track dialogue, action/narration, transitions and discovery separately. Reassess as later emotional arcs and the historical thread are authored; only then estimate the full game's reading time. An optional discovery allowance is a design target, not grounds to shorten emotional scenes to fit an untested total runtime.

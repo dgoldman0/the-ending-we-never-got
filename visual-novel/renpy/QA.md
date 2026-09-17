@@ -1,18 +1,28 @@
-# Current working build: 0.3.2, opening realignment and optional softened lighting
+# QA — current experience failed; requirements realigned
 
-This is an incomplete adaptation following rejected checkpoint `f3acb5e`. New technical passes and visual observations do not establish user approval. [The current opening review](../art/opening-sequence/review/realignment-review.md) records lighting, GIMP work, interface corrections and the exact manually inspected scope. [The route ledger](../art/route-coverage.md) still marks S004/S005 missing cast and S006–S058 missing illustration/performance coverage.
+**17 September 2026:** runtime 0.3.2 / `d0c3020` remains rejected. The [full design review](../reviews/2026-09-17-full-design-review/README.md), committed at `529a359`, supersedes earlier favorable component observations. The current realignment changes documentation only; no engine tests, rebuild or new visual clearance are claimed for it.
 
-## Functional evidence
+The review traversed all **852 reading pages / 849 source reading blocks**. It manually inspected selected screens and interactions, not all 852 pages at human reading pace. It found no compact speaker-frame mode, excessive dialogue-box movement, frozen reactions, unfinished frame edges, weak discovery payoff, unstable controls and a Threads caption partly outside its hit area. The [ledger](../art/route-coverage.md) records 66 mapped opening pages, 29 room-only pages and 757 prose-only pages. The final question exists, but its intended Yes choice does not.
+
+Geometry checks did not reproduce offscreen story glyphs in the tested layouts. They do not dismiss the user's clipping report or clear the interface. Native/browser results, manual pixel inspection, continuous human-paced reading and automated traversal must remain distinct evidence.
+
+The next build must meet the [experience and completion gates](../presentation-redesign.md#scene-completion-gates) across connected S001–S005, including compact conversations/listener reactions, cast through narration, interface/flow, discovery and return, both lighting preferences, standard/larger text and mouse/keyboard. Record build, source span, window/platform, actual manual scope and concrete failures. A technical pass cannot clear a failed experience or missing later scenes. Final-route verification must eventually exercise the deliberate Yes affordance after S058/fade, without developing the deferred post-Yes interface.
+
+## Historical 0.3.2 component and functional evidence
+
+The following describes earlier checks of this same rejected runtime, not new checks during realignment. The [component review](../art/opening-sequence/review/realignment-review.md) records that pass's exact inspection scope.
+
+### Functional evidence
 
 - The native Ren'Py 8.5.3 suite passed **6 cases / 68 assertions** in 46.859 seconds: reading/discovery, all opening scene states, save/restore, complete original route to the separate ending question, larger text, and the new lighting preference.
 - The preference case switches title and in-story images, checks cast and legacy background paths, follows the first-night connection, and loads a save made in Softened while Intense remains selected. Story position and discovery knowledge survive independently of the persistent preference.
 - After replacing the unchanged legacy alternatives with actual GIMP exports, the focused lighting case was rerun: **1 case / 11 assertions passed**, 5 cases skipped by selection. Only the affected case was repeated after that asset-only correction.
-- The source adapter still preserves 58 scenes, 852 blocks and 11,175 words. Source SHA256 remains `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
+- The source adapter preserves 58 scenes and 11,175 words. Corrected reporting: 849 source reading blocks produce 852 reading pages; the final fade is separate. Source SHA256 remains `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
 - The browser export check inspects `game.zip` for all **119 required art files**, including both lighting treatments. A previous export rule pruned opening-art directories before specific file rules could match; directory rules now precede exclusions. A second check rejects identical “alternate” exports after review caught unchanged legacy fallback copies.
 - Selected new GIMP masters were reopened and their visible exports compared against delivered pixels. Editable source corrections and replacement grades remain separate. This is reproducibility evidence, not an art pass.
 - All 11 additional softened legacy masters reopened and reproduced the delivered RGBA pixels exactly. Their two detail crops derive from the same corrected drawing master. All 52 lighting pairs now differ, and all required images are in the rebuilt web package.
 
-## Actual browser evidence
+### Browser evidence from that pass
 
 The WebAssembly game was run in isolated Chromium at 1280×720. The connected S001–S003 sequence traversed and captured all 66 mapped states. Manual inspection opened selected browser captures across all three scenes, supported by native checks of the other compositions; the review lists exactly which browser images were opened.
 
@@ -26,18 +36,18 @@ Browser save export/import, fullscreen and other browsers remain unverified. The
 
 The user rejected the new opening’s lighting and interface, and the missing cast after that opening. No visual completion gate is cleared. Native functionality passed four cases / 56 assertions; a separate larger-text case passed its return-state assertion but exposed further visual collisions. The web export launched as 0.3.0; connected browser review remains incomplete. Earlier records below are history, not current artistic clearance.
 
-# QA — rejected presentation checkpoint, 16 September 2026
+## Historical 0.2.0 presentation checkpoint, 16 September 2026
 
-**Current result: presentation failed. Substantial work remains.** The user rejected the partial replacement as well as the first playable. The [scene completion gates](../presentation-redesign.md#scene-completion-gates) supersede favorable aesthetic observations below. The current build lacks cast/performance coverage, speaker-positioned dialogue and a convincing interface. The opening's lever placement also needs spatial redesign. It is not a finished connected visual sequence.
+**Result at that checkpoint: presentation failed.** The user rejected the partial replacement as well as the first playable. That build lacked cast/performance coverage, speaker-positioned dialogue and a convincing interface; the opening's lever placement needed spatial redesign. These observations describe 0.2.0, not the later staging changes. No finished connected sequence was established.
 
-## Current technical checks — version 0.2.0
+### Technical checks — version 0.2.0
 
-- Source adapter reproducibility and Ren'Py lint passed. The screenplay remains unchanged: 58 scenes, 852 reading blocks, SHA256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
+- Source adapter reproducibility and Ren'Py lint passed. The screenplay remained unchanged: 58 scenes, SHA256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. The earlier record called its 852 reading pages “blocks”; see the corrected distinction above.
 - The replacement native suite passed **3 tests / 30 assertions**: reading and visual-discovery state; earlier/later save restoration; and the complete original text route without discovery through the final scene and separate question. These replace the superseded quiz tests below.
 - After the final CG beat restriction and disabling old cutouts, the affected reading/discovery case was rerun: **1 test / 16 assertions passed**, with 2 cases skipped by selection. The full suite was not repeated after that final change.
 - Both GIMP masters reopened with their editable layers (four for the drawing scene, two for the sealed arch). Independent exports matched runtime pixels. That verifies reproducibility, not artistic or source quality.
 
-## Current browser checks and limits
+### Browser checks and limits — version 0.2.0
 
 The actual web game was opened in Chromium. Title, bright reading, first-night reading, inspection, detail, connection and settings captures were viewed at 1440×900 and/or 1280×720. Local checks caught an obscuring gradient and an oversized slider; both were corrected. These isolated checks were insufficient to review the playthrough. Disabling sprites left scenes without their participants: an infirmary capture describes Mara leading Tessa between crowded beds and a porter drawing a curtain, while the screen shows an empty room. That is a visible source/presentation failure.
 

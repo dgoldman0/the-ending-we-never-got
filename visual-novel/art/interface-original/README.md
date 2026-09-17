@@ -1,15 +1,15 @@
-# Original interface — renewed working pass
+# Original interface — rejected component pass
 
-Unapproved production work following the rejection recorded at `f3acb5e`.
+Historical component work used by runtime 0.3.2 / `d0c3020`, subsequently rejected. The [full design review](../../reviews/2026-09-17-full-design-review/README.md) records unfinished cropped edges, awkward layout/reading flow and inconsistent screen treatments. The [active experience brief](../../presentation-redesign.md) governs the next interface; neither these materials nor previous local corrections clear its design.
 
-The interface is part of the original timeline's painful beauty. Develop a painted surface from aged gilt, pale mineral inlay and restrained botanical relief, with visibly interrupted growth. These are interface motifs, not new faction symbols or story artifacts. Keep the main text field quiet. Ornament must survive ordinary window size without competing with acting.
+The earlier pass explored aged gilt, pale mineral inlay and restrained botanical relief with interrupted growth. These are possible material references, not a selected final interface or new faction symbols. The original timeline's painful beauty remains the goal. New designs must compose ornament, typography, reading space and acting together at ordinary window sizes.
 
-First component: a wide reusable dialogue frame, separated and sized in GIMP, with native text and focus states in Ren'Py. Use it alongside narration, utility screens and the title, adjusting density for each purpose. Do not clear it from an isolated render: inspect short and long dialogue, standard/larger type, all three lighting registers and the complete connected opening.
+The first component was a wide generated frame separated and sized in GIMP. Cropping its middle for narration produced visibly unfinished edges. Do not carry this construction forward as a requirement. Develop appropriate compact speaker frames, staged dialogue, narration and utility surfaces with native text/focus states. Evaluate the shared family across title, reading, discovery and utilities in connected play, with short/long lines, standard/larger type and both lighting preferences.
 
 Use original rough references for material treatment only. They do not authorize importing their figures, gods, heraldry or architecture. Prompts live under `../prompts/interface-original/`. Preserve raw output, layered GIMP masters and concrete review observations separately.
 
-## Implemented working pass
+## Historical implementation and local checks
 
 `raw/dialogue-frame.png` is the generated material component. GIMP masters retain it separately from the cleaned, masked exports: `masters/dialogue-frame.xcf` and `masters/crest.xcf`. The [finishing script](../../tools/finish-original-interface.scm) makes speech, narration, menu surface, lip and crest assets. Their editable masks and layout serve different screen roles; no lettering is baked into the artwork.
 
-Native and browser inspection found two problems and corrected them: long dialogue reached the left botanical relief, and small page buttons compressed the ornament into jagged marks. Speech padding now reserves that relief; utility buttons use tint and underlining. The current settings screen, including Lighting, fits at 1280×720. Larger-text promise, doorway, priest, Olan, mother and discovery captures were inspected in native play. The [opening review](../opening-sequence/review/realignment-review.md) records the exact scope and remaining failures. The new interface remains working production, not user approval.
+Earlier native/browser inspection corrected two local problems: long dialogue reached the left botanical relief, and small buttons compressed the ornament into jagged marks. That pass recorded settings fitting at 1280×720 and inspected selected larger-text compositions. The [historical opening review](../opening-sequence/review/realignment-review.md) gives its exact scope. The subsequent full review and user rejection supersede any favorable impression from those local checks; this interface is not cleared for continued production.

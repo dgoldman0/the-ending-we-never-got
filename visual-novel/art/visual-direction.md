@@ -1,6 +1,6 @@
 # Original timeline — visual direction
 
-**Current presentation status:** the user rejected the first presentation and both subsequent partial revisions, most recently the S001–S003 opening preserved in `f3acb5e`. Follow the [presentation redesign brief](../presentation-redesign.md). Its lighting remains too comfortable and its interface too cheap. The established references and lighting registers below remain requirements; current renders and earlier favorable reviews do not establish the standard.
+**Current presentation status, 17 September 2026:** runtime 0.3.2 remains rejected after the [full design review](../reviews/2026-09-17-full-design-review/README.md). New extreme-light assets and a working preference did not resolve the interface, conversation, pacing or missing cast. Follow the [active experience brief](../presentation-redesign.md). The established references and lighting registers below remain requirements; current renders and earlier favorable reviews do not establish the standard.
 
 The user established the summoning and storm-infirmary studies as the two visual-tone anchors and requested the middle register on 16 September 2026. This direction applies to the original timeline. It does not change the screenplay's events, characters or knowledge.
 
@@ -18,6 +18,8 @@ Retain naturalistic painted faces, ordinary anatomy, tactile cloth, mineral colo
 
 Character keys need clear skin, fabric and silhouette reference. Use a simple, slightly insistent ordinary-light presentation; do not permanently bake the bright or dismal extreme into every portrait. Scene variants apply the appropriate illumination to that same identity. A painful atmosphere is not a requirement for every character to frown. It also must not excuse leaving postwar Tessa physically untouched: her later key must carry the visible aging and battering the user requested, independently of the wardrobe redesign.
 
+Compact conversation frames must preserve the same identity, chronological condition, wardrobe and scene light as the staged cast. Include meaningful listener reactions; a single generic expression is not a conversation system. Solve text readability separately from scene exposure. Neither attractive portrait fill nor a bright interface that overwhelms a dark scene preserves the requested atmosphere.
+
 ## Production and manual review
 
 Use the built-in image generator for new visuals and targeted generative edits. GIMP is installed and available for local work: component masks, repairs, exposure/color adjustments, contact shadows, crops and editable deliverables. Preserve original pixels beneath corrections. Do not turn a small prop repair into an uncontrolled recasting of the scene.
@@ -30,4 +32,4 @@ Keep each asset's brief, observations and status beside its deliverable. Store p
 
 ## Coverage
 
-The [production inventory](production-inventory.md) tracks the full original cast, screenplay scenes, location states, creatures and important props. Start with reusable principal-character identities, then build scene keys using those references. Keep scene-specific variants separate from the default portrait, especially injuries, growing children, seasonal clothing and the living/dead boundary at Harrow and the citadel.
+The [production inventory](production-inventory.md) tracks the full original cast, screenplay scenes, location states, creatures and important props. Start from the connected milestone's beat/performance plan and produce the components it requires, using established identities. Do not launch another full character-key or scenery batch before the complete experience clears its gates. Keep scene-specific variants separate from reference portraits, especially injuries, growing children, seasonal clothing and the living/dead boundary at Harrow and the citadel. Full-route coverage remains required after the representative sequence is resolved.

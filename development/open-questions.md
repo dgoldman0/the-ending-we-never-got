@@ -4,15 +4,15 @@ These are actual unresolved matters, not invitations to discard the protected pr
 
 ## Active priority — original-timeline Ren'Py VN
 
-The focus changed on 16 September 2026. A complete functional Ren'Py route and local browser preview now exist, but the user rejected the interface, UX and artwork. **Look closer / Threads** is the accepted reader-discovery direction. See the [adaptation brief](../visual-novel/README.md), [interaction contract](../visual-novel/investigation.md) and [presentation redesign](../visual-novel/presentation-redesign.md). The route structure, historical particulars and replacement visual designs remain subject to their recorded development status.
+Realigned on 17 September 2026 after the [full design review](../visual-novel/reviews/2026-09-17-full-design-review/README.md). The original route is text-traversable in Ren'Py and the browser, but runtime 0.3.2 remains a rejected, incomplete experience. **Look closer / Threads** is the accepted reader role. The [experience brief](../visual-novel/presentation-redesign.md) is the active plan; the following are unresolved implementation/design matters, not a reopening of settled user requirements.
 
 - Review ten proposed chapters and their complete scene coverage. The current pacing proposal retains existing time jumps and compresses successive visits/seasonal campaigns while preserving key interactions.
-- Review the proposal to retain the screenplay's cutaways, including Valcair's orders. This makes Harrow investigation a comparison of events, public claims and limited testimony rather than an unknown culprit mystery.
-- Implement the accepted reader agency: inspect details, bring related views alongside them, follow connections into additional authored material, and revisit through Threads. No player body, in-world actions or comprehension quizzes. Exact availability points remain to be designed; event-changing branches are not established.
+- Preserve the screenplay's cutaways, including Valcair's orders. Any proposed change to their information order needs explicit adaptation review. Harrow discovery compares events, public claims and limited testimony; it cannot pretend the reader has not seen a preserved cutaway.
+- Design worthwhile connections under the [accepted reader contract](../visual-novel/investigation.md): inspect details, compare related views, follow into additional authored material, and revisit through Threads. The quizzes are removed, but the current first-night prototype's friction and weak payoff remain unresolved. Exact availability and presentation remain to be designed; no player body, in-world actions or event-changing branches.
 - Develop the ancient sequence and actual exhibits showing that humans initiated the war through the first Saint summoning. This connection is now user-established; its exact events, dates, first Saint and preserved records remain to be written. The original cast does not acquire this knowledge through player unlocks.
 - Author and test the optional historical discovery rather than substituting explanatory cards and recall questions. Explicit, reliable history remains available to attentive players without requiring future reincarnated fans to forget it.
-- Establish a finished representative sequence integrating artwork, acting, lighting, reading UI and discovery before expanding asset production. The prior batch is a rejected presentation, not an approved visual baseline. Engine choice is Ren'Py; final release scope and measured playtime remain open.
-- The ending now explicitly includes the player-facing question “Do you wish to save Tessa?” after the complete original Bellweir scene. Decide answer labels, response handling and any subsequent continuation separately; the present sketch stops at the question.
+- Complete S001–S005 as one connected experience before expanding another art batch. Resolve compact conversation frames, listener reactions, stable reading/navigation, staged action, interface craftsmanship, discovery payoff and all applicable lighting states in play. Exact compositions and transitions remain working designs. All 58 scenes through the ending remain the route scope; measured playtime, audio treatment and supported delivery targets still need evaluation.
+- The ending and intended Yes choice occur only after the complete original Bellweir scene, fade and “Do you wish to save Tessa?” Runtime currently offers only Return to title. Implementing the choice remains required; response persistence, revisiting and whether/how to offer No remain open. Post-Yes shattering, hopeful UI and continuation are explicitly deferred.
 
 ## Deferred wider-story structure and narrative
 
@@ -32,7 +32,7 @@ The focus changed on 16 September 2026. A complete functional Ren'Py route and l
 
 ## Characters and visual development
 
-The original VN's first [character](../characters/original-visuals.md), [location](../worldbuilding/original-locations.md) and [prop/effect](../visual-novel/visual-continuity.md) descriptions now fill the practical appearance gaps. New details remain labeled working designs. A subsequent [north-infirmary image study](../visual-novel/art/scene-studies/north-infirmary/README.md) explores the user's rough style references; final character likenesses and the project-wide art style remain open. A source ambiguity about Tessa attributing the bridge seal to Valcair is recorded in the continuity notes for later dialogue review; the screenplay is unchanged.
+The [character](../characters/original-visuals.md), [location](../worldbuilding/original-locations.md) and [prop/effect](../visual-novel/visual-continuity.md) descriptions contain working physical designs. **Tessa's likeness is established:** the central woman in the user-selected [storm-infirmary study](../visual-novel/art/scene-studies/north-infirmary/README.md). The rough style references, three lighting registers, age/injury continuity and wardrobe corrections also remain in force. The finished runtime art/interface language still needs proving; other working keys are not automatically user-selected references. Do not reopen Tessa's casting or propagate rejected costume/identity drift. A source ambiguity about Tessa attributing the bridge seal to Valcair remains recorded for later dialogue review; the screenplay is unchanged.
 
 The following character questions concern the deferred incursion timeline:
 
@@ -45,7 +45,7 @@ The following character questions concern the deferred incursion timeline:
 ## Media and production
 
 - A Light for the Last Winter is the recovered draft VN title; release years, route design and adaptation history are unpinned.
-- There is no newly approved final character-art set in this preservation pass.
+- Existing working character keys and selected references do not establish an approved complete runtime art set.
 - No complete current altered-timeline screenplay has been harmonized with Rebuild 11.
 - Independent reader/performance evaluation remains unperformed.
 

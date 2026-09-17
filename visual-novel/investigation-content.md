@@ -1,10 +1,10 @@
 # Superseded discovery content — provenance record
 
-Status: **REJECTED PRESENTATION AND INTERACTION, 16 September 2026.** The user accepted [Look closer / Threads](investigation.md). The current explanation cards, comprehension questions and character-knowledge disclaimers do not implement that design. This file records the old material's provenance; it is not a recommendation to preserve its prose or mechanics. New discovery needs inspectable details and meaningful connections, with additional history authored before its reveal.
+Status: **HISTORICAL, REMOVED 0.1.0 IMPLEMENTATION.** The user accepted [Look closer / Threads](investigation.md). The rejected explanation cards, comprehension questions and character-knowledge disclaimers were removed; they are not the current first-night prototype. This file records their provenance, not a recommendation to restore their prose or mechanics. New discovery needs inspectable details and meaningful connections, with additional history authored before its reveal.
 
-The source is Rebuild 11, unchanged. `renpy/game/inquiry-data.rpy` adds player-facing examination notes, comparisons, unsupported-inference guidance and findings. It does not add dialogue, character inventory, a new archive visit or events to the Fountain manuscript.
+The source was Rebuild 11, unchanged. The earlier version of `renpy/game/inquiry-data.rpy`, retained in Git history, supplied examination notes, comparisons, inference guidance and findings. It did not add dialogue, character inventory, a new archive visit or events to the Fountain manuscript. The current file implements a different, still-rejected prototype.
 
-## Implemented cases
+## Cases in the removed implementation
 
 | Inquiry | Available after | Basis |
 | --- | --- | --- |
@@ -15,7 +15,7 @@ The source is Rebuild 11, unchanged. `renpy/game/inquiry-data.rpy` adds player-f
 | What can be relied on? | S049 | Marren's limited testimony, two plans and the separate personal letter |
 | Before this war | Material opens across rounds 2–5 | Established historical premises in `worldbuilding/war-and-history.md`; an explicit player-only finding |
 
-The modern case material is paraphrase/commentary on observed scenes. It is marked **Observed** and names the relevant interaction. The contextual material is marked **Historical context**. The player can read, revisit and compare before establishing a finding. Wrong inferences receive an explanation rather than a punishment. Guided explanations are available; findings do not change the route.
+The modern case material paraphrased/commented on observed scenes, labeled **Observed**. Contextual material was labeled **Historical context**. Players could read, revisit and compare before establishing findings; wrong inferences received explanations. This was the rejected quiz implementation, not the accepted reader interaction.
 
 ## What the first implementation omitted
 

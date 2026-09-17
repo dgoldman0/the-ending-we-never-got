@@ -2,7 +2,7 @@
 
 Status: FIRST ADAPTATION MAP. Every scene heading in [Rebuild 11](../screenplay/original-timeline/source.fountain) appears once below, in source order. IDs match the [art production inventory](art/production-inventory.md). Chapter allocation and presentation are proposals; the source events remain authoritative.
 
-The [outline](outline.md) explains the chapter arcs, [pacing plan](pacing.md) identifies time skips, and [investigation design](investigation.md) supplies the five optional rounds. Keeping coverage does not require staging every passage at equal length.
+The [outline](outline.md) explains chapter arcs, [pacing plan](pacing.md) identifies time skips, and [discovery design](investigation.md) proposes optional availability spans. R01–R05 below are internal planning labels, not automatic menus or compulsory rounds. The [experience brief](presentation-redesign.md) governs compact/staged conversation, action and quiet reading modes within these scene treatments. Keeping source coverage does not require equal presentation length. For actual runtime status, use the [route ledger](art/route-coverage.md).
 
 **Modes:** D = dramatized interaction; A = authored action sequence; C = source cutaway outside Tessa's viewpoint; B = brief scene/narrative bridge preserving the listed cause; M = compact illustrated montage. Combined modes indicate a mixture, not alternate story branches. No action sequence currently proposes a timed test or changeable outcome.
 
@@ -12,7 +12,7 @@ The [outline](outline.md) explains the chapter arcs, [pacing plan](pacing.md) id
 | S002 | 01 | 67–113 | INT. SAINT'S APARTMENT - NIGHT | **D** — Failed calls, Mara blocks the exit, cloak rejected, door locked, dead phone and kitchen drawing. |
 | S003 | 01 | 114–173 | INT. PALACE INFIRMARY - DAY | **D** — Olan's curse clears; missing fingers remain. Iven moderates the demands for more treatment. |
 | S004 | 01 | 174–215 | INT. AUDIENCE HALL - DAY | **D** — Badge and mantle imposed; public deployment announcement; Tessa challenges the lack of consent. |
-| S005 | 01 | 216–251 | INT. INFIRMARY - LATER | **D** — Iven gains only an afternoon, then promises to travel with her. R01 follows this scene. |
+| S005 | 01 | 216–251 | INT. INFIRMARY - LATER | **D** — Iven gains only an afternoon, then promises to travel with her; Tessa makes room and he sits. Candidate R01 availability, no forced interruption. |
 | S006 | 02 | 252–295 | EXT. CONVOY CAMP - AFTERNOON | **D/A** — Sanctuary limits, selective purification, practice-sword snag, burned meal and the warden's route warning. |
 | S007 | 02 | 296–336 | INT. ROADSIDE INN - NIGHT | **D** — The checker game draws Mara into company; the room key and inner bolt change Tessa's practical freedom. |
 | S008 | 02 | 337–393 | EXT. BELLWEIR - MARKET SQUARE - DAY | **D** — Intact heron, Elin, the bakery household, drawings and an invitation to the river. |
@@ -24,7 +24,7 @@ The [outline](outline.md) explains the chapter arcs, [pacing plan](pacing.md) id
 | S014 | 03 | 574–605 | INT. RELIEF WAREHOUSE - WINTER MORNING | **D** — First-winter displacement: boots, Orren's cap, family uncertainty and a corrected search portrait. |
 | S015 | 03 | 606–650 | INT. ELIN'S LODGING - DAY | **D** — Tessa sees the missing pages; Elin admits the access risk; they go to confront Senn together. |
 | S016 | 03 | 651–774 | INT. PALACE COUNCIL ROOM - DAY | **D** — Hearing: deception admitted, mantle left, confinement ended, Elin barred, original book retained by Senn. |
-| S017 | 03 | 775–792 | INT. PALACE COUNCIL CORRIDOR - CONTINUOUS | **D** — Mara admits knowing Tessa wanted to leave. The wound remains. R02 follows. |
+| S017 | 03 | 775–792 | INT. PALACE COUNCIL CORRIDOR - CONTINUOUS | **D** — Mara admits knowing Tessa wanted to leave. The wound remains. Candidate R02 availability. |
 | S018 | 04 | 793–829 | EXT. GRAY SCAR - FERRY APPROACH - AFTERNOON | **A** — Second-summer evacuation into the ferryhouse; northern families arrive under the same wild threat. |
 | S019 | 04 | 830–878 | INT. OLD FERRYHOUSE - CONTINUOUS | **D/A** — Roof held by sanctuary; mistrust becomes limited cooperation with weapons and one boat promised. |
 | S020 | 04 | 879–888 | EXT. GRAY SCAR - RIVERBANK - CONTINUOUS | **A** — Shelter and crossbow cover move the mixed group over exposed bank toward the gate. |
@@ -38,7 +38,7 @@ The [outline](outline.md) explains the chapter arcs, [pacing plan](pacing.md) id
 | S028 | 05 | 1173–1193 | INT. RIVER CAMP - INFIRMARY - CONTINUOUS | **D** — Hest and Orren reunite; the work call tests whether the promised respite is real. |
 | S029 | 05 | 1194–1203 | EXT. RIVER CAMPS - SUCCESSIVE VISITS | **M** — Cap and leg support; launch returned; upper-quarry access refused; next-morning barge sighting. Compact views/narration. |
 | S030 | 05 | 1204–1236 | INT. RIVER CAMP - INFIRMARY - EVENING | **D** — Apprentice's cap story; Lucan laughs, poses and forgets posing while Tessa draws him. |
-| S031 | 05 | 1237–1262 | EXT. NORTHERN GRAIN WHARF - AUTUMN MORNING | **C/B** — Limited grain pressure, crews refusing, three-day wait, exchange order and launch offered for the missing apprentice. R03 follows. |
+| S031 | 05 | 1237–1262 | EXT. NORTHERN GRAIN WHARF - AUTUMN MORNING | **C/B** — Limited grain pressure, crews refusing, three-day wait, exchange order and launch offered for the missing apprentice. Candidate R03 availability. |
 | S032 | 06 | 1263–1304 | EXT. HARROW FORD - COVERED BRIDGE - DAY | **D** — Bridge housings and tool wagons inspected; Lucan promises to stay beside Orren's cart; children invited. |
 | S033 | 06 | 1305–1369 | INT. VALCAIR'S WAR ROOM - NIGHT | **C** — Valcair orders wagon sabotage; Vask knowingly agrees; four-o'clock timing and selective recall established. |
 | S034 | 06 | 1370–1381 | INT. RETURN-CARGO SHED - BEFORE DAWN | **C** — Marren excluded; seals cut, charges concealed behind southern plates, old axles retained, false clearance countersigned. |
@@ -50,13 +50,13 @@ The [outline](outline.md) explains the chapter arcs, [pacing plan](pacing.md) id
 | S040 | 07 | 1612–1636 | EXT. OCCUPIED MILL TOWN - WINTER - DAY | **D/A** — Three months after Harrow: evacuation blocked, direct magic fails, Tessa asks Olan to reach the tower. |
 | S041 | 07 | 1637–1654 | INT. CURSE TOWER - CONTINUOUS | **A** — Tessa kills the wardkeeper as he threatens Olan; physical contact and inability to release the hilt matter. |
 | S042 | 07 | 1655–1683 | EXT. MILL TOWN - LATER | **D** — Mara sheathes the sword; Tessa wants Iven and still feels the grip; she finally makes room and takes Mara's hand. |
-| S043 | 07 | 1684–1710 | EXT. RIVER PROVINCES - CHANGING SEASONS | **M** — Three seasonal blocks pair Tessa's campaigning with blocked access to Marren; transfer news ends the compression. R04 follows. |
+| S043 | 07 | 1684–1710 | EXT. RIVER PROVINCES - CHANGING SEASONS | **M** — Three seasonal blocks pair Tessa's campaigning with blocked access to Marren; transfer news ends the compression. Candidate R04 availability. |
 | S044 | 08 | 1711–1756 | EXT. UPPER STORES - RIVER LANDING - DAWN | **A/C** — Lucan extracts Marren, suffers a forearm cut and escapes through the low arch; the fishing boat leaks. |
 | S045 | 08 | 1757–1783 | INT. CITADEL - NORTH INFIRMARY - MORNING | **C** — Marren reunited with his wife; Serat protects the ward; Lucan is treated and hears the admission of a signature. |
 | S046 | 08 | 1784–1842 | INT. VALCAIR'S PRIVATE ROOM - NIGHT | **C** — Lucan confronts his father; the selective recall and demand for Marren remain indefensible; the dry coat stays behind. |
 | S047 | 08 | 1843–1878 | INT. CITADEL - NORTH INFIRMARY - BEFORE DAWN | **C** — Some captains leave; remaining defenders protect patients; imperfect plan, separate personal letter and witness escort sent. |
 | S048 | 08 | 1879–1939 | INT. FORWARD CAMP - EXAMINATION TENT - DAY | **D** — Tessa questions Marren. He signs limited testimony; the statement does not prove everything. Tessa opens the letter afterward. |
-| S049 | 08 | 1940–1987 | INT. FORWARD COMMAND TENT - NIGHT | **D** — Nearly four years after summoning: Olan corrects the plan, Tessa questions the release, Mara's route is set; Iven's bag goes to a healer. R05 follows. |
+| S049 | 08 | 1940–1987 | INT. FORWARD COMMAND TENT - NIGHT | **D** — Nearly four years after summoning: Olan corrects the plan, Tessa questions the release, Mara's route is set; Iven's bag goes to a healer. Candidate R05 availability. |
 | S050 | 09 | 1988–2013 | EXT. CITADEL - LOWER STAIR - PRE-DAWN | **D** — Tessa fastens Mara's trembling guard; promise to reunite, embrace and last look back. |
 | S051 | 09 | 2014–2024 | EXT. CITADEL - NORTH INFIRMARY COURT - DAWN | **A/C** — Lucan and Serat defend the infirmary's separate front; the laundry passage changes their disposition. |
 | S052 | 09 | 2025–2049 | INT. CITADEL - INNER LANDING - DAWN | **A/D** — Closing opportunity at the hall: Tessa removes her left glove and enters; the ward seals behind her. |

@@ -1,6 +1,6 @@
 # Opening sequence production
 
-The user authorized production after the rejected checkpoint discussion. Rebuild 11 remains the source. This sequence covers S001–S003. It is in production; gate results are recorded only after actual review. No post-Yes work.
+**Realigned 17 September 2026.** This folder holds the rejected S001–S003 component baseline and provisional spatial plan. The [active experience brief](../../presentation-redesign.md) now targets the complete connected **S001–S005** sequence before further batch expansion. The current pass aligns documentation; the stopped art batch has not resumed. Rebuild 11 remains the source. No post-Yes work.
 
 ## Spatial plan — working adaptation geometry
 
@@ -14,35 +14,40 @@ Apartment: high window on the west wall; one chair at that window until line 108
 
 ## Shot and performance coverage
 
-| Source beat | Required visual action / cast | Dialogue placement |
+The source/action list below is planning input, not proof of completed performances. Develop its compact exchanges, staged conversations, action views and quiet holds together; existing renders do not dictate the mode or layout.
+
+| Source beat | Required visual action / cast | Reading/performance direction |
 | --- | --- | --- |
 | S001 9 | Arrival: Tessa stepping over the boundary, bag still in hand; kneeling spectators; scholar at remote station | Narration in a clear lower margin |
 | 11–13 | Bag/carton impact and connected spill at threshold; phone message insert | Narration, preserve hand and spill |
 | 15.0–15.1 | Attempted return followed by scholar pulling down control and arch collapse; neither action conflated with initial arrival | Narration; no premature sealed arch |
-| 17–20 | Tessa reaches cracked stone, demanding reopening | Tessa box left, near her body without hiding reaching hand |
-| 22–27 | Senn caught by pleading woman; guard draws her aside; porters and patient cross gallery | Woman box attached to her screen position |
-| 29–50 | Tessa/Senn exchange; soldiers block control approach and lower shields; both main actors remain during narration | Alternating left/right boxes, stable shot anchors |
-| 52–58 | Failed call; Mara approaches holding gray cloak; Senn's promise | Tessa left, Senn right; Mara subordinate until approach |
-| 60–65 | Mara guides Tessa aside for stretcher, crowd closes around stone, cloak settles; Senn looks to scholar | Tessa box beside her, preserve cloak/stretcher action |
+| 17–20 | Tessa reaches cracked stone, demanding reopening | Clear speaker association; preserve reaching hand and stable reading area |
+| 22–27 | Senn caught by pleading woman; guard draws her aside; porters and patient cross gallery | Identify woman without covering her grip or Senn's response |
+| 29–50 | Tessa/Senn exchange; soldiers block control approach and lower shields; both main actors remain during narration | Compact speaker frames and stable text; changing listener reactions, guard action preserved |
+| 52–58 | Failed call; Mara approaches holding gray cloak; Senn's promise | Clear attribution across three people; phone/approach states, no frozen offered hand |
+| 60–65 | Mara guides Tessa aside for stretcher, crowd closes around stone, cloak settles; Senn looks to scholar | Preserve cloak/stretcher action and the meaningful final glance |
 | S002 69–71 | Tessa on window chair raising phone; gray cloak worn; distant winged silhouette and infirmary carts; dress on floor | Narration clear of figure |
-| 73–88 | Mara enters with covered plate; Tessa has climbed down, still wearing cloak; guard visible beyond open door | Tessa left, Mara right; changing expressions and gaze |
-| 90–99 | Plate set down, Tessa carries candle toward exit, Mara blocks door; negotiation turns into confinement | Boxes beside speaker, leave candle and blocking arm visible |
-| 101–104 | Candle back on table, cloak on floor at Mara's feet; Tessa's anger and Mara's evasive glance | Tessa left; narration separate |
+| 73–88 | Mara enters with covered plate; Tessa has climbed down, still wearing cloak; guard visible beyond open door | Compact exchange; expressions/gaze change without forcing text to jump sides |
+| 90–99 | Plate set down, Tessa carries candle toward exit, Mara blocks door; negotiation turns into confinement | Staged action and clear attribution; leave candle and blocking arm visible |
+| 101–104 | Candle back on table, cloak on floor at Mara's feet; Tessa's anger and Mara's evasive glance | Keep both reactions; narration does not clear the cast |
 | 106–108 | Mara leaves holding cloak, door closes; failed phone battery, chair barricade | Dedicated action/prop views; Tessa does not vanish |
 | 110–112 | Right-handed drawing, small tear, restart on clean corner with mother's chair | Intimate drawing illustration; prose outside face/hands; real Look closer detail |
 | S003 116–125 | Occupied ward; Mara leads Tessa; porter closes curtain; Iven/Olan/older healer/priest; corruption survives blue healing | Establish ensemble, then treatment framing |
-| 127–148 | Tessa's hesitation, Iven supports, Olan requests help; seated purification clears darkness | Speaker anchors follow seated treatment arrangement |
-| 150–157 | Last dark patch clears; light lingers at missing fingers; Tessa asks and Iven explains their permanence | Tessa left, Iven centre; hands remain visible |
+| 127–148 | Tessa's hesitation, Iven supports, Olan requests help; seated purification clears darkness | Compact attribution for multiple speakers; composed treatment views and reactions |
+| 150–157 | Last dark patch clears; light lingers at missing fingers; Tessa asks and Iven explains their permanence | Stable reading area; hands and emotional responses remain visible |
 | 160–169 | Olan rests his hand; mother calls from the next row; Tessa starts to rise and Iven asks her to wait | Preserve mother and Iven still beside Tessa; no premature cup |
 | 172 | Iven has brought water and gone to the next family; Tessa watches sleeping Olan, cup untouched | Quiet seated aftermath, no magic or restored fingers |
+| S004 176–214 | Badge pinned to coat and white mantle; Orra/messenger at door; Olan applauds with his good left hand; Tessa grips Senn's sleeve and refuses chair; Iven below dais, then called up | Complete formal cast and source action; compact attribution for distant speakers, preserve Tessa's grip/reaction |
+| S005 218–250 | Iven sets bag beside Tessa and packs medical chest; mother at wagons; bottle returned to chest, lid left open; Mara/guards below; Tessa makes room and Iven sits | Two-person performance with purposeful inserts; finish with both seated, chest still open, not an empty window |
 
 ## Visual and interaction direction
 
-Dialogue uses compact translucent ink panels with a fine warm metallic edge and restrained botanical geometry, anchored to the speaker's side of the composed shot. Narration uses a quieter, separate paper-like treatment. Fine incomplete arcs and broken lines repeat as interface geometry without becoming faction emblems. Essential controls stay stable along the lower edge; focus remains visibly marked. Panel placement is tested with real short/long lines and larger text; there is no blanket gradient darkening the entire dramatic area.
+The exact frame artwork, materials and dimensions remain design work under the [active brief](../../presentation-redesign.md). Earlier ink/gilt/botanical motifs are possible references, not an approved UI to preserve. Develop compact rapid exchanges, staged speech, action and quiet narration as one coherent family with complete edges, stable reading/navigation, visible focus and correct hit areas. Test real short/long lines and larger text. Do not move a large box across the screen on each turn, crop an ornate frame into unfinished narration edges, or darken the dramatic area to hide layout problems.
 
-Sprites are actual isolated, reusable performances with scene-specific illumination, scale and props. Close action art punctuates their exchanges. Bright temple light must reach both speaking faces; night must retain darkness while allowing eyes and gestures to read. Character age and identity are compared to written designs and selected references. GIMP masks, local colour work and component replacements preserve approved parts. Rejected images are not identity baselines.
+Sprites and compact portraits are scene-specific performances with appropriate illumination, scale, expressions and props. Close action art punctuates their exchanges. Bright temple light must reach both speaking faces; night keeps essential action legible through selective detail without attractive portrait fill. Review both Intense and Softened variants. Character age and identity are compared to written designs and selected references. GIMP masks, local colour work and component replacements preserve valid parts. Rejected images are not identity baselines.
 
 ## Gate record
 
-- Source/blocking: complete adjacent screenplay interactions read; spatial relationships above resolve threshold/control/gallery access. Review diagram and produced shots before clearing this gate.
-- Cast, art, interface, continuous play and regression: pending production and inspection. No existing screenshot or native test result clears these gates.
+- Source/blocking: the room plan is a provisional solution to threshold/control/gallery access. Verify it through sequential action and actual images; reading the source and writing coordinates do not clear staging.
+- Current experience: rejected. S001–S003 mappings do not establish good conversation or flow; S004–S005 have no active cast coverage. The full connected milestone is not built or cleared.
+- Apply every [completion gate](../../presentation-redesign.md#scene-completion-gates) to the next integrated sequence. Record manual scope, failed/unreviewed items and corrections separately from technical passes; no earlier review grants clearance.

@@ -1,6 +1,6 @@
 # Original ending and the question to the player
 
-Status: FIRST VN STORYBOARD. The user explicitly requested the original ending followed by **“Do you wish to save Tessa?”** The Bellweir sequence is screenplay material; the transition and question are VN framing. No continuation or answer outcome has been written.
+Status: **ORIGINAL ENDPOINT REQUIREMENTS — realigned 17 September 2026.** The user established the complete original ending, then **“Do you wish to save Tessa?”**, with Yes only after that final scene. The Bellweir sequence is screenplay material; the question is VN framing. The hopeful/shattering presentation after Yes and the continuation are explicitly deferred. Runtime 0.3.2 displays the question but only offers Return to title; this remains an endpoint interaction gap.
 
 Source: [Rebuild 11](../screenplay/original-timeline/source.fountain), S058, beginning at line 2175. Preserve the earlier deaths, right-hand injury, loss of trust and unresolved route home. The player may also know the first Saint summoning's role in human-initiated war; Tessa does not learn it here.
 
@@ -29,7 +29,9 @@ On black, display the exact question plainly. It has no character nameplate or e
 
 Allow the final fade a beat before a fresh player advance reveals the question; do not turn one rapid click at the end of dialogue into an answer. Exact transition duration, typography and audio are presentation decisions for the prototype. An extended forced wait is unnecessary. Place credits after this framing or make them reachable separately; a credit roll must not obscure the requested endpoint.
 
-If represented as a choice in the next prototype, **Yes / No** are provisional labels, with neither preselected or timed. This sketch ends at their presentation. What “Yes” initiates, what “No” does, whether a response is saved and how the question is revisited remain explicit follow-up decisions. No unimplemented continuation should be advertised as already playable.
+The original endpoint must eventually offer a deliberate **Yes** at this question; Return to title alone does not meet that intended interaction. Do not preselect, time, or accidentally trigger the answer with the advance that finishes the scene. A No option, response storage and revisit behavior remain design decisions, not established new story outcomes.
+
+The user has established the eventual shattering/hopeful change after Yes, but specifically deferred work on its UI/UX. Design the original endpoint's response handoff within that boundary when implementation reaches it; do not invent or advertise a playable rescue continuation. This realignment does not implement the response or settle its storage behavior. The placement of Yes is settled; those implementation particulars remain open.
 
 ## What the question does and does not establish
 
@@ -44,3 +46,4 @@ The question opens the possibility of changing her course. It does not yet settl
 - Keep the historical investigation separate from her knowledge and the catalog lead.
 - Test a straight-through playthrough and a completed-investigation playthrough: both must receive the same original ending and question.
 - Confirm that the transition gives the original ending space without turning the prompt into an accidental click or mandatory pause puzzle.
+- Verify that the final question has the intended deliberate Yes affordance while the deferred post-Yes visual/continuation scope is respected. A test that merely reaches the text of the question does not clear this requirement.

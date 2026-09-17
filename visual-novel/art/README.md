@@ -1,11 +1,11 @@
 # Visual development
 
-**Presentation reset, 16 September 2026:** the user rejected the current game's artwork and interface. Read the [audit and redesign brief](../presentation-redesign.md) before extending the runtime set. Existing selected likeness/tone references remain valid; the rejected presentation must not become its own style standard.
+**Realigned 17 September 2026:** runtime 0.3.2 remains rejected and incomplete. Read the [active experience brief](../presentation-redesign.md) and [full design review](../reviews/2026-09-17-full-design-review/README.md). The next playable milestone is a complete connected S001–S005 sequence. Existing selected likeness/tone references remain valid; rejected presentation components must not become their own style standard.
 
 The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
 
-- [opening-sequence/](opening-sequence/README.md): current working S001–S003 shot production, cast, source-state mapping and [realignment review](opening-sequence/review/realignment-review.md).
-- [interface-original/](interface-original/README.md): new painted interface components, GIMP masters and layout review.
+- [opening-sequence/](opening-sequence/README.md): rejected S001–S003 component baseline and provisional spatial plan; extension requirements for the connected S001–S005 milestone. The earlier [component review](opening-sequence/review/realignment-review.md) is historical.
+- [interface-original/](interface-original/README.md): rejected painted interface pass and GIMP masters, retained for diagnosis; not an approved frame design.
 - [lighting/](lighting/README.md): persistent Intense/Softened choice, recovered exports, matched variants and review evidence.
 - [Route coverage](route-coverage.md): all 58 scenes, with incomplete cast and artwork explicitly marked.
 - [runtime/](runtime/README.md): the rejected first batch, retained for provenance. Its temporary S004/S005 room plates still require replacement; current opening art is produced separately.
@@ -29,4 +29,4 @@ The user's supplied pictures are rough style references. They do not add their p
 
 ## Review before presenting a candidate as ready
 
-Inspect the full composition and actual-resolution crops of every important face, hand, joint, contact point and mechanism. Verify sight lines, object ownership, injury state, light sources and the specific screenplay moment. A good thumbnail does not clear distorted facial anatomy or an impossible lever. Perform needed GIMP corrections and inspect the exported result again. A saved layered file alone is not an editing or quality pass.
+Inspect the full composition and actual-resolution crops of every important face, hand, joint, contact point and mechanism. Verify sight lines, object ownership, injury state, light sources and the specific screenplay moment. A good thumbnail does not clear distorted facial anatomy or an impossible lever. Perform needed GIMP corrections and inspect the exported result again. A saved layered file alone is not an editing or quality pass. Then review the complete connected experience under the [completion gates](../presentation-redesign.md#scene-completion-gates): speaker changes, listener reactions, action/narration, lighting preferences, reading rhythm, navigation and discovery. Asset inspection alone cannot clear a scene or authorize expanding a failed design.

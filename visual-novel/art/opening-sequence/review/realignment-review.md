@@ -1,6 +1,6 @@
-# Renewed opening: working review
+# Renewed opening: historical component review
 
-Version 0.3.2 follows the rejected checkpoint `f3acb5e`. This record separates observed changes and functional verification from artistic approval. The user has not approved the new presentation. S004–S058 are still visually incomplete; the [route ledger](../../route-coverage.md) keeps those failures visible.
+**Superseded by the [17 September full design review](../../../reviews/2026-09-17-full-design-review/README.md).** Version 0.3.2 was subsequently rejected. This record preserves earlier component observations and functional verification, not current experience clearance. S004–S058 remain visually incomplete; the [route ledger](../../route-coverage.md) keeps those failures visible. Follow the [active experience brief](../../../presentation-redesign.md) for the next connected S001–S005 milestone.
 
 ## Lighting and editable work
 

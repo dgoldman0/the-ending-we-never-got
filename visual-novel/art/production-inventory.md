@@ -4,9 +4,9 @@ Scope: all original-timeline character keys, screenplay scene keys, reusable loc
 
 ## Runtime implementation
 
-**Presentation rejected:** the user rejected the first playable visuals and interface. Existing coverage entries below describe files that exist, not completed acceptable art. The next priority is the [integrated presentation sample](../presentation-redesign.md); reassess the opening components before treating them as reusable production standards or expanding the queue.
+**Realigned 17 September 2026; runtime 0.3.2 remains rejected.** Existing files are not completed acceptable art. The [active experience brief](../presentation-redesign.md) requires a complete connected S001–S005 milestone before further batch expansion. The [route ledger](route-coverage.md) records actual integration; this inventory records production needs and available studies.
 
-The [opening runtime batch](runtime/README.md) now supplies eight sprite states across Tessa, Mara, Iven and Senn, and nine background states across S001–S005. Its [manifest](runtime/manifest.json) and [review](runtime/review.md) govern reuse. No earlier key or tone study automatically counts as an implemented game sprite or complete scene. Supporting opening cast/action shots and S006–S058 production remain queued.
+The [first runtime batch](runtime/README.md) is historical: its character cutouts are disabled in the current game. Its manifest and favorable review do not authorize reuse. Current [opening components](opening-sequence/README.md) map 66 reading states in S001–S003; S004–S005 have 29 room-only pages without required cast, and S006–S058 have 757 location/text pages. All remain incomplete. A study, a mapped state, a manual asset inspection, an integrated scene and an experience gate pass are different statuses.
 
 ## Character coverage
 
@@ -14,7 +14,7 @@ The developed [character designs](../../characters/original-visuals.md) govern t
 
 | Character/group | Required keys and state changes | Status |
 | --- | --- | --- |
-| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [New early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) reviewed; winter, intermediate fieldwear and postwar costume pending. Arrival, phone, cloak, first treatment and ceremony now have separate runtime sprites for the opening. Old costumes archived; postwar physical-state study separate. |
+| Tessa | Early convoy key; arrival; complete public Saint ensemble; winter/mantle; Gray Scar–Harrow; late campaign/citadel; postwar right brace and left-hand writing | [Early/formal/campaign keys and movement sheet](character-keys/tessa/README.md) have working asset reviews; winter, intermediate fieldwear and postwar costume pending. S001–S003 contain unapproved mapped performances; S004–S005 have no active character coverage. Old costumes archived; postwar physical-state study separate. |
 | Iven | Olive-coat baseline; apron; winter; Harrow right sleeve; coat and bag as separate later grief props | [Reviewed baseline](character-keys/iven/README.md); remaining variants planned |
 | Mara | Slate-blue coat/padded baseline; left shield/right sword; left shoulder ward; field armor; off duty; final right forearm guard | [Reviewed baseline](character-keys/mara/README.md); variants planned |
 | Elin | Ocher jacket/teal skirt; field trousers/rain cloak; citadel torn pale sleeve | [Reviewed baseline](character-keys/elin/README.md); variants planned |
@@ -51,16 +51,16 @@ Do not collapse different people into one reusable portrait because their dialog
 
 ## Scene coverage
 
-Every source scene is listed in order below. A row is coverage, not a completed scene brief: read its full interaction and adjacent staging before generation. Repeated locations need different action/state keys where the screenplay changes them. Initial scene production adds the locked apartment (dismal) and the convoy meal after training (ordinary) to the two established tone studies.
+Every source scene is listed in order below. A row is not a completed scene brief: read its full interaction and adjacent staging before generation. Repeated locations need different action/state keys where the screenplay changes them. Available studies do not establish runtime coverage or the next batch order; the connected S001–S005 milestone comes first.
 
 | ID | Source scene | Source line | Status |
 | --- | --- | --- | --- |
-| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 7 | [Existing tone study](scene-studies/summoning/README.md) |
-| S002 | INT. SAINT'S APARTMENT - NIGHT | 67 | [Working scene study](scene-studies/locked-apartment/README.md); costume prop provisional |
-| S003 | INT. PALACE INFIRMARY - DAY | 114 | Runtime ward background and Tessa/Iven close dialogue portraits; treatment action and supporting cast pending |
-| S004 | INT. AUDIENCE HALL - DAY | 174 | Runtime hall, banners and Tessa/Senn dialogue portraits; supporting cast and sleeve-grip action pending |
-| S005 | INT. INFIRMARY - LATER | 216 | Runtime window/chest/convoy background and close dialogue portraits |
-| S006 | EXT. CONVOY CAMP - AFTERNOON | 252 | [Draft composition](scene-studies/convoy-meal/README.md); Tessa wardrobe redesign; final visual review pending |
+| S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 7 | Mapped arrival/closure and dialogue components; presentation rejected. [Tone study](scene-studies/summoning/README.md) is a separate reference. |
+| S002 | INT. SAINT'S APARTMENT - NIGHT | 67 | Mapped night components; presentation rejected. [Study](scene-studies/locked-apartment/README.md) is not runtime clearance. |
+| S003 | INT. PALACE INFIRMARY - DAY | 114 | Mapped treatment and ensemble components; performance/experience incomplete, not a cleared scene. |
+| S004 | INT. AUDIENCE HALL - DAY | 174 | Room-only runtime; required cast, formal wardrobe and sleeve-grip/action coverage missing. |
+| S005 | INT. INFIRMARY - LATER | 216 | Room-only runtime; Tessa/Iven interaction and other source action missing. |
+| S006 | EXT. CONVOY CAMP - AFTERNOON | 252 | Runtime prose only. [Draft study](scene-studies/convoy-meal/README.md) uses superseded Tessa wardrobe; final visual review pending. |
 | S007 | INT. ROADSIDE INN - NIGHT | 296 | Planned; brief required |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 337 | Planned; brief required |
 | S009 | EXT. RIVER BELOW BELLWEIR - LATE AFTERNOON | 394 | Planned; brief required |
@@ -110,7 +110,7 @@ Every source scene is listed in order below. A row is coverage, not a completed 
 | S053 | EXT. CITADEL - LOWER STAIR - CONTINUOUS | 2050 | Planned; brief required |
 | S054 | INT. CITADEL - THRONE HALL - CONTINUOUS | 2056 | Planned; brief required |
 | S055 | EXT. CITADEL - LOWER STAIR - MORNING | 2108 | Planned; brief required |
-| S056 | INT. NORTH INFIRMARY - DAY | 2138 | [Existing tone study](scene-studies/north-infirmary/README.md) |
+| S056 | INT. NORTH INFIRMARY - DAY | 2138 | Runtime prose only; [existing tone/likeness study](scene-studies/north-infirmary/README.md) is a reference, not runtime scene coverage. |
 | S057 | EXT. CITADEL - LOWER GATE - EVENING | 2155 | Planned; brief required |
 | S058 | EXT. BELLWEIR - MARKET SQUARE - SPRING DAY | 2175 | Planned; brief required |
 

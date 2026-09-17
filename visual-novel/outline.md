@@ -2,7 +2,7 @@
 
 Status: FIRST STRUCTURAL PROPOSAL, 16 September 2026. Requested scope: the original timeline through its ending, followed by **“Do you wish to save Tessa?”** The [Rebuild 11 screenplay](../screenplay/original-timeline/source.fountain) drives events, dialogue, chronology and character knowledge. This document proposes a VN presentation; it does not revise the manuscript or establish a playable game.
 
-**Subsequent decision:** a complete functional route now exists, but the user rejected its presentation and quiz-based discovery. [Look closer / Threads](investigation.md) is the accepted reader interaction. References below to five rounds are candidate story groupings, not mandatory quiz screens. Follow the [presentation redesign brief](presentation-redesign.md) for the next implementation stage.
+**Current alignment, 17 September:** the full text route exists, but runtime 0.3.2 and its first-night discovery presentation remain rejected. The quizzes are removed. [Look closer / Threads](investigation.md) is the accepted reader role. R01–R05 below are candidate availability spans, not compulsory rounds or menu interruptions. Follow the [active experience brief](presentation-redesign.md), including compact conversation frames, stable reading, complete performances and the connected S001–S005 milestone. This outline does not establish completion.
 
 Read with the [complete scene map](scene-map.md), [player investigation sketch](investigation.md), [pacing and time skips](pacing.md), [ending sequence](ending.md) and [adaptation brief](README.md). Chapter titles and boundaries are working labels.
 
@@ -35,11 +35,11 @@ Make room for this through the screenplay's existing time jumps and compact illu
 
 **Source:** S001–S005; arrival through the infirmary window-seat conversation. Time: nineteen, the first days after summoning.
 
-Open at the interrupted stride, with the ordinary message from her mother, the dropped groceries and the briefly visible store. Present arrival, attempted return and the closed arch as successive beats. Let the apartment establish confinement through the locked door, dead phone and drawing, rather than introductory lore. Olan's treatment establishes both the usefulness and limits of Tessa's light. The public ceremony turns that success into an obligation she did not accept. End with Iven making room beside her and promising to accompany her.
+Open at the interrupted stride, with the ordinary message from her mother, the dropped groceries and the briefly visible store. Present arrival, attempted return and the closed arch as successive beats. Let the apartment establish confinement through the locked door, dead phone and drawing, rather than introductory lore. Olan's treatment establishes both the usefulness and limits of Tessa's light. The public ceremony turns that success into an obligation she did not accept. Iven promises to accompany her; end with Tessa making room on the sill and Iven sitting beside her.
 
-**VN treatment:** the summoning study anchors the opening's environment; separate views/states are still needed for closure. The apartment benefits from a still composition and a drawing insert. Olan's arm needs a readable before/after that retains his missing fingers. The ceremony needs the new complete formal outfit, followed by a quieter two-person frame at the window.
+**VN treatment:** the summoning study anchors tone, not a finished runtime environment. Source-specific arrival/closure states and compact Tessa/Senn exchanges need coherent direction. The apartment combines a compact exchange, blocked-exit action and a quiet drawing view. Olan's treatment needs clear multi-person attribution and before/after states retaining his missing fingers. The ceremony needs the complete formal outfit and the full acting group, followed by a quieter two-person frame at the window.
 
-**Player space:** optional examination of the already seen phone message, letter/drawing and treatment distinction at the chapter boundary, then investigation round R01. None can restore the phone or reopen the arch.
+**Player space:** optional examination of source-grounded details and meaningful relationships, with exact return and revisiting through Threads. R01 labels this candidate span, not a mandatory chapter-end screen. Define the payoff before producing a connection. None can restore the phone or reopen the arch.
 
 **What changes:** Tessa's demand to get home now exists alongside a particular person's need for her and Iven's limited, practical support.
 
@@ -167,12 +167,12 @@ The [ending storyboard](ending.md) specifies the proposed flow and where this sk
 | Source action on a still screen | Stage contact, movement and continuity with backgrounds, poses, inserts and selected scene images | Presentation work; revise prose only when the concrete conversion needs it |
 | “Your seal was on the bridge” | Flag against the earlier identification of Vask's clearance | Existing source ambiguity; decide wording/attribution before adapting that exchange |
 | Lucan's personal letter | Show Tessa opening it without supplying readable invented contents | Full text would be a new writing decision |
-| Final question | Add after the complete original ending and fade | Explicit user request; answers and continuation not settled |
+| Final question and Yes | Only after the complete original ending and fade | Placement and intended Yes established; response storage/revisit behavior still design work, post-Yes UI/UX and continuation deferred |
 | Runtime and production scope | Estimate after adapting and reading a sample segment | No conversion of screenplay runtime or art inventory into a claimed VN length |
 
 ## Replacement presentation sample
 
-The first playable route already implements this structure; its visuals and quiz system were rejected. The next sample must meet the [integrated redesign brief](presentation-redesign.md): coherent scene direction and acting, bright/dark lighting, reading and utility screens, and an actual inspect/connect/return interaction. Placeholders can support explicitly labeled layout experiments but cannot clear the finished presentation sample. Existing tone studies remain references.
+The source route implements the current chapter structure; its presentation is rejected and quizzes are removed. The next milestone is the complete [S001–S005 experience](presentation-redesign.md#next-playable-milestone--complete-rovel-sequence), including compact/staged dialogue, reaction and action, all three lighting registers where appropriate, both lighting preferences, coherent utilities and worthwhile discovery/return. Placeholders can support labeled development layouts but cannot clear that milestone. Existing tone studies remain references.
 
 Preserve source knowledge and relationships in both straight-through and optional-discovery reads. Test exact return and saved reader discoveries, then judge pacing at ordinary reading speed. The current route's passing tests do not approve its visual direction or the proposed replacement.
 

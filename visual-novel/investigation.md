@@ -1,6 +1,6 @@
 # Look closer / Threads — reader discovery
 
-Status: **ACCEPTED INTERACTION DIRECTION, 16 September 2026.** The user accepted **Look closer** for examining details and following connections, with **Threads** for revisiting those connections. The player participates as a reader. The explanation-card/quiz screens have been replaced by a first-night visual inspection and connection prototype. That prototype belongs to the rejected, unfinished presentation checkpoint; acceptance of the interaction contract does not approve its execution. The broader historical threads remain to be authored and implemented. See the [broader presentation redesign](presentation-redesign.md).
+Status: **ACCEPTED READER ROLE; EXECUTION REQUIRES REDESIGN — realigned 17 September 2026.** The user accepted **Look closer** for examining details and following connections, with **Threads** for revisiting them. The old quizzes have been removed. The current first-night prototype is rejected: too many menu transitions, weak new payoff, and a visible caption partly outside its clickable area. See the [full review](reviews/2026-09-17-full-design-review/README.md) and [active experience requirements](presentation-redesign.md). Historical discovery remains unimplemented.
 
 The discovery must include **humans initiating the ancient war through the first Saint summoning**. Tessa's summoning is a later event. That historical anchor is established; the exact first Saint, dates, commissioning individuals, first operation and Valcair's firsthand involvement remain to be developed. The interaction agreement does not invent those facts or approve particular historical scenes.
 
@@ -10,7 +10,7 @@ Read with the [route outline](outline.md), [pacing plan](pacing.md), [knowledge 
 
 The player controls attention and connections. There is no player body in the fiction: no first-person corridor traversal, opening doors, questioning people, inventory, travel or new actions attributed to the cast. Movement between views is editorial reframing—a close view, a juxtaposition, a change of perspective or an authored historical cutaway. A cutaway gives the reader access to a scene; it does not make the reader a character present there.
 
-The interaction:
+The reader operations below describe capabilities, **not five separate menu screens or a mandatory click sequence**. Preserve the sense of looking more closely at the scene. Use a useful detail scale, a clear relationship and a direct path back; general utility navigation should not dominate the material.
 
 1. **Look closer:** pause at a meaningful illustrated detail and inspect it at a useful scale. The image, object or action must carry something the player can notice; an empty hotspot that opens an explanatory essay is insufficient.
 2. **Bring details together:** follow a visible relationship to an already encountered moment or another available view. Keep the originating detail available so the player can actually compare them.
@@ -19,6 +19,8 @@ The interaction:
 5. **Return:** resume the exact story beat. Reading time does not advance the story clock, and discovery does not change the original outcome.
 
 No multiple-choice comprehension tests, correct/incorrect grading, compulsory clue quotas or quiz-completion gates. No consumable clues, countdown, survival score or failure ending. Provide visible, accessible inspection targets with keyboard/list equivalents; avoid precise pixel hunting. Previously available material can be revisited without replaying chapters. Story progress can protect future scenes from spoilers; reading every item is not a homework requirement.
+
+Before producing a connection, record the source detail, what the reader can actually notice, why the related view belongs beside it, and the additional understanding or authored material gained. Keep the images available for comparison. A caption announcing the intended emotion or a paragraph repeating the preceding scene does not clear the payoff requirement. A small introductory inspection can remain small; do not inflate it into four screens to simulate depth. Test visible labels, hit areas, keyboard focus, larger text, both lighting modes and exact return together.
 
 Character-knowledge restrictions belong in authoring and state management. Convey the player's reader position through the interaction's form; do not display disclaimers about what characters know, production limitations or unwritten canon. Tessa, original Iven, original Mara, Elin and Lucan retain exactly the knowledge their scenes establish.
 
@@ -32,7 +34,7 @@ This candidate illustrates the accepted interaction; it is not a newly approved 
 
 The five old round boundaries below remain useful source-grouping proposals. They are not a requirement for five forced menu interruptions or a linear series of tests. Exact opportunities to Look closer and how Threads becomes available still need scene-level design. The labels and historical exhibit forms remain provisional.
 
-| Round / opening | Central question and player actions | What can be learned | Evidence status |
+| Planning span / candidate availability | Reader attention and connections | What can be learned | Evidence status |
 | --- | --- | --- | --- |
 | R01 — after chapter 01 | **What has Tessa actually been promised, and what can her light do?** Inspect the phone/letter and compare Olan before and after treatment; separate Senn's assurances from demonstrated actions. | The ordinary life interrupted by the summoning; the difference between purification, healing and regrowth; how the institution presents her new role. Do not prematurely reveal the missing-page evidence. | Source-backed objects and actions. Optional additional everyday context can draw on the working setting notes; final exhibit text still needs drafting. |
 | R02 — after chapter 03 | **What was known when she was summoned?** Compare the translations with the cut original, the scholar's admission and Senn's answers. Inspect the hearing's actual concessions. Open the first historical material about earlier Saint summoning. | The present return promise was unsupported; Elin has lost access and Senn retained the book. The player can begin questioning the historical account of why Saints were first summoned. Who cut the pages and whether a return exists remain unknown. | Present-day conclusions are in the screenplay. Ancient material is new VN writing, separate from Elin's documents. |
@@ -88,6 +90,6 @@ Do not allow chapter selection, save loading or Threads to expose future story d
 
 ## Still to develop
 
-The first-night sample now lets the reader enlarge the drawing or dead phone, bring them alongside one another, follow the connection, revisit it through Threads and return to line 112. It uses the two actual visual details and the earlier milk message; the short connecting passage is new editorial VN writing, not new character dialogue. There are no answer choices, evidence quotas or mandatory chapter interruptions. Native tests cover exact return, rollback and per-save discoveries.
+The first-night sample implements detail/connection/Threads operations and returns to line 112. Its drawing, dead phone and earlier milk message are source-grounded; the connecting passage is editorial VN writing. These functional paths do not clear the rejected payoff and presentation. Preserve exact return, rollback and per-save knowledge while redesigning attention and navigation. The next S001–S005 milestone needs a worthwhile introductory connection, not a claim that this pair completes historical discovery.
 
 The remaining source-backed connections and ancient opening sequence still require authoring and production. The removed quiz cards are not retained as a substitute for that history. The first Saint / human initiation reveal remains required, but is not implemented by this first-night sample.
