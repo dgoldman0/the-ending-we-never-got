@@ -12,7 +12,7 @@ init python:
 
     def current_art_description():
         shot = opening_shot()
-        if opening_ready(shot):
+        if opening_assets_available(shot):
             return shot['alt']
         if side_reading():
             return 'Tessa leans over the welcome letter in her plain blue hoodie. Her right hand draws her mother’s chair. The dead phone lies beside the page; candlelight leaves most of the locked room in darkness.'
@@ -20,9 +20,10 @@ init python:
             return 'Nineteen-year-old Tessa turns from the cracked, sealed arch toward Senn. Harsh light falls across both faces and the pale stone. She has not yet been given a cloak.'
         return scene_art_alt
 
-# Vector UI assets contain only tonal scrims, not substitute illustrations.
 screen original_backdrop():
-    add 'art/opening/ui/menu-ornament.svg'
+    add 'art/interface-original/mineral-surface.png'
+    add 'art/interface-original/crest.png' xpos -70 ypos 240 xysize (260, 309) alpha 0.55
+    add 'art/interface-original/gilt-lip.png' xpos 190 ypos 204 xysize (1600, 22) alpha 0.6
 
 style title_text:
     font 'fonts/EBGaramond12-Regular.ttf'
@@ -44,8 +45,10 @@ style caption_text:
 
 style button:
     background None
-    hover_background Frame('art/opening/ui/focus.png',30,20,30,20)
-    selected_background Solid('#e0d3b321')
+    # Small controls need a quiet focus cue; compressing the reading ornament
+    # into a page-number button produced a jagged, illegible mark.
+    hover_background Solid('#c5ab7b16')
+    selected_background Solid('#c5ab7b10')
     padding (18, 12)
 
 style button_text:
@@ -54,6 +57,8 @@ style button_text:
     color '#cbc8bf'
     hover_color '#fff2d9'
     selected_color '#efd2a3'
+    hover_underline True
+    selected_underline True
     insensitive_color '#716f69'
 
 style quiet_button is button:

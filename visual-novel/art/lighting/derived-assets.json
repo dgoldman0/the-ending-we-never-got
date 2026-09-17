@@ -1,0 +1,70 @@
+{
+  "recipe": "tools/finish-softened-legacy.scm",
+  "assets": {
+    "art/backgrounds/apartment-barricaded.png": {
+      "alternate": "art/softened/backgrounds/apartment-barricaded.png",
+      "gimp_master": "art/lighting/masters/apartment-barricaded.xcf",
+      "sha256": "37005a130e8124e703859d1046bc9d3a443bc84a41beddd37b3a0b5653d787fb"
+    },
+    "art/backgrounds/apartment-closed.png": {
+      "alternate": "art/softened/backgrounds/apartment-closed.png",
+      "gimp_master": "art/lighting/masters/apartment-closed.xcf",
+      "sha256": "386fa706347776aa7a2469cd4aafdaf09afd47e1490ea0a16697039b3dde1beb"
+    },
+    "art/backgrounds/apartment-open.png": {
+      "alternate": "art/softened/backgrounds/apartment-open.png",
+      "gimp_master": "art/lighting/masters/apartment-open.xcf",
+      "sha256": "cad88cd967430078cb1fdf107ae4589c7dc2b6c5667c37f0b6ce5e8afca50d3f"
+    },
+    "art/backgrounds/audience-hall.png": {
+      "alternate": "art/softened/backgrounds/audience-hall.png",
+      "gimp_master": "art/lighting/masters/audience-hall.xcf",
+      "sha256": "c1bdde5557ceb61170f122cd0ec4d17c7b7c2227937001e88adafec6ac5ec6b1"
+    },
+    "art/backgrounds/chamber-closed.png": {
+      "alternate": "art/softened/backgrounds/chamber-closed.png",
+      "gimp_master": "art/lighting/masters/chamber-closed.xcf",
+      "sha256": "3e649db99e944c0ef34caf63309a2acc98f46d499ced3d8cd1c02c8022d09d14"
+    },
+    "art/backgrounds/chamber-open-spill.png": {
+      "alternate": "art/softened/backgrounds/chamber-open-spill.png",
+      "gimp_master": "art/lighting/masters/chamber-open-spill.xcf",
+      "sha256": "a76bc82351a06ac37687707432f3cad7a6d65ccca6f15e54911688980de208db"
+    },
+    "art/backgrounds/chamber-open.png": {
+      "alternate": "art/softened/backgrounds/chamber-open.png",
+      "gimp_master": "art/lighting/masters/chamber-open.xcf",
+      "sha256": "7b96d0b59f6e4ebec89350bcec2909832404a2888639856c9125800a56f6b51f"
+    },
+    "art/backgrounds/infirmary-window.png": {
+      "alternate": "art/softened/backgrounds/infirmary-window.png",
+      "gimp_master": "art/lighting/masters/infirmary-window.xcf",
+      "sha256": "34d5fe1b13996553a74d5c15b056fb9dbfd293e56e6ab251a9d6a9b021898fb6"
+    },
+    "art/backgrounds/palace-infirmary.png": {
+      "alternate": "art/softened/backgrounds/palace-infirmary.png",
+      "gimp_master": "art/lighting/masters/palace-infirmary.xcf",
+      "sha256": "2c8fd3aab68df3fbd32aeb23724235d52cfc40abdc7c2679b5f5bf3c4230286d"
+    },
+    "art/cg/detail-drawing.png": {
+      "alternate": "art/softened/cg/detail-drawing.png",
+      "gimp_master": "art/lighting/masters/mothers-chair.xcf",
+      "sha256": "932c07d37017f584a100b8f2d87a9149ac4ec624613c4014406aa076b4cdba77"
+    },
+    "art/cg/detail-phone.png": {
+      "alternate": "art/softened/cg/detail-phone.png",
+      "gimp_master": "art/lighting/masters/mothers-chair.xcf",
+      "sha256": "4d653df312d1f912a3ea53b460a4718d20474aaee517c44e847a8bf24107e0f1"
+    },
+    "art/cg/mothers-chair.png": {
+      "alternate": "art/softened/cg/mothers-chair.png",
+      "gimp_master": "art/lighting/masters/mothers-chair.xcf",
+      "sha256": "9d4ab5139b5ee634ba0125d4470fe0c2389116ae3b051864130e6cb559669e91"
+    },
+    "art/cg/sealed-arch.png": {
+      "alternate": "art/softened/cg/sealed-arch.png",
+      "gimp_master": "art/lighting/masters/sealed-arch.xcf",
+      "sha256": "8b904e84803fbf166a3dff2ec9d25dc0b57c00822fe1ee6cbda0b66023f7675d"
+    }
+  }
+}

@@ -9,4 +9,5 @@ if [[ ! -x "$vn_sdk/renpy.sh" || ! -f "$vn_sdk/web/renpy.wasm" ]]; then
 fi
 "$vn_sdk/renpy.sh" "$vn_sdk/launcher" web_build "$vn_directory/renpy" \
     --destination "$vn_directory/builds/web"
+python3 "$vn_directory/tools/check-web-assets.py"
 printf '%s\n' "Web build ready. Run $vn_directory/play-web.sh to open it locally."

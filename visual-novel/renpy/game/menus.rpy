@@ -1,13 +1,14 @@
 screen main_menu():
     tag menu
-    add 'art/opening/cg/drawing-restart.png' xysize (1920, 1080)
-    add 'art/opening/ui/title-ornament.svg'
-    text 'THE ORIGINAL TIMELINE' xpos 156 ypos 242 style 'caption_text'
+    add lighting_art('art/opening/cg/drawing-restart.png') xysize (1920, 1080)
+    add 'art/interface-original/title-veil.svg'
+    add 'art/interface-original/crest.png' xpos -97 ypos 214 xysize (365,433) alpha 0.85
+    text 'THE ORIGINAL TIMELINE' xpos 225 ypos 242 style 'caption_text'
     text 'The Ending\nWe Never Got':
-        xpos 146 ypos 307 xsize 780
+        xpos 215 ypos 307 xsize 780
         style 'title_text' size 116
     vbox:
-        xpos 138 ypos 664 spacing 10
+        xpos 207 ypos 664 spacing 10
         if renpy.newest_slot() is not None:
             textbutton 'Continue' action Continue() style 'hero_button'
             textbutton 'Begin again' id 'main_begin' action Start()
@@ -102,16 +103,27 @@ screen preferences():
                 textbutton 'Image descriptions' action ToggleField(persistent, 'art_descriptions')
                 textbutton 'Self-voicing' action Preference('self voicing', 'toggle')
             vbox:
-                xsize 695 spacing 28
+                xsize 695 spacing 20
                 text 'DISPLAY' style 'caption_text'
                 hbox:
                     spacing 12
                     textbutton 'Window' action Preference('display', 'window')
                     textbutton 'Fullscreen' action Preference('display', 'fullscreen')
-                null height 25
+                null height 8
+                text 'LIGHTING' style 'caption_text'
+                hbox:
+                    spacing 12
+                    textbutton 'Intense' id 'lighting_intense':
+                        action SetField(persistent, 'intense_lighting', True)
+                        selected persistent.intense_lighting
+                    textbutton 'Softened' id 'lighting_softened':
+                        action SetField(persistent, 'intense_lighting', False)
+                        selected not persistent.intense_lighting
+                text 'Softened reduces bright glare and lifts deep shadows. Change it at any time.' size 21 color '#b6b0a2'
+                null height 14
                 text 'AT YOUR PACE' style 'caption_text'
                 text 'Space or Enter turns the page. Page Up returns to an earlier line. Escape opens or closes the menu.' style 'prose_text'
-                text 'Arrow keys move between controls; Enter selects. Press V for self-voicing. Look closer offers the same details through labeled controls and the image.' size 26 color '#bdb7ab' line_spacing 9
+                text 'Arrow keys move between controls; Enter selects. Press V for self-voicing. Look closer offers the same details through labeled controls and the image.' size 24 color '#bdb7ab' line_spacing 9
 
 screen history():
     tag menu

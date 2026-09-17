@@ -104,7 +104,7 @@
    ((equal? mode "bright") (gimp-curves-spline layer HISTOGRAM-VALUE 12 #(0 8 48 79 96 148 150 207 210 248 255 255)))
    ((equal? mode "ordinary") (gimp-curves-spline layer HISTOGRAM-VALUE 12 #(0 0 48 36 96 97 150 173 210 231 255 255)))
    ((equal? mode "night") (gimp-curves-spline layer HISTOGRAM-VALUE 12 #(0 0 48 24 96 64 150 121 210 191 255 239))))
-  (if earth
+  (if (= earth TRUE)
    (begin
     (gimp-image-select-polygon im CHANNEL-OP-REPLACE 18 #(395 0 1672 0 1672 941 0 941 0 760 366 683 365 194 294 0 395 0))
     (gimp-selection-feather im 8)

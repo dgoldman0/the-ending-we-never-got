@@ -1,0 +1,15 @@
+# Two lighting treatments
+
+The user requested an option to turn off the extreme glare and darkness. **Intense** remains the artistic default. **Softened** is a persistent reader preference, available under Settings → Lighting from the title and during play.
+
+The 39 opening PNGs are recovered byte for byte from checkpoint `f3acb5e`; [recovered-assets.json](recovered-assets.json) records their source hashes. These are the earlier exposure treatments of the same staged drawings, not the superseded first-playable faces, costumes or compositions. Runtime copies live in `renpy/game/art/softened/`; [lighting-assets.json](../../renpy/game/lighting-assets.json) pairs each original path with its alternate. The retained opening XCFs remain the editable source. Future continuity corrections must reach both treatments.
+
+The initial recovery also copied 13 legacy fallback exports, but those already had their older intense treatments and were identical to the current fallbacks. That did not implement the preference. GIMP now builds actual softer alternates from their corrected masters: hide the existing exposure layer, retain staging/prop repairs, then compress daylight highlights or open night shadows. New layered masters live under [masters/](masters/); [finish-softened-legacy.scm](../../tools/finish-softened-legacy.scm) reproduces the 11 full scenes and two derived detail crops. `derived-assets.json` records their final hashes and source masters. These legacy alternates cover the currently used S004/S005 plates and defensive fallbacks, without promoting the rejected compositions as approved references.
+
+`lighting_art()` selects the appropriate path for backgrounds, composed scenes, transparent actors, title art and discovery images. It does not change the UI surface, text, story position or knowledge. The persistent preference is deliberately independent of individual saves: loading a save made in the other mode keeps the reader's current lighting choice. Save thumbnails are historical captures and are not recolored.
+
+New scene production requires both treatments from the same corrected composition, with matched anatomy, costumes, props and timing. Review the pair in play; do not merely dim the intense export, which cannot recover already-clipped detail. The web package check requires counterparts for opening scene assets, rejects identical paired files, and verifies that both sides are actually bundled at full quality.
+
+The preference was checked in native and actual browser play: title and in-story selection, live scene/cast changes, discovery crops, exact reading return, both modes surviving page reload, and loading a save written under the other preference. Representative screenshots are in [review/](review/). See [QA](../../renpy/QA.md) for test counts and remaining browser limits.
+
+This option does not clear the unfinished route's scene coverage. The S004–S005 legacy backgrounds and other legacy fallbacks remain incomplete/rejected compositions in both modes until their planned replacement is integrated.

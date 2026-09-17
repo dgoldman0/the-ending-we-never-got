@@ -40,7 +40,7 @@ init python:
         return []
 
     def scene_background(scene, line, page):
-        # A reviewed whitelist. No fallback to old studies or the wrong period.
+        # Legacy background availability only; this is not presentation clearance.
         name, description = None, ''
         if scene == 1:
             if line == 9:
@@ -137,18 +137,18 @@ screen story_stage():
     zorder -5
     add Solid('#0b1419')
     $ shot = opening_shot()
-    if opening_ready(shot):
+    if opening_assets_available(shot):
         use opening_stage(shot)
     elif composed_scene():
-        add composed_scene() xysize (1920, 1080)
+        add lighting_art(composed_scene()) xysize (1920, 1080)
     elif art_available():
         # Legacy coverage is still being replaced; never put old cutouts on a new CG.
         fixed:
             xsize 1920 ysize 1080 clipping True
-            add scene_art xysize (1920, 1080)
+            add lighting_art(scene_art) xysize (1920, 1080)
             for sprite, pos in scene_sprites():
                 if renpy.loadable('art/sprites/' + sprite + '.png'):
-                    add ('art/sprites/' + sprite + '.png'):
+                    add lighting_art('art/sprites/' + sprite + '.png'):
                         xcenter int(1920 * pos) ypos 60
                         xysize ((1320, 1980) if current_scene in (3, 4, 5) or (current_scene == 2 and 90 <= source_line < 101) else (830, 1245))
     else:
@@ -201,7 +201,8 @@ screen say(who, what):
 
 screen quick_menu():
     zorder 100
-    add 'art/opening/ui/rail.svg' ypos 1018
+    add Solid('#080f13f5') ypos 1018 ysize 62
+    add 'art/interface-original/gilt-lip.png' xpos 90 ypos 1004 xysize (1740, 28) alpha 0.65
     hbox:
         xpos 98 ypos 1027 spacing 24
         textbutton 'Back' action Rollback() style 'quiet_button'

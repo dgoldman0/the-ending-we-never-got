@@ -44,16 +44,15 @@
       "anchors": {},
       "reading": null,
       "state": "Tessa steps across a modern store threshold into the glaring temple, carrying her groceries and phone. Kneeling strangers watch. The scholar stands at a separate lever station across the room, leaving the arch clear.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -65,16 +64,13 @@
       "anchors": {},
       "reading": null,
       "state": "The paperboard carton has split at its bottom corner. Milk connects the tear to the spill over the circle and Tessa’s sneakers. Her bag lies beside her at the threshold.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19-detail-only"
+      ]
     },
     {
       "scene": "S001",
@@ -86,16 +82,13 @@
       "anchors": {},
       "reading": null,
       "state": "In Tessa’s right hand, her green-cased phone shows her mother’s message asking about the milk. The fallen groceries and modern sidewalk remain beyond it.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19-detail-only"
+      ]
     },
     {
       "scene": "S001",
@@ -107,16 +100,15 @@
       "anchors": {},
       "reading": null,
       "state": "Tessa runs back toward the arch, reaching for the modern store as it twists away. Her groceries stay at the landing point; the scholar reaches for his remote lever.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -134,16 +126,15 @@
       },
       "reading": null,
       "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -161,16 +152,15 @@
       },
       "reading": null,
       "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -188,16 +178,15 @@
       },
       "reading": null,
       "state": "Tessa reaches the sealed stone with her left palm, phone in her right hand. The scholar holds the lever fully down in its separate bay. Cracks spread across the arch.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -215,16 +204,18 @@
       },
       "reading": null,
       "state": "A worried mother catches Senn’s sleeve. A guard approaches her while two porters carry a patient biting a folded cloth through the gallery.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Senn-late50s",
+        "petitioning-woman",
+        "guard",
+        "two-porters",
+        "patient",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -242,16 +233,18 @@
       },
       "reading": null,
       "state": "A worried mother catches Senn’s sleeve. A guard approaches her while two porters carry a patient biting a folded cloth through the gallery.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Senn-late50s",
+        "petitioning-woman",
+        "guard",
+        "two-porters",
+        "patient",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -263,16 +256,18 @@
       "anchors": {},
       "reading": null,
       "state": "The guard guides the mother aside. She has released Senn’s sleeve; the injured patient passes behind them on a stretcher.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Senn-late50s",
+        "petitioning-woman",
+        "guard",
+        "two-porters",
+        "patient",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -310,16 +305,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields are raised.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -357,16 +353,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields are raised.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -404,16 +401,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -451,16 +449,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -498,16 +497,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -545,16 +545,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -592,16 +593,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -639,16 +641,17 @@
       },
       "reading": null,
       "state": "Tessa faces Senn near the sealed arch. Both remain visible through their exchange. The soldiers bar the approach to the scholar; their shields have lowered, but the men stay in place.",
-      "period_cast": [
-        "Tessa19",
-        "Senn-late50s",
-        "Mara32",
-        "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
+      "illumination": "shared severe dawn; Earth view masked separately while open",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Senn-late50s",
+        "two-guards",
+        "unnamed-scholar",
+        "kneeling-extras"
+      ]
     },
     {
       "scene": "S001",
@@ -693,16 +696,16 @@
       },
       "reading": null,
       "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S001",
@@ -747,16 +750,16 @@
       },
       "reading": null,
       "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S001",
@@ -801,16 +804,16 @@
       },
       "reading": null,
       "state": "Tessa retries the call, then questions Senn’s promise. Mara has approached holding the folded gray cloak; she has not put it on Tessa yet.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S001",
@@ -828,16 +831,16 @@
       },
       "reading": null,
       "state": "Mara guides Tessa aside by the upper arm while carrying the folded cloak. Porters pass behind them. The crowd gathers at the sealed arch; Tessa appeals to Senn.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S001",
@@ -855,16 +858,16 @@
       },
       "reading": null,
       "state": "Mara guides Tessa aside by the upper arm while carrying the folded cloak. Porters pass behind them. The crowd gathers at the sealed arch; Tessa appeals to Senn.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S001",
@@ -876,16 +879,16 @@
       "anchors": {},
       "reading": null,
       "state": "Mara settles the gray cloak on Tessa’s shoulders. Tessa waits with her phone in her hands while Senn turns away toward the scholar.",
-      "period_cast": [
+      "illumination": "shared severe dawn; Earth view masked separately while open",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Senn-late50s",
         "Mara32",
         "temple-extras"
-      ],
-      "illumination": "shared severe dawn; Earth separately exposed",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -901,13 +904,13 @@
         950
       ],
       "state": "Tessa stands on the window chair, raising her phone toward the night sky. The ivory dress lies discarded below the wardrobe. Carts crowd the distant infirmary beneath an enormous winged silhouette.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S002",
@@ -923,13 +926,13 @@
         950
       ],
       "state": "Tessa stands on the window chair, raising her phone toward the night sky. The ivory dress lies discarded below the wardrobe. Carts crowd the distant infirmary beneath an enormous winged silhouette.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S002",
@@ -967,15 +970,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1013,15 +1016,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1059,15 +1062,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1105,15 +1108,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1151,15 +1154,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1197,15 +1200,15 @@
       },
       "reading": null,
       "state": "Tessa has climbed down from the window chair. Mara stands near the open door holding a covered supper plate. The hall guard remains beyond her.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1228,15 +1231,15 @@
       },
       "reading": null,
       "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1259,15 +1262,15 @@
       },
       "reading": null,
       "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1290,15 +1293,15 @@
       },
       "reading": null,
       "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1321,15 +1324,15 @@
       },
       "reading": null,
       "state": "Mara has set down the second plate and blocks the doorway. Tessa holds the candle in her left hand and phone in her right. The guard remains in the hall.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1351,15 +1354,15 @@
         750
       ],
       "state": "The candle is back on the table. Tessa has dropped the cloak at Mara’s feet; Mara looks toward the hall guard instead of answering.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1381,15 +1384,15 @@
         750
       ],
       "state": "The candle is back on the table. Tessa has dropped the cloak at Mara’s feet; Mara looks toward the hall guard instead of answering.",
-      "period_cast": [
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
+      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
+      "injury": "Tessa has healthy hands; right-handed drawing",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Mara32",
         "hall-guard"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
-      "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
-      "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      ]
     },
     {
       "scene": "S002",
@@ -1409,13 +1412,13 @@
       "anchors": {},
       "reading": null,
       "state": "Mara and the cloak have gone. The door has shut. Tessa stands alone, still holding the phone; both supper plates remain untouched.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S002",
@@ -1431,13 +1434,13 @@
         700
       ],
       "state": "Tessa pushes the window chair against the locked door. Her dead phone now lies flat on the table. The other chair stays at the table.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S002",
@@ -1453,13 +1456,13 @@
         650
       ],
       "state": "With her healthy right hand, Tessa draws on the reverse of the welcome letter. A small tear interrupts the kitchen; she starts her mother’s chair in a clean corner. The dead phone lies beside the paper.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S002",
@@ -1475,13 +1478,13 @@
         650
       ],
       "state": "With her healthy right hand, Tessa draws on the reverse of the welcome letter. A small tear interrupts the kitchen; she starts her mother’s chair in a clean corner. The dead phone lies beside the paper.",
-      "period_cast": [
-        "Tessa19"
-      ],
-      "illumination": "very dark; cold window and small warm candle pool",
+      "illumination": "very dark candle/window scene; no face fill; source contact selectively retained",
       "wardrobe": "arrival hoodie/T-shirt/jeans/sneakers; gray cloak only from line65, removed at101",
       "injury": "Tessa has healthy hands; right-handed drawing",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19"
+      ]
     },
     {
       "scene": "S003",
@@ -1493,18 +1496,20 @@
       "anchors": {},
       "reading": null,
       "state": "Mara leads Tessa through the occupied ward. At the far end a porter removes a name card and closes a curtain. Iven and the older healer tend Olan beside them.",
-      "period_cast": [
-        "Tessa19",
-        "Iven26",
-        "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
       "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
       "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Tessa19",
+        "Mara32",
+        "priest",
+        "Iven26",
+        "Olan-late20s",
+        "older-healer",
+        "porter",
+        "ward-extras"
+      ]
     },
     {
       "scene": "S003",
@@ -1516,18 +1521,15 @@
       "anchors": {},
       "reading": null,
       "state": "Iven supports Olan’s injured right hand. Blue healing closes the missing-finger edges while the dark branching discoloration passes the ink boundary toward his elbow. His left hand grips the bed rail.",
-      "period_cast": [
-        "Tessa19",
-        "Iven26",
-        "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
       "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
       "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Iven26",
+        "Olan-late20s",
+        "older-healer"
+      ]
     },
     {
       "scene": "S003",
@@ -1539,18 +1541,15 @@
       "anchors": {},
       "reading": null,
       "state": "Iven supports Olan’s injured right hand. Blue healing closes the missing-finger edges while the dark branching discoloration passes the ink boundary toward his elbow. His left hand grips the bed rail.",
-      "period_cast": [
-        "Tessa19",
-        "Iven26",
-        "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
       "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
       "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Iven26",
+        "Olan-late20s",
+        "older-healer"
+      ]
     },
     {
       "scene": "S003",
@@ -1583,18 +1582,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. Tessa has not formed the light yet.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1627,18 +1625,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. Tessa has not formed the light yet.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1671,18 +1668,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1715,18 +1711,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1759,18 +1754,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1803,18 +1797,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1847,18 +1840,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1891,18 +1883,17 @@
       },
       "reading": null,
       "state": "Tessa stands in the aisle beside Olan’s bed, with Iven beside her. The priest gestures from behind; the older healer waits across the bed. A small white light trembles between her hands. Olan extends his injured right hand toward its edge.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1920,18 +1911,17 @@
       },
       "reading": null,
       "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1949,18 +1939,17 @@
       },
       "reading": null,
       "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -1978,18 +1967,17 @@
       },
       "reading": null,
       "state": "Now seated beside Iven, Tessa holds white light over Olan’s wrist. Cleared skin reaches Iven’s fingertips; discoloration remains nearer the elbow.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2001,18 +1989,17 @@
       "anchors": {},
       "reading": null,
       "state": "Olan has turned his arm. Tessa works back toward the last dark patch beside the wound; the rest of the arm is clear.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2035,18 +2022,17 @@
       },
       "reading": null,
       "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2069,18 +2055,17 @@
       },
       "reading": null,
       "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2103,18 +2088,17 @@
       },
       "reading": null,
       "state": "The corruption is gone. Tessa’s light lingers over the two missing fingers. She looks to Iven; the older healer holds the fresh dressing ready.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2130,18 +2114,15 @@
         650
       ],
       "state": "Olan’s injured right hand rests on the blanket, freshly dressed. The remaining fingers have relaxed. The corruption is gone; the missing fingers have not returned.",
-      "period_cast": [
-        "Tessa19",
-        "Iven26",
-        "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
       "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
       "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
+        "Olan-late20s-detail",
+        "Iven26-hand-detail",
+        "older-healer-background"
+      ]
     },
     {
       "scene": "S003",
@@ -2164,18 +2145,19 @@
       },
       "reading": null,
       "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "bedside-mother",
+        "awake-daughter",
+        "unnamed-priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2198,18 +2180,19 @@
       },
       "reading": null,
       "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "bedside-mother",
+        "awake-daughter",
+        "unnamed-priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2232,18 +2215,19 @@
       },
       "reading": null,
       "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "bedside-mother",
+        "awake-daughter",
+        "unnamed-priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2266,18 +2250,19 @@
       },
       "reading": null,
       "state": "A mother calls from the next row beside her awake daughter. Tessa leans forward to rise; Iven is still beside her and asks her to wait. No light remains in her hands.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "bedside-mother",
+        "awake-daughter",
+        "unnamed-priest"
+      ]
     },
     {
       "scene": "S003",
@@ -2289,19 +2274,21 @@
       "anchors": {},
       "reading": null,
       "state": "Tessa sits with the cup of water untouched while Olan falls asleep. Iven has gone to the mother and daughter in the next row. The arm is clear; the missing fingers remain dressed.",
-      "period_cast": [
+      "illumination": "cold insistent daytime highlights; less extreme than summoning",
+      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
+      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
+      "review": "Renewed pass manually inspected in native composition; connected browser review recorded separately. Not user approval.",
+      "visible_cast": [
         "Tessa19",
         "Iven26",
         "Olan-late20s",
-        "elder-healer",
-        "priest",
-        "ward-extras"
-      ],
-      "illumination": "insistent ordinary pale daylight",
-      "wardrobe": "first blue/ivory long working robe; no Saint badge or white mantle yet; Iven olive coat and linen apron",
-      "injury": "Tessa healthy; Olan right ring/little missing; corruption persists through140, progressively clears143–150, gone152 onward",
-      "review": "Presentation rejected; technical availability and previous native inspection do not clear the visual gate."
+        "older-healer",
+        "bedside-mother",
+        "awake-daughter"
+      ]
     }
   ],
-  "presentation_status": "Rejected by user: lighting too normal, UI cheap, incomplete cast coverage. All scene gates reopened."
+  "presentation_status": "Rejected by user: lighting too normal, UI cheap, incomplete cast coverage. All scene gates reopened.",
+  "review": "Renewed lighting/interface working pass; native images manually inspected. See review/realignment-review.md for actual browser checks and unresolved coverage. Not user approval.",
+  "lighting_preference": "Intense is default; Softened paths are paired in renpy/game/lighting-assets.json. Both modes share source state, casts, and anchors."
 }

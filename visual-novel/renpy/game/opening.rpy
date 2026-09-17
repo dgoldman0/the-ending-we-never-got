@@ -98,7 +98,7 @@ init python:
                 return opening_cg('after-first-treatment', 'Tessa sits with the cup of water untouched while Olan falls asleep. Iven has gone to the mother and daughter in the next row. The arm is clear; the missing fingers remain dressed.')
         return None
 
-    def opening_ready(shot):
+    def opening_assets_available(shot):
         return shot and renpy.loadable(shot['image']) and all(renpy.loadable(a['image']) for a in shot['actors'])
 
     def dialogue_position(who):
@@ -112,9 +112,9 @@ init python:
         return (92,1010,820)
 
 screen opening_stage(shot):
-    add shot['image'] xysize (1920,1080)
+    add lighting_art(shot['image']) xysize (1920,1080)
     for actor in shot['actors']:
-        add actor['image']:
+        add lighting_art(actor['image']):
             xpos actor['x'] ypos actor['y']
             xysize (actor['w'],actor['h'])
 
@@ -123,13 +123,13 @@ screen composed_reading(who,what):
         $ bx,by,bw = dialogue_position(who)
         window:
             id 'window'
-            xpos bx ypos by yanchor 1.0 xsize bw yminimum 155
-            background Frame('art/opening/ui/speech.png',55,45,55,45)
-            padding (43,26,43,24)
+            xpos bx ypos by yanchor 1.0 xsize bw yminimum 180
+            background Frame('art/interface-original/speech.png',110,48,74,33)
+            padding (130,44,64,66)
             vbox:
-                spacing 12
-                text who id 'who' font 'fonts/ClearSans-Medium.ttf' size 21 color '#e4c897' kerning 1.8
-                text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (36 if persistent.large_text else 32) color '#f3e9d6' line_spacing 5 xsize (bw-86)
+                spacing 9
+                text who id 'who' font 'fonts/ClearSans-Medium.ttf' size 21 color '#dbc49b' kerning 1.8
+                text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (36 if persistent.large_text else 32) color ('#cbc3b5' if current_scene == 2 else '#eee6d6') line_spacing 5 xsize (bw-194)
     else:
         $ shot = opening_shot()
         $ reading_x,reading_y,reading_w = (shot.get('reading') if shot and shot.get('reading') else ((96,575,650) if current_scene == 2 and source_line >= 110 else (300,1010,1320)))
@@ -137,6 +137,6 @@ screen composed_reading(who,what):
         window:
             id 'window'
             xpos reading_x ypos reading_y yanchor 1.0 xsize reading_w
-            background Frame('art/opening/ui/speech.png' if dark_reading else 'art/opening/ui/narration.png',55,45,55,45)
-            padding (48,32)
-            text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (35 if persistent.large_text else 31) color ('#e2d8c8' if dark_reading else '#292a29') line_spacing 7 xsize (reading_w-96)
+            background Frame('art/interface-original/reading.png',18,32,18,38)
+            padding (42,35,42,34)
+            text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (35 if persistent.large_text else 31) color ('#cbc3b5' if dark_reading else '#e2dacd') line_spacing 7 xsize (reading_w-84)

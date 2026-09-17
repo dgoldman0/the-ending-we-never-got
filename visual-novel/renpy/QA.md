@@ -1,4 +1,28 @@
-# Latest checkpoint: 0.3.0 rejected and incomplete
+# Current working build: 0.3.2, opening realignment and optional softened lighting
+
+This is an incomplete adaptation following rejected checkpoint `f3acb5e`. New technical passes and visual observations do not establish user approval. [The current opening review](../art/opening-sequence/review/realignment-review.md) records lighting, GIMP work, interface corrections and the exact manually inspected scope. [The route ledger](../art/route-coverage.md) still marks S004/S005 missing cast and S006–S058 missing illustration/performance coverage.
+
+## Functional evidence
+
+- The native Ren'Py 8.5.3 suite passed **6 cases / 68 assertions** in 46.859 seconds: reading/discovery, all opening scene states, save/restore, complete original route to the separate ending question, larger text, and the new lighting preference.
+- The preference case switches title and in-story images, checks cast and legacy background paths, follows the first-night connection, and loads a save made in Softened while Intense remains selected. Story position and discovery knowledge survive independently of the persistent preference.
+- After replacing the unchanged legacy alternatives with actual GIMP exports, the focused lighting case was rerun: **1 case / 11 assertions passed**, 5 cases skipped by selection. Only the affected case was repeated after that asset-only correction.
+- The source adapter still preserves 58 scenes, 852 blocks and 11,175 words. Source SHA256 remains `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
+- The browser export check inspects `game.zip` for all **119 required art files**, including both lighting treatments. A previous export rule pruned opening-art directories before specific file rules could match; directory rules now precede exclusions. A second check rejects identical “alternate” exports after review caught unchanged legacy fallback copies.
+- Selected new GIMP masters were reopened and their visible exports compared against delivered pixels. Editable source corrections and replacement grades remain separate. This is reproducibility evidence, not an art pass.
+- All 11 additional softened legacy masters reopened and reproduced the delivered RGBA pixels exactly. Their two detail crops derive from the same corrected drawing master. All 52 lighting pairs now differ, and all required images are in the rebuilt web package.
+
+## Actual browser evidence
+
+The WebAssembly game was run in isolated Chromium at 1280×720. The connected S001–S003 sequence traversed and captured all 66 mapped states. Manual inspection opened selected browser captures across all three scenes, supported by native checks of the other compositions; the review lists exactly which browser images were opened.
+
+Browser interaction exercised Look closer, an enlarged detail, the related phone, following the home connection, returning to the exact source page, manual saves before/after discovery, explicit slot loading, keyboard menu return and larger text. Version 0.3.2 separately exercised Lighting from the title and during reading: both settings persisted after a page reload; loading the saved first-night connection retained the current Intense setting at scene 2, line 112, page 0 with `home` followed. Actual screenshots of settings, both arrival/cast/night treatments, the softened title and connection, and the loaded intense scene were opened manually.
+
+The final web rebuild was reloaded and both S004/S005 background treatments switched in place without advancing their source lines. All four browser images were opened: the softened hall has restrained stone/window highlights and the softened later window has gentler daylight. Their absent cast remains a scene-completion failure in both modes.
+
+Browser save export/import, fullscreen and other browsers remain unverified. The local Linux 0.1.0 archive is an older package, not this build. No complete manual 58-scene visual route review, ancient-war discovery chain, audio pass or post-Yes presentation is claimed.
+
+## Historical checkpoint: 0.3.0 rejected and incomplete
 
 The user rejected the new opening’s lighting and interface, and the missing cast after that opening. No visual completion gate is cleared. Native functionality passed four cases / 56 assertions; a separate larger-text case passed its return-state assertion but exposed further visual collisions. The web export launched as 0.3.0; connected browser review remains incomplete. Earlier records below are history, not current artistic clearance.
 

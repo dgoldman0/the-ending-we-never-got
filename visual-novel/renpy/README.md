@@ -1,12 +1,12 @@
 # The original timeline — playable build
 
-**Current status: incomplete, rejected presentation checkpoint (0.3.0).** S001–S003 now contain additional staged actors and action art, but the user rejected the ordinary-looking illumination and cheap interface. The following scenes still lose their cast and fall back to unfinished backgrounds or text. The connected opening is not visually cleared; native test passes are functional evidence only. The user authorized a checkpoint, stricter art direction and continued work. See [the redesign gates](../presentation-redesign.md) and [review observations](../art/opening-sequence/review/production-review.md).
+**Current status: renewed opening and lighting-preference build (0.3.2), still an incomplete visual adaptation.** Checkpoint `f3acb5e` preserves the rejected 0.3.0 presentation. S001–S003 now have a stronger shared lighting treatment, a painted interface and a persistent Intense/Softened setting. These changes have been inspected in the running native and browser game; they are working production, not user approval. S004–S005 still lack their cast, and later scenes remain prose coverage. See [the redesign gates](../presentation-redesign.md), [current review](../art/opening-sequence/review/realignment-review.md) and [route ledger](../art/route-coverage.md).
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
 The complete original text route is traversable: 58 source scenes, ten chapters, and the complete Bellweir ending followed by **Do you wish to save Tessa?** This is not a completed visual adaptation. There is no playable rescue continuation or invented answer outcome.
 
-The current CGs depict the sealed-arch exchange (S001 lines 29–49) and the drawing restart (S002 line 112). Their GIMP masters retain local masks and lighting corrections; their existence does not clear the rejected presentation. The old character cutouts are disabled, leaving missing cast coverage that must be replaced. Room plates outside these beats remain temporary, and most later scenes have only source text. No music, voice or sound has been produced yet.
+The current opening maps 66 shot states across arrival, attempted return, the closed-arch exchange, the guarded apartment and the first treatment. Scene illustrations alternate with transparent cast performances and speaker-positioned dialogue. GIMP masters retain source-state repairs and separate exposure layers. The retired first-playable cutouts remain disabled. S004–S005 room plates are temporary; most later scenes have only source text. No music, voice or sound has been produced yet.
 
 ## Standalone Linux build
 
@@ -15,6 +15,8 @@ The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, reje
 ## Reading and state
 
 Click, Space or Enter advances. Page Up/mouse wheel up rolls back; Esc opens or returns from menus. Save/load, reading history, larger text, fullscreen, reduced motion, image descriptions and Ren'Py self-voicing are available. Look closer and Threads return to the same reading point. All knowledge state is per playthrough/save, not global completion data.
+
+**Settings → Lighting → Softened** reduces the extreme glare and opens deep shadows. **Intense** is the default. Change it from the title or while reading; it applies to the scene, cast, title image and discovery close-ups together. The preference persists independently of saves, so loading an older save keeps the current choice. Existing save thumbnails retain the lighting with which they were captured. Both modes use the same corrected compositions; [the lighting record](../art/lighting/README.md) documents their sources.
 
 ## Browser preview
 
@@ -38,7 +40,7 @@ After changing scripts or art, rebuild and refresh the page:
 
 `play-web.sh` builds automatically only if no web build exists. The reusable export is `builds/web/`; `builds/web.zip` contains the same distribution for a static web host. These generated files remain outside Git. The build requires the Ren'Py 8.5.3 SDK **and matching Web Platform Support**, both from the [official release page](https://www.renpy.org/release/8.5.3). Extract the latter's `web/` directory into the SDK directory; use `RENPY_SDK` for a nondefault installation. The installed web archive was checked against official SHA256 `954db897e65f51ea63cb2fb7b203d02be0447f4e22069514020bbe6c6691fdfc`.
 
-`progressive_download.txt` bundles the current scene/interface images before play, so inspection starts at full image quality. Retired character cutouts are not preloaded. Browser-specific verification is recorded in [QA.md](QA.md); desktop test results alone do not certify this port.
+`progressive_download.txt` bundles the current scene/interface images and both lighting treatments before play, so inspection starts at full image quality. The build checks the actual web package for required assets; source-file existence alone previously concealed missing browser art. Retired character cutouts are not preloaded. Browser-specific verification is recorded in [QA.md](QA.md); desktop test results alone do not certify this port.
 
 ## Source and investigation
 
@@ -56,4 +58,4 @@ python3 visual-novel/tools/adapt_screenplay.py --check
 
 The native engine tests exercise the actual screens and full route. They create captures under `renpy/test-output/`, which must be opened and inspected; passing tests does not certify visual quality. The QA record distinguishes tested controls, inspected composites and remaining production work.
 
-Generated `.rpyc`, caches, test saves, local SDKs and test captures are ignored. Bundled fonts retain their licenses in `game/fonts/`. New prompts are under `art/prompts/presentation-v2/`; editable masters, raw components and reviews are under `art/presentation-v2/`. The older runtime directory records the rejected batch.
+Generated `.rpyc`, caches, test saves, local SDKs and bulk test captures are ignored. Bundled fonts retain their licenses in `game/fonts/`. Prompts stay under `art/prompts/<sequence>/`; current source components and masters are under `art/opening-sequence/` and `art/interface-original/`, with lighting provenance under `art/lighting/`. Older runtime/presentation directories retain the rejected batches.

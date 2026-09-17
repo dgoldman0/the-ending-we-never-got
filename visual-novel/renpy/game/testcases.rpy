@@ -4,6 +4,7 @@ testsuite global:
         $ _test.timeout = 12.0
         $ _test.screenshot_directory = 'test-output'
         $ persistent.large_text = False
+        $ persistent.intense_lighting = True
         if not screen 'main_menu':
             run MainMenu(confirm=False)
     teardown:
@@ -50,10 +51,10 @@ testcase opening_scene_states:
     click id 'main_begin'
     click id 'begin_reading'
     click id 'chapter_continue'
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-009-arrival.png'
     advance until eval source_line == 11
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-011-milk.png'
     advance until eval source_line == 13
     screenshot 'opening-013-phone.png'
@@ -64,7 +65,7 @@ testcase opening_scene_states:
     advance until eval source_line == 24
     screenshot 'opening-024-mother.png'
     advance until eval source_line == 27
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-027-release.png'
     advance until eval source_line == 32
     screenshot 'opening-032-raised.png'
@@ -73,7 +74,7 @@ testcase opening_scene_states:
     advance until eval source_line == 49
     screenshot 'opening-049-refusal.png'
     advance until eval source_line == 52
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-052-call.png'
     advance until eval source_line == 54
     screenshot 'opening-054-promise.png'
@@ -82,70 +83,70 @@ testcase opening_scene_states:
     advance until eval source_line == 65
     screenshot 'opening-065-cloak.png'
     advance until eval source_line == 69
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-069-window.png'
     advance until eval source_line == 81
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-081-night-exchange.png'
     advance until eval source_line == 90
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-090-door-block.png'
     advance until eval source_line == 101
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-101-cloak-discarded.png'
     advance until eval source_line == 106
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-106-locked.png'
     advance until eval source_line == 108
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-108-barricade.png'
     advance until eval source_line == 110
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-110-drawing.png'
     advance until eval source_line == 112
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-112-restart.png'
     advance until eval source_line == 116
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-116-ward.png'
     advance until eval source_line == 120
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-120-blue-healing.png'
     advance until eval source_line == 124
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-124-priest.png'
     advance until eval source_line == 129
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-129-tessa-hesitates.png'
     advance until eval source_line == 132
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-132-iven-reassures.png'
     advance until eval source_line == 140
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-140-olan-plea.png'
     advance until eval source_line == 145
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-145-purification.png'
     advance until eval source_line == 150
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-150-last-patch.png'
     advance until eval source_line == 154
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-154-missing-fingers.png'
     advance until eval source_line == 157
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-157-iven-answer.png'
     advance until eval source_line == 160
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-160-rested-hand.png'
     advance until eval source_line == 164
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-164-mother-calls.png'
     advance until eval source_line == 169
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-169-iven-wait.png'
     advance until eval source_line == 172
-    assert eval opening_ready(opening_shot())
+    assert eval opening_assets_available(opening_shot())
     screenshot 'opening-172-water.png'
 
 
@@ -258,3 +259,64 @@ testcase opening_large_text:
     screenshot 'opening-large-olan.png'
     advance until eval source_line == 164
     screenshot 'opening-large-mother.png'
+
+testcase lighting_preference:
+    click 'Settings'
+    assert eval persistent.intense_lighting
+    click id 'lighting_softened'
+    assert eval not persistent.intense_lighting
+    screenshot 'lighting-settings-softened.png'
+    click id 'menu_return'
+    screenshot 'lighting-title-softened.png'
+    click id 'main_begin'
+    click id 'begin_reading'
+    click id 'chapter_continue'
+    assert eval lighting_art(opening_shot()['image']).startswith('art/softened/')
+    screenshot 'lighting-arrival-softened.png'
+    advance until eval source_line == 54
+    assert eval all(lighting_art(a['image']).startswith('art/softened/') for a in opening_shot()['actors'])
+    screenshot 'lighting-cast-softened.png'
+    click 'Menu'
+    click id 'lighting_intense'
+    click id 'menu_return'
+    assert eval source_line == 54 and source_page == 0 and persistent.intense_lighting
+    screenshot 'lighting-cast-intense.png'
+    advance until eval source_line == 90
+    screenshot 'lighting-doorway-intense.png'
+    click 'Menu'
+    click id 'lighting_softened'
+    click id 'menu_return'
+    assert eval source_line == 90 and not persistent.intense_lighting
+    screenshot 'lighting-doorway-softened.png'
+    advance until eval source_line == 112
+    click id 'look_closer'
+    click id 'inspect_drawing'
+    click id 'bring_alongside'
+    click id 'follow_connection'
+    screenshot 'lighting-connection-softened.png'
+    click id 'menu_return'
+    click 'Save'
+    click id 'file_slot_4'
+    if screen 'confirm':
+        click id 'confirm_yes'
+    click 'Settings'
+    click id 'lighting_intense'
+    click 'Load'
+    click id 'file_slot_4'
+    if screen 'confirm':
+        click id 'confirm_yes'
+    assert screen 'say'
+    assert eval source_line == 112 and persistent.intense_lighting
+    assert eval followed_connections == {'home'}
+    screenshot 'lighting-load-keeps-preference.png'
+    click 'Menu'
+    click id 'lighting_softened'
+    click id 'menu_return'
+    advance until eval source_line == 132
+    screenshot 'lighting-ward-softened.png'
+    advance until eval source_line == 176
+    assert eval lighting_art(scene_art).startswith('art/softened/')
+    screenshot 'lighting-legacy-ceremony-softened.png'
+    advance until eval source_line == 218
+    assert eval lighting_art(scene_art).startswith('art/softened/')
+    screenshot 'lighting-legacy-window-softened.png'

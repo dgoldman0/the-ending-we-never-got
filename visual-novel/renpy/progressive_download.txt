@@ -4,6 +4,8 @@
 - image game/art/cg/**
 - image game/art/opening/**
 - image game/art/interface/**
+- image game/art/interface-original/**
+- image game/art/softened/**
 - image game/art/backgrounds/**
 - image game/gui/**
 + image game/**

@@ -1,14 +1,16 @@
 # Original timeline — visual direction
 
-**Current presentation status:** the user rejected the first playable interface, UX and runtime art. Follow the [presentation redesign brief](../presentation-redesign.md). The established references and lighting registers below remain requirements; the existing runtime renders are not an approved way to achieve them. Global whitening/darkening and separately posed cutouts failed to create a coherent finished scene.
+**Current presentation status:** the user rejected the first presentation and both subsequent partial revisions, most recently the S001–S003 opening preserved in `f3acb5e`. Follow the [presentation redesign brief](../presentation-redesign.md). Its lighting remains too comfortable and its interface too cheap. The established references and lighting registers below remain requirements; current renders and earlier favorable reviews do not establish the standard.
 
 The user established the summoning and storm-infirmary studies as the two visual-tone anchors and requested the middle register on 16 September 2026. This direction applies to the original timeline. It does not change the screenplay's events, characters or knowledge.
+
+The user subsequently requested a **Softened lighting** setting so readers can disable extreme brightness/darkness. [Both treatments](lighting/README.md) use the same scene and character state. Intense remains the default described below; softened restores highlight and shadow detail without changing the story. Both require in-game review, including sprites and discovery crops.
 
 | Scene register | Required treatment | Review question |
 | --- | --- | --- |
 | Bright | Uncomfortably bright, approaching blinding. Broad environmental exposure affects architecture, faces and gestures, with deliberate loss of highlight detail. | Is the dramatic area difficult to look at as well as the floor? Does the light belong to the room rather than a halo on one person? |
 | Ordinary | A milder persistent discomfort: slightly insistent daylight, pale reflected light or oppressive practical contrast, appropriate to the actual setting. Local warmth and humor remain possible. | Has the image slipped into effortless comfort, promotional fantasy prettiness or a uniformly cozy default? |
-| Dismal | Visibly dreary: subdued color, heavy weather or enclosed stale darkness, with practical light doing limited work. Preserve faces and actions rather than burying them in black. | Does the whole environment support the painful atmosphere without inventing storms, destruction or grief absent from the scene? |
+| Dismal | Visibly dreary: subdued color, heavy weather or enclosed stale darkness, with practical light doing limited work. Permit substantial lost detail, including parts of faces and clothing. Preserve essential action through silhouette, selective edges and a few light-bearing surfaces, without attractive portrait fill. | Does this feel starved of light, rather than like a cozy candle portrait against a dark room? Does it respect the scene's actual circumstances? |
 
 The [summoning arrival](scene-studies/summoning/summoning-arrival.png) anchors the bright extreme. The [north infirmary](scene-studies/north-infirmary/north-infirmary-storm.png) anchors the dismal extreme. Neither supplies a universal exposure filter. Night is not automatically dismal, and a daytime slug does not establish sunshine. Record a scene's chosen register and source circumstances before rendering.
 

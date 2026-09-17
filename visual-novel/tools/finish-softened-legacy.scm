@@ -1,0 +1,35 @@
+; GIMP 2.10, run from repository root. Lighting-only alternates for legacy
+; fallbacks, including the two rooms still used by S004/S005. These do not
+; clear their missing cast or revive them as approved composition references.
+(load "visual-novel/tools/finish-opening.scm")
+(define soft-root "visual-novel/art/lighting/masters/")
+(define soft-out "visual-novel/renpy/game/art/softened/")
+(define (soft-legacy master category name remove-grade mode)
+ (let* ((im (car (gimp-file-load RUN-NONINTERACTIVE master master)))
+        (layers (gimp-image-get-layers im))
+        (grade 0))
+  ; The old top grade is a separate composite; repairs remain underneath it.
+  (if remove-grade (gimp-item-set-visible (vector-ref (cadr layers) 0) FALSE))
+  (set! grade (car (gimp-layer-new-from-visible im im "Softened preference - recover corrected base before extreme grade")))
+  (gimp-image-insert-layer im grade 0 0)
+  (if (equal? mode "night")
+   (gimp-curves-spline grade HISTOGRAM-VALUE 14 #(0 10 32 52 64 89 96 118 128 145 192 200 255 243))
+   (gimp-curves-spline grade HISTOGRAM-VALUE 12 #(0 6 48 48 96 92 160 153 215 204 255 236)))
+  (gimp-xcf-save RUN-NONINTERACTIVE im grade (string-append soft-root name ".xcf") name)
+  (seq-export im (string-append soft-out category "/" name ".png"))
+  (gimp-image-delete im)))
+(for-each
+ (lambda (name)
+  (soft-legacy (string-append "visual-novel/art/runtime/backgrounds/" name ".xcf")
+   "backgrounds" name #t "day"))
+ '("chamber-open" "chamber-open-spill" "chamber-closed" "palace-infirmary" "audience-hall" "infirmary-window"))
+(for-each
+ (lambda (name)
+  (soft-legacy (string-append "visual-novel/art/runtime/backgrounds/" name ".xcf")
+   "backgrounds" name #t "night"))
+ '("apartment-open" "apartment-closed" "apartment-barricaded"))
+(soft-legacy "visual-novel/art/presentation-v2/masters/sealed-arch.xcf" "cg" "sealed-arch" #t "day")
+(soft-legacy "visual-novel/art/presentation-v2/masters/mothers-chair.xcf" "cg" "mothers-chair" #f "night")
+(seq-crop (string-append soft-out "cg/mothers-chair.png") 388 690 710 171 (string-append soft-out "cg/detail-drawing.png"))
+(seq-crop (string-append soft-out "cg/mothers-chair.png") 1100 742 342 148 (string-append soft-out "cg/detail-phone.png"))
+(gimp-quit 0)

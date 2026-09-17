@@ -16,11 +16,11 @@ screen look_closer(detail=None, connection=False):
                     vbox:
                         xsize 760 spacing 16
                         text 'On the reverse of a welcome' font 'fonts/EBGaramond12-Regular.ttf' size 40
-                        add 'art/opening/cg/detail-drawing.png' xysize (760, 265)
+                        add lighting_art('art/opening/cg/detail-drawing.png') xysize (760, 265)
                     vbox:
                         xsize 760 spacing 16
                         text 'On the other side of the silence' font 'fonts/EBGaramond12-Regular.ttf' size 40
-                        add 'art/opening/cg/detail-phone.png' xysize (455, 265)
+                        add lighting_art('art/opening/cg/detail-phone.png') xysize (455, 265)
                 if unfold:
                     text '“MOM — DID YOU GET THE MILK?”' font 'fonts/EBGaramond12-Italic.ttf' size 40 color '#decaab'
                     text 'The last request from home was ordinary. Here, even the paper is the temple’s: a welcome letter turned over to make room for her mother’s kitchen. One side welcomes her into a life chosen for her. The other holds a place she is trying not to lose.' style 'prose_text' size (35 if persistent.large_text else 31) xsize 1450
@@ -40,16 +40,16 @@ screen look_closer(detail=None, connection=False):
                     text 'THE FIRST NIGHT' style 'caption_text'
                     text detail_item['title'] font 'fonts/EBGaramond12-Regular.ttf' size 55 color '#e2d0af'
                     if selected_detail == 'drawing':
-                        add detail_item['image'] xysize (1050, 366)
+                        add lighting_art(detail_item['image']) xysize (1050, 366)
                     else:
-                        add detail_item['image'] xysize (688, 400)
+                        add lighting_art(detail_item['image']) xysize (688, 400)
                     text detail_item['caption'] font 'fonts/EBGaramond12-Italic.ttf' size 38 color '#ddd1b9'
                     text detail_item['description'] style 'prose_text' size (34 if persistent.large_text else 30)
                 vbox:
                     xsize 440 spacing 24
                     text 'A CONNECTION' style 'caption_text'
                     $ related = 'phone' if selected_detail == 'drawing' else 'drawing'
-                    add detail_views[related]['image'] xsize 415 fit 'contain'
+                    add lighting_art(detail_views[related]['image']) xsize 415 fit 'contain'
                     textbutton ('Bring the phone alongside' if related == 'phone' else 'Bring the drawing alongside'):
                         id 'bring_alongside'
                         xsize 440
@@ -61,7 +61,7 @@ screen look_closer(detail=None, connection=False):
                 spacing 64
                 fixed:
                     xsize 1120 ysize 660
-                    add 'art/opening/cg/drawing-restart.png' xysize (1120, 630)
+                    add lighting_art('art/opening/cg/drawing-restart.png') xysize (1120, 630)
                     button:
                         xpos 498 ypos 551 xsize 205 ysize 54
                         background Solid('#0b1419de') hover_background Solid('#574b35ef')
@@ -98,7 +98,7 @@ screen threads():
                         action [Function(inspect_detail, 'drawing'), ShowMenu('look_closer', detail='drawing')]
                         vbox:
                             spacing 23
-                            add 'art/opening/cg/detail-drawing.png' xysize (570, 198)
+                            add lighting_art('art/opening/cg/detail-drawing.png') xysize (570, 198)
                             text 'The torn page' font 'fonts/EBGaramond12-Regular.ttf' size 38
                     text '—' ypos 72 font 'fonts/EBGaramond12-Regular.ttf' size 50 color '#b39d78'
                     button:
@@ -107,7 +107,7 @@ screen threads():
                         action [Function(inspect_detail, 'phone'), ShowMenu('look_closer', detail='phone')]
                         vbox:
                             spacing 20
-                            add 'art/opening/cg/detail-phone.png' xysize (341, 198)
+                            add lighting_art('art/opening/cg/detail-phone.png') xysize (341, 198)
                             text 'The dead phone' font 'fonts/EBGaramond12-Regular.ttf' size 38
                 if 'home' in followed_connections:
                     textbutton 'A room remembered' id 'thread_home':

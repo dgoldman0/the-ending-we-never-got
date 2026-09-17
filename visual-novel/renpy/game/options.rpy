@@ -3,7 +3,7 @@ init python:
     gui.init(1920, 1080)
 
 define config.name = "The Ending We Never Got"
-define config.version = "0.3.0"
+define config.version = "0.3.2"
 define config.check_conflicting_properties = True
 define config.save_directory = "the-ending-we-never-got-original-v1"
 define config.window = "auto"
@@ -25,12 +25,17 @@ define config.allow_skipping = False
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 define build.name = "TheEndingWeNeverGot"
-define build.version = "0.3.0"
+define build.version = "0.3.2"
 
 init python:
     # Only source-mapped opening art enters distribution; working variants stay local.
     import json
-    for asset in json.loads(renpy.file('opening-assets.json').read()):
+    opening_distribution_assets = json.loads(renpy.file('opening-assets.json').read())
+    # Classification also controls directory traversal. Keep parent directories
+    # before the deny rule, or the builder never reaches the allowed files.
+    for directory in sorted({asset.rsplit('/', 1)[0] for asset in opening_distribution_assets}):
+        build.classify('game/' + directory + '/', 'all')
+    for asset in opening_distribution_assets:
         build.classify('game/' + asset, 'all')
     build.classify('game/art/opening/**', None)
     build.classify('game/art/sprites/**', None)

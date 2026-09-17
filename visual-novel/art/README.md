@@ -4,7 +4,11 @@
 
 The [visual direction](visual-direction.md) fixes the three scene registers requested by the user: uncomfortable brightness, a milder discomfort in ordinary scenes, and visible dreariness in dismal scenes. The existing summoning and storm-infirmary studies are the tone anchors. The [production inventory](production-inventory.md) tracks the character and scene work.
 
-- [runtime/](runtime/README.md): separate opening sprites, background states, editable GIMP masters, [manifest](runtime/manifest.json) and [manual review](runtime/review.md). The runtime uses no copies of the tone studies.
+- [opening-sequence/](opening-sequence/README.md): current working S001–S003 shot production, cast, source-state mapping and [realignment review](opening-sequence/review/realignment-review.md).
+- [interface-original/](interface-original/README.md): new painted interface components, GIMP masters and layout review.
+- [lighting/](lighting/README.md): persistent Intense/Softened choice, recovered exports, matched variants and review evidence.
+- [Route coverage](route-coverage.md): all 58 scenes, with incomplete cast and artwork explicitly marked.
+- [runtime/](runtime/README.md): the rejected first batch, retained for provenance. Its temporary S004/S005 room plates still require replacement; current opening art is produced separately.
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.
 - `character-references/`: reusable likeness references, with their selection status recorded in the character and scene notes.
 - [character-keys/](character-keys/README.md): labeled full-body keys with age, wardrobe state, manual review and GIMP files.
