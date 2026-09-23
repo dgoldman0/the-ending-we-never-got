@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Edit target: the supplied young priest portrait.
+Change ONLY the framing: pull the entire priest back about TWELVE PERCENT within the same square transparent canvas. Keep his actual facial identity, shaved scalp, brown skin, three-quarter SCREEN RIGHT direction, speaking lips, calm attentive expression, cream linen robe with its folds and collar, neutral light and detailed naturalistic painting unchanged.
+Aim at 1254x1254 output or larger: top of scalp near y=165 pixels, chin around y=660, apparent face from forehead/hairline level to chin about 370–390 pixels. Scalp top is not the hairline. The priest should have clearly more transparent margin above his scalp and both sides. Reveal proportionately more shoulders and upper chest below, built from the same single cream robe. Do not change clothing or recast him.
+True transparent alpha background; no hands, props, halo, text, border, solid background or new garments.

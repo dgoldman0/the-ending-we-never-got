@@ -1,0 +1,7 @@
+Edit this portrait of Iven Saye, age twenty-six, medium-brown-skinned healer in olive lapelled coat, open-neck ivory linen shirt and cream bib treatment apron. Preserve his exact facial identity, skin color, distinctive black curls, right-facing three-quarter orientation, visible parted speaking lips, coat/shirt/apron construction, neutral diffuse light and detailed naturalistic painted treatment.
+
+Correct only portrait composition and the attentive expression:
+1. Pull the camera back about 14 percent within the same square canvas. Hair must begin around 150 px from the top of a 1254px square. Face hairline-to-chin should occupy about 360-390 px, roughly one-third. Preserve both shoulders and upper chest, giving more transparent space above and beside his curls. Continue lower coat and apron naturally to image bottom, no hands. Do not crop hair or shoulders abruptly.
+2. Gently relax the raised/pinched inner eyebrows and forehead furrows so he reads calm, warmly attentive and steadying a frightened novice. Keep attentive brown eyes looking screen-right toward her, lips parted mid reassuring sentence. No grin, no teasing.
+
+Single square image, genuine transparent alpha background, no gray fill, no props, hands, text, border, halo or baked dramatic light.
