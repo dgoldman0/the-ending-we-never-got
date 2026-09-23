@@ -98,12 +98,34 @@ init python:
             followed_connections.add('promise')
             renpy.retain_after_load()
 
-    def inspect_surface(view):
-        # The whole pair is visible together. Opening it records that attention;
-        # there are no prerequisite clicks, completion quotas, or graded answers.
+    # Each view reframes its originating painting toward the detail (focus is
+    # a fraction of the 1920x1080 frame), then can bring a related detail
+    # alongside it. Opening a view records the first detail; bringing the
+    # second alongside records the connection. Nothing is graded or required.
+    connection_views = {
+        'home': dict(title='The first night', origin='art/opening/cg/drawing-restart.png',
+                     focus=(0.60, 0.85), zoom=1.55, first='drawing', second='phone',
+                     note='A welcome letter on one side; her mother’s kitchen on the other.'),
+        'treatment': dict(title='Olan’s treatment', origin='art/opening/cg/purification-cleared.png',
+                          focus=(0.45, 0.62), zoom=1.35, first='treatment_blue', second='treatment_white',
+                          note='Blue healing closed the wound; only the white light cleared the curse. Neither returned his fingers.'),
+        'promise': dict(title='The public promise', origin='art/rovel/cg/ceremony-applause.png',
+                        focus=(0.50, 0.55), zoom=1.3, first='treatment_white', second='applause',
+                        firsttitle='At the bedside', firstcaption='The curse has cleared. Two fingers are still missing.',
+                        note='Senn, to the hall: “Tomorrow our Saint leaves with the Bellweir convoy. You have seen what she can do. The curse can be broken.”'),
+    }
+
+    def open_view(view):
+        """Opening a view records attention to its first detail."""
         if view in available_inspections():
-            {
-                'home': follow_home_thread,
-                'treatment': follow_treatment_thread,
-                'promise': follow_public_promise,
-            }[view]()
+            inspect_detail(connection_views[view]['first'])
+
+    def follow_view(view):
+        """Bringing the related detail alongside records the connection."""
+        if view in available_inspections():
+            {'home': follow_home_thread, 'treatment': follow_treatment_thread,
+             'promise': follow_public_promise}[view]()
+
+    def inspect_surface(view):
+        # Legacy entry point retained for old saves' screen state.
+        open_view(view)

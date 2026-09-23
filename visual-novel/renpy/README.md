@@ -1,6 +1,6 @@
 # The original timeline — playable build
 
-**Current runtime: 0.4.0-dev, rejected and archived at `1bb6d76`.** Its interface and compact portrait presentation failed. The first 95 reading pages (S001–S005) have mapped performances/art; 757 later pages remain prose-only. These are inventory facts, not quality clearance. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md), [production controls](../production-controls.md) and [route ledger](../art/route-coverage.md). The subsequently authorized [window proof](../prototypes/window/README.md) is a separate small delivery. Run it separately; this main runtime has not been replaced or cleared.
+**Current runtime: 0.5.0-dev, interface and infrastructure pass (23 September 2026), not yet reviewed by the user.** The rejected 0.4.0-dev panel, head cutouts and utility strip are replaced. Illustrated scenes (S001–S005) keep the whole painting and set text in a soft shade at its foot, with eye-aligned arched portraits for speaker and listener, and the staged people stay in the room. Scenes without illustrations (S006–S058) read as typeset book pages whose paper follows the time of day. Look closer reframes the painting toward a detail and brings a related detail alongside it. Menus, saves, settings, history, chapter cards and the ending share one EB Garamond type system; every interface image is drawn in code by `../tools/build-ui-assets.py`. This is the maker's pass, not visual approval; earlier rejections and the [failure reviews](../reviews/2026-09-23-window-failure/README.md) still apply.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
@@ -55,7 +55,10 @@ python3 visual-novel/tools/adapt_screenplay.py --check
 python3 visual-novel/tools/check-rovel-plan.py
 ./visual-novel/play.sh lint
 ./visual-novel/play.sh test --overwrite-screenshots
+python3 visual-novel/tools/build-ui-assets.py   # redraw interface components
 ```
+
+Run tests without opening windows on the desktop: `SDL_AUDIODRIVER=dummy xvfb-run -a -s "-screen 0 1920x1080x24" ./visual-novel/play.sh test`. The `ui_tour` case in `game/tour.rpy` captures 22 complete screens at 1920×1080 under `renpy/test-output/tour/` for visual review.
 
 The native engine tests exercise the actual screens and full route. They create captures under `renpy/test-output/`, which must be opened and inspected; passing tests does not certify visual quality. The QA record distinguishes tested controls, inspected composites and remaining production work.
 

@@ -55,6 +55,10 @@ def required_assets(game=GAME):
                     for path in (game / 'art/rovel/ui').glob('*')
                     if path.is_file() and path.suffix.lower() in ('.png', '.svg', '.webp'))
 
+    # The code-drawn reading interface (tools/build-ui-assets.py).
+    expected.update(path.relative_to(game).as_posix()
+                    for path in (game / 'ui').glob('*') if path.is_file())
+
     variants = json.loads((game / 'lighting-assets.json').read_text())
     # Preserve the older packaged treatments; new unused pose variants remain
     # excluded by the explicit Rovel distribution rules.

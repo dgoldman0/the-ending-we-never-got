@@ -143,10 +143,9 @@ init python:
             if key in ROVEL_BEATS:
                 raise ValueError('Duplicate Rovel page: ' + repr(key))
             stage_descriptor = copy.deepcopy(ROVEL_STAGES[stage])
-            if mode == 'compact':
-                # Speaker/listener faces perform these exchanges. Do not place the
-                # rejected huge fixed-gesture cutouts behind their compact frames.
-                stage_descriptor['actors'] = []
+            # Compact exchanges keep the staged people in the room; the portraits
+            # beside the text add the close view. An empty stage behind floating
+            # faces was a rejected failure (principal pair absent from the scene).
             framing = (focus or ('Compact speaker and listener against their established setting; other present figures need not be duplicated in portrait frames.'
                                 if mode == 'compact' else 'The staged composition carries the action; narration does not remove its people.'))
             ROVEL_BEATS[key] = dict(

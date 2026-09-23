@@ -101,42 +101,9 @@ init python:
     def opening_assets_available(shot):
         return shot and renpy.loadable(shot['image']) and all(renpy.loadable(a['image']) for a in shot['actors'])
 
-    def dialogue_position(who):
-        shot = opening_shot()
-        if shot and scene_speaker in shot['anchors']:
-            return shot['anchors'][scene_speaker]
-        # This general treatment will be replaced by shot-specific anchors as
-        # other scenes receive their actual cast and compositions.
-        if scene_speaker in ('SENN','MARA','IVEN','LUCAN','OLAN'):
-            return (1010,1010,820)
-        return (92,1010,820)
-
 screen opening_stage(shot):
     add lighting_art(shot['image']) xysize (1920,1080)
     for actor in shot['actors']:
         add lighting_art(actor['image']):
             xpos actor['x'] ypos actor['y']
             xysize (actor['w'],actor['h'])
-
-screen composed_reading(who,what):
-    if who:
-        $ bx,by,bw = dialogue_position(who)
-        window:
-            id 'window'
-            xpos bx ypos by yanchor 1.0 xsize bw yminimum 180
-            background Frame('art/interface-original/speech.png',110,48,74,33)
-            padding (130,44,64,66)
-            vbox:
-                spacing 9
-                text who id 'who' font 'fonts/ClearSans-Medium.ttf' size 21 color '#dbc49b' kerning 1.8
-                text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (36 if persistent.large_text else 32) color ('#cbc3b5' if current_scene == 2 else '#eee6d6') line_spacing 5 xsize (bw-194)
-    else:
-        $ shot = opening_shot()
-        $ reading_x,reading_y,reading_w = (shot.get('reading') if shot and shot.get('reading') else ((96,575,650) if current_scene == 2 and source_line >= 110 else (300,1010,1320)))
-        $ dark_reading = current_scene == 2
-        window:
-            id 'window'
-            xpos reading_x ypos reading_y yanchor 1.0 xsize reading_w
-            background Frame('art/interface-original/reading.png',18,32,18,38)
-            padding (42,35,42,34)
-            text what id 'what' font 'fonts/CharisSIL-Regular.ttf' size (35 if persistent.large_text else 31) color ('#cbc3b5' if dark_reading else '#e2dacd') line_spacing 7 xsize (reading_w-84)

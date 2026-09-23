@@ -21,7 +21,9 @@ init python:
     import json
     source_map = json.loads(renpy.file('source-map.json').read())
     chapter_names = [c[1] for c in source_map['chapters']]
-    cast = {name: Character(name.title(), who_color='#d9c699') for name in source_map['speakers']}
+    # Each speaker reads over the painting in illustrated scenes and on the
+    # typeset page elsewhere (ui-reading.rpy).
+    cast = {name: ReaderVoice(name.title()) for name in source_map['speakers']}
 
     def art_available():
         return scene_art and renpy.loadable(scene_art)
@@ -82,6 +84,9 @@ label start:
     $ followed_connections = set()
     $ ending_reached = False
     $ return_to_question = False
+    $ page_scene = 0
+    $ page_index = 0
+    $ last_stage_image = None
     jump s001
 
 label chapter_card(number, title):
@@ -89,7 +94,9 @@ label chapter_card(number, title):
         return
     window hide
     hide screen story_stage
+    $ renpy.transition(ui_scene_change)
     call screen chapter_title(number, title)
+    $ last_stage_image = None
     return
 
 label investigation_invitation(number):
@@ -99,117 +106,36 @@ label investigation_invitation(number):
 label original_ending:
     window hide
     hide screen story_stage
+    $ nvl_clear()
     scene black
-    if not persistent.reduced_motion:
-        with Dissolve(0.8)
+    with motion(1.8)
     $ ending_reached = True
     $ renpy.block_rollback()
     call screen ending_breath
+    $ renpy.transition(motion(1.2))
     call screen final_question
     return
 
-image black = Solid('#080f13')
-
-screen reading_intro():
-    modal True
-    use original_backdrop
-    add Solid('#baa17a') xpos 260 ypos 305 xsize 70 ysize 2
-    vbox:
-        xpos 260 ypos 354 xsize 1300 spacing 30
-        text "A life interrupted." style "title_text"
-        text "Click, Space or Enter to turn the page. Escape opens the menu." style "prose_text"
-        text "When a detail stays with you, look closer." font 'fonts/EBGaramond12-Italic.ttf' size 38 color '#d5c8af'
-        text "War, bereavement and lasting injury." size 22 color '#a8a799'
-        null height 15
-        textbutton "Begin" id "begin_reading" action Return() style 'hero_button'
-
-screen chapter_title(number, title):
-    modal True
-    use original_backdrop
-    add Solid('#9e8965') xalign 0.5 ypos 343 xsize 1 ysize 56
-    vbox:
-        xalign 0.5 ypos 439 spacing 18
-        text "[number:02d]" style 'caption_text' xalign 0.5
-        text title style 'title_text' xalign 0.5
-        null height 72
-        textbutton "Continue" id "chapter_continue" action Return() xalign 0.5
+image black = Solid('#07090b')
 
 screen story_stage():
     zorder -5
-    add Solid('#0b1419')
-    $ beat = current_rovel_beat()
-    $ shot = opening_shot()
-    if beat:
-        use rovel_stage(beat)
-    elif opening_assets_available(shot):
-        use opening_stage(shot)
-    elif composed_scene():
-        add lighting_art(composed_scene()) xysize (1920, 1080)
-    elif art_available():
-        # Legacy coverage is still being replaced; never put old cutouts on a new CG.
-        fixed:
-            xsize 1920 ysize 1080 clipping True
+    if staged_scene():
+        add Solid('#0b1014')
+        $ beat = current_rovel_beat()
+        $ shot = opening_shot()
+        if beat:
+            $ lift = stage_framing().get('lift', 0)
+            fixed:
+                yoffset -lift
+                use rovel_stage(beat)
+            if lift:
+                add "ui/edge-fade.png" xsize 1920 ysize 220 ypos (1080 - lift - 220)
+                add Solid('#0b1014') ypos (1080 - lift)
+        elif opening_assets_available(shot):
+            use opening_stage(shot)
+        elif composed_scene():
+            add lighting_art(composed_scene()) xysize (1920, 1080)
+        elif art_available():
             add lighting_art(scene_art) xysize (1920, 1080)
-            for sprite, pos in scene_sprites():
-                if renpy.loadable('art/sprites/' + sprite + '.png'):
-                    add lighting_art('art/sprites/' + sprite + '.png'):
-                        xcenter int(1920 * pos) ypos 60
-                        xysize ((1320, 1980) if current_scene in (3, 4, 5) or (current_scene == 2 and 90 <= source_line < 101) else (830, 1245))
-    else:
-        # Honest prose coverage. No substitute portrait or unrelated scene study.
-        add Solid('#111b20')
-        add Solid('#ac9873') xpos 160 ypos 325 xsize 65 ysize 2
-        vbox:
-            xpos 160 ypos 390 xsize 1480 spacing 24
-            text chapter_names[current_chapter-1] style 'caption_text'
-            text scene_location.replace(' · ', '\n') font 'fonts/EBGaramond12-Regular.ttf' size 75 color '#c7c6b9'
-    # The scene itself carries place; retain the label in image descriptions.
-
-screen say(who, what):
-    use rovel_reading(who,what)
-    if persistent.art_descriptions and (art_available() or composed_scene()):
-        frame:
-            background Solid('#0b1419ed')
-            xpos 950 ypos 110 xsize 860 padding (24, 20)
-            text current_art_description() size 23 color '#e8dfcf'
-    use quick_menu
-
-screen quick_menu():
-    zorder 100
-    add Solid('#080f13f5') ypos 1018 ysize 62
-    textbutton 'Back' xpos 70 ypos 1023 xsize 135 action Rollback() style 'quiet_button'
-    textbutton 'History' xpos 218 ypos 1023 xsize 155 action ShowMenu('history') style 'quiet_button'
-    textbutton 'Look closer':
-        id 'look_closer'
-        xpos 390 ypos 1023 xsize 230
-        action (ShowMenu('look_closer') if closer_here() else None)
-        style 'quiet_button'
-    textbutton 'Threads':
-        xpos 638 ypos 1023 xsize 175
-        action (ShowMenu('threads') if available_details() else None)
-        style 'quiet_button'
-    textbutton 'Save' xpos 830 ypos 1023 xsize 135 action ShowMenu('save') style 'quiet_button'
-    textbutton 'Menu' xpos 986 ypos 1023 xsize 145 action ShowMenu('preferences') style 'quiet_button'
-    textbutton 'Continue  ›':
-        id 'reading_continue'
-        xpos 1630 ypos 1023 xsize 245
-        action Return()
-        style 'quiet_button'
-
-screen ending_breath():
-    modal True
-    add Solid('#080f13')
-    # A separate interaction absorbs the advance that follows the final scene.
-    textbutton 'Continue' id 'ending_continue' action Return() xalign 0.5 yalign 0.86
-
-screen final_question():
-    modal True
-    add Solid('#080f13')
-    text 'Do you wish to save Tessa?':
-        font 'fonts/CharisSIL-Regular.ttf'
-        size 62
-        xalign 0.5 yalign 0.45
-    textbutton 'Return to title' id 'ending_title' action MainMenu(confirm=False):
-        xalign 0.5 yalign 0.87
-    # Response outcomes are intentionally not fabricated. This is the requested
-    # endpoint; no choice promises a continuation that does not exist.
+    # Prose-only scenes are read on the typeset page (screen nvl).

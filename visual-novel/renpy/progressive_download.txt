@@ -1,6 +1,7 @@
 # Ren'Py web: first matching rule applies. '-' bundles before play; '+' streams.
 # Bundle current scene and interface images at full quality. Retired character
 # cutouts remain on disk for comparison and are not used or preloaded.
+- image game/ui/**
 - image game/art/cg/**
 - image game/art/opening/**
 - image game/art/rovel/**

@@ -1,0 +1,667 @@
+{
+ "_note": "Eye centres (x, y) and face boxes (x, y, size) in each 512x512 head portrait, from OpenCV detection with manual values for the mother and priest. Portrait frames scale by face-box size and centre on the box, so heads share one apparent scale across three-quarter and frontal views.",
+ "eyes": {
+  "iven-attentive-bright": [
+   [
+    149,
+    217
+   ],
+   [
+    236,
+    232
+   ]
+  ],
+  "iven-attentive-ordinary": [
+   [
+    155,
+    216
+   ],
+   [
+    242,
+    232
+   ]
+  ],
+  "iven-concerned-bright": [
+   [
+    142,
+    257
+   ],
+   [
+    226,
+    256
+   ]
+  ],
+  "iven-concerned-ordinary": [
+   [
+    142,
+    257
+   ],
+   [
+    226,
+    256
+   ]
+  ],
+  "mara-controlled-bright": [
+   [
+    294,
+    205
+   ],
+   [
+    382,
+    214
+   ]
+  ],
+  "mara-controlled-night": [
+   [
+    290,
+    208
+   ],
+   [
+    379,
+    213
+   ]
+  ],
+  "mara-controlled-ordinary": [
+   [
+    290,
+    209
+   ],
+   [
+    380,
+    213
+   ]
+  ],
+  "mara-uneasy-bright": [
+   [
+    294,
+    206
+   ],
+   [
+    384,
+    215
+   ]
+  ],
+  "mara-uneasy-night": [
+   [
+    290,
+    208
+   ],
+   [
+    380,
+    214
+   ]
+  ],
+  "mara-uneasy-ordinary": [
+   [
+    294,
+    206
+   ],
+   [
+    384,
+    215
+   ]
+  ],
+  "messenger-bright": [
+   [
+    312,
+    190
+   ],
+   [
+    394,
+    199
+   ]
+  ],
+  "mother-ordinary": [
+   [
+    118,
+    210
+   ],
+   [
+    210,
+    215
+   ]
+  ],
+  "olan-bright": [
+   [
+    120,
+    210
+   ],
+   [
+    197,
+    195
+   ]
+  ],
+  "olan-ordinary": [
+   [
+    120,
+    210
+   ],
+   [
+    197,
+    195
+   ]
+  ],
+  "orra-bright": [
+   [
+    132,
+    190
+   ],
+   [
+    220,
+    194
+   ]
+  ],
+  "petitioner-bright": [
+   [
+    332,
+    177
+   ],
+   [
+    402,
+    159
+   ]
+  ],
+  "priest-ordinary": [
+   [
+    280,
+    193
+   ],
+   [
+    372,
+    200
+   ]
+  ],
+  "senn-assuring-bright": [
+   [
+    277,
+    218
+   ],
+   [
+    366,
+    204
+   ]
+  ],
+  "senn-evasive-bright": [
+   [
+    280,
+    218
+   ],
+   [
+    371,
+    204
+   ]
+  ],
+  "senn-listening-bright": [
+   [
+    276,
+    218
+   ],
+   [
+    368,
+    203
+   ]
+  ],
+  "tessa-listening-arrival-bright": [
+   [
+    136,
+    274
+   ],
+   [
+    232,
+    266
+   ]
+  ],
+  "tessa-listening-arrival-cloak-night": [
+   [
+    136,
+    275
+   ],
+   [
+    234,
+    266
+   ]
+  ],
+  "tessa-listening-arrival-night": [
+   [
+    136,
+    275
+   ],
+   [
+    234,
+    266
+   ]
+  ],
+  "tessa-listening-formal-bright": [
+   [
+    136,
+    274
+   ],
+   [
+    232,
+    266
+   ]
+  ],
+  "tessa-listening-formal-ordinary": [
+   [
+    136,
+    274
+   ],
+   [
+    240,
+    263
+   ]
+  ],
+  "tessa-listening-working-ordinary": [
+   [
+    136,
+    274
+   ],
+   [
+    240,
+    263
+   ]
+  ],
+  "tessa-resolute-arrival-bright": [
+   [
+    138,
+    272
+   ],
+   [
+    238,
+    266
+   ]
+  ],
+  "tessa-resolute-arrival-cloak-night": [
+   [
+    134,
+    273
+   ],
+   [
+    236,
+    264
+   ]
+  ],
+  "tessa-resolute-arrival-night": [
+   [
+    134,
+    273
+   ],
+   [
+    236,
+    264
+   ]
+  ],
+  "tessa-resolute-formal-bright": [
+   [
+    138,
+    272
+   ],
+   [
+    238,
+    266
+   ]
+  ],
+  "tessa-resolute-formal-ordinary": [
+   [
+    134,
+    273
+   ],
+   [
+    242,
+    263
+   ]
+  ],
+  "tessa-resolute-working-ordinary": [
+   [
+    134,
+    273
+   ],
+   [
+    242,
+    263
+   ]
+  ],
+  "tessa-startled-arrival-bright": [
+   [
+    133,
+    267
+   ],
+   [
+    235,
+    258
+   ]
+  ],
+  "tessa-startled-arrival-cloak-night": [
+   [
+    134,
+    266
+   ],
+   [
+    238,
+    256
+   ]
+  ],
+  "tessa-startled-arrival-night": [
+   [
+    134,
+    266
+   ],
+   [
+    238,
+    256
+   ]
+  ],
+  "tessa-startled-formal-bright": [
+   [
+    133,
+    267
+   ],
+   [
+    235,
+    258
+   ]
+  ],
+  "tessa-startled-formal-ordinary": [
+   [
+    134,
+    266
+   ],
+   [
+    242,
+    256
+   ]
+  ],
+  "tessa-startled-working-ordinary": [
+   [
+    134,
+    266
+   ],
+   [
+    242,
+    256
+   ]
+  ],
+  "tessa-wounded-arrival-bright": [
+   [
+    136,
+    271
+   ],
+   [
+    236,
+    262
+   ]
+  ],
+  "tessa-wounded-arrival-cloak-night": [
+   [
+    135,
+    272
+   ],
+   [
+    236,
+    260
+   ]
+  ],
+  "tessa-wounded-arrival-night": [
+   [
+    135,
+    272
+   ],
+   [
+    236,
+    260
+   ]
+  ],
+  "tessa-wounded-formal-bright": [
+   [
+    136,
+    271
+   ],
+   [
+    236,
+    262
+   ]
+  ],
+  "tessa-wounded-formal-ordinary": [
+   [
+    136,
+    271
+   ],
+   [
+    243,
+    260
+   ]
+  ],
+  "tessa-wounded-working-ordinary": [
+   [
+    136,
+    271
+   ],
+   [
+    243,
+    260
+   ]
+  ]
+ },
+ "faces": {
+  "iven-attentive-bright": [
+   57,
+   120,
+   259
+  ],
+  "iven-attentive-ordinary": [
+   48,
+   111,
+   285
+  ],
+  "iven-concerned-bright": [
+   52,
+   152,
+   263
+  ],
+  "iven-concerned-ordinary": [
+   48,
+   148,
+   273
+  ],
+  "mara-controlled-bright": [
+   217,
+   111,
+   254
+  ],
+  "mara-controlled-night": [
+   216,
+   111,
+   246
+  ],
+  "mara-controlled-ordinary": [
+   208,
+   105,
+   265
+  ],
+  "mara-uneasy-bright": [
+   209,
+   110,
+   260
+  ],
+  "mara-uneasy-night": [
+   212,
+   111,
+   250
+  ],
+  "mara-uneasy-ordinary": [
+   208,
+   109,
+   263
+  ],
+  "messenger-bright": [
+   216,
+   87,
+   280
+  ],
+  "mother-ordinary": [
+   90,
+   125,
+   250
+  ],
+  "olan-bright": [
+   42,
+   108,
+   245
+  ],
+  "olan-ordinary": [
+   37,
+   103,
+   254
+  ],
+  "orra-bright": [
+   45,
+   87,
+   254
+  ],
+  "petitioner-bright": [
+   240,
+   72,
+   264
+  ],
+  "priest-ordinary": [
+   200,
+   120,
+   250
+  ],
+  "senn-assuring-bright": [
+   192,
+   96,
+   288
+  ],
+  "senn-evasive-bright": [
+   187,
+   99,
+   282
+  ],
+  "senn-listening-bright": [
+   191,
+   98,
+   279
+  ],
+  "tessa-listening-arrival-bright": [
+   48,
+   158,
+   277
+  ],
+  "tessa-listening-arrival-cloak-night": [
+   49,
+   162,
+   267
+  ],
+  "tessa-listening-arrival-night": [
+   49,
+   162,
+   267
+  ],
+  "tessa-listening-formal-bright": [
+   48,
+   158,
+   277
+  ],
+  "tessa-listening-formal-ordinary": [
+   48,
+   161,
+   272
+  ],
+  "tessa-listening-working-ordinary": [
+   48,
+   161,
+   272
+  ],
+  "tessa-resolute-arrival-bright": [
+   48,
+   161,
+   278
+  ],
+  "tessa-resolute-arrival-cloak-night": [
+   49,
+   163,
+   276
+  ],
+  "tessa-resolute-arrival-night": [
+   49,
+   163,
+   276
+  ],
+  "tessa-resolute-formal-bright": [
+   48,
+   161,
+   278
+  ],
+  "tessa-resolute-formal-ordinary": [
+   51,
+   166,
+   268
+  ],
+  "tessa-resolute-working-ordinary": [
+   51,
+   166,
+   268
+  ],
+  "tessa-startled-arrival-bright": [
+   40,
+   144,
+   293
+  ],
+  "tessa-startled-arrival-cloak-night": [
+   49,
+   151,
+   278
+  ],
+  "tessa-startled-arrival-night": [
+   49,
+   151,
+   278
+  ],
+  "tessa-startled-formal-bright": [
+   40,
+   144,
+   293
+  ],
+  "tessa-startled-formal-ordinary": [
+   43,
+   145,
+   286
+  ],
+  "tessa-startled-working-ordinary": [
+   43,
+   145,
+   286
+  ],
+  "tessa-wounded-arrival-bright": [
+   54,
+   162,
+   263
+  ],
+  "tessa-wounded-arrival-cloak-night": [
+   53,
+   160,
+   266
+  ],
+  "tessa-wounded-arrival-night": [
+   53,
+   160,
+   266
+  ],
+  "tessa-wounded-formal-bright": [
+   54,
+   162,
+   263
+  ],
+  "tessa-wounded-formal-ordinary": [
+   44,
+   153,
+   280
+  ],
+  "tessa-wounded-working-ordinary": [
+   44,
+   153,
+   280
+  ]
+ }
+}
