@@ -1,0 +1,959 @@
+{
+ "_note": "Staging for S006-S058, read by staging.rpy. Each scene lists its planned painting(s) and a portrait set per speaker. Nothing appears until the file exists. Early scenes reuse the S001-S005 portraits where wardrobe and age still match; later periods need new sets. See art/asset-request.md for the specification of each file.",
+ "scenes": {
+  "6": {
+   "heading": "EXT. CONVOY CAMP - AFTERNOON",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s006-convoy-camp.png",
+     "from": 0,
+     "alt": "Convoy Camp, Afternoon"
+    }
+   ],
+   "cast": {
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+    },
+    "WARDEN": "warden"
+   },
+   "lines": {}
+  },
+  "7": {
+   "heading": "INT. ROADSIDE INN - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s007-roadside-inn.png",
+     "from": 0,
+     "alt": "Roadside Inn, Night"
+    }
+   ],
+   "cast": {
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-night.png",
+     "listening": "art/rovel/portraits/mara-controlled-night.png"
+    },
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "8": {
+   "heading": "EXT. BELLWEIR - MARKET SQUARE - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s008-bellweir-market.png",
+     "from": 0,
+     "alt": "Bellweir, Market Square, Day"
+    }
+   ],
+   "cast": {
+    "ADA": "ada",
+    "ELIN": "elin",
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "ORREN": "orren",
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "9": {
+   "heading": "EXT. RIVER BELOW BELLWEIR - LATE AFTERNOON",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s009-bellweir-river.png",
+     "from": 0,
+     "alt": "River Below Bellweir, Late Afternoon"
+    }
+   ],
+   "cast": {
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "10": {
+   "heading": "EXT. HILLS ABOVE BELLWEIR - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s010-bellweir-hills.png",
+     "from": 0,
+     "alt": "Hills Above Bellweir, Night"
+    }
+   ],
+   "cast": {
+    "VALCAIR": "valcair",
+    "VASK": "vask"
+   },
+   "lines": {}
+  },
+  "11": {
+   "heading": "EXT. BELLWEIR - EAST CAUSEWAY - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s011-bellweir-causeway.png",
+     "from": 0,
+     "alt": "Bellweir, East Causeway, Night"
+    }
+   ],
+   "cast": {
+    "HEST": "hest",
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-night.png",
+     "listening": "art/rovel/portraits/mara-controlled-night.png"
+    },
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "12": {
+   "heading": "INT. TEMPLE READING ROOM - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s012-temple-reading-room.png",
+     "from": 0,
+     "alt": "Temple Reading Room, Night"
+    }
+   ],
+   "cast": {
+    "ARCHIVIST": "archivist"
+   },
+   "lines": {}
+  },
+  "13": {
+   "heading": "INT. SUMMONING CHAMBER - LATER",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s013-summoning-chamber-later.png",
+     "from": 0,
+     "alt": "Summoning Chamber, Later"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin",
+    "SCHOLAR": "scholar"
+   },
+   "lines": {}
+  },
+  "14": {
+   "heading": "INT. RELIEF WAREHOUSE - WINTER MORNING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s014-relief-warehouse.png",
+     "from": 0,
+     "alt": "Relief Warehouse, Winter Morning"
+    }
+   ],
+   "cast": {
+    "ADA": "ada",
+    "HEST": "hest",
+    "TESSA": "tessa-winter"
+   },
+   "lines": {}
+  },
+  "15": {
+   "heading": "INT. ELIN'S LODGING - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s015-elin-lodging.png",
+     "from": 0,
+     "alt": "Elin'S Lodging, Day"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin",
+    "TESSA": "tessa-winter"
+   },
+   "lines": {}
+  },
+  "16": {
+   "heading": "INT. PALACE COUNCIL ROOM - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s016-council-room.png",
+     "from": 0,
+     "alt": "Palace Council Room, Day"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin",
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "ORRA": {
+     "speaking": "art/rovel/portraits/orra-bright.png",
+     "listening": "art/rovel/portraits/orra-bright.png"
+    },
+    "SENN": {
+     "speaking": "art/rovel/portraits/senn-assuring-bright.png",
+     "listening": "art/rovel/portraits/senn-listening-bright.png"
+    },
+    "TESSA": {
+     "speaking": "art/rovel/portraits/tessa-resolute-formal-ordinary.png",
+     "listening": "art/rovel/portraits/tessa-listening-formal-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "17": {
+   "heading": "INT. PALACE COUNCIL CORRIDOR - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s017-council-corridor.png",
+     "from": 0,
+     "alt": "Palace Council Corridor, Continuous"
+    }
+   ],
+   "cast": {
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "TESSA": "tessa-winter"
+   },
+   "lines": {}
+  },
+  "18": {
+   "heading": "EXT. GRAY SCAR - FERRY APPROACH - AFTERNOON",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s018-gray-scar-ferry-approach.png",
+     "from": 0,
+     "alt": "Gray Scar, Ferry Approach, Afternoon"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-early",
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    }
+   },
+   "lines": {}
+  },
+  "19": {
+   "heading": "INT. OLD FERRYHOUSE - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s019-gray-scar-ferryhouse.png",
+     "from": 0,
+     "alt": "Old Ferryhouse, Continuous"
+    }
+   ],
+   "cast": {
+    "FERRYMAN": "ferryman",
+    "LUCAN": "lucan-early",
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "20": {
+   "heading": "EXT. GRAY SCAR - RIVERBANK - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s020-gray-scar-riverbank.png",
+     "from": 0,
+     "alt": "Gray Scar, Riverbank, Continuous"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "21": {
+   "heading": "EXT. GRAY SCAR - COVERED LANDING - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s021-gray-scar-covered-landing.png",
+     "from": 0,
+     "alt": "Gray Scar, Covered Landing, Continuous"
+    }
+   ],
+   "cast": {
+    "BOATMAN": "boatman",
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "LUCAN": "lucan-early",
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "22": {
+   "heading": "EXT. ROVEL RIVER PICKET - DUSK",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s022-river-picket.png",
+     "from": 0,
+     "alt": "Rovel River Picket, Dusk"
+    }
+   ],
+   "cast": {
+    "IVEN": {
+     "speaking": "art/rovel/portraits/iven-attentive-ordinary.png",
+     "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
+    },
+    "LUCAN": "lucan-early",
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "PICKET OFFICER": "picket-officer",
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "23": {
+   "heading": "INT. NORTHERN FIELD QUARTERS - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s023-northern-field-quarters.png",
+     "from": 0,
+     "alt": "Northern Field Quarters, Night"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-early",
+    "VALCAIR": "valcair"
+   },
+   "lines": {}
+  },
+  "24": {
+   "heading": "EXT. NORTHERN WHARF - MORNING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s024-northern-wharf.png",
+     "from": 0,
+     "alt": "Northern Wharf, Morning"
+    }
+   ],
+   "cast": {
+    "BOATMAN": "boatman",
+    "LUCAN": "lucan-early"
+   },
+   "lines": {}
+  },
+  "25": {
+   "heading": "INT. ROYAL INFIRMARY - CORRIDOR - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s025-royal-infirmary-corridor.png",
+     "from": 0,
+     "alt": "Royal Infirmary, Corridor, Day"
+    }
+   ],
+   "cast": {
+    "MARA": {
+     "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
+     "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
+    },
+    "ORRA": {
+     "speaking": "art/rovel/portraits/orra-bright.png",
+     "listening": "art/rovel/portraits/orra-bright.png"
+    },
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "26": {
+   "heading": "EXT. QUARRY CAMP - LOADING RAMP - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s026-quarry-loading-ramp.png",
+     "from": 0,
+     "alt": "Quarry Camp, Loading Ramp, Day"
+    }
+   ],
+   "cast": {
+    "APPRENTICE": "apprentice",
+    "LUCAN": "lucan-early"
+   },
+   "lines": {}
+  },
+  "27": {
+   "heading": "EXT. RIVER CAMP - GATE - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s027-river-camp-gate.png",
+     "from": 0,
+     "alt": "River Camp, Gate, Day"
+    }
+   ],
+   "cast": {
+    "GOVERNOR": "governor",
+    "HEALER": "camp-healer",
+    "LUCAN": "lucan-early",
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "28": {
+   "heading": "INT. RIVER CAMP - INFIRMARY - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s028-river-camp-infirmary.png",
+     "from": 0,
+     "alt": "River Camp, Infirmary, Continuous"
+    }
+   ],
+   "cast": {
+    "HEST": "hest",
+    "ORREN": "orren"
+   },
+   "lines": {}
+  },
+  "29": {
+   "heading": "EXT. RIVER CAMPS - SUCCESSIVE VISITS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s029-river-camps-visits.png",
+     "from": 0,
+     "alt": "River Camps, Successive Visits"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "30": {
+   "heading": "INT. RIVER CAMP - INFIRMARY - EVENING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s030-river-camp-infirmary-evening.png",
+     "from": 0,
+     "alt": "River Camp, Infirmary, Evening"
+    }
+   ],
+   "cast": {
+    "APPRENTICE": "apprentice",
+    "LUCAN": "lucan-early",
+    "ORREN": "orren",
+    "TESSA": "tessa-campaign-early"
+   },
+   "lines": {}
+  },
+  "31": {
+   "heading": "EXT. NORTHERN GRAIN WHARF - AUTUMN MORNING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s031-grain-wharf.png",
+     "from": 0,
+     "alt": "Northern Grain Wharf, Autumn Morning"
+    }
+   ],
+   "cast": {
+    "BARGEMAN": "bargeman",
+    "LUCAN": "lucan-early"
+   },
+   "lines": {}
+  },
+  "32": {
+   "heading": "EXT. HARROW FORD - COVERED BRIDGE - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s032-harrow-bridge.png",
+     "from": 0,
+     "alt": "Harrow Ford, Covered Bridge, Day"
+    }
+   ],
+   "cast": {
+    "IVEN": "iven-harrow",
+    "LUCAN": "lucan-early",
+    "TESSA": "tessa-harrow"
+   },
+   "lines": {}
+  },
+  "33": {
+   "heading": "INT. VALCAIR'S WAR ROOM - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s033-valcair-war-room.png",
+     "from": 0,
+     "alt": "Valcair'S War Room, Night"
+    }
+   ],
+   "cast": {
+    "VALCAIR": "valcair",
+    "VASK": "vask"
+   },
+   "lines": {}
+  },
+  "34": {
+   "heading": "INT. RETURN-CARGO SHED - BEFORE DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s034-return-cargo-shed.png",
+     "from": 0,
+     "alt": "Return-Cargo Shed, Before Dawn"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "35": {
+   "heading": "EXT. HARROW FORD - COVERED BRIDGE - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s035-harrow-bridge-crossing.png",
+     "from": 0,
+     "alt": "Harrow Ford, Covered Bridge, Day"
+    }
+   ],
+   "cast": {
+    "IVEN": "iven-harrow",
+    "LUCAN": "lucan-early",
+    "ORREN": "orren",
+    "TESSA": "tessa-harrow"
+   },
+   "lines": {}
+  },
+  "36": {
+   "heading": "EXT. HARROW FORD - SOUTH BANK - LATE AFTERNOON",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s036-harrow-south-bank.png",
+     "from": 0,
+     "alt": "Harrow Ford, South Bank, Late Afternoon"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-early",
+    "MARA": "mara-campaign",
+    "TESSA": "tessa-harrow"
+   },
+   "lines": {}
+  },
+  "37": {
+   "heading": "INT. RELIEF CAMP - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s037-relief-camp.png",
+     "from": 0,
+     "alt": "Relief Camp, Night"
+    }
+   ],
+   "cast": {
+    "HEST": "hest",
+    "MARA": "mara-campaign",
+    "TESSA": "tessa-harrow"
+   },
+   "lines": {}
+  },
+  "38": {
+   "heading": "INT. NORTHERN STORES OFFICE - TWO WEEKS AFTER HARROW",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s038-northern-stores-office.png",
+     "from": 0,
+     "alt": "Northern Stores Office, Two Weeks After Harrow"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-later",
+    "MARREN": "marren",
+    "VASK": "vask"
+   },
+   "lines": {}
+  },
+  "39": {
+   "heading": "EXT. NORTHERN RIVER TOWN - WEEKS LATER",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s039-northern-river-town.png",
+     "from": 0,
+     "alt": "Northern River Town, Weeks Later"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "40": {
+   "heading": "EXT. OCCUPIED MILL TOWN - WINTER - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s040-mill-town.png",
+     "from": 0,
+     "alt": "Occupied Mill Town, Winter, Day"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin-later",
+    "MARA": "mara-campaign",
+    "TESSA": "tessa-campaign"
+   },
+   "lines": {}
+  },
+  "41": {
+   "heading": "INT. CURSE TOWER - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s041-curse-tower.png",
+     "from": 0,
+     "alt": "Curse Tower, Continuous"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "42": {
+   "heading": "EXT. MILL TOWN - LATER",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s042-mill-town-later.png",
+     "from": 0,
+     "alt": "Mill Town, Later"
+    }
+   ],
+   "cast": {
+    "MARA": "mara-campaign",
+    "TESSA": "tessa-campaign"
+   },
+   "lines": {}
+  },
+  "43": {
+   "heading": "EXT. RIVER PROVINCES - CHANGING SEASONS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s043-river-provinces.png",
+     "from": 0,
+     "alt": "River Provinces, Changing Seasons"
+    }
+   ],
+   "cast": {
+    "BOATMAN": "boatman",
+    "LUCAN": "lucan-later"
+   },
+   "lines": {}
+  },
+  "44": {
+   "heading": "EXT. UPPER STORES - RIVER LANDING - DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s044-upper-stores-landing.png",
+     "from": 0,
+     "alt": "Upper Stores, River Landing, Dawn"
+    }
+   ],
+   "cast": {
+    "ESCORT": "escort",
+    "LUCAN": "lucan-later",
+    "MARREN": "marren"
+   },
+   "lines": {}
+  },
+  "45": {
+   "heading": "INT. CITADEL - NORTH INFIRMARY - MORNING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s045-citadel-north-infirmary.png",
+     "from": 0,
+     "alt": "Citadel, North Infirmary, Morning"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-later",
+    "MARREN": "marren",
+    "SERAT": "serat"
+   },
+   "lines": {}
+  },
+  "46": {
+   "heading": "INT. VALCAIR'S PRIVATE ROOM - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s046-valcair-private-room.png",
+     "from": 0,
+     "alt": "Valcair'S Private Room, Night"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-later",
+    "VALCAIR": "valcair"
+   },
+   "lines": {}
+  },
+  "47": {
+   "heading": "INT. CITADEL - NORTH INFIRMARY - BEFORE DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s047-citadel-north-infirmary-before-dawn.png",
+     "from": 0,
+     "alt": "Citadel, North Infirmary, Before Dawn"
+    }
+   ],
+   "cast": {
+    "CAPTAIN": "departing-captain",
+    "LUCAN": "lucan-later",
+    "SERAT": "serat"
+   },
+   "lines": {}
+  },
+  "48": {
+   "heading": "INT. FORWARD CAMP - EXAMINATION TENT - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s048-examination-tent.png",
+     "from": 0,
+     "alt": "Forward Camp, Examination Tent, Day"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin-later",
+    "MARREN": "marren",
+    "TESSA": "tessa-campaign"
+   },
+   "lines": {}
+  },
+  "49": {
+   "heading": "INT. FORWARD COMMAND TENT - NIGHT",
+   "grade": "night",
+   "stages": [
+    {
+     "image": "art/scenes/s049-command-tent.png",
+     "from": 0,
+     "alt": "Forward Command Tent, Night"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin-later",
+    "MARA": "mara-campaign",
+    "OLAN": {
+     "speaking": "art/rovel/portraits/olan-ordinary.png",
+     "listening": "art/rovel/portraits/olan-ordinary.png"
+    },
+    "ORRA": {
+     "speaking": "art/rovel/portraits/orra-bright.png",
+     "listening": "art/rovel/portraits/orra-bright.png"
+    },
+    "TESSA": "tessa-campaign"
+   },
+   "lines": {}
+  },
+  "50": {
+   "heading": "EXT. CITADEL - LOWER STAIR - PRE-DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s050-citadel-lower-stair.png",
+     "from": 0,
+     "alt": "Citadel, Lower Stair, Pre-Dawn"
+    }
+   ],
+   "cast": {
+    "MARA": "mara-citadel",
+    "TESSA": "tessa-citadel"
+   },
+   "lines": {}
+  },
+  "51": {
+   "heading": "EXT. CITADEL - NORTH INFIRMARY COURT - DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s051-north-infirmary-court.png",
+     "from": 0,
+     "alt": "Citadel, North Infirmary Court, Dawn"
+    }
+   ],
+   "cast": {
+    "SERAT": "serat"
+   },
+   "lines": {}
+  },
+  "52": {
+   "heading": "INT. CITADEL - INNER LANDING - DAWN",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s052-citadel-inner-landing.png",
+     "from": 0,
+     "alt": "Citadel, Inner Landing, Dawn"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin-later",
+    "RUNNER": "runner",
+    "TESSA": "tessa-citadel"
+   },
+   "lines": {}
+  },
+  "53": {
+   "heading": "EXT. CITADEL - LOWER STAIR - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s050-citadel-lower-stair.png",
+     "from": 0,
+     "alt": "Citadel, Lower Stair, Continuous"
+    }
+   ],
+   "cast": {},
+   "lines": {}
+  },
+  "54": {
+   "heading": "INT. CITADEL - THRONE HALL - CONTINUOUS",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s054-throne-hall.png",
+     "from": 0,
+     "alt": "Citadel, Throne Hall, Continuous"
+    }
+   ],
+   "cast": {
+    "TESSA": "tessa-citadel",
+    "VALCAIR": "valcair"
+   },
+   "lines": {}
+  },
+  "55": {
+   "heading": "EXT. CITADEL - LOWER STAIR - MORNING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s055-citadel-lower-stair-morning.png",
+     "from": 0,
+     "alt": "Citadel, Lower Stair, Morning"
+    }
+   ],
+   "cast": {
+    "HEALER": "camp-healer",
+    "LUCAN": "lucan-later",
+    "TESSA": "tessa-injured"
+   },
+   "lines": {}
+  },
+  "56": {
+   "heading": "INT. NORTH INFIRMARY - DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s056-north-infirmary.png",
+     "from": 0,
+     "alt": "North Infirmary, Day"
+    }
+   ],
+   "cast": {
+    "SURGEON": "surgeon",
+    "TESSA": "tessa-injured"
+   },
+   "lines": {}
+  },
+  "57": {
+   "heading": "EXT. CITADEL - LOWER GATE - EVENING",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s057-citadel-lower-gate.png",
+     "from": 0,
+     "alt": "Citadel, Lower Gate, Evening"
+    }
+   ],
+   "cast": {
+    "LUCAN": "lucan-later",
+    "VASK": "vask"
+   },
+   "lines": {}
+  },
+  "58": {
+   "heading": "EXT. BELLWEIR - MARKET SQUARE - SPRING DAY",
+   "grade": "ordinary",
+   "stages": [
+    {
+     "image": "art/scenes/s058-bellweir-market-spring.png",
+     "from": 0,
+     "alt": "Bellweir, Market Square, Spring Day"
+    }
+   ],
+   "cast": {
+    "ELIN": "elin-later",
+    "ORREN": "orren",
+    "TESSA": "tessa-postwar"
+   },
+   "lines": {}
+  }
+ }
+}

@@ -58,6 +58,11 @@ def required_assets(game=GAME):
     # The code-drawn reading interface (tools/build-ui-assets.py).
     expected.update(path.relative_to(game).as_posix()
                     for path in (game / 'ui').glob('*') if path.is_file())
+    # Staging art for S006 onward, whatever has arrived, with Softened twins.
+    for folder in ('art/scenes', 'art/portraits', 'art/softened/scenes', 'art/softened/portraits'):
+        if (game / folder).is_dir():
+            expected.update(path.relative_to(game).as_posix()
+                            for path in (game / folder).glob('*.png'))
 
     variants = json.loads((game / 'lighting-assets.json').read_text())
     # Preserve the older packaged treatments; new unused pose variants remain

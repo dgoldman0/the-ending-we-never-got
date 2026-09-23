@@ -24,8 +24,9 @@ init -1 python:
     import json
     import math
 
-    _portrait_data = json.loads(renpy.file('portrait-eyes.json').read())
-    PORTRAIT_FACES = _portrait_data['faces']
+    _portrait_data = json.loads(renpy.file('portrait-faces.json').read())
+    PORTRAIT_FACES = dict(_portrait_data['faces'])
+    PORTRAIT_FACES.update(_portrait_data.get('overrides', {}))
 
     # Shot-specific framing where the painting's key action meets the reading
     # band: 'lift' raises the painting (the dark shade fills beneath it), and
@@ -39,15 +40,20 @@ init -1 python:
 
     def stage_framing():
         beat = current_rovel_beat()
-        return STAGE_FRAMING.get(beat.get('stage_id'), {}) if beat else {}
+        if beat:
+            return STAGE_FRAMING.get(beat.get('stage_id'), {})
+        stage = staging_stage() if current_scene > 5 else None
+        return stage.get('framing', {}) if stage else {}
 
     _staged = []
 
     def staged_scene(scene=None):
-        """Scenes with authored stage beats are read over their paintings."""
+        """Scenes with authored beats, or with staging art on disk, are read
+        over their paintings; the rest are read on the typeset page."""
         if not _staged:
             _staged.append(frozenset(key[0] for key in ROVEL_BEATS))
-        return (current_scene if scene is None else scene) in _staged[0]
+        n = current_scene if scene is None else scene
+        return n in _staged[0] or staging_stage(n, 0) is not None
 
     _LIGHT_WORDS = (('PRE-DAWN', 'dusk'), ('BEFORE DAWN', 'dusk'), ('DAWN', 'dusk'),
                     ('DUSK', 'dusk'), ('EVENING', 'dusk'), ('NIGHT', 'night'))
@@ -156,7 +162,17 @@ init -1 python:
         shot = opening_shot()
         if opening_assets_available(shot):
             return shot['image']
-        return composed_scene() or (scene_art if art_available() else None)
+        staged = staging_stage() if current_scene > 5 else None
+        return composed_scene() or (scene_art if art_available() else None) or (staged['image'] if staged else None)
+
+    def stage_faces(who):
+        """Speaker and listener portraits: authored beats first, then staging."""
+        if not who:
+            return None, None
+        beat = current_rovel_beat()
+        if beat:
+            return beat.get('speaker'), beat.get('listener')
+        return staging_faces()
 
     def note_stage_change():
         image = stage_image()
@@ -239,7 +255,7 @@ init -1 python:
         return cameo
 
     def scrim_strength(beat):
-        grade = beat.get('grade') if beat else None
+        grade = beat.get('grade') if beat else (_scene_spec() or {}).get('grade')
         return {'bright': 1.0, 'ordinary': 0.94, 'night': 0.8}.get(grade, 0.94)
 
     _top_cache = {}
@@ -346,9 +362,8 @@ style stage_heading:
 screen say(who, what):
     $ beat = current_rovel_beat()
     $ framing = stage_framing()
-    $ speaker = beat.get('speaker') if (beat and who) else None
-    $ listener = beat.get('listener') if (beat and who) else None
-    $ grade = beat.get('grade') if beat else None
+    $ speaker, listener = stage_faces(who)
+    $ grade = beat.get('grade') if beat else (_scene_spec() or {}).get('grade')
     $ heading = first_line_of_scene()
     if framing.get('text'):
         # A quiet line set inside the painting's own shadow.

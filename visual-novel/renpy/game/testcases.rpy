@@ -8,6 +8,9 @@ testsuite global:
         $ persistent.large_text = False
         $ persistent.intense_lighting = True
         $ _preferences.text_cps = 0
+        # Captures are 1920x1080 in the 1920x1080 virtual display.
+        if eval not _preferences.fullscreen:
+            run Preference('display', 'fullscreen')
         if not screen 'main_menu':
             run MainMenu(confirm=False)
     teardown:
@@ -410,3 +413,30 @@ testcase lighting_preference:
     run Jump('s007')
     pause 0.5
     assert eval page_ground(scene_light()) == 'ui/page-night-soft.webp'
+
+testcase staging_pipeline:
+    # Art placed at a planned path turns a page scene into an illustrated one,
+    # with portraits resolved from the scene's cast and the previous speaker.
+    click id 'main_begin'
+    $ _planned_stages = list(STAGING['6']['stages'])
+    run Jump('s006')
+    pause 0.5
+    click id 'chapter_continue'
+    assert screen 'nvl'
+    assert eval not staged_scene()
+    $ STAGING['6']['stages'] = [{'image': 'art/rovel/cg/convoy-guards.png', 'from': 0, 'alt': 'Test stage.'}]
+    advance
+    assert screen 'say'
+    assert not screen 'nvl'
+    assert eval staged_scene() and stage_image() == 'art/rovel/cg/convoy-guards.png'
+    assert eval current_art_description() == 'Test stage.'
+    assert eval scene_speaker == 'TESSA' and stage_faces('Tessa')[1] is None
+    assert eval stage_faces('Tessa')[0]['image'].endswith('tessa-resolute-working-ordinary.png')
+    advance
+    assert eval scene_speaker == 'MARA'
+    assert eval stage_faces('Mara')[0]['image'].endswith('mara-controlled-ordinary.png')
+    assert eval stage_faces('Mara')[1]['who'] == 'TESSA'
+    $ persistent.intense_lighting = False
+    assert eval lighting_art(stage_faces('Mara')[0]['image']).startswith('art/softened/')
+    $ persistent.intense_lighting = True
+    $ STAGING['6']['stages'] = _planned_stages

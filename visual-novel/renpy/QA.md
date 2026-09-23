@@ -1,4 +1,38 @@
-# QA — current experience failed; requirements realigned
+# QA — interface pass 0.5.0-dev under review; earlier presentations failed
+
+## 0.5.0-dev interface and infrastructure pass — 23 September 2026
+
+Built at the user's direction after the window proof failed. Not yet reviewed by the user; the maker's inspection below is not approval.
+
+**Screens inspected at 1920×1080.** The `ui_tour` and `ui_tour_states` cases in `game/tour.rpy` capture the complete screens under `renpy/test-output/tour/`: title, S001–S005 stage reading (arrival, narration, compact exchanges, night, quiet drawing, ceremony, window), Look closer before and after bringing a detail alongside, Threads, settings, save, history, chapter card, day/dusk/night pages, a time caption, the ending and the final question, plus Softened, larger text, keyboard focus and hidden text.
+
+**Defects found and fixed during the pass:**
+- Hiding the words (H) had blanked the whole screen in every earlier build.
+- Portrait masks were unmasked.
+- Face scales were inconsistent.
+- The scene heading overlapped the arrival foot.
+- A 140 px lift cut Orra's and Senn's heads.
+- The Look closer titles didn't line up.
+- Save names used straight apostrophes.
+- The settings sliders were invisible.
+- The chapter-card test was wrong, and the full-route test timed out.
+
+**Known open issues:**
+- **Existing art:** the Intense dead-phone detail is nearly black. The arrival needs a 70 px lift. Iven's position below the dais in S004's intervention sits under the reading shade.
+- **Discovery:** Look closer's payoff is still limited to the three authored comparisons.
+- **Not yet reviewed:** reading pace at human speed.
+
+**Checks run:**
+- **Regression suite:** `tools/run-tests.sh` passes 12 cases (184 assertions): the full 58-scene route, page turning with rollback and save/load, discovery and exact return, lighting persistence, larger text, hiding the words and the staging pipeline.
+- **Other checks:** lint is clean, and `check-rovel-plan.py`, `adapt_screenplay.py --check` and `check-staging.py` pass.
+- **Web:** the web build loads in headless Chromium, and its asset check passes.
+- **Linux:** the Linux package (`builds/TheEndingWeNeverGot-0.5.0-dev-linux.tar.bz2`) was extracted and launched in a virtual display, and it renders the title screen.
+
+**Test isolation.** Running `play.sh test` directly writes test saves, preferences and read-text marks into the reader's real save folders (`~/.renpy/the-ending-we-never-got-original-v1/` and `renpy/game/saves/`). Earlier sessions' suites and this pass's first runs did so. Use `tools/run-tests.sh`, which runs in a temporary sandbox.
+
+**Art pipeline.** `game/staging.json` maps S006–S058 to planned paintings and portrait sets. `tools/check-staging.py` reports what has arrived, and `tools/portrait-faces.py` measures new portraits. The [asset request](../art/asset-request.md) lists what to make next.
+
+## Earlier rejections
 
 **17 September 2026: 0.4.0-dev FAILED**, archived at `1bb6d76`. The UI and compact portrait execution were rejected after prior inspection. Read the [failure analysis](../reviews/2026-09-17-rovel-rejection/README.md) and [production controls](../production-controls.md). The prior native result was 7 cases / 152 assertions; that historical technical result cannot clear this presentation. No new engine pass is implied by the control update.
 

@@ -22,4 +22,7 @@ init python:
             return 'Tessa leans over the welcome letter in her plain blue hoodie. Her right hand draws her mother’s chair. The dead phone lies beside the page; candlelight leaves most of the locked room in darkness.'
         if composed_scene():
             return 'Nineteen-year-old Tessa turns from the cracked, sealed arch toward Senn. Harsh light falls across both faces and the pale stone. She has not yet been given a cloak.'
+        staged = staging_stage() if current_scene > 5 else None
+        if staged:
+            return staged.get('alt', '')
         return scene_art_alt

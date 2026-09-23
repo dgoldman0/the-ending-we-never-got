@@ -54,11 +54,15 @@ After changing scripts or art, rebuild and refresh the page:
 python3 visual-novel/tools/adapt_screenplay.py --check
 python3 visual-novel/tools/check-rovel-plan.py
 ./visual-novel/play.sh lint
-./visual-novel/play.sh test --overwrite-screenshots
+./visual-novel/tools/run-tests.sh
 python3 visual-novel/tools/build-ui-assets.py   # redraw interface components
+python3 visual-novel/tools/check-staging.py      # S006+ art present or awaited
+python3 visual-novel/tools/portrait-faces.py     # after adding portraits
 ```
 
-Run tests without opening windows on the desktop: `SDL_AUDIODRIVER=dummy xvfb-run -a -s "-screen 0 1920x1080x24" ./visual-novel/play.sh test`. The `ui_tour` case in `game/tour.rpy` captures 22 complete screens at 1920×1080 under `renpy/test-output/tour/` for visual review.
+New scene paintings and portraits go at the paths in `game/staging.json`; see the [asset request](../art/asset-request.md) for sizes and composition rules. No code change is needed for a scene to switch from the typeset page to its painting.
+
+Run tests with `./visual-novel/tools/run-tests.sh` (optionally naming one test case). It runs in a virtual display with its own temporary saves and persistent data. Running `play.sh test` directly writes test saves, preferences and read-text marks into the reader's real save folders, which earlier sessions did. The `ui_tour` case in `game/tour.rpy` captures 22 complete screens at 1920×1080 under `renpy/test-output/tour/` for visual review.
 
 The native engine tests exercise the actual screens and full route. They create captures under `renpy/test-output/`, which must be opened and inspected; passing tests does not certify visual quality. The QA record distinguishes tested controls, inspected composites and remaining production work.
 
