@@ -1,5 +1,15 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## Portrait crops — 23 September 2026, third round
+
+The user rejected the portraits: the crop itself was wrong, with bare neck ending in a weird shape inside an open-bottomed arch, and the earlier edge cleanup had not fixed it. Every portrait is now recropped from its source painting in GIMP (`tools/crop-portraits.py`, generating `crop-portraits.scm`):
+
+- **Rectangular crops, not cut-outs.** Each crop keeps a painted ground. The generator cut-outs (Senn, Mara, Iven, supporting cast) have their stair-stepped matte pulled in a pixel and softened, dropping the black and red fringe; Tessa's grey studio ground is taken down; GPT's busts get the same ground.
+- **One composition.** The face is 62% of the crop's height with its top at 21%, with 4% gaze room; the crop ends above the lumpy generated neck base. Layered masters are saved in `art/portrait-masters/`.
+- **Closed laurel windows.** The frame has a foot with a gilt tie, so the crop ends at a sill instead of fading into the shade. The speaker is mirrored when needed to face the listener (Tessa's heads all look left in the source), and on book pages both face the text.
+- **Retired:** `finish-portraits.py`, `portrait-faces.py` and the per-portrait face alignment, all superseded by the shared crop.
+- **Still limited:** the S001–S005 heads were painted without shoulders, so they read as close head shots beside GPT's busts. Only new paintings can add shoulders.
+
 ## Light, ornament and portraits — 23 September 2026, second round
 
 The user found the framing too dull and asked for the uncomfortable light to stay visible and readable. They then rejected an eye-adaptation fade: the distortion must be permanent in the image.

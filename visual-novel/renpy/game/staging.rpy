@@ -4,8 +4,8 @@
 # each speaker. A scene is read over its painting as soon as one of its stage
 # files exists; until then it stays on the typeset page. Portraits appear when
 # their files exist. Adding art therefore needs no code change: put the file
-# at its planned path (and its Softened twin under art/softened/), then run
-# tools/portrait-faces.py for new portraits.
+# at its planned path, then run tools/crop-portraits.py (portraits) and
+# tools/grade-light.py (light registers, both modes).
 #
 # Scene entry:
 #   "stages": [{"image": path, "from": first source line, "alt": description,

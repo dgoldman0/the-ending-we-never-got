@@ -243,7 +243,7 @@ def portrait_night(rgb, k):
 
 
 PORTRAIT_REGISTERS = {'bright': portrait_bright, 'ordinary': portrait_ordinary, 'night': portrait_night}
-PORTRAIT_FOLDERS = ('art/cast', 'art/portraits')
+PORTRAIT_FOLDERS = ('art/cast',)  # GIMP crops from tools/crop-portraits.py
 
 STRENGTH = {'intense': 1.0, 'softened': 0.45}
 REGISTERS = {name: {mode: (lambda s, f=fn, k=k: f(s, k)) for mode, k in STRENGTH.items()}

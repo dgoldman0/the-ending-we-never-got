@@ -6,9 +6,9 @@
 
 Errors (exit 1): unknown scenes, override lines that are not source lines,
 cast names that never speak in their scene. Missing art is not an error; those
-scenes simply stay on the typeset page until their files arrive. New files
-need tools/grade-light.py (both light modes) and, for portraits,
-tools/portrait-faces.py.
+scenes simply stay on the typeset page until their files arrive. New
+portraits need tools/crop-portraits.py (GIMP crop to the shared composition),
+then every new file needs tools/grade-light.py (both light modes).
 """
 from pathlib import Path
 import argparse

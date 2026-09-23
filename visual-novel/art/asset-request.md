@@ -15,7 +15,7 @@ The Valcair request needed a wardrobe split: S010/S054 use the rendered armored 
 | Kind | Path under `renpy/game/` | Size | After adding |
 | --- | --- | --- | --- |
 | Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | run `python3 visual-novel/tools/grade-light.py` |
-| Portrait | `art/portraits/<set>-speaking.png`, `<set>-listening.png` | square, at least 512×512, transparent background | run `grade-light.py`, then `python3 visual-novel/tools/portrait-faces.py` |
+| Portrait | `art/portraits/<set>-speaking.png`, `<set>-listening.png` | square, at least 1024×1024, head and shoulders | run `python3 visual-novel/tools/crop-portraits.py`, then `grade-light.py --portraits` |
 | Extra expression | `art/portraits/<set>-<expression>.png` | as above | name it for a line in `staging.json` |
 
 **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in both Intense and Softened. The distortion is part of the image and it's permanent: glare, halation, sallow cast, sunk night light. It isn't a fade. So paint the scene's real light, with its direction, sources and time of day, in even, readable exposure. Don't bake in blinding glare or crushed darkness, and don't make a separate Softened version. The register comes from `grade` in `staging.json`; change it there if a scene's brief calls for a different one.
@@ -32,9 +32,9 @@ The Valcair request needed a wardrobe split: S010/S054 use the rendered armored 
 - **Paint the light, not the grade.** Place windows, lamps and candles so the register has sources to work with: bright glare spills from real openings, night warmth from real flames. The light column below is only a default from the scene heading; set the register in each scene's brief.
 
 **Portraits**
-- **Head and upper shoulders on a transparent background, with headroom.** The frame is an arch that fades away below the chin, so the lower edge can fall anywhere below the collarbone.
-- **Keep one consistent scale.** Chin to hairline should be about half the square's height, with the eyes about 45% from the top. The alignment tool corrects small differences, not a head filling the frame.
-- **Mind the direction of gaze.** The speaker frame sits left of the listener frame, with the text to the right of both. Make `-speaking` a three-quarter view looking toward screen right and `-listening` looking toward screen left, so the pair face each other.
+- **Head and shoulders, with room to crop.** `crop-portraits.py` crops every portrait in GIMP to one composition: a closed laurel window, the face 62% of the crop's height with its top at 21%, and a little space on the side the face looks toward. Paint the head and shoulders, with clothing, well inside the canvas so there is material around the face on every side. A transparent or plain dark background both work.
+- **Paint the whole bust.** The S001–S005 heads were painted without shoulders, so their crops end in bare neck and shadow. GPT's Lucan and Valcair busts, painted with coat and shoulders, crop better.
+- **Mind the direction of gaze.** The speaker frame sits left of the listener frame, with the text to the right of both. Make `-speaking` a three-quarter view looking toward screen right and `-listening` looking toward screen left, so the pair face each other. The game mirrors a portrait that faces the wrong way, but a mirrored face flips its hair part and badges, so correct painting is better.
 - **Use ordinary, even light.** The game grades portraits into each scene's register and mode. On book pages they appear in the left margin at the same sizes.
 - **Take identity, age and wardrobe from the references.** Use [the character designs](../../characters/original-visuals.md), [character keys](character-keys/README.md) and [age/wardrobe variants](character-keys/age-and-wardrobe.md). Tessa's face comes from the storm-infirmary study.
 

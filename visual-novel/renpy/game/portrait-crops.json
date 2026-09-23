@@ -1,0 +1,168 @@
+{
+ "_note": "Written by tools/crop-portraits.py: which way each cropped head faces, and its crop box in the source painting. The game mirrors a portrait so the speaker faces the listener.",
+ "facing": {
+  "tessa-startled": "left",
+  "tessa-resolute": "left",
+  "tessa-wounded": "left",
+  "tessa-listening": "left",
+  "senn-assuring": "right",
+  "senn-listening": "right",
+  "senn-evasive": "right",
+  "mara-controlled": "right",
+  "mara-uneasy": "right",
+  "iven-attentive": "left",
+  "iven-concerned": "left",
+  "olan": "left",
+  "priest": "right",
+  "mother": "left",
+  "petitioner": "right",
+  "orra": "left",
+  "messenger": "right",
+  "lucan-early-listening": "left",
+  "lucan-early-speaking": "right",
+  "lucan-later-listening": "left",
+  "lucan-later-speaking": "right",
+  "valcair-listening": "left",
+  "valcair-speaking": "right"
+ },
+ "boxes": {
+  "tessa-startled": [
+   0,
+   61,
+   484,
+   553
+  ],
+  "tessa-resolute": [
+   627,
+   95,
+   455,
+   520
+  ],
+  "tessa-wounded": [
+   0,
+   701,
+   474,
+   541
+  ],
+  "tessa-listening": [
+   627,
+   713,
+   463,
+   529
+  ],
+  "senn-assuring": [
+   0,
+   6,
+   627,
+   716
+  ],
+  "senn-listening": [
+   627,
+   9,
+   627,
+   716
+  ],
+  "senn-evasive": [
+   1254,
+   12,
+   627,
+   716
+  ],
+  "mara-controlled": [
+   239,
+   26,
+   648,
+   740
+  ],
+  "mara-uneasy": [
+   1130,
+   34,
+   644,
+   735
+  ],
+  "iven-attentive": [
+   0,
+   26,
+   695,
+   793
+  ],
+  "iven-concerned": [
+   905,
+   122,
+   559,
+   638
+  ],
+  "olan": [
+   0,
+   17,
+   359,
+   410
+  ],
+  "priest": [
+   672,
+   35,
+   352,
+   403
+  ],
+  "mother": [
+   1048,
+   40,
+   352,
+   403
+  ],
+  "petitioner": [
+   139,
+   512,
+   373,
+   426
+  ],
+  "orra": [
+   512,
+   513,
+   359,
+   410
+  ],
+  "messenger": [
+   1144,
+   512,
+   392,
+   447
+  ],
+  "lucan-early-listening": [
+   179,
+   97,
+   617,
+   705
+  ],
+  "lucan-early-speaking": [
+   468,
+   133,
+   602,
+   687
+  ],
+  "lucan-later-listening": [
+   123,
+   103,
+   631,
+   721
+  ],
+  "lucan-later-speaking": [
+   455,
+   78,
+   685,
+   782
+  ],
+  "valcair-listening": [
+   183,
+   151,
+   544,
+   621
+  ],
+  "valcair-speaking": [
+   537,
+   137,
+   541,
+   618
+  ]
+ }
+}

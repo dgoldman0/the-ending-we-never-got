@@ -1,6 +1,6 @@
 # The original timeline — playable build
 
-**Current runtime: 0.5.0-dev, interface and infrastructure pass (23 September 2026), not yet approved by the user.** Illustrated scenes (S001–S005) keep the whole painting, graded into a permanent light register by `../tools/grade-light.py`: bright (white-hot spilling glare, halation, colour splitting at the edges), ordinary (sallow light, cold shade, uneven exposure) or night (sunk light, cold shade, glowing sources), with local detail preserved. Text sits in a soft shade at the foot, under a gilt speaker rail, beside laurel-and-celadon arches holding portraits graded to the same light. Scenes without illustrations (S006–S058) read as framed book pages with illuminated initials and the speaker and listener in the margin. Every interface image is drawn in code by `../tools/build-ui-assets.py`. This is the maker's pass, not visual approval; the [failure reviews](../reviews/2026-09-23-window-failure/README.md) still apply.
+**Current runtime: 0.5.0-dev, interface and infrastructure pass (23 September 2026), not yet approved by the user.** Illustrated scenes (S001–S005) keep the whole painting, graded into a permanent light register by `../tools/grade-light.py`: bright (white-hot spilling glare, halation, colour splitting at the edges), ordinary (sallow light, cold shade, uneven exposure) or night (sunk light, cold shade, glowing sources), with local detail preserved. Text sits in a soft shade at the foot, under a gilt speaker rail, beside closed laurel windows holding GIMP-cropped portraits graded to the same light. Scenes without illustrations (S006–S058) read as framed book pages with illuminated initials and the speaker and listener in the margin. Every interface image is drawn in code by `../tools/build-ui-assets.py`. This is the maker's pass, not visual approval; the [failure reviews](../reviews/2026-09-23-window-failure/README.md) still apply.
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
@@ -57,9 +57,8 @@ python3 visual-novel/tools/check-rovel-plan.py
 ./visual-novel/tools/run-tests.sh
 python3 visual-novel/tools/build-ui-assets.py   # redraw interface components
 python3 visual-novel/tools/check-staging.py      # S006+ art present or awaited
+python3 visual-novel/tools/crop-portraits.py     # after adding portraits: GIMP crops, one composition
 python3 visual-novel/tools/grade-light.py        # after adding art: light registers, both modes
-python3 visual-novel/tools/portrait-faces.py     # after adding portraits
-python3 visual-novel/tools/finish-portraits.py   # rebuild the S001-S005 heads from their sheets
 ```
 
 New scene paintings and portraits go at the paths in `game/staging.json`; see the [asset request](../art/asset-request.md) for sizes and composition rules. No code change is needed for a scene to switch from the typeset page to its painting.

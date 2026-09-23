@@ -24,10 +24,6 @@ init -1 python:
     import json
     import math
 
-    _portrait_data = json.loads(renpy.file('portrait-faces.json').read())
-    PORTRAIT_FACES = dict(_portrait_data['faces'])
-    PORTRAIT_FACES.update(_portrait_data.get('overrides', {}))
-
     # Shot-specific framing where the painting's key action meets the reading
     # band: 'lift' raises the painting (the dark shade fills beneath it), and
     # 'text' moves quiet lines into the painting's own shadow.
@@ -213,34 +209,17 @@ init -1 python:
                 raise AttributeError(attribute)
             return getattr(self.current(), attribute)
 
-    # Arched portrait: the head is aligned by its eyes so every face shares
-    # one scale and eye line; the lower edge dissolves into the reading shade.
-    PORTRAIT_SIZES = {'speaker': (236, 300), 'listener': (150, 191)}
-
-    def portrait_ready(face):
-        return face is not None and renpy.loadable(face['image'])
-
-    PORTRAIT_POS = {'speaker': (116, 744), 'listener': (366, 853)}
-
-    def portrait_backdrop(role):
-        """The painting behind the frame, blurred and darkened, so the portrait
-        sits in the scene's own light rather than in a black niche."""
-        image = stage_image()
-        w, h = PORTRAIT_SIZES[role]
-        if not image:
-            return 'ui/arch-back-' + role + '.png'
-        iw, ih = renpy.image_size(image)
-        k = iw / 1920.0
-        x, y = PORTRAIT_POS[role]
-        y += stage_framing().get('lift', 0)
-        box = (int(x * k), int(min(y, 1080 - h) * k), int(w * k), int(h * k))
-        source = image if image.startswith('art/lit/') else lighting_art(image)
-        tinted = Transform(Crop(box, source), xysize=(w, h), blur=9,
-                           matrixcolor=SaturationMatrix(0.65))
-        return Fixed(tinted, Solid('#0a0d10b4'), xysize=(w, h))
+    # Portrait windows. Every portrait is a rectangular crop of its painting,
+    # made in GIMP to one composition (tools/crop-portraits.py), so heads share
+    # a scale and eye line without per-image alignment. A closed laurel window
+    # frames each; the speaker is mirrored if needed to face the listener.
+    PORTRAIT_SIZES = {'speaker': (228, 256), 'listener': (150, 168)}
+    PORTRAIT_POS = {'speaker': (116, 748), 'listener': (366, 836)}
+    CROP_SIZE = (408.0, 466.0)
+    PORTRAIT_CROPS = json.loads(renpy.file('portrait-crops.json').read())
 
     def portrait_key(path):
-        """The neutral master behind a portrait path. The S001-S005 plan names
+        """The cropped master behind a portrait path. The S001-S005 plan names
         files by expression, wardrobe and old grade; the heads are the same
         painting in every wardrobe, so they share one master."""
         stem = path.rsplit('/', 1)[-1].rsplit('.', 1)[0]
@@ -255,8 +234,12 @@ init -1 python:
                     break
         return stem
 
+    def portrait_ready(face):
+        return face is not None and (portrait_key(face['image']) in LIT.get('portraits', {})
+                                     or renpy.loadable(face['image']))
+
     def portrait_source(path):
-        """The portrait graded into the scene's light register and mode."""
+        """The portrait crop graded into the scene's light register and mode."""
         entry = LIT.get('portraits', {}).get(portrait_key(path))
         if entry:
             return entry[current_register()][light_mode()]
@@ -267,17 +250,20 @@ init -1 python:
         matrix = frame_light()
         return Transform(image, matrixcolor=matrix) if matrix is not None else image
 
-    def portrait_cameo(face, role, grade=None):
+    def portrait_cameo(face, role, grade=None, facing=None):
+        """A cropped portrait in its laurel window. `facing` is the direction the
+        head should look: by default the speaker looks right, toward the
+        listener and the text, and the listener looks back to the left."""
         w, h = PORTRAIT_SIZES[role]
-        fx, fy, fs = PORTRAIT_FACES.get(portrait_key(face['image'])) or [150, 170, 330]
-        scale = (w * 0.6) / float(fs)
-        cx, cy = (fx + fs / 2.0) * scale, (fy + fs / 2.0) * scale
-        head = Transform(portrait_source(face['image']), zoom=scale,
-                         xpos=int(w * 0.5 - cx), ypos=int(h * 0.5 - cy))
-        inner = Fixed(portrait_backdrop(role), head,
-                      'ui/arch-vignette-' + role + '.png', xysize=(w, h))
-        cameo = Fixed(AlphaMask(inner, 'ui/arch-mask-' + role + '.png'),
-                      lit_ornament('ui/arch-frame-' + role + '.png'), xysize=(w, h))
+        key = portrait_key(face['image'])
+        want = facing or ('right' if role == 'speaker' else 'left')
+        flip = PORTRAIT_CROPS['facing'].get(key, want) != want
+        scale = max(w / CROP_SIZE[0], h / CROP_SIZE[1])
+        cw, ch = int(round(CROP_SIZE[0] * scale)), int(round(CROP_SIZE[1] * scale))
+        head = Transform(portrait_source(face['image']), xysize=(cw, ch), xzoom=(-1.0 if flip else 1.0),
+                         xpos=(w - cw) // 2, ypos=(h - ch) // 2)
+        cameo = Fixed(AlphaMask(Fixed(head, xysize=(w, h)), 'ui/window-mask-' + role + '.png'),
+                      lit_ornament('ui/window-frame-' + role + '.png'), xysize=(w, h))
         if role == 'listener' and grade != 'night':
             cameo = Transform(cameo, matrixcolor=SaturationMatrix(0.85) * BrightnessMatrix(-0.04))
         return cameo
@@ -324,7 +310,7 @@ init -1 python:
         return None, what
 
     # In page mode the portraits sit in the left margin, outside the text frame.
-    PAGE_PORTRAIT_POS = {'speaker': (27, 250), 'listener': (70, 570)}
+    PAGE_PORTRAIT_POS = {'speaker': (31, 250), 'listener': (70, 540)}
 
 define narrator = ReaderVoice(None)
 
@@ -433,9 +419,9 @@ screen say(who, what):
         add "ui/scrim.png" xsize 1920 ysize 560 ypos 520 alpha scrim_strength(beat)
         if portrait_ready(speaker):
             add "ui/portrait-pool.png" pos (0, 620)
-            add portrait_cameo(speaker, 'speaker', grade) pos (116, 744)
+            add portrait_cameo(speaker, 'speaker', grade) pos PORTRAIT_POS['speaker']
             if portrait_ready(listener):
-                add portrait_cameo(listener, 'listener', grade) pos (366, 853)
+                add portrait_cameo(listener, 'listener', grade) pos PORTRAIT_POS['listener']
         if heading:
             text scene_heading_line() style "stage_heading" pos (STAGE_TEXT_X, top - (142 if who else 58))
         if who:
@@ -485,9 +471,9 @@ screen nvl(dialogue, items=None):
     add c['frame']
     $ speaker, listener = staging_faces()
     if portrait_ready(speaker):
-        add portrait_cameo(speaker, 'speaker', current_register()) pos PAGE_PORTRAIT_POS['speaker']
+        add portrait_cameo(speaker, 'speaker', current_register(), 'right') pos PAGE_PORTRAIT_POS['speaker']
         if portrait_ready(listener):
-            add portrait_cameo(listener, 'listener', current_register()) pos PAGE_PORTRAIT_POS['listener']
+            add portrait_cameo(listener, 'listener', current_register(), 'right') pos PAGE_PORTRAIT_POS['listener']
     if page_index == 0:
         vbox:
             xpos PAGE_X ypos 108

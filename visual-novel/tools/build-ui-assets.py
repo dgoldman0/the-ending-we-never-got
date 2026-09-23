@@ -64,51 +64,6 @@ def scrim():
     save(pool, 'portrait-pool.png')
 
 
-def arch_shape(w, h, inset=0.0):
-    """Supersampled arch silhouette as an L image at w*SS x h*SS."""
-    W, H = w * SS, h * SS
-    m = Image.new('L', (W, H), 0)
-    d = ImageDraw.Draw(m)
-    i = inset * SS
-    r = (W - 2 * i) / 2
-    d.ellipse([i, i, W - i, i + 2 * r], fill=255)
-    d.rectangle([i, i + r, W - i, H], fill=255)
-    return m
-
-
-def arch(w, h, name, feather=0.30):
-    shape = arch_shape(w, h).resize((w, h), Image.LANCZOS)
-    fade = Image.fromarray(np.repeat(ramp(h, [(0, 255), (1 - feather, 255), (1, 0)])[:, None], w, 1).astype('uint8'))
-    # AlphaMask reads the mask's alpha channel, so the shape must be alpha.
-    mask = Image.new('RGBA', (w, h), (255, 255, 255, 0))
-    mask.putalpha(ImageChops.multiply(shape, fade))
-    save(mask, 'arch-mask-' + name + '.png')
-    # Two hairlines: a firm outer thread and a faint inner one.
-    lines = Image.new('L', (w * SS, h * SS), 0)
-    for inset, width, level in ((0.6, 1.5, 230), (5.5, 0.9, 110)):
-        outer = arch_shape(w, h, inset)
-        inner = arch_shape(w, h, inset + width)
-        ring = ImageChops.subtract(outer, inner).point(lambda v: v * level // 255)
-        lines = ImageChops.lighter(lines, ring)
-    lines = lines.resize((w, h), Image.LANCZOS)
-    fade = Image.fromarray(np.repeat(ramp(h, [(0, 255), (1 - feather - 0.08, 255), (1 - 0.06, 0), (1, 0)])[:, None], w, 1).astype('uint8'))
-    line_layer = Image.new('RGBA', (w, h), GOLD + (0,))
-    line_layer.putalpha(ImageChops.multiply(lines, fade))
-    save(line_layer, 'arch-line-' + name + '.png')
-    # Dark backing with a soft interior light, behind a head-only portrait.
-    yy, xx = np.mgrid[0:h, 0:w].astype('float32')
-    r = np.sqrt(((xx - w * 0.5) / (w * 0.62)) ** 2 + ((yy - h * 0.40) / (h * 0.55)) ** 2)
-    base = np.array((23, 27, 31), 'float32') * (1 - 0.55 * np.clip(r, 0, 1))[..., None]
-    back = Image.fromarray(base.clip(0, 255).astype('uint8')).convert('RGBA')
-    save(back, 'arch-back-' + name + '.png')
-    # Shadow that closes in from the arch edges over the portrait itself.
-    v = np.sqrt(((xx - w * 0.5) / (w * 0.56)) ** 2 + ((yy - h * 0.44) / (h * 0.60)) ** 2)
-    shade = (np.clip(v - 0.50, 0, 0.5) / 0.5) ** 1.15 * 240
-    vignette = Image.new('RGBA', (w, h), INK + (0,))
-    vignette.putalpha(Image.fromarray(shade.clip(0, 255).astype('uint8')))
-    save(vignette, 'arch-vignette-' + name + '.png')
-
-
 def thread_line(length, name, knot=True, alpha=220, wave=0.8, color=GOLD):
     """An irregular gold thread, optionally starting with a small knot."""
     GOLD = color
@@ -345,6 +300,92 @@ def arch_frame(w, h, name, band=0.072, bottom_fade=0.32, seed=4):
     save(Image.fromarray((np.clip(rgba, 0, 1) * 255 + 0.5).astype('uint8')), name)
 
 
+def closed_arch_sdf(W, H, inset=0.0):
+    """Signed distance (positive inside) to a closed arch: a semicircle over a
+    rectangle, with a flat foot."""
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
+    r = W / 2.0 - inset
+    cx, cy = W / 2.0, W / 2.0
+    side = np.where(yy >= cy, r - np.abs(xx - cx), r - np.sqrt((xx - cx) ** 2 + (yy - cy) ** 2))
+    return np.minimum(side, (H - inset) - yy), yy, xx
+
+
+def closed_arch_path(W, H, inset, step=0.7):
+    """Centre-line of a closed arch band: from the foot's centre, left along the
+    foot, up the left side, over the top, down the right, back to the centre."""
+    r = W / 2.0 - inset
+    cx = cy = W / 2.0
+    bottom = H - inset
+    pts = []
+    x = cx
+    while x > cx - r:
+        pts.append((x, bottom)); x -= step
+    y = bottom
+    while y > cy:
+        pts.append((cx - r, y)); y -= step
+    n = int(math.pi * r / step)
+    for i in range(n + 1):
+        a = math.pi + math.pi * i / n
+        pts.append((cx + r * math.cos(a), cy + r * math.sin(a)))
+    y = cy
+    while y < bottom:
+        pts.append((cx + r, y)); y += step
+    x = cx + r
+    while x > cx:
+        pts.append((x, bottom)); x -= step
+    return np.array(pts, np.float32)
+
+
+def window_frame(w, h, role, band=0.075, seed=4):
+    """A closed laurel window for a close portrait: the wreath is tied at the
+    foot and meets the twelve-ray sun at the crown; a recess shadow falls on
+    the portrait from the upper left. Also writes the portrait mask and ground."""
+    W, H = w * OSS, h * OSS
+    t = band * W
+    d, yy, xx = closed_arch_sdf(W, H)
+    u = np.clip(d / t, 0, 1)
+    inside = ((d >= 0) & (d <= t)).astype(np.float32)
+    outer = smoothstep(1 - np.abs(u - 0.08) / 0.08) * (u < 0.16)
+    inner = smoothstep(1 - np.abs(u - 0.92) / 0.08) * (u > 0.84)
+    field = ((u >= 0.16) & (u <= 0.84)).astype(np.float32)
+    across = np.sin(np.pi * np.clip((u - 0.16) / 0.68, 0, 1))
+    height = outer * 0.9 + inner * 0.6 + field * (0.08 + 0.06 * across)
+    path = closed_arch_path(W, H, t * 0.5)
+    stem, leaves = laurel((W, H), path, spacing=t * 0.62, leaf_len=t * 0.52, leaf_w=t * 0.24,
+                          angle=38, stem_w=t * 0.06, stop=t * 0.95)
+    # keep the foot's centre clear for the tie
+    foot = np.hypot(xx - W / 2.0, yy - (H - t * 0.5)) < t * 0.9
+    stem, leaves = stem * (~foot), leaves * (~foot)
+    height = height + np.maximum(dome(stem * field, t * 0.03) * 0.45, dome(leaves * field, t * 0.09) * 0.7)
+    disc, ray, ring = sun_masks((W, H), (W / 2, t * 0.52), t * 0.5, t * 0.82)
+    tie = Image.new('L', (W, H), 0)
+    ImageDraw.Draw(tie).ellipse([W / 2 - t * 0.34, H - t * 0.84, W / 2 + t * 0.34, H - t * 0.16], fill=255)
+    tie = np.asarray(tie, np.float32) / 255
+    height = np.maximum(height, np.maximum(dome(disc, t * 0.3) * 1.25 - ring * 0.25, dome(ray, t * 0.05) * 0.85))
+    height = np.maximum(height, dome(tie, t * 0.3) * 1.0)
+    cover = np.clip(inside + disc + ray, 0, 1)
+    raised = np.clip((height - 0.18) * 3.2, 0, 1)
+    mottle = cv2.GaussianBlur(np.random.default_rng(seed).normal(0, 1, (H, W)).astype(np.float32), (0, 0), 3 * OSS)
+    enamel = CELADON * (0.8 + 0.35 * across)[..., None] * (1 + mottle[..., None] * 0.08)
+    albedo = enamel * (1 - raised[..., None]) + GILT * raised[..., None]
+    frame = light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.6 * OSS), albedo, raised * 0.95, cover)
+    # recess shadow on the portrait, heavier toward the upper left (light comes from there)
+    di = d - t
+    shadow = np.clip(1 - di / (t * 0.9), 0, 1) ** 1.6 * (di > -1)
+    shadow = shadow * (0.75 + 0.25 * ((xx < W / 2) | (yy < W / 2)))
+    shade = np.dstack([np.zeros((H, W, 3), np.float32), np.clip(shadow * 0.55, 0, 1) * (di > 0)])
+    out = shade.copy()
+    a = frame[..., 3:4]
+    out[..., :3] = frame[..., :3] * a + shade[..., :3] * (1 - a)
+    out[..., 3:4] = a + shade[..., 3:4] * (1 - a)
+    save(to_image(out, (w, h)), 'window-frame-' + role + '.png')
+    # the portrait lives inside the band's inner edge (slight overlap under the band)
+    mask = np.clip((d - t * 0.85) / OSS, 0, 1)
+    m = Image.new('RGBA', (W, H), (255, 255, 255, 0))
+    m.putalpha(Image.fromarray((mask * 255).astype('uint8')))
+    save(m.resize((w, h), Image.LANCZOS), 'window-mask-' + role + '.png')
+
+
 def speech_rail(length, name, height=26):
     """A gilt rail for the speaker's name: a bead and two laurel leaves at the
     left, then a rod that tapers into a fading thread."""
@@ -516,10 +557,8 @@ def initials(size=128):
 
 def main():
     scrim()
-    arch(236, 300, 'speaker')
-    arch(150, 191, 'listener')
-    arch_frame(236, 300, 'arch-frame-speaker.png')
-    arch_frame(150, 191, 'arch-frame-listener.png')
+    window_frame(228, 256, 'speaker')
+    window_frame(150, 168, 'listener')
     speech_rail(1060, 'speech-rail.png')
     page_frame('page-frame-ink.png', gilded=False)
     page_frame('page-frame-gilt.png', gilded=True)
