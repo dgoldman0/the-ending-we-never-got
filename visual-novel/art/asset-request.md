@@ -4,6 +4,12 @@ Requested 23 September 2026, at the end of the interface and infrastructure roun
 
 Scene art still needs a written brief before generation, and a review of the finished screens, as [AGENTS.md](../AGENTS.md) requires. This request does not approve any image, and it does not replace the likeness, wardrobe and lighting references.
 
+## First rendered batch — 23 September 2026
+
+The first three queued sets now have speaking/listening PNGs at the paths below: `lucan-early`, `valcair` (field armor), and `lucan-later`. See the [six portraits, prompts and inspection record](scene-studies/portraits-first-batch/README.md). They are working assets, not user-approved scene coverage. Their scenes still await paintings, so the portraits do not yet appear during normal page-mode reading.
+
+The Valcair request needed a wardrobe split: S010/S054 use the rendered armored `valcair` set; S023/S033/S046 now await `valcair-private`, in charcoal wool with dark-red lining and a plain clasp. Do not reuse armor in those private interiors. Ordinary-light portraits use the same PNG in both lighting settings, as permitted below.
+
 ## How files plug in
 
 | Kind | Path under `renpy/game/` | Size | After adding |
@@ -38,7 +44,7 @@ Portraits turn page scenes into conversations the moment a scene has any paintin
 | Portrait set | Scenes | Lines |
 | --- | --- | ---: |
 | `lucan-early` | S018–S036 (13) | 36 |
-| `valcair` | S010–S054 (5) | 28 |
+| `valcair` / `valcair-private` | S010–S054 (5; armor rendered, private pending) | 28 |
 | `lucan-later` | S038–S057 (8) | 23 |
 | `tessa-harrow` | S032–S037 (4) | 20 |
 | `vask` | S010–S057 (4) | 19 |

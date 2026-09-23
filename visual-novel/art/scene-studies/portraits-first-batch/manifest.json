@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-23",
+  "assets": [
+    {
+      "file": "art/portraits/lucan-early-speaking.png",
+      "sha256": "839c44919d5b3a7aec17f7b8549a8f7c13ff580b674eec210b4b7ae0200d5d96",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Lucan",
+      "age": "mid-twenties",
+      "wardrobe": "bottle-green riding coat, pale shirt; worn in later set",
+      "pose": "speaking",
+      "gaze": "screen right",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        35,
+        36
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-7d2685ea-c6a1-4ada-8e03-b77ee65d0783",
+      "prompts": [
+        "lucan-early-speaking.txt"
+      ]
+    },
+    {
+      "file": "art/portraits/lucan-early-listening.png",
+      "sha256": "d2204eefd2c900ce70fd466c2c6973ae92b5222ba68066eb2fb1689245ac776b",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Lucan",
+      "age": "mid-twenties",
+      "wardrobe": "bottle-green riding coat, pale shirt; worn in later set",
+      "pose": "listening",
+      "gaze": "screen left",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27,
+        30,
+        31,
+        32,
+        35,
+        36
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-19a09c23-67c9-40c7-8d7e-490259af6349",
+      "prompts": [
+        "lucan-early-listening.txt"
+      ]
+    },
+    {
+      "file": "art/portraits/valcair-speaking.png",
+      "sha256": "39397d430198ce73a2c7cfc375cc58db51bdc0f2407c32558e345fe4a450a540",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Valcair",
+      "age": "apparent early fifties",
+      "wardrobe": "dark steel field armor over charcoal wool, red collar lining",
+      "pose": "speaking",
+      "gaze": "screen right",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        10,
+        54
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-a56c38fe-1dd9-4513-a8c4-5a32102e5b3d",
+      "prompts": [
+        "valcair-speaking.txt"
+      ]
+    },
+    {
+      "file": "art/portraits/valcair-listening.png",
+      "sha256": "d2eb3de64726a87a08458ecbbd66dfcce9089f5804b2762cd6e018ef34168886",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Valcair",
+      "age": "apparent early fifties",
+      "wardrobe": "dark steel field armor over charcoal wool, red collar lining",
+      "pose": "listening",
+      "gaze": "screen left",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        10,
+        54
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-bde90421-c417-4456-80bc-1d0ee0a4cf74",
+      "prompts": [
+        "valcair-listening.txt"
+      ]
+    },
+    {
+      "file": "art/portraits/lucan-later-speaking.png",
+      "sha256": "b35d1abba6dc079543155583ff3b89f7fe47ce4b3ab3b0b2e8ae6b2483dc5681",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Lucan",
+      "age": "twenties; later period after Harrow",
+      "wardrobe": "bottle-green riding coat, pale shirt; worn in later set",
+      "pose": "speaking",
+      "gaze": "screen right",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        38,
+        43,
+        44,
+        45,
+        46,
+        47,
+        55,
+        57
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-68a75372-90d9-4d10-9bc0-d806bb72b295",
+      "prompts": [
+        "lucan-later-speaking.txt",
+        "lucan-later-speaking-refinement.txt"
+      ]
+    },
+    {
+      "file": "art/portraits/lucan-later-listening.png",
+      "sha256": "48b76a260711b3ab56ad477073f533d53b052b9f03f8e29bf83c34796c496e16",
+      "size": [
+        1254,
+        1254
+      ],
+      "character": "Lucan",
+      "age": "twenties; later period after Harrow",
+      "wardrobe": "bottle-green riding coat, pale shirt; worn in later set",
+      "pose": "listening",
+      "gaze": "screen left",
+      "injury": "no depicted injury; later Lucan forearm state is outside crop",
+      "background": "transparent",
+      "lighting": "ordinary; identical file in Intense and Softened",
+      "scenes": [
+        38,
+        43,
+        44,
+        45,
+        46,
+        47,
+        55,
+        57
+      ],
+      "status": "component-reviewed working asset; scene integration pending; not user approved",
+      "tool": "built-in image_gen",
+      "generation": "exec-677f092f-aa8e-459d-aed3-2537669b0f0d",
+      "prompts": [
+        "lucan-later-listening.txt",
+        "lucan-later-listening-refinement.txt"
+      ]
+    }
+  ]
+}

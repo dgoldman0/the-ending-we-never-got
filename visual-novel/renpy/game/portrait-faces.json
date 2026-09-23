@@ -222,6 +222,36 @@
    200,
    120,
    250
+  ],
+  "lucan-early-speaking": [
+   290,
+   230,
+   700
+  ],
+  "lucan-early-listening": [
+   290,
+   230,
+   700
+  ],
+  "lucan-later-speaking": [
+   290,
+   230,
+   700
+  ],
+  "lucan-later-listening": [
+   255,
+   230,
+   700
+  ],
+  "valcair-speaking": [
+   190,
+   220,
+   760
+  ],
+  "valcair-listening": [
+   350,
+   220,
+   760
   ]
  }
 }
