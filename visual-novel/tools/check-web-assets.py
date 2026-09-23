@@ -58,6 +58,14 @@ def required_assets(game=GAME):
     # The code-drawn reading interface (tools/build-ui-assets.py).
     expected.update(path.relative_to(game).as_posix()
                     for path in (game / 'ui').glob('*') if path.is_file())
+    # Graded light registers (tools/grade-light.py), both modes.
+    lit = json.loads((game / 'lit-assets.json').read_text())
+    for group in ('stages', 'images'):
+        for pair in lit[group].values():
+            expected.update(pair.values())
+    for registers in lit.get('portraits', {}).values():
+        for pair in registers.values():
+            expected.update(pair.values())
     # Staging art for S006 onward, whatever has arrived, with Softened twins.
     for folder in ('art/scenes', 'art/portraits', 'art/softened/scenes', 'art/softened/portraits'):
         if (game / folder).is_dir():

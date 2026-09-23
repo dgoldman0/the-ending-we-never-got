@@ -9,6 +9,7 @@ seeded noise; nothing is diffusion-generated. Rerun after changing a shape:
 from pathlib import Path
 import math
 
+import cv2
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
@@ -199,10 +200,332 @@ def glow(size, name, color, alpha):
     save(image, name)
 
 
+# ---------------------------------------------------------------- ornament
+# Relief ornament is modelled as a height field, then lit like metal: gilt
+# relief (Blinn-Phong with a warm environment and ambient occlusion) on a
+# celadon enamel ground. The vocabulary comes from the temple scenes: carved
+# laurel, celadon inlay, and the twelve-ray sun at the keystone.
+
+OSS = 3  # supersampling for relief
+
+
+def smoothstep(t):
+    t = np.clip(t, 0, 1)
+    return t * t * (3 - 2 * t)
+
+
+def dome(mask, radius):
+    """Rounded relief rising over `radius` pixels from a mask's edge."""
+    d = cv2.distanceTransform((mask > 0.5).astype(np.uint8), cv2.DIST_L2, 5)
+    x = np.clip(d / max(radius, 1e-3), 0, 1)
+    return np.sqrt(x * (2 - x))
+
+
+def light_relief(height, albedo, metal, alpha, strength=5.0):
+    gy, gx = np.gradient(height)
+    n = np.dstack([-gx * strength, -gy * strength, np.ones_like(height)])
+    n /= np.linalg.norm(n, axis=2, keepdims=True)
+    light = np.array([-0.55, -0.75, 0.9], np.float32)
+    light /= np.linalg.norm(light)
+    half = light + np.array([0, 0, 1.0], np.float32)
+    half /= np.linalg.norm(half)
+    ndl = np.clip((n * light).sum(2), 0, 1)
+    ndh = np.clip((n * half).sum(2), 0, 1)
+    spec = ndh ** 70 * (0.35 + 0.65 * metal)
+    up = np.clip(-n[..., 1] * 0.5 + 0.5, 0, 1)[..., None]
+    env = np.array([1.0, 0.92, 0.75], np.float32) * up ** 1.5 + np.array([0.12, 0.10, 0.08], np.float32) * (1 - up)
+    ao = np.clip(1 - (cv2.GaussianBlur(height, (0, 0), 3 * OSS) - height) * 3.0, 0.35, 1)[..., None]
+    m = metal[..., None]
+    colour = (albedo * (0.28 + 0.9 * ndl[..., None]) * (1 - m * 0.55) + albedo * env * m * 0.9) * ao
+    colour = colour + spec[..., None] * (albedo * m + (1 - m) * 0.9) * 1.1
+    return np.dstack([np.clip(colour, 0, 1), alpha])
+
+
+def arch_centreline(w, h, inset, step=0.7):
+    r = w / 2.0 - inset
+    cx = cy = w / 2.0
+    points, y = [], float(h)
+    while y > cy:
+        points.append((cx - r, y))
+        y -= step
+    n = int(math.pi * r / step)
+    for i in range(n + 1):
+        a = math.pi + math.pi * i / n
+        points.append((cx + r * math.cos(a), cy + r * math.sin(a)))
+    y = cy
+    while y < h:
+        points.append((cx + r, y))
+        y += step
+    return np.array(points, np.float32)
+
+
+def leaf_polygon(p, direction, length, width, n=20):
+    d = direction / (np.linalg.norm(direction) + 1e-6)
+    perp = np.array([-d[1], d[0]])
+    out = [tuple(p + d * (j / n) * length + perp * math.sin(math.pi * j / n) ** 0.9 * width / 2 * (1 - 0.25 * j / n))
+           for j in range(n + 1)]
+    out += [tuple(p + d * (j / n) * length - perp * math.sin(math.pi * j / n) ** 0.9 * width / 2 * (1 - 0.25 * j / n))
+            for j in range(n, -1, -1)]
+    return out
+
+
+def laurel(size, path, spacing, leaf_len, leaf_w, angle, stem_w, stop):
+    """Leaf pairs climbing both halves of a path toward its midpoint."""
+    stem, leaves = Image.new('L', size, 0), Image.new('L', size, 0)
+    ds, dl = ImageDraw.Draw(stem), ImageDraw.Draw(leaves)
+    s = np.concatenate([[0], np.cumsum(np.linalg.norm(np.diff(path, axis=0), axis=1))])
+    total, mid = s[-1], s[-1] / 2
+    tangent = np.gradient(path, axis=0)
+    tangent /= np.linalg.norm(tangent, axis=1, keepdims=True) + 1e-6
+    for left in (True, False):
+        end = mid - stop if left else mid + stop
+        keep = s <= end if left else s >= end
+        ds.line([tuple(q) for q in path[keep]], fill=255, width=max(1, int(stem_w)))
+        sign = 1 if left else -1
+        pos = (0.0 if left else total) + sign * spacing * 0.5
+        while (pos < end) if left else (pos > end):
+            i = min(int(np.searchsorted(s, pos)), len(path) - 1)
+            t = tangent[i] * sign
+            n = np.array([-t[1], t[0]])
+            for side in (1, -1):
+                a = math.radians(angle) * side
+                dl.polygon(leaf_polygon(path[i], t * math.cos(a) + n * math.sin(a), leaf_len, leaf_w), fill=255)
+            pos += sign * spacing
+    return np.asarray(stem, np.float32) / 255, np.asarray(leaves, np.float32) / 255
+
+
+def sun_masks(size, centre, r_disc, r_ray, rays=12):
+    """The temple's brass sun: a disc with twelve short rays and a raised ring."""
+    disc, ray, ring = (Image.new('L', size, 0) for _ in range(3))
+    cx, cy = centre
+    ImageDraw.Draw(disc).ellipse([cx - r_disc, cy - r_disc, cx + r_disc, cy + r_disc], fill=255)
+    rr = r_disc * 0.72
+    ImageDraw.Draw(ring).ellipse([cx - rr, cy - rr, cx + rr, cy + rr], outline=255, width=max(1, int(r_disc * 0.12)))
+    dr = ImageDraw.Draw(ray)
+    for i in range(rays):
+        a = 2 * math.pi * i / rays - math.pi / 2
+        half = math.pi / rays * 0.5
+        dr.polygon([(cx + math.cos(a - half) * r_disc * 0.92, cy + math.sin(a - half) * r_disc * 0.92),
+                    (cx + math.cos(a) * r_ray, cy + math.sin(a) * r_ray),
+                    (cx + math.cos(a + half) * r_disc * 0.92, cy + math.sin(a + half) * r_disc * 0.92)], fill=255)
+    return [np.asarray(m, np.float32) / 255 for m in (disc, ray, ring)]
+
+
+GILT = np.array([0.84, 0.64, 0.33], np.float32)
+CELADON = np.array([0.25, 0.40, 0.37], np.float32)
+
+
+def arch_frame(w, h, name, band=0.072, bottom_fade=0.32, seed=4):
+    """Gilt arch with a laurel garland on celadon enamel and a sun keystone."""
+    W, H = w * OSS, h * OSS
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32) + 0.5
+    r = W / 2.0
+    d = np.where(yy >= r, r - np.abs(xx - W / 2.0), r - np.sqrt((xx - W / 2.0) ** 2 + (yy - r) ** 2))
+    t = band * W
+    u = np.clip(d / t, 0, 1)
+    inside = ((d >= 0) & (d <= t)).astype(np.float32)
+    outer = smoothstep(1 - np.abs(u - 0.08) / 0.08) * (u < 0.16)
+    inner = smoothstep(1 - np.abs(u - 0.92) / 0.08) * (u > 0.84)
+    field = ((u >= 0.16) & (u <= 0.84)).astype(np.float32)
+    across = np.sin(np.pi * np.clip((u - 0.16) / 0.68, 0, 1))
+    height = outer * 0.9 + inner * 0.6 + field * (0.08 + 0.06 * across)
+    stem, leaves = laurel((W, H), arch_centreline(W, H, t * 0.5), spacing=t * 0.62, leaf_len=t * 0.52,
+                          leaf_w=t * 0.24, angle=38, stem_w=t * 0.06, stop=t * 0.95)
+    height = height + np.maximum(dome(stem * field, t * 0.03) * 0.45, dome(leaves * field, t * 0.09) * 0.7)
+    disc, ray, ring = sun_masks((W, H), (W / 2, t * 0.52), t * 0.5, t * 0.82)
+    height = np.maximum(height, np.maximum(dome(disc, t * 0.3) * 1.25 - ring * 0.25, dome(ray, t * 0.05) * 0.85))
+    cover = np.clip(inside + disc + ray, 0, 1)
+    raised = np.clip((height - 0.18) * 3.2, 0, 1)
+    mottle = cv2.GaussianBlur(np.random.default_rng(seed).normal(0, 1, (H, W)).astype(np.float32), (0, 0), 3 * OSS)
+    enamel = CELADON * (0.8 + 0.35 * across)[..., None] * (1 + mottle[..., None] * 0.08)
+    albedo = enamel * (1 - raised[..., None]) + GILT * raised[..., None]
+    fade = 1 - smoothstep((yy / H - (1 - bottom_fade)) / bottom_fade)
+    rgba = light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.6 * OSS), albedo, raised * 0.95, cover * fade)
+    rgba = cv2.resize(rgba, (w, h), interpolation=cv2.INTER_AREA)
+    save(Image.fromarray((np.clip(rgba, 0, 1) * 255 + 0.5).astype('uint8')), name)
+
+
+def speech_rail(length, name, height=26):
+    """A gilt rail for the speaker's name: a bead and two laurel leaves at the
+    left, then a rod that tapers into a fading thread."""
+    W, H = length * OSS, height * OSS
+    cy = H * 0.5
+    rod = Image.new('L', (W, H), 0)
+    dr = ImageDraw.Draw(rod)
+    start, end = 34 * OSS, W - 2 * OSS
+    steps = 400
+    for i in range(steps):
+        x0 = start + (end - start) * i / steps
+        x1 = start + (end - start) * (i + 1) / steps
+        u = i / steps
+        thick = (2.6 * OSS) * (1 - smoothstep((u - 0.45) / 0.55) * 0.8)
+        dr.rectangle([x0, cy - thick / 2, x1, cy + thick / 2], fill=255)
+    rod = np.asarray(rod, np.float32) / 255
+    bead = Image.new('L', (W, H), 0)
+    br = 5.5 * OSS
+    bx = 20 * OSS
+    ImageDraw.Draw(bead).ellipse([bx - br, cy - br, bx + br, cy + br], fill=255)
+    bead = np.asarray(bead, np.float32) / 255
+    leaves = Image.new('L', (W, H), 0)
+    dl = ImageDraw.Draw(leaves)
+    for side in (1, -1):
+        a = math.radians(32) * side
+        direction = np.array([math.cos(a), math.sin(a)])
+        dl.polygon(leaf_polygon(np.array([bx + br * 0.6, cy]), direction, 15 * OSS, 6.5 * OSS), fill=255)
+    leaves = np.asarray(leaves, np.float32) / 255
+    height_map = np.maximum.reduce([dome(rod, 1.5 * OSS) * 0.7, dome(bead, br) * 1.1, dome(leaves, 2.2 * OSS) * 0.75])
+    cover = np.clip(rod + bead + leaves, 0, 1)
+    xx = np.arange(W, dtype=np.float32)[None, :] / W
+    fade = 1 - smoothstep((xx - 0.55) / 0.45)
+    albedo = np.broadcast_to(GILT, (H, W, 3)).copy()
+    rgba = light_relief(cv2.GaussianBlur(height_map.astype(np.float32), (0, 0), 0.5 * OSS), albedo,
+                        np.full((H, W), 0.95, np.float32), cover * fade, strength=4.0)
+    rgba = cv2.resize(rgba, (length, height), interpolation=cv2.INTER_AREA)
+    save(Image.fromarray((np.clip(rgba, 0, 1) * 255 + 0.5).astype('uint8')), name)
+
+
+# ------------------------------------------------------------ page ornament
+# Book pages (scenes without paintings yet) get printed ornament: a double
+# rule around the text block with laurel corners, a laurel rule under the
+# scene title, and an illuminated initial for each scene's first narration.
+
+SERIF = str(ROOT / 'renpy/game/fonts/EBGaramond12-Regular.ttf')
+INK_PRINT = np.array([0.23, 0.19, 0.15], np.float32)
+
+
+def sprig_masks(size, origin, direction, length, pairs=3, leaf=0.34, angle=40, stem=1.4):
+    """A short laurel sprig: a stem with leaf pairs and a terminal leaf."""
+    W, H = size
+    stem_img, leaf_img = Image.new('L', (W, H), 0), Image.new('L', (W, H), 0)
+    d = np.array(direction, np.float32)
+    d /= np.linalg.norm(d)
+    o = np.array(origin, np.float32)
+    tip = o + d * length
+    ImageDraw.Draw(stem_img).line([tuple(o), tuple(tip)], fill=255, width=max(1, int(stem)))
+    dl = ImageDraw.Draw(leaf_img)
+    n = np.array([-d[1], d[0]])
+    for i in range(pairs):
+        p = o + d * length * (0.22 + 0.62 * i / max(1, pairs - 1))
+        for side in (1, -1):
+            a = math.radians(angle) * side
+            dl.polygon(leaf_polygon(p, d * math.cos(a) + n * math.sin(a), length * leaf, length * leaf * 0.42), fill=255)
+    dl.polygon(leaf_polygon(tip - d * length * 0.05, d, length * leaf * 0.9, length * leaf * 0.38), fill=255)
+    return np.asarray(stem_img, np.float32) / 255, np.asarray(leaf_img, np.float32) / 255
+
+
+def flat(mask, colour, alpha=1.0):
+    rgba = np.dstack([np.broadcast_to(colour, mask.shape + (3,)), np.clip(mask, 0, 1) * alpha])
+    return rgba
+
+
+def gilt(mask, radius, strength=4.0):
+    height = dome(mask, radius)
+    albedo = np.broadcast_to(GILT, mask.shape + (3,)).copy()
+    return light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.5 * OSS), albedo,
+                        np.full(mask.shape, 0.95, np.float32), np.clip(mask, 0, 1), strength=strength)
+
+
+def to_image(rgba, size):
+    rgba = cv2.resize(rgba.astype(np.float32), size, interpolation=cv2.INTER_AREA)
+    return Image.fromarray((np.clip(rgba, 0, 1) * 255 + 0.5).astype('uint8'))
+
+
+def page_frame(name, gilded, box=(290, 56, 1630, 1030)):
+    """Double rule around the text block with laurel sprigs at the corners."""
+    W, H = 1920 * OSS, 1080 * OSS
+    lines = Image.new('L', (W, H), 0)
+    dl = ImageDraw.Draw(lines)
+    x0, y0, x1, y1 = (v * OSS for v in box)
+    gap = 7 * OSS
+    dl.rectangle([x0, y0, x1, y1], outline=255, width=int(1.6 * OSS))
+    dl.rectangle([x0 + gap, y0 + gap, x1 - gap, y1 - gap], outline=255, width=int(0.8 * OSS))
+    mask = np.asarray(lines, np.float32) / 255
+    # clear the corners for the sprigs
+    for cx, cy in ((x0, y0), (x1, y0), (x0, y1), (x1, y1)):
+        yy, xx = np.ogrid[0:H, 0:W]
+        mask = mask * (np.hypot(xx - cx, yy - cy) > 30 * OSS)
+    leaves = np.zeros_like(mask)
+    stems = np.zeros_like(mask)
+    for (cx, cy), (dx, dy) in (((x0, y0), (1, 1)), ((x1, y0), (-1, 1)), ((x0, y1), (1, -1)), ((x1, y1), (-1, -1))):
+        for direction in ((dx, 0), (0, dy)):
+            st, lf = sprig_masks((W, H), (cx + dx * 4 * OSS, cy + dy * 4 * OSS), direction, 46 * OSS, pairs=3)
+            stems, leaves = np.maximum(stems, st), np.maximum(leaves, lf)
+        dot = Image.new('L', (W, H), 0)
+        ImageDraw.Draw(dot).ellipse([cx - 5 * OSS, cy - 5 * OSS, cx + 5 * OSS, cy + 5 * OSS], fill=255)
+        leaves = np.maximum(leaves, np.asarray(dot, np.float32) / 255)
+    ornament = np.maximum(stems, leaves)
+    if gilded:
+        rgba = gilt(np.maximum(mask, ornament), 1.8 * OSS)
+        rgba[..., 3] *= 0.85
+    else:
+        rgba = flat(np.maximum(mask, ornament), INK_PRINT, 0.72)
+    save(to_image(rgba, (1920, 1080)), name)
+
+
+def page_rule(name, gilded, length=260, height=30):
+    """A laurel sprig that runs into a tapering rule, under a scene title."""
+    W, H = length * OSS, height * OSS
+    cy = H / 2
+    stem, leaves = sprig_masks((W, H), (6 * OSS, cy), (1, 0), 70 * OSS, pairs=3, angle=38)
+    line = Image.new('L', (W, H), 0)
+    dl = ImageDraw.Draw(line)
+    for i in range(300):
+        u = i / 300
+        x = 70 * OSS + (W - 76 * OSS) * u
+        th = 1.6 * OSS * (1 - 0.75 * u)
+        dl.rectangle([x, cy - th / 2, x + (W - 76 * OSS) / 300 + 1, cy + th / 2], fill=255)
+    fade = 1 - smoothstep((np.arange(W, dtype=np.float32)[None, :] / W - 0.55) / 0.45)
+    mask = np.maximum.reduce([stem, leaves, np.asarray(line, np.float32) / 255 * fade])
+    rgba = gilt(mask, 1.6 * OSS) if gilded else flat(mask, INK_PRINT, 0.85)
+    save(to_image(rgba, (length, height)), name)
+
+
+def initials(size=128):
+    """Illuminated initials A-Z: a raised gilt letter on celadon enamel inside a
+    beaded gilt border, with laurel sprigs in the corners."""
+    from PIL import ImageFont
+    font = ImageFont.truetype(SERIF, int(size * 0.78 * OSS))
+    W = H = size * OSS
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    edge = np.minimum.reduce([xx, yy, W - 1 - xx, H - 1 - yy])
+    border = ((edge < 7 * OSS) & (edge >= 0)).astype(np.float32)
+    bead_track = ((edge > 2.2 * OSS) & (edge < 4.8 * OSS)).astype(np.float32)
+    for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        glyph = Image.new('L', (W, H), 0)
+        dg = ImageDraw.Draw(glyph)
+        box = dg.textbbox((0, 0), letter, font=font)
+        gw, gh = box[2] - box[0], box[3] - box[1]
+        dg.text(((W - gw) / 2 - box[0], (H - gh) / 2 - box[1] + 2 * OSS), letter, font=font, fill=255)
+        g = np.asarray(glyph, np.float32) / 255
+        stems = np.zeros((H, W), np.float32)
+        leaves = np.zeros((H, W), np.float32)
+        for cx, cy, dx, dy in ((10, 10, 1, 1), (size - 10, 10, -1, 1), (10, size - 10, 1, -1), (size - 10, size - 10, -1, -1)):
+            st, lf = sprig_masks((W, H), (cx * OSS, cy * OSS), (dx, dy), 22 * OSS, pairs=2, leaf=0.42, angle=42, stem=1.2 * OSS)
+            stems, leaves = np.maximum(stems, st), np.maximum(leaves, lf)
+        field = 1 - border
+        height = (border * 0.55 + dome(bead_track, 1.2 * OSS) * 0.3 + field * 0.08
+                  + dome(np.maximum(stems, leaves) * field, 1.4 * OSS) * 0.35 + dome(g, 2.6 * OSS) * 1.2)
+        raised = np.clip(np.maximum.reduce([border, np.maximum(stems, leaves) * field, g]), 0, 1)
+        mottle = cv2.GaussianBlur(np.random.default_rng(ord(letter)).normal(0, 1, (H, W)).astype(np.float32), (0, 0), 3 * OSS)
+        enamel = CELADON * (0.9 + mottle[..., None] * 0.07)
+        albedo = enamel * (1 - raised[..., None]) + GILT * raised[..., None]
+        rgba = light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.5 * OSS), albedo, raised * 0.95,
+                            np.ones((H, W), np.float32), strength=4.5)
+        save(to_image(rgba, (size, size)), 'initials/' + letter + '.png')
+
+
 def main():
     scrim()
     arch(236, 300, 'speaker')
     arch(150, 191, 'listener')
+    arch_frame(236, 300, 'arch-frame-speaker.png')
+    arch_frame(150, 191, 'arch-frame-listener.png')
+    speech_rail(1060, 'speech-rail.png')
+    page_frame('page-frame-ink.png', gilded=False)
+    page_frame('page-frame-gilt.png', gilded=True)
+    page_rule('page-rule-ink.png', gilded=False)
+    page_rule('page-rule-gilt.png', gilded=True)
+    initials()
     thread_line(30, 'thread-name.png')
     thread_line(150, 'thread-heading.png')
     thread_line(150, 'thread-heading-ink.png', color=(122, 88, 46))

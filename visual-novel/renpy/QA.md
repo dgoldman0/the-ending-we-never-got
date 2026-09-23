@@ -1,5 +1,15 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## Light, ornament and portraits — 23 September 2026, second round
+
+The user found the framing too dull and asked for the uncomfortable light to stay visible and readable. They then rejected an eye-adaptation fade: the distortion must be permanent in the image.
+
+- **Light:** `tools/grade-light.py` renders 46 stages, 8 single images and 23 portraits into bright, ordinary or night, in both modes. Each image is split edge-aware into large-scale light and local detail; the light is distorted, the detail kept. No transitions are involved. Inspected at 1920×1080 in all three registers and both modes: faces stay readable in glare and at night, and ordinary daylight reads as uneasy.
+- **Ornament:** portrait arches are gilt relief with a laurel garland on celadon enamel and a twelve-ray sun keystone, lit like metal and dimmed or brightened with the scene's light. Speech gets a gilt rail under the name; narration stays plain italic. Book pages get a framed text block, a laurel rule and illuminated initials (inline, so the text and history stay exact).
+- **Portraits:** the S001–S005 heads were rebuilt from their neutral sheets (`tools/finish-portraits.py`): the GIMP masks reused and refined along hair, ground colour removed from edges, painted outlines choked, necks dissolving into shadow. GPT's six Lucan and Valcair portraits appear on book pages in the margin; Tessa's bare-head portraits stand in for her missing period sets in S012–S031 only.
+- **Fixed on the way:** the raised initial first opened a gap below its line and overlapped entries in History; the dead-phone detail was nearly black under the night grade.
+- **Checks:** 13 test cases (191 assertions) pass in the sandbox; lint is clean.
+
 ## 0.5.0-dev interface and infrastructure pass — 23 September 2026
 
 Built at the user's direction after the window proof failed. Not yet reviewed by the user; the maker's inspection below is not approval.

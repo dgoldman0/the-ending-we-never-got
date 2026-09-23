@@ -2,6 +2,7 @@
 # Bundle current scene and interface images at full quality. Retired character
 # cutouts remain on disk for comparison and are not used or preloaded.
 - image game/ui/**
+- image game/art/lit/**
 - image game/art/scenes/**
 - image game/art/portraits/**
 - image game/art/cg/**

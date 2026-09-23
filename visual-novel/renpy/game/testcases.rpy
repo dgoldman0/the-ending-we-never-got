@@ -374,15 +374,15 @@ testcase lighting_preference:
     assert eval not persistent.intense_lighting
     click id 'menu_return'
     click id 'main_begin'
-    assert eval lighting_art(current_rovel_beat()['stage']['image']).startswith('art/softened/')
+    assert eval stage_image().endswith('-softened.webp') and current_register() == 'bright'
     advance until eval source_line == 54
-    assert eval all(lighting_art(current_rovel_beat()[role]['image']).startswith('art/softened/rovel/') for role in ('speaker', 'listener'))
+    assert eval all(portrait_source(current_rovel_beat()[role]['image']).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
     screenshot 'softened-cast.png'
     click 'Menu'
     click id 'lighting_intense'
     click id 'menu_return'
     assert eval source_line == 54 and source_page == 0 and persistent.intense_lighting
-    assert eval lighting_art(current_rovel_beat()['speaker']['image']) == current_rovel_beat()['speaker']['image']
+    assert eval portrait_source(current_rovel_beat()['speaker']['image']).endswith('-bright-intense.webp')
     advance until eval source_line == 90
     click 'Menu'
     click id 'lighting_softened'
@@ -391,7 +391,7 @@ testcase lighting_preference:
     screenshot 'softened-doorway.png'
     advance until eval source_line == 112
     click id 'look_closer'
-    assert eval all(lighting_art(detail_views[detail]['image']).startswith('art/softened/') for detail in ('drawing', 'phone'))
+    assert eval all(lighting_art(detail_views[detail]['image']).endswith('-softened.webp') for detail in ('drawing', 'phone'))
     click id 'menu_return'
     click 'Save'
     click id 'file_slot_4'
@@ -409,7 +409,10 @@ testcase lighting_preference:
     click id 'lighting_softened'
     click id 'menu_return'
     advance until eval source_line == 176
-    assert eval lighting_art(current_rovel_beat()['stage']['image']).startswith('art/softened/rovel/')
+    assert eval stage_image().endswith('-softened.webp')
+    $ persistent.intense_lighting = True
+    assert eval stage_image().endswith('-intense.webp')
+    $ persistent.intense_lighting = False
     run Jump('s007')
     pause 0.5
     assert eval page_ground(scene_light()) == 'ui/page-night-soft.webp'
@@ -437,6 +440,21 @@ testcase staging_pipeline:
     assert eval stage_faces('Mara')[0]['image'].endswith('mara-controlled-ordinary.png')
     assert eval stage_faces('Mara')[1]['who'] == 'TESSA'
     $ persistent.intense_lighting = False
-    assert eval lighting_art(stage_faces('Mara')[0]['image']).startswith('art/softened/')
+    assert eval portrait_source(stage_faces('Mara')[0]['image']) == 'art/lit/portraits/mara-controlled-ordinary-softened.webp'
     $ persistent.intense_lighting = True
     $ STAGING['6']['stages'] = _planned_stages
+
+testcase page_portraits_and_initials:
+    # Book pages show the speaker (and listener) in the margin and open each
+    # scene with an illuminated initial; history keeps the plain letter.
+    click id 'main_begin'
+    run Jump('s019')
+    pause 0.5
+    assert eval nvl_list and '{image=initial_T}' in nvl_list[-1][1]
+    advance until eval scene_speaker == 'LUCAN'
+    assert eval staging_faces()[0]['image'] == 'art/portraits/lucan-early-speaking.png'
+    advance until eval scene_speaker == 'TESSA'
+    assert eval staging_faces()[0]['image'].endswith('tessa-resolute-working-ordinary.png')
+    assert eval staging_faces()[1]['image'] == 'art/portraits/lucan-early-listening.png'
+    assert eval portrait_source(staging_faces()[1]['image']).startswith('art/lit/portraits/lucan-early-listening-')
+    assert eval any(plain_initial(h.what).startswith('Tessa catches') for h in _history_list)

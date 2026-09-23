@@ -1,4 +1,8 @@
-# Two lighting treatments
+# Light registers
+
+**Current, 23 September 2026:** scene images, discovery details and portraits are rendered into their light register by [tools/grade-light.py](../../tools/grade-light.py): bright, ordinary or night, each in Intense and Softened from one source. The distortion is permanent in the image (glare, halation, colour splitting, sallow or cold casts, uneven exposure, sunk night light) while local detail is preserved; there is no fade or adaptation. The game reads `renpy/game/lit-assets.json`. The history below describes the earlier two-treatment approach, whose Softened grades are now the neutral sources for the new grading.
+
+## Earlier: two lighting treatments
 
 The user requested an option to turn off the extreme glare and darkness. **Intense** remains the artistic default. **Softened** is a persistent reader preference, available under Settings → Lighting from the title and during play.
 

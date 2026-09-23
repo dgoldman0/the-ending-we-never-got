@@ -289,9 +289,9 @@ screen history():
                         fixed:
                             xsize 1120 yfit True
                             text h.who.lower() font ui_caps size 22 kerning 2.6 color ui_gold xpos 150 xanchor 1.0 ypos 8
-                            text h.what font ui_serif size text_size(31) color ui_ivory xpos 176 xmaximum 940 line_spacing 7 substitute False
+                            text plain_initial(h.what) font ui_serif size text_size(31) color ui_ivory xpos 176 xmaximum 940 line_spacing 7 substitute False
                     else:
-                        text h.what font ui_italic size text_size(31) color ui_ivory_soft xpos 176 xmaximum 940 line_spacing 7 substitute False
+                        text plain_initial(h.what) font ui_italic size text_size(31) color ui_ivory_soft xpos 176 xmaximum 940 line_spacing 7 substitute False
 
 # ------------------------------------------------------------------ about
 

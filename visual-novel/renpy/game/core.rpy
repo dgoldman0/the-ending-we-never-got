@@ -128,7 +128,13 @@ screen story_stage():
         add Solid('#0b1014')
         $ beat = current_rovel_beat()
         $ shot = opening_shot()
-        if beat:
+        if beat and lit_stage(beat['stage_id']):
+            $ lift = stage_framing().get('lift', 0)
+            add lit_stage(beat['stage_id']) xysize (1920, 1080) yoffset -lift
+            if lift:
+                add "ui/edge-fade.png" xsize 1920 ysize 220 ypos (1080 - lift - 220)
+                add Solid('#0b1014') ypos (1080 - lift)
+        elif beat:
             $ lift = stage_framing().get('lift', 0)
             fixed:
                 yoffset -lift

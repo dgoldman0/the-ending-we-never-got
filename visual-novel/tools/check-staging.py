@@ -6,7 +6,9 @@
 
 Errors (exit 1): unknown scenes, override lines that are not source lines,
 cast names that never speak in their scene. Missing art is not an error; those
-scenes simply stay on the typeset page until their files arrive.
+scenes simply stay on the typeset page until their files arrive. New files
+need tools/grade-light.py (both light modes) and, for portraits,
+tools/portrait-faces.py.
 """
 from pathlib import Path
 import argparse
@@ -18,7 +20,25 @@ GAME = ROOT / 'renpy/game'
 EXPRESSIONS = ('speaking', 'listening')
 
 
+def portrait_key(path):
+    """The neutral master a portrait path resolves to (as ui-reading.rpy does)."""
+    stem = Path(path).stem
+    if path.startswith('art/rovel/portraits/'):
+        for suffix in ('-bright', '-night', '-ordinary'):
+            if stem.endswith(suffix):
+                stem = stem[:-len(suffix)]
+                break
+        for wardrobe in ('-arrival-cloak', '-arrival', '-formal', '-working'):
+            if stem.endswith(wardrobe):
+                stem = stem[:-len(wardrobe)]
+                break
+    return stem
+
+
 def portrait_files(entry):
+    """The planned files for a cast entry; for a list, the first (planned) choice."""
+    if isinstance(entry, list):
+        return portrait_files(entry[0])
     if isinstance(entry, dict):
         return sorted(set(entry.values()))
     return ['art/portraits/%s-%s.png' % (entry, expression) for expression in EXPRESSIONS]
@@ -60,12 +80,14 @@ def main():
           % (len(staging), len(lit), len(staging) - len(lit)))
     print('Paintings: %d of %d present.' % (sum(map(present, stages)), len(stages)))
     print('Portraits: %d of %d present.' % (sum(map(present, portraits)), len(portraits)))
-    unpaired = [path for path in list(stages) + list(portraits)
-                if present(path) and path.startswith('art/') and not path.startswith('art/rovel/')
-                and not (GAME / ('art/softened/' + path[4:])).is_file()]
-    if unpaired:
-        print('Present without a Softened twin (Intense is shown in both modes):')
-        for path in unpaired:
+    lit_path = GAME / 'lit-assets.json'
+    lit = json.loads(lit_path.read_text()) if lit_path.is_file() else {}
+    ungraded = [path for path in stages if present(path) and path not in lit.get('images', {})]
+    ungraded += [path for path in portraits if present(path)
+                 and portrait_key(path) not in lit.get('portraits', {})]
+    if ungraded:
+        print('Present but not yet graded into the light registers (run tools/grade-light.py):')
+        for path in ungraded:
             print('  ' + path)
     if args.missing:
         print('\nAwaited paintings:')

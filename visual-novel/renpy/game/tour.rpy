@@ -134,3 +134,53 @@ testcase ui_tour_states:
     keysym 'h'
     pause 0.6
     screenshot 's10-hidden.png'
+
+testcase ui_tour_light:
+    # The light registers, rendered frames and book pages (both modes).
+    $ _test.timeout = 90.0
+    $ _preferences.text_cps = 0
+    $ _test.screenshot_directory = 'test-output/tour-light'
+    run Preference('display', 'fullscreen')
+    pause 1.0
+    click id 'main_begin'
+    advance until eval source_line == 32
+    pause 1.2
+    screenshot 'bright-intense.png'
+    $ persistent.intense_lighting = False
+    pause 1.0
+    screenshot 'bright-softened.png'
+    $ persistent.intense_lighting = True
+    advance until eval source_line == 81
+    pause 1.2
+    screenshot 'night-intense.png'
+    $ persistent.intense_lighting = False
+    pause 1.0
+    screenshot 'night-softened.png'
+    $ persistent.intense_lighting = True
+    advance until eval source_line == 112
+    click id 'look_closer'
+    click id 'bring_alongside'
+    pause 2.2
+    screenshot 'closer-night.png'
+    click id 'menu_return'
+    advance until eval source_line == 124
+    pause 1.2
+    screenshot 'ordinary-ward.png'
+    advance until eval source_line == 228
+    pause 1.2
+    screenshot 'ordinary-window.png'
+    run Jump('s006')
+    pause 0.5
+    click id 'chapter_continue'
+    pause 1.2
+    screenshot 'page-day-initial.png'
+    run Jump('s010')
+    pause 1.0
+    advance until eval scene_speaker == 'VALCAIR'
+    pause 1.2
+    screenshot 'page-night-valcair.png'
+    run Jump('s019')
+    pause 1.0
+    advance until eval scene_speaker == 'TESSA'
+    pause 1.2
+    screenshot 'page-day-lucan.png'

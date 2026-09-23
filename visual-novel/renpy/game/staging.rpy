@@ -10,7 +10,8 @@
 # Scene entry:
 #   "stages": [{"image": path, "from": first source line, "alt": description,
 #               "framing": {"lift": px} or {"text": [x, y, width]}}]
-#   "cast":   {"SPEAKER": portrait set name, or {"speaking": path, "listening": path}}
+#   "cast":   {"SPEAKER": portrait set name, or {"speaking": path, "listening": path},
+#              or a list of those, tried in order (a planned set, then a stand-in)}
 #   "lines":  {"<source line>": {"speaker_expression": name,
 #                                "listener": "NAME" or null,
 #                                "listener_expression": name}}
@@ -57,14 +58,21 @@ init -1 python:
         return _previous_cache[key]
 
     def _portrait_file(entry, expression, role):
-        # Game code sees Ren'Py's revertable dict type as `dict`, so test for
-        # the string case: a set name. Otherwise it maps roles to files.
-        if not isinstance(entry, str):
+        # Ren'Py rebinds list and dict inside game code, so the entry is told
+        # apart by behaviour: a set name (str), a role map (has .get), or a
+        # sequence of candidates tried in order.
+        if isinstance(entry, str):
+            for name in (entry + '-' + expression, entry):
+                path = 'art/portraits/' + name + '.png'
+                if renpy.loadable(path):
+                    return path
+            return None
+        if hasattr(entry, 'get'):
             path = entry.get(role) or entry.get('speaking')
             return path if path and renpy.loadable(path) else None
-        for name in (entry + '-' + expression, entry):
-            path = 'art/portraits/' + name + '.png'
-            if renpy.loadable(path):
+        for candidate in entry:
+            path = _portrait_file(candidate, expression, role)
+            if path:
                 return path
         return None
 

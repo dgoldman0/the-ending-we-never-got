@@ -158,7 +158,7 @@ init -1 python:
     def stage_image():
         beat = current_rovel_beat()
         if beat:
-            return beat['stage']['image']
+            return lit_stage(beat['stage_id']) or beat['stage']['image']
         shot = opening_shot()
         if opening_assets_available(shot):
             return shot['image']
@@ -234,24 +234,52 @@ init -1 python:
         x, y = PORTRAIT_POS[role]
         y += stage_framing().get('lift', 0)
         box = (int(x * k), int(min(y, 1080 - h) * k), int(w * k), int(h * k))
-        tinted = Transform(Crop(box, lighting_art(image)), xysize=(w, h), blur=9,
+        source = image if image.startswith('art/lit/') else lighting_art(image)
+        tinted = Transform(Crop(box, source), xysize=(w, h), blur=9,
                            matrixcolor=SaturationMatrix(0.65))
         return Fixed(tinted, Solid('#0a0d10b4'), xysize=(w, h))
 
+    def portrait_key(path):
+        """The neutral master behind a portrait path. The S001-S005 plan names
+        files by expression, wardrobe and old grade; the heads are the same
+        painting in every wardrobe, so they share one master."""
+        stem = path.rsplit('/', 1)[-1].rsplit('.', 1)[0]
+        if path.startswith('art/rovel/portraits/'):
+            for suffix in ('-bright', '-night', '-ordinary'):
+                if stem.endswith(suffix):
+                    stem = stem[:-len(suffix)]
+                    break
+            for wardrobe in ('-arrival-cloak', '-arrival', '-formal', '-working'):
+                if stem.endswith(wardrobe):
+                    stem = stem[:-len(wardrobe)]
+                    break
+        return stem
+
+    def portrait_source(path):
+        """The portrait graded into the scene's light register and mode."""
+        entry = LIT.get('portraits', {}).get(portrait_key(path))
+        if entry:
+            return entry[current_register()][light_mode()]
+        return lighting_art(path)
+
+    def lit_ornament(image):
+        """Gilt ornament takes the scene's light too."""
+        matrix = frame_light()
+        return Transform(image, matrixcolor=matrix) if matrix is not None else image
+
     def portrait_cameo(face, role, grade=None):
         w, h = PORTRAIT_SIZES[role]
-        key = face['image'].rsplit('/', 1)[-1][:-4]
-        fx, fy, fs = PORTRAIT_FACES.get(key) or [120, 140, 270]
-        scale = (w * 0.66) / float(fs)
+        fx, fy, fs = PORTRAIT_FACES.get(portrait_key(face['image'])) or [150, 170, 330]
+        scale = (w * 0.6) / float(fs)
         cx, cy = (fx + fs / 2.0) * scale, (fy + fs / 2.0) * scale
-        head = Transform(lighting_art(face['image']), zoom=scale,
-                         xpos=int(w * 0.5 - cx), ypos=int(h * 0.47 - cy))
+        head = Transform(portrait_source(face['image']), zoom=scale,
+                         xpos=int(w * 0.5 - cx), ypos=int(h * 0.5 - cy))
         inner = Fixed(portrait_backdrop(role), head,
                       'ui/arch-vignette-' + role + '.png', xysize=(w, h))
         cameo = Fixed(AlphaMask(inner, 'ui/arch-mask-' + role + '.png'),
-                      'ui/arch-line-' + role + '.png', xysize=(w, h))
+                      lit_ornament('ui/arch-frame-' + role + '.png'), xysize=(w, h))
         if role == 'listener' and grade != 'night':
-            cameo = Transform(cameo, matrixcolor=SaturationMatrix(0.82) * BrightnessMatrix(-0.05))
+            cameo = Transform(cameo, matrixcolor=SaturationMatrix(0.85) * BrightnessMatrix(-0.04))
         return cameo
 
     def scrim_strength(beat):
@@ -276,10 +304,38 @@ init -1 python:
 
     def page_colors(light):
         if light == 'day':
-            return dict(ink=ui_ink, soft=ui_ink_soft, gold=ui_ink_gold, rule='ui/thread-heading-ink.png')
-        return dict(ink=ui_ivory, soft=ui_ivory_soft, gold=ui_gold, rule='ui/thread-heading.png')
+            return dict(ink=ui_ink, soft=ui_ink_soft, gold=ui_ink_gold,
+                        rule='ui/page-rule-ink.png', frame='ui/page-frame-ink.png')
+        return dict(ink=ui_ivory, soft=ui_ivory_soft, gold=ui_gold,
+                    rule='ui/page-rule-gilt.png', frame='ui/page-frame-gilt.png')
+
+    def split_initial(what):
+        """(letter, rest) for an illuminated hanging initial, or (None, what).
+        Leading text tags (small caps runs) stay with the rest of the text."""
+        i, prefix = 0, ''
+        while what.startswith('{', i):
+            j = what.find('}', i)
+            if j < 0:
+                break
+            prefix += what[i:j + 1]
+            i = j + 1
+        if i < len(what) and what[i].isalpha() and what[i].upper() in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+            return what[i].upper(), prefix + what[i + 1:]
+        return None, what
+
+    # In page mode the portraits sit in the left margin, outside the text frame.
+    PAGE_PORTRAIT_POS = {'speaker': (27, 250), 'listener': (70, 570)}
 
 define narrator = ReaderVoice(None)
+
+init python:
+    # Inline illuminated initials, raised on the first line of a page scene.
+    # The box is one line tall so the line keeps its height; the tile draws
+    # upward into the space above the paragraph, its foot on the first line.
+    for _letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        renpy.image('initial_' + _letter, Fixed(
+            Transform('ui/initials/' + _letter + '.png', zoom=0.7, ypos=-44),
+            xysize=(93, 46)))
 
 style stage_speech:
     font ui_serif
@@ -381,10 +437,10 @@ screen say(who, what):
             if portrait_ready(listener):
                 add portrait_cameo(listener, 'listener', grade) pos (366, 853)
         if heading:
-            text scene_heading_line() style "stage_heading" pos (STAGE_TEXT_X, top - (112 if who else 58))
+            text scene_heading_line() style "stage_heading" pos (STAGE_TEXT_X, top - (142 if who else 58))
         if who:
-            add "ui/thread-name.png" pos (STAGE_TEXT_X - 24, top - 47)
-            text who.lower() id "who" pos (STAGE_TEXT_X + 14, top - 62)
+            add lit_ornament("ui/speech-rail.png") pos (STAGE_TEXT_X - 50, top - 45)
+            text who.lower() id "who" pos (STAGE_TEXT_X + 8, top - 76)
         text what id "what" pos (STAGE_TEXT_X, top) xmaximum STAGE_TEXT_W size text_size(38)
     if persistent.art_descriptions and current_art_description():
         frame:
@@ -426,6 +482,12 @@ screen quick_menu(light='stage'):
 screen nvl(dialogue, items=None):
     $ light = scene_light()
     $ c = page_colors(light)
+    add c['frame']
+    $ speaker, listener = staging_faces()
+    if portrait_ready(speaker):
+        add portrait_cameo(speaker, 'speaker', current_register()) pos PAGE_PORTRAIT_POS['speaker']
+        if portrait_ready(listener):
+            add portrait_cameo(listener, 'listener', current_register()) pos PAGE_PORTRAIT_POS['listener']
     if page_index == 0:
         vbox:
             xpos PAGE_X ypos 108
@@ -434,10 +496,10 @@ screen nvl(dialogue, items=None):
             text scene_place_name() style "page_place" color c['ink']
             if scene_time_name():
                 text scene_time_name() style "page_time" color c['soft']
-            null height 20
-            add c['rule'] xoffset -12
+            null height 16
+            add c['rule'] xoffset -8
     else:
-        text (chapter_label() + '  ·  ' + scene_place_name().lower()) style "page_running" color c['soft'] xpos PAGE_X ypos 70
+        text (chapter_label() + '  ·  ' + scene_place_name().lower()) style "page_running" color c['soft'] xpos PAGE_X ypos 84
     vbox:
         xpos PAGE_X ypos (PAGE_FIRST_TOP if page_index == 0 else PAGE_NEXT_TOP)
         spacing PAGE_GAP

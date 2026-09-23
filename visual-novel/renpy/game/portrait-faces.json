@@ -1,228 +1,7 @@
 {
  "_note": "Face boxes [x, y, size] in each dialogue portrait, measured by tools/portrait-faces.py (OpenCV). \"overrides\" holds manual boxes for portraits the detector cannot read; they take precedence. Portrait frames scale by the box and centre on it.",
- "faces": {
-  "iven-attentive-bright": [
-   57,
-   120,
-   259
-  ],
-  "iven-attentive-ordinary": [
-   48,
-   111,
-   285
-  ],
-  "iven-concerned-bright": [
-   52,
-   152,
-   263
-  ],
-  "iven-concerned-ordinary": [
-   48,
-   148,
-   273
-  ],
-  "mara-controlled-bright": [
-   217,
-   111,
-   254
-  ],
-  "mara-controlled-night": [
-   216,
-   111,
-   246
-  ],
-  "mara-controlled-ordinary": [
-   208,
-   105,
-   265
-  ],
-  "mara-uneasy-bright": [
-   209,
-   110,
-   260
-  ],
-  "mara-uneasy-night": [
-   212,
-   111,
-   250
-  ],
-  "mara-uneasy-ordinary": [
-   208,
-   109,
-   263
-  ],
-  "messenger-bright": [
-   216,
-   87,
-   280
-  ],
-  "olan-bright": [
-   42,
-   108,
-   245
-  ],
-  "olan-ordinary": [
-   38,
-   104,
-   251
-  ],
-  "orra-bright": [
-   45,
-   87,
-   254
-  ],
-  "petitioner-bright": [
-   240,
-   72,
-   264
-  ],
-  "senn-assuring-bright": [
-   192,
-   96,
-   288
-  ],
-  "senn-evasive-bright": [
-   187,
-   99,
-   282
-  ],
-  "senn-listening-bright": [
-   191,
-   98,
-   279
-  ],
-  "tessa-listening-arrival-bright": [
-   48,
-   158,
-   277
-  ],
-  "tessa-listening-arrival-cloak-night": [
-   49,
-   162,
-   267
-  ],
-  "tessa-listening-arrival-night": [
-   49,
-   162,
-   267
-  ],
-  "tessa-listening-formal-bright": [
-   48,
-   158,
-   277
-  ],
-  "tessa-listening-formal-ordinary": [
-   48,
-   161,
-   272
-  ],
-  "tessa-listening-working-ordinary": [
-   48,
-   161,
-   272
-  ],
-  "tessa-resolute-arrival-bright": [
-   48,
-   161,
-   278
-  ],
-  "tessa-resolute-arrival-cloak-night": [
-   49,
-   163,
-   276
-  ],
-  "tessa-resolute-arrival-night": [
-   49,
-   163,
-   276
-  ],
-  "tessa-resolute-formal-bright": [
-   48,
-   161,
-   278
-  ],
-  "tessa-resolute-formal-ordinary": [
-   51,
-   166,
-   268
-  ],
-  "tessa-resolute-working-ordinary": [
-   51,
-   166,
-   268
-  ],
-  "tessa-startled-arrival-bright": [
-   40,
-   144,
-   293
-  ],
-  "tessa-startled-arrival-cloak-night": [
-   49,
-   151,
-   278
-  ],
-  "tessa-startled-arrival-night": [
-   49,
-   151,
-   278
-  ],
-  "tessa-startled-formal-bright": [
-   40,
-   144,
-   293
-  ],
-  "tessa-startled-formal-ordinary": [
-   43,
-   145,
-   286
-  ],
-  "tessa-startled-working-ordinary": [
-   43,
-   145,
-   286
-  ],
-  "tessa-wounded-arrival-bright": [
-   54,
-   162,
-   263
-  ],
-  "tessa-wounded-arrival-cloak-night": [
-   53,
-   160,
-   266
-  ],
-  "tessa-wounded-arrival-night": [
-   53,
-   160,
-   266
-  ],
-  "tessa-wounded-formal-bright": [
-   54,
-   162,
-   263
-  ],
-  "tessa-wounded-formal-ordinary": [
-   44,
-   153,
-   280
-  ],
-  "tessa-wounded-working-ordinary": [
-   44,
-   153,
-   280
-  ]
- },
+ "faces": {},
  "overrides": {
-  "mother-ordinary": [
-   90,
-   125,
-   250
-  ],
-  "priest-ordinary": [
-   200,
-   120,
-   250
-  ],
   "lucan-early-speaking": [
    290,
    230,
@@ -252,6 +31,91 @@
    350,
    220,
    760
+  ],
+  "tessa-startled": [
+   54,
+   181,
+   358
+  ],
+  "tessa-resolute": [
+   64,
+   208,
+   335
+  ],
+  "tessa-wounded": [
+   55,
+   191,
+   350
+  ],
+  "tessa-listening": [
+   60,
+   201,
+   340
+  ],
+  "senn-assuring": [
+   160,
+   120,
+   360
+  ],
+  "senn-listening": [
+   159,
+   122,
+   349
+  ],
+  "senn-evasive": [
+   154,
+   124,
+   352
+  ],
+  "mara-controlled": [
+   260,
+   131,
+   331
+  ],
+  "mara-uneasy": [
+   260,
+   136,
+   329
+  ],
+  "iven-attentive": [
+   60,
+   139,
+   356
+  ],
+  "iven-concerned": [
+   60,
+   185,
+   341
+  ],
+  "olan": [
+   46,
+   129,
+   318
+  ],
+  "priest": [
+   250,
+   150,
+   312
+  ],
+  "mother": [
+   112,
+   156,
+   312
+  ],
+  "petitioner": [
+   300,
+   90,
+   330
+  ],
+  "orra": [
+   56,
+   109,
+   318
+  ],
+  "messenger": [
+   270,
+   109,
+   350
   ]
  }
 }

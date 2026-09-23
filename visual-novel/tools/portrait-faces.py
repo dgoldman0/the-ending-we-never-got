@@ -20,7 +20,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 GAME = ROOT / 'renpy/game'
 DATA = GAME / 'portrait-faces.json'
-FOLDERS = ['art/rovel/portraits', 'art/portraits']
+FOLDERS = ['art/cast', 'art/portraits']
 NOTE = ('Face boxes [x, y, size] in each dialogue portrait, measured by tools/portrait-faces.py '
         '(OpenCV). "overrides" holds manual boxes for portraits the detector cannot read; they take '
         'precedence. Portrait frames scale by the box and centre on it.')

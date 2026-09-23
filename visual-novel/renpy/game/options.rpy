@@ -39,6 +39,8 @@ init python:
     build.classify('game/art/sprites/**', None)
     build.classify('game/testcases.rpy', None)
     build.classify('game/testcases.rpyc', None)
+    # Neutral portrait masters are grading sources; the game shows art/lit/.
+    build.classify('game/art/cast/**', None)
     build.classify('game/tour.rpy', None)
     build.classify('game/tour.rpyc', None)
     build.classify('game/rovel-review.rpy', None)

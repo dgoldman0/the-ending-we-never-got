@@ -1,5 +1,5 @@
 {
- "_note": "Staging for S006-S058, read by staging.rpy. Each scene lists its planned painting(s) and a portrait set per speaker. Nothing appears until the file exists. Early scenes reuse the S001-S005 portraits where wardrobe and age still match; later periods need new sets. See art/asset-request.md for the specification of each file.",
+ "_note": "Staging for S006-S058, read by staging.rpy. Each scene lists its planned painting(s) and a portrait set per speaker. Nothing appears until the file exists. Early scenes reuse the S001-S005 portraits where wardrobe and age still match; later periods need new sets. See art/asset-request.md for the specification of each file. A cast entry may be a list: the first available portrait is used, so a planned period set replaces an interim stand-in as soon as it exists. Tessa's bare-head S001-S005 portraits stand in for S012-S031 only, where her age differs by about a year; there is no stand-in after Harrow.",
  "scenes": {
   "6": {
    "heading": "EXT. CONVOY CAMP - AFTERNOON",
@@ -192,7 +192,13 @@
    "cast": {
     "ADA": "ada",
     "HEST": "hest",
-    "TESSA": "tessa-winter"
+    "TESSA": [
+     "tessa-winter",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -208,7 +214,13 @@
    ],
    "cast": {
     "ELIN": "elin",
-    "TESSA": "tessa-winter"
+    "TESSA": [
+     "tessa-winter",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -258,7 +270,13 @@
      "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
      "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
     },
-    "TESSA": "tessa-winter"
+    "TESSA": [
+     "tessa-winter",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -298,7 +316,13 @@
      "speaking": "art/rovel/portraits/mara-controlled-ordinary.png",
      "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
     },
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -332,7 +356,13 @@
      "listening": "art/rovel/portraits/iven-attentive-ordinary.png"
     },
     "LUCAN": "lucan-early",
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -357,7 +387,13 @@
      "listening": "art/rovel/portraits/mara-controlled-ordinary.png"
     },
     "PICKET OFFICER": "picket-officer",
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -412,7 +448,13 @@
      "speaking": "art/rovel/portraits/orra-bright.png",
      "listening": "art/rovel/portraits/orra-bright.png"
     },
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -446,7 +488,13 @@
     "GOVERNOR": "governor",
     "HEALER": "camp-healer",
     "LUCAN": "lucan-early",
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },
@@ -493,7 +541,13 @@
     "APPRENTICE": "apprentice",
     "LUCAN": "lucan-early",
     "ORREN": "orren",
-    "TESSA": "tessa-campaign-early"
+    "TESSA": [
+     "tessa-campaign-early",
+     {
+      "speaking": "art/rovel/portraits/tessa-resolute-working-ordinary.png",
+      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
+     }
+    ]
    },
    "lines": {}
   },

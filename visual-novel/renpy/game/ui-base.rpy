@@ -49,7 +49,30 @@ init -2 python:
         text = typeset(text)
         if text.startswith("SUPER: "):
             return "{#super}" + _CAPS_RUN.sub(_small_caps, text[7:])
-        return _CAPS_RUN.sub(_small_caps, text)
+        text = _CAPS_RUN.sub(_small_caps, text)
+        return with_initial(text)
+
+    _INITIAL_TAG = re.compile(r"\{image=initial_([A-Z])\}\{alt\}[A-Z]\{/alt\}")
+
+    def plain_initial(text):
+        """The text with its illuminated initial back as an ordinary letter."""
+        return _INITIAL_TAG.sub(r"\1", text)
+
+    def with_initial(text):
+        """A scene read on the page opens with an illuminated initial: the
+        first letter becomes a raised gilt capital set inline, and the letter
+        itself stays in the text for self-voicing (alt tag) and history."""
+        try:
+            opening = (current_scene > 0 and not source_page and scene_speaker is None
+                       and first_line_of_scene() and not staged_scene())
+        except Exception:
+            return text
+        if not opening:
+            return text
+        letter, rest = split_initial(text)
+        if not letter:
+            return text
+        return '{image=initial_' + letter + '}{alt}' + letter + '{/alt}' + rest
 
     def is_super_caption(what):
         return what.startswith("{#super}")
