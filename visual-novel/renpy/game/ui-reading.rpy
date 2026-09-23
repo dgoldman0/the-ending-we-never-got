@@ -411,7 +411,6 @@ screen quick_menu(light='stage'):
 screen nvl(dialogue, items=None):
     $ light = scene_light()
     $ c = page_colors(light)
-    add page_ground(light)
     if page_index == 0:
         vbox:
             xpos PAGE_X ypos 108

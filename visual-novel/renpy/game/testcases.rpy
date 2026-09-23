@@ -34,6 +34,12 @@ testcase reading_and_discovery:
     assert eval current_rovel_beat()['listener']['who'] == 'SENN'
     # The principal pair stays in the room during compact exchanges.
     assert eval current_rovel_beat()['stage']['actors']
+    # Hiding the words (H) leaves the painting: the stage lives on the image layer.
+    keysym 'h'
+    assert eval renpy.get_screen('story_stage', layer='master') is not None
+    assert not screen 'say'
+    keysym 'h'
+    assert screen 'say'
     advance until eval source_line == 110
     assert eval not available_inspections() and not closer_here()
     advance until eval source_line == 112
@@ -156,6 +162,11 @@ testcase page_reading:
     assert screen 'nvl'
     assert eval page_scene == 6 and page_index == 0 and len(nvl_list) == 1
     assert eval scene_light() == 'day'
+    keysym 'h'
+    assert eval renpy.get_screen('story_stage', layer='master') is not None
+    assert not screen 'nvl'
+    keysym 'h'
+    assert screen 'nvl'
     advance
     advance
     assert eval len(nvl_list) == 3 and page_index == 0

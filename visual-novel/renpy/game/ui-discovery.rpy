@@ -48,15 +48,17 @@ init python:
         scale = min(max_w / float(w), max_h / float(h), 2.0)
         return int(w * scale), int(h * scale)
 
-screen detail_card(view, which, width, delay=0.0, max_h=420):
+screen detail_card(view, which, width, delay=0.0, max_h=420, box_h=None):
     $ item, title, caption = view_detail(view, which)
     $ bw, bh = detail_box(item, width, max_h)
     vbox at detail_arrive(delay):
         spacing 14 xsize width
         fixed:
-            xysize (bw, bh)
-            add lighting_art(item['image']) xysize (bw, bh)
-            add Frame("ui/frame-line.png", 6, 6) xysize (bw, bh)
+            xysize (width, box_h or bh)
+            fixed:
+                xysize (bw, bh) yalign 0.5
+                add lighting_art(item['image']) xysize (bw, bh)
+                add Frame("ui/frame-line.png", 6, 6) xysize (bw, bh)
         null height 4
         text title style "detail_title"
         text caption style "detail_caption" xmaximum width
@@ -83,18 +85,17 @@ screen look_closer(detail=None, connection=False, view=None):
                 pos (110, 262) xysize (860, 700)
                 use detail_card(current_view, 'first', 860)
         else:
-            fixed:
-                pos (110, 262) xysize (1700, 720)
-                fixed:
-                    xysize (760, 700)
-                    use detail_card(current_view, 'first', 760)
-                add "ui/thread-long.png" at thread_draw:
-                    xpos 772 ypos 150 xsize 160
-                fixed:
-                    xpos 940 xysize (760, 700)
-                    use detail_card(current_view, 'second', 760, 0.35)
+            vbox:
+                pos (110, 262) spacing 48
+                hbox:
+                    use detail_card(current_view, 'first', 760, 0.0, 340, 340)
+                    fixed:
+                        xysize (180, 340)
+                        add "ui/thread-long.png" at thread_draw:
+                            xpos 10 yalign 0.5 xsize 160
+                    use detail_card(current_view, 'second', 760, 0.35, 340, 340)
                 text reading_text_filter(spec['note']) style "detail_note" at detail_arrive(0.7):
-                    xpos 0 ypos 640 xmaximum 1500
+                    xmaximum 1500
         vbox:
             xalign 1.0 xoffset -90 ypos 84 spacing 6
             textbutton _("Return to reading") id "menu_return" style "caps_button" text_size 25 xalign 1.0 action Return()

@@ -119,7 +119,11 @@ label original_ending:
 image black = Solid('#07090b')
 
 screen story_stage():
-    zorder -5
+    # The stage lives on the image layer. Hiding the words (H) clears the
+    # screens layer, which previously blanked the painting as well.
+    layer "master"
+    # Above the black backdrop Ren'Py's start routine places on this layer.
+    zorder 1
     if staged_scene():
         add Solid('#0b1014')
         $ beat = current_rovel_beat()
@@ -138,4 +142,7 @@ screen story_stage():
             add lighting_art(composed_scene()) xysize (1920, 1080)
         elif art_available():
             add lighting_art(scene_art) xysize (1920, 1080)
-    # Prose-only scenes are read on the typeset page (screen nvl).
+    else:
+        # Prose-only scenes: the paper stays when the words are hidden (H),
+        # and page turns dissolve only the text set on it (screen nvl).
+        add page_ground(scene_light())

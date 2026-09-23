@@ -85,3 +85,52 @@ testcase ui_tour:
     click id 'ending_continue'
     pause 5.5
     screenshot '21-final-question.png'
+
+testcase ui_tour_states:
+    $ _test.timeout = 60.0
+    $ _preferences.text_cps = 0
+    run Preference('display', 'fullscreen')
+    pause 1.0
+    $ _test.screenshot_directory = 'test-output/tour'
+    $ persistent.intense_lighting = False
+    click id 'main_begin'
+    advance until eval source_line == 32
+    pause 1.0
+    screenshot 's1-softened-compact.png'
+    advance until eval source_line == 81
+    pause 1.0
+    screenshot 's2-softened-night.png'
+    advance until eval source_line == 112
+    click id 'look_closer'
+    pause 2.2
+    screenshot 's3-softened-closer.png'
+    click id 'bring_alongside'
+    pause 2.0
+    screenshot 's4-softened-alongside.png'
+    click id 'menu_return'
+    $ persistent.intense_lighting = True
+    $ persistent.large_text = True
+    advance until eval source_line == 172
+    click id 'look_closer'
+    pause 2.2
+    screenshot 's5-large-treatment-closer.png'
+    click id 'bring_alongside'
+    pause 2.0
+    screenshot 's6-large-treatment-alongside.png'
+    click id 'menu_return'
+    advance until eval source_line == 203
+    pause 1.0
+    screenshot 's7-large-longline.png'
+    run Jump('s016')
+    pause 1.0
+    advance repeat 6
+    pause 1.0
+    screenshot 's8-large-page.png'
+    $ persistent.large_text = False
+    keysym 'K_TAB'
+    keysym 'K_TAB'
+    pause 0.4
+    screenshot 's9-keyboard-focus.png'
+    keysym 'h'
+    pause 0.6
+    screenshot 's10-hidden.png'
