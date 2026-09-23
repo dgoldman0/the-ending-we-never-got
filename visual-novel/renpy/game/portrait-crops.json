@@ -22,6 +22,14 @@
   "lucan-early-speaking": "right",
   "lucan-later-listening": "left",
   "lucan-later-speaking": "right",
+  "petitioner-speaking": "right",
+  "senn-assuring-speaking": "right",
+  "senn-attentive-listening": "left",
+  "senn-evasive-listening": "left",
+  "tessa-resolute-arrival-listening": "left",
+  "tessa-resolute-arrival-speaking": "right",
+  "tessa-startled-arrival-listening": "left",
+  "tessa-startled-arrival-speaking": "right",
   "valcair-listening": "left",
   "valcair-speaking": "right"
  },
@@ -129,40 +137,88 @@
    447
   ],
   "lucan-early-listening": [
-   179,
-   97,
-   617,
-   705
+   173,
+   22,
+   832,
+   950
   ],
   "lucan-early-speaking": [
-   468,
-   133,
-   602,
-   687
+   220,
+   43,
+   811,
+   926
   ],
   "lucan-later-listening": [
-   123,
-   103,
-   631,
-   721
+   136,
+   0,
+   851,
+   972
   ],
   "lucan-later-speaking": [
-   455,
-   78,
-   685,
-   782
+   206,
+   11,
+   923,
+   1054
+  ],
+  "petitioner-speaking": [
+   182,
+   83,
+   758,
+   865
+  ],
+  "senn-assuring-speaking": [
+   308,
+   187,
+   651,
+   743
+  ],
+  "senn-attentive-listening": [
+   326,
+   166,
+   592,
+   676
+  ],
+  "senn-evasive-listening": [
+   310,
+   151,
+   611,
+   698
+  ],
+  "tessa-resolute-arrival-listening": [
+   300,
+   96,
+   628,
+   717
+  ],
+  "tessa-resolute-arrival-speaking": [
+   346,
+   115,
+   660,
+   754
+  ],
+  "tessa-startled-arrival-listening": [
+   269,
+   96,
+   670,
+   765
+  ],
+  "tessa-startled-arrival-speaking": [
+   318,
+   125,
+   718,
+   820
   ],
   "valcair-listening": [
-   183,
-   151,
-   544,
-   621
+   268,
+   34,
+   733,
+   837
   ],
   "valcair-speaking": [
-   537,
-   137,
-   541,
-   618
+   283,
+   33,
+   729,
+   833
   ]
  }
 }

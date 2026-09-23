@@ -5,8 +5,11 @@ Portraits are rectangular crops of the paintings, not cut-outs: the painted
 ground stays, so there are no mattes, fringes or sticker edges. Every crop
 follows one composition, so faces share a scale and an eye line:
 
-  - the face (forehead to chin) is 62% of the crop's height, its top at 21%;
-  - the face sits 4% off centre, away from its gaze, leaving gaze room;
+  - painted busts: the face is 46% of the crop's height; the head is centred
+    on its silhouette at eye level, a little behind centre for gaze room, with
+    5% headroom above the hair, so hair, collar and shoulders show;
+  - the old bare heads are framed tighter (face 62%, top at 21%, 4% gaze
+    room) because nothing below the neck was painted;
   - the lower edge crosses the neck above any damage in the painting;
   - the crop's shape matches the portrait window's interior.
 
@@ -46,7 +49,10 @@ SCRIPT = VN / 'tools/crop-portraits.scm'
 
 ASPECT = 204 / 233          # portrait window interior, width / height
 OUT_SIZE = (408, 466)       # twice the speaker window's interior
+# The old bare-head paintings are framed tight (there is nothing below the
+# neck); painted busts show hair, collar and shoulders.
 FACE_FRAC, FACE_TOP, GAZE_ROOM = 0.62, 0.21, 0.04
+BUST_FRAC, BUST_HEADROOM, BUST_GAZE = 0.46, 0.05, 0.03
 
 # Heads cut from the S001-S005 expression sheets: sheet, cell (x, y, w, h),
 # face box in the cell's 640 px master scale (verified in play), facing, ground.
@@ -98,19 +104,44 @@ def detect_face(path):
 FACE_OVERRIDES = {}
 
 
+def bust_box(path, face, facing):
+    """A painted bust is framed on its silhouette, not the face box: in a
+    three-quarter view the face sits off the skull's centre, so centring the
+    face shoves the head against the back edge. The head is centred at eye
+    level (a little behind centre, for gaze room) and the top of the hair gets
+    a fixed headroom; the face box only sets the scale."""
+    fx, fy, fs = face
+    alpha = np.asarray(Image.open(path).convert('RGBA').getchannel('A'), np.float32) / 255
+    h_img, w_img = alpha.shape
+    eyes = alpha[int(fy + 0.3 * fs):int(fy + 0.6 * fs)]
+    cols = np.where(eyes.max(axis=0) > 0.5)[0]
+    left, right = (cols.min(), cols.max()) if len(cols) else (fx, fx + fs)
+    height = min(fs / BUST_FRAC, h_img)
+    width = height * ASPECT
+    centre = 0.5 + (BUST_GAZE if facing == 'left' else -BUST_GAZE)
+    x = (left + right) / 2.0 - centre * width
+    x = min(max(x, 0), w_img - width)
+    band = alpha[:, int(max(0, x)):int(min(w_img, x + width))]
+    rows = np.where(band.max(axis=1) > 0.5)[0]
+    top = rows.min() if len(rows) else fy - 0.3 * fs
+    y = min(max(top - BUST_HEADROOM * height, 0), h_img - height)
+    return int(round(x)), int(round(y)), int(round(width)), int(round(height))
+
+
 def crop_box(face, bounds):
-    """The composition rule, clamped inside the source's usable area."""
+    """The composition rule for the old bare heads, clamped inside the source."""
     fx, fy, fs, facing = face
+    frac, top, gaze = FACE_FRAC, FACE_TOP, GAZE_ROOM
     bx0, by0, bx1, by1 = bounds
-    height = fs / FACE_FRAC
-    height = min(height, (by1 - fy) / (1 - FACE_TOP), by1 - by0)   # keep the foot inside
+    height = fs / frac
+    height = min(height, (by1 - fy) / (1 - top), by1 - by0)   # keep the foot inside
     width = height * ASPECT
     if width > bx1 - bx0:
         width = bx1 - bx0
         height = width / ASPECT
-    centre = 0.5 + (GAZE_ROOM if facing == 'left' else -GAZE_ROOM)
+    centre = 0.5 + (gaze if facing == 'left' else -gaze)
     x = fx + fs / 2 - centre * width
-    y = fy - FACE_TOP * height
+    y = fy - top * height
     x = min(max(x, bx0), bx1 - width)
     y = min(max(y, by0), by1 - height)
     return int(round(x)), int(round(y)), int(round(width)), int(round(height))
@@ -132,7 +163,7 @@ def plan():
         fx, fy, fs = FACE_OVERRIDES.get(path.stem) or detect_face(path)
         w, h = Image.open(path).size
         jobs.append(dict(name=path.stem, source=str(path), facing=facing, ground='bust',
-                         box=crop_box((fx, fy, fs, facing), (0, 0, w, h))))
+                         box=bust_box(path, (fx, fy, fs), facing)))
     return jobs
 
 

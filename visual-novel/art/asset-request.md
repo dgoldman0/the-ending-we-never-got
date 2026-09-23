@@ -1,30 +1,42 @@
 # Asset request
 
-Updated 23 September 2026. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 23 September 2026, after the batch 1 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The S001–S005 cast is being repainted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. GPT works one batch at a time, and each batch ends with a stop so Claude can check it in the game before the next one starts. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
-## Next for GPT: batch 1, the S001 portraits, then stop
+## Batch 1: checked 23 September 2026
 
-Eight portraits for the opening scene: Tessa argues with Senn at the sealed arch, and a woman begs Senn for news of her daughter. Senn's three also serve the S004 ceremony.
+Claude cropped and graded the eight S001 portraits and checked them in the game at both window sizes, in S001's bright light and Softened:
+
+- **Tessa's four pass.** She is the storm-infirmary woman at nineteen, the same person in all four, with the hoodie right. Each looks the right way, and the expressions read at listener size.
+- **Senn's three need repainting.** His clothing and hair are right and he isn't balding, but he reads younger and leaner than his design and than the Senn painted in the same S001 scenes: a handsome man in his early fifties instead of a heavier, rounder-faced man in his late fifties. He's in batch 2 below.
+- **The petitioner passes.** She follows her written design (reddish braid, damp gray shawl). The S001 painting of her shows a dark-haired woman in a brown shawl instead; that's the painting's error, listed under corrections.
+
+## Next for GPT: batch 2, the S002 portraits and Senn again, then stop
+
+Twelve portraits. Nine are for S002, the first night: Mara brings supper to the apartment, and Tessa asks to be taken somewhere high enough to get a phone signal, then tries to leave. Three replace batch 1's Senn.
 
 | File in `renpy/game/art/portraits/` | Who and moment | Looks toward | Used with these lines |
 | --- | --- | --- | --- |
-| `tessa-startled-arrival-speaking.png` | Tessa, alarmed and disbelieving, mid-plea | screen right | "Open it again!" · "Where did you bring me?" · "When what's over?" |
-| `tessa-startled-arrival-listening.png` | Tessa, frightened, searching Senn's face as he promises | screen left | Senn: "Come away from the arch. It was breaking apart." · "You will go home when this is over; you have my word." |
-| `tessa-resolute-arrival-speaking.png` | Tessa refusing the role, jaw set, direct | screen right | "I'm not a doctor." · "Then you got the wrong person." |
-| `tessa-resolute-arrival-listening.png` | Tessa unconvinced, mouth pressed, chin up | screen left | Senn: "We summoned you to help our healers—" · "We were searching for the Saint." |
-| `senn-assuring-speaking.png` | Senn, patient and persuasive, a reassuring half-smile | screen right | "We'll explain everything upstairs. You will go home when this is over; you have my word." |
-| `senn-attentive-listening.png` | Senn listening with courteous, measured attention | screen left | Tessa's demands; the woman's plea |
-| `senn-evasive-listening.png` | Senn composed, his eyes sliding away from the question | screen left | "Then you got the wrong person." · "When what's over?" |
-| `petitioner-speaking.png` | The woman who catches Senn's sleeve, pleading | screen right | "My daughter's at the west infirmary. Please, tell her about my daughter—" |
+| `tessa-resolute-arrival-cloak-speaking.png` | Tessa pressing, restless, determined to get a signal | screen right | "That tower over there. Can you take me up?" · "We've got candles." · "I just want to make a call. You can come with me." |
+| `tessa-resolute-arrival-cloak-listening.png` | Tessa unconvinced, already looking for another way | screen left | Mara: "The stairs aren't lit." |
+| `tessa-attentive-arrival-cloak-listening.png` | Tessa listening, hopeful, holding on to Mara's answer | screen left | Mara: "In the morning. I'll have to find someone with a key." |
+| `tessa-hurt-arrival-cloak-listening.png` | Tessa stung: she has just been told she's confined | screen left | Mara: "I have orders to keep you in this room tonight." |
+| `tessa-hurt-arrival-cloak-speaking.png` | Tessa asking, her voice close to breaking | screen right | "And tomorrow?" |
+| `tessa-hurt-arrival-speaking.png` | Tessa, cloak gone, cold and bitter, handing it back | screen right | "Take that with you." |
+| `mara-controlled-speaking.png` | Mara level and polite, giving nothing | screen right | "In the morning. I'll have to find someone with a key." · "The stairs aren't lit." · "I have orders to keep you in this room tonight." |
+| `mara-controlled-listening.png` | Mara hearing the requests, composed, already refusing | screen left | "That tower over there. Can you take me up?" · "I just want to make a call." |
+| `mara-uneasy-listening.png` | Mara unable to answer; her eyes go toward the guard | screen left | "We've got candles." · "And tomorrow?" · "Take that with you." |
+| `senn-assuring-speaking.png` | Senn, patient and persuasive (replaces batch 1's) | screen right | as in batch 1 |
+| `senn-attentive-listening.png` | Senn, courteous, measured attention (replaces batch 1's) | screen left | as in batch 1 |
+| `senn-evasive-listening.png` | Senn composed, eyes sliding away (replaces batch 1's) | screen left | as in batch 1 |
 
 **The people**
-- **Tessa, nineteen, healthy.** Her face is the central woman in the storm-infirmary study ([face crop](character-references/tessa/north-infirmary-face.png), [full study](scene-studies/north-infirmary/north-infirmary-storm.png)), younger and without that scene's injury, dirt or exhaustion. She has an oval face, broad expressive mouth, straight brows, dark-brown eyes, light warm-brown skin and chestnut, slightly wavy hair in a low ponytail with loose strands at the temples. She wears a faded blue zip hoodie over a cream cotton T-shirt, the clothes she wore to the store. The four files show the same girl in the same clothes and light, at the same scale.
-- **Senn, late fifties.** He has a rounded build, light-brown skin, brown eyes, a carefully tended short beard, and sandy-gray hair that is thinning but neatly brushed back. Don't make him balding; the user rejected that. He wears a cream outer robe over a wheat-colored under-robe, with sunburst embroidery only at the collar and a polished brass clasp. His smile is patient and convincing, never a sneer; the evasion is in his eyes.
-- **The woman.** Middle-aged, with freckled skin, a reddish braid and a damp gray shawl, her eyes wet. She is a stranger pleading for her daughter at the west infirmary.
+- **Tessa, nineteen, the same girl as batch 1.** Match her face, hair and hoodie to [her batch 1 portraits](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png). In the first six rows ("arrival-cloak") she wears Mara's gray wool cloak over the hoodie, draped over her shoulders with its hood down. In "Take that with you" she has pulled the cloak off, so she's back in the plain hoodie. It's night and she's exhausted and frightened: a little more drawn than in S001, hair coming loose. "Hurt" means emotionally hurt; she has no injury.
+- **Mara, thirty-two, captain.** Medium olive-brown skin, squared jaw, slightly heavy eyelids, hazel eyes, a strong nose with a modest bend, and thick dark-brown hair braided and pinned low at the nape. She wears her slate-blue military coat buttoned to a stand collar, with a narrow brass captain's bar at the collar and a white shirt collar showing. She should read as an adult in her thirties, not an elderly veteran, and match the Mara painted in [the S002 scenes](../renpy/game/art/lit/night-exchange-softened.webp). Her control is courteous, not cold; the unease shows only in her eyes.
+- **Senn, late fifties.** Keep batch 1's robes and brushed-back gray hair, but paint the man in his design: a rounded build, a fuller, heavier face with soft jowls, and a fuller short gray-white beard. He should read as the same man painted in [the S001 scenes](../renpy/game/art/softened/opening/cg/pleading-mother.png), older and heavier than batch 1's. Still not balding.
 
-**The format.** It's the same as GPT's Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
+**The format** is unchanged from batch 1, matching GPT's Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
 - Square, 1254×1254 or larger, with a transparent background.
 - Head, shoulders and upper chest, in three-quarter view. The face, hairline to chin, is about a third of the image height, with clear space above the head and on both sides so the game's crop has room.
 - `-speaking` files look toward screen right, lips parted mid-word. `-listening` files look toward screen left, not speaking.
@@ -33,22 +45,13 @@ Eight portraits for the opening scene: Tessa argues with Senn at the sealed arch
 - Expressions must still read at 150 px wide, the size of the listener's window.
 
 **Save, then stop**
-1. Save the eight files at the paths above, and the prompts in `art/prompts/portraits-batch-1/`.
-2. Compare them side by side before finishing: the same face, clothes, light and scale within each character, and each file looking the right way.
-3. **Stop there.** Don't start batch 2, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 1 is ready for Claude to check.
-
-Claude then crops and grades the files and checks them in the game: the likeness against the references, the direction and scale in the windows, readability at listener size and in S001's bright light, and the fit beside the scene paintings. Batch 2 starts only after that check.
+1. Save the twelve files at the paths above, replacing batch 1's three Senn files, and the prompts in `art/prompts/portraits-batch-2/`.
+2. Compare them side by side before finishing: Tessa against her batch 1 portraits, and each character's files for the same face, clothes, light and scale, each looking the right way.
+3. **Stop there.** Don't start batch 3, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 2 is ready for Claude to check.
 
 ## Queued behind the check
 
-Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 1's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
-
-**Batch 2: S002, the first night (9 files).** At night in her apartment, Tessa wears her hoodie under Mara's gray wool cloak, then without it once she drops the cloak. Mara wears her slate-blue captain's coat with the brass bar at the collar and her dark braid pinned low.
-- `tessa-resolute-arrival-cloak-speaking`, `tessa-resolute-arrival-cloak-listening`
-- `tessa-attentive-arrival-cloak-listening`
-- `tessa-hurt-arrival-cloak-speaking`, `tessa-hurt-arrival-cloak-listening`
-- `tessa-hurt-arrival-speaking` (the cloak is gone)
-- `mara-controlled-speaking`, `mara-controlled-listening`, `mara-uneasy-listening`
+Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 2's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
 
 **Batch 3: S003, the first treatment, and the Bellweir pages (14 files).** Tessa wears the early working dress seen in the S003 paintings. Iven wears his olive coat with the cream treatment apron. The priest, Olan and the mother complete the scene. `tessa-resolute-working-speaking` and `olan-listening` serve later chapters.
 - `tessa-attentive-working-speaking`, `tessa-attentive-working-listening`, `tessa-startled-working-speaking`, `tessa-hurt-working-speaking`, `tessa-hurt-working-listening`, `tessa-resolute-working-speaking`
@@ -190,7 +193,7 @@ Places that recur must stay recognizable across states: the Bellweir market is i
 | Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | `tools/grade-light.py` |
 
 - **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in both Intense and Softened. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make Softened versions.
-- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each portrait in GIMP to one composition: the face 62% of the crop's height with its top at 21%, and a little room on the side the face looks toward. The crop sits in a closed laurel window, 228×256 for the speaker and 150×168 for the listener.
+- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. The crop sits in a closed laurel window, 228×256 for the speaker and 150×168 for the listener.
 - **Names decide direction.** A `-speaking` file must look toward screen right and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
 - **Stand-ins go as files arrive.** Until a scene's painted portraits exist, the game shows the old head crops, mirrored where needed. Each new file replaces its stand-in.
 
@@ -209,7 +212,8 @@ Found while building and reviewing the new screens:
 1. **Done locally:** the dead-phone detail was nearly black. Look closer details are now graded at reduced strength, so the phone's edge and dead screen read while the image stays nocturnal.
 2. **The arrival foot meets the text.** In `art/opening/cg/arrival.png`, Tessa's landing foot sits where the reading text begins, and the game lifts the painting 70 px to compensate. A recomposition with the foot higher would remove the lift.
 3. **Iven's position below the dais falls under the text.** In `art/rovel/cg/ceremony-intervention.png` and `ceremony-yield.png`, Iven's boots and the step edge between him and the dais sit under the reading shade, so the staging point is weakened. Lifting the painting cut off Orra's and Senn's heads instead, so the fix belongs in the painting: keep the step edge above y ≈ 820.
-4. **Existing paintings are a little soft.** S001–S005 are 1672×941, upscaled to 1080p. Regenerate new work at 1920×1080 or larger.
+4. **The petitioner is painted as a different woman.** In `art/opening/cg/pleading-mother.png` and `woman-release.png`, the woman who catches Senn's sleeve has dark curly hair in a bun and a brown shawl. Her design, and her portrait, give her a reddish braid and a damp gray shawl. Correct the paintings to the design.
+5. **Existing paintings are a little soft.** S001–S005 are 1672×941, upscaled to 1080p. Regenerate new work at 1920×1080 or larger.
 
 ## Needed, but not images
 

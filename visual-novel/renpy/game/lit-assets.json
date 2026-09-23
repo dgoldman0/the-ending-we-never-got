@@ -216,6 +216,20 @@
     "softened": "art/lit/portraits/petitioner-ordinary-softened.webp"
    }
   },
+  "petitioner-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/petitioner-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/petitioner-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/petitioner-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/petitioner-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/petitioner-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/petitioner-speaking-ordinary-softened.webp"
+   }
+  },
   "priest": {
    "bright": {
     "intense": "art/lit/portraits/priest-bright-intense.webp",
@@ -244,6 +258,34 @@
     "softened": "art/lit/portraits/senn-assuring-ordinary-softened.webp"
    }
   },
+  "senn-assuring-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/senn-assuring-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/senn-assuring-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/senn-assuring-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/senn-assuring-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/senn-assuring-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/senn-assuring-speaking-ordinary-softened.webp"
+   }
+  },
+  "senn-attentive-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/senn-attentive-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/senn-attentive-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/senn-attentive-listening-night-intense.webp",
+    "softened": "art/lit/portraits/senn-attentive-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/senn-attentive-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/senn-attentive-listening-ordinary-softened.webp"
+   }
+  },
   "senn-evasive": {
    "bright": {
     "intense": "art/lit/portraits/senn-evasive-bright-intense.webp",
@@ -256,6 +298,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/senn-evasive-ordinary-intense.webp",
     "softened": "art/lit/portraits/senn-evasive-ordinary-softened.webp"
+   }
+  },
+  "senn-evasive-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/senn-evasive-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/senn-evasive-listening-night-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/senn-evasive-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-listening-ordinary-softened.webp"
    }
   },
   "senn-listening": {
@@ -300,6 +356,34 @@
     "softened": "art/lit/portraits/tessa-resolute-ordinary-softened.webp"
    }
   },
+  "tessa-resolute-arrival-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-resolute-arrival-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-startled": {
    "bright": {
     "intense": "art/lit/portraits/tessa-startled-bright-intense.webp",
@@ -312,6 +396,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-startled-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-startled-ordinary-softened.webp"
+   }
+  },
+  "tessa-startled-arrival-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-startled-arrival-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-softened.webp"
    }
   },
   "tessa-wounded": {
