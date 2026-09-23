@@ -1,6 +1,6 @@
 # Original-timeline visual novel — adaptation brief
 
-**Controlled pass:** the user authorized the isolated [An afternoon proof](prototypes/window/README.md). It compares complete layouts and finishes the short S005 exchange; the main runtime remains rejected, with no rollout authorized by this delivery.
+**Current pass, 23 September 2026:** the isolated [An afternoon proof](prototypes/window/README.md) (`4001475`) and its unfinished trial 2 failed; see the [window failure review](reviews/2026-09-23-window-failure/README.md). The user directed an interface and infrastructure pass across the whole game with existing assets and code-drawn interface elements; needed art is collected as a generation request at the end of these rounds.
 
 Status: **ANOTHER FAILED ATTEMPT: 0.4.0-dev — 17 September 2026**, archived at `1bb6d76`. The user rejected its intrusive/ugly interface and poorly composed compact portraits. Read the [failure analysis](reviews/2026-09-17-rovel-rejection/README.md) and [visual production controls](production-controls.md). The later controlled pass is isolated from this failed runtime. **Look closer / Threads** and the [experience requirements](presentation-redesign.md) remain in force; the execution is rejected.
 

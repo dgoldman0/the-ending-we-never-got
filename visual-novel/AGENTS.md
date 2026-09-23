@@ -2,7 +2,13 @@
 
 These instructions apply throughout `visual-novel/` and to VN-related work in shared project files. Follow the root [AGENTS.md](../AGENTS.md) as well. User corrections persist across turns; a new image, prompt, or session does not reset them.
 
-## Current rejection and production control — 17 September 2026
+## Current failure record and direction — 23 September 2026
+
+- **The window proof (`4001475`) failed, and its unfinished trial 2 repeated the pattern.** See the [window failure review](reviews/2026-09-23-window-failure/README.md), which also records why five presentations failed. Neither prototype is a style, layout or portrait reference.
+- **Current authorized work: an interface and infrastructure pass across the whole game.** The user judged the interface and UX still far too rough. Make the game itself work well: reading, dialogue and narration presentation, menus, saving, settings, history, Look closer / Threads, transitions and packaging. Use existing assets, and draw interface elements in code rather than with diffusion generation. This replaces the proof-first sequence below for this pass; the visual controls still apply.
+- **Record art needs instead of generating them.** While working, list the scenes, portraits, expressions and other images the game needs, with the composition constraints the interface creates. Deliver that list as a generation request at the end of these rounds.
+
+## Earlier rejection and production control — 17 September 2026
 
 - **Latest user verdict: 0.4.0-dev is another failed attempt.** The user rejected its interface as uglier despite improved stretching, still covering too much of the scene, and its compact portraits as badly composed/cropped. Its 95 mapped S001–S005 pages and earlier favorable inspections do not clear the presentation. The [rejection and historical evidence](reviews/2026-09-17-rovel-work/README.md) supersede working-candidate language. Version 0.3.2 / `d0c3020` also remains rejected; `529a359` records [its full review](reviews/2026-09-17-full-design-review/README.md). That archive request did not authorize production; the user subsequently explicitly requested the controlled pass. Its scope is the isolated [window proof](prototypes/window/README.md), not rollout.
 - Read [production-controls.md](production-controls.md) and the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). The failure was visual judgment, not a missing instruction to inspect. The model looked and wrongly accepted obvious defects. More checklists, automated scores or favorable self-review do not demonstrate improved judgment. Current production is the bounded window proof; diagnostic questions still are not permission to edit.

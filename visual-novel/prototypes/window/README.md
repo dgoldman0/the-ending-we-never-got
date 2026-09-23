@@ -1,5 +1,7 @@
 # An afternoon — controlled design proof
 
+**Status: rejected.** The proof was rejected for stripping the ambition from the interface, as recorded in [trial 2](../window-trial-2/README.md). See the [window failure review](../../reviews/2026-09-23-window-failure/README.md). Keep it as failure evidence, not as a layout, portrait or style reference. The favorable assessment below is the producing model's and did not hold.
+
 The user authorized this pass on 17 September 2026. It is isolated from the rejected 0.4.0-dev runtime. This is one short exchange, not rollout or scene-completion approval.
 
 ## Scene brief

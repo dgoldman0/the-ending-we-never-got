@@ -14,7 +14,7 @@ Both checkpoint `f3acb5e` and web 0.3.2 remain rejected. The [17 September full 
 | S002 | INT. SAINT'S APARTMENT - NIGHT | 18 | 18 pages mapped: night action, compact exchanges and quiet drawing inserts; presentation rejected; bounded design proof required |
 | S003 | INT. PALACE INFIRMARY - DAY | 24 | 24 pages mapped: assessment/treatment states, compact exchanges and recovery inserts; presentation rejected; bounded design proof required |
 | S004 | INT. AUDIENCE HALL - DAY | 16 | 16 pages mapped: ceremony, doorway and applause inserts, compact exchanges and separate intervention/yield states; presentation rejected; bounded design proof required |
-| S005 | INT. INFIRMARY - LATER | 13 | 13 pages mapped: packing/window scene, compact exchanges, courtyard inserts and shared window seat; main presentation rejected; separate window proof delivered for feedback |
+| S005 | INT. INFIRMARY - LATER | 13 | 13 pages mapped: packing/window scene, compact exchanges, courtyard inserts and shared window seat; main presentation rejected; separate window proof also rejected |
 | S006 | EXT. CONVOY CAMP - AFTERNOON | 18 | Prose only; scene and cast production missing |
 | S007 | INT. ROADSIDE INN - NIGHT | 15 | Prose only; scene and cast production missing |
 | S008 | EXT. BELLWEIR - MARKET SQUARE - DAY | 22 | Prose only; scene and cast production missing |

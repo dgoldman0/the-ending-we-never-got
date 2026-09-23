@@ -1,6 +1,6 @@
 # Original timeline — experience and production requirements
 
-**Active requirements after another rejection — 17 September 2026.** Version **0.4.0-dev is failed**, archived at `1bb6d76`; see the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). Its 95 mapped pages do not clear the UI or portraits. Version 0.3.2 also remains rejected. The [visual production controls](production-controls.md) address the wrong visual judgments that earlier reviews accepted. The user subsequently authorized the controlled pass. The isolated [window proof](prototypes/window/README.md) is the small design delivery; its direction remains unestablished until feedback. No rollout or complete-scene clearance follows from producing it.
+**Active requirements after another rejection — 17 September 2026.** Version **0.4.0-dev is failed**, archived at `1bb6d76`; see the [illustrated failure analysis](reviews/2026-09-17-rovel-rejection/README.md). Its 95 mapped pages do not clear the UI or portraits. Version 0.3.2 also remains rejected. The [visual production controls](production-controls.md) address the wrong visual judgments that earlier reviews accepted. The user subsequently authorized the controlled pass. The isolated [window proof](prototypes/window/README.md) was the small design delivery; it failed, as did its unfinished trial 2 ([review](reviews/2026-09-23-window-failure/README.md)). On 23 September 2026 the user directed an interface and infrastructure pass across the whole game; see [AGENTS.md](AGENTS.md).
 
 ## Goal and scope
 
@@ -69,6 +69,8 @@ Actual interface materials and ornament remain design work. Aged metal, mineral 
 Compose title, starting flow, chapter transitions, reading, inspection, Threads, history, saves, settings and endpoint as one visual language. Resolve redundant starts and interruptions through flow design. Review long/short lines and larger text in the complete screen. Correct reading surfaces without lifting scene exposure into a comfortable default.
 
 ## Next production delivery — bounded design proof
+
+For the current interface and infrastructure pass, the user's 23 September direction replaces this sequence. It still governs later art production.
 
 When production is requested, compare two or three materially different complete layouts using the same real scene/text; finish one short connected exchange. Read the complete source interaction first. Include speaker/listener changes, an action/narration beat, real short/long dialogue and relevant lighting/text-size conditions. Include a worthwhile discovery/return where it belongs to the passage. Preserve detailed illustrations. The [controls](production-controls.md) define visual comparison, portrait composition and the early delivery boundary.
 
