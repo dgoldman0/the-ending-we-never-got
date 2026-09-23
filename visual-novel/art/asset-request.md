@@ -1,97 +1,110 @@
-# Asset request — after the interface pass
+# Asset request
 
-Requested 23 September 2026, at the end of the interface and infrastructure rounds. The game can now take new art without code changes. Put a file at its listed path and the scene switches from the typeset page to illustrated reading, with portraits beside the text. This list says what to make, in priority order, and what the interface requires of each image.
+Updated 23 September 2026. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
-Scene art still needs a written brief before generation, and a review of the finished screens, as [AGENTS.md](../AGENTS.md) requires. This request does not approve any image, and it does not replace the likeness, wardrobe and lighting references.
+The user wants better portraits. The S001–S005 cast is being repainted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. GPT works one batch at a time, and each batch ends with a stop so Claude can check it in the game before the next one starts. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
-## First rendered batch — 23 September 2026
+## Next for GPT: batch 1, the S001 portraits, then stop
 
-The first three queued sets now have speaking/listening PNGs at the paths below: `lucan-early`, `valcair` (field armor), and `lucan-later`. See the [six portraits, prompts and inspection record](scene-studies/portraits-first-batch/README.md). They are working assets, not user-approved scene coverage. Book pages now show the speaker and listener in the left margin, so these portraits appear in S010 and S018 onward even before those scenes have paintings.
+Eight portraits for the opening scene: Tessa argues with Senn at the sealed arch, and a woman begs Senn for news of her daughter. Senn's three also serve the S004 ceremony.
 
-The Valcair request needed a wardrobe split: S010/S054 use the rendered armored `valcair` set; S023/S033/S046 now await `valcair-private`, in charcoal wool with dark-red lining and a plain clasp. Do not reuse armor in those private interiors.
-
-## How files plug in
-
-| Kind | Path under `renpy/game/` | Size | After adding |
+| File in `renpy/game/art/portraits/` | Who and moment | Looks toward | Used with these lines |
 | --- | --- | --- | --- |
-| Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | run `python3 visual-novel/tools/grade-light.py` |
-| Portrait | `art/portraits/<set>-speaking.png`, `<set>-listening.png` | square, at least 1024×1024, head and shoulders | run `python3 visual-novel/tools/crop-portraits.py`, then `grade-light.py --portraits` |
-| Extra expression | `art/portraits/<set>-<expression>.png` | as above | name it for a line in `staging.json` |
+| `tessa-startled-arrival-speaking.png` | Tessa, alarmed and disbelieving, mid-plea | screen right | "Open it again!" · "Where did you bring me?" · "When what's over?" |
+| `tessa-startled-arrival-listening.png` | Tessa, frightened, searching Senn's face as he promises | screen left | Senn: "Come away from the arch. It was breaking apart." · "You will go home when this is over; you have my word." |
+| `tessa-resolute-arrival-speaking.png` | Tessa refusing the role, jaw set, direct | screen right | "I'm not a doctor." · "Then you got the wrong person." |
+| `tessa-resolute-arrival-listening.png` | Tessa unconvinced, mouth pressed, chin up | screen left | Senn: "We summoned you to help our healers—" · "We were searching for the Saint." |
+| `senn-assuring-speaking.png` | Senn, patient and persuasive, a reassuring half-smile | screen right | "We'll explain everything upstairs. You will go home when this is over; you have my word." |
+| `senn-attentive-listening.png` | Senn listening with courteous, measured attention | screen left | Tessa's demands; the woman's plea |
+| `senn-evasive-listening.png` | Senn composed, his eyes sliding away from the question | screen left | "Then you got the wrong person." · "When what's over?" |
+| `petitioner-speaking.png` | The woman who catches Senn's sleeve, pleading | screen right | "My daughter's at the west infirmary. Please, tell her about my daughter—" |
 
-**Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in both Intense and Softened. The distortion is part of the image and it's permanent: glare, halation, sallow cast, sunk night light. It isn't a fade. So paint the scene's real light, with its direction, sources and time of day, in even, readable exposure. Don't bake in blinding glare or crushed darkness, and don't make a separate Softened version. The register comes from `grade` in `staging.json`; change it there if a scene's brief calls for a different one.
+**The people**
+- **Tessa, nineteen, healthy.** Her face is the central woman in the storm-infirmary study ([face crop](character-references/tessa/north-infirmary-face.png), [full study](scene-studies/north-infirmary/north-infirmary-storm.png)), younger and without that scene's injury, dirt or exhaustion. She has an oval face, broad expressive mouth, straight brows, dark-brown eyes, light warm-brown skin and chestnut, slightly wavy hair in a low ponytail with loose strands at the temples. She wears a faded blue zip hoodie over a cream cotton T-shirt, the clothes she wore to the store. The four files show the same girl in the same clothes and light, at the same scale.
+- **Senn, late fifties.** He has a rounded build, light-brown skin, brown eyes, a carefully tended short beard, and sandy-gray hair that is thinning but neatly brushed back. Don't make him balding; the user rejected that. He wears a cream outer robe over a wheat-colored under-robe, with sunburst embroidery only at the collar and a polished brass clasp. His smile is patient and convincing, never a sneer; the evasion is in his eyes.
+- **The woman.** Middle-aged, with freckled skin, a reddish braid and a damp gray shawl, her eyes wet. She is a stranger pleading for her daughter at the west infirmary.
 
-`python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited. [staging.json](../renpy/game/staging.json) maps each scene to its paintings and portrait sets. To add a second painting within a scene, add a stage with the source line where it begins (`"from"`). That's a data edit, not code.
+**The format.** It's the same as GPT's Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
+- Square, 1254×1254 or larger, with a transparent background.
+- Head, shoulders and upper chest, in three-quarter view. The face, hairline to chin, is about a third of the image height, with clear space above the head and on both sides so the game's crop has room.
+- `-speaking` files look toward screen right, lips parted mid-word. `-listening` files look toward screen left, not speaking.
+- **Paint each file in its own direction.** A mirrored copy flips the face, the hair and the clasp, and the user finds mirrored portraits awkward.
+- Even, neutral light with no strong color cast; the game adds each scene's glare or darkness. Keep hands out of frame, with no text, frame or border.
+- Expressions must still read at 150 px wide, the size of the listener's window.
 
-## What the interface requires of the art
+**Save, then stop**
+1. Save the eight files at the paths above, and the prompts in `art/prompts/portraits-batch-1/`.
+2. Compare them side by side before finishing: the same face, clothes, light and scale within each character, and each file looking the right way.
+3. **Stop there.** Don't start batch 2, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 1 is ready for Claude to check.
 
-**Paintings**
-- **Keep key action out of the bottom strip.** On every line, the bottom fifth of the screen (below about y = 840 of 1080) sits under the reading shade. Faces, hands, contact points and plot props belong above it.
-- **Keep the lower-left corner clear during conversations.** Portraits occupy roughly x 116–516, y 744–1044. Nothing essential should sit there in a scene built for dialogue.
-- **Leave room at the top.** The game can lift a painting up to about 70 px to clear the text, so no face should touch the top edge.
-- **Leave a quiet area where it helps.** A quiet dark area, such as one side of a night interior, lets a single line sit inside the picture (the S002 drawing beats do this).
-- **Paint the light, not the grade.** Place windows, lamps and candles so the register has sources to work with: bright glare spills from real openings, night warmth from real flames. The light column below is only a default from the scene heading; set the register in each scene's brief.
+Claude then crops and grades the files and checks them in the game: the likeness against the references, the direction and scale in the windows, readability at listener size and in S001's bright light, and the fit beside the scene paintings. Batch 2 starts only after that check.
 
-**Portraits**
-- **Head and shoulders, with room to crop.** `crop-portraits.py` crops every portrait in GIMP to one composition: a closed laurel window, the face 62% of the crop's height with its top at 21%, and a little space on the side the face looks toward. Paint the head and shoulders, with clothing, well inside the canvas so there is material around the face on every side. A transparent or plain dark background both work.
-- **Paint the whole bust.** The S001–S005 heads were painted without shoulders, so their crops end in bare neck and shadow. GPT's Lucan and Valcair busts, painted with coat and shoulders, crop better.
-- **Mind the direction of gaze.** The speaker frame sits left of the listener frame, with the text to the right of both. Make `-speaking` a three-quarter view looking toward screen right and `-listening` looking toward screen left, so the pair face each other. The game mirrors a portrait that faces the wrong way, but a mirrored face flips its hair part and badges, so correct painting is better.
-- **Use ordinary, even light.** The game grades portraits into each scene's register and mode. On book pages they appear in the left margin at the same sizes.
-- **Take identity, age and wardrobe from the references.** Use [the character designs](../../characters/original-visuals.md), [character keys](character-keys/README.md) and [age/wardrobe variants](character-keys/age-and-wardrobe.md). Tessa's face comes from the storm-infirmary study.
+## Queued behind the check
 
-## Priority 1 — portraits
+Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 1's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
 
-Portraits turn page scenes into conversations the moment a scene has any painting. S006–S011 already reuse the S001–S005 portraits of Tessa, Iven and Mara, whose wardrobe and age still match. S016 reuses Tessa's formal portraits and Senn's.
+**Batch 2: S002, the first night (9 files).** At night in her apartment, Tessa wears her hoodie under Mara's gray wool cloak, then without it once she drops the cloak. Mara wears her slate-blue captain's coat with the brass bar at the collar and her dark braid pinned low.
+- `tessa-resolute-arrival-cloak-speaking`, `tessa-resolute-arrival-cloak-listening`
+- `tessa-attentive-arrival-cloak-listening`
+- `tessa-hurt-arrival-cloak-speaking`, `tessa-hurt-arrival-cloak-listening`
+- `tessa-hurt-arrival-speaking` (the cloak is gone)
+- `mara-controlled-speaking`, `mara-controlled-listening`, `mara-uneasy-listening`
 
-| Portrait set | Scenes | Lines |
-| --- | --- | ---: |
-| `lucan-early` | S018–S036 (13) | 36 |
-| `valcair` / `valcair-private` | S010–S054 (5; armor rendered, private pending) | 28 |
-| `lucan-later` | S038–S057 (8) | 23 |
-| `tessa-harrow` | S032–S037 (4) | 20 |
-| `vask` | S010–S057 (4) | 19 |
-| `tessa-campaign` | S040–S049 (4) | 16 |
-| `tessa-campaign-early` | S019–S030 (6) | 15 |
-| `marren` | S038–S048 (4) | 12 |
-| `elin` | S008–S016 (4) | 11 |
-| `hest` | S011–S037 (4) | 9 |
-| `tessa-winter` | S014–S017 (3) | 9 |
-| `elin-later` | S040–S058 (5) | 7 |
-| `boatman` | S021–S043 (3) | 6 |
-| `orren` | S008–S058 (5) | 5 |
-| `mara-campaign` | S036–S049 (5) | 5 |
-| `scholar` | S013 (1) | 4 |
-| `governor` | S027 (1) | 4 |
-| `serat` | S045–S051 (3) | 4 |
-| `tessa-citadel` | S050–S054 (3) | 4 |
-| `tessa-injured` | S055–S056 (2) | 4 |
-| `picket-officer` | S022 (1) | 3 |
-| `tessa-postwar` | S058 (1) | 3 |
-| `ada` | S008–S014 (2) | 2 |
-| `apprentice` | S026–S030 (2) | 2 |
-| `camp-healer` | S027–S055 (2) | 2 |
-| `bargeman` | S031 (1) | 2 |
-| `iven-harrow` | S032–S035 (2) | 2 |
-| `departing-captain` | S047 (1) | 2 |
-| `mara-citadel` | S050 (1) | 2 |
-| `warden` | S006 (1) | 1 |
-| `archivist` | S012 (1) | 1 |
-| `ferryman` | S019 (1) | 1 |
-| `escort` | S044 (1) | 1 |
-| `runner` | S052 (1) | 1 |
-| `surgeon` | S056 (1) | 1 |
+**Batch 3: S003, the first treatment, and the Bellweir pages (14 files).** Tessa wears the early working dress seen in the S003 paintings. Iven wears his olive coat with the cream treatment apron. The priest, Olan and the mother complete the scene. `tessa-resolute-working-speaking` and `olan-listening` serve later chapters.
+- `tessa-attentive-working-speaking`, `tessa-attentive-working-listening`, `tessa-startled-working-speaking`, `tessa-hurt-working-speaking`, `tessa-hurt-working-listening`, `tessa-resolute-working-speaking`
+- `iven-attentive-treatment-speaking`, `iven-attentive-treatment-listening`, `iven-concerned-treatment-speaking`, `iven-concerned-treatment-listening`
+- `priest-speaking`, `olan-speaking`, `olan-listening`, `mother-speaking`
 
+**Batch 4: S004 and S005, the ceremony and the window (14 files).** Tessa wears the formal Saint coat, mantle and twelve-ray badge. Iven wears his olive coat without the apron. Orra, the messenger and one more Senn complete the set.
+- `tessa-attentive-formal-speaking`, `tessa-attentive-formal-listening`, `tessa-hurt-formal-speaking`, `tessa-hurt-formal-listening`, `tessa-resolute-formal-speaking`, `tessa-resolute-formal-listening`
+- `iven-attentive-speaking`, `iven-attentive-listening`, `iven-concerned-speaking`, `iven-concerned-listening`
+- `orra-speaking`, `orra-listening`, `messenger-speaking`, `senn-evasive-speaking`
 
-Notes:
-- **Lucan is the second most frequent speaker** (59 lines) and has no portrait. He comes first.
-- **Several Tessa periods need wardrobe design before portraits.** `original-visuals.md` marks the winter costume (`tessa-winter`), the Gray Scar–Harrow intermediate costume (`tessa-campaign-early`, `tessa-harrow`) and the postwar clothes (`tessa-postwar`) as still to develop.
-- **Show age and wear.** Tessa ages from 19 to about 23. Later sets must show accumulated war wear, as `AGENTS.md` describes.
-- **The injury lands in the later sets.** `tessa-injured` and `tessa-postwar` carry the right-hand injury. The earlier sets keep both hands healthy.
-- **Splitting sets is a data edit.** `camp-healer` covers the S027 and S055 healers. Split it if S055's healer is a separate attendant.
-- **Roles with one to four lines can wait.** The name above the text still identifies the speaker without a portrait.
+**After batch 4: portrait sets for S006 onward.** These follow the same format, one `-speaking` and one `-listening` painting per set. The game uses a set once its scene has a painting, and on book pages right away: the speaker in the left margin, the listener in the right.
 
-## Priority 2 — one establishing painting per scene
+| Portrait set | Scenes | Lines | Status |
+| --- | --- | ---: | --- |
+| `lucan-early` | S018–S036 (13) | 36 | done |
+| `valcair` (field armor) / `valcair-private` | S010–S054 (5) | 28 | armor done; private awaited |
+| `lucan-later` | S038–S057 (8) | 23 | done |
+| `tessa-harrow` | S032–S037 (4) | 20 | costume to design first |
+| `vask` | S010–S057 (4) | 19 |  |
+| `tessa-campaign` | S040–S049 (4) | 16 |  |
+| `tessa-campaign-early` | S019–S030 (6) | 15 | costume to design first |
+| `marren` | S038–S048 (4) | 12 |  |
+| `elin` | S008–S016 (4) | 11 |  |
+| `hest` | S011–S037 (4) | 9 |  |
+| `tessa-winter` | S014–S017 (3) | 9 | costume to design first |
+| `elin-later` | S040–S058 (5) | 7 |  |
+| `boatman` | S021–S043 (3) | 6 |  |
+| `orren` | S008–S058 (5) | 5 |  |
+| `mara-campaign` | S036–S049 (5) | 5 |  |
+| `scholar` | S013 (1) | 4 |  |
+| `governor` | S027 (1) | 4 |  |
+| `serat` | S045–S051 (3) | 4 |  |
+| `tessa-citadel` | S050–S054 (3) | 4 |  |
+| `tessa-injured` | S055–S056 (2) | 4 |  |
+| `picket-officer` | S022 (1) | 3 |  |
+| `tessa-postwar` | S058 (1) | 3 | costume to design first |
+| `ada` | S008–S014 (2) | 2 |  |
+| `apprentice` | S026–S030 (2) | 2 |  |
+| `camp-healer` | S027–S055 (2) | 2 |  |
+| `bargeman` | S031 (1) | 2 |  |
+| `iven-harrow` | S032–S035 (2) | 2 |  |
+| `departing-captain` | S047 (1) | 2 |  |
+| `mara-citadel` | S050 (1) | 2 |  |
+| `warden` | S006 (1) | 1 |  |
+| `archivist` | S012 (1) | 1 |  |
+| `ferryman` | S019 (1) | 1 |  |
+| `escort` | S044 (1) | 1 |  |
+| `runner` | S052 (1) | 1 |  |
+| `surgeon` | S056 (1) | 1 |  |
 
-One painting per scene is the baseline. It puts every scene on its picture, with portraits carrying the exchanges, as S005's window scene does. S053 continues S050 on the same stair, so it reuses that painting.
+- **Show age and wear.** Tessa ages from 19 to about 23; later sets show accumulated war wear, as `AGENTS.md` describes. `tessa-injured` and `tessa-postwar` carry the right-hand injury; earlier sets keep both hands healthy.
+- **Some Tessa costumes need design first.** The winter, Gray Scar–Harrow and postwar costumes are marked still to develop in [the character designs](../../characters/original-visuals.md).
+- **Small roles can wait.** The speaker's name still identifies them without a portrait. `camp-healer` covers the S027 and S055 healers; split it if S055's healer is a separate attendant.
+
+**Then: one establishing painting per scene.** One painting per scene is the baseline: it puts the scene on its picture, with portraits carrying the exchanges, as S005's window scene does. S053 continues S050 on the same stair, so it reuses that painting.
 
 | File (`art/scenes/`) | Scene | Place and time | Default light | Speakers |
 | --- | --- | --- | --- | --- |
@@ -149,11 +162,11 @@ One painting per scene is the baseline. It puts every scene on its picture, with
 | `s057-citadel-lower-gate.png` | S057 | Citadel · Lower Gate · Evening | ordinary | Lucan, Vask |
 | `s058-bellweir-market-spring.png` | S058 | Bellweir · Market Square · Spring Day | ordinary | Elin, Orren, Tessa |
 
+
 Places that recur must stay recognizable across states: the Bellweir market is intact (S008), destroyed (S011) and rebuilt (S058). The [intact heron study](scene-studies/bellweir-heron/README.md) is a working reference for the first.
 
-## Priority 3 — key-moment paintings
 
-Some beats fail as one held painting. They need their own images, added as extra stages in `staging.json`. Each needs a scene brief written from the screenplay first. From the [outline](../outline.md):
+**Then: key-moment paintings.** Some beats fail as one held painting. They need their own images, added as extra stages in `staging.json`, each with a scene brief written from the screenplay first. From the [outline](../outline.md):
 
 - **S009:** Iven's portrait drawing on the boat; learning to row with Mara.
 - **S011:** the sanctuary over the evacuation; the cut to the boots, cap and search portrait.
@@ -168,6 +181,26 @@ Some beats fail as one held painting. They need their own images, added as extra
 - **S055:** finding Mara.
 - **S056:** the hand examination, anchored by the storm-infirmary study.
 - **S058:** the final Bellweir interaction and the fade before the question.
+
+## Reference: how the game uses the files
+
+| Kind | Path under `renpy/game/` | Size | Then Claude runs |
+| --- | --- | --- | --- |
+| Portrait | `art/portraits/<name>.png` | square, at least 1254×1254, head and shoulders | `tools/crop-portraits.py`, then `tools/grade-light.py --portraits` |
+| Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | `tools/grade-light.py` |
+
+- **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in both Intense and Softened. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make Softened versions.
+- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each portrait in GIMP to one composition: the face 62% of the crop's height with its top at 21%, and a little room on the side the face looks toward. The crop sits in a closed laurel window, 228×256 for the speaker and 150×168 for the listener.
+- **Names decide direction.** A `-speaking` file must look toward screen right and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
+- **Stand-ins go as files arrive.** Until a scene's painted portraits exist, the game shows the old head crops, mirrored where needed. Each new file replaces its stand-in.
+
+## Reference: composition rules for scene paintings
+
+- **Keep key action out of the bottom strip.** On every line, the bottom fifth of the screen (below about y = 840 of 1080) sits under the reading shade. Faces, hands, contact points and plot props belong above it.
+- **Keep the lower-left corner clear during conversations.** The portrait windows occupy about x 116–516, y 748–1004.
+- **Leave room at the top.** The game can lift a painting up to about 70 px to clear the text, so no face should touch the top edge.
+- **Leave a quiet area where it helps.** A quiet dark area, such as one side of a night interior, lets a single line sit inside the picture, as the S002 drawing beats do.
+- **Paint the light, not the grade.** Place windows, lamps and candles so the register has sources to work with. The light column in the painting table is only a default from the scene heading; set the register in each scene's brief.
 
 ## Corrections to existing art
 

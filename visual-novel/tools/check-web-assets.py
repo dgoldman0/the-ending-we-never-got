@@ -67,7 +67,7 @@ def required_assets(game=GAME):
         for pair in registers.values():
             expected.update(pair.values())
     # Staging art for S006 onward, whatever has arrived, with Softened twins.
-    for folder in ('art/scenes', 'art/portraits', 'art/softened/scenes', 'art/softened/portraits'):
+    for folder in ('art/scenes', 'art/softened/scenes'):
         if (game / folder).is_dir():
             expected.update(path.relative_to(game).as_posix()
                             for path in (game / folder).glob('*.png'))

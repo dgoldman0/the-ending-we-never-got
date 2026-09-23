@@ -1,0 +1,48 @@
+{
+ "_note": "How the S001-S005 plan's portrait expressions map to painted portrait files in art/portraits/. A file is <expression>[-<wardrobe>]-<speaking|listening>.png: speaking portraits look toward screen right, listening portraits toward screen left, so speaker and listener face each other without mirroring. Aliases give clearer names to three plan expressions ('wounded' there means emotionally hurt). Tessa's wardrobe comes from the plan; other characters' clothing variants are listed by scene number. Read by ui-reading.rpy and tools/check-staging.py. Batches group the files by scene for generation; a batch is checked in the game before the next starts. \"also\" lists files a later chapter reuses.",
+ "aliases": {
+  "tessa-wounded": "tessa-hurt",
+  "tessa-listening": "tessa-attentive",
+  "senn-listening": "senn-attentive"
+ },
+ "wardrobe": {
+  "iven": {
+   "3": "treatment"
+  }
+ },
+ "batches": [
+  {
+   "batch": 1,
+   "title": "S001, the summoning",
+   "scenes": [
+    1
+   ]
+  },
+  {
+   "batch": 2,
+   "title": "S002, the first night",
+   "scenes": [
+    2
+   ]
+  },
+  {
+   "batch": 3,
+   "title": "S003, the first treatment, and the Bellweir chapter pages",
+   "scenes": [
+    3
+   ],
+   "also": [
+    "tessa-resolute-working-speaking",
+    "olan-listening"
+   ]
+  },
+  {
+   "batch": 4,
+   "title": "S004 and S005, the ceremony and the window",
+   "scenes": [
+    4,
+    5
+   ]
+  }
+ ]
+}

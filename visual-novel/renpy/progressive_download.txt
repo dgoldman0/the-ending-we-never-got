@@ -4,7 +4,6 @@
 - image game/ui/**
 - image game/art/lit/**
 - image game/art/scenes/**
-- image game/art/portraits/**
 - image game/art/cg/**
 - image game/art/opening/**
 - image game/art/rovel/**

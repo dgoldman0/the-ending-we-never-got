@@ -218,31 +218,57 @@ init -1 python:
     CROP_SIZE = (408.0, 466.0)
     PORTRAIT_CROPS = json.loads(renpy.file('portrait-crops.json').read())
 
-    def portrait_key(path):
-        """The cropped master behind a portrait path. The S001-S005 plan names
-        files by expression, wardrobe and old grade; the heads are the same
-        painting in every wardrobe, so they share one master."""
+    PORTRAIT_PLAN = json.loads(renpy.file('portrait-plan.json').read())
+
+    def portrait_parts(path):
+        """(expression, wardrobe) behind an S001-S005 plan path such as
+        art/rovel/portraits/tessa-startled-arrival-bright.png; other portrait
+        paths are already a single named portrait: (stem, None)."""
         stem = path.rsplit('/', 1)[-1].rsplit('.', 1)[0]
-        if path.startswith('art/rovel/portraits/'):
-            for suffix in ('-bright', '-night', '-ordinary'):
-                if stem.endswith(suffix):
-                    stem = stem[:-len(suffix)]
-                    break
-            for wardrobe in ('-arrival-cloak', '-arrival', '-formal', '-working'):
-                if stem.endswith(wardrobe):
-                    stem = stem[:-len(wardrobe)]
-                    break
-        return stem
+        if not path.startswith('art/rovel/portraits/'):
+            return stem, None
+        for suffix in ('-bright', '-night', '-ordinary'):
+            if stem.endswith(suffix):
+                stem = stem[:-len(suffix)]
+                break
+        for wardrobe in ('arrival-cloak', 'arrival', 'formal', 'working'):
+            if stem.endswith('-' + wardrobe):
+                return stem[:-len(wardrobe) - 1], wardrobe
+        return stem, None
+
+    def portrait_key(path):
+        """The old head crop behind a plan path (the interim stand-in)."""
+        return portrait_parts(path)[0]
+
+    def painted_portrait_name(path, role):
+        """The role-specific painted portrait for a plan path, e.g.
+        tessa-startled-arrival-speaking, or None for a named portrait."""
+        if not path.startswith('art/rovel/portraits/'):
+            return None
+        expression, wardrobe = portrait_parts(path)
+        mood = PORTRAIT_PLAN['aliases'].get(expression, expression)
+        if wardrobe is None:
+            wardrobe = PORTRAIT_PLAN['wardrobe'].get(expression.split('-')[0], {}).get(str(current_scene))
+        return '-'.join(part for part in (mood, wardrobe, 'speaking' if role == 'speaker' else 'listening') if part)
+
+    def portrait_choice(path, role):
+        """The graded portrait to show. A painted portrait named for its role
+        faces the right way; until one exists the old head crop stands in."""
+        lit = LIT.get('portraits', {})
+        for key in (painted_portrait_name(path, role), portrait_key(path)):
+            if key and key in lit:
+                return key
+        return None
 
     def portrait_ready(face):
         return face is not None and (portrait_key(face['image']) in LIT.get('portraits', {})
                                      or renpy.loadable(face['image']))
 
-    def portrait_source(path):
-        """The portrait crop graded into the scene's light register and mode."""
-        entry = LIT.get('portraits', {}).get(portrait_key(path))
-        if entry:
-            return entry[current_register()][light_mode()]
+    def portrait_source(path, role='speaker'):
+        """The portrait graded into the scene's light register and mode."""
+        key = portrait_choice(path, role)
+        if key:
+            return LIT['portraits'][key][current_register()][light_mode()]
         return lighting_art(path)
 
     def lit_ornament(image):
@@ -255,12 +281,14 @@ init -1 python:
         head should look: by default the speaker looks right, toward the
         listener and the text, and the listener looks back to the left."""
         w, h = PORTRAIT_SIZES[role]
-        key = portrait_key(face['image'])
+        key = portrait_choice(face['image'], role) or portrait_key(face['image'])
         want = facing or ('right' if role == 'speaker' else 'left')
+        # Only the interim head crops can face the wrong way; painted portraits
+        # are named for their role and never need mirroring.
         flip = PORTRAIT_CROPS['facing'].get(key, want) != want
         scale = max(w / CROP_SIZE[0], h / CROP_SIZE[1])
         cw, ch = int(round(CROP_SIZE[0] * scale)), int(round(CROP_SIZE[1] * scale))
-        head = Transform(portrait_source(face['image']), xysize=(cw, ch), xzoom=(-1.0 if flip else 1.0),
+        head = Transform(portrait_source(face['image'], role), xysize=(cw, ch), xzoom=(-1.0 if flip else 1.0),
                          xpos=(w - cw) // 2, ypos=(h - ch) // 2)
         cameo = Fixed(AlphaMask(Fixed(head, xysize=(w, h)), 'ui/window-mask-' + role + '.png'),
                       lit_ornament('ui/window-frame-' + role + '.png'), xysize=(w, h))
@@ -310,7 +338,9 @@ init -1 python:
         return None, what
 
     # In page mode the portraits sit in the left margin, outside the text frame.
-    PAGE_PORTRAIT_POS = {'speaker': (31, 250), 'listener': (70, 540)}
+    # On book pages the speaker sits in the left margin looking right and the
+    # listener in the right margin looking left, both toward the page, eyes level.
+    PAGE_PORTRAIT_POS = {'speaker': (31, 250), 'listener': (1700, 294)}
 
 define narrator = ReaderVoice(None)
 
@@ -471,9 +501,9 @@ screen nvl(dialogue, items=None):
     add c['frame']
     $ speaker, listener = staging_faces()
     if portrait_ready(speaker):
-        add portrait_cameo(speaker, 'speaker', current_register(), 'right') pos PAGE_PORTRAIT_POS['speaker']
+        add portrait_cameo(speaker, 'speaker', current_register()) pos PAGE_PORTRAIT_POS['speaker']
         if portrait_ready(listener):
-            add portrait_cameo(listener, 'listener', current_register(), 'right') pos PAGE_PORTRAIT_POS['listener']
+            add portrait_cameo(listener, 'listener', current_register()) pos PAGE_PORTRAIT_POS['listener']
     if page_index == 0:
         vbox:
             xpos PAGE_X ypos 108

@@ -376,13 +376,16 @@ testcase lighting_preference:
     click id 'main_begin'
     assert eval stage_image().endswith('-softened.webp') and current_register() == 'bright'
     advance until eval source_line == 54
-    assert eval all(portrait_source(current_rovel_beat()[role]['image']).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
+    assert eval all(portrait_source(current_rovel_beat()[role]['image'], role).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
     screenshot 'softened-cast.png'
     click 'Menu'
     click id 'lighting_intense'
     click id 'menu_return'
     assert eval source_line == 54 and source_page == 0 and persistent.intense_lighting
-    assert eval portrait_source(current_rovel_beat()['speaker']['image']).endswith('-bright-intense.webp')
+    assert eval portrait_source(current_rovel_beat()['speaker']['image'], 'speaker').endswith('-bright-intense.webp')
+    # Until painted portraits arrive the old head stands in, named for the role.
+    assert eval painted_portrait_name(current_rovel_beat()['speaker']['image'], 'speaker') == 'senn-assuring-speaking'
+    assert eval painted_portrait_name(current_rovel_beat()['listener']['image'], 'listener') == 'tessa-startled-arrival-listening'
     advance until eval source_line == 90
     click 'Menu'
     click id 'lighting_softened'

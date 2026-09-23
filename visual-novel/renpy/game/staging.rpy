@@ -62,10 +62,11 @@ init -1 python:
         # apart by behaviour: a set name (str), a role map (has .get), or a
         # sequence of candidates tried in order.
         if isinstance(entry, str):
+            # A named set counts once its graded crop exists (the painted
+            # source in art/portraits/ stays out of the distributed game).
             for name in (entry + '-' + expression, entry):
-                path = 'art/portraits/' + name + '.png'
-                if renpy.loadable(path):
-                    return path
+                if name in LIT.get('portraits', {}):
+                    return 'art/portraits/' + name + '.png'
             return None
         if hasattr(entry, 'get'):
             path = entry.get(role) or entry.get('speaking')

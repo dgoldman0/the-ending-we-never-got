@@ -35,6 +35,43 @@ def portrait_key(path):
     return stem
 
 
+def painted_name(path, role, scene, plan):
+    """The role-specific painted portrait for a plan path (as ui-reading.rpy)."""
+    stem = Path(path).stem
+    for suffix in ('-bright', '-night', '-ordinary'):
+        if stem.endswith(suffix):
+            stem = stem[:-len(suffix)]
+            break
+    wardrobe = None
+    for candidate in ('arrival-cloak', 'arrival', 'formal', 'working'):
+        if stem.endswith('-' + candidate):
+            stem, wardrobe = stem[:-len(candidate) - 1], candidate
+            break
+    mood = plan['aliases'].get(stem, stem)
+    if wardrobe is None:
+        wardrobe = plan['wardrobe'].get(stem.split('-')[0], {}).get(str(scene))
+    return '-'.join(part for part in (mood, wardrobe, 'speaking' if role == 'speaker' else 'listening') if part)
+
+
+def painted_plan():
+    """{batch: {name: [(scene, line, role)]}} for the S001-S005 painted portraits."""
+    import runpy
+    plan = json.loads((GAME / 'portrait-plan.json').read_text())
+    beats = runpy.run_path(str(ROOT / 'tools/check-rovel-plan.py'), run_name='painted_plan')['load_plan']()['ROVEL_BEATS']
+    uses = {}
+    for (scene, line, _page), beat in sorted(beats.items()):
+        for role in ('speaker', 'listener'):
+            face = beat.get(role)
+            if face:
+                uses.setdefault(painted_name(face['image'], role, scene, plan), []).append((scene, line, role))
+    batches = {}
+    for batch in plan['batches']:
+        names = {name: use for name, use in uses.items() if use[0][0] in batch['scenes']}
+        names.update({name: [] for name in batch.get('also', [])})
+        batches[batch['batch']] = names
+    return batches
+
+
 def portrait_files(entry):
     """The planned files for a cast entry; for a list, the first (planned) choice."""
     if isinstance(entry, list):
@@ -89,7 +126,18 @@ def main():
         print('Present but not yet graded into the light registers (run tools/grade-light.py):')
         for path in ungraded:
             print('  ' + path)
+    batches = painted_plan()
+    total = sum(len(names) for names in batches.values())
+    have = sum(present('art/portraits/%s.png' % name) for names in batches.values() for name in names)
+    print('Painted S001-S005 portraits: %d of %d present (%s).' % (have, total, ', '.join(
+        'batch %d: %d/%d' % (b, sum(present('art/portraits/%s.png' % n) for n in names), len(names))
+        for b, names in sorted(batches.items()))))
     if args.missing:
+        print('\nAwaited painted portraits, by batch:')
+        for b, names in sorted(batches.items()):
+            for name in sorted(names):
+                if not present('art/portraits/%s.png' % name):
+                    print('  batch %d  art/portraits/%s.png' % (b, name))
         print('\nAwaited paintings:')
         for path, scenes in sorted(stages.items()):
             if not present(path):
