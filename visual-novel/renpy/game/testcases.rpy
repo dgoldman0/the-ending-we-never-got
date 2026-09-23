@@ -443,7 +443,8 @@ testcase staging_pipeline:
     assert eval stage_faces('Mara')[0]['image'].endswith('mara-controlled-ordinary.png')
     assert eval stage_faces('Mara')[1]['who'] == 'TESSA'
     $ persistent.intense_lighting = False
-    assert eval portrait_source(stage_faces('Mara')[0]['image']) == 'art/lit/portraits/mara-controlled-ordinary-softened.webp'
+    # Her painted portrait (batch 2) replaces the old head crop as soon as it exists.
+    assert eval portrait_source(stage_faces('Mara')[0]['image'], 'speaker') == 'art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp'
     $ persistent.intense_lighting = True
     $ STAGING['6']['stages'] = _planned_stages
 
