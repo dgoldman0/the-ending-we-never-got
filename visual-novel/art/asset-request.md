@@ -1,40 +1,40 @@
 # Asset request
 
-Updated 23 September 2026, after the batch 1 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 23 September 2026, after the batch 2 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The S001–S005 cast is being repainted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. GPT works one batch at a time, and each batch ends with a stop so Claude can check it in the game before the next one starts. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
-## Batch 1: checked 23 September 2026
+## Checked so far
 
-Claude cropped and graded the eight S001 portraits and checked them in the game at both window sizes, in S001's bright light and Softened:
+- **Batch 1 (S001), checked 23 September.** Tessa's four and the petitioner passed. Senn's three were off-model, younger and leaner than his design and the painted Senn, and were repainted in batch 2. The S001 petition painting shows the petitioner as a different woman; see corrections.
+- **Batch 2 (S002 and Senn again), checked 23 September.** All twelve pass. Tessa is the same girl in Mara's cloak and then without it; Mara matches her design and the Mara painted in S002; the new Senn is the heavier, older man in the paintings. Speaker and listener face each other on every line, readable in the night light and in Softened.
 
-- **Tessa's four pass.** She is the storm-infirmary woman at nineteen, the same person in all four, with the hoodie right. Each looks the right way, and the expressions read at listener size.
-- **Senn's three need repainting.** His clothing and hair are right and he isn't balding, but he reads younger and leaner than his design and than the Senn painted in the same S001 scenes: a handsome man in his early fifties instead of a heavier, rounder-faced man in his late fifties. He's in batch 2 below.
-- **The petitioner passes.** She follows her written design (reddish braid, damp gray shawl). The S001 painting of her shows a dark-haired woman in a brown shawl instead; that's the painting's error, listed under corrections.
+## Next for GPT: batch 3, the S003 portraits, then stop
 
-## Next for GPT: batch 2, the S002 portraits and Senn again, then stop
-
-Twelve portraits. Nine are for S002, the first night: Mara brings supper to the apartment, and Tessa asks to be taken somewhere high enough to get a phone signal, then tries to leave. Three replace batch 1's Senn.
+Thirteen portraits for S003, the first treatment. In the palace infirmary, Olan's cursed arm is about to be amputated. The priest has Tessa try her white light for the first time while Iven stays beside her; it clears the curse but can't return his fingers, and then a mother calls from the next bed. One more Tessa file serves the Bellweir chapter pages. Match the people and clothes to the S003 paintings ([one of them](../renpy/game/art/softened/opening/cg/ward-standing-light.png)).
 
 | File in `renpy/game/art/portraits/` | Who and moment | Looks toward | Used with these lines |
 | --- | --- | --- | --- |
-| `tessa-resolute-arrival-cloak-speaking.png` | Tessa pressing, restless, determined to get a signal | screen right | "That tower over there. Can you take me up?" · "We've got candles." · "I just want to make a call. You can come with me." |
-| `tessa-resolute-arrival-cloak-listening.png` | Tessa unconvinced, already looking for another way | screen left | Mara: "The stairs aren't lit." |
-| `tessa-attentive-arrival-cloak-listening.png` | Tessa listening, hopeful, holding on to Mara's answer | screen left | Mara: "In the morning. I'll have to find someone with a key." |
-| `tessa-hurt-arrival-cloak-listening.png` | Tessa stung: she has just been told she's confined | screen left | Mara: "I have orders to keep you in this room tonight." |
-| `tessa-hurt-arrival-cloak-speaking.png` | Tessa asking, her voice close to breaking | screen right | "And tomorrow?" |
-| `tessa-hurt-arrival-speaking.png` | Tessa, cloak gone, cold and bitter, handing it back | screen right | "Take that with you." |
-| `mara-controlled-speaking.png` | Mara level and polite, giving nothing | screen right | "In the morning. I'll have to find someone with a key." · "The stairs aren't lit." · "I have orders to keep you in this room tonight." |
-| `mara-controlled-listening.png` | Mara hearing the requests, composed, already refusing | screen left | "That tower over there. Can you take me up?" · "I just want to make a call." |
-| `mara-uneasy-listening.png` | Mara unable to answer; her eyes go toward the guard | screen left | "We've got candles." · "And tomorrow?" · "Take that with you." |
-| `senn-assuring-speaking.png` | Senn, patient and persuasive (replaces batch 1's) | screen right | as in batch 1 |
-| `senn-attentive-listening.png` | Senn, courteous, measured attention (replaces batch 1's) | screen left | as in batch 1 |
-| `senn-evasive-listening.png` | Senn composed, eyes sliding away (replaces batch 1's) | screen left | as in batch 1 |
+| `tessa-startled-working-speaking.png` | Tessa afraid of what she's being asked to do | screen right | "I've never done this on a person." |
+| `tessa-hurt-working-speaking.png` | Tessa voicing her fear that she's not who they think | screen right | "And if they brought the wrong person?" |
+| `tessa-hurt-working-listening.png` | Tessa taking in that the fingers are gone for good | screen left | Iven: "They won't grow back." |
+| `tessa-attentive-working-speaking.png` | Tessa asking quietly, hoping | screen right | "And his fingers?" |
+| `tessa-attentive-working-listening.png` | Tessa listening closely, steadying herself | screen left | The priest's instruction; Iven: "I'll stay here."; Olan's plea; the mother |
+| `tessa-resolute-working-speaking.png` | Tessa steady and determined (for the Bellweir chapter pages) | screen right | later chapters |
+| `iven-attentive-treatment-speaking.png` | Iven calm and warm, steadying her | screen right | "I'll stay here. Bring the light over the dark part." · "Let me see her first." |
+| `iven-attentive-treatment-listening.png` | Iven listening to Tessa, gentle attention | screen left | "I've never done this on a person." |
+| `iven-concerned-treatment-speaking.png` | Iven telling a hard truth kindly | screen right | "They won't grow back." |
+| `iven-concerned-treatment-listening.png` | Iven worried for her | screen left | "And if they brought the wrong person?" · "And his fingers?" |
+| `priest-speaking.png` | The priest, calm and instructive | screen right | "Hold the light above his arm, as you've been practicing." |
+| `olan-speaking.png` | Olan pleading through pain, then astonished | screen right | "They were going to take my arm. Please try." · "I can feel that." |
+| `mother-speaking.png` | The mother, urgent and hopeful | screen right | "She's awake. Could you come now, while she's awake?" |
 
 **The people**
-- **Tessa, nineteen, the same girl as batch 1.** Match her face, hair and hoodie to [her batch 1 portraits](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png). In the first six rows ("arrival-cloak") she wears Mara's gray wool cloak over the hoodie, draped over her shoulders with its hood down. In "Take that with you" she has pulled the cloak off, so she's back in the plain hoodie. It's night and she's exhausted and frightened: a little more drawn than in S001, hair coming loose. "Hurt" means emotionally hurt; she has no injury.
-- **Mara, thirty-two, captain.** Medium olive-brown skin, squared jaw, slightly heavy eyelids, hazel eyes, a strong nose with a modest bend, and thick dark-brown hair braided and pinned low at the nape. She wears her slate-blue military coat buttoned to a stand collar, with a narrow brass captain's bar at the collar and a white shirt collar showing. She should read as an adult in her thirties, not an elderly veteran, and match the Mara painted in [the S002 scenes](../renpy/game/art/lit/night-exchange-softened.webp). Her control is courteous, not cold; the unease shows only in her eyes.
-- **Senn, late fifties.** Keep batch 1's robes and brushed-back gray hair, but paint the man in his design: a rounded build, a fuller, heavier face with soft jowls, and a fuller short gray-white beard. He should read as the same man painted in [the S001 scenes](../renpy/game/art/softened/opening/cg/pleading-mother.png), older and heavier than batch 1's. Still not balding.
+- **Tessa, nineteen, the same girl as batches 1 and 2** ([her portraits](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png)). In S003 she wears the early working dress seen in the paintings: a long blue-gray robe-coat with woven botanical borders down the front, over an ivory under-robe with close sleeves, hair in a low ponytail. Both hands are healthy. It's her first day of this work; she is frightened and out of her depth, not yet a Saint.
+- **Iven, twenty-six, healer.** Medium-brown skin, a long face, wide nose, brown eyes, thick black curls cropped at the sides and unruly on top, clean-shaven. Here he wears his olive knee-length coat over an open-neck linen shirt, with a cream washable apron over the front for treatment, as in the S003 paintings. His manner is warm and steady; one eyebrow can rise before he teases, but not here.
+- **The priest.** A young man with brown skin, a shaved scalp and a plain cream robe.
+- **Olan, late twenties, the patient.** Stocky, light tan skin, close-cut auburn hair, gray eyes and a square freckled face. He's propped up in an infirmary bed in a plain white infirmary shirt, sweating and in pain; his injured right hand stays out of frame.
+- **The mother.** Dark skin, close curls and a faded yellow headwrap. She's been waiting by her daughter's bed.
 
 **The format** is unchanged from batch 1, matching GPT's Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
 - Square, 1254×1254 or larger, with a transparent background.
@@ -45,18 +45,13 @@ Twelve portraits. Nine are for S002, the first night: Mara brings supper to the 
 - Expressions must still read at 150 px wide, the size of the listener's window.
 
 **Save, then stop**
-1. Save the twelve files at the paths above, replacing batch 1's three Senn files, and the prompts in `art/prompts/portraits-batch-2/`.
-2. Compare them side by side before finishing: Tessa against her batch 1 portraits, and each character's files for the same face, clothes, light and scale, each looking the right way.
-3. **Stop there.** Don't start batch 3, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 2 is ready for Claude to check.
+1. Save the thirteen files at the paths above, and the prompts in `art/prompts/portraits-batch-3/`.
+2. Compare them side by side before finishing: Tessa against her earlier portraits, Iven's four against each other, and every file for the right direction, light and scale.
+3. **Stop there.** Don't start batch 4, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 3 is ready for Claude to check.
 
 ## Queued behind the check
 
-Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 2's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
-
-**Batch 3: S003, the first treatment, and the Bellweir pages (14 files).** Tessa wears the early working dress seen in the S003 paintings. Iven wears his olive coat with the cream treatment apron. The priest, Olan and the mother complete the scene. `tessa-resolute-working-speaking` and `olan-listening` serve later chapters.
-- `tessa-attentive-working-speaking`, `tessa-attentive-working-listening`, `tessa-startled-working-speaking`, `tessa-hurt-working-speaking`, `tessa-hurt-working-listening`, `tessa-resolute-working-speaking`
-- `iven-attentive-treatment-speaking`, `iven-attentive-treatment-listening`, `iven-concerned-treatment-speaking`, `iven-concerned-treatment-listening`
-- `priest-speaking`, `olan-speaking`, `olan-listening`, `mother-speaking`
+Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 3's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
 
 **Batch 4: S004 and S005, the ceremony and the window (14 files).** Tessa wears the formal Saint coat, mantle and twelve-ray badge. Iven wears his olive coat without the apron. Orra, the messenger and one more Senn complete the set.
 - `tessa-attentive-formal-speaking`, `tessa-attentive-formal-listening`, `tessa-hurt-formal-speaking`, `tessa-hurt-formal-listening`, `tessa-resolute-formal-speaking`, `tessa-resolute-formal-listening`
@@ -98,6 +93,7 @@ Each batch ends with the same stop. Claude releases the next batch after checkin
 | `mara-citadel` | S050 (1) | 2 |  |
 | `warden` | S006 (1) | 1 |  |
 | `archivist` | S012 (1) | 1 |  |
+| `olan-soldier` | S049 (1) | 1 | Olan four years on, as a soldier: padded blue-gray coat, repaired mail |
 | `ferryman` | S019 (1) | 1 |  |
 | `escort` | S044 (1) | 1 |  |
 | `runner` | S052 (1) | 1 |  |

@@ -88,20 +88,36 @@ def neck_end(sheet, cell, face):
 
 
 def detect_face(path):
-    """Largest frontal face on a grey ground, for a new transparent bust."""
+    """Largest face on a grey ground, for a new transparent bust. Tries the
+    frontal detector, then looser settings, then the profile detector in both
+    directions (strongly turned three-quarter views defeat the frontal one)."""
     image = Image.open(path).convert('RGBA')
     ground = Image.new('RGBA', image.size, (128, 128, 128, 255))
     ground.alpha_composite(image)
     grey = cv2.equalizeHist(cv2.cvtColor(np.array(ground.convert('RGB')), cv2.COLOR_RGB2GRAY))
-    detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt2.xml')
-    faces = detector.detectMultiScale(grey, 1.05, 4, minSize=(min(image.size) // 8,) * 2)
-    if len(faces) == 0:
-        raise SystemExit('No face found in %s; add it to FACE_OVERRIDES' % path)
-    x, y, w, h = max(faces, key=lambda f: f[2])
-    return int(x), int(y), int(w)
+    minimum = (min(image.size) // 8,) * 2
+    width = grey.shape[1]
+    attempts = [('haarcascade_frontalface_alt2.xml', 4, False), ('haarcascade_frontalface_alt2.xml', 2, False),
+                ('haarcascade_frontalface_default.xml', 4, False), ('haarcascade_profileface.xml', 3, False),
+                ('haarcascade_profileface.xml', 3, True)]
+    for cascade, neighbours, flipped in attempts:
+        detector = cv2.CascadeClassifier(cv2.data.haarcascades + cascade)
+        faces = detector.detectMultiScale(cv2.flip(grey, 1) if flipped else grey, 1.05, neighbours, minSize=minimum)
+        if len(faces):
+            x, y, w, h = max(faces, key=lambda f: f[2])
+            if flipped:
+                x = width - x - w
+            return int(x), int(y), int(w)
+    raise SystemExit('No face found in %s; add it to FACE_OVERRIDES' % path)
 
 
-FACE_OVERRIDES = {}
+# Face boxes [x, y, size] measured by hand where the detectors frame a
+# different part of the head than they do for the rest of a character's set.
+FACE_OVERRIDES = {
+    # the profile fallback boxes his whole head and beard; this is his face,
+    # on the scale of his other two portraits
+    'senn-assuring-speaking': (544, 335, 410),
+}
 
 
 def bust_box(path, face, facing):

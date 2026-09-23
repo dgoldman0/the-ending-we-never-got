@@ -854,10 +854,13 @@
    "cast": {
     "ELIN": "elin-later",
     "MARA": "mara-campaign",
-    "OLAN": {
-     "speaking": "art/rovel/portraits/olan-ordinary.png",
-     "listening": "art/rovel/portraits/olan-ordinary.png"
-    },
+    "OLAN": [
+     "olan-soldier",
+     {
+      "speaking": "art/rovel/portraits/olan-ordinary.png",
+      "listening": "art/rovel/portraits/olan-ordinary.png"
+     }
+    ],
     "ORRA": {
      "speaking": "art/rovel/portraits/orra-bright.png",
      "listening": "art/rovel/portraits/orra-bright.png"

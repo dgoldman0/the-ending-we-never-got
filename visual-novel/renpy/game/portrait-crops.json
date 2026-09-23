@@ -22,10 +22,19 @@
   "lucan-early-speaking": "right",
   "lucan-later-listening": "left",
   "lucan-later-speaking": "right",
+  "mara-controlled-listening": "left",
+  "mara-controlled-speaking": "right",
+  "mara-uneasy-listening": "left",
   "petitioner-speaking": "right",
   "senn-assuring-speaking": "right",
   "senn-attentive-listening": "left",
   "senn-evasive-listening": "left",
+  "tessa-attentive-arrival-cloak-listening": "left",
+  "tessa-hurt-arrival-cloak-listening": "left",
+  "tessa-hurt-arrival-cloak-speaking": "right",
+  "tessa-hurt-arrival-speaking": "right",
+  "tessa-resolute-arrival-cloak-listening": "left",
+  "tessa-resolute-arrival-cloak-speaking": "right",
   "tessa-resolute-arrival-listening": "left",
   "tessa-resolute-arrival-speaking": "right",
   "tessa-startled-arrival-listening": "left",
@@ -160,6 +169,24 @@
    923,
    1054
   ],
+  "mara-controlled-listening": [
+   334,
+   96,
+   594,
+   678
+  ],
+  "mara-controlled-speaking": [
+   299,
+   121,
+   681,
+   778
+  ],
+  "mara-uneasy-listening": [
+   326,
+   94,
+   611,
+   698
+  ],
   "petitioner-speaking": [
    182,
    83,
@@ -167,22 +194,58 @@
    865
   ],
   "senn-assuring-speaking": [
-   308,
-   187,
-   651,
-   743
+   271,
+   141,
+   780,
+   891
   ],
   "senn-attentive-listening": [
-   326,
-   166,
-   592,
-   676
+   236,
+   145,
+   750,
+   857
   ],
   "senn-evasive-listening": [
-   310,
-   151,
-   611,
-   698
+   205,
+   104,
+   817,
+   933
+  ],
+  "tessa-attentive-arrival-cloak-listening": [
+   330,
+   87,
+   582,
+   665
+  ],
+  "tessa-hurt-arrival-cloak-listening": [
+   294,
+   54,
+   645,
+   737
+  ],
+  "tessa-hurt-arrival-cloak-speaking": [
+   341,
+   52,
+   727,
+   830
+  ],
+  "tessa-hurt-arrival-speaking": [
+   362,
+   51,
+   685,
+   783
+  ],
+  "tessa-resolute-arrival-cloak-listening": [
+   325,
+   96,
+   588,
+   672
+  ],
+  "tessa-resolute-arrival-cloak-speaking": [
+   370,
+   80,
+   647,
+   739
   ],
   "tessa-resolute-arrival-listening": [
    300,

@@ -132,6 +132,34 @@
     "softened": "art/lit/portraits/mara-controlled-ordinary-softened.webp"
    }
   },
+  "mara-controlled-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-controlled-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-controlled-listening-night-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-controlled-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-listening-ordinary-softened.webp"
+   }
+  },
+  "mara-controlled-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-controlled-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-controlled-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-controlled-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp"
+   }
+  },
   "mara-uneasy": {
    "bright": {
     "intense": "art/lit/portraits/mara-uneasy-bright-intense.webp",
@@ -144,6 +172,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/mara-uneasy-ordinary-intense.webp",
     "softened": "art/lit/portraits/mara-uneasy-ordinary-softened.webp"
+   }
+  },
+  "mara-uneasy-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-uneasy-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-uneasy-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-uneasy-listening-night-intense.webp",
+    "softened": "art/lit/portraits/mara-uneasy-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-uneasy-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-uneasy-listening-ordinary-softened.webp"
    }
   },
   "messenger": {
@@ -328,6 +370,62 @@
     "softened": "art/lit/portraits/senn-listening-ordinary-softened.webp"
    }
   },
+  "tessa-attentive-arrival-cloak-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-arrival-cloak-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-arrival-cloak-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-arrival-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-listening": {
    "bright": {
     "intense": "art/lit/portraits/tessa-listening-bright-intense.webp",
@@ -354,6 +452,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-resolute-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-resolute-ordinary-softened.webp"
+   }
+  },
+  "tessa-resolute-arrival-cloak-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-resolute-arrival-cloak-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-ordinary-softened.webp"
    }
   },
   "tessa-resolute-arrival-listening": {
