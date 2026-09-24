@@ -1,5 +1,7 @@
 # Tessa — Gray Scar to Harrow, about twenty to twenty-one
 
+**User review, 23 September 2026:** green is the northern side's colour, not Tessa's. Too plain as well: only the badge marks her as the Saint. Redesigned in batch 5.
+
 Status: costume proposal, 23 September 2026; awaiting the user's choice. This replaces no selected costume and is not a dialogue portrait set.
 
 [Full figure](gray-scar-harrow.png) · [Layered GIMP master](gray-scar-harrow.xcf) · [Bust view](gray-scar-harrow-bust.png)

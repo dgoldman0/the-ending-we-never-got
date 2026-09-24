@@ -12,23 +12,20 @@ The user wants better portraits. The cast is being painted as head-and-shoulders
 - **Batch 4, first start, stopped 23 September.** The user rejected Tessa's layered ceremonial costume when GPT's first drafts showed it at bust size ("a shawl on a blue thing on a blueish thing"). The fault was the costume design, carried over unexamined, not GPT's painting. The partial work is kept in the git stash "Batch 4 partial (GPT, stopped 23 Sep)"; its four good files were restored into batch 4.
 - **Batch 4, checked 23 September.** All 62 portraits and the costume proposals arrived. Played every line that uses them in the game, and compared each character's new files with the ones already in it. Every new face matches its written design, and the returning cast (Iven, Mara, Olan, Senn, Valcair, Orra, the messenger) matches their earlier portraits; every pair faces each other. The three Tessa repaints now match her likeness reference: freckles, natural brows, no makeup. That leaves her three S003 *speaking* files looking more polished than the listening files they alternate with, so they are repainted in batch 5. Claude fixed the crops locally: the face detector had locked onto a shirt collar or part of a face in `iven-harrow-speaking`, `iven-attentive-listening` and `olan-soldier-listening`, and had framed `iven-concerned-listening`, `olan-soldier-speaking` and four older portraits (Olan, Serat and two of Tessa's) tighter than the rest of their sets.
 
-## Next for GPT: batch 5, Tessa in her chosen costumes, then stop
+## Next for GPT: batch 5, Tessa's costumes and portraits, in four parts
 
-**Don't start until the user has chosen the costumes below.** Paint only from a costume the user has chosen, and record the choice here before painting.
+Part A doesn't depend on any costume. Part B redesigns four of Tessa's costumes and **stops for the user to choose**. Parts C and D paint her portraits in the chosen costumes. Commit at the end of each part.
 
-### The costume choices
+**Before sending:** the user still has to decide what sets the Saint's vestments apart (part B, item 1). Fill that in first.
 
-GPT's part A proposals are in `art/character-keys/tessa/` ([side by side at bust size](character-keys/tessa/batch-4-costume-busts.png)). Claude's notes for the user:
+### What the user decided about the batch 4 proposals
 
-| Costume | Proposal | Claude's notes | User's choice |
-| --- | --- | --- | --- |
-| Ceremonial robe (S004–S005) | [ceremonial-robe.md](character-keys/tessa/ceremonial-robe.md) | One closed lapis robe with an embroidered standing collar, the badge on her left chest and the white mantle hanging behind her arms. It reads as one ceremonial garment at bust size. From the front the mantle shows only as a sliver behind the arms, while the story beat is Senn settling that mantle on her; a fuller mantle over the shoulders may serve the scene better. | awaiting the user |
-| Winter (S014–S017) | [winter.md](character-keys/tessa/winter.md) | A dark green lined coat closed to the throat with its own funnel collar; one garment. Green is the northern army's colour (Lucan, Serat, the captains). | awaiting the user |
-| Gray Scar to Harrow (S019–S037) | [gray-scar-harrow.md](character-keys/tessa/gray-scar-harrow.md) | An olive belted tunic with a square neckline over trousers and boots; one garment. Also green, and plain enough that only the badge marks her as the Saint. | awaiting the user |
-| Campaign (S040–S054) | [campaign-saint.md](character-keys/tessa/campaign-saint.md), [bust](character-keys/tessa/campaign-saint-bust.png) | The existing campaign coat still stacks layers at bust size: an ivory under-tunic with its own collar inside an open blue-gray coat, as GPT's note says. Needs a one-garment redesign if the user applies the rule to it. | awaiting the user |
-| Postwar (S058) | [postwar-clothes.md](character-keys/tessa/postwar-clothes.md) | A plum wrap robe closed at the side with toggles, the brace on her right hand; one garment, and her face shows the war. | awaiting the user |
-
-If the user rejects a costume, redesign it first as in batch 4 part A (full figure, bust view, note), stop for the user's choice, and paint no portraits in it until then.
+- **Ceremony: redo as Saint's attire.** The closed lapis robe reads as a good dress with a mantle behind it. The user expects the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress"; her working and field clothes can be different. The direction is white and gold, the temple's own colours: a full-length sacred robe with the twelve-ray sun worked into it, and the white mantle as a heavy ceremonial cloak fastened across the chest with the badge, the main piece of the outfit rather than a shawl. Something beyond that should set the Saint apart, in keeping with the worldbuilding. It is not the summoning circle.
+- **No green for Tessa.** Green is the northern side's colour in the written designs (Lucan, Serat, the northern captains, the governor); the human army wears blues, the temple white, cream, gold and lapis. The winter and field proposals were green only because the brief asked for outfits that differ from each other; make them differ by shape and trim instead.
+- **Winter:** keep the one-piece lined coat with its own roll collar, in a human-side colour.
+- **Gray Scar to Harrow:** too plain; only the small badge marks her as the Saint. Redesign.
+- **Campaign:** the existing coat still stacks an ivory under-tunic with its own collar inside an open coat. Redesign as one garment.
+- **Postwar:** the plum wrap robe stays as proposed.
 
 ### Before painting: the self-check
 
@@ -42,6 +39,7 @@ These are the faults found so far. Check every file against them before saving i
 6. **Age is right.** Tessa's ages are given with each set.
 7. **Horns follow each design.** Northern characters have individual horn shapes; the humans have none; helmets have openings for horns.
 8. **The expression reads at 150 px wide,** the listener's window.
+9. **Colours keep sides apart.** Green is the northern side's; don't put Tessa or the human cast in it.
 
 ### The format
 
@@ -51,9 +49,28 @@ Unchanged since batch 1, matching the Lucan and Valcair busts ([example](../renp
 - Even, neutral light with no strong colour cast; the game adds each scene's glare or darkness. Keep hands out of frame, with no text, frame or border.
 - Paint from the written design. Use an existing portrait or painting only as an identity reference, and never edit a rejected file into its replacement.
 
-### Part A: S004 and S005 in the ceremonial robe (6 files)
+### Part A: three S003 repaints, working dress unchanged (3 files)
 
-Tessa is nineteen, in the chosen ceremonial robe, displayed against her will; the scene and people are as in batch 4 part B. Claude corrects the S004–S005 paintings to the chosen robe in GIMP.
+The batch 4 repaints brought Tessa's S003 listening files back to her likeness reference. Repaint the three S003 speaking files the same way, so she doesn't change between lines: no liner, natural straight brows, ordinary lips, freckles kept, chestnut hair not red. Keep each file's moment and direction from batch 3 and the working dress exactly as it is. Use [the face reference](character-references/tessa/north-infirmary-face.png) and the new [`tessa-resolute-working-speaking`](../renpy/game/art/portraits/tessa-resolute-working-speaking.png) as identity references.
+
+- `tessa-startled-working-speaking.png`: "I've never done this on a person."
+- `tessa-hurt-working-speaking.png`: "And if they brought the wrong person?"
+- `tessa-attentive-working-speaking.png`: "And his fingers?"
+
+### Part B: four costume redesigns, then stop for the user
+
+As in batch 4 part A, make for each a full-figure image on a neutral background (1024×1536 or larger) with a GIMP XCF, a bust view in the portrait framing, and a short `.md` in `art/character-keys/tessa/` giving the construction, the story period and your review. Keep the rule: one main garment per outfit with its own silhouette and neckline, only the layers the story needs, and every outfit distinguishable at bust size. Paint from the written design; don't feed in the rejected keys as clothing references.
+
+1. **The Saint's vestments, `saint-vestments.md` (S004–S005; the mantle again at the hearing, S016), Tessa at nineteen.** Follow the user's direction above: white and gold, a full-length sacred robe with the twelve-ray sun worked into it, and a heavy white ceremonial cloak fastened across the chest with the badge as the main piece. What sets the Saint apart: **[the user's choice goes here]**. It must still work in the story: Senn pins the badge and settles the mantle on her; at the hearing she wears the mantle over her winter coat, pulls it loose and leaves it across the book. Keep it clearly different from Senn's cream priest's robes with sunburst collar and cuffs. No crown. She is wearing it against her will.
+2. **Winter, `winter.md` (S014–S017), about twenty.** The batch 4 shape in a human-side colour, not green.
+3. **Gray Scar to Harrow, `gray-scar-harrow.md` (S019–S037), about twenty to twenty-one.** One practical field garment with trousers and boots, repaired and worn, in a human-side colour, that still reads as the Saint's: carry the woven botanical trim of her working dress and the temple badge, not a plain work tunic.
+4. **Campaign, `campaign-coat.md` (S040–S054), about twenty-three.** One coat closed to the throat with its own collar, no separate inner collar or shirt front showing; keep the blue-gray, the narrow worn borders, trousers, calf boots, short gloves and the sword belt at her left hip. War-worn face.
+
+Commit part B, then **stop and ask the user to choose.** Record the choices here, then continue with parts C and D.
+
+### Part C: S004 and S005 in the Saint's vestments (6 files)
+
+Tessa is nineteen, in the chosen vestments, displayed against her will; the scene and people are as in batch 4 part B.
 
 | File in `renpy/game/art/portraits/` | Who and moment | Looks toward | Used with these lines |
 | --- | --- | --- | --- |
@@ -64,7 +81,7 @@ Tessa is nineteen, in the chosen ceremonial robe, displayed against her will; th
 | `tessa-resolute-formal-speaking.png` | Tessa confronting Senn | screen right | "Look at me. When did I agree to go?" |
 | `tessa-resolute-formal-listening.png` | Tessa holding her ground | screen left | Senn: "We can talk afterward." |
 
-### Part B: the later Tessa sets (7 sets, 14 files)
+### Part D: the later Tessa sets (7 sets, 14 files)
 
 Each set is `<set>-speaking.png` (looks toward screen right) and `<set>-listening.png` (looks toward screen left), in the chosen costume for its period. She ages from nineteen to about twenty-three and the war shows more in each: drawn cheeks, tired eyes, weathered skin, less tended hair, never glamour. Iven dies at Harrow (S035); Mara dies on the citadel stair (S055); the right-hand injury comes in the throne hall (S054).
 
@@ -78,20 +95,12 @@ Each set is `<set>-speaking.png` (looks toward screen right) and `<set>-listenin
 | `tessa-injured` | After the throne hall and on the stair where she finds Mara: the same clothes torn and dirty, her right hand wounded and kept out of frame; shock and grief, no triumph | Barely voiced: "Mara." · "That's the one I draw with." | Numb, hearing the surgeon |
 | `tessa-postwar` | About twenty-three, the postwar clothes, the brace on her right hand kept out of frame; visibly aged by the war, grieving, no smile | Quiet, determined: "Does it say whether the pages are there?" · "Don't go without me when they answer." | Listening, far away |
 
-### Part C: three S003 repaints, working dress unchanged (3 files)
-
-The batch 4 repaints brought Tessa's S003 listening files back to her likeness reference. Repaint the three S003 speaking files the same way, so she doesn't change between lines: no liner, natural straight brows, ordinary lips, freckles kept, chestnut hair not red. Keep each file's moment and direction from batch 3 and the working dress exactly as it is. Use [the face reference](character-references/tessa/north-infirmary-face.png) and the new [`tessa-resolute-working-speaking`](../renpy/game/art/portraits/tessa-resolute-working-speaking.png) as identity references.
-
-- `tessa-startled-working-speaking.png`: "I've never done this on a person."
-- `tessa-hurt-working-speaking.png`: "And if they brought the wrong person?"
-- `tessa-attentive-working-speaking.png`: "And his fingers?"
-
 ### Save, commit, then stop
 
-1. Save each file at its path, and the prompts in `art/prompts/portraits-batch-5/`.
+1. Save each file at its path, and the prompts in `art/prompts/portraits-batch-5/` (part B's in `art/prompts/characters/`).
 2. Before each commit, lay the part's files side by side with Tessa's earlier portraits and her face reference, and go through the self-check.
 3. Commit at the end of each part, naming the files in the message.
-4. **Stop after part C.** Don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 5 is ready for Claude to check.
+4. **Stop after part B for the user's choices, and again after part D.** Don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 5 is ready for Claude to check.
 
 **How Claude checks it.** `tools/review-portraits.py` crops and grades every portrait, plays each line that uses them in the game headless, and lays out contact sheets of the lines and side-by-side sheets of each character, new files marked. Claude then looks at the sheets and full screens.
 
@@ -205,7 +214,7 @@ Found while building and reviewing the new screens:
 2. **The arrival foot meets the text.** In `art/opening/cg/arrival.png`, Tessa's landing foot sits where the reading text begins, and the game lifts the painting 70 px to compensate. A recomposition with the foot higher would remove the lift.
 3. **Iven's position below the dais falls under the text.** In `art/rovel/cg/ceremony-intervention.png` and `ceremony-yield.png`, Iven's boots and the step edge between him and the dais sit under the reading shade, so the staging point is weakened. Lifting the painting cut off Orra's and Senn's heads instead, so the fix belongs in the painting: keep the step edge above y ≈ 820.
 4. **The petitioner is painted as a different woman.** In `art/opening/cg/pleading-mother.png` and `woman-release.png`, the woman who catches Senn's sleeve has dark curly hair in a bun and a brown shawl. Her design, and her portrait, give her a reddish braid and a damp gray shawl. Correct the paintings to the design.
-5. **The S004–S005 paintings show the rejected ceremonial costume:** the open lapis coat over the pale green under-robe, with the mantle. Once the user has chosen the new robe, Claude corrects these paintings in GIMP to match it (closing the front, removing the under-robe, adjusting the mantle), and lists any that can't be corrected locally.
+5. **Nine S004–S005 paintings show the rejected ceremonial outfit** (the open lapis coat over the pale green under-robe): `ceremony-dais`, `-intervention`, `-mantle`, `-refusal`, `-refused-chair` and `-yield`, and `window-packing`, `-pause` and `-together`. White-and-gold vestments are a change of the whole figure, not a recolour, so they need repainting in the chosen vestments once the user has chosen. For the window scene, decide from the screenplay whether she is still wearing the mantle afterward.
 6. **Existing paintings are a little soft.** S001–S005 are 1672×941, upscaled to 1080p. Regenerate new work at 1920×1080 or larger.
 
 ## Needed, but not images

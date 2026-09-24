@@ -1,6 +1,8 @@
 # Tessa — closed ceremonial robe, nineteen
 
-Status: batch 4 costume proposal, 23 September 2026, replacing the rejected open-coat/under-robe/mantle stack. User selection remains open; the six ceremonial dialogue portraits wait for batch 5.
+**Not chosen, 23 September 2026.** The user expected the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress": white and gold, a full-length sacred robe with the twelve-ray sun, and the white mantle as a heavy ceremonial cloak fastened across the chest with the badge, plus something that sets the Saint apart in keeping with the worldbuilding (not the summoning circle). Batch 5 redesigns it as `saint-vestments.md`.
+
+Original status: batch 4 costume proposal, 23 September 2026, replacing the rejected open-coat/under-robe/mantle stack.
 
 [Full figure](ceremonial-robe.png) · [Full GIMP master](ceremonial-robe.xcf) · [Bust](ceremonial-robe-bust.png) · [Bust GIMP master](ceremonial-robe-bust.xcf).
 

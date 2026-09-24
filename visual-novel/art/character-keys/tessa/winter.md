@@ -1,5 +1,7 @@
 # Tessa — winter robe-coat proposal
 
+**User review, 23 September 2026:** green is the northern side's colour, not Tessa's. Keep this shape in a human-side colour.
+
 **Status:** batch 4 Part A proposal for the user's choice; not an approved costume and not a runtime portrait. Covers the first winter, S014–S017, including the hearing in S016. Tessa is about twenty, with both hands healthy.
 
 ## Construction
