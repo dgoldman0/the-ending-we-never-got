@@ -1,0 +1,5 @@
+# Local GIMP headroom composite
+
+The initial scene (`exec-41db14d7-d119-4e97-9422-6f8eafbf9349.png`) and upper-background extension (`exec-7a4c4d14-a065-4d44-bb8d-769732bf98d4.png`) came from `/home/kir/.codex/generated_images/01a0cf96-3dfc-7501-b20b-81a2b39d7ac6/`. Exact generation and extension prompts are alongside this record.
+
+GIMP moved the original1672×941 painting down45px on an unchanged canvas, leaving a transparent top45px and clipping45px of unimportant bottom floor. The generated extension is the bottom background layer; the original scene is above it with a mask for `(0,45,1672,896)` and a6px feather only at that boundary. All original people, hands, clothing, book and papers are preserved. No body region was scaled or redrawn. GIMP NoHalo resampled the whole composition to1920×1080. Save `art/scene-studies/s015-elin-lodging/headroom-composite.xcf` before merged PNG export. Reopened export was checked by exact RGBA byte comparison and matched. Root and independent source review are recorded in the scene brief.
