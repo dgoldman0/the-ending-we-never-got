@@ -1,6 +1,8 @@
 # Tessa — public Saint ceremony, nineteen
 
-Status: manually reviewed working costume key, 16 September 2026; user selection remains separate. This replaces the formal trouser-suit concept, without imposing a ban on trousers elsewhere.
+**Rejected by the user, 23 September 2026.** Seen in a painted bust portrait, this outfit reads as three garments stacked on her: a pale green under-robe, an open blue coat over it and a white shawl on top (the user: "a shawl on a blue thing on a blueish thing"). The user expected a ceremonial robe that is just a robe. The full-figure key hid the problem because a long coat open over a long under-robe looks like one gown from a distance. Do not use this key for new portraits or paintings. Its replacement is a single closed ceremonial robe with the white mantle, being redesigned through [the asset request](../../asset-request.md). The S004–S005 paintings still show this version until they are corrected to the new one.
+
+Original status: manually reviewed working costume key, 16 September 2026; user selection remained separate. This replaced the formal trouser-suit concept, without imposing a ban on trousers elsewhere.
 
 [Full PNG](ceremonial-saint-v1.png) · [GIMP XCF](ceremonial-saint-v1.xcf). Native size: 1024 × 1536.
 

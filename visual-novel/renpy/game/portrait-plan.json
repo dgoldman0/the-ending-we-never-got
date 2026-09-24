@@ -37,15 +37,11 @@
   },
   {
    "batch": 4,
-   "title": "S004 and S005, then the later recurring cast and the small speaking roles",
-   "scenes": [
-    4,
-    5
-   ],
+   "title": "S004-S005 without Tessa, the later cast and the small speaking roles (Tessa's costume designs come first, for the user)",
+   "scenes": [],
    "sets": [
     "valcair-private",
     "vask",
-    "tessa-campaign",
     "marren",
     "elin",
     "hest",
@@ -54,8 +50,6 @@
     "orren",
     "mara-campaign",
     "serat",
-    "tessa-citadel",
-    "tessa-injured",
     "ada",
     "iven-harrow",
     "mara-citadel",
@@ -73,17 +67,38 @@
     "escort",
     "runner",
     "surgeon"
+   ],
+   "also": [
+    "iven-attentive-speaking",
+    "iven-attentive-listening",
+    "iven-concerned-speaking",
+    "iven-concerned-listening",
+    "orra-speaking",
+    "orra-listening",
+    "messenger-speaking",
+    "senn-evasive-speaking"
    ]
   },
   {
    "batch": 5,
-   "title": "Tessa's winter, Gray Scar-Harrow and postwar costumes, once the user has chosen their keys",
+   "title": "Tessa in the costumes the user chooses: the S004-S005 ceremonial robe and every later period",
    "scenes": [],
    "sets": [
     "tessa-winter",
     "tessa-campaign-early",
     "tessa-harrow",
+    "tessa-campaign",
+    "tessa-citadel",
+    "tessa-injured",
     "tessa-postwar"
+   ],
+   "also": [
+    "tessa-attentive-formal-speaking",
+    "tessa-attentive-formal-listening",
+    "tessa-hurt-formal-speaking",
+    "tessa-hurt-formal-listening",
+    "tessa-resolute-formal-speaking",
+    "tessa-resolute-formal-listening"
    ]
   }
  ]

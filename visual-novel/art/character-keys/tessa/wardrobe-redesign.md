@@ -1,5 +1,7 @@
 # Tessa — rebuilding the wardrobe
 
+**User correction, 23 September 2026: no layer stacks.** The user rejected the ceremonial key as clothes stacked on clothes (under-robe, open coat, mantle) and pointed out that each outfit looked like the previous one with a small shift. Each outfit is one main garment with its own silhouette and neckline; add only the layers the story needs, and make any mantle or cloak read as part of the outfit. Judge every design at bust size as well as full figure, because the dialogue portraits show her from the chest up, and check that her outfits look different there. The phrase "layered sacred-garment direction" below was the earlier model's framing; the user's recorded words were "Good good" to the working key and the note about trousers.
+
 Status: active redesign, 16 September 2026. The user authorized the layered sacred-garment direction. An early working key, movement sheet, complete ceremonial outfit and late campaign key have now been generated, locally corrected in GIMP and manually reviewed. Winter, intermediate fieldwear and postwar personal clothing remain to be developed. The old costume system remains superseded.
 
 **User response to the first new working key:** “Good good,” with the explicit clarification that trousers remain appropriate, particularly in the trenches. The long early ensemble received a positive response; it is not a universal silhouette imposed on every later outfit. Campaign clothing may visibly expose practical trousers. Sacred identity must come from a coherent design, not from banning a garment category.
@@ -31,13 +33,13 @@ Sources: [Rebuild 11](../../../../screenplay/original-timeline/source.fountain),
 
 Use the original style guides' weighted drapery, botanical woven borders, mineral colors and substantial handcrafted textiles as clothing design principles. The guides are rough references, not instructions to copy a goddess costume or supply Tessa with a crown.
 
-The early working and formal keys use a **long, layered Saint silhouette**: a close-sleeved under-robe, a shaped outer coat with robe-like construction, divided skirt panels and a woven waist fastening. The campaign key shortens the outer garment and exposes practical trousers. The shared yoke, borders, mineral colors and cloth construction connect these distinct outfits before the badge is legible.
+The early working and formal keys used a **long, layered Saint silhouette** (the formal one is now rejected for exactly that layering; see the correction at the top): a close-sleeved under-robe, a shaped outer coat with robe-like construction, divided skirt panels and a woven waist fastening. The campaign key shortens the outer garment and exposes practical trousers. The shared yoke, borders, mineral colors and cloth construction connect these distinct outfits before the badge is legible.
 
 Current material family: warm ivory or unbleached linen, mineral blue and muted green woven cloth, restrained dull gold worked into edges and structural bands. Ornament relates across yoke, fastening, cuffs and hem. The formal outfit changes the under-robe, coat, waistband and shoes as well as adding the mantle. Specific colors and motifs remain working designs. No magical function is assigned to clothing.
 
 | State | Construction and purpose to develop |
 | --- | --- |
-| Institution-dressed public Saint | [Ceremonial key](ceremonial-saint.md): celadon under-robe, long lapis brocade coat, broad woven waistband, ivory slippers, white/gold mantle and visible temple badge. Reviewed working design. |
+| Institution-dressed public Saint | **Rejected 23 September 2026:** the [layered ceremonial key](ceremonial-saint.md) (celadon under-robe, open lapis coat, mantle). Being redesigned as one closed ceremonial robe with the white mantle and the temple badge. |
 | Early working Saint | [Working key and movement sheet](working-saint.md): ivory close-sleeved under-robe, long short-sleeved blue robe-coat, botanical borders, narrow girdle and russet boots. Positive user response to the standing ensemble; step/drawing sheet reviewed separately. |
 | Experienced campaign Saint | [Campaign key](campaign-saint.md): shorter divided coat, visible charcoal trousers, close sleeves, padded underlayer, calf boots and sword hanger. The user explicitly permits trousers. Reviewed at about twenty-three before the assault, with both hands intact and Mara still alive. Weather layers remain pending. |
 | Winter | Warmth through heavier woven layers, lining and a weather covering related to the same construction, not an unrelated modern overcoat. |
