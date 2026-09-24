@@ -1,0 +1,11 @@
+# Tessa — winter, early field and Harrow portrait sources
+
+Six 1254-square RGBA sources made with the built-in image generator, one call per portrait. Exact prompts are adjacent. Speaking views face screen right; separately painted listening views face screen left. No mirroring, runtime crop or lighting grade was performed.
+
+Read the full winter revelation/hearing/corridor, Gray Scar rescue and Harrow collapse/south-bank interactions. Compared each source with the selected storm face, accepted working portrait, and approved winter/field costume busts. Winter retains its single integral roll collar and wearer-left overlap; the field sets retain a single closed botanical front band. All badges stay on the anatomical left chest. Hands are absent; no later injury appears.
+
+Inspected whole portraits, facial detail, enlarged badge shapes, neutral alpha composites and six 150px reductions. Winter has hurt accusation and a downward arrested listening reaction; early field has urgent instruction and level attentive listening; Harrow has wet dirt, tear tracks, a forceful open accusation and stunned lowered listening. The face remains freckled with ordinary brown eyes, natural brows and brown chestnut hair. This source review does not clear the game presentation.
+
+Local GIMP corrections: early-field speaking initially had eleven rays. Replaced only that badge and its immediate cloth surround with a feathered native patch from the matching twelve-ray listening portrait, keeping it on the same wearer-left chest. Inspected the final patch at native resolution for cloth seams and counted twelve rays. The editable repair remains in /tmp/tessa-campaign-early-speaking-repair.xcf; the portrait PNG is the final export. Harrow speaking was uniformly scaled from 1254 to 1204, bottom-aligned on a 1254 transparent canvas at offset 25,50, to bring its visible hair top from about 50px to 99px; anatomy was not stretched. Reinspected the final framing. The other five badges have twelve rays in their generated paint.
+
+Cross-check caught that GIMP initially exported the resized layer bounds at 1204-square. Re-exported after resizing the active layer to the 1254-square image canvas. Verified the final file is 1254×1254 RGBA, alpha 0–254 and visible alpha>16 bounds (25,99)–(1229,1254); reopened the final neutral composite.

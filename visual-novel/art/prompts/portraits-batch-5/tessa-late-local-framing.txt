@@ -1,0 +1,3 @@
+Local GIMP source-framing pass for six separately generated portraits:
+tessa-campaign-speaking, tessa-campaign-listening, tessa-citadel-speaking, tessa-citadel-listening, tessa-injured-speaking, tessa-injured-listening.
+Each generated source is1254x1254 RGBA. Uniformly scale its character layer to1166x1166 with cubic interpolation, place at offsets(44,88) in the unchanged1254-square canvas, resize layer to image canvas and exportPNG retaining truealpha. This adds consistent top/side crop room without altering direction, anatomy, expression, clothing, badge or damage placement. No image is mirrored. Original generated source files remain in the tool cache; exact generation prompts are saved beside this note.
