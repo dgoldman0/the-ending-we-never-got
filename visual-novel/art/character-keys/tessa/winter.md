@@ -8,7 +8,7 @@
 
 One lined slate-blue wool robe-coat closes from the throat to the lower calf. Its broad rounded roll collar folds from the same outer cloth and continues into the front overlap: there is no visible scarf, inner collar, shirt front or under-robe. The overlap fastens toward her anatomical left with matching cloth loops and toggles. A narrow ivory botanical woven border follows the front, hem and integral padded cuffs. Sewn waist shaping and a pleated skirt allow movement without a separate belt or corseted silhouette. Russet calf boots overlap the hem; no bare legs or second skirt show.
 
-A small brass disk with twelve short rays sits on her anatomical left upper chest. Discreet shoulder loops remain part of the coat's proposed construction. The ceremonial mantle is absent from these views. The user subsequently selected the lightweight fine-gold mantle; it fastens across the chest independently of these loops. The coat leaves the shoulders available for it, but this key does not prove the hearing's removal action.
+A small brass disk with twelve short rays sits on her anatomical left upper chest. Discreet shoulder loops remain part of the coat's proposed construction. The ceremonial mantle is absent from these views. Its final form is still under review; these loops do not prescribe or approve the mantle's fastening or prove the hearing's removal action. The coat leaves the shoulders available for it.
 
 ## Delivered views and editable master
 

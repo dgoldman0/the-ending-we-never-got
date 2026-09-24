@@ -35,18 +35,17 @@ Sources: [Rebuild 11](../../../../screenplay/original-timeline/source.fountain),
 
 Use the original style guides' weighted drapery, botanical woven borders, mineral colors and substantial handcrafted textiles as clothing design principles. The guides are rough references, not instructions to copy a goddess costume or supply Tessa with a crown.
 
-The early working ensemble remains the requested working costume; its full figure, movement sheet and current portraits govern that period. The formal and later campaign layer stacks are superseded. The selected later outfits differ in their main garment, neckline and practical purpose; use the current keys below, not the historical designs described earlier in this audit.
+The early working and formal keys used a **long, layered Saint silhouette** (the formal one is now rejected for exactly that layering; see the correction at the top): a close-sleeved under-robe, a shaped outer coat with robe-like construction, divided skirt panels and a woven waist fastening. The campaign key shortens the outer garment and exposes practical trousers. The shared yoke, borders, mineral colors and cloth construction connect these distinct outfits before the badge is legible.
 
-The human-side clothing palette is ivory, white, slate/mineral blue and restrained gold. The personal postwar wrap is dusty plum. Green belongs to the northern side. No magical function is assigned to clothing.
+Current material family: warm ivory or unbleached linen, mineral blue and muted green woven cloth, restrained dull gold worked into edges and structural bands. Ornament relates across yoke, fastening, cuffs and hem. The formal outfit changes the under-robe, coat, waistband and shoes as well as adding the mantle. Specific colors and motifs remain working designs. No magical function is assigned to clothing.
 
-| State | Current construction and source |
+| State | Construction and purpose to develop |
 | --- | --- |
-| Public Saint, S004–S005 | [Selected A, fine-gold vestments](saint-vestments-gold.md): a light pure-white robe and thin removable white mantle, fine gold work, one chest sun clasp. No rigid ornament, bulky cloak or visible shirt/coat stack. |
-| Early working Saint, S006–S013 | [Working key and movement sheet](working-saint.md), retained for this period: long mineral-blue working ensemble with ivory botanical borders, narrow girdle and russet boots. Match the current working portraits; the temple badge has been received by S006. |
-| Winter, S014–S017 | [Approved winter key](winter.md): one lined slate-blue robe-coat with its own roll collar and left-side fastening. At S016 add the selected thin white mantle; she removes it onto the book. |
-| Gray Scar to Harrow, S018–S037 | [Approved field key](gray-scar-harrow.md): one closed blue tunic with broad botanical yoke and one flat center band, trousers and boots. Both hands healthy; immediate Harrow wetness/grief is scene-specific. |
-| Campaign and citadel, S038–S057 | [Approved campaign coat](campaign-coat.md): one blue-gray coat closed to its own upright collar, narrow borders, trousers, short gloves and left-hip sword belt. No inner collar or shirt front. Right-hand injury follows S054. |
-| Postwar personal clothing, S058 | [Retained plum wrap](postwar-clothes.md): one ankle-length wrap robe with left-side toggles and no badge. Right-hand brace, left-handed drawing and accumulated grief persist. |
+| Institution-dressed public Saint | **Selected 24 September 2026:** [fine-gold vestments, option A](saint-vestments-gold.md), a light white robe and flowing mantle with fine gold thread and chest badge. The earlier layered ceremonial key, heavy robe and rigid ray collar are rejected. |
+| Early working Saint | [Working key and movement sheet](working-saint.md): ivory close-sleeved under-robe, long short-sleeved blue robe-coat, botanical borders, narrow girdle and russet boots. Positive user response to the standing ensemble; step/drawing sheet reviewed separately. |
+| Experienced campaign Saint | [Campaign key](campaign-saint.md): shorter divided coat, visible charcoal trousers, close sleeves, padded underlayer, calf boots and sword hanger. The user explicitly permits trousers. Reviewed at about twenty-three before the assault, with both hands intact and Mara still alive. Weather layers remain pending. |
+| Winter | Warmth through heavier woven layers, lining and a weather covering related to the same construction, not an unrelated modern overcoat. |
+| Postwar personal clothing | Softer and easier to fasten one-handed, visibly of the adopted world's clothing tradition. Work out what she keeps, alters or abandons now that the temple no longer directs her life. The grief, physical aging and damaged right hand persist independently of the costume choice. |
 
 ## Review before further wardrobe production
 
