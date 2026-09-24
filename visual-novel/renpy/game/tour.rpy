@@ -1,6 +1,8 @@
 # Development-only screen tour for manual visual review. It captures complete
 # screens at 1920x1080; it is not a quality gate and is excluded from builds.
 testcase ui_tour:
+    # S006 and S007 keep their book-page captures for the page layout.
+    $ book_pages(6, 7)
     $ _test.timeout = 40.0
     $ _preferences.text_cps = 0
     run Preference('display', 'fullscreen')

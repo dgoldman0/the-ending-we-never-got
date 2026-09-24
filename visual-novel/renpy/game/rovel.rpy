@@ -49,7 +49,7 @@ init python:
             'ward-hand': _rovel_old_cg('rested-hand', 'Olan’s dressed right hand rests on the blanket. The remaining fingers relax; the missing fingers have not returned.'),
             'ward-pause': _rovel_old_cg('treatment-pause', 'A mother calls from the next row beside her awake daughter. Tessa starts to rise; Iven remains beside her and asks to see the daughter first.'),
             'ward-water': _rovel_old_cg('after-first-treatment', 'Iven has brought water and gone to the family. Tessa sits beside sleeping Olan with the cup untouched.'),
-            'ceremony-mantle': _rovel_new_cg('ceremony-mantle', 'Senn pins the badge to Tessa’s formal coat and settles the white mantle over it beneath the sunburst banners.'),
+            'ceremony-mantle': _rovel_new_cg('ceremony-mantle', 'Senn pins the badge to Tessa’s white Saint’s robe and settles the light white mantle over it beneath the sunburst banners.'),
             'ceremony-orders': _rovel_new_cg('ceremony-orders', 'At the hall door, Orra holds out written orders while the messenger offers her a blackened ward stone.'),
             'ceremony-dais': _rovel_new_cg('ceremony-dais', 'Senn and Tessa have reached the dais beside the empty chair. Senn faces the audience; Orra watches from the hall door outside this view.'),
             'ceremony-applause': _rovel_new_cg('ceremony-applause', 'Standing among the wounded, Olan claps his good left hand against his thigh. His injured right hand still lacks two fingers.'),

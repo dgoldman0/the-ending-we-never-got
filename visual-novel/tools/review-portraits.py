@@ -9,6 +9,8 @@ For each delivered batch this does the whole mechanical part of the check:
      scene, and captures each at 1920x1080;
   3. assembles contact sheets in renpy/test-output/portrait-review/: each tile
      is the portrait pair with its line, labelled with scene, line and files;
+     and scene sheets (scenes-NN.png): the full screen at the first line under
+     each scene painting and key moment;
   4. lays out, for every character with a portrait painted since the last
      review, all of that character's crops with the new ones marked, beside
      Tessa's likeness reference where it applies (identity-<name>.png), so a
@@ -41,13 +43,15 @@ REFERENCES = {'tessa': VN / 'art/character-references/tessa/north-infirmary-face
 
 
 def plan_lines(scenes):
-    """[(scene, line, page_mode, label)] in reading order."""
+    """[(scene, line, mode, label)] in reading order. mode is 'stage' (a line
+    over a painting), 'page' (a line on the typeset book page) or 'scene' (the
+    first line under each painting or key moment, kept as a full screen)."""
     beats = runpy.run_path(str(VN / 'tools/check-rovel-plan.py'), run_name='review')['load_plan']()['ROVEL_BEATS']
     lines = []
     for (scene, line, page), beat in sorted(beats.items()):
         if page == 0 and beat.get('speaker') and (not scenes or scene in scenes):
             faces = [beat[r]['expression'] for r in ('speaker', 'listener') if beat.get(r)]
-            lines.append((scene, line, False, ' / '.join(faces)))
+            lines.append((scene, line, 'stage', ' / '.join(faces)))
     staging = json.loads((GAME / 'staging.json').read_text())['scenes']
     source = json.loads((GAME / 'source-map.json').read_text())
     present = {p.stem for p in (GAME / 'art/portraits').glob('*.png')}
@@ -55,6 +59,13 @@ def plan_lines(scenes):
         number = int(key)
         if scenes and number not in scenes:
             continue
+        blocks = source['scenes'][number - 1]['blocks']
+        painted_stages = [st for st in spec.get('stages', []) if (GAME / st['image']).is_file()]
+        mode = 'stage' if painted_stages else 'page'
+        for st in painted_stages:
+            first = next((b for b in blocks if b['line'] >= st.get('from', 0)), None)
+            if first:
+                lines.append((number, first['line'], 'scene', Path(st['image']).stem))
         sets = set()
         for entry in spec['cast'].values():
             for candidate in (entry if isinstance(entry, list) else [entry]):
@@ -70,8 +81,12 @@ def plan_lines(scenes):
             names = entry if isinstance(entry, list) else [entry]
             if who and who not in seen and any(isinstance(n, str) and n in painted for n in names):
                 seen.add(who)
-                lines.append((number, block['line'], True, who.title()))
-    return lines
+                lines.append((number, block['line'], mode, who.title()))
+    # one capture per line, in reading order
+    unique = {}
+    for entry in lines:
+        unique.setdefault(entry[:2], entry)
+    return sorted(unique.values(), key=lambda e: (e[0], e[1]))
 
 
 def write_test(lines):
@@ -98,12 +113,12 @@ def write_test(lines):
 def contact_sheets(lines):
     shots = OUT / 'shots'
     tiles = []
-    for scene, line, page, label in lines:
+    for scene, line, mode, label in lines:
         path = shots / ('s%03d-%03d.png' % (scene, line))
-        if not path.is_file():
+        if not path.is_file() or mode == 'scene':
             continue
         shot = Image.open(path).convert('RGB')
-        if page:
+        if mode == 'page':
             parts = [shot.crop(box) for box in PAGE_BOXES]
             tile = Image.new('RGB', (sum(p.width for p in parts) + 20, max(p.height for p in parts)), (30, 30, 30))
             x = 0
@@ -125,6 +140,31 @@ def contact_sheets(lines):
         for i, t in enumerate(group):
             sheet.paste(t, (10 + (i % 2) * 710, 10 + (i // 2) * (h + 10)))
         target = OUT / ('sheet-%02d.png' % (n // per_sheet + 1))
+        sheet.save(target)
+        print('wrote', target.relative_to(VN))
+
+
+def scene_sheets(lines):
+    """Full screens at the start of each painting and key moment, four to a
+    sheet, labelled, for judging the painting under the interface."""
+    shots = OUT / 'shots'
+    for old in OUT.glob('scenes-*.png'):
+        old.unlink()
+    tiles = []
+    for scene, line, mode, label in lines:
+        path = shots / ('s%03d-%03d.png' % (scene, line))
+        if mode == 'scene' and path.is_file():
+            shot = Image.open(path).convert('RGB').resize((960, 540), Image.LANCZOS)
+            framed = Image.new('RGB', (960, 566), (22, 22, 22))
+            framed.paste(shot, (0, 0))
+            ImageDraw.Draw(framed).text((6, 547), 'S%03d line %d  %s' % (scene, line, label), fill=(235, 235, 235))
+            tiles.append(framed)
+    for n in range(0, len(tiles), 4):
+        group = tiles[n:n + 4]
+        sheet = Image.new('RGB', (2 * 970 + 10, ((len(group) + 1) // 2) * 576 + 10), (12, 12, 12))
+        for i, t in enumerate(group):
+            sheet.paste(t, (10 + (i % 2) * 970, 10 + (i // 2) * 576))
+        target = OUT / ('scenes-%02d.png' % (n // 4 + 1))
         sheet.save(target)
         print('wrote', target.relative_to(VN))
 
@@ -184,6 +224,7 @@ def main():
             TEST.unlink(missing_ok=True)
             (GAME / 'review-portraits.rpyc').unlink(missing_ok=True)
     contact_sheets(lines)
+    scene_sheets(lines)
     identity_sheets(args.all)
     print('%d lines captured.' % len(lines))
 

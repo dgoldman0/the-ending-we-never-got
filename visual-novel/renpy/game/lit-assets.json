@@ -31,6 +31,114 @@
   "art/rovel/details/treatment-white.png": {
    "intense": "art/lit/rovel--details--treatment-white-intense.webp",
    "softened": "art/lit/rovel--details--treatment-white-softened.webp"
+  },
+  "art/scenes/s006-convoy-camp.png": {
+   "intense": "art/lit/scenes--s006-convoy-camp-intense.webp",
+   "softened": "art/lit/scenes--s006-convoy-camp-softened.webp"
+  },
+  "art/scenes/s007-roadside-inn.png": {
+   "intense": "art/lit/scenes--s007-roadside-inn-intense.webp",
+   "softened": "art/lit/scenes--s007-roadside-inn-softened.webp"
+  },
+  "art/scenes/s008-bellweir-market.png": {
+   "intense": "art/lit/scenes--s008-bellweir-market-intense.webp",
+   "softened": "art/lit/scenes--s008-bellweir-market-softened.webp"
+  },
+  "art/scenes/s009-bellweir-river.png": {
+   "intense": "art/lit/scenes--s009-bellweir-river-intense.webp",
+   "softened": "art/lit/scenes--s009-bellweir-river-softened.webp"
+  },
+  "art/scenes/s009-boat-drawing.png": {
+   "intense": "art/lit/scenes--s009-boat-drawing-intense.webp",
+   "softened": "art/lit/scenes--s009-boat-drawing-softened.webp"
+  },
+  "art/scenes/s009-rowing.png": {
+   "intense": "art/lit/scenes--s009-rowing-intense.webp",
+   "softened": "art/lit/scenes--s009-rowing-softened.webp"
+  },
+  "art/scenes/s010-bellweir-hills.png": {
+   "intense": "art/lit/scenes--s010-bellweir-hills-intense.webp",
+   "softened": "art/lit/scenes--s010-bellweir-hills-softened.webp"
+  },
+  "art/scenes/s011-bellweir-causeway.png": {
+   "intense": "art/lit/scenes--s011-bellweir-causeway-intense.webp",
+   "softened": "art/lit/scenes--s011-bellweir-causeway-softened.webp"
+  },
+  "art/scenes/s011-sanctuary.png": {
+   "intense": "art/lit/scenes--s011-sanctuary-intense.webp",
+   "softened": "art/lit/scenes--s011-sanctuary-softened.webp"
+  },
+  "art/scenes/s012-temple-reading-room.png": {
+   "intense": "art/lit/scenes--s012-temple-reading-room-intense.webp",
+   "softened": "art/lit/scenes--s012-temple-reading-room-softened.webp"
+  },
+  "art/scenes/s013-summoning-chamber-later.png": {
+   "intense": "art/lit/scenes--s013-summoning-chamber-later-intense.webp",
+   "softened": "art/lit/scenes--s013-summoning-chamber-later-softened.webp"
+  },
+  "art/scenes/s014-boots-and-cap.png": {
+   "intense": "art/lit/scenes--s014-boots-and-cap-intense.webp",
+   "softened": "art/lit/scenes--s014-boots-and-cap-softened.webp"
+  },
+  "art/scenes/s014-relief-warehouse.png": {
+   "intense": "art/lit/scenes--s014-relief-warehouse-intense.webp",
+   "softened": "art/lit/scenes--s014-relief-warehouse-softened.webp"
+  },
+  "art/scenes/s015-elin-lodging.png": {
+   "intense": "art/lit/scenes--s015-elin-lodging-intense.webp",
+   "softened": "art/lit/scenes--s015-elin-lodging-softened.webp"
+  },
+  "art/scenes/s016-council-room.png": {
+   "intense": "art/lit/scenes--s016-council-room-intense.webp",
+   "softened": "art/lit/scenes--s016-council-room-softened.webp"
+  },
+  "art/scenes/s016-hearing-door.png": {
+   "intense": "art/lit/scenes--s016-hearing-door-intense.webp",
+   "softened": "art/lit/scenes--s016-hearing-door-softened.webp"
+  },
+  "art/scenes/s017-council-corridor.png": {
+   "intense": "art/lit/scenes--s017-council-corridor-intense.webp",
+   "softened": "art/lit/scenes--s017-council-corridor-softened.webp"
+  },
+  "art/scenes/s018-gray-scar-ferry-approach.png": {
+   "intense": "art/lit/scenes--s018-gray-scar-ferry-approach-intense.webp",
+   "softened": "art/lit/scenes--s018-gray-scar-ferry-approach-softened.webp"
+  },
+  "art/scenes/s019-gray-scar-ferryhouse.png": {
+   "intense": "art/lit/scenes--s019-gray-scar-ferryhouse-intense.webp",
+   "softened": "art/lit/scenes--s019-gray-scar-ferryhouse-softened.webp"
+  },
+  "art/scenes/s020-gray-scar-riverbank.png": {
+   "intense": "art/lit/scenes--s020-gray-scar-riverbank-intense.webp",
+   "softened": "art/lit/scenes--s020-gray-scar-riverbank-softened.webp"
+  },
+  "art/scenes/s021-gray-scar-covered-landing.png": {
+   "intense": "art/lit/scenes--s021-gray-scar-covered-landing-intense.webp",
+   "softened": "art/lit/scenes--s021-gray-scar-covered-landing-softened.webp"
+  },
+  "art/scenes/s021-lucan-returns.png": {
+   "intense": "art/lit/scenes--s021-lucan-returns-intense.webp",
+   "softened": "art/lit/scenes--s021-lucan-returns-softened.webp"
+  },
+  "art/scenes/s021-rescue.png": {
+   "intense": "art/lit/scenes--s021-rescue-intense.webp",
+   "softened": "art/lit/scenes--s021-rescue-softened.webp"
+  },
+  "art/scenes/s022-river-picket.png": {
+   "intense": "art/lit/scenes--s022-river-picket-intense.webp",
+   "softened": "art/lit/scenes--s022-river-picket-softened.webp"
+  },
+  "art/scenes/s023-northern-field-quarters.png": {
+   "intense": "art/lit/scenes--s023-northern-field-quarters-intense.webp",
+   "softened": "art/lit/scenes--s023-northern-field-quarters-softened.webp"
+  },
+  "art/scenes/s024-northern-wharf.png": {
+   "intense": "art/lit/scenes--s024-northern-wharf-intense.webp",
+   "softened": "art/lit/scenes--s024-northern-wharf-softened.webp"
+  },
+  "art/scenes/s025-royal-infirmary-corridor.png": {
+   "intense": "art/lit/scenes--s025-royal-infirmary-corridor-intense.webp",
+   "softened": "art/lit/scenes--s025-royal-infirmary-corridor-softened.webp"
   }
  },
  "portraits": {
@@ -1266,6 +1374,34 @@
     "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-softened.webp"
    }
   },
+  "tessa-attentive-formal-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-attentive-formal-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-attentive-working-listening": {
    "bright": {
     "intense": "art/lit/portraits/tessa-attentive-working-listening-bright-intense.webp",
@@ -1292,6 +1428,118 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-campaign-early-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-campaign-early-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-campaign-early-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-campaign-early-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-campaign-early-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-campaign-early-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-campaign-early-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-campaign-early-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-early-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-campaign-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-campaign-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-campaign-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-campaign-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-campaign-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-campaign-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-campaign-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-campaign-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-campaign-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-citadel-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-citadel-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-citadel-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-citadel-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-citadel-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-citadel-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-citadel-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-citadel-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-citadel-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-harrow-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-harrow-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-harrow-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-harrow-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-harrow-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-harrow-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-harrow-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-harrow-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-harrow-speaking-ordinary-softened.webp"
    }
   },
   "tessa-hurt-arrival-cloak-listening": {
@@ -1336,6 +1584,34 @@
     "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-softened.webp"
    }
   },
+  "tessa-hurt-formal-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-formal-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-hurt-working-listening": {
    "bright": {
     "intense": "art/lit/portraits/tessa-hurt-working-listening-bright-intense.webp",
@@ -1364,6 +1640,34 @@
     "softened": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-softened.webp"
    }
   },
+  "tessa-injured-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-injured-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-injured-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-injured-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-injured-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-injured-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-injured-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-injured-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-injured-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-listening": {
    "bright": {
     "intense": "art/lit/portraits/tessa-listening-bright-intense.webp",
@@ -1376,6 +1680,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-listening-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-postwar-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-postwar-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-postwar-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-postwar-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-postwar-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-postwar-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-postwar-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-postwar-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-postwar-speaking-ordinary-softened.webp"
    }
   },
   "tessa-resolute": {
@@ -1448,6 +1780,34 @@
     "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-softened.webp"
    }
   },
+  "tessa-resolute-formal-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-resolute-formal-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-resolute-working-speaking": {
    "bright": {
     "intense": "art/lit/portraits/tessa-resolute-working-speaking-bright-intense.webp",
@@ -1516,6 +1876,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-startled-working-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-startled-working-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-winter-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-winter-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-winter-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-winter-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-winter-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-winter-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-winter-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-winter-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-winter-speaking-ordinary-softened.webp"
    }
   },
   "tessa-wounded": {
@@ -1660,6 +2048,33 @@
   "art/rovel/details/applause-hand.png": "bright",
   "art/rovel/details/treatment-blue.png": "ordinary",
   "art/rovel/details/treatment-white.png": "ordinary",
+  "art/scenes/s006-convoy-camp.png": "ordinary",
+  "art/scenes/s007-roadside-inn.png": "night",
+  "art/scenes/s008-bellweir-market.png": "ordinary",
+  "art/scenes/s009-bellweir-river.png": "ordinary",
+  "art/scenes/s009-boat-drawing.png": "ordinary",
+  "art/scenes/s009-rowing.png": "ordinary",
+  "art/scenes/s010-bellweir-hills.png": "night",
+  "art/scenes/s011-bellweir-causeway.png": "night",
+  "art/scenes/s011-sanctuary.png": "night",
+  "art/scenes/s012-temple-reading-room.png": "night",
+  "art/scenes/s013-summoning-chamber-later.png": "ordinary",
+  "art/scenes/s014-boots-and-cap.png": "ordinary",
+  "art/scenes/s014-relief-warehouse.png": "ordinary",
+  "art/scenes/s015-elin-lodging.png": "ordinary",
+  "art/scenes/s016-council-room.png": "ordinary",
+  "art/scenes/s016-hearing-door.png": "ordinary",
+  "art/scenes/s017-council-corridor.png": "ordinary",
+  "art/scenes/s018-gray-scar-ferry-approach.png": "ordinary",
+  "art/scenes/s019-gray-scar-ferryhouse.png": "ordinary",
+  "art/scenes/s020-gray-scar-riverbank.png": "ordinary",
+  "art/scenes/s021-gray-scar-covered-landing.png": "ordinary",
+  "art/scenes/s021-lucan-returns.png": "ordinary",
+  "art/scenes/s021-rescue.png": "ordinary",
+  "art/scenes/s022-river-picket.png": "ordinary",
+  "art/scenes/s023-northern-field-quarters.png": "night",
+  "art/scenes/s024-northern-wharf.png": "ordinary",
+  "art/scenes/s025-royal-infirmary-corridor.png": "ordinary",
   "ceremony-applause": "bright",
   "ceremony-dais": "bright",
   "ceremony-intervention": "bright",

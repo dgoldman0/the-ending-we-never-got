@@ -1,7 +1,24 @@
 # Functional regression only. Captures require separate manual inspection and
 # do not clear art, atmosphere, staging, UI beauty or connected-experience gates.
+init python:
+    _held_stages = {}
+
+    def book_pages(*scenes):
+        """Read these scenes as typeset book pages whatever paintings exist,
+        so the page tests keep working as scene art arrives."""
+        for number in scenes:
+            key = str(number)
+            _held_stages.setdefault(key, STAGING[key]['stages'])
+            STAGING[key]['stages'] = []
+
+    def restore_stages():
+        for key, stages in _held_stages.items():
+            STAGING[key]['stages'] = stages
+        _held_stages.clear()
+
 testsuite global:
     before testcase:
+        $ restore_stages()
         $ _test.transition_timeout = 0.05
         $ _test.timeout = 60.0
         $ _test.screenshot_directory = 'test-output'
@@ -150,13 +167,15 @@ testcase opening_scene_states:
     advance until screen 'chapter_title'
     assert eval current_scene == 6 and completed_scenes == 5
     click id 'chapter_continue'
-    assert screen 'nvl'
-    assert not screen 'say'
-    assert eval current_scene == 6 and current_rovel_beat() is None and not staged_scene()
+    # S006 now opens on its painting, staged from staging.json, not the opening's beat plan.
+    assert screen 'say'
+    assert not screen 'nvl'
+    assert eval current_scene == 6 and current_rovel_beat() is None and staged_scene()
 
 testcase page_reading:
     # Prose-only scenes read as typeset pages: a fresh page per scene, new pages
     # when full, and rollback/save/load keep the page contents.
+    $ book_pages(6, 7, 40)
     click id 'main_begin'
     run Jump('s006')
     pause 0.5
@@ -423,6 +442,7 @@ testcase lighting_preference:
 testcase staging_pipeline:
     # Art placed at a planned path turns a page scene into an illustrated one,
     # with portraits resolved from the scene's cast and the previous speaker.
+    $ book_pages(6)
     click id 'main_begin'
     $ _planned_stages = list(STAGING['6']['stages'])
     run Jump('s006')
@@ -451,6 +471,7 @@ testcase staging_pipeline:
 testcase page_portraits_and_initials:
     # Book pages show the speaker (and listener) in the margin and open each
     # scene with an illuminated initial; history keeps the plain letter.
+    $ book_pages(19)
     click id 'main_begin'
     run Jump('s019')
     pause 0.5
@@ -458,7 +479,8 @@ testcase page_portraits_and_initials:
     advance until eval scene_speaker == 'LUCAN'
     assert eval staging_faces()[0]['image'] == 'art/portraits/lucan-early-speaking.png'
     advance until eval scene_speaker == 'TESSA'
-    assert eval staging_faces()[0]['image'].endswith('tessa-resolute-working-ordinary.png')
+    # Her painted Gray Scar set (batch 5) replaces the earlier stand-in.
+    assert eval staging_faces()[0]['image'] == 'art/portraits/tessa-campaign-early-speaking.png'
     assert eval staging_faces()[1]['image'] == 'art/portraits/lucan-early-listening.png'
     assert eval portrait_source(staging_faces()[1]['image']).startswith('art/lit/portraits/lucan-early-listening-')
     assert eval any(plain_initial(h.what).startswith('Tessa catches') for h in _history_list)

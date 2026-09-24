@@ -93,21 +93,41 @@
   "surgeon-listening": "left",
   "surgeon-speaking": "right",
   "tessa-attentive-arrival-cloak-listening": "left",
+  "tessa-attentive-formal-listening": "left",
+  "tessa-attentive-formal-speaking": "right",
   "tessa-attentive-working-listening": "left",
   "tessa-attentive-working-speaking": "right",
+  "tessa-campaign-early-listening": "left",
+  "tessa-campaign-early-speaking": "right",
+  "tessa-campaign-listening": "left",
+  "tessa-campaign-speaking": "right",
+  "tessa-citadel-listening": "left",
+  "tessa-citadel-speaking": "right",
+  "tessa-harrow-listening": "left",
+  "tessa-harrow-speaking": "right",
   "tessa-hurt-arrival-cloak-listening": "left",
   "tessa-hurt-arrival-cloak-speaking": "right",
   "tessa-hurt-arrival-speaking": "right",
+  "tessa-hurt-formal-listening": "left",
+  "tessa-hurt-formal-speaking": "right",
   "tessa-hurt-working-listening": "left",
   "tessa-hurt-working-speaking": "right",
+  "tessa-injured-listening": "left",
+  "tessa-injured-speaking": "right",
+  "tessa-postwar-listening": "left",
+  "tessa-postwar-speaking": "right",
   "tessa-resolute-arrival-cloak-listening": "left",
   "tessa-resolute-arrival-cloak-speaking": "right",
   "tessa-resolute-arrival-listening": "left",
   "tessa-resolute-arrival-speaking": "right",
+  "tessa-resolute-formal-listening": "left",
+  "tessa-resolute-formal-speaking": "right",
   "tessa-resolute-working-speaking": "right",
   "tessa-startled-arrival-listening": "left",
   "tessa-startled-arrival-speaking": "right",
   "tessa-startled-working-speaking": "right",
+  "tessa-winter-listening": "left",
+  "tessa-winter-speaking": "right",
   "valcair-listening": "left",
   "valcair-private-listening": "left",
   "valcair-private-speaking": "right",
@@ -670,6 +690,18 @@
    615,
    702
   ],
+  "tessa-attentive-formal-listening": [
+   301,
+   125,
+   620,
+   709
+  ],
+  "tessa-attentive-formal-speaking": [
+   248,
+   90,
+   729,
+   833
+  ],
   "tessa-attentive-working-listening": [
    212,
    0,
@@ -677,10 +709,58 @@
    843
   ],
   "tessa-attentive-working-speaking": [
-   340,
-   88,
-   676,
-   772
+   215,
+   6,
+   864,
+   987
+  ],
+  "tessa-campaign-early-listening": [
+   249,
+   52,
+   640,
+   730
+  ],
+  "tessa-campaign-early-speaking": [
+   271,
+   69,
+   735,
+   839
+  ],
+  "tessa-campaign-listening": [
+   123,
+   91,
+   929,
+   1061
+  ],
+  "tessa-campaign-speaking": [
+   309,
+   127,
+   643,
+   735
+  ],
+  "tessa-citadel-listening": [
+   152,
+   117,
+   917,
+   1048
+  ],
+  "tessa-citadel-speaking": [
+   212,
+   94,
+   855,
+   976
+  ],
+  "tessa-harrow-listening": [
+   160,
+   41,
+   777,
+   887
+  ],
+  "tessa-harrow-speaking": [
+   279,
+   56,
+   805,
+   920
   ],
   "tessa-hurt-arrival-cloak-listening": [
    294,
@@ -700,6 +780,18 @@
    685,
    783
   ],
+  "tessa-hurt-formal-listening": [
+   233,
+   78,
+   702,
+   802
+  ],
+  "tessa-hurt-formal-speaking": [
+   221,
+   107,
+   750,
+   857
+  ],
   "tessa-hurt-working-listening": [
    156,
    0,
@@ -707,10 +799,34 @@
    909
   ],
   "tessa-hurt-working-speaking": [
-   290,
-   95,
-   807,
-   922
+   212,
+   9,
+   883,
+   1009
+  ],
+  "tessa-injured-listening": [
+   176,
+   107,
+   811,
+   926
+  ],
+  "tessa-injured-speaking": [
+   216,
+   83,
+   946,
+   1080
+  ],
+  "tessa-postwar-listening": [
+   277,
+   99,
+   640,
+   730
+  ],
+  "tessa-postwar-speaking": [
+   280,
+   64,
+   721,
+   824
   ],
   "tessa-resolute-arrival-cloak-listening": [
    226,
@@ -736,6 +852,18 @@
    660,
    754
   ],
+  "tessa-resolute-formal-listening": [
+   283,
+   119,
+   632,
+   722
+  ],
+  "tessa-resolute-formal-speaking": [
+   248,
+   61,
+   702,
+   802
+  ],
   "tessa-resolute-working-speaking": [
    281,
    6,
@@ -755,10 +883,22 @@
    820
   ],
   "tessa-startled-working-speaking": [
-   339,
-   92,
-   681,
-   778
+   207,
+   0,
+   885,
+   1011
+  ],
+  "tessa-winter-listening": [
+   218,
+   32,
+   860,
+   983
+  ],
+  "tessa-winter-speaking": [
+   226,
+   38,
+   786,
+   898
   ],
   "valcair-listening": [
    268,

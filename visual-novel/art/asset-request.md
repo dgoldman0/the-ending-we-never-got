@@ -83,6 +83,8 @@ Commit part B, then **stop and ask the user to choose** a vestments variant and 
 
 **Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The user has now authorized the remaining costumes and continuation through Parts C–E. No further costume approval stop is pending.
 
+**Checked in the game, 24 September (Claude):** parts A–D and part E chapters 02–04 (S006–S025) are integrated and played. The 23 Tessa portraits match her likeness and each period's costume. The 11 repaints replace the old paintings in S001, S004 and S005. The 20 scene paintings and 7 key moments play under their lines. `s011-boots-and-cap.png` was renamed `s014-boots-and-cap.png`, since the screenplay puts that moment in S014 (the list had it in S011). **Resume part E at chapter 05 (S026).**
+
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 
 #### S004 and S005, in the Saint's vestments (6 files)
@@ -217,7 +219,7 @@ These beats fail as one held painting. Save each in `renpy/game/art/scenes/` wit
 | `s009-boat-drawing.png` | S009 | Tessa drawing Iven's portrait on the boat |
 | `s009-rowing.png` | S009 | Tessa learning to row with Mara |
 | `s011-sanctuary.png` | S011 | Tessa's sanctuary light over the evacuation on the causeway |
-| `s011-boots-and-cap.png` | S011 | the cut to the boots, the cap and the search portrait |
+| `s014-boots-and-cap.png` | S014 | the boots, the cap and the search portrait (lines 599–604; the list first put this in S011) |
 | `s016-hearing-door.png` | S016 | the hearing seen across the room: the door, Mara, Orra and Senn placed as the screenplay stages them |
 | `s021-rescue.png` | S021 | the rescue's geography: ferryhouse, bank, gate, shelter and the two boats |
 | `s021-lucan-returns.png` | S021 | Lucan turning back for the litter, held as a decision |

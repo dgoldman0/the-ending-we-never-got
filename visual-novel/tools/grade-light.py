@@ -26,7 +26,7 @@ light does. Staging paintings for S006 onward are graded from the painting as
 delivered. Outputs go to renpy/game/art/lit/ with lit-assets.json; the game
 uses them automatically.
 
-    python3 visual-novel/tools/grade-light.py          # grade what is missing
+    python3 visual-novel/tools/grade-light.py          # grade what is missing or changed
     python3 visual-novel/tools/grade-light.py --portraits   # portraits only; also
                                                         # regrades crops newer than their grades
     python3 visual-novel/tools/grade-light.py --force  # regrade everything
@@ -274,7 +274,7 @@ def compose(stage, variants):
 
 
 def plan_items():
-    """(key, register, compose function) for every image the game stages."""
+    """(key, register, compose function, source files) for every image the game stages."""
     variants = json.loads((GAME / 'lighting-assets.json').read_text())
     checker = runpy.run_path(str(VN / 'tools/check-rovel-plan.py'), run_name='light_plan')
     beats = checker['load_plan']()['ROVEL_BEATS']
@@ -284,15 +284,16 @@ def plan_items():
         if beat['stage_id'] in seen:
             continue
         seen.add(beat['stage_id'])
-        items.append(('stage:' + beat['stage_id'], beat['grade'], lambda s=stage: compose(s, variants)))
+        sources = [neutral(stage['image'], variants)] + [neutral(a['image'], variants) for a in stage['actors']]
+        items.append(('stage:' + beat['stage_id'], beat['grade'], lambda s=stage: compose(s, variants), sources))
 
     staging = json.loads((GAME / 'staging.json').read_text())['scenes']
     for spec in staging.values():
         for stage in spec.get('stages', []):
             if (GAME / stage['image']).is_file() and 'image:' + stage['image'] not in seen:
                 seen.add('image:' + stage['image'])
-                items.append(('image:' + stage['image'], spec.get('grade', 'ordinary'),
-                              lambda p=stage['image']: load_rgba(p, SIZE).convert('RGB')))
+                items.append(('image:' + stage['image'], stage.get('grade', spec.get('grade', 'ordinary')),
+                              lambda p=stage['image']: load_rgba(p, SIZE).convert('RGB'), [stage['image']]))
 
     # Discovery details, their origin paintings and the title painting. A detail
     # is a close-up meant to be seen: its register applies at lower strength.
@@ -306,7 +307,7 @@ def plan_items():
         if 'image:' + path not in seen:
             seen.add('image:' + path)
             items.append(('image:' + path, register,
-                          lambda p=path: load_rgba(neutral(p, variants)).convert('RGB')))
+                          lambda p=path: load_rgba(neutral(p, variants)).convert('RGB'), [neutral(path, variants)]))
     return items
 
 
@@ -353,9 +354,13 @@ def main():
         return
     manifest = {'stages': {}, 'images': {}, 'registers': {}}
     graded = 0
-    for key, register, source in plan_items():
+    for key, register, source, inputs in plan_items():
         paths = {mode: output_path(key, mode) for mode in ('intense', 'softened')}
-        if args.force or not all((GAME / p).is_file() for p in paths.values()):
+        # regrade when an output is missing or older than any file it is made from
+        done = [GAME / p for p in paths.values()]
+        stale = not all(d.is_file() for d in done) or \
+            min(d.stat().st_mtime for d in done) < max((GAME / i).stat().st_mtime for i in inputs)
+        if args.force or stale:
             image = np.asarray(source(), dtype=np.float32) / 255.0
             SCALE[0] = max(image.shape[:2]) / 1920.0
             for mode, path in paths.items():

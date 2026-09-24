@@ -87,6 +87,16 @@
      "image": "art/scenes/s009-bellweir-river.png",
      "from": 0,
      "alt": "River Below Bellweir, Late Afternoon"
+    },
+    {
+     "image": "art/scenes/s009-boat-drawing.png",
+     "from": 409,
+     "alt": "Tessa draws Iven's portrait in the boat while he rows."
+    },
+    {
+     "image": "art/scenes/s009-rowing.png",
+     "from": 427,
+     "alt": "Tessa and Mara each work a spare oar, turned in the stern."
     }
    ],
    "cast": {
@@ -129,6 +139,11 @@
      "image": "art/scenes/s011-bellweir-causeway.png",
      "from": 0,
      "alt": "Bellweir, East Causeway, Night"
+    },
+    {
+     "image": "art/scenes/s011-sanctuary.png",
+     "from": 528,
+     "alt": "Tessa's sanctuary light holds over the evacuation on the causeway."
     }
    ],
    "cast": {
@@ -187,6 +202,11 @@
      "image": "art/scenes/s014-relief-warehouse.png",
      "from": 0,
      "alt": "Relief Warehouse, Winter Morning"
+    },
+    {
+     "image": "art/scenes/s014-boots-and-cap.png",
+     "from": 599,
+     "alt": "Renn holds Orren's cap while Tessa draws the search portrait."
     }
    ],
    "cast": {
@@ -232,6 +252,11 @@
      "image": "art/scenes/s016-council-room.png",
      "from": 0,
      "alt": "Palace Council Room, Day"
+    },
+    {
+     "image": "art/scenes/s016-hearing-door.png",
+     "from": 750,
+     "alt": "Across the council room: Mara at the reopened door, Orra, Senn, and Tessa standing at her chair; the mantle lies on the book."
     }
    ],
    "cast": {
@@ -347,6 +372,16 @@
      "image": "art/scenes/s021-gray-scar-covered-landing.png",
      "from": 0,
      "alt": "Gray Scar, Covered Landing, Continuous"
+    },
+    {
+     "image": "art/scenes/s021-lucan-returns.png",
+     "from": 898,
+     "alt": "Lucan turns back from the boat toward the litter."
+    },
+    {
+     "image": "art/scenes/s021-rescue.png",
+     "from": 909,
+     "alt": "The landing, the bank, the gate, the shelter and the two boats as the rescue goes on."
     }
    ],
    "cast": {
