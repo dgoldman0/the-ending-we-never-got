@@ -1,25 +1,29 @@
 # Tessa — Gray Scar to Harrow, about twenty to twenty-one
 
-**User review, 23 September 2026:** green is the northern side's colour, not Tessa's. Too plain as well: only the badge marks her as the Saint. Redesigned in batch 5.
-
-Status: costume proposal, 23 September 2026; awaiting the user's choice. This replaces no selected costume and is not a dialogue portrait set.
+**Status: batch 5 costume proposal awaiting the user's choice.** This replaces the rejected green field proposal with human-side blue and carries the working Saint's botanical textile vocabulary into a practical short garment. It is not an approved portrait set or scene costume selection.
 
 [Full figure](gray-scar-harrow.png) · [Layered GIMP master](gray-scar-harrow.xcf) · [Bust view](gray-scar-harrow-bust.png)
 
 ## Period and construction
 
-For S019–S037, from the second summer at Gray Scar through Harrow. Both hands remain healthy. The temple badge is retained at Gray Scar, where Lucan recognizes it. This neutral key does not carry Harrow's wetness, immediate grief or the later final-assault injury into every scene.
+For S018–S037, second-summer Gray Scar through Harrow. Both hands remain healthy, and the temple badge stays on her anatomical left chest: Lucan recognizes it inside the ferryhouse. This neutral key does not carry Harrow's immediate wetness and grief backward into the river-camp visits or borrow the later assault injury.
 
-One closed green-gray wool-linen tunic ends just above the knees, over loose charcoal trousers. Its low, broad, softly squared neckline has a narrow copper-and-olive botanical edge directly against the skin. There is no shirt collar, visible undergarment, pale yoke, open coat or mantle. Close sleeves, side vents and a narrow woven waist tie keep the silhouette practical. Repairs mark the right elbow and left skirt. Russet side-fastening calf boots have stitched leather welts and renewed leather soles. The brass temple sun sits on the anatomical left chest.
+One closed slate-blue wool-linen tunic ends above the knees, over loose charcoal trousers and russet calf boots. Its own shallow round neckline has a thin blue binding directly against the skin. There is no inner shirt front, separate collar, open coat, cloak or visible garment stack. Long close sleeves, a narrow woven girdle and side vents allow practical movement. The short silhouette remains distinct from the early working costume's long robe and the winter/campaign coats.
 
-The neckline, cloth color, trim and repairs are proposed construction choices; the screenplay establishes the period, activity and badge, not a sewing pattern. Movement clearance is plausible in this standing view but is not demonstrated by a full action study.
+A broad ivory woven botanical yoke follows the shoulders and neckline. Muted ochre and brown fruits/leaves continue down a **single flat center-front band**, with matching wrist and hem borders. That band is part of the closed tunic, not an opening onto an undershirt. This makes her Saint identity visible at bust size instead of relying on the badge alone. Worn blue fabric and repairs at the left elbow and left skirt show field use. The soft leather boots have side fastening, renewed stitched leather soles and low stacked heels; no modern rubber tread.
 
-## Review
+These sewing choices are proposed construction, not new screenplay facts. The source supports a mobile field outfit, the badge, healthy hands, rescue/healing work and drawing; a standing key does not prove every action's clearance.
 
-The full figure and bust show the same main garment. At bust size the uninterrupted gray-green chest and low squared opening differ visibly from the winter proposal's raised roll collar and the postwar proposal's plum diagonal wrap. No extra clothing layer appears at the neck. Both views retain chestnut hair, ordinary brown eyes and visible freckles; the neutral expression is a costume-study expression, not a substitute for the later dialogue performances.
+## Review and local work
 
-The first boots had modern-looking molded tread. A targeted built-in image edit replaced this with stacked leather soles and low heels. The full figure's tiny generated badge had ambiguous extra rays; GIMP replaced the ray field with the fixed twelve-ray temple emblem over a feathered local cloth repair, retaining the original modeled brass center. The bust's twelve rays were counted in a close inspection. The corrected full export was inspected again.
+Compared the selected full figure and matching bust with the storm-infirmary face and the corrected working portrait. Both preserve the chestnut low ponytail, ordinary brown eyes, natural brows, freckles and individual nose/mouth. The expression is alert and somewhat tired, without the later campaign's accumulated grief. Both views have the same blue palette, shallow bound neckline, integral yoke, single botanical front band and left-chest sun.
 
-The full PNG is 1024 × 1536 on neutral warm-gray ground. Its XCF has five meaningful layers: generated character with alpha, neutral ground, local cloth repair, fixed ray geometry and preserved brass center. These are editable composite/repair layers, not separately painted garment pieces. The bust is a separately generated 1254 × 1254 RGBA image; GIMP proportionally fitted it to provide clear headroom while retaining the canvas and transparency. The reopened XCF's visible export matches the full PNG pixel for pixel.
+Inspected the full face, both hands, complete boots and garment boundaries at enlarged detail. The legs and feet form a plausible standing figure; the hands remain healthy. The full figure initially had an eight-ray badge. GIMP replaced its ray field using the fixed twelve-ray temple geometry, retained the modeled original brass disk, and repaired the cloth beneath it on a separate masked layer. An initially dark cloth patch was brightness-matched before delivery. The final badge and repaired surroundings were inspected again. The separately generated bust has twelve rays already; these were counted in the final image.
 
-Prompts: [full figure](../../prompts/characters/tessa-gray-scar-harrow-full.txt), [boot correction](../../prompts/characters/tessa-gray-scar-harrow-boots.txt), [bust](../../prompts/characters/tessa-gray-scar-harrow-bust.txt). Built-in image generation was used, followed by local GIMP assembly and badge repair. No runtime crop, grading or in-game approval is claimed.
+The bust initially misplaced the elbow patch on the visible upper arm. A local GIMP cloth repair removed that misplaced patch; the elbow is below the bust's frame. A uniform GIMP scale to 1166 × 1166, bottom-aligned on the unchanged 1254-square canvas, provides headroom without stretching the face or costume. Inspected the final alpha composite and sleeve correction.
+
+## Deliverables and verification
+
+The full PNG is 1024 × 1536 on neutral gray. Its XCF has five meaningful layers: generated alpha figure, neutral ground, local cloth repair, exact twelve-ray geometry and preserved modeled brass center. The figure's original maximum alpha of 254 was normalized to 255 in GIMP. These are editable assembly/repair layers, not individually painted garment pieces. Reopened the XCF and verified that its visible export matches the delivered PNG pixel for pixel.
+
+The separately painted bust is 1254 × 1254 RGBA with genuine transparency. Exact built-in prompts: [full figure](../../prompts/characters/tessa-gray-scar-harrow-batch5-full.txt) and [bust](../../prompts/characters/tessa-gray-scar-harrow-batch5-bust.txt). No runtime cropping, grading, in-game review or user approval is claimed.

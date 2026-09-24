@@ -1,0 +1,5 @@
+Local GIMP pass, batch 5 campaign-coat full figure:
+Preserve all original pixels beneath non-destructive repair layers. Sample a 60x60 ellipse of flat matching coat wool at source(430,320), feather5px, duplicate to a separate layer and translate(+150,-25) to cover the generated badge and its excess small prongs. The first sample crossed a folded seam and was replaced with this flat sample before final export.
+At center(610,325), add brass disk radius14.1px and exactly12 short triangular rays. Ray directions begin-90degrees and repeat every30degrees; bases radius13.3px with angle offsets±0.11radians, tips radius23px. Use restrained light-to-dark brass shading with narrow rim, no glow. Keep the badge on wearer'sleft chest. Assemble onto independently editable RGB(214,212,206) neutralground. Save4-layer XCF and visible1024x1536PNG.
+Bust framing only: uniformly scale transparent1254-square source to1154-square, offset(50,100) within1254canvas, resize layer tocanvas and exportPNG preservingalpha. Do not mirror, distort, crop off hair, or modify face/clothes.
+Reopen full XCF and compare visible export pixel-for-pixel tofull PNG.

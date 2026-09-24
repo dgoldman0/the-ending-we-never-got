@@ -1,29 +1,27 @@
-# Tessa — winter robe-coat proposal
+# Tessa — blue winter robe-coat proposal
 
-**User review, 23 September 2026:** green is the northern side's colour, not Tessa's. Keep this shape in a human-side colour.
+**Status:** batch 5 Part B proposal, awaiting the user's costume decision. The user retained the batch 4 one-piece winter shape and rejected its green colour. This replaces that green key with a human-side slate-blue coat. It is not a runtime portrait or an approved costume.
 
-**Status:** batch 4 Part A proposal for the user's choice; not an approved costume and not a runtime portrait. Covers the first winter, S014–S017, including the hearing in S016. Tessa is about twenty, with both hands healthy.
+**Period:** first winter, S014–S017, about twenty; both hands healthy. S014 shows her helping Ada with boots; S015 leads to the hearing; S016 places the white mantle over her winter clothing and has her remove it onto the book. The winter coat's practical thickness is distinct from the user's latest requirement for light, elegant ceremonial attire.
 
 ## Construction
 
-One heavy, lined, muted gray-green wool robe-coat closes from the throat to the lower calf. Its rounded roll collar is part of the same garment; no shirt collar, under-robe or scarf is visible. The overlapping front edge continues directly from the collar into a narrow botanical woven border. Long sleeves end in integral padded work cuffs; modest sewn waist shaping and a pleated skirt provide room below the hips. Russet boots complete the outfit.
+One lined slate-blue wool robe-coat closes from the throat to the lower calf. Its broad rounded roll collar folds from the same outer cloth and continues into the front overlap: there is no visible scarf, inner collar, shirt front or under-robe. The overlap fastens toward her anatomical left with matching cloth loops and toggles. A narrow ivory botanical woven border follows the front, hem and integral padded cuffs. Sewn waist shaping and a pleated skirt allow movement without a separate belt or corseted silhouette. Russet calf boots overlap the hem; no bare legs or second skirt show.
 
-Small shoulder loops leave the shoulders available for the white ceremonial mantle at the hearing. The mantle itself is intentionally absent from this costume proposal. A small brass twelve-ray temple badge sits on her anatomical left chest. The shoulder loops and closure construction are proposed design details, not new screenplay facts.
-
-The hearing requires the mantle to be removable so she can pull it loose and leave it across the book. A production hearing image must show it fastening to the shoulder loops and falling behind this collar, without adding a wrap across her chest. This key shows the underlying coat; it does not demonstrate the complete mantle action.
+A small brass disk with twelve short rays sits on her anatomical left upper chest. Discreet shoulder loops remain part of the coat's proposed construction. The ceremonial mantle is absent from these views. Its final form is still under review; these loops do not prescribe or approve the mantle's fastening or prove the hearing's removal action. The coat leaves the shoulders available for it.
 
 ## Delivered views and editable master
 
 - [Full figure](winter.png): 1024×1536, neutral warm-gray background.
-- [Bust](winter-bust.png): 1254×1254, genuine transparent background, three-quarter view toward screen right, hands outside the frame.
-- [GIMP master](winter.xcf): two genuine editable layers — the transparent painted character and the neutral ground. The face, garment and badge are painted together on the character layer; there are no claimed separate cloth or face layers.
+- [Bust](winter-bust.png): 1254×1254, true alpha, three-quarter view toward screen right, hands outside the frame.
+- [GIMP master](winter.xcf): two genuine layers, the transparent painted figure and a separately editable neutral ground. Face, garment and badge remain painted together; no separate face or cloth editing is claimed.
 
-Generated with the built-in image tool. The full figure used the selected storm-infirmary face only for likeness. The bust used the new full figure to preserve this costume. Exact prompts are [full figure](../../prompts/characters/tessa-winter-full-batch4.txt) and [bust](../../prompts/characters/tessa-winter-bust-batch4.txt). GIMP placed the transparent character over the neutral ground and reframed the bust to add headroom without distorting it.
+Generated with the built-in image tool. The full figure used only the selected storm-infirmary face for identity and a written winter construction brief; the rejected green key was not an image input. The bust used the new blue full figure for clothing and the selected face for identity. Exact prompts: [full figure](../../prompts/characters/tessa-winter-full-batch5.txt), [bust](../../prompts/characters/tessa-winter-bust-batch5.txt). GIMP assembled the full key and uniformly reduced the bust figure to 1154×1154 on its 1254-square transparent canvas, adding headroom without distorting the anatomy.
 
 ## Review
 
-The closed torso, same-cloth rounded collar and continuous front overlap read as one substantial winter garment. There is no visible stack of under-shirt, jacket and shawl. At bust size the broad rounded green collar is clearly different from the working dress's ivory yoke and the proposed ceremonial robe's upright gold collar. The full figure and bust retain the same color, collar, embroidered front, shoulder loops and left-chest badge.
+Inspected the full stance and native face, hands, boot coverage and badge, then compared the saved full figure and bust side by side. Both show the same blue wool, integral rolled collar, wearer-left overlap and botanical border, shoulder loops and twelve-ray brass badge. The lower-calf coat and boots give a complete winter silhouette. The two views turn in different directions but retain the fastening and badge on the wearer's left; neither is a mirrored copy.
 
-Compared the face with the selected storm-infirmary likeness: chestnut ponytail, ordinary brown eyes, natural brows, broad mouth, freckles and uneven skin remain. The full figure is more worried than the neutral bust; neither has glossy lips or ornamental makeup. Inspected the whole stance and native details of face, hands, boots and badge. Hands are intact and unbraced; the stance and leg lengths are plausible. The bust retains headroom and a continuous shoulder/chest boundary.
+The face remains freckled with natural brows, brown eyes and chestnut-brown hair; no glossy lips or added makeup. The full figure's downward concern is stronger than the bust's attentive expression. Both hands are unbraced and the fingers, stance and boot contact are plausible. The portrait has clear space above the hair and no hands, scenery or baked background.
 
-The saved XCF reopened with two layers, and its visible export matched the delivered full-figure PNG pixel for pixel. The bust retains alpha. These are costume proposals; no game crop, lighting grade or in-game review was performed, and they do not establish user approval.
+The saved XCF reopened with two layers and reproduced the full-figure PNG pixel for pixel. The bust is 1254×1254 RGBA, with alpha extrema 0–254 and visible bounds (50, 102)–(1204, 1254). No game crop, light grade or in-game review was performed. These checks support review of the proposal, not user approval or clearance of the later hearing scene.

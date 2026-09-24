@@ -20,12 +20,16 @@ Claude checks each commit in the game as it lands. Before starting each part or 
 
 ### What the user decided about the batch 4 proposals
 
-- **Ceremony: redo as Saint's attire.** The closed lapis robe reads as a good dress with a mantle behind it. The user expects the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress"; her working and field clothes can be different. The direction is white and gold, the temple's own colours: a full-length sacred robe with the twelve-ray sun worked into it, and the white mantle as a heavy ceremonial cloak fastened across the chest with the badge, the main piece of the outfit rather than a shawl. Something should set the Saint apart from the temple's priests; part B paints three ideas for the user to choose from. Not the summoning circle.
+- **Ceremony: redo as Saint's attire.** The closed lapis robe reads as a good dress with a mantle behind it. The user expects the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress"; her working and field clothes can be different. The direction is white and gold, the temple's own colours: a full-length sacred robe with the twelve-ray sun worked into it, and a white ceremonial mantle fastened across the chest with the badge. The earlier heavy-cloak direction was rejected during batch 5; the robe and mantle must be elegant and light, as recorded below. Something should set the Saint apart from the temple's priests; two revised ideas remain for the user to choose from. Not the summoning circle.
 - **No green for Tessa.** Green is the northern side's colour in the written designs (Lucan, Serat, the northern captains, the governor); the human army wears blues, the temple white, cream, gold and lapis. The winter and field proposals were green only because the brief asked for outfits that differ from each other; make them differ by shape and trim instead.
 - **Winter:** keep the one-piece lined coat with its own roll collar, in a human-side colour.
 - **Gray Scar to Harrow:** too plain; only the small badge marks her as the Saint. Redesign.
 - **Campaign:** the existing coat still stacks an ivory under-tunic with its own collar inside an open coat. Redesign as one garment.
 - **Postwar:** the plum wrap robe stays as proposed.
+
+### User corrections during batch 5
+
+The standing ray collar is rejected: the rigid fins are hideous to the user. Do not finish or reuse that proposal. The heavy, bulky ceremonial robe direction is also rejected. The Saint's robe must be **elegant and light**: flowing white cloth, graceful drape, fine gold work and a clean silhouette. This supersedes the earlier heavy-cloak language and cancels the standing-collar option. Continue the gold-worked and banner ideas in light fabric; neither is approved yet. Winter remains a practical winter coat.
 
 ### Before painting: the self-check
 
@@ -63,10 +67,10 @@ Commit part A.
 
 As in batch 4 part A, make for each costume a full-figure image on a neutral background (1024×1536 or larger) with a GIMP XCF, a bust view in the portrait framing, and a short `.md` in `art/character-keys/tessa/` giving the construction, the story period and your review. Keep the rule: one main garment per outfit with its own silhouette and neckline, only the layers the story needs, and every outfit distinguishable at bust size. Paint from the written design; don't feed in the rejected keys as clothing references.
 
-1. **The Saint's vestments, three variants (S004–S005; the mantle again at the hearing, S016), Tessa at nineteen.** All three share the user's direction: white and gold, a full-length sacred robe with the twelve-ray sun worked into it, and a heavy white ceremonial cloak fastened across the chest with the badge as the main piece. Each adds one thing that sets the Saint apart from the priests, who wear cream with the sun only at collar and cuffs (Senn):
-   - `saint-vestments-rays.md`: **the sun's rays as a standing collar.** A stiff gold collar of twelve rays rises behind her head, so the temple's sun frames the Saint's face. It shows in every portrait, since the portraits show her from the chest up.
-   - `saint-vestments-gold.md`: **pure white and full gold.** Only the Saint wears pure white, not cream, and her cloak is worked in gold across its whole surface, the rays spreading from the badge at the clasp: she is dressed as the sun itself.
-   - `saint-vestments-banner.md`: **the temple's banner colours.** The audience hall's banners are lapis with a gold sun, and no one wears them but the Saint: a white robe and a cloak faced in banner lapis with the great gold sun on its back, so when Senn settles it on her she carries the temple's banner.
+1. **The Saint's vestments, two revised variants (S004–S005; the mantle again at the hearing, S016), Tessa at nineteen.** The user's correction during production requires elegant, light white-and-gold vestments: a full-length flowing sacred robe with the twelve-ray sun worked into it and a light, gracefully draped ceremonial mantle fastened across the chest with the badge. Avoid bulky shoulders, stiff collars and thick regular-robe fabric. Each surviving idea distinguishes the Saint from the cream-robed priests:
+   - `saint-vestments-rays.md`: **rejected by the user during production.** The standing rays read as hideous fins, and the heavy robe was too bulky. Retain only as a rejected diagnostic; do not complete or reuse it.
+   - `saint-vestments-gold.md`: **pure white and fine gold.** Light white cloth with fine gold thread spreading from the clasp across the mantle; graceful fluid folds and a clean silhouette, without dense heavy gold bands.
+   - `saint-vestments-banner.md`: **the temple's banner colours in light fabric.** A slender flowing white robe and light mantle with lapis facing and the great gold sun on its back. Preserve elegance and fine drape; show the front silhouette and provide a separate back detail if needed to make the banner visible.
 
    Each must work in the story: Senn pins the badge and settles the cloak on her; at the hearing she wears the cloak over her winter coat, pulls it loose and leaves it across the book. No crown. She wears it against her will.
 2. **Winter, `winter.md` (S014–S017), about twenty.** The batch 4 shape in a human-side colour, not green.
@@ -75,7 +79,9 @@ As in batch 4 part A, make for each costume a full-figure image on a neutral bac
 
 Commit part B, then **stop and ask the user to choose** a vestments variant and approve or reject the other three. Record the choices in **The user's costume choices** below, then continue. Redesign anything rejected the same way and stop again for it.
 
-**The user's costume choices:** awaiting part B.
+**The user's costume choices:** ray-collar option rejected during part B; bulky/heavy ceremonial silhouette rejected. Lightweight gold-worked and banner revisions, winter, field and campaign await review.
+
+**Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). Parts C–E await the choices above; no choice is inferred from the source checks.
 
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 
