@@ -1,6 +1,6 @@
 # Saint's vestments — light banner proposal
 
-Working proposal for the user's costume choice, not approved runtime clothing. The user's correction during batch 5 supersedes the earlier heavy-cloak brief: the Saint's robe should be elegant and light. The discarded bulky view is not a clothing reference for these files.
+**Not selected.** On 24 September 2026 the user chose option A, the fine-gold vestments. This banner alternative is retained for comparison and is not the clothing reference for production. The user's correction during batch 5 supersedes the earlier heavy-cloak brief: the Saint's robe should be elegant and light. The discarded bulky view is not a clothing reference for these files.
 
 ## Construction and period
 

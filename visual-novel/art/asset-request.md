@@ -1,6 +1,6 @@
 # Asset request
 
-Updated 23 September 2026, after the batch 4 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 24 September 2026, after the user selected ceremonial option A. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger, in parts, and GPT checks its own work against the list below as it goes. **Batch 5 is the rest of the game's art**: Tessa's last portraits, repaints of the opening, and every scene painting through the ending. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
@@ -20,7 +20,7 @@ Claude checks each commit in the game as it lands. Before starting each part or 
 
 ### What the user decided about the batch 4 proposals
 
-- **Ceremony: redo as Saint's attire.** The closed lapis robe reads as a good dress with a mantle behind it. The user expects the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress"; her working and field clothes can be different. The direction is white and gold, the temple's own colours: a full-length sacred robe with the twelve-ray sun worked into it, and a white ceremonial mantle fastened across the chest with the badge. The earlier heavy-cloak direction was rejected during batch 5; the robe and mantle must be elegant and light, as recorded below. Something should set the Saint apart from the temple's priests; two revised ideas remain for the user to choose from. Not the summoning circle.
+- **Ceremony: redo as Saint's attire.** The closed lapis robe reads as a good dress with a mantle behind it. The user expects the ceremony to put her in the Saint's vestments, not "a shawl on top of a nice dress"; her working and field clothes can be different. The direction is white and gold, the temple's own colours: a full-length sacred robe with the twelve-ray sun worked into it, and a white ceremonial mantle fastened across the chest with the badge. The earlier heavy-cloak direction was rejected during batch 5; the robe and mantle must be elegant and light, as recorded below. Something should set the Saint apart from the temple's priests; the user selected the light fine-gold option A on 24 September. Not the summoning circle.
 - **No green for Tessa.** Green is the northern side's colour in the written designs (Lucan, Serat, the northern captains, the governor); the human army wears blues, the temple white, cream, gold and lapis. The winter and field proposals were green only because the brief asked for outfits that differ from each other; make them differ by shape and trim instead.
 - **Winter:** keep the one-piece lined coat with its own roll collar, in a human-side colour.
 - **Gray Scar to Harrow:** too plain; only the small badge marks her as the Saint. Redesign.
@@ -29,7 +29,7 @@ Claude checks each commit in the game as it lands. Before starting each part or 
 
 ### User corrections during batch 5
 
-The standing ray collar is rejected: the rigid fins are hideous to the user. Do not finish or reuse that proposal. The heavy, bulky ceremonial robe direction is also rejected. The Saint's robe must be **elegant and light**: flowing white cloth, graceful drape, fine gold work and a clean silhouette. This supersedes the earlier heavy-cloak language and cancels the standing-collar option. Continue the gold-worked and banner ideas in light fabric; neither is approved yet. Winter remains a practical winter coat.
+The standing ray collar is rejected: the rigid fins are hideous to the user. Do not finish or reuse that proposal. The heavy, bulky ceremonial robe direction is also rejected. The Saint's robe must be **elegant and light**: flowing white cloth, graceful drape, fine gold work and a clean silhouette. This supersedes the earlier heavy-cloak language and cancels the standing-collar option. On 24 September, the user selected **A: fine gold**, the light white robe and flowing white mantle in `saint-vestments-gold`. The banner alternative was not selected. Winter remains a practical winter coat.
 
 ### Before painting: the self-check
 
@@ -79,9 +79,9 @@ As in batch 4 part A, make for each costume a full-figure image on a neutral bac
 
 Commit part B, then **stop and ask the user to choose** a vestments variant and approve or reject the other three. Record the choices in **The user's costume choices** below, then continue. Redesign anything rejected the same way and stop again for it.
 
-**The user's costume choices:** ray-collar option rejected during part B; bulky/heavy ceremonial silhouette rejected. Lightweight gold-worked and banner revisions, winter, field and campaign await review.
+**The user's costume choices, 24 September:** **A — fine gold is selected for the ceremony:** use [saint-vestments-gold](character-keys/tessa/saint-vestments-gold.md), including its lightweight removable white mantle. The lapis-banner alternative is not selected. The ray collar and bulky/heavy ceremonial silhouette remain rejected. **Winter, field and campaign still await the user's decision; selecting A does not approve those three.** The postwar plum wrap remains accepted.
 
-**Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). Parts C–E await the choices above; no choice is inferred from the source checks.
+**Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The remaining winter, field and campaign decisions are pending; no approval of those designs is inferred from the ceremonial selection or source checks.
 
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 

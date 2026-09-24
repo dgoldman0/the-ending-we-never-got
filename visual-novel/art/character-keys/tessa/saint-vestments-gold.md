@@ -1,6 +1,6 @@
 # Saint's vestments — pure white and fine gold
 
-**Status: proposal for the user's choice, not an approved costume.** Batch 5, Part B. This version follows the user's latest correction: the Saint's robe must be **elegant and light**. The heavy cloak generation is superseded and is not a clothing reference.
+**Status: selected by the user as option A on 24 September 2026.** This is the chosen ceremonial costume for batch 5 and its dependent portraits and scenes. This version follows the user's latest correction: the Saint's robe must be **elegant and light**. The heavy cloak generation is superseded and is not a clothing reference.
 
 ## Construction and period
 
@@ -23,4 +23,4 @@ Compared the final full figure and bust directly with the selected storm-infirma
 
 Counted twelve rays on the full figure's chest badge and lower robe sun and on the bust's clasp. The cloth ornament is decorative embroidery, separate from those explicit institutional symbols. Reopened the XCF in GIMP and re-exported it: visible-layer pixels match the delivered full-figure PNG exactly. Inspected the bust composited over a neutral ground; its alpha is genuine and the hair gaps do not contain the bright preview artifacts.
 
-This is a costume proposal, not an in-game crop/lighting review or user approval. The mantle's drape over the chosen winter coat will need to remain light in the hearing scene.
+The user has selected this costume. That selection does not establish in-game crop, lighting or scene clearance. The mantle's drape over the chosen winter coat will need to remain light in the hearing scene.
