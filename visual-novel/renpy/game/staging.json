@@ -136,8 +136,13 @@
    "grade": "night",
    "stages": [
     {
-     "image": "art/scenes/s011-bellweir-causeway.png",
+     "image": "art/scenes/s011-heron.png",
      "from": 0,
+     "alt": "Night at the eastern gate: across the square, black crystal bursts through the glass heron."
+    },
+    {
+     "image": "art/scenes/s011-bellweir-causeway.png",
+     "from": 497,
      "alt": "Bellweir, East Causeway, Night"
     },
     {
@@ -681,7 +686,11 @@
     "MARA": "mara-campaign",
     "TESSA": "tessa-harrow"
    },
-   "lines": {}
+   "lines": {
+    "1504": {
+     "listener": "LUCAN"
+    }
+   }
   },
   "37": {
    "heading": "INT. RELIEF CAMP - NIGHT",

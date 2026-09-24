@@ -17,7 +17,9 @@
 #                                "listener_expression": name}}
 # A set name resolves to art/portraits/<set>-<expression>.png, falling back
 # to art/portraits/<set>.png. The listener defaults to the scene's most
-# recent other speaker.
+# recent other speaker, unless action has intervened (people may have left or
+# turned away) and another person answers straight after: then the one who
+# answers. A line with no earlier speaker takes the one who answers it.
 
 init -1 python:
     import json
@@ -42,20 +44,27 @@ init -1 python:
                 chosen = stage
         return chosen
 
-    _previous_cache = {}
+    _listener_cache = {}
 
-    def previous_other_speaker(scene, line, speaker):
+    def default_listener(scene, line, speaker):
         key = (scene, line, speaker)
-        if key not in _previous_cache:
-            found = None
-            for block in source_map['scenes'][scene - 1]['blocks']:
-                if block['line'] >= line:
-                    break
+        if key not in _listener_cache:
+            blocks = source_map['scenes'][scene - 1]['blocks']
+            here = next((i for i, block in enumerate(blocks) if block['line'] >= line), len(blocks))
+            previous, action_since = None, False
+            for block in reversed(blocks[:here]):
                 who = block.get('speaker')
                 if who and who != speaker:
-                    found = who
-            _previous_cache[key] = found
-        return _previous_cache[key]
+                    previous = who
+                    break
+                if not who:
+                    action_since = True
+            answer = blocks[here + 1].get('speaker') if here + 1 < len(blocks) else None
+            answer = answer if answer != speaker else None
+            if answer and (previous is None or action_since):
+                previous = answer
+            _listener_cache[key] = previous
+        return _listener_cache[key]
 
     def _portrait_file(entry, expression, role):
         # Ren'Py rebinds list and dict inside game code, so the entry is told
@@ -89,7 +98,7 @@ init -1 python:
             path = _portrait_file(cast[scene_speaker], override.get('speaker_expression', 'speaking'), 'speaking')
             if path:
                 speaker_face = dict(who=scene_speaker, image=path, alt=scene_speaker.title() + '.')
-        listener = override.get('listener', previous_other_speaker(current_scene, source_line, scene_speaker))
+        listener = override.get('listener', default_listener(current_scene, source_line, scene_speaker))
         if listener and cast.get(listener):
             path = _portrait_file(cast[listener], override.get('listener_expression', 'listening'), 'listening')
             if path:

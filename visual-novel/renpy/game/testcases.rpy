@@ -441,7 +441,7 @@ testcase lighting_preference:
 
 testcase staging_pipeline:
     # Art placed at a planned path turns a page scene into an illustrated one,
-    # with portraits resolved from the scene's cast and the previous speaker.
+    # with portraits resolved from the scene's cast and the default listener.
     $ book_pages(6)
     click id 'main_begin'
     $ _planned_stages = list(STAGING['6']['stages'])
@@ -456,7 +456,8 @@ testcase staging_pipeline:
     assert not screen 'nvl'
     assert eval staged_scene() and stage_image() == 'art/rovel/cg/convoy-guards.png'
     assert eval current_art_description() == 'Test stage.'
-    assert eval scene_speaker == 'TESSA' and stage_faces('Tessa')[1] is None
+    # Her line opens the scene, so the listener is Mara, who answers it.
+    assert eval scene_speaker == 'TESSA' and stage_faces('Tessa')[1]['who'] == 'MARA'
     assert eval stage_faces('Tessa')[0]['image'].endswith('tessa-resolute-working-ordinary.png')
     advance
     assert eval scene_speaker == 'MARA'
@@ -467,6 +468,16 @@ testcase staging_pipeline:
     assert eval portrait_source(stage_faces('Mara')[0]['image'], 'speaker') == 'art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp'
     $ persistent.intense_lighting = True
     $ STAGING['6']['stages'] = _planned_stages
+
+testcase listener_follows_the_scene:
+    # When someone has left and another answers, the listener is the one who
+    # answers: Orra is gone by Tessa's line in S025; Mara replies.
+    $ book_pages(25)
+    click id 'main_begin'
+    run Jump('s025')
+    pause 0.5
+    advance until eval scene_speaker == 'TESSA'
+    assert eval source_line == 1085 and staging_faces()[1]['who'] == 'MARA'
 
 testcase page_portraits_and_initials:
     # Book pages show the speaker (and listener) in the margin and open each

@@ -83,7 +83,7 @@ Commit part B, then **stop and ask the user to choose** a vestments variant and 
 
 **Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The user has now authorized the remaining costumes and continuation through Parts C–E. No further costume approval stop is pending.
 
-**Checked in the game, 24 September (Claude):** parts A–D and part E chapters 02–04 (S006–S025) are integrated and played. The 23 Tessa portraits match her likeness and each period's costume. The 11 repaints replace the old paintings in S001, S004 and S005. The 20 scene paintings and 7 key moments play under their lines. `s011-boots-and-cap.png` was renamed `s014-boots-and-cap.png`, since the screenplay puts that moment in S014 (the list had it in S011). **Resume part E at chapter 05 (S026).**
+**Checked in the game, 24 September (Claude):** parts A–D and part E chapters 02–04 (S006–S025) are integrated and played. The 23 Tessa portraits match her likeness and each period's costume. The 11 repaints replace the old paintings in S001, S004 and S005. The 20 scene paintings and 7 key moments play under their lines. `s011-boots-and-cap.png` was renamed `s014-boots-and-cap.png`, since the screenplay puts that moment in S014 (the list had it in S011). **Resume part E at chapter 05 (S026).** The user kept GPT's wider reframe of `ceremony-intervention` and `ceremony-yield`: extending the scene to include the figures cut off at the edges is better than cropping them out and stretching the image.
 
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 
@@ -268,7 +268,9 @@ Commit after each chapter's briefs, paintings and key moments.
 
 ### Repaints found during this batch
 
-None yet.
+Do these before continuing with chapter 05.
+
+1. **S011: a new opening painting, `renpy/game/art/scenes/s011-heron.png`.** The current establishing painting shows the evacuation under Tessa's sanctuary, but the scene opens before the attack: Tessa's escort comes back through the eastern gate as the clock strikes nine (screenplay line 488), and then black crystal bursts through the glass heron in the square and the ward foundations buckle beneath the houses (line 490). Paint that moment: from the eastern gate, looking into the square, the escort just inside the gate at night, and across the square the glass heron from S008 (see [s008-bellweir-market.png](../renpy/game/art/scenes/s008-bellweir-market.png)) shattering as black crystal breaks up through it, with the houses around it starting to buckle. No sanctuary yet and no crowd fleeing yet; that comes at line 497, where the existing painting takes over. Write the brief into [the S011 study](scene-studies/s011-bellweir-causeway/README.md) first, as for the other scenes. Claude puts it in the game (staging.json already expects it).
 
 ## Queued behind the check
 
