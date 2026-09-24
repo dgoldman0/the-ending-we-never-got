@@ -1,0 +1,8 @@
+All three outputs: built-in image tool returned1672x941 RGB. GIMP2.10 cubic image scaling once to1920x1080; no new native detail.
+window-packing.png: no content edit.
+window-together.png: no content edit.
+window-pause.png: reload native selected output, copy ellipse x258 y711 width56 height69 from clean same-robe cloth with4px feather; paste as local layer and translate(-7,+105) to cover the isolated extra skirt sun. Merge for PNG export, cubic scale1920x1080. Botanical border outside patch retained. The other two views lack this isolated lower motif and the pose does not change, so remove it for sequence continuity.
+Selected native outputs:
+window-packing: /home/kir/.codex/generated_images/01a0d15a-d233-7d32-b1ae-5ecb927e9acf/exec-eb231d37-7a92-4146-9739-82869e07e7d4.png
+window-pause: /home/kir/.codex/generated_images/01a0d15a-d233-7d32-b1ae-5ecb927e9acf/exec-e2fb11f2-ae94-4a0c-9e3e-924dd98d3d06.png
+window-together: /home/kir/.codex/generated_images/01a0d15a-d233-7d32-b1ae-5ecb927e9acf/exec-03618036-384e-4a19-b628-c188d429be22.png
