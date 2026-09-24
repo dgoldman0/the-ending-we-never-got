@@ -1,6 +1,6 @@
 # Tessa — postwar personal wrap robe
 
-**Status: batch 4 costume proposal, 23 September 2026; not user-selected.** This replaces the cardigan as a clothing proposal. It does not authorize portraits in this costume; those wait for batch 5 and the user's choice.
+**Status: retained by the user during the batch 4 costume review and approved for batch 5 production.** This plum wrap replaces the rejected cardigan. The user authorized continuing the batch on 24 September 2026; preserve this costume in the postwar portraits and ending.
 
 [Full figure](postwar-clothes.png), 1024 × 1536. [Layered GIMP master](postwar-clothes.xcf). [Bust study](postwar-clothes-bust.png), 1254 × 1254 with alpha.
 

@@ -1,6 +1,6 @@
 # Tessa — closed campaign coat proposal
 
-**Status:** batch 5 Part B proposal awaiting the user's costume decision. This replaces the layered campaign direction: one coat now closes to the throat with its own collar, with no ivory under-tunic collar or shirt front showing. The older `campaign-saint` design is not the clothing reference for this proposal.
+**Status:** approved for batch 5 production on 24 September 2026. This replaces the layered campaign direction: one coat now closes to the throat with its own collar, with no ivory under-tunic collar or shirt front showing. The older `campaign-saint` design is not the clothing reference for this proposal.
 
 **Period:** campaign clothing family, S038–S057. This key depicts Tessa at about twenty-three, nearly four years after summoning and before the final assault: Iven is dead, Mara is alive, and both hands remain intact. Earlier scenes in this clothing family require their own younger face state. The torn, injured versions after S054 are not shown here.
 
@@ -26,4 +26,4 @@ Inspected full anatomy and native face, collar, gloved fingers, boot coverage, b
 
 Tessa retains her brown eyes, straight natural brows, freckled skin, broad mouth and chestnut-brown ponytail. The bust shows drawn cheek volume, under-eye fatigue, weathered skin and etched brow tension beyond the younger winter face; the full figure reads tired at its smaller facial scale. These are physical wear and accumulated grief, not cosmetic makeup or a new identity. Her expression is withdrawn, with no triumph or cheerful model pose.
 
-The four-layer XCF reopened and reproduced the full PNG pixel for pixel. The bust is 1254-square RGBA, alpha extrema 0–254, visible bounds (50,112)–(1204,1254). No runtime crop, light grade or in-game review was performed. The costume proposal still requires the user's choice; these checks do not approve the subsequent assault staging or injury variants.
+The four-layer XCF reopened and reproduced the full PNG pixel for pixel. The bust is 1254-square RGBA, alpha extrema 0–254, visible bounds (50,112)–(1204,1254). No runtime crop, light grade or in-game review was performed. The user approved this costume; these source checks do not clear subsequent assault staging or injury variants.

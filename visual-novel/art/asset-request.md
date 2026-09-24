@@ -1,6 +1,6 @@
 # Asset request
 
-Updated 24 September 2026, after the user selected ceremonial option A. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 24 September 2026, after the user selected ceremonial option A and authorized proceeding with the remaining costumes. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger, in parts, and GPT checks its own work against the list below as it goes. **Batch 5 is the rest of the game's art**: Tessa's last portraits, repaints of the opening, and every scene painting through the ending. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
@@ -79,9 +79,9 @@ As in batch 4 part A, make for each costume a full-figure image on a neutral bac
 
 Commit part B, then **stop and ask the user to choose** a vestments variant and approve or reject the other three. Record the choices in **The user's costume choices** below, then continue. Redesign anything rejected the same way and stop again for it.
 
-**The user's costume choices, 24 September:** **A — fine gold is selected for the ceremony:** use [saint-vestments-gold](character-keys/tessa/saint-vestments-gold.md), including its lightweight removable white mantle. The lapis-banner alternative is not selected. The ray collar and bulky/heavy ceremonial silhouette remain rejected. **Winter, field and campaign still await the user's decision; selecting A does not approve those three.** The postwar plum wrap remains accepted.
+**The user's costume choices, 24 September:** **A — fine gold is selected for the ceremony:** use [saint-vestments-gold](character-keys/tessa/saint-vestments-gold.md), including its lightweight removable white mantle. The lapis-banner alternative is not selected. The ray collar and bulky/heavy ceremonial silhouette remain rejected. **Winter, field and campaign are approved:** after being asked about these three specifically, the user said **Proceed** on 24 September. Use `winter`, `gray-scar-harrow` and `campaign-coat` for their listed periods. The postwar plum wrap remains accepted.
 
-**Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The remaining winter, field and campaign decisions are pending; no approval of those designs is inferred from the ceremonial selection or source checks.
+**Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The user has now authorized the remaining costumes and continuation through Parts C–E. No further costume approval stop is pending.
 
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 

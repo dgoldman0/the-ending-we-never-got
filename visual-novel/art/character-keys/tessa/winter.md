@@ -1,6 +1,6 @@
 # Tessa — blue winter robe-coat proposal
 
-**Status:** batch 5 Part B proposal, awaiting the user's costume decision. The user retained the batch 4 one-piece winter shape and rejected its green colour. This replaces that green key with a human-side slate-blue coat. It is not a runtime portrait or an approved costume.
+**Status:** approved for batch 5 production on 24 September 2026, when the user authorized proceeding with the three practical costumes. The user retained the batch 4 one-piece winter shape and rejected its green colour. This replaces that green key with a human-side slate-blue coat. This is the approved clothing key, not a runtime expression portrait.
 
 **Period:** first winter, S014–S017, about twenty; both hands healthy. S014 shows her helping Ada with boots; S015 leads to the hearing; S016 places the white mantle over her winter clothing and has her remove it onto the book. The winter coat's practical thickness is distinct from the user's latest requirement for light, elegant ceremonial attire.
 
@@ -24,4 +24,4 @@ Inspected the full stance and native face, hands, boot coverage and badge, then 
 
 The face remains freckled with natural brows, brown eyes and chestnut-brown hair; no glossy lips or added makeup. The full figure's downward concern is stronger than the bust's attentive expression. Both hands are unbraced and the fingers, stance and boot contact are plausible. The portrait has clear space above the hair and no hands, scenery or baked background.
 
-The saved XCF reopened with two layers and reproduced the full-figure PNG pixel for pixel. The bust is 1254×1254 RGBA, with alpha extrema 0–254 and visible bounds (50, 102)–(1204, 1254). No game crop, light grade or in-game review was performed. These checks support review of the proposal, not user approval or clearance of the later hearing scene.
+The saved XCF reopened with two layers and reproduced the full-figure PNG pixel for pixel. The bust is 1254×1254 RGBA, with alpha extrema 0–254 and visible bounds (50, 102)–(1204, 1254). No game crop, light grade or in-game review was performed. The user subsequently approved this costume; these source checks do not clear the later hearing scene.

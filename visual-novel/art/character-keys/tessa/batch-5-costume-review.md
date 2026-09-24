@@ -1,6 +1,6 @@
 # Batch 5 costume checkpoint
 
-**Ceremony selected: A — fine gold, 24 September 2026. Winter, field and campaign still await the user's decision.** The three S003 speaking repaints are committed in `34309eb`. This delivery completes the surviving Part B proposals after the user rejected the rigid ray collar and the heavy, bulky ceremonial silhouette. The user's subsequent choice approves option A as the ceremonial clothing reference; source reviews and commits do not approve the remaining practical proposals.
+**Ceremony selected: A — fine gold, 24 September 2026. Winter, field and campaign were approved when the user said Proceed on 24 September.** The three S003 speaking repaints are committed in `34309eb`. This delivery completes the surviving Part B proposals after the user rejected the rigid ray collar and the heavy, bulky ceremonial silhouette. The user's subsequent choice approves option A as the ceremonial clothing reference; the subsequent Proceed response authorizes winter, field and campaign too.
 
 ## Compare the proposals
 
@@ -28,6 +28,6 @@ The review changed the files: both ceremonial busts gained headroom; inaccurate 
 
 The surviving ceremony designs use thin draping fabric, unpadded shoulders and restrained gold work. The banner alternative is most distinctive from behind; its bust shows only a narrow lapis edge. The practical outfits differ through collar, trim and silhouette while remaining in human-side blues. Campaign Tessa shows deeper lower-eye shadows, drawn cheeks and etched fatigue beyond the younger field state. Its badge is cleaner than the worn surrounding coat, a minor finish difference retained in this proposal.
 
-These are source and costume reviews. No runtime crop, grading, scene integration or connected in-game clearance is claimed. The ceremonial choice is now A. The request also requires the user's decision on winter, field and campaign; those decisions remain pending.
+These are source and costume reviews. No runtime crop, grading, scene integration or connected in-game clearance is claimed. The ceremonial choice is now A. The user also approved winter, field and campaign by authorizing Proceed after being asked about those three. Production may continue through the remaining batch.
 
 All images were generated with the built-in tool; exact prompts are in [art/prompts/characters](../../prompts/characters/). Local fixes, framing, masters and comparisons were made in GIMP. The three Part A prompts are in [portraits-batch-5](../../prompts/portraits-batch-5/).

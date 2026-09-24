@@ -1,6 +1,6 @@
 # Tessa — Gray Scar to Harrow, about twenty to twenty-one
 
-**Status: batch 5 costume proposal awaiting the user's choice.** This replaces the rejected green field proposal with human-side blue and carries the working Saint's botanical textile vocabulary into a practical short garment. It is not an approved portrait set or scene costume selection.
+**Status: approved for batch 5 production on 24 September 2026.** This replaces the rejected green field proposal with human-side blue and carries the working Saint's botanical textile vocabulary into a practical short garment. Use it as the field clothing reference for its stated period; expression portraits and scenes still need their own checks.
 
 [Full figure](gray-scar-harrow.png) · [Layered GIMP master](gray-scar-harrow.xcf) · [Bust view](gray-scar-harrow-bust.png)
 
@@ -26,4 +26,4 @@ The bust initially misplaced the elbow patch on the visible upper arm. A local G
 
 The full PNG is 1024 × 1536 on neutral gray. Its XCF has five meaningful layers: generated alpha figure, neutral ground, local cloth repair, exact twelve-ray geometry and preserved modeled brass center. The figure's original maximum alpha of 254 was normalized to 255 in GIMP. These are editable assembly/repair layers, not individually painted garment pieces. Reopened the XCF and verified that its visible export matches the delivered PNG pixel for pixel.
 
-The separately painted bust is 1254 × 1254 RGBA with genuine transparency. Exact built-in prompts: [full figure](../../prompts/characters/tessa-gray-scar-harrow-batch5-full.txt) and [bust](../../prompts/characters/tessa-gray-scar-harrow-batch5-bust.txt). No runtime cropping, grading, in-game review or user approval is claimed.
+The separately painted bust is 1254 × 1254 RGBA with genuine transparency. Exact built-in prompts: [full figure](../../prompts/characters/tessa-gray-scar-harrow-batch5-full.txt) and [bust](../../prompts/characters/tessa-gray-scar-harrow-batch5-bust.txt). The user approved the costume on 24 September; runtime cropping, grading and in-game review remain separate.
