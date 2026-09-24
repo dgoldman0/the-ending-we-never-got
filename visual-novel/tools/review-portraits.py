@@ -9,9 +9,10 @@ For each delivered batch this does the whole mechanical part of the check:
      scene, and captures each at 1920x1080;
   3. assembles contact sheets in renpy/test-output/portrait-review/: each tile
      is the portrait pair with its line, labelled with scene, line and files;
-  4. lays out every portrait painted since the last review at crop size,
-     grouped by character, beside Tessa's likeness reference where it applies
-     (identity-<name>.png), so a set can be compared within itself.
+  4. lays out, for every character with a portrait painted since the last
+     review, all of that character's crops with the new ones marked, beside
+     Tessa's likeness reference where it applies (identity-<name>.png), so a
+     new set is compared with itself and with the sets already in the game.
 
 The judgment stays with the reviewer: open the sheets, then full screens.
 
@@ -132,17 +133,20 @@ def identity_sheets(everything):
     """Crops of the portraits painted since the last review, one sheet per character."""
     stamp = json.loads(STAMP.read_text()) if STAMP.is_file() else {}
     sources = {p.stem: p.stat().st_mtime for p in (GAME / 'art/portraits').glob('*.png')}
-    fresh = sorted(n for n, t in sources.items() if everything or stamp.get(n) != t)
+    fresh = {n for n, t in sources.items() if everything or stamp.get(n) != t}
     groups = {}
-    for name in fresh:
+    for name in sorted(sources):
         groups.setdefault(name.split('-')[0], []).append(name)
+    # a character with anything new is shown whole, new files marked, so a
+    # new set is compared with the ones already in the game
+    groups = {who: names for who, names in groups.items() if fresh & set(names)}
     for old in OUT.glob('identity-*.png'):
         old.unlink()
     W, H, per_row = 340, 388, 6
     for who, names in groups.items():
         tiles = [(p.name, Image.open(p)) for p in [REFERENCES.get(who)] if p]
         crops = [GAME / 'art/cast' / (n + '.png') for n in names]
-        tiles += [(c.stem, Image.open(c)) for c in crops if c.is_file()]
+        tiles += [(('NEW ' if c.stem in fresh else '') + c.stem, Image.open(c)) for c in crops if c.is_file()]
         rows = (len(tiles) + per_row - 1) // per_row
         sheet = Image.new('RGB', (per_row * (W + 8) + 8, rows * (H + 30) + 8), (20, 20, 20))
         draw = ImageDraw.Draw(sheet)

@@ -18,24 +18,80 @@
   "petitioner": "right",
   "orra": "left",
   "messenger": "right",
+  "ada-listening": "left",
+  "ada-speaking": "right",
+  "apprentice-listening": "left",
+  "apprentice-speaking": "right",
+  "archivist-listening": "left",
+  "archivist-speaking": "right",
+  "bargeman-listening": "left",
+  "bargeman-speaking": "right",
+  "boatman-listening": "left",
+  "boatman-speaking": "right",
+  "camp-healer-listening": "left",
+  "camp-healer-speaking": "right",
+  "departing-captain-listening": "left",
+  "departing-captain-speaking": "right",
+  "elin-later-listening": "left",
+  "elin-later-speaking": "right",
+  "elin-listening": "left",
+  "elin-speaking": "right",
+  "escort-listening": "left",
+  "escort-speaking": "right",
+  "ferryman-listening": "left",
+  "ferryman-speaking": "right",
+  "governor-listening": "left",
+  "governor-speaking": "right",
+  "hest-listening": "left",
+  "hest-speaking": "right",
+  "iven-attentive-listening": "left",
+  "iven-attentive-speaking": "right",
   "iven-attentive-treatment-listening": "left",
   "iven-attentive-treatment-speaking": "right",
+  "iven-concerned-listening": "left",
+  "iven-concerned-speaking": "right",
   "iven-concerned-treatment-listening": "left",
   "iven-concerned-treatment-speaking": "right",
+  "iven-harrow-listening": "left",
+  "iven-harrow-speaking": "right",
   "lucan-early-listening": "left",
   "lucan-early-speaking": "right",
   "lucan-later-listening": "left",
   "lucan-later-speaking": "right",
+  "mara-campaign-listening": "left",
+  "mara-campaign-speaking": "right",
+  "mara-citadel-listening": "left",
+  "mara-citadel-speaking": "right",
   "mara-controlled-listening": "left",
   "mara-controlled-speaking": "right",
   "mara-uneasy-listening": "left",
+  "marren-listening": "left",
+  "marren-speaking": "right",
+  "messenger-speaking": "right",
   "mother-speaking": "right",
+  "olan-soldier-listening": "left",
+  "olan-soldier-speaking": "right",
   "olan-speaking": "right",
+  "orra-listening": "left",
+  "orra-speaking": "right",
+  "orren-listening": "left",
+  "orren-speaking": "right",
   "petitioner-speaking": "right",
+  "picket-officer-listening": "left",
+  "picket-officer-speaking": "right",
   "priest-speaking": "right",
+  "runner-listening": "left",
+  "runner-speaking": "right",
+  "scholar-listening": "left",
+  "scholar-speaking": "right",
   "senn-assuring-speaking": "right",
   "senn-attentive-listening": "left",
   "senn-evasive-listening": "left",
+  "senn-evasive-speaking": "right",
+  "serat-listening": "left",
+  "serat-speaking": "right",
+  "surgeon-listening": "left",
+  "surgeon-speaking": "right",
   "tessa-attentive-arrival-cloak-listening": "left",
   "tessa-attentive-working-listening": "left",
   "tessa-attentive-working-speaking": "right",
@@ -53,7 +109,13 @@
   "tessa-startled-arrival-speaking": "right",
   "tessa-startled-working-speaking": "right",
   "valcair-listening": "left",
-  "valcair-speaking": "right"
+  "valcair-private-listening": "left",
+  "valcair-private-speaking": "right",
+  "valcair-speaking": "right",
+  "vask-listening": "left",
+  "vask-speaking": "right",
+  "warden-listening": "left",
+  "warden-speaking": "right"
  },
  "boxes": {
   "tessa-startled": [
@@ -158,6 +220,174 @@
    392,
    447
   ],
+  "ada-listening": [
+   228,
+   114,
+   832,
+   950
+  ],
+  "ada-speaking": [
+   194,
+   103,
+   870,
+   993
+  ],
+  "apprentice-listening": [
+   247,
+   93,
+   761,
+   870
+  ],
+  "apprentice-speaking": [
+   209,
+   92,
+   832,
+   950
+  ],
+  "archivist-listening": [
+   265,
+   116,
+   740,
+   846
+  ],
+  "archivist-speaking": [
+   210,
+   109,
+   830,
+   948
+  ],
+  "bargeman-listening": [
+   327,
+   101,
+   685,
+   783
+  ],
+  "bargeman-speaking": [
+   289,
+   102,
+   737,
+   841
+  ],
+  "boatman-listening": [
+   90,
+   73,
+   1009,
+   1152
+  ],
+  "boatman-speaking": [
+   304,
+   91,
+   740,
+   846
+  ],
+  "camp-healer-listening": [
+   280,
+   122,
+   693,
+   791
+  ],
+  "camp-healer-speaking": [
+   298,
+   120,
+   737,
+   841
+  ],
+  "departing-captain-listening": [
+   311,
+   71,
+   626,
+   715
+  ],
+  "departing-captain-speaking": [
+   281,
+   90,
+   733,
+   837
+  ],
+  "elin-later-listening": [
+   271,
+   68,
+   784,
+   896
+  ],
+  "elin-later-speaking": [
+   224,
+   71,
+   845,
+   965
+  ],
+  "elin-listening": [
+   142,
+   87,
+   1022,
+   1167
+  ],
+  "elin-speaking": [
+   247,
+   139,
+   763,
+   872
+  ],
+  "escort-listening": [
+   240,
+   69,
+   754,
+   861
+  ],
+  "escort-speaking": [
+   175,
+   75,
+   978,
+   1117
+  ],
+  "ferryman-listening": [
+   303,
+   92,
+   630,
+   720
+  ],
+  "ferryman-speaking": [
+   292,
+   99,
+   702,
+   802
+  ],
+  "governor-listening": [
+   327,
+   135,
+   619,
+   707
+  ],
+  "governor-speaking": [
+   292,
+   122,
+   740,
+   846
+  ],
+  "hest-listening": [
+   258,
+   37,
+   847,
+   967
+  ],
+  "hest-speaking": [
+   178,
+   37,
+   885,
+   1011
+  ],
+  "iven-attentive-listening": [
+   127,
+   55,
+   1013,
+   1157
+  ],
+  "iven-attentive-speaking": [
+   218,
+   29,
+   830,
+   948
+  ],
   "iven-attentive-treatment-listening": [
    299,
    107,
@@ -170,6 +400,18 @@
    647,
    739
   ],
+  "iven-concerned-listening": [
+   223,
+   18,
+   799,
+   913
+  ],
+  "iven-concerned-speaking": [
+   258,
+   22,
+   769,
+   878
+  ],
   "iven-concerned-treatment-listening": [
    210,
    95,
@@ -181,6 +423,18 @@
    102,
    714,
    815
+  ],
+  "iven-harrow-listening": [
+   249,
+   30,
+   738,
+   843
+  ],
+  "iven-harrow-speaking": [
+   177,
+   7,
+   976,
+   1115
   ],
   "lucan-early-listening": [
    173,
@@ -206,11 +460,35 @@
    923,
    1054
   ],
+  "mara-campaign-listening": [
+   285,
+   50,
+   683,
+   780
+  ],
+  "mara-campaign-speaking": [
+   256,
+   38,
+   740,
+   846
+  ],
+  "mara-citadel-listening": [
+   284,
+   45,
+   645,
+   737
+  ],
+  "mara-citadel-speaking": [
+   311,
+   48,
+   643,
+   735
+  ],
   "mara-controlled-listening": [
-   334,
-   96,
-   594,
-   678
+   324,
+   95,
+   613,
+   700
   ],
   "mara-controlled-speaking": [
    299,
@@ -224,17 +502,71 @@
    611,
    698
   ],
+  "marren-listening": [
+   234,
+   104,
+   778,
+   889
+  ],
+  "marren-speaking": [
+   190,
+   96,
+   866,
+   989
+  ],
+  "messenger-speaking": [
+   178,
+   20,
+   917,
+   1048
+  ],
   "mother-speaking": [
    185,
    123,
    839,
    959
   ],
+  "olan-soldier-listening": [
+   160,
+   49,
+   912,
+   1041
+  ],
+  "olan-soldier-speaking": [
+   206,
+   94,
+   876,
+   1000
+  ],
   "olan-speaking": [
-   326,
-   179,
-   594,
-   678
+   187,
+   162,
+   891,
+   1017
+  ],
+  "orra-listening": [
+   265,
+   72,
+   706,
+   807
+  ],
+  "orra-speaking": [
+   235,
+   66,
+   824,
+   941
+  ],
+  "orren-listening": [
+   216,
+   60,
+   858,
+   980
+  ],
+  "orren-speaking": [
+   167,
+   30,
+   927,
+   1059
   ],
   "petitioner-speaking": [
    182,
@@ -242,11 +574,47 @@
    758,
    865
   ],
+  "picket-officer-listening": [
+   94,
+   119,
+   994,
+   1135
+  ],
+  "picket-officer-speaking": [
+   231,
+   129,
+   857,
+   978
+  ],
   "priest-speaking": [
    299,
    194,
    676,
    772
+  ],
+  "runner-listening": [
+   170,
+   41,
+   874,
+   998
+  ],
+  "runner-speaking": [
+   182,
+   29,
+   946,
+   1080
+  ],
+  "scholar-listening": [
+   262,
+   118,
+   742,
+   848
+  ],
+  "scholar-speaking": [
+   198,
+   115,
+   813,
+   928
   ],
   "senn-assuring-speaking": [
    271,
@@ -266,17 +634,47 @@
    817,
    933
   ],
+  "senn-evasive-speaking": [
+   232,
+   106,
+   864,
+   987
+  ],
+  "serat-listening": [
+   146,
+   80,
+   877,
+   1002
+  ],
+  "serat-speaking": [
+   349,
+   76,
+   630,
+   720
+  ],
+  "surgeon-listening": [
+   211,
+   31,
+   891,
+   1017
+  ],
+  "surgeon-speaking": [
+   154,
+   25,
+   895,
+   1022
+  ],
   "tessa-attentive-arrival-cloak-listening": [
-   330,
-   87,
-   582,
-   665
+   313,
+   85,
+   615,
+   702
   ],
   "tessa-attentive-working-listening": [
-   264,
-   55,
-   664,
-   759
+   212,
+   0,
+   738,
+   843
   ],
   "tessa-attentive-working-speaking": [
    340,
@@ -303,22 +701,22 @@
    783
   ],
   "tessa-hurt-working-listening": [
-   261,
-   53,
-   672,
-   767
+   156,
+   0,
+   796,
+   909
   ],
   "tessa-hurt-working-speaking": [
-   390,
-   107,
-   594,
-   678
+   290,
+   95,
+   807,
+   922
   ],
   "tessa-resolute-arrival-cloak-listening": [
-   325,
-   96,
-   588,
-   672
+   226,
+   86,
+   773,
+   883
   ],
   "tessa-resolute-arrival-cloak-speaking": [
    370,
@@ -339,10 +737,10 @@
    754
   ],
   "tessa-resolute-working-speaking": [
-   371,
-   88,
-   638,
-   728
+   281,
+   6,
+   742,
+   848
   ],
   "tessa-startled-arrival-listening": [
    269,
@@ -368,11 +766,47 @@
    733,
    837
   ],
+  "valcair-private-listening": [
+   251,
+   44,
+   710,
+   811
+  ],
+  "valcair-private-speaking": [
+   245,
+   26,
+   811,
+   926
+  ],
   "valcair-speaking": [
    283,
    33,
    729,
    833
+  ],
+  "vask-listening": [
+   277,
+   70,
+   659,
+   752
+  ],
+  "vask-speaking": [
+   285,
+   74,
+   716,
+   817
+  ],
+  "warden-listening": [
+   278,
+   168,
+   721,
+   824
+  ],
+  "warden-speaking": [
+   228,
+   160,
+   771,
+   880
   ]
  }
 }

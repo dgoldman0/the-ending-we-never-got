@@ -92,24 +92,45 @@ def neck_end(sheet, cell, face):
 def detect_face(path):
     """Largest face on a grey ground, for a new transparent bust. Tries the
     frontal detector, then looser settings, then the profile detector in both
-    directions (strongly turned three-quarter views defeat the frontal one)."""
+    directions (strongly turned three-quarter views defeat the frontal one).
+    The cascades also fire on shirt collars and on part of a face, so the
+    first answer must be face-sized (the format makes the face a third of
+    the image) and lie on painted pixels in the upper half of the bust; if
+    it isn't, the search runs again keeping only detections that are."""
     image = Image.open(path).convert('RGBA')
     ground = Image.new('RGBA', image.size, (128, 128, 128, 255))
     ground.alpha_composite(image)
     grey = cv2.equalizeHist(cv2.cvtColor(np.array(ground.convert('RGB')), cv2.COLOR_RGB2GRAY))
+    alpha = np.asarray(image)[..., 3] / 255.0
     minimum = (min(image.size) // 8,) * 2
-    width = grey.shape[1]
+    width, height = grey.shape[1], grey.shape[0]
+
+    def plausible(face):
+        x, y, w = face
+        q = w // 4                                  # the middle of the box
+        return (y + w / 2 < 0.55 * height and w > 0.25 * height
+                and alpha[y + q:y + w - q, x + q:x + w - q].mean() > 0.6)
+
     attempts = [('haarcascade_frontalface_alt2.xml', 4, False), ('haarcascade_frontalface_alt2.xml', 2, False),
                 ('haarcascade_frontalface_default.xml', 4, False), ('haarcascade_profileface.xml', 3, False),
-                ('haarcascade_profileface.xml', 3, True)]
-    for cascade, neighbours, flipped in attempts:
-        detector = cv2.CascadeClassifier(cv2.data.haarcascades + cascade)
-        faces = detector.detectMultiScale(cv2.flip(grey, 1) if flipped else grey, 1.05, neighbours, minSize=minimum)
-        if len(faces):
-            x, y, w, h = max(faces, key=lambda f: f[2])
-            if flipped:
-                x = width - x - w
-            return int(x), int(y), int(w)
+                ('haarcascade_profileface.xml', 3, True), ('haarcascade_profileface.xml', 2, False),
+                ('haarcascade_profileface.xml', 2, True)]
+
+    def search(keep):
+        for cascade, neighbours, flipped in attempts:
+            detector = cv2.CascadeClassifier(cv2.data.haarcascades + cascade)
+            faces = detector.detectMultiScale(cv2.flip(grey, 1) if flipped else grey, 1.05, neighbours, minSize=minimum)
+            faces = [f for f in ((int(width - x - w if flipped else x), int(y), int(w)) for x, y, w, _h in faces) if keep(f)]
+            if faces:
+                return max(faces, key=lambda f: f[2])
+        return None
+
+    first = search(lambda face: True)
+    if first and plausible(first):
+        return first
+    face = search(plausible)
+    if face:
+        return face
     raise SystemExit('No face found in %s; add it to FACE_OVERRIDES' % path)
 
 
@@ -119,6 +140,10 @@ FACE_OVERRIDES = {
     # the profile fallback boxes his whole head and beard; this is his face,
     # on the scale of his other two portraits
     'senn-assuring-speaking': (544, 335, 410),
+    # the detectors box only the middle of these faces, so the crop came out
+    # tighter than the rest of the set; sized to the set's usual face
+    'iven-concerned-listening': (253, 248, 420),
+    'olan-soldier-speaking': (569, 238, 460),
 }
 
 

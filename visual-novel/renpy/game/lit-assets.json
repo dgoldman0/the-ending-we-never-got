@@ -34,6 +34,370 @@
   }
  },
  "portraits": {
+  "ada-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/ada-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/ada-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/ada-listening-night-intense.webp",
+    "softened": "art/lit/portraits/ada-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/ada-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/ada-listening-ordinary-softened.webp"
+   }
+  },
+  "ada-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/ada-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/ada-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/ada-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/ada-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/ada-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/ada-speaking-ordinary-softened.webp"
+   }
+  },
+  "apprentice-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/apprentice-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/apprentice-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/apprentice-listening-night-intense.webp",
+    "softened": "art/lit/portraits/apprentice-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/apprentice-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/apprentice-listening-ordinary-softened.webp"
+   }
+  },
+  "apprentice-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/apprentice-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/apprentice-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/apprentice-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/apprentice-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/apprentice-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/apprentice-speaking-ordinary-softened.webp"
+   }
+  },
+  "archivist-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/archivist-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/archivist-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/archivist-listening-night-intense.webp",
+    "softened": "art/lit/portraits/archivist-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/archivist-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/archivist-listening-ordinary-softened.webp"
+   }
+  },
+  "archivist-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/archivist-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/archivist-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/archivist-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/archivist-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/archivist-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/archivist-speaking-ordinary-softened.webp"
+   }
+  },
+  "bargeman-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/bargeman-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/bargeman-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/bargeman-listening-night-intense.webp",
+    "softened": "art/lit/portraits/bargeman-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/bargeman-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/bargeman-listening-ordinary-softened.webp"
+   }
+  },
+  "bargeman-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/bargeman-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/bargeman-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/bargeman-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/bargeman-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/bargeman-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/bargeman-speaking-ordinary-softened.webp"
+   }
+  },
+  "boatman-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/boatman-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/boatman-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/boatman-listening-night-intense.webp",
+    "softened": "art/lit/portraits/boatman-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/boatman-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/boatman-listening-ordinary-softened.webp"
+   }
+  },
+  "boatman-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/boatman-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/boatman-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/boatman-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/boatman-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/boatman-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/boatman-speaking-ordinary-softened.webp"
+   }
+  },
+  "camp-healer-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/camp-healer-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/camp-healer-listening-night-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/camp-healer-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-listening-ordinary-softened.webp"
+   }
+  },
+  "camp-healer-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/camp-healer-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/camp-healer-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/camp-healer-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/camp-healer-speaking-ordinary-softened.webp"
+   }
+  },
+  "departing-captain-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/departing-captain-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/departing-captain-listening-night-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/departing-captain-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-listening-ordinary-softened.webp"
+   }
+  },
+  "departing-captain-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/departing-captain-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/departing-captain-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/departing-captain-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/departing-captain-speaking-ordinary-softened.webp"
+   }
+  },
+  "elin-later-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/elin-later-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/elin-later-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/elin-later-listening-night-intense.webp",
+    "softened": "art/lit/portraits/elin-later-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/elin-later-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/elin-later-listening-ordinary-softened.webp"
+   }
+  },
+  "elin-later-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/elin-later-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/elin-later-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/elin-later-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/elin-later-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/elin-later-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/elin-later-speaking-ordinary-softened.webp"
+   }
+  },
+  "elin-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/elin-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/elin-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/elin-listening-night-intense.webp",
+    "softened": "art/lit/portraits/elin-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/elin-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/elin-listening-ordinary-softened.webp"
+   }
+  },
+  "elin-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/elin-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/elin-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/elin-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/elin-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/elin-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/elin-speaking-ordinary-softened.webp"
+   }
+  },
+  "escort-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/escort-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/escort-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/escort-listening-night-intense.webp",
+    "softened": "art/lit/portraits/escort-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/escort-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/escort-listening-ordinary-softened.webp"
+   }
+  },
+  "escort-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/escort-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/escort-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/escort-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/escort-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/escort-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/escort-speaking-ordinary-softened.webp"
+   }
+  },
+  "ferryman-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/ferryman-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/ferryman-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/ferryman-listening-night-intense.webp",
+    "softened": "art/lit/portraits/ferryman-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/ferryman-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/ferryman-listening-ordinary-softened.webp"
+   }
+  },
+  "ferryman-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/ferryman-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/ferryman-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/ferryman-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/ferryman-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/ferryman-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/ferryman-speaking-ordinary-softened.webp"
+   }
+  },
+  "governor-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/governor-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/governor-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/governor-listening-night-intense.webp",
+    "softened": "art/lit/portraits/governor-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/governor-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/governor-listening-ordinary-softened.webp"
+   }
+  },
+  "governor-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/governor-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/governor-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/governor-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/governor-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/governor-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/governor-speaking-ordinary-softened.webp"
+   }
+  },
+  "hest-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/hest-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/hest-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/hest-listening-night-intense.webp",
+    "softened": "art/lit/portraits/hest-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/hest-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/hest-listening-ordinary-softened.webp"
+   }
+  },
+  "hest-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/hest-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/hest-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/hest-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/hest-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/hest-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/hest-speaking-ordinary-softened.webp"
+   }
+  },
   "iven-attentive": {
    "bright": {
     "intense": "art/lit/portraits/iven-attentive-bright-intense.webp",
@@ -46,6 +410,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/iven-attentive-ordinary-intense.webp",
     "softened": "art/lit/portraits/iven-attentive-ordinary-softened.webp"
+   }
+  },
+  "iven-attentive-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-attentive-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-attentive-listening-night-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-attentive-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-listening-ordinary-softened.webp"
+   }
+  },
+  "iven-attentive-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-attentive-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-attentive-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-attentive-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-speaking-ordinary-softened.webp"
    }
   },
   "iven-attentive-treatment-listening": {
@@ -90,6 +482,34 @@
     "softened": "art/lit/portraits/iven-concerned-ordinary-softened.webp"
    }
   },
+  "iven-concerned-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-concerned-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-concerned-listening-night-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-concerned-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-listening-ordinary-softened.webp"
+   }
+  },
+  "iven-concerned-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-concerned-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-concerned-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-concerned-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-speaking-ordinary-softened.webp"
+   }
+  },
   "iven-concerned-treatment-listening": {
    "bright": {
     "intense": "art/lit/portraits/iven-concerned-treatment-listening-bright-intense.webp",
@@ -116,6 +536,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-softened.webp"
+   }
+  },
+  "iven-harrow-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-harrow-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-harrow-listening-night-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-harrow-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-listening-ordinary-softened.webp"
+   }
+  },
+  "iven-harrow-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-harrow-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-harrow-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-harrow-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-harrow-speaking-ordinary-softened.webp"
    }
   },
   "lucan-early-listening": {
@@ -172,6 +620,62 @@
    "ordinary": {
     "intense": "art/lit/portraits/lucan-later-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/lucan-later-speaking-ordinary-softened.webp"
+   }
+  },
+  "mara-campaign-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-campaign-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-campaign-listening-night-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-campaign-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-listening-ordinary-softened.webp"
+   }
+  },
+  "mara-campaign-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-campaign-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-campaign-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-campaign-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-campaign-speaking-ordinary-softened.webp"
+   }
+  },
+  "mara-citadel-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-citadel-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-citadel-listening-night-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-citadel-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-listening-ordinary-softened.webp"
+   }
+  },
+  "mara-citadel-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/mara-citadel-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mara-citadel-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mara-citadel-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mara-citadel-speaking-ordinary-softened.webp"
    }
   },
   "mara-controlled": {
@@ -244,6 +748,34 @@
     "softened": "art/lit/portraits/mara-uneasy-listening-ordinary-softened.webp"
    }
   },
+  "marren-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/marren-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/marren-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/marren-listening-night-intense.webp",
+    "softened": "art/lit/portraits/marren-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/marren-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/marren-listening-ordinary-softened.webp"
+   }
+  },
+  "marren-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/marren-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/marren-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/marren-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/marren-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/marren-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/marren-speaking-ordinary-softened.webp"
+   }
+  },
   "messenger": {
    "bright": {
     "intense": "art/lit/portraits/messenger-bright-intense.webp",
@@ -256,6 +788,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/messenger-ordinary-intense.webp",
     "softened": "art/lit/portraits/messenger-ordinary-softened.webp"
+   }
+  },
+  "messenger-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/messenger-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/messenger-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/messenger-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/messenger-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/messenger-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/messenger-speaking-ordinary-softened.webp"
    }
   },
   "mother": {
@@ -300,6 +846,34 @@
     "softened": "art/lit/portraits/olan-ordinary-softened.webp"
    }
   },
+  "olan-soldier-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/olan-soldier-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/olan-soldier-listening-night-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/olan-soldier-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-listening-ordinary-softened.webp"
+   }
+  },
+  "olan-soldier-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/olan-soldier-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/olan-soldier-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/olan-soldier-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/olan-soldier-speaking-ordinary-softened.webp"
+   }
+  },
   "olan-speaking": {
    "bright": {
     "intense": "art/lit/portraits/olan-speaking-bright-intense.webp",
@@ -326,6 +900,62 @@
    "ordinary": {
     "intense": "art/lit/portraits/orra-ordinary-intense.webp",
     "softened": "art/lit/portraits/orra-ordinary-softened.webp"
+   }
+  },
+  "orra-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/orra-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/orra-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/orra-listening-night-intense.webp",
+    "softened": "art/lit/portraits/orra-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/orra-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/orra-listening-ordinary-softened.webp"
+   }
+  },
+  "orra-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/orra-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/orra-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/orra-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/orra-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/orra-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/orra-speaking-ordinary-softened.webp"
+   }
+  },
+  "orren-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/orren-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/orren-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/orren-listening-night-intense.webp",
+    "softened": "art/lit/portraits/orren-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/orren-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/orren-listening-ordinary-softened.webp"
+   }
+  },
+  "orren-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/orren-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/orren-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/orren-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/orren-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/orren-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/orren-speaking-ordinary-softened.webp"
    }
   },
   "petitioner": {
@@ -356,6 +986,34 @@
     "softened": "art/lit/portraits/petitioner-speaking-ordinary-softened.webp"
    }
   },
+  "picket-officer-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/picket-officer-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/picket-officer-listening-night-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/picket-officer-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-listening-ordinary-softened.webp"
+   }
+  },
+  "picket-officer-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/picket-officer-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/picket-officer-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/picket-officer-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/picket-officer-speaking-ordinary-softened.webp"
+   }
+  },
   "priest": {
    "bright": {
     "intense": "art/lit/portraits/priest-bright-intense.webp",
@@ -382,6 +1040,62 @@
    "ordinary": {
     "intense": "art/lit/portraits/priest-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/priest-speaking-ordinary-softened.webp"
+   }
+  },
+  "runner-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/runner-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/runner-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/runner-listening-night-intense.webp",
+    "softened": "art/lit/portraits/runner-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/runner-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/runner-listening-ordinary-softened.webp"
+   }
+  },
+  "runner-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/runner-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/runner-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/runner-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/runner-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/runner-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/runner-speaking-ordinary-softened.webp"
+   }
+  },
+  "scholar-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/scholar-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/scholar-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/scholar-listening-night-intense.webp",
+    "softened": "art/lit/portraits/scholar-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/scholar-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/scholar-listening-ordinary-softened.webp"
+   }
+  },
+  "scholar-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/scholar-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/scholar-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/scholar-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/scholar-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/scholar-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/scholar-speaking-ordinary-softened.webp"
    }
   },
   "senn-assuring": {
@@ -454,6 +1168,20 @@
     "softened": "art/lit/portraits/senn-evasive-listening-ordinary-softened.webp"
    }
   },
+  "senn-evasive-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/senn-evasive-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/senn-evasive-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/senn-evasive-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/senn-evasive-speaking-ordinary-softened.webp"
+   }
+  },
   "senn-listening": {
    "bright": {
     "intense": "art/lit/portraits/senn-listening-bright-intense.webp",
@@ -466,6 +1194,62 @@
    "ordinary": {
     "intense": "art/lit/portraits/senn-listening-ordinary-intense.webp",
     "softened": "art/lit/portraits/senn-listening-ordinary-softened.webp"
+   }
+  },
+  "serat-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/serat-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/serat-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/serat-listening-night-intense.webp",
+    "softened": "art/lit/portraits/serat-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/serat-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/serat-listening-ordinary-softened.webp"
+   }
+  },
+  "serat-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/serat-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/serat-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/serat-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/serat-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/serat-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/serat-speaking-ordinary-softened.webp"
+   }
+  },
+  "surgeon-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/surgeon-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/surgeon-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/surgeon-listening-night-intense.webp",
+    "softened": "art/lit/portraits/surgeon-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/surgeon-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/surgeon-listening-ordinary-softened.webp"
+   }
+  },
+  "surgeon-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/surgeon-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/surgeon-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/surgeon-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/surgeon-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/surgeon-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/surgeon-speaking-ordinary-softened.webp"
    }
   },
   "tessa-attentive-arrival-cloak-listening": {
@@ -762,6 +1546,34 @@
     "softened": "art/lit/portraits/valcair-listening-ordinary-softened.webp"
    }
   },
+  "valcair-private-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/valcair-private-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/valcair-private-listening-night-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/valcair-private-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-listening-ordinary-softened.webp"
+   }
+  },
+  "valcair-private-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/valcair-private-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/valcair-private-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/valcair-private-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/valcair-private-speaking-ordinary-softened.webp"
+   }
+  },
   "valcair-speaking": {
    "bright": {
     "intense": "art/lit/portraits/valcair-speaking-bright-intense.webp",
@@ -774,6 +1586,62 @@
    "ordinary": {
     "intense": "art/lit/portraits/valcair-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/valcair-speaking-ordinary-softened.webp"
+   }
+  },
+  "vask-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/vask-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/vask-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/vask-listening-night-intense.webp",
+    "softened": "art/lit/portraits/vask-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/vask-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/vask-listening-ordinary-softened.webp"
+   }
+  },
+  "vask-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/vask-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/vask-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/vask-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/vask-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/vask-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/vask-speaking-ordinary-softened.webp"
+   }
+  },
+  "warden-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/warden-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/warden-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/warden-listening-night-intense.webp",
+    "softened": "art/lit/portraits/warden-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/warden-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/warden-listening-ordinary-softened.webp"
+   }
+  },
+  "warden-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/warden-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/warden-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/warden-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/warden-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/warden-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/warden-speaking-ordinary-softened.webp"
    }
   }
  },
