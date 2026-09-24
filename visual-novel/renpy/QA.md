@@ -2,7 +2,7 @@
 
 ## Portrait crops — 23 September 2026, third round
 
-The user rejected the portraits: the crop itself was wrong, with bare neck ending in a weird shape inside an open-bottomed arch, and the earlier edge cleanup had not fixed it. Every portrait is now recropped from its source painting in GIMP (`tools/crop-portraits.py`, generating `crop-portraits.scm`):
+The user rejected the portraits: the crop itself was wrong, with bare neck ending in a weird shape inside an open-bottomed arch, and the earlier edge cleanup had not fixed it. Every portrait is now recropped from its source painting in GIMP (`tools/crop-portraits.py`, which generates and runs a Script-Fu batch):
 
 - **Rectangular crops, not cut-outs.** Each crop keeps a painted ground. The generator cut-outs (Senn, Mara, Iven, supporting cast) have their stair-stepped matte pulled in a pixel and softened, dropping the black and red fringe; Tessa's grey studio ground is taken down; GPT's busts get the same ground.
 - **One composition.** The face is 62% of the crop's height with its top at 21%, with 4% gaze room; the crop ends above the lumpy generated neck base. Layered masters are saved in `art/portrait-masters/`.

@@ -1,107 +1,146 @@
 # Asset request
 
-Updated 23 September 2026, after the batch 2 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 23 September 2026, after the batch 3 check. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
-The user wants better portraits. The S001–S005 cast is being repainted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. GPT works one batch at a time, and each batch ends with a stop so Claude can check it in the game before the next one starts. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
+The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger. **Batch 4 covers every portrait whose character design is already written**, in five parts with one stop at the end, and GPT checks its own work against the list below as it goes. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
 ## Checked so far
 
 - **Batch 1 (S001), checked 23 September.** Tessa's four and the petitioner passed. Senn's three were off-model, younger and leaner than his design and the painted Senn, and were repainted in batch 2. The S001 petition painting shows the petitioner as a different woman; see corrections.
-- **Batch 2 (S002 and Senn again), checked 23 September.** All twelve pass. Tessa is the same girl in Mara's cloak and then without it; Mara matches her design and the Mara painted in S002; the new Senn is the heavier, older man in the paintings. Speaker and listener face each other on every line, readable in the night light and in Softened.
+- **Batch 2 (S002 and Senn again), checked 23 September.** All twelve pass. Tessa is the same girl in Mara's cloak and then without it; Mara matches her design and the Mara painted in S002; the new Senn is the heavier, older man in the paintings.
+- **Batch 3 (S003), checked 23 September.** Played through every S003 line in the game. The priest, Olan and the mother match their designs and the S003 paintings, and every pair faces each other. Seven of the thirteen are kept. Six are repainted in part B of batch 4:
+  - **Tessa drifts toward a made-up look.** Against [her likeness reference](character-references/tessa/north-infirmary-face.png) and her batch 1 portraits, the working-dress Tessa has shaped brows, eyeliner, fuller glossy lips, smoothed skin, fewer freckles and redder hair. It is strongest in the two listening files and `tessa-resolute-working-speaking`, which the later chapter pages reuse. The others stay; they are close enough at window size.
+  - **Iven lost his apron.** His treatment apron shows only in `iven-concerned-treatment-listening`. In the other three he wears the plain coat and shirt, while the S003 painting beside the window shows the apron.
 
-## Next for GPT: batch 3, the S003 portraits, then stop
+## Next for GPT: batch 4, in five parts, then stop
 
-Thirteen portraits for S003, the first treatment. In the palace infirmary, Olan's cursed arm is about to be amputated. The priest has Tessa try her white light for the first time while Iven stays beside her; it clears the curse but can't return his fingers, and then a mother calls from the next bed. One more Tessa file serves the Bellweir chapter pages. Match the people and clothes to the S003 paintings ([one of them](../renpy/game/art/softened/opening/cg/ward-standing-light.png)).
+About eighty files in all: fourteen portraits for S004–S005, six repaints, thirty later portrait sets (sixty files) and three costume proposals. **Commit at the end of each part**, so the work survives an interrupted session. If the session has to end early, finish the current part, commit, and say which parts are done; Claude can check finished parts on their own. `python3 visual-novel/tools/check-staging.py --missing` lists what is still missing (batch 4 counts parts A, C and D).
+
+### Before painting: the self-check
+
+These are the faults found so far. Check every file against them before saving it, and compare each finished set side by side before committing a part.
+
+1. **The face matches the written design and the character in the paintings,** not merely the last portrait. Batch 1 made Senn younger and leaner than his design; batch 3 gave Tessa makeup.
+2. **No makeup or glamour.** No eyeliner, shaped brows or glossy lips on anyone who wouldn't wear them. Keep freckles, uneven skin and ordinary features. For Tessa, compare every file with [the face reference](character-references/tessa/north-infirmary-face.png) and [her arrival portrait](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png).
+3. **The clothes match the period and the paintings.** Batch 3 lost Iven's apron. The table for each set gives the clothes.
+4. **Each file is painted in its own direction.** `-speaking` looks toward screen right with lips parted mid-word; `-listening` looks toward screen left, not speaking. Never mirror: a flipped copy moves the hair part, horn shapes, clasps and badges to the wrong side.
+5. **Both files of a set are plainly the same person in the same clothes,** with the same horns, scars and hair.
+6. **Age is right.** Tessa is 19 in S004–S005 and about 23 and war-worn in the campaign, citadel and injured sets. Ada is eight; the apprentice is mid-teens.
+7. **Horns follow each design.** Northern characters have individual horn shapes; the humans have none; helmets have openings for horns.
+8. **The expression reads at 150 px wide,** the listener's window.
+
+### The format
+
+Unchanged since batch 1, matching the Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
+- Square, 1254×1254 or larger, with a transparent background.
+- Head, shoulders and upper chest in three-quarter view. The face, hairline to chin, is about a third of the image height, with clear space above the head and on both sides for the game's crop.
+- Even, neutral light with no strong colour cast; the game adds each scene's glare or darkness. Keep hands out of frame, with no text, frame or border.
+- Paint from the written design. Use an existing portrait or painting only as an identity reference, and never edit a rejected file into its replacement.
+
+### Part A: S004 and S005, the ceremony and the window (14 files)
+
+In S004, Senn presents Tessa at the Saint ceremony and announces that she leaves with the Bellweir convoy tomorrow; she refuses in front of the hall, and Iven tells Marshal Orra he hasn't cleared her to travel. In S005 Tessa and Iven sit in the infirmary window seat, still in her ceremony clothes, and she asks him to come with her. Match the people and clothes to the S004–S005 paintings ([ceremony](../renpy/game/art/rovel/cg/ceremony-refusal.png), [window](../renpy/game/art/rovel/cg/window-together.png)).
 
 | File in `renpy/game/art/portraits/` | Who and moment | Looks toward | Used with these lines |
 | --- | --- | --- | --- |
-| `tessa-startled-working-speaking.png` | Tessa afraid of what she's being asked to do | screen right | "I've never done this on a person." |
-| `tessa-hurt-working-speaking.png` | Tessa voicing her fear that she's not who they think | screen right | "And if they brought the wrong person?" |
-| `tessa-hurt-working-listening.png` | Tessa taking in that the fingers are gone for good | screen left | Iven: "They won't grow back." |
-| `tessa-attentive-working-speaking.png` | Tessa asking quietly, hoping | screen right | "And his fingers?" |
-| `tessa-attentive-working-listening.png` | Tessa listening closely, steadying herself | screen left | The priest's instruction; Iven: "I'll stay here."; Olan's plea; the mother |
-| `tessa-resolute-working-speaking.png` | Tessa steady and determined (for the Bellweir chapter pages) | screen right | later chapters |
-| `iven-attentive-treatment-speaking.png` | Iven calm and warm, steadying her | screen right | "I'll stay here. Bring the light over the dark part." · "Let me see her first." |
-| `iven-attentive-treatment-listening.png` | Iven listening to Tessa, gentle attention | screen left | "I've never done this on a person." |
-| `iven-concerned-treatment-speaking.png` | Iven telling a hard truth kindly | screen right | "They won't grow back." |
-| `iven-concerned-treatment-listening.png` | Iven worried for her | screen left | "And if they brought the wrong person?" · "And his fingers?" |
-| `priest-speaking.png` | The priest, calm and instructive | screen right | "Hold the light above his arm, as you've been practicing." |
-| `olan-speaking.png` | Olan pleading through pain, then astonished | screen right | "They were going to take my arm. Please try." · "I can feel that." |
-| `mother-speaking.png` | The mother, urgent and hopeful | screen right | "She's awake. Could you come now, while she's awake?" |
+| `tessa-attentive-formal-speaking.png` | Tessa, quiet and grateful, then asking | screen right | "You bought me an afternoon." · "Are you coming with me?" |
+| `tessa-attentive-formal-listening.png` | Tessa taking in what she's told | screen left | Senn: "Tomorrow our Saint leaves with the Bellweir convoy…" · Iven: "At least that." · "Let me speak to her." · "All the way there and back." |
+| `tessa-hurt-formal-speaking.png` | Tessa betrayed and upset | screen right | "Tomorrow? You said I was coming to see Olan." · "She's still down there. What am I supposed to tell her?" |
+| `tessa-hurt-formal-listening.png` | Tessa stung | screen left | Senn: "He's here. Sit down; they're trying to welcome you." · Iven: "I don't know how to stop that." |
+| `tessa-resolute-formal-speaking.png` | Tessa confronting Senn | screen right | "Look at me. When did I agree to go?" |
+| `tessa-resolute-formal-listening.png` | Tessa holding her ground | screen left | Senn: "We can talk afterward." |
+| `iven-attentive-speaking.png` | Iven gentle, making a promise | screen right | "At least that." · "Let me speak to her." · "All the way there and back." |
+| `iven-attentive-listening.png` | Iven listening closely | screen left | Orra: "Saye. Is she ready to travel?" · Tessa: "You bought me an afternoon." · "Are you coming with me?" |
+| `iven-concerned-speaking.png` | Iven standing up to the marshal; then honest about his limits | screen right | "I haven't cleared her for anything, Marshal." · "I don't know how to stop that." |
+| `iven-concerned-listening.png` | Iven worried for her | screen left | "She's still down there…" · "And tomorrow? They'll send someone else to ask me." |
+| `orra-speaking.png` | Orra, blunt and practical | screen right | "Saye. Is she ready to travel?" |
+| `orra-listening.png` | Orra hearing bad news | screen left | Messenger: "One of the new ward anchors, Marshal. The curse got through this one too." |
+| `messenger-speaking.png` | The messenger, urgent, out of breath | screen right | the same line |
+| `senn-evasive-speaking.png` | Senn smoothly putting her off | screen right | "We can talk afterward." |
 
-**The people**
-- **Tessa, nineteen, the same girl as batches 1 and 2** ([her portraits](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png)). In S003 she wears the early working dress seen in the paintings: a long blue-gray robe-coat with woven botanical borders down the front, over an ivory under-robe with close sleeves, hair in a low ponytail. Both hands are healthy. It's her first day of this work; she is frightened and out of her depth, not yet a Saint.
-- **Iven, twenty-six, healer.** Medium-brown skin, a long face, wide nose, brown eyes, thick black curls cropped at the sides and unruly on top, clean-shaven. Here he wears his olive knee-length coat over an open-neck linen shirt, with a cream washable apron over the front for treatment, as in the S003 paintings. His manner is warm and steady; one eyebrow can rise before he teases, but not here.
-- **The priest.** A young man with brown skin, a shaved scalp and a plain cream robe.
-- **Olan, late twenties, the patient.** Stocky, light tan skin, close-cut auburn hair, gray eyes and a square freckled face. He's propped up in an infirmary bed in a plain white infirmary shirt, sweating and in pain; his injured right hand stays out of frame.
-- **The mother.** Dark skin, close curls and a faded yellow headwrap. She's been waiting by her daughter's bed.
+- **Tessa, nineteen, the same girl as batches 1–3,** in [the ceremonial key](character-keys/tessa/ceremonial-saint.md): a pale celadon pleated under-robe, a lapis brocade coat with gold botanical borders, and the white mantle with gold borders over her shoulders. The small brass twelve-ray badge sits on the left chest of the coat. No crown or jewellery. She is being displayed against her will, not celebrating.
+- **Iven, twenty-six,** as in batch 3 but **without the apron**: the olive knee-length coat, open over an ivory open-neck linen shirt.
+- **Orra, early fifties, the marshal.** Sturdy, dark-brown skin, close-cropped graying hair, dark eyes, a full unsmiling mouth. A deep blue military coat with three brass collar bars; she has come from the convoy yard, so gloves and some road dust, not ceremony. Match [her current head crop](../renpy/game/art/cast/orra.png).
+- **The messenger.** Young, pale skin, dark curls, a brown riding cape, holding a ward stone out of frame. Match [his current head crop](../renpy/game/art/cast/messenger.png).
+- **Senn,** the batch 2 Senn: late fifties, rounded, thinning sandy-gray hair, short beard, cream robe with sunburst embroidery at the collar. Use [`senn-assuring-speaking`](../renpy/game/art/portraits/senn-assuring-speaking.png) as his identity reference.
 
-**The format** is unchanged from batch 1, matching GPT's Lucan and Valcair busts ([example](../renpy/game/art/portraits/lucan-early-speaking.png)).
-- Square, 1254×1254 or larger, with a transparent background.
-- Head, shoulders and upper chest, in three-quarter view. The face, hairline to chin, is about a third of the image height, with clear space above the head and on both sides so the game's crop has room.
-- `-speaking` files look toward screen right, lips parted mid-word. `-listening` files look toward screen left, not speaking.
-- **Paint each file in its own direction.** A mirrored copy flips the face, the hair and the clasp, and the user finds mirrored portraits awkward.
-- Even, neutral light with no strong color cast; the game adds each scene's glare or darkness. Keep hands out of frame, with no text, frame or border.
-- Expressions must still read at 150 px wide, the size of the listener's window.
+### Part B: six repaints from batch 3
 
-**Save, then stop**
-1. Save the thirteen files at the paths above, and the prompts in `art/prompts/portraits-batch-3/`.
-2. Compare them side by side before finishing: Tessa against her earlier portraits, Iven's four against each other, and every file for the right direction, light and scale.
-3. **Stop there.** Don't start batch 4, don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 3 is ready for Claude to check.
+Replace these files at the same paths. Paint each from the references named here; don't edit the batch 3 file.
+
+| File | What changes | Identity reference |
+| --- | --- | --- |
+| `tessa-attentive-working-listening.png` | Remove the made-up look: no liner, natural straight brows, ordinary lips, freckles kept, chestnut hair not red | [face reference](character-references/tessa/north-infirmary-face.png) and [arrival portrait](../renpy/game/art/portraits/tessa-resolute-arrival-listening.png) |
+| `tessa-hurt-working-listening.png` | the same | the same |
+| `tessa-resolute-working-speaking.png` | the same | [face reference](character-references/tessa/north-infirmary-face.png) and [arrival portrait](../renpy/game/art/portraits/tessa-resolute-arrival-speaking.png) |
+| `iven-attentive-treatment-speaking.png` | Add the cream bib apron over the shirt front, straps at the neck, clearly visible on the upper chest | his batch 3 face; the apron as in [`iven-concerned-treatment-listening`](../renpy/game/art/portraits/iven-concerned-treatment-listening.png) and the S003 painting |
+| `iven-attentive-treatment-listening.png` | the same | the same |
+| `iven-concerned-treatment-speaking.png` | the same | the same |
+
+Keep each file's moment, direction and working clothes from the batch 3 table. Tessa's working dress is right: the blue-gray robe-coat with the ivory botanical yoke and front borders over the ivory under-robe.
+
+### Part C: the recurring cast later in the story (17 sets, 34 files)
+
+Each set is `<set>-speaking.png` (looks toward screen right) and `<set>-listening.png` (looks toward screen left). The game shows them on the typeset book pages at once, and in the scenes once their paintings arrive. The clothes and faces come from [the character designs](../../characters/original-visuals.md); read the entry before painting.
+
+| Set | Who, age and clothes | Speaking moment | Listening moment |
+| --- | --- | --- | --- |
+| `valcair-private` | Valcair, the northern king, early fifties, the same face as [his armoured portrait](../renpy/game/art/portraits/valcair-speaking.png): black horns swept back and ridged at the roots, silver-streaked hair bound at the nape, short close beard. Charcoal wool with dark red lining and a heavy plain clasp; no armour. | Night in his private rooms, quiet and dangerous: "You attacked an escort." | Hearing out Vask's or Lucan's report, still and unreadable |
+| `vask` | General Vask, a woman in her mid-forties. Broad, muscular, tawny skin, rectangular face, deep-set brown eyes, iron-gray hair cropped short around compact dark horns that curve outward then back. Dark plum field coat under steel shoulder and torso protection; three narrow silver bars beneath a split-star pin. | Brisk and certain: "Sign this and the crews can leave." | Coolly weighing what she hears |
+| `tessa-campaign` | Tessa at about twenty-three, before the final assault, in [the campaign key](character-keys/tessa/campaign-saint.md): worn blue-gray divided robe-coat, padded ivory undertunic, pale yoke with narrow faded botanical borders, small brass sun badge. War-worn, not glamorous: drawn cheeks, tired eyes, weathered skin, hair less tended. Iven is dead; Mara is alive. | Steady and hard: "Why did you sign it?" · "I want Iven." | Listening as a commander, guarded |
+| `marren` | Marren, the stores clerk, early forties. Slight, pale brown skin, narrow face, thinning dark hair, brown eyes, small rounded horns above the ears. Faded brown clerk's coat, cream shirt. | Frightened, justifying himself: "The repairs were certified. I entered them." | Anxious, braced for blame |
+| `elin` | Elin Orr, twenty-two, scholar. Compact, deep-brown skin, round cheeks tapering to a small chin, dark eyes, tightly curled black hair in a short twist with one curl escaping at the forehead. Ochre-brown wool jacket over a pale linen blouse. | Alert and probing: "Was the book already like this when you used it?" | Curious, taking it all in |
+| `elin-later` | Elin three or four years on, in the field: the same face, a knee-length rain cloak over the ochre jacket. | Urgent and decisive: "Now, Tessa." | Intent, thinking ahead |
+| `hest` | Hest, the baker, late thirties. Broad build, deep warm-brown skin, broad nose, dark eyes, black curls under a rust-coloured headscarf. Blue work dress. | Urgent: "Orren went for the apprentices. The blue door, by the steps!" | Worried, holding herself together |
+| `orren` | Orren, the baker, early forties. Long face and long chin with a short pale scar beneath it, medium-brown skin, brown eyes. Faded burgundy knitted cap, collarless shirt, green-brown waistcoat. | Warm and wry: "His mother would have brought him back by the ear." | Kindly attentive |
+| `boatman` | Lucan's boatman, late forties. Deep-brown skin, graying beard, low backward horns, salt-stiff dark cap, heavy ochre waterproofed coat. | Laconic warning: "Two boats. You can't outrun them in this." | Patient, sceptical |
+| `mara-campaign` | Mara, about thirty-five, the same face as [her batch 2 portraits](../renpy/game/art/portraits/mara-controlled-speaking.png): squared jaw, heavy-lidded hazel eyes, dark braided hair pinned low. Slate-blue military coat over mail, shoulder protection, the blue ward at the left shoulder, brass captain's bar at the collar; the coat is mended. After Iven's death. | Raw and controlled: "The boards were going. I couldn't hold you both." | Grieving but on duty |
+| `mara-citadel` | Mara before the assault on the citadel: the same kit, fully armed, forearm guards on. | Steady, tender under it: "I'll come when he calls." | Holding Tessa's eyes, not arguing |
+| `serat` | Serat, Lucan's lieutenant, early thirties. Broad, dark umber skin, black close-cropped hair, amber-brown eyes, blunt nose, short horns rising close to the temples. Dark green padded uniform, steel shoulder guards, split-star badge. | Firm, defending the ward: "They aren't taking anyone out of this ward." | Alert, ready |
+| `tessa-citadel` | Tessa on the morning of the assault: the campaign key with short gloves and sword belt, hair tied tight, stair dust. Both hands still healthy. | Pleading, then cold: "When he calls, you come up. Promise me." · "Your seal was on the bridge." | Tense, listening for danger |
+| `tessa-injured` | Tessa after the throne hall and on the stair where she finds Mara: the same clothes torn and dirty, her right hand wounded and kept out of frame. Shock and grief; no triumph. | Barely voiced: "Mara." · "That's the one I draw with." | Numb, hearing the surgeon |
+| `ada` | Ada, eight. Brown skin, round face, black curls in two short plaits. Mustard dress over a washable shirt. A child, not a small adult. | A broad grin, telling a joke: "He says you can grow people new heads." | Small and worried: "Will Dad know where we've gone?" |
+| `iven-harrow` | Iven, about twenty-eight, at Harrow Ford: the olive coat worn and travel-stained, no apron and no cape. | Practical and warm, then straining in the rescue: "Take him, Hest. I've got his foot clear." | Easy attention before the crossing |
+| `olan-soldier` | Olan four years on, as a soldier: the batch 3 Olan's face, a little older, in a blue-gray padded soldier's coat and repaired mail. | Confident, disagreeing on tactics: "The stair's right." | Weighing the plan |
+
+### Part D: the small speaking roles (13 sets, 26 files)
+
+Same format, one speaking and one listening file each. These people speak a line or four; the listening file shows them attending to the main cast.
+
+| Set | Who | Speaking moment |
+| --- | --- | --- |
+| `warden` | The convoy warden, human: lean, medium-brown skin, short black hair, reed-coloured rain cape. | Practical: "We've closed the high road after a crag cat took a mule." |
+| `archivist` | Temple archivist, human: older woman, pale olive skin, short silver hair, dark red wool gown. | Dry refusal: "Your master can ask for the original." |
+| `scholar` | The summoning scholar, human: slender man in his forties, medium-brown skin, straight black hair tied back, soot-gray sleeve covers. | Defensive: "You're not supposed to have that." |
+| `ferryman` | The Gray Scar ferryman, human: older, pale skin, thick gray beard, red knitted cap. | Urgent: "If we reach that gate, I can lock them out." |
+| `picket-officer` | Rovel picket officer, human: dark skin, short hair, narrow moustache, fitted blue military coat with a stiff collar. | Stern: "Your sword. Leave it on the boards." |
+| `apprentice` | Hest's first apprentice, mid-teens: slim, tawny skin, short straight dark hair, long nose, checked neckcloth over a gray quarry tunic. | A flat refusal: "No." Later, grieving: "He always said he'd run away to sea." |
+| `governor` | Northern camp governor: heavyset, middle-aged, tan skin, small horns, well-kept green coat. | Officious: "The boat stays for the week." |
+| `camp-healer` | Northern camp healer: middle-aged woman, tan skin, short horns, black hair, brown apron. | Urgent: "Three more have the blackening. I need her today." |
+| `bargeman` | Northern barge owner: older, dark skin, blunt horns, broad-brimmed felt hat, tar-marked cuffs. | Stubborn: "My license feeds six people." |
+| `escort` | Young northern escort: light-brown skin, close-cut hair, horns, plain steel helmet with openings for the horns. | Rigid: "He's under the general's orders." |
+| `departing-captain` | Northern captain leaving the citadel: tall, tan skin, gray braid, narrow horns, heavy green coat. | Grim: "Give him the clerk. We can still get our wounded north." |
+| `runner` | Human runner at the citadel: young adult, brown skin, close-cropped hair, blue-gray field coat, winded and dirty from the stair. | Breathless: "Captain Venn is losing men." |
+| `surgeon` | The surgeon who examines Tessa's hand, human: middle-aged woman, pale skin, auburn hair tied back, clean undyed apron. | Careful and honest: "I can repair some of it… we have to give it time." |
+
+### Part E: three costume proposals for Tessa, for the user to choose
+
+Four Tessa sets wait on costumes that are still undesigned: `tessa-winter` (the first winter and the hearing, S014–S017), `tessa-campaign-early` and `tessa-harrow` (Gray Scar through Harrow, S019–S037) and `tessa-postwar` (S058). Draft one working key for each of the three periods, as [the campaign key](character-keys/tessa/campaign-saint.md) was made: a full-figure image on a neutral background with a GIMP XCF, and a short `.md` beside it giving construction, source period and a manual review. Follow the period rows in [the character designs](../../characters/original-visuals.md) and [the wardrobe audit](character-keys/tessa/wardrobe-redesign.md): winter layers and usable gloves in the same garment tradition; an intermediate field costume with trousers allowed, repairs and the temple badge kept at Gray Scar; a softer postwar outfit with one-handed closures and the pale right-hand brace, showing war wear and grief. Paint from the written design, not from rejected studies. These are proposals for the user; **don't paint portraits from them** in this batch.
+
+### Save, commit, then stop
+
+1. Save each file at its path, and the prompts in `art/prompts/portraits-batch-4/`. Part E goes in `art/character-keys/tessa/`.
+2. Before each commit, lay the part's files side by side and go through the self-check.
+3. Commit at the end of each part, naming the files in the message.
+4. **Stop after part E.** Don't run the crop or grading tools, and don't change game code, data or other documents. Tell the user batch 4 is ready for Claude to check, with any files that didn't pass the self-check.
+
+**How Claude checks it.** `tools/review-portraits.py` crops and grades every portrait, plays each line that uses them in the game headless, and lays out contact sheets of the lines and side-by-side sheets of each character's new files. A whole batch takes about ten minutes to render. Claude then looks at the sheets and full screens, and lists any file that fails as a repaint at the head of batch 5.
 
 ## Queued behind the check
 
-Each batch ends with the same stop. Claude releases the next batch after checking the last, adding a detailed brief like batch 3's. `python3 visual-novel/tools/check-staging.py --missing` lists every file still awaited, by batch. In these names, "hurt" means emotionally hurt; Tessa has no injury before the final campaign.
+**Batch 5: Tessa's remaining sets and the batch 4 repaints (8 files and whatever fails).** Once the user picks the part E costumes: `tessa-winter`, `tessa-campaign-early`, `tessa-harrow` and `tessa-postwar`, one speaking and one listening file each. Tessa ages from 19 to about 23 across them and carries more war wear in each; the postwar set shows the right-hand brace.
 
-**Batch 4: S004 and S005, the ceremony and the window (14 files).** Tessa wears the formal Saint coat, mantle and twelve-ray badge. Iven wears his olive coat without the apron. Orra, the messenger and one more Senn complete the set.
-- `tessa-attentive-formal-speaking`, `tessa-attentive-formal-listening`, `tessa-hurt-formal-speaking`, `tessa-hurt-formal-listening`, `tessa-resolute-formal-speaking`, `tessa-resolute-formal-listening`
-- `iven-attentive-speaking`, `iven-attentive-listening`, `iven-concerned-speaking`, `iven-concerned-listening`
-- `orra-speaking`, `orra-listening`, `messenger-speaking`, `senn-evasive-speaking`
-
-**After batch 4: portrait sets for S006 onward.** These follow the same format, one `-speaking` and one `-listening` painting per set. The game uses a set once its scene has a painting, and on book pages right away: the speaker in the left margin, the listener in the right.
-
-| Portrait set | Scenes | Lines | Status |
-| --- | --- | ---: | --- |
-| `lucan-early` | S018–S036 (13) | 36 | done |
-| `valcair` (field armor) / `valcair-private` | S010–S054 (5) | 28 | armor done; private awaited |
-| `lucan-later` | S038–S057 (8) | 23 | done |
-| `tessa-harrow` | S032–S037 (4) | 20 | costume to design first |
-| `vask` | S010–S057 (4) | 19 |  |
-| `tessa-campaign` | S040–S049 (4) | 16 |  |
-| `tessa-campaign-early` | S019–S030 (6) | 15 | costume to design first |
-| `marren` | S038–S048 (4) | 12 |  |
-| `elin` | S008–S016 (4) | 11 |  |
-| `hest` | S011–S037 (4) | 9 |  |
-| `tessa-winter` | S014–S017 (3) | 9 | costume to design first |
-| `elin-later` | S040–S058 (5) | 7 |  |
-| `boatman` | S021–S043 (3) | 6 |  |
-| `orren` | S008–S058 (5) | 5 |  |
-| `mara-campaign` | S036–S049 (5) | 5 |  |
-| `scholar` | S013 (1) | 4 |  |
-| `governor` | S027 (1) | 4 |  |
-| `serat` | S045–S051 (3) | 4 |  |
-| `tessa-citadel` | S050–S054 (3) | 4 |  |
-| `tessa-injured` | S055–S056 (2) | 4 |  |
-| `picket-officer` | S022 (1) | 3 |  |
-| `tessa-postwar` | S058 (1) | 3 | costume to design first |
-| `ada` | S008–S014 (2) | 2 |  |
-| `apprentice` | S026–S030 (2) | 2 |  |
-| `camp-healer` | S027–S055 (2) | 2 |  |
-| `bargeman` | S031 (1) | 2 |  |
-| `iven-harrow` | S032–S035 (2) | 2 |  |
-| `departing-captain` | S047 (1) | 2 |  |
-| `mara-citadel` | S050 (1) | 2 |  |
-| `warden` | S006 (1) | 1 |  |
-| `archivist` | S012 (1) | 1 |  |
-| `olan-soldier` | S049 (1) | 1 | Olan four years on, as a soldier: padded blue-gray coat, repaired mail |
-| `ferryman` | S019 (1) | 1 |  |
-| `escort` | S044 (1) | 1 |  |
-| `runner` | S052 (1) | 1 |  |
-| `surgeon` | S056 (1) | 1 |  |
-
-- **Show age and wear.** Tessa ages from 19 to about 23; later sets show accumulated war wear, as `AGENTS.md` describes. `tessa-injured` and `tessa-postwar` carry the right-hand injury; earlier sets keep both hands healthy.
-- **Some Tessa costumes need design first.** The winter, Gray Scar–Harrow and postwar costumes are marked still to develop in [the character designs](../../characters/original-visuals.md).
-- **Small roles can wait.** The speaker's name still identifies them without a portrait. `camp-healer` covers the S027 and S055 healers; split it if S055's healer is a separate attendant.
+**Already done:** `lucan-early`, `lucan-later` and `valcair` (field armour).
 
 **Then: one establishing painting per scene.** One painting per scene is the baseline: it puts the scene on its picture, with portraits carrying the exchanges, as S005's window scene does. S053 continues S050 on the same stair, so it reuses that painting.
 

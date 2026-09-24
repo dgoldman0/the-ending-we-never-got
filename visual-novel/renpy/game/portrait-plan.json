@@ -1,5 +1,5 @@
 {
- "_note": "How the S001-S005 plan's portrait expressions map to painted portrait files in art/portraits/. A file is <expression>[-<wardrobe>]-<speaking|listening>.png: speaking portraits look toward screen right, listening portraits toward screen left, so speaker and listener face each other without mirroring. Aliases give clearer names to three plan expressions ('wounded' there means emotionally hurt). Tessa's wardrobe comes from the plan; other characters' clothing variants are listed by scene number. Read by ui-reading.rpy and tools/check-staging.py. Batches group the files by scene for generation; a batch is checked in the game before the next starts. \"also\" lists files a later chapter reuses.",
+ "_note": "How the S001-S005 plan's portrait expressions map to painted portrait files in art/portraits/. A file is <expression>[-<wardrobe>]-<speaking|listening>.png: speaking portraits look toward screen right, listening portraits toward screen left, so speaker and listener face each other without mirroring. Aliases give clearer names to three plan expressions ('wounded' there means emotionally hurt). Tessa's wardrobe comes from the plan; other characters' clothing variants are listed by scene number. Read by ui-reading.rpy and tools/check-staging.py. Batches group the files for generation; each batch is checked in the game before the next starts. \"scenes\" releases every S001-S005 file those scenes use, \"also\" adds single files, and \"sets\" adds later portrait sets from staging.json, each a -speaking and a -listening file.",
  "aliases": {
   "tessa-wounded": "tessa-hurt",
   "tessa-listening": "tessa-attentive",
@@ -37,10 +37,53 @@
   },
   {
    "batch": 4,
-   "title": "S004 and S005, the ceremony and the window",
+   "title": "S004 and S005, then the later recurring cast and the small speaking roles",
    "scenes": [
     4,
     5
+   ],
+   "sets": [
+    "valcair-private",
+    "vask",
+    "tessa-campaign",
+    "marren",
+    "elin",
+    "hest",
+    "elin-later",
+    "boatman",
+    "orren",
+    "mara-campaign",
+    "serat",
+    "tessa-citadel",
+    "tessa-injured",
+    "ada",
+    "iven-harrow",
+    "mara-citadel",
+    "olan-soldier",
+    "scholar",
+    "governor",
+    "picket-officer",
+    "apprentice",
+    "camp-healer",
+    "bargeman",
+    "departing-captain",
+    "warden",
+    "archivist",
+    "ferryman",
+    "escort",
+    "runner",
+    "surgeon"
+   ]
+  },
+  {
+   "batch": 5,
+   "title": "Tessa's winter, Gray Scar-Harrow and postwar costumes, once the user has chosen their keys",
+   "scenes": [],
+   "sets": [
+    "tessa-winter",
+    "tessa-campaign-early",
+    "tessa-harrow",
+    "tessa-postwar"
    ]
   }
  ]

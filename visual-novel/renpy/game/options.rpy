@@ -43,6 +43,8 @@ init python:
     # the graded files in art/lit/.
     build.classify('game/art/portraits/**', None)
     build.classify('game/art/cast/**', None)
+    build.classify('game/review-portraits.rpy', None)
+    build.classify('game/review-portraits.rpyc', None)
     build.classify('game/tour.rpy', None)
     build.classify('game/tour.rpyc', None)
     build.classify('game/rovel-review.rpy', None)

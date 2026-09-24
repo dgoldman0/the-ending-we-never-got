@@ -54,7 +54,7 @@ def painted_name(path, role, scene, plan):
 
 
 def painted_plan():
-    """{batch: {name: [(scene, line, role)]}} for the S001-S005 painted portraits."""
+    """{batch: {name: [(scene, line, role)]}} for the painted portraits released in batches."""
     import runpy
     plan = json.loads((GAME / 'portrait-plan.json').read_text())
     beats = runpy.run_path(str(ROOT / 'tools/check-rovel-plan.py'), run_name='painted_plan')['load_plan']()['ROVEL_BEATS']
@@ -68,6 +68,7 @@ def painted_plan():
     for batch in plan['batches']:
         names = {name: use for name, use in uses.items() if use[0][0] in batch['scenes']}
         names.update({name: [] for name in batch.get('also', [])})
+        names.update({'%s-%s' % (s, role): [] for s in batch.get('sets', []) for role in ('speaking', 'listening')})
         batches[batch['batch']] = names
     return batches
 
@@ -129,7 +130,7 @@ def main():
     batches = painted_plan()
     total = sum(len(names) for names in batches.values())
     have = sum(present('art/portraits/%s.png' % name) for names in batches.values() for name in names)
-    print('Painted S001-S005 portraits: %d of %d present (%s).' % (have, total, ', '.join(
+    print('Painted portraits released in batches: %d of %d present (%s).' % (have, total, ', '.join(
         'batch %d: %d/%d' % (b, sum(present('art/portraits/%s.png' % n) for n in names), len(names))
         for b, names in sorted(batches.items()))))
     if args.missing:

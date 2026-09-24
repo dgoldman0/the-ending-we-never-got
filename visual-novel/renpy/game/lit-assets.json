@@ -48,6 +48,34 @@
     "softened": "art/lit/portraits/iven-attentive-ordinary-softened.webp"
    }
   },
+  "iven-attentive-treatment-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-listening-night-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-listening-ordinary-softened.webp"
+   }
+  },
+  "iven-attentive-treatment-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-ordinary-softened.webp"
+   }
+  },
   "iven-concerned": {
    "bright": {
     "intense": "art/lit/portraits/iven-concerned-bright-intense.webp",
@@ -60,6 +88,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/iven-concerned-ordinary-intense.webp",
     "softened": "art/lit/portraits/iven-concerned-ordinary-softened.webp"
+   }
+  },
+  "iven-concerned-treatment-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-listening-night-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-listening-ordinary-softened.webp"
+   }
+  },
+  "iven-concerned-treatment-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-softened.webp"
    }
   },
   "lucan-early-listening": {
@@ -216,6 +272,20 @@
     "softened": "art/lit/portraits/mother-ordinary-softened.webp"
    }
   },
+  "mother-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/mother-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/mother-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/mother-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/mother-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/mother-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/mother-speaking-ordinary-softened.webp"
+   }
+  },
   "olan": {
    "bright": {
     "intense": "art/lit/portraits/olan-bright-intense.webp",
@@ -228,6 +298,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/olan-ordinary-intense.webp",
     "softened": "art/lit/portraits/olan-ordinary-softened.webp"
+   }
+  },
+  "olan-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/olan-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/olan-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/olan-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/olan-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/olan-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/olan-speaking-ordinary-softened.webp"
    }
   },
   "orra": {
@@ -284,6 +368,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/priest-ordinary-intense.webp",
     "softened": "art/lit/portraits/priest-ordinary-softened.webp"
+   }
+  },
+  "priest-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/priest-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/priest-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/priest-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/priest-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/priest-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/priest-speaking-ordinary-softened.webp"
    }
   },
   "senn-assuring": {
@@ -384,6 +482,34 @@
     "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-softened.webp"
    }
   },
+  "tessa-attentive-working-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-attentive-working-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-attentive-working-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-attentive-working-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-attentive-working-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-attentive-working-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-attentive-working-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-hurt-arrival-cloak-listening": {
    "bright": {
     "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-intense.webp",
@@ -424,6 +550,34 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-working-listening": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-working-listening-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-listening-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-working-listening-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-listening-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-working-listening-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-listening-ordinary-softened.webp"
+   }
+  },
+  "tessa-hurt-working-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-hurt-working-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-hurt-working-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-softened.webp"
    }
   },
   "tessa-listening": {
@@ -510,6 +664,20 @@
     "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-softened.webp"
    }
   },
+  "tessa-resolute-working-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-resolute-working-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-working-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-resolute-working-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-working-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-resolute-working-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-resolute-working-speaking-ordinary-softened.webp"
+   }
+  },
   "tessa-startled": {
    "bright": {
     "intense": "art/lit/portraits/tessa-startled-bright-intense.webp",
@@ -550,6 +718,20 @@
    "ordinary": {
     "intense": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-intense.webp",
     "softened": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-softened.webp"
+   }
+  },
+  "tessa-startled-working-speaking": {
+   "bright": {
+    "intense": "art/lit/portraits/tessa-startled-working-speaking-bright-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-working-speaking-bright-softened.webp"
+   },
+   "night": {
+    "intense": "art/lit/portraits/tessa-startled-working-speaking-night-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-working-speaking-night-softened.webp"
+   },
+   "ordinary": {
+    "intense": "art/lit/portraits/tessa-startled-working-speaking-ordinary-intense.webp",
+    "softened": "art/lit/portraits/tessa-startled-working-speaking-ordinary-softened.webp"
    }
   },
   "tessa-wounded": {

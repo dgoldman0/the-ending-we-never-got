@@ -18,6 +18,10 @@
   "petitioner": "right",
   "orra": "left",
   "messenger": "right",
+  "iven-attentive-treatment-listening": "left",
+  "iven-attentive-treatment-speaking": "right",
+  "iven-concerned-treatment-listening": "left",
+  "iven-concerned-treatment-speaking": "right",
   "lucan-early-listening": "left",
   "lucan-early-speaking": "right",
   "lucan-later-listening": "left",
@@ -25,20 +29,29 @@
   "mara-controlled-listening": "left",
   "mara-controlled-speaking": "right",
   "mara-uneasy-listening": "left",
+  "mother-speaking": "right",
+  "olan-speaking": "right",
   "petitioner-speaking": "right",
+  "priest-speaking": "right",
   "senn-assuring-speaking": "right",
   "senn-attentive-listening": "left",
   "senn-evasive-listening": "left",
   "tessa-attentive-arrival-cloak-listening": "left",
+  "tessa-attentive-working-listening": "left",
+  "tessa-attentive-working-speaking": "right",
   "tessa-hurt-arrival-cloak-listening": "left",
   "tessa-hurt-arrival-cloak-speaking": "right",
   "tessa-hurt-arrival-speaking": "right",
+  "tessa-hurt-working-listening": "left",
+  "tessa-hurt-working-speaking": "right",
   "tessa-resolute-arrival-cloak-listening": "left",
   "tessa-resolute-arrival-cloak-speaking": "right",
   "tessa-resolute-arrival-listening": "left",
   "tessa-resolute-arrival-speaking": "right",
+  "tessa-resolute-working-speaking": "right",
   "tessa-startled-arrival-listening": "left",
   "tessa-startled-arrival-speaking": "right",
+  "tessa-startled-working-speaking": "right",
   "valcair-listening": "left",
   "valcair-speaking": "right"
  },
@@ -145,6 +158,30 @@
    392,
    447
   ],
+  "iven-attentive-treatment-listening": [
+   299,
+   107,
+   655,
+   748
+  ],
+  "iven-attentive-treatment-speaking": [
+   336,
+   107,
+   647,
+   739
+  ],
+  "iven-concerned-treatment-listening": [
+   210,
+   95,
+   818,
+   935
+  ],
+  "iven-concerned-treatment-speaking": [
+   304,
+   102,
+   714,
+   815
+  ],
   "lucan-early-listening": [
    173,
    22,
@@ -187,11 +224,29 @@
    611,
    698
   ],
+  "mother-speaking": [
+   185,
+   123,
+   839,
+   959
+  ],
+  "olan-speaking": [
+   326,
+   179,
+   594,
+   678
+  ],
   "petitioner-speaking": [
    182,
    83,
    758,
    865
+  ],
+  "priest-speaking": [
+   299,
+   194,
+   676,
+   772
   ],
   "senn-assuring-speaking": [
    271,
@@ -217,6 +272,18 @@
    582,
    665
   ],
+  "tessa-attentive-working-listening": [
+   264,
+   55,
+   664,
+   759
+  ],
+  "tessa-attentive-working-speaking": [
+   340,
+   88,
+   676,
+   772
+  ],
   "tessa-hurt-arrival-cloak-listening": [
    294,
    54,
@@ -234,6 +301,18 @@
    51,
    685,
    783
+  ],
+  "tessa-hurt-working-listening": [
+   261,
+   53,
+   672,
+   767
+  ],
+  "tessa-hurt-working-speaking": [
+   390,
+   107,
+   594,
+   678
   ],
   "tessa-resolute-arrival-cloak-listening": [
    325,
@@ -259,6 +338,12 @@
    660,
    754
   ],
+  "tessa-resolute-working-speaking": [
+   371,
+   88,
+   638,
+   728
+  ],
   "tessa-startled-arrival-listening": [
    269,
    96,
@@ -270,6 +355,12 @@
    125,
    718,
    820
+  ],
+  "tessa-startled-working-speaking": [
+   339,
+   92,
+   681,
+   778
   ],
   "valcair-listening": [
    268,

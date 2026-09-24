@@ -27,6 +27,8 @@ delivered. Outputs go to renpy/game/art/lit/ with lit-assets.json; the game
 uses them automatically.
 
     python3 visual-novel/tools/grade-light.py          # grade what is missing
+    python3 visual-novel/tools/grade-light.py --portraits   # portraits only; also
+                                                        # regrades crops newer than their grades
     python3 visual-novel/tools/grade-light.py --force  # regrade everything
 """
 from pathlib import Path
@@ -326,7 +328,8 @@ def grade_portraits(force):
                 for mode, k in STRENGTH.items():
                     target = 'art/lit/portraits/%s-%s-%s.webp' % (path.stem, register, mode)
                     entry.setdefault(register, {})[mode] = target
-                    if force or not (GAME / target).is_file():
+                    done = GAME / target
+                    if force or not done.is_file() or done.stat().st_mtime < path.stat().st_mtime:
                         if image is None:
                             image = np.asarray(Image.open(path).convert('RGBA'), np.float32) / 255.0
                         rgb = np.clip(fn(image[..., :3], k), 0, 1)
