@@ -68,8 +68,11 @@ init python:
         def _rovel_arch_stage(tessa, raised=False, mara=False):
             actors = [_rovel_actor(tessa, 100), _rovel_actor('senn-speaking-bright', 1120, 60)]
             if mara:
-                actors = [_rovel_actor('mara-cloak-corrected-bright', 780, 140, 620, 930),
-                          _rovel_actor('senn-speaking-bright', 1280, 70, 620, 930),
+                # Mara's and Senn's figures end at the foot of their images, so they
+                # stand on the bottom edge of the frame (Senn stood 80 px short,
+                # his robe cut off above the floor; sweep of 24 September 2026).
+                actors = [_rovel_actor('mara-cloak-corrected-bright', 780, 150, 620, 930),
+                          _rovel_actor('senn-speaking-bright', 1280, 150, 620, 930),
                           _rovel_actor(tessa, 50)]
             return _rovel_stage('art/opening/bg/' + ('arch-guards-raised' if raised else 'arch-conversation') + '.png',
                                 'Tessa faces Senn by the sealed arch. Soldiers remain between her and the scholar. Their shields are ' + ('raised.' if raised else 'lowered.') + (' Mara has approached with the folded cloak.' if mara else ''), actors)

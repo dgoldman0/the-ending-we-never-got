@@ -1744,7 +1744,7 @@
   "art/lit/ceremony-intervention-original.webp": {
    "soft": "art/lit/soft/ceremony-intervention-original.webp",
    "tint": [
-    0.227,
+    0.226,
     0.193,
     0.188
    ]
@@ -1889,7 +1889,7 @@
    "soft": "art/lit/soft/night-restart-original.webp",
    "tint": [
     0.26,
-    0.174,
+    0.173,
     0.15
    ]
   },
@@ -2305,7 +2305,7 @@
    "soft": "art/lit/soft/window-packing-original.webp",
    "tint": [
     0.26,
-    0.177,
+    0.181,
     0.15
    ]
   },
@@ -2313,7 +2313,7 @@
    "soft": "art/lit/soft/window-pause-original.webp",
    "tint": [
     0.26,
-    0.175,
+    0.179,
     0.15
    ]
   },

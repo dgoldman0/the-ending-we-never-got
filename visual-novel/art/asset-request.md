@@ -1,6 +1,6 @@
 # Asset request
 
-Updated 24 September 2026, after the user selected ceremonial option A and authorized proceeding with the remaining costumes. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 24 September 2026, after the batch 5 check (parts A–D and chapters 02–04), the new reading screen and a full sweep of the S001–S005 paintings. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger, in parts, and GPT checks its own work against the list below as it goes. **Batch 5 is the rest of the game's art**: Tessa's last portraits, repaints of the opening, and every scene painting through the ending. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
@@ -42,7 +42,7 @@ These are the faults found so far. Check every portrait and painting against the
 5. **Both files of a set are plainly the same person in the same clothes,** with the same horns, scars and hair.
 6. **Age is right.** Tessa's ages are given with each set.
 7. **Horns follow each design.** Northern characters have individual horn shapes; the humans have none; helmets have openings for horns.
-8. **The expression reads at 150 px wide,** the listener's window.
+8. **The expression reads at portrait size,** about 224 px wide in the speaker's oval.
 9. **Colours keep sides apart.** Green is the northern side's; don't put Tessa or the human cast in it.
 
 ### The format
@@ -83,7 +83,9 @@ Commit part B, then **stop and ask the user to choose** a vestments variant and 
 
 **Delivery checkpoint:** Part A is committed in `34309eb`. The surviving Part B proposals and cross-review are collected in [the costume comparison](character-keys/tessa/batch-5-costume-review.md). The ceremonial choice is now recorded. The user has now authorized the remaining costumes and continuation through Parts C–E. No further costume approval stop is pending.
 
-**Checked in the game, 24 September (Claude):** parts A–D and part E chapters 02–04 (S006–S025) are integrated and played. The 23 Tessa portraits match her likeness and each period's costume. The 11 repaints replace the old paintings in S001, S004 and S005. The 20 scene paintings and 7 key moments play under their lines. `s011-boots-and-cap.png` was renamed `s014-boots-and-cap.png`, since the screenplay puts that moment in S014 (the list had it in S011). **Resume part E at chapter 05 (S026).** The user kept GPT's wider reframe of `ceremony-intervention` and `ceremony-yield`: extending the scene to include the figures cut off at the edges is better than cropping them out and stretching the image.
+**Checked in the game, 24 September (Claude):** parts A–D and part E chapters 02–04 (S006–S025) are integrated and played. The 23 Tessa portraits match her likeness and each period's costume. The 11 repaints replace the old paintings in S001, S004 and S005. The 20 scene paintings and 7 key moments play under their lines. `s011-boots-and-cap.png` was renamed `s014-boots-and-cap.png`, since the screenplay puts that moment in S014 (the list had it in S011). **Resume part E at chapter 05 (S026), after the items in "Repaints found during this batch".** The user kept GPT's wider reframe of `ceremony-intervention` and `ceremony-yield`: extending the scene to include the figures cut off at the edges is better than cropping them out and stretching the image.
+
+**Since then (Claude, 24 September):** the reading screen changed, which affects composition (see the reference sections at the end): only the speaker's portrait is shown, in an oval at the lower left, and the reading controls are hidden behind a small gilt sun at the lower right. The light is now fixed at one strength for the whole original timeline, called *the original timeline's light*; "softened" is reserved for Stage II's regular light. A sweep of every S001–S005 picture at full size found four faults. Claude fixed three locally: the stray metal sliver on Tessa's drawing (S002), Senn's figure cut off above the floor in two S001 shots, and Iven's coat, which the S004–S005 repaints had made khaki and brown instead of his olive (now recoloured to the olive of S003). The fourth, and a sharper drawing close-up, are items 5 and 6 below. **Iven's coat is olive in every period** (see [his design](../../characters/original-visuals.md)); keep it so in the chapters still to paint.
 
 ### Part C: Tessa's portraits in the chosen costumes (20 files)
 
@@ -143,8 +145,8 @@ One establishing painting per scene puts the scene on its picture, and the portr
 
 **Composition, so the painting works under the reading interface.**
 - 16:9, 1920×1080 or larger; 2560×1440 preferred.
-- Keep faces, hands, contact points and plot props above the bottom fifth (y ≈ 840 of 1080), which sits under the reading shade.
-- Keep the lower-left corner (about x 116–516, y 748–1004) free of anything important; the portrait windows sit there.
+- Keep faces, hands, contact points and plot props above y ≈ 760 of 1080 across the left two-thirds of the frame, where the reading shade falls, and above the bottom fifth (y ≈ 840) on the right.
+- Keep the lower-left corner (about x 90–370, y 725–1055) free of anything important; the speaker's oval portrait sits there. Behind the text (about x 420–1460, y 770–1000) the painting is blurred and shadowed, so keep faces and plot props out of that band too, and keep the lower-right corner (the controls) free of key detail.
 - Leave room at the top; the game can lift a painting up to about 70 px.
 - Paint real light with visible sources, in even, readable exposure. Don't bake in glare or darkness; the game renders each scene into its light register (bright, ordinary or night), permanently distorted, in the original timeline's light.
 
@@ -278,12 +280,15 @@ Do these before continuing with chapter 05.
 3. **S006: the warden speaks without being in the picture.** The camp painting shows the training at line 262; the road warden only arrives at line 289, with a cart board split by three enormous claw marks, to say the high road is closed. Paint `renpy/game/art/scenes/s006-warden.png`, lines 289–294: the warden at the camp holding up the clawed board, Mara reading it and changing the route, Tessa trying to span a claw mark with her fingers, Iven nearby with the bowls; the shelter is gone and the sword is set down by the grain sack.
 4. **S025: Orra speaks after the painting shows her gone.** The corridor painting shows line 1105, after Orra has left. Paint `renpy/game/art/scenes/s025-report.png`, lines 1076–1083: in the same infirmary corridor, Orra handing Mara back her signed account, the ward visible through the open door behind them with Serat's splinted leg, Iven checking the healing and Serat's brother asleep in the chair; Tessa still inside the ward.
 
-Write each brief into its scene study first. Claude puts them in the game (staging.json already expects them).
+5. **S004: the soldier in the sling.** In [ceremony-applause.png](../renpy/game/art/rovel/cg/ceremony-applause.png) the soldier on the left has his arm in a sling but claps with both hands, so the sling holds nothing. Repaint only him: his injured forearm rests in the sling, hand still, and he applauds the only way he can, his free hand against his chest or thigh, as Olan does with his thigh. Keep everything else identical: Olan, the other two soldiers, the hall, the light and the framing (the Look closer detail of Olan's hand is cut from this painting). Save it as `art/repaints/ceremony-applause.png`; Claude puts it in the game.
+6. **S002: a sharper close-up of the drawing.** The Look closer close-up of Tessa's drawing ([detail-drawing.png](../renpy/game/art/opening/cg/detail-drawing.png)) is only 586×204, so it shows soft when enlarged. Paint a new one at the same framing and proportions (about 2.9:1), at least 1760×614: the candlelit table seen from just above, the reverse of the temple's welcome letter with her pen drawing of her mother's kitchen on the left, **a clear short tear through the kitchen drawing where her pen went through** (screenplay line 110: "Her pen tears through the paper"), and her mother's chair begun in the clean corner on the right; her healthy right hand drawing with a plain modern pen, her left hand steadying the sheet. Nothing loose on the paper (the old one had a stray metal sliver). Match the S002 table painting ([drawing-restart.png](../renpy/game/art/opening/cg/drawing-restart.png)): same paper, same drawing, same pen. Neutral night exposure with the candle as the source. Save it as `art/repaints/detail-drawing.png`.
+
+Write each brief into its scene study first (items 5 and 6 are corrections; a note in the commit is enough). Claude puts them in the game (staging.json already expects the new scene paintings).
 
 
 ## Queued behind the check
 
-**Already done:** every portrait set except Tessa's, and the S001–S005 scene paintings apart from the repaints in part D. After batch 5 the game has art for every scene; what remains is below under "Needed, but not images".
+**Already done:** every portrait in the game, Tessa's included, the S001–S005 scene paintings, and chapters 02–04 of part E. After batch 5 the game has art for every scene; what remains is below under "Needed, but not images".
 
 ## Reference: how the game uses the files
 
@@ -293,14 +298,15 @@ Write each brief into its scene study first. Claude puts them in the game (stagi
 | Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | `tools/grade-light.py` |
 
 - **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in the original timeline's light. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make separate lighter or darker versions.
-- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. The crop sits in a closed laurel window, 228×256 for the speaker and 150×168 for the listener.
-- **Names decide direction.** A `-speaking` file must look toward screen right and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
+- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. Since 24 September the reading screen shows **only the speaker**, in an oval 224×280 at the lower left with a soft golden halo, fading at its base; the person spoken to is in the painting. No new `-listening` files are needed.
+- **Names decide direction.** A `-speaking` file must look toward screen right (toward the text) and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
 - **Stand-ins go as files arrive.** Until a scene's painted portraits exist, the game shows the old head crops, mirrored where needed. Each new file replaces its stand-in.
 
 ## Reference: composition rules for scene paintings
 
-- **Keep key action out of the bottom strip.** On every line, the bottom fifth of the screen (below about y = 840 of 1080) sits under the reading shade. Faces, hands, contact points and plot props belong above it.
-- **Keep the lower-left corner clear during conversations.** The portrait windows occupy about x 116–516, y 748–1004.
+- **Keep key action out of the lower band on the left.** On every line, behind the text the painting falls softly out of focus and into shadow, deepest in the lower left and fading toward the right and upward: roughly below y = 760 of 1080 across the left two-thirds of the screen. The text sits at about x 420–1460, y 770–1000. Faces, hands, contact points and plot props belong above that band, or in the right third.
+- **Keep the lower-left corner clear during conversations.** The speaker's oval portrait sits at about x 90–370, y 725–1055.
+- **Keep the lower-right corner free of key detail.** The reading controls sit behind a small gilt sun at about x 1835–1890, y 1000–1055, and open upward from there over a soft pool of shadow.
 - **Leave room at the top.** The game can lift a painting up to about 70 px to clear the text, so no face should touch the top edge.
 - **Leave a quiet area where it helps.** A quiet dark area, such as one side of a night interior, lets a single line sit inside the picture, as the S002 drawing beats do.
 - **Paint the light, not the grade.** Place windows, lamps and candles so the register has sources to work with. The light column in the painting table is only a default from the scene heading; set the register in each scene's brief.
@@ -311,10 +317,12 @@ Found while building and reviewing the new screens:
 
 1. **Done locally:** the dead-phone detail was nearly black. Look closer details are now graded at reduced strength, so the phone's edge and dead screen read while the image stays nocturnal.
 2. **The arrival foot meets the text.** In `art/opening/cg/arrival.png`, Tessa's landing foot sits where the reading text begins, and the game lifts the painting 70 px to compensate. A recomposition with the foot higher would remove the lift.
-3. **In batch 5, part D: Iven's position below the dais falls under the text.** In `art/rovel/cg/ceremony-intervention.png` and `ceremony-yield.png`, Iven's boots and the step edge between him and the dais sit under the reading shade, so the staging point is weakened. Lifting the painting cut off Orra's and Senn's heads instead, so the fix belongs in the painting: keep the step edge above y ≈ 820.
-4. **In batch 5, part D: the petitioner is painted as a different woman.** In `art/opening/cg/pleading-mother.png` and `woman-release.png`, the woman who catches Senn's sleeve has dark curly hair in a bun and a brown shawl. Her design, and her portrait, give her a reddish braid and a damp gray shawl. Correct the paintings to the design.
-5. **In batch 5, part D: nine S004–S005 paintings show the rejected ceremonial outfit** (the open lapis coat over the pale green under-robe): `ceremony-dais`, `-intervention`, `-mantle`, `-refusal`, `-refused-chair` and `-yield`, and `window-packing`, `-pause` and `-together`. White-and-gold vestments are a change of the whole figure, not a recolour, so they need repainting in the chosen vestments once the user has chosen. For the window scene, decide from the screenplay whether she is still wearing the mantle afterward.
+3. **Done in batch 5, part D (the user kept GPT's wider reframe): Iven's position below the dais falls under the text.** In `art/rovel/cg/ceremony-intervention.png` and `ceremony-yield.png`, Iven's boots and the step edge between him and the dais sit under the reading shade, so the staging point is weakened. Lifting the painting cut off Orra's and Senn's heads instead, so the fix belongs in the painting: keep the step edge above y ≈ 820.
+4. **Done in batch 5, part D: the petitioner is painted as a different woman.** In `art/opening/cg/pleading-mother.png` and `woman-release.png`, the woman who catches Senn's sleeve has dark curly hair in a bun and a brown shawl. Her design, and her portrait, give her a reddish braid and a damp gray shawl. Correct the paintings to the design.
+5. **Done in batch 5, part D: nine S004–S005 paintings show the rejected ceremonial outfit** (the open lapis coat over the pale green under-robe): `ceremony-dais`, `-intervention`, `-mantle`, `-refusal`, `-refused-chair` and `-yield`, and `window-packing`, `-pause` and `-together`. White-and-gold vestments are a change of the whole figure, not a recolour, so they need repainting in the chosen vestments once the user has chosen. For the window scene, decide from the screenplay whether she is still wearing the mantle afterward.
 6. **Existing paintings are a little soft.** S001–S005 are 1672×941, upscaled to 1080p. Regenerate new work at 1920×1080 or larger.
+7. **Done locally, 24 September (the S001–S005 sweep):** the stray metal sliver on the S002 drawing painted out of the table painting and the close-up; Senn's figure, cut off 80 px above the floor in the two S001 shots where Mara brings the cloak, placed on the frame's foot; Iven's coat recoloured from khaki (S004) and brown (S005) to his olive in five paintings. The originals and layered GIMP masters are in `art/local-repairs/` (`tools/local-repairs.py`).
+8. **For GPT, in "Repaints found during this batch":** the soldier clapping with his arm in a sling (S004), and a sharper drawing close-up (S002).
 
 ## Needed, but not images
 
