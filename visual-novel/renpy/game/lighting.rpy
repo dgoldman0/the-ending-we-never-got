@@ -1,5 +1,7 @@
-# Light is a reader preference (Intense by default, persistent Softened),
-# independent of story position and save state.
+# The original timeline's light is fixed at the Softened strength: the user
+# removed the Intense mode and the lighting setting on 24 September 2026.
+# Stage II (after the player answers Yes; not yet built) is to use regular,
+# undistorted light.
 #
 # Scene images come from tools/grade-light.py, which renders each one into
 # its light register with the distortion baked in and permanent: bright
@@ -8,15 +10,16 @@
 # vignette) or night (sunk light, cold shade, glowing warm sources). Nothing
 # fades back to comfort. lit-assets.json maps stages and images to the graded
 # files for each mode.
-default persistent.intense_lighting = True
 
 init -1 python:
     import json
     LIGHTING_VARIANTS = json.loads(renpy.file('lighting-assets.json').read())
     LIT = json.loads(renpy.file('lit-assets.json').read())
 
+    LIGHT_MODE = 'softened'
+
     def light_mode():
-        return 'intense' if persistent.intense_lighting else 'softened'
+        return LIGHT_MODE
 
     def lit_stage(stage_id):
         """The graded composite for an authored stage, or None."""
@@ -27,8 +30,6 @@ init -1 python:
         entry = LIT['images'].get(path)
         if entry:
             return entry[light_mode()]
-        if persistent.intense_lighting:
-            return path
         if path in LIGHTING_VARIANTS:
             return LIGHTING_VARIANTS[path]
         # New art follows a convention: its Softened twin mirrors the path

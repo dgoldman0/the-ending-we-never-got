@@ -23,7 +23,6 @@ testsuite global:
         $ _test.timeout = 60.0
         $ _test.screenshot_directory = 'test-output'
         $ persistent.large_text = False
-        $ persistent.intense_lighting = True
         $ _preferences.text_cps = 0
         # Captures are 1920x1080 in the 1920x1080 virtual display.
         if eval not _preferences.fullscreen:
@@ -295,7 +294,6 @@ testcase discovery_save_and_restore:
         click id 'confirm_yes'
     click 'Settings'
     click 'Larger'
-    click id 'lighting_softened'
     click 'Load'
     click id 'file_slot_5'
     if screen 'confirm':
@@ -303,7 +301,7 @@ testcase discovery_save_and_restore:
     assert screen 'say'
     assert eval (current_scene, source_line, source_page) == (2, 112, 0)
     assert eval not inspected_details and not followed_connections
-    assert eval persistent.large_text and not persistent.intense_lighting
+    assert eval persistent.large_text
     click id 'reading_controls'
     click id 'open_menu'
     click 'Load'
@@ -313,7 +311,7 @@ testcase discovery_save_and_restore:
     assert screen 'say'
     assert eval (current_scene, source_line, source_page) == (2, 112, 0)
     assert eval inspected_details == {'phone', 'drawing'} and followed_connections == {'home'}
-    assert eval persistent.large_text and not persistent.intense_lighting
+    assert eval persistent.large_text
     click id 'reading_controls'
     click 'Threads'
     assert screen 'threads'
@@ -398,66 +396,45 @@ testcase opening_large_text:
     screenshot 'large-page.png'
     assert eval persistent.large_text
 
-testcase lighting_preference:
-    click id 'title_softened'
-    assert eval not persistent.intense_lighting
-    click id 'title_intense'
-    assert eval persistent.intense_lighting
+testcase fixed_softened_lighting:
+    # The original timeline's light is fixed at the Softened strength; there is
+    # no lighting setting (user decision, 24 September 2026).
+    assert not id 'title_intense'
+    assert not id 'title_softened'
     click 'Settings'
-    click id 'lighting_softened'
-    assert eval not persistent.intense_lighting
+    assert not id 'lighting_intense'
+    assert not id 'lighting_softened'
     click id 'menu_return'
     click id 'main_begin'
+    assert eval light_mode() == 'softened'
     assert eval stage_image().endswith('-softened.webp') and current_register() == 'bright'
     advance until eval source_line == 54
     assert eval all(portrait_source(current_rovel_beat()[role]['image'], role).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
-    screenshot 'softened-cast.png'
-    click id 'reading_controls'
-    click id 'open_menu'
-    click id 'lighting_intense'
-    click id 'menu_return'
-    assert eval source_line == 54 and source_page == 0 and persistent.intense_lighting
-    assert eval portrait_source(current_rovel_beat()['speaker']['image'], 'speaker').endswith('-bright-intense.webp')
-    # Until painted portraits arrive the old head stands in, named for the role.
+    # The painted portraits replace the old heads, named for the role.
     assert eval painted_portrait_name(current_rovel_beat()['speaker']['image'], 'speaker') == 'senn-assuring-speaking'
     assert eval painted_portrait_name(current_rovel_beat()['listener']['image'], 'listener') == 'tessa-startled-arrival-listening'
-    advance until eval source_line == 90
-    click id 'reading_controls'
-    click id 'open_menu'
-    click id 'lighting_softened'
-    click id 'menu_return'
-    assert eval source_line == 90 and not persistent.intense_lighting
-    screenshot 'softened-doorway.png'
+    screenshot 'softened-cast.png'
     advance until eval source_line == 112
     click id 'reading_controls'
     click id 'look_closer'
     assert eval all(lighting_art(detail_views[detail]['image']).endswith('-softened.webp') for detail in ('drawing', 'phone'))
     click id 'menu_return'
-    click id 'reading_controls'
-    click 'Save'
-    click id 'file_slot_4'
-    if screen 'confirm':
-        click id 'confirm_yes'
-    click 'Settings'
-    click id 'lighting_intense'
-    click 'Load'
-    click id 'file_slot_4'
-    if screen 'confirm':
-        click id 'confirm_yes'
-    assert screen 'say'
-    assert eval source_line == 112 and persistent.intense_lighting
-    click id 'reading_controls'
-    click id 'open_menu'
-    click id 'lighting_softened'
-    click id 'menu_return'
     advance until eval source_line == 176
     assert eval stage_image().endswith('-softened.webp')
-    $ persistent.intense_lighting = True
-    assert eval stage_image().endswith('-intense.webp')
-    $ persistent.intense_lighting = False
     run Jump('s007')
     pause 0.5
     assert eval page_ground(scene_light()) == 'ui/page-night-soft.webp'
+
+testcase skipping_stops_when_unfocused:
+    # Leaving the window (Alt+Tab) must not let skipping run on, and Tab no
+    # longer toggles skipping.
+    click id 'main_begin'
+    assert eval not config.keymap['toggle_skip']
+    $ renpy.config.skipping = 'fast'
+    $ renpy.display.interface.keyboard_focused = False
+    pause 0.3
+    assert eval not renpy.config.skipping
+    $ renpy.display.interface.keyboard_focused = True
 
 testcase staging_pipeline:
     # Art placed at a planned path turns a page scene into an illustrated one,
@@ -483,10 +460,8 @@ testcase staging_pipeline:
     assert eval scene_speaker == 'MARA'
     assert eval stage_faces('Mara')[0]['image'].endswith('mara-controlled-ordinary.png')
     assert eval stage_faces('Mara')[1]['who'] == 'TESSA'
-    $ persistent.intense_lighting = False
     # Her painted portrait (batch 2) replaces the old head crop as soon as it exists.
     assert eval portrait_source(stage_faces('Mara')[0]['image'], 'speaker') == 'art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp'
-    $ persistent.intense_lighting = True
     $ STAGING['6']['stages'] = _planned_stages
 
 testcase listener_follows_the_scene:

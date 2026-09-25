@@ -99,15 +99,6 @@ screen main_menu():
             textbutton _("About") action ShowMenu('about') style "caps_button" text_size 23
             if not renpy.emscripten:
                 textbutton _("Quit") action Quit(confirm=True) style "caps_button" text_size 23
-    hbox:
-        xpos 452 ypos 968 spacing 18
-        text "light" style "menu_label" yalign 0.5 color ui_dim
-        textbutton _("Intense") id "title_intense" style "caps_button" text_size 21:
-            action SetField(persistent, 'intense_lighting', True)
-            selected persistent.intense_lighting
-        textbutton _("Softened") id "title_softened" style "caps_button" text_size 21:
-            action SetField(persistent, 'intense_lighting', False)
-            selected not persistent.intense_lighting
     text "A life interrupted." font ui_italic size 30 color ui_ivory_soft xalign 1.0 xoffset -70 ypos 972
 
 # ------------------------------------------------------------- game menu
@@ -246,18 +237,6 @@ screen preferences():
                     textbutton _("All text") style "choice_button" action Preference('skip', 'all') selected _preferences.skip_unseen
             vbox:
                 xsize 540 spacing 12
-                text "light" style "menu_label"
-                null height 4
-                hbox:
-                    spacing 22
-                    textbutton _("Intense") id "lighting_intense" style "choice_button":
-                        action SetField(persistent, 'intense_lighting', True)
-                        selected persistent.intense_lighting
-                    textbutton _("Softened") id "lighting_softened" style "choice_button":
-                        action SetField(persistent, 'intense_lighting', False)
-                        selected not persistent.intense_lighting
-                text _("Softened reduces glare and opens deep shadow in every scene, portrait and page. Change it at any time.") style "menu_note" size 23
-                null height 18
                 text "display" style "menu_label"
                 hbox:
                     spacing 22

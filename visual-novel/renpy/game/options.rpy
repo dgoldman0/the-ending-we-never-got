@@ -20,6 +20,29 @@ define config.default_fullscreen = False
 define config.default_afm_time = 15
 # Skipping moves only through text already read (Ctrl or the Skip setting).
 define config.allow_skipping = True
+
+init python:
+    # Skipping must never run on while the reader is elsewhere. Ren'Py binds
+    # Tab to "toggle skip"; on Linux, leaving fullscreen with Alt+Tab can
+    # deliver that Tab without the Alt, so the game skipped through every read
+    # line while the reader worked in another window. Skipping stays on Ctrl
+    # (held) and in Settings; Tab no longer toggles it. And whenever the game
+    # window loses focus, skipping and auto-forward stop.
+    config.keymap['toggle_skip'] = []
+
+    def _stop_when_unfocused():
+        interface = renpy.display.interface
+        if interface is None:
+            return
+        if not (interface.keyboard_focused and interface.mouse_focused):
+            if renpy.config.skipping:
+                renpy.config.skipping = None
+                renpy.restart_interaction()
+            if _preferences.afm_enable:
+                _preferences.afm_enable = False
+                renpy.restart_interaction()
+
+    config.periodic_callbacks.append(_stop_when_unfocused)
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
 define build.name = "TheEndingWeNeverGot"

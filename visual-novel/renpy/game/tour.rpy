@@ -95,7 +95,6 @@ testcase ui_tour_states:
     run Preference('display', 'fullscreen')
     pause 1.0
     $ _test.screenshot_directory = 'test-output/tour'
-    $ persistent.intense_lighting = False
     click id 'main_begin'
     advance until eval source_line == 32
     pause 1.0
@@ -112,7 +111,6 @@ testcase ui_tour_states:
     pause 2.0
     screenshot 's4-softened-alongside.png'
     click id 'menu_return'
-    $ persistent.intense_lighting = True
     $ persistent.large_text = True
     advance until eval source_line == 172
     click id 'reading_controls'
@@ -141,7 +139,7 @@ testcase ui_tour_states:
     screenshot 's10-hidden.png'
 
 testcase ui_tour_light:
-    # The light registers, rendered frames and book pages (both modes).
+    # The light registers, rendered frames and book pages (fixed at Softened).
     $ _test.timeout = 90.0
     $ _preferences.text_cps = 0
     $ _test.screenshot_directory = 'test-output/tour-light'
@@ -151,17 +149,13 @@ testcase ui_tour_light:
     advance until eval source_line == 32
     pause 1.2
     screenshot 'bright-intense.png'
-    $ persistent.intense_lighting = False
     pause 1.0
     screenshot 'bright-softened.png'
-    $ persistent.intense_lighting = True
     advance until eval source_line == 81
     pause 1.2
     screenshot 'night-intense.png'
-    $ persistent.intense_lighting = False
     pause 1.0
     screenshot 'night-softened.png'
-    $ persistent.intense_lighting = True
     advance until eval source_line == 112
     click id 'reading_controls'
     click id 'look_closer'
