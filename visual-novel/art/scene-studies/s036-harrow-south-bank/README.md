@@ -1,6 +1,6 @@
-> **Resumed25September2026:** the user explicitly requested finishing the wider batch through the ending. This checkpoint preserves unfinished planning/drafts, not final images. Older hold notes below describe the earlier S033 correction stop. S032 must establish a sound bridge before dependent collapse/aftermath generation; S036/S037 still require actual shared state references.
-
 # S036 — Harrow south bank
+
+**Delivered neutral source art:** `renpy/game/art/scenes/s036-harrow-south-bank.png` (arrival1451) and `renpy/game/art/scenes/s036-south-bank.png` (refusal1482), each1920×1080. These source-art reviews do not clear the connected game presentation.
 
 ## Source-art briefs before generation — 25 September 2026
 
@@ -26,6 +26,8 @@ Preserve the establishing painting's boat, muddy path, south pier, clock orienta
 
 Mara physically interposes her body and a restrained arm between the human southern officer and the pair, without drawing a weapon or injuring him. The officer wears subordinate human-side blue, has no horns, and comes from the same landing path. Give Mara and the officer separate feet and a clear line of approach. At most a few distant soldiers/searchers turn toward them. No Hest, children, recovered body or downriver widow is required for this chosen beat.
 
+For the selected key staging, Mara has crossed behind the pair during their intervening exchange and is now at the left-side landing approach. The officer comes from that same landing, and she stands across his route before he reaches Lucan/Tessa. Lucan remains center, Tessa backs toward the right/upbank, preserving the pair’s orientation while making the noncontact gap explicit. This movement is a staging proposal consistent with the elapsed dialogue, not a new screenplay action.
+
 Compose a closer but still environmental view with the southern remnant and torn brace anchorage visible behind. Tessa's two objects, Lucan's near hand, the visible gap and Mara's blocking contact/path all remain above the reading boundary. Ordinary quiet legs/shore can occupy the lower band, but the physical backward step should stay legible above it. Preserve top clearance. Same late-afternoon source light as the establishing image.
 
 ## Production and review requirements
@@ -34,4 +36,27 @@ Request landscape16:9, preferred2560×1440 and minimum delivered1920×1080. Save
 
 ## Review
 
-Briefs written before generation. Generation is held while the team corrects the user-rejected S033 furniture and rechecks structural review standards. No S036 image has been generated. The stable S032 bridge foundation is still required before rendering. S035/S037 coordination confirms one complete empty warm-brown RIGHT coat sleeve, frayed at the shoulder seam with intact cuff, carried in Tessa’s LEFT hand; Mara has free hands with shield stowed and sword sheathed after the rescue.
+Briefs written before generation. The user resumed the wider batch after the S033 corrections. Both S036 paintings have now been generated and locally finished. The actual final `renpy/game/art/scenes/s032-harrow-bridge.png` has now been independently inspected: open portal, two distinct wagons, one brace reaching the over-water bay, clear deep channel beneath, natural adult proportions and a coherent south path/landing. The final Mara/paper and removed-wagon patch was checked at native scale. S036 rendering is now released after root and peer checks of the repaired S035 geography component (`exec-de61fb5b-8142-444f-a08f-874825d94e9f.png`) and final S037 coat painting. The reference sheet uses the collapse only for bank/stone/water relationships; the last south timber bay is gone by both S036 moments. The actual S037 empty sleeve, shoulder tear and intact cuff have been independently inspected and are the fabric/construction reference. S035/S037 coordination confirms one complete empty warm-brown RIGHT coat sleeve, frayed at the shoulder seam with intact cuff, carried in Tessa’s LEFT hand; Mara has free hands with shield stowed and sword sheathed after the rescue.
+
+
+## Delivered production record
+
+Built-in image generation was used, one image per call; exact requests are saved in `art/prompts/s036-harrow-south-bank/`. Both scene briefs preceded generation. Reference sheets label the actual current identities, single short field garment, cleared bridge geometry and S037 sleeve construction. S032, the repaired S035 over-water geography component and S037 sleeve were actually opened and reviewed before production.
+
+### Arrival
+
+Initial `exec-156f30c0-4e5e-43ce-8e5f-79bd476d0686.png` had useful acting but inadequate action clearance. The selected wider output is `exec-1963fe11-da40-46e2-9db8-32d5f3ec6929.png`. Its widened composition was selected as a complete bounded edit, rather than claiming that the generator preserved the initial center byte-for-byte.
+
+The `arrival-master.xcf` retains the selected source, a masked north-ruin patch from `exec-dc87d46f-2db5-4817-b0d5-8b03d4e77495.png` (removing the surviving-looking over-water deck), separately editable canonical emblems, the current same-facing Lucan portrait horn, a sleeve-only correction from `exec-090a351d-6437-4f21-b292-fb99a543315e.png` under the unchanged original LEFT grip, and tiny adjacent trouser-texture restoration removing the remaining dangling sleeve threads. The final sleeve is one closed empty tube with only a raw shoulder edge and a clean intact cuff, matching S035/S037; no arm or pale shirt is inside. It is not the entire coat. The whole scene moves upward35native pixels; only the quiet bottom150px of shore is proportionally extended to185px to fill the canvas. No body, leg or active object was stretched for clearance.
+
+Maker and root opened the actual final whole scene and native hand/boat-step/sleeve/horn/ruin details. Root passed the repaired tube/cuff, cleared north water and final portrait-derived horn. The S028/S030/S037 agent independently passed the final actual whole/native image and matched its LEFT-held sleeve to the final falling-Iven key and both S037 paintings. Recall remains absent in this earlier arrival; Lucan’s two shore-supported boots and hand on the gunwale show the completed step off an ordinary open search boat. Mara’s hands are free, weapons stowed. All active contacts clear the reading shade. The freshly reopened XCF reproduces the native finish RGB exactly.
+
+### Refusal
+
+Initial `exec-04a12083-d6e5-437c-9b88-e9188f72b9e8.png` established the four-adult blocking and healthy prop hands; root passed its whole/native action before widening. Selected wider output `exec-04e11a4b-4b24-4ff2-a8ad-0995edd09341.png` is likewise a bounded complete generated expansion, not a claim of exact center-pixel identity. It retains the clear air gap between Lucan’s reach and Tessa’s arm, RIGHT-hand crumpled recall, LEFT-hand closed full sleeve, and Mara across the officer’s route from the same landing. No later floating cart or recovered body is inserted.
+
+`refusal-master.xcf` retains the wider source, tiny loop/background and emblem cloth cleanup, actual same-facing portrait horn, separate canonical star/sun layers, and the final framing assembly. The whole scene moves upward20native pixels; only the bottom150px of quiet shore extends to170px. Maker opened the actual delivered whole with760/840 guides and native hands, paper, sleeve/cuff, reach gap, Mara’s stop palm, horn and footing. Tessa’s active backward boot clears760; the other key contacts have more room. Root opened the actual delivered whole and native export and passed the RIGHT paper grip, LEFT tube/plain cuff, open reach gap and horn, Mara stop gesture, natural proportions and supported backward step. The freshly reopened XCF reproduces the native finish RGB exactly. The S028/S030/S037 agent independently opened the final actual whole/native export and passed the healthy separate prop grips, full sleeve/plain cuff, reach gap, supported backward foot, Mara/officer route, same boat/ruins and current horn/emblems. That agent’s actual falling-Iven → arrival → refusal → both S037 material/hand-side/state comparison is complete with no further correction requested.
+
+### Resolution and limits
+
+Every returned generator file above is1672×941 despite larger requested sizes. GIMP crops each final native composition to1664×936 at(4,2), then uniformly resamples with NoHalo to1920×1080. This adds delivery pixels, not new native detail. Production changes, masks, framing and exports were performed in GIMP; Pillow was used only for reference sheets, inspection crops and pixel comparison. No runtime, grading or screenplay change is included. Exact GIMP finish and master-verification recipes are alongside the prompts.

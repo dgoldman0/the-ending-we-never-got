@@ -1,5 +1,9 @@
 # S034 — Return-cargo shed
 
+## Delivered source art — 25 September 2026
+
+`renpy/game/art/scenes/s034-return-cargo-shed.png` is delivered at1920×1080 and passed root’s actual final whole/native review. The plain ward plate, visibly broken seals and added headroom are retained; the final GIMP repair puts the wrench jaw on the existing bracket bolt while preserving the fist. Marren’s small rounded near horn was already present and remains unchanged. See [the bounded repair record](wrench-repair.md), layered `wrench-contact-master.xcf` and exact repair/export scripts. Retained native detail is1664×936, proportionally resampled; no runtime integration or grading is claimed. Earlier planning/checkpoint notes below are historical.
+
 ## Source-art brief before generation — 25 September 2026
 
 Read the complete S032–S037 Harrow interaction and current location, character and continuity notes. Prepared during Chapter05 review; generation waits for the shared bridge/wagon appearance from the Harrow foundation. No runtime or source changes.
