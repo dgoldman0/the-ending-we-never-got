@@ -29,6 +29,7 @@ image ctc_knot:
         easeout 1.1 alpha 1.0
 
 init python:
+    import json
     FRAME_SIZES = {'vignette': {'speaker': (270, 310), 'listener': (150, 172)},
                    'oval': {'speaker': (224, 280), 'listener': (132, 165)},
                    'oval-bare': {'speaker': (224, 280), 'listener': (132, 165)},
@@ -59,6 +60,34 @@ init python:
             image = Transform(image, alpha=0.84, matrixcolor=SaturationMatrix(0.8) * BrightnessMatrix(-0.03))
         return image
 
+    SHADOW_TINTS = json.loads(renpy.file('frames/shadow-tints.json').read())
+
+    def shown_stage():
+        """The graded painting on screen now, and how far it is lifted."""
+        beat = current_rovel_beat()
+        if beat and lit_stage(beat['stage_id']):
+            return lit_stage(beat['stage_id']), stage_framing().get('lift', 0)
+        if current_scene > 5 and staging_stage():
+            return lighting_art(staging_stage()['image']), stage_framing().get('lift', 0)
+        return None, 0
+
+    def scene_shadow(shape, focus):
+        """The painting deepened in its own shadow colour (multiplied, so it keeps
+        its hue) and, with focus, softly blurred behind the text."""
+        image, lift = shown_stage()
+        layers = []
+        if image:
+            if focus:
+                soft = Transform(image, xysize=(1920, 1080), yoffset=-lift, blur=22)
+                layers.append(AlphaMask(Fixed(soft, xysize=(1920, 1080)), 'frames/mask-focus-%s.png' % shape))
+            r, g, b = SHADOW_TINTS.get(image, [0.28, 0.27, 0.26])
+        else:
+            r, g, b = 0.28, 0.27, 0.26
+        tint = AlphaMask(Solid((int(r * 255), int(g * 255), int(b * 255), 255), xysize=(1920, 1080)),
+                         'frames/mask-shade-%s.png' % shape)
+        layers.append(Transform(tint, blend='multiply'))
+        return Fixed(*layers, xysize=(1920, 1080))
+
     def frame_text_top(what, who):
         t = Text(what, style='stage_speech' if who else 'stage_action', size=text_size(38), xmaximum=FRAME_TEXT_W)
         height = renpy.render(t, FRAME_TEXT_W, 4000, 0, 0).height
@@ -82,14 +111,19 @@ screen say(who, what):
         # shading samples: the current shade; a deeper gradient; the current
         # shade plus a soft pool behind the text; the deeper gradient plus a
         # soft shadow around the letters. None is solid.
-        if shade_style in ('medium', 'strong'):
+        if shade_style in ('colour', 'colour-focus', 'shaped', 'shaped-line'):
+            add scene_shadow('shaped' if shade_style.startswith('shaped') else 'band', shade_style != 'colour')
+            if shade_style == 'shaped-line':
+                add lit_ornament("frames/hairline.png") xpos 330 ypos 748
+        elif shade_style in ('medium', 'strong'):
             add "frames/shade-%s.png" % shade_style xsize 1920 ysize 560 ypos 520
         else:
             add "ui/scrim.png" xsize 1920 ysize 560 ypos 520 alpha scrim_strength(beat)
         if shade_style == 'pool-shadow':
             add "frames/shade-pool.png" pos (FRAME_TEXT_X - 380, top - 170)
         if portrait_ready(speaker):
-            add "ui/portrait-pool.png" pos (0, 620)
+            if shade_style in ('plain', 'medium', 'strong', 'pool-shadow'):
+                add "ui/portrait-pool.png" pos (0, 620)
             add framed_portrait(speaker, 'speaker') pos FRAME_SPEAKER_POS[frame_style]
         if portrait_ready(listener) and not speaker_only:
             add framed_portrait(listener, 'listener') pos FRAME_LISTENER_POS

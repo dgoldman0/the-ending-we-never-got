@@ -40,3 +40,23 @@ into `shading-samples.png` and `shading-detail.png`: A the current shade
 strong gradient (about 82%), D the current shade plus a soft pool behind the
 text and a soft shadow around the letters. A first ladder differed too little
 to judge and was redrawn before showing.
+
+## Fourth round: the scene's own shadow
+
+The user rejected all four shadings without being sure why (the gradient's
+direction, its colour, or a missing top edge). Claude's diagnosis: flat black
+turns bright paintings to grey rather than shadow; a featureless full-width
+band reads as a technical fix; it darkens where nothing needs it. The samples
+now replace the shade with:
+
+1. the painting multiplied by its own shadow colour (the mean colour of its
+   darkest fifth in the lower half, about 20% bright; `shadow-tints.json`),
+   in the current band shape, so it deepens in its own hue;
+2. the same plus soft focus: a blurred copy of the painting behind the text;
+3. the same, shaped: deepest behind the portrait and text, fading right and
+   up, with a lighter pool under the menu;
+4. the same with a fine gilt hairline where the shade begins.
+
+`shadow-samples.png` and `shadow-detail.png`. A first pass came out salmon
+pink, too weak, barely blurred and with a stray-looking line; it was redrawn
+before showing.

@@ -24,7 +24,7 @@ GAME = VN / 'renpy/game'
 SHOTS = VN / 'renpy/test-output/frames'
 OUT = VN / 'renpy/test-output/review'
 LINES = [('s001', 1, 24), ('s004', 4, 211), ('s008', 8, 339), ('s023', 23, 1012)]
-VARIANTS = [('oval-halo', s) for s in ('plain', 'medium', 'strong', 'pool-shadow')]
+VARIANTS = [('oval-halo', s) for s in ('plain', 'colour', 'colour-focus', 'shaped', 'shaped-line')]
 
 
 def capture_test():
@@ -84,21 +84,21 @@ def sheet(rows, cols, out, W=960, H=540):
 
 
 def sheets():
-    rows = [('s004', 'S004 (bright, speech)'), ('s001', 'S001 (bright, speech)'),
-            ('s008', 'S008 (day, heading and narration)'), ('s023', 'S023 (night, speech)')]
-    cols = [('oval-halo-plain-', 'A: current shade (~55% at the text)'), ('oval-halo-medium-', 'B: medium gradient (~70%)'),
-            ('oval-halo-strong-', 'C: strong gradient (~82%)'), ('oval-halo-pool-shadow-', 'D: current + pool behind text + letter shadow')]
-    sheet(rows, cols, 'shading-samples.png')
+    rows = [('s004', 'S004 (bright)'), ('s001', 'S001 (bright)'), ('s008', 'S008 (day, narration)'), ('s023', 'S023 (night)')]
+    cols = [('oval-halo-plain-', 'Current shade'), ('oval-halo-colour-', '1: shadow colour'),
+            ('oval-halo-colour-focus-', '2: + soft focus'), ('oval-halo-shaped-', '3: + shaped'),
+            ('oval-halo-shaped-line-', '4: + hairline')]
+    sheet(rows, cols, 'shadow-samples.png', W=900, H=506)
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 24)
-    img = Image.new('RGB', (2 * 1250 + 10, 4 * 400), (16, 16, 16))
+    img = Image.new('RGB', (2 * 1250 + 10, len(cols) * 440), (16, 16, 16))
     draw = ImageDraw.Draw(img)
     for i, (prefix, label) in enumerate(cols):
         for j, scene in enumerate(('s004', 's008')):
-            x, y = j * 1260, i * 400
-            img.paste(shot(prefix + scene).crop((60, 690, 1310, 1050)), (x, y + 38))
+            x, y = j * 1260, i * 440
+            img.paste(shot(prefix + scene).crop((40, 660, 1290, 1060)), (x, y + 38))
             draw.text((x + 6, y + 8), '%s, %s, full size' % (label, scene.upper()), fill=(235, 235, 235), font=font)
-    img.save(OUT / 'shading-detail.png')
-    print('wrote', (OUT / 'shading-detail.png').relative_to(VN))
+    img.save(OUT / 'shadow-detail.png')
+    print('wrote', (OUT / 'shadow-detail.png').relative_to(VN))
 
 if __name__ == '__main__':
     main()

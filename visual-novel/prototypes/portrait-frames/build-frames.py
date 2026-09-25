@@ -147,6 +147,51 @@ def text_pool():
     save(np.dstack([np.zeros((h, w, 3), np.float32), a.astype(np.float32)]), 'shade-pool.png')
 
 
+def shadow_tints():
+    """Each graded painting's own shadow colour: the mean colour of its darkest
+    fifth in the lower half, as a multiply factor about 30% bright, so the
+    shade deepens the scene in its own hue instead of greying it."""
+    import json
+    tints = {}
+    for path in sorted((VN / 'renpy/game/art/lit').glob('*.webp')):
+        a = np.asarray(Image.open(path).convert('RGB').resize((480, 270)), np.float32) / 255
+        low = a[135:].reshape(-1, 3)
+        lum = low @ np.array([0.2126, 0.7152, 0.0722], np.float32)
+        dark = low[lum <= np.percentile(lum, 20)].mean(0) + 1e-3
+        hue = dark / (dark @ np.array([0.2126, 0.7152, 0.0722], np.float32))
+        hue = np.clip(hue, 0.75, 1.3)              # the scene's own hue, not a pushed one
+        tints['art/lit/' + path.name] = [round(float(c), 3) for c in np.clip(hue * 0.20, 0.04, 0.4)]
+    (UI / 'shadow-tints.json').write_text(json.dumps(tints))
+
+
+def shade_masks():
+    """Where the shade falls (white = full). 'band' spans the width like the
+    current shade; 'shaped' is deepest behind the portrait and the text and
+    fades toward the right and upward, with a lighter pool under the menu."""
+    w, h = 1920, 1080
+    xx, yy = grid(w, h)
+    band = np.interp(yy, [690, 780, 860, 960, 1080], [0, 0.45, 0.85, 0.95, 1.0])
+    left = np.sqrt(((xx - 720) / 1050) ** 2 + ((yy - 960) / 290) ** 2)
+    shaped = (1 - smoothstep((left - 0.45) / 0.55)) * np.interp(yy, [680, 780, 870, 1080], [0, 0.5, 0.95, 1.0])
+    corner = np.sqrt(((xx - 1830) / 330) ** 2 + ((yy - 1000) / 260) ** 2)
+    shaped = np.maximum(shaped, (1 - smoothstep((corner - 0.3) / 0.7)) * 0.6)
+    for name, m in (('band', band), ('shaped', shaped)):
+        m = m.astype(np.float32)
+        save(np.dstack([np.ones_like(m)] * 3 + [m]), 'mask-shade-%s.png' % name)
+        f = m.astype(np.float32)
+        save(np.dstack([np.ones_like(f)] * 3 + [f]), 'mask-focus-%s.png' % name)
+
+
+def hairline():
+    """A fine gilt line with a faint glow, fading out at both ends."""
+    w, h = 1000, 7
+    xx, yy = grid(w, h)
+    core = np.exp(-((yy - 3.5) / 0.7) ** 2) * 0.95 + np.exp(-((yy - 3.5) / 2.2) ** 2) * 0.25
+    ends = smoothstep(np.minimum(xx, w - xx) / 260)
+    a = (core * ends).astype(np.float32)
+    save(np.dstack([np.ones_like(a)[..., None] * np.array([0.86, 0.72, 0.46], np.float32), a]), 'hairline.png')
+
+
 def lozenge():
     s = 13 * 4
     yy, xx = np.mgrid[0:s, 0:s].astype(np.float32) + 0.5
@@ -166,6 +211,9 @@ def main():
     lacquer_shade()
     deep_shade()
     text_pool()
+    shadow_tints()
+    shade_masks()
+    hairline()
     lozenge()
     print('portrait-frame samples written to', UI.relative_to(VN))
 
