@@ -1,0 +1,7 @@
+# S028 framing/export provenance
+
+Initial built-in native `exec-42a38bf4-c47b-41ac-9261-608a3e38d7d8.png` (1672×941) had cropped left patient and inadequate headroom/leg-clearance. GIMP proportional outpaint guide1271×715 at(200,68) on1672×941. Outpainting selected `exec-7edfb700-a4b6-4079-8fa2-ac2aaea4fc28.png` (1672×941) completed the neighboring patient's head and surroundings, but widened less than guide. Cache directory `/home/kir/.codex/generated_images/01a0d813-b01b-7003-ac1a-13c396875d28/`.
+
+GIMP NoHalo scaled whole to1920×1080. Lead approved bounded24px upshift to place the RIGHT splinted heel above760 while retaining about72px minimum headroom. Copy the bottom non-story floor/bedwood strip(x0,y1030,w1920,h50) to its own layer, uniformly in width and with height extended to74; set offset(0,1006). Move the whole untouched scene layer to(0,-24), keep canvas1920×1080. This fills the bottom24px without extending characters or plot props. The upper edge of strip matches the translated source row; only ordinary lower floor/wood textures stretch. Save two-layer `reading-clearance-master.xcf` before merging/export.
+
+No grade, runtime crop, code or data change. Reopen master/export separately, compare RGBA bytes exactly with PNG. Inspected actual final full composition, native treatment/leg/hand contacts, the bottom extension and updated760/840 guides. Native-detail limits are preserved in the scene brief.
