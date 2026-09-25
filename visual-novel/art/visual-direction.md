@@ -4,7 +4,7 @@
 
 The user established the summoning and storm-infirmary studies as the two visual-tone anchors and requested the middle register on 16 September 2026. This direction applies to the original timeline. It does not change the screenplay's events, characters or knowledge.
 
-The user subsequently requested a **Softened lighting** setting so readers can disable extreme brightness/darkness. [Both treatments](lighting/README.md) use the same scene and character state. Intense remains the default described below; softened restores highlight and shadow detail without changing the story. Both require in-game review, including sprites and discovery crops.
+*Superseded 24 September 2026: the lighting setting is removed and the original timeline has one light (formerly called Softened); "softened" now names Stage II's regular light. See the [lighting record](lighting/README.md).* The user subsequently requested a **Softened lighting** setting so readers can disable extreme brightness/darkness. [Both treatments](lighting/README.md) use the same scene and character state. Intense remains the default described below; softened restores highlight and shadow detail without changing the story. Both require in-game review, including sprites and discovery crops.
 
 | Scene register | Required treatment | Review question |
 | --- | --- | --- |

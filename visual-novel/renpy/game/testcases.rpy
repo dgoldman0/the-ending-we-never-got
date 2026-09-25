@@ -396,9 +396,10 @@ testcase opening_large_text:
     screenshot 'large-page.png'
     assert eval persistent.large_text
 
-testcase fixed_softened_lighting:
-    # The original timeline's light is fixed at the Softened strength; there is
-    # no lighting setting (user decision, 24 September 2026).
+testcase original_timeline_light:
+    # The original timeline has one light mode, 'original', and no lighting
+    # setting (user decision, 24 September 2026). The old title and Settings
+    # buttons (then named Intense and Softened) are gone.
     assert not id 'title_intense'
     assert not id 'title_softened'
     click 'Settings'
@@ -406,24 +407,24 @@ testcase fixed_softened_lighting:
     assert not id 'lighting_softened'
     click id 'menu_return'
     click id 'main_begin'
-    assert eval light_mode() == 'softened'
-    assert eval stage_image().endswith('-softened.webp') and current_register() == 'bright'
+    assert eval light_mode() == 'original'
+    assert eval stage_image().endswith('-original.webp') and current_register() == 'bright'
     advance until eval source_line == 54
-    assert eval all(portrait_source(current_rovel_beat()[role]['image'], role).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
+    assert eval all(portrait_source(current_rovel_beat()[role]['image'], role).endswith('-bright-original.webp') for role in ('speaker', 'listener'))
     # The painted portraits replace the old heads, named for the role.
     assert eval painted_portrait_name(current_rovel_beat()['speaker']['image'], 'speaker') == 'senn-assuring-speaking'
     assert eval painted_portrait_name(current_rovel_beat()['listener']['image'], 'listener') == 'tessa-startled-arrival-listening'
-    screenshot 'softened-cast.png'
+    screenshot 'original-light-cast.png'
     advance until eval source_line == 112
     click id 'reading_controls'
     click id 'look_closer'
-    assert eval all(lighting_art(detail_views[detail]['image']).endswith('-softened.webp') for detail in ('drawing', 'phone'))
+    assert eval all(lighting_art(detail_views[detail]['image']).endswith('-original.webp') for detail in ('drawing', 'phone'))
     click id 'menu_return'
     advance until eval source_line == 176
-    assert eval stage_image().endswith('-softened.webp')
+    assert eval stage_image().endswith('-original.webp')
     run Jump('s007')
     pause 0.5
-    assert eval page_ground(scene_light()) == 'ui/page-night-soft.webp'
+    assert eval page_ground(scene_light()) == 'ui/page-night.webp'
 
 testcase skipping_stops_when_unfocused:
     # Leaving the window (Alt+Tab) must not let skipping run on, and Tab no
@@ -461,7 +462,7 @@ testcase staging_pipeline:
     assert eval stage_faces('Mara')[0]['image'].endswith('mara-controlled-ordinary.png')
     assert eval stage_faces('Mara')[1]['who'] == 'TESSA'
     # Her painted portrait (batch 2) replaces the old head crop as soon as it exists.
-    assert eval portrait_source(stage_faces('Mara')[0]['image'], 'speaker') == 'art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp'
+    assert eval portrait_source(stage_faces('Mara')[0]['image'], 'speaker') == 'art/lit/portraits/mara-controlled-speaking-ordinary-original.webp'
     $ STAGING['6']['stages'] = _planned_stages
 
 testcase listener_follows_the_scene:

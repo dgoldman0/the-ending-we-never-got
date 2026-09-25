@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate Rovel source coverage and assets without prescribing a visual design.
 
-Default: missing scene/portrait/Softened files fail the asset gate. --plan-only
+Default: missing scene/portrait/base files fail the asset gate. --plan-only
 checks source/presentation invariants while still reporting those missing files;
 it never grants image, UI or connected-experience clearance.
 """
@@ -169,7 +169,7 @@ def check_plan(plan):
     assert plan['rovel_required_assets'](6) == []
     absent = plan['rovel_missing_assets'](loadable=lambda path: False, variants={})
     assert set(assets) <= set(absent)
-    assert {'Softened mapping: ' + path for path in assets} <= set(absent)
+    assert {'Base mapping: ' + path for path in assets} <= set(absent)
     pairs = {path: 'soft/' + path for path in assets}
     assert not plan['rovel_missing_assets'](loadable=lambda path: True, variants=pairs)
     return expected
@@ -195,7 +195,7 @@ def main():
         for path in missing:
             print('  Missing: ' + path)
         for path in identical:
-            print('  Identical Intense/Softened files: ' + path)
+            print('  Identical scene/base files: ' + path)
         print('The 0.4.0-dev UI and portraits were rejected. This check cannot assess a replacement visually.')
         return 0 if args.plan_only else 1
     print('Required files/pairs exist. The 0.4.0-dev UI and portraits were rejected; file checks cannot clear a replacement.')

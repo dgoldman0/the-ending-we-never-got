@@ -6,7 +6,7 @@ The [visual direction](visual-direction.md) fixes the three scene registers requ
 
 - [opening-sequence/](opening-sequence/README.md): rejected S001–S003 component baseline and provisional spatial plan; extension requirements for the connected S001–S005 milestone. The earlier [component review](opening-sequence/review/realignment-review.md) is historical.
 - [interface-original/](interface-original/README.md): rejected painted interface pass and GIMP masters, retained for diagnosis; not an approved frame design.
-- [lighting/](lighting/README.md): persistent Intense/Softened choice, recovered exports, matched variants and review evidence.
+- [lighting/](lighting/README.md): the original timeline's light, its history (the retired Intense/Softened choice), recovered base exports and review evidence.
 - [Route coverage](route-coverage.md): all 58 scenes, with incomplete cast and artwork explicitly marked.
 - [runtime/](runtime/README.md): the rejected first batch, retained for provenance. The 0.4.0-dev attempt replaced its S004/S005 room-only coverage, but that new presentation also failed.
 - `scene-studies/`: current scene images, editable GIMP work and concise review records.

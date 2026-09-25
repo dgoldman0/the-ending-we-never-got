@@ -3,7 +3,8 @@
 ; clear their missing cast or revive them as approved composition references.
 (load "visual-novel/tools/finish-opening.scm")
 (define soft-root "visual-novel/art/lighting/masters/")
-(define soft-out "visual-novel/renpy/game/art/softened/")
+;; Historical. Its "Softened" output folder is now art/base/.
+(define soft-out "visual-novel/renpy/game/art/base/")
 (define (soft-legacy master category name remove-grade mode)
  (let* ((im (car (gimp-file-load RUN-NONINTERACTIVE master master)))
         (layers (gimp-image-get-layers im))

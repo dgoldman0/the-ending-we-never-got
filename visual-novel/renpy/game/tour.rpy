@@ -98,18 +98,18 @@ testcase ui_tour_states:
     click id 'main_begin'
     advance until eval source_line == 32
     pause 1.0
-    screenshot 's1-softened-compact.png'
+    screenshot 's1-states-compact.png'
     advance until eval source_line == 81
     pause 1.0
-    screenshot 's2-softened-night.png'
+    screenshot 's2-states-night.png'
     advance until eval source_line == 112
     click id 'reading_controls'
     click id 'look_closer'
     pause 2.2
-    screenshot 's3-softened-closer.png'
+    screenshot 's3-states-closer.png'
     click id 'bring_alongside'
     pause 2.0
-    screenshot 's4-softened-alongside.png'
+    screenshot 's4-states-alongside.png'
     click id 'menu_return'
     $ persistent.large_text = True
     advance until eval source_line == 172
@@ -139,7 +139,7 @@ testcase ui_tour_states:
     screenshot 's10-hidden.png'
 
 testcase ui_tour_light:
-    # The light registers, rendered frames and book pages (fixed at Softened).
+    # The light registers, rendered frames and book pages (the original timeline's light).
     $ _test.timeout = 90.0
     $ _preferences.text_cps = 0
     $ _test.screenshot_directory = 'test-output/tour-light'
@@ -148,14 +148,10 @@ testcase ui_tour_light:
     click id 'main_begin'
     advance until eval source_line == 32
     pause 1.2
-    screenshot 'bright-intense.png'
-    pause 1.0
-    screenshot 'bright-softened.png'
+    screenshot 'bright.png'
     advance until eval source_line == 81
     pause 1.2
-    screenshot 'night-intense.png'
-    pause 1.0
-    screenshot 'night-softened.png'
+    screenshot 'night.png'
     advance until eval source_line == 112
     click id 'reading_controls'
     click id 'look_closer'

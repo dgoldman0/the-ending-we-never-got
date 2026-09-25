@@ -1,7 +1,8 @@
 ; Controlled component finishing in GIMP 2.10. No reference recasting.
 (define rv-root "visual-novel/art/rovel/")
 (define rv-out "visual-novel/renpy/game/art/rovel/")
-(define rv-soft "visual-novel/renpy/game/art/softened/rovel/")
+;; Historical (0.4.0-dev). Its "Softened" output folder is now art/base/.
+(define rv-soft "visual-novel/renpy/game/art/base/rovel/")
 (define (rv-export im path)
  (let* ((copy (car (gimp-image-duplicate im)))
         (flat (car (gimp-image-merge-visible-layers copy CLIP-TO-IMAGE))))

@@ -321,7 +321,7 @@ init python:
         return copy.deepcopy(beat) if beat is not None else None
 
     def rovel_required_assets(scene=None):
-        """Intense scene components required by authored beats, not a clearance."""
+        """Scene components required by authored beats, not a clearance."""
         paths = set()
         for key, beat in ROVEL_BEATS.items():
             if scene is not None and key[0] != scene:
@@ -343,7 +343,7 @@ init python:
                 missing.append(path)
             alternate = variants.get(path)
             if not alternate:
-                missing.append('Softened mapping: ' + path)
+                missing.append('Base mapping: ' + path)
             elif not loadable(alternate):
                 missing.append(alternate)
         return sorted(set(missing))

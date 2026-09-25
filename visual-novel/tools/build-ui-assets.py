@@ -678,13 +678,12 @@ def main():
     knot(18, 'knot-small.png', alpha=220)
     rule(420, 'rule.png')
     rule(1100, 'rule-wide.png', alpha=120)
-    # Pages follow the scene's light: day vellum, dusk slate, night ink.
-    page('page-day.webp', (224, 215, 196), 1.5, 0.42)
-    page('page-day-soft.webp', (199, 191, 174), 1.3, 0.38)
-    page('page-dusk.webp', (35, 42, 51), 1.0, 0.55)
-    page('page-dusk-soft.webp', (45, 52, 60), 1.0, 0.45)
-    page('page-night.webp', (17, 19, 22), 0.9, 0.65)
-    page('page-night-soft.webp', (30, 32, 35), 0.9, 0.5)
+    # Pages follow the scene's light: day vellum, dusk slate, night ink, at the
+    # original timeline's light (the gentler set; the harsher one was retired
+    # with the Intense mode on 24 September 2026).
+    page('page-day.webp', (199, 191, 174), 1.3, 0.38)
+    page('page-dusk.webp', (45, 52, 60), 1.0, 0.45)
+    page('page-night.webp', (30, 32, 35), 0.9, 0.5)
     page('menu-ground.webp', (13, 16, 19), 0.8, 0.55, seed=11)
     glow(420, 'candle-glow.png', (255, 196, 120), 120)
     hshade('title-shade.png', 1920, [(0, 214), (0.22, 170), (0.48, 40), (0.62, 0), (1, 0)])

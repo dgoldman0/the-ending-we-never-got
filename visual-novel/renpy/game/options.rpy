@@ -107,6 +107,6 @@ init 20 python:
         for path in sorted(required):
             build.classify('game/' + path, 'all')
         build.classify('game/art/rovel/**', None)
-        build.classify('game/art/softened/rovel/**', None)
+        build.classify('game/art/base/rovel/**', None)
 
     _configure_rovel_distribution()

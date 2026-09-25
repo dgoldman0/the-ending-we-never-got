@@ -46,7 +46,7 @@ Decide head versus bust, visible clothing, crop boundary, camera angle, eye line
 
 Compare identity to selected references and written designs, then compare the finished portrait with others in the interface. Inspect hair, ears, chin, neck, shoulders where present, and the frame relationship. A recognizable face can still be an unsuitable dialogue portrait.
 
-Open every selected portrait **composited on its actual UI surface**, at speaker and listener sizes, in Intense and Softened. Inspect the final export after every crop/mask/grade change. A raw PNG viewer can display RGB beneath transparent alpha; confirm the visible composite before asserting a background defect. Review the whole portrait and native detail. A contact sheet is an index, not sufficient inspection.
+Open every selected portrait **composited on its actual UI surface**, at its size in the reading screen, in the game's light for its scene. Inspect the final export after every crop/mask/grade change. A raw PNG viewer can display RGB beneath transparent alpha; confirm the visible composite before asserting a background defect. Review the whole portrait and native detail. A contact sheet is an index, not sufficient inspection.
 
 Automate only a treatment demonstrated to suit the actual pose. Do not apply one fixed contour to differently posed heads and infer success from clean exports. Supporting speakers need the same care as leads; brief appearance does not make a bad portrait acceptable.
 

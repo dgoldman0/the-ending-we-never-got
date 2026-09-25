@@ -1,2035 +1,1595 @@
 {
  "images": {
   "art/opening/cg/detail-drawing.png": {
-   "intense": "art/lit/opening--cg--detail-drawing-intense.webp",
-   "softened": "art/lit/opening--cg--detail-drawing-softened.webp"
+   "original": "art/lit/opening--cg--detail-drawing-original.webp"
   },
   "art/opening/cg/detail-phone.png": {
-   "intense": "art/lit/opening--cg--detail-phone-intense.webp",
-   "softened": "art/lit/opening--cg--detail-phone-softened.webp"
+   "original": "art/lit/opening--cg--detail-phone-original.webp"
   },
   "art/opening/cg/drawing-restart.png": {
-   "intense": "art/lit/opening--cg--drawing-restart-intense.webp",
-   "softened": "art/lit/opening--cg--drawing-restart-softened.webp"
+   "original": "art/lit/opening--cg--drawing-restart-original.webp"
   },
   "art/opening/cg/purification-cleared.png": {
-   "intense": "art/lit/opening--cg--purification-cleared-intense.webp",
-   "softened": "art/lit/opening--cg--purification-cleared-softened.webp"
+   "original": "art/lit/opening--cg--purification-cleared-original.webp"
   },
   "art/rovel/cg/ceremony-applause.png": {
-   "intense": "art/lit/rovel--cg--ceremony-applause-intense.webp",
-   "softened": "art/lit/rovel--cg--ceremony-applause-softened.webp"
+   "original": "art/lit/rovel--cg--ceremony-applause-original.webp"
   },
   "art/rovel/details/applause-hand.png": {
-   "intense": "art/lit/rovel--details--applause-hand-intense.webp",
-   "softened": "art/lit/rovel--details--applause-hand-softened.webp"
+   "original": "art/lit/rovel--details--applause-hand-original.webp"
   },
   "art/rovel/details/treatment-blue.png": {
-   "intense": "art/lit/rovel--details--treatment-blue-intense.webp",
-   "softened": "art/lit/rovel--details--treatment-blue-softened.webp"
+   "original": "art/lit/rovel--details--treatment-blue-original.webp"
   },
   "art/rovel/details/treatment-white.png": {
-   "intense": "art/lit/rovel--details--treatment-white-intense.webp",
-   "softened": "art/lit/rovel--details--treatment-white-softened.webp"
+   "original": "art/lit/rovel--details--treatment-white-original.webp"
   },
   "art/scenes/s006-convoy-camp.png": {
-   "intense": "art/lit/scenes--s006-convoy-camp-intense.webp",
-   "softened": "art/lit/scenes--s006-convoy-camp-softened.webp"
+   "original": "art/lit/scenes--s006-convoy-camp-original.webp"
   },
   "art/scenes/s007-roadside-inn.png": {
-   "intense": "art/lit/scenes--s007-roadside-inn-intense.webp",
-   "softened": "art/lit/scenes--s007-roadside-inn-softened.webp"
+   "original": "art/lit/scenes--s007-roadside-inn-original.webp"
   },
   "art/scenes/s008-bellweir-market.png": {
-   "intense": "art/lit/scenes--s008-bellweir-market-intense.webp",
-   "softened": "art/lit/scenes--s008-bellweir-market-softened.webp"
+   "original": "art/lit/scenes--s008-bellweir-market-original.webp"
   },
   "art/scenes/s009-bellweir-river.png": {
-   "intense": "art/lit/scenes--s009-bellweir-river-intense.webp",
-   "softened": "art/lit/scenes--s009-bellweir-river-softened.webp"
+   "original": "art/lit/scenes--s009-bellweir-river-original.webp"
   },
   "art/scenes/s009-boat-drawing.png": {
-   "intense": "art/lit/scenes--s009-boat-drawing-intense.webp",
-   "softened": "art/lit/scenes--s009-boat-drawing-softened.webp"
+   "original": "art/lit/scenes--s009-boat-drawing-original.webp"
   },
   "art/scenes/s009-rowing.png": {
-   "intense": "art/lit/scenes--s009-rowing-intense.webp",
-   "softened": "art/lit/scenes--s009-rowing-softened.webp"
+   "original": "art/lit/scenes--s009-rowing-original.webp"
   },
   "art/scenes/s010-bellweir-hills.png": {
-   "intense": "art/lit/scenes--s010-bellweir-hills-intense.webp",
-   "softened": "art/lit/scenes--s010-bellweir-hills-softened.webp"
+   "original": "art/lit/scenes--s010-bellweir-hills-original.webp"
   },
   "art/scenes/s011-bellweir-causeway.png": {
-   "intense": "art/lit/scenes--s011-bellweir-causeway-intense.webp",
-   "softened": "art/lit/scenes--s011-bellweir-causeway-softened.webp"
+   "original": "art/lit/scenes--s011-bellweir-causeway-original.webp"
   },
   "art/scenes/s011-sanctuary.png": {
-   "intense": "art/lit/scenes--s011-sanctuary-intense.webp",
-   "softened": "art/lit/scenes--s011-sanctuary-softened.webp"
+   "original": "art/lit/scenes--s011-sanctuary-original.webp"
   },
   "art/scenes/s012-temple-reading-room.png": {
-   "intense": "art/lit/scenes--s012-temple-reading-room-intense.webp",
-   "softened": "art/lit/scenes--s012-temple-reading-room-softened.webp"
+   "original": "art/lit/scenes--s012-temple-reading-room-original.webp"
   },
   "art/scenes/s013-summoning-chamber-later.png": {
-   "intense": "art/lit/scenes--s013-summoning-chamber-later-intense.webp",
-   "softened": "art/lit/scenes--s013-summoning-chamber-later-softened.webp"
+   "original": "art/lit/scenes--s013-summoning-chamber-later-original.webp"
   },
   "art/scenes/s014-boots-and-cap.png": {
-   "intense": "art/lit/scenes--s014-boots-and-cap-intense.webp",
-   "softened": "art/lit/scenes--s014-boots-and-cap-softened.webp"
+   "original": "art/lit/scenes--s014-boots-and-cap-original.webp"
   },
   "art/scenes/s014-relief-warehouse.png": {
-   "intense": "art/lit/scenes--s014-relief-warehouse-intense.webp",
-   "softened": "art/lit/scenes--s014-relief-warehouse-softened.webp"
+   "original": "art/lit/scenes--s014-relief-warehouse-original.webp"
   },
   "art/scenes/s015-elin-lodging.png": {
-   "intense": "art/lit/scenes--s015-elin-lodging-intense.webp",
-   "softened": "art/lit/scenes--s015-elin-lodging-softened.webp"
+   "original": "art/lit/scenes--s015-elin-lodging-original.webp"
   },
   "art/scenes/s016-council-room.png": {
-   "intense": "art/lit/scenes--s016-council-room-intense.webp",
-   "softened": "art/lit/scenes--s016-council-room-softened.webp"
+   "original": "art/lit/scenes--s016-council-room-original.webp"
   },
   "art/scenes/s016-hearing-door.png": {
-   "intense": "art/lit/scenes--s016-hearing-door-intense.webp",
-   "softened": "art/lit/scenes--s016-hearing-door-softened.webp"
+   "original": "art/lit/scenes--s016-hearing-door-original.webp"
   },
   "art/scenes/s017-council-corridor.png": {
-   "intense": "art/lit/scenes--s017-council-corridor-intense.webp",
-   "softened": "art/lit/scenes--s017-council-corridor-softened.webp"
+   "original": "art/lit/scenes--s017-council-corridor-original.webp"
   },
   "art/scenes/s018-gray-scar-ferry-approach.png": {
-   "intense": "art/lit/scenes--s018-gray-scar-ferry-approach-intense.webp",
-   "softened": "art/lit/scenes--s018-gray-scar-ferry-approach-softened.webp"
+   "original": "art/lit/scenes--s018-gray-scar-ferry-approach-original.webp"
   },
   "art/scenes/s019-gray-scar-ferryhouse.png": {
-   "intense": "art/lit/scenes--s019-gray-scar-ferryhouse-intense.webp",
-   "softened": "art/lit/scenes--s019-gray-scar-ferryhouse-softened.webp"
+   "original": "art/lit/scenes--s019-gray-scar-ferryhouse-original.webp"
   },
   "art/scenes/s020-gray-scar-riverbank.png": {
-   "intense": "art/lit/scenes--s020-gray-scar-riverbank-intense.webp",
-   "softened": "art/lit/scenes--s020-gray-scar-riverbank-softened.webp"
+   "original": "art/lit/scenes--s020-gray-scar-riverbank-original.webp"
   },
   "art/scenes/s021-gray-scar-covered-landing.png": {
-   "intense": "art/lit/scenes--s021-gray-scar-covered-landing-intense.webp",
-   "softened": "art/lit/scenes--s021-gray-scar-covered-landing-softened.webp"
+   "original": "art/lit/scenes--s021-gray-scar-covered-landing-original.webp"
   },
   "art/scenes/s021-lucan-returns.png": {
-   "intense": "art/lit/scenes--s021-lucan-returns-intense.webp",
-   "softened": "art/lit/scenes--s021-lucan-returns-softened.webp"
+   "original": "art/lit/scenes--s021-lucan-returns-original.webp"
   },
   "art/scenes/s021-rescue.png": {
-   "intense": "art/lit/scenes--s021-rescue-intense.webp",
-   "softened": "art/lit/scenes--s021-rescue-softened.webp"
+   "original": "art/lit/scenes--s021-rescue-original.webp"
   },
   "art/scenes/s022-river-picket.png": {
-   "intense": "art/lit/scenes--s022-river-picket-intense.webp",
-   "softened": "art/lit/scenes--s022-river-picket-softened.webp"
+   "original": "art/lit/scenes--s022-river-picket-original.webp"
   },
   "art/scenes/s023-northern-field-quarters.png": {
-   "intense": "art/lit/scenes--s023-northern-field-quarters-intense.webp",
-   "softened": "art/lit/scenes--s023-northern-field-quarters-softened.webp"
+   "original": "art/lit/scenes--s023-northern-field-quarters-original.webp"
   },
   "art/scenes/s024-northern-wharf.png": {
-   "intense": "art/lit/scenes--s024-northern-wharf-intense.webp",
-   "softened": "art/lit/scenes--s024-northern-wharf-softened.webp"
+   "original": "art/lit/scenes--s024-northern-wharf-original.webp"
   },
   "art/scenes/s025-royal-infirmary-corridor.png": {
-   "intense": "art/lit/scenes--s025-royal-infirmary-corridor-intense.webp",
-   "softened": "art/lit/scenes--s025-royal-infirmary-corridor-softened.webp"
+   "original": "art/lit/scenes--s025-royal-infirmary-corridor-original.webp"
   }
  },
  "portraits": {
   "ada-listening": {
    "bright": {
-    "intense": "art/lit/portraits/ada-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/ada-listening-bright-softened.webp"
+    "original": "art/lit/portraits/ada-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/ada-listening-night-intense.webp",
-    "softened": "art/lit/portraits/ada-listening-night-softened.webp"
+    "original": "art/lit/portraits/ada-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/ada-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/ada-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/ada-listening-ordinary-original.webp"
    }
   },
   "ada-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/ada-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/ada-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/ada-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/ada-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/ada-speaking-night-softened.webp"
+    "original": "art/lit/portraits/ada-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/ada-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/ada-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/ada-speaking-ordinary-original.webp"
    }
   },
   "apprentice-listening": {
    "bright": {
-    "intense": "art/lit/portraits/apprentice-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/apprentice-listening-bright-softened.webp"
+    "original": "art/lit/portraits/apprentice-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/apprentice-listening-night-intense.webp",
-    "softened": "art/lit/portraits/apprentice-listening-night-softened.webp"
+    "original": "art/lit/portraits/apprentice-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/apprentice-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/apprentice-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/apprentice-listening-ordinary-original.webp"
    }
   },
   "apprentice-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/apprentice-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/apprentice-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/apprentice-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/apprentice-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/apprentice-speaking-night-softened.webp"
+    "original": "art/lit/portraits/apprentice-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/apprentice-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/apprentice-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/apprentice-speaking-ordinary-original.webp"
    }
   },
   "archivist-listening": {
    "bright": {
-    "intense": "art/lit/portraits/archivist-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/archivist-listening-bright-softened.webp"
+    "original": "art/lit/portraits/archivist-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/archivist-listening-night-intense.webp",
-    "softened": "art/lit/portraits/archivist-listening-night-softened.webp"
+    "original": "art/lit/portraits/archivist-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/archivist-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/archivist-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/archivist-listening-ordinary-original.webp"
    }
   },
   "archivist-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/archivist-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/archivist-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/archivist-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/archivist-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/archivist-speaking-night-softened.webp"
+    "original": "art/lit/portraits/archivist-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/archivist-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/archivist-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/archivist-speaking-ordinary-original.webp"
    }
   },
   "bargeman-listening": {
    "bright": {
-    "intense": "art/lit/portraits/bargeman-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/bargeman-listening-bright-softened.webp"
+    "original": "art/lit/portraits/bargeman-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/bargeman-listening-night-intense.webp",
-    "softened": "art/lit/portraits/bargeman-listening-night-softened.webp"
+    "original": "art/lit/portraits/bargeman-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/bargeman-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/bargeman-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/bargeman-listening-ordinary-original.webp"
    }
   },
   "bargeman-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/bargeman-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/bargeman-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/bargeman-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/bargeman-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/bargeman-speaking-night-softened.webp"
+    "original": "art/lit/portraits/bargeman-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/bargeman-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/bargeman-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/bargeman-speaking-ordinary-original.webp"
    }
   },
   "boatman-listening": {
    "bright": {
-    "intense": "art/lit/portraits/boatman-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/boatman-listening-bright-softened.webp"
+    "original": "art/lit/portraits/boatman-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/boatman-listening-night-intense.webp",
-    "softened": "art/lit/portraits/boatman-listening-night-softened.webp"
+    "original": "art/lit/portraits/boatman-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/boatman-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/boatman-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/boatman-listening-ordinary-original.webp"
    }
   },
   "boatman-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/boatman-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/boatman-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/boatman-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/boatman-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/boatman-speaking-night-softened.webp"
+    "original": "art/lit/portraits/boatman-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/boatman-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/boatman-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/boatman-speaking-ordinary-original.webp"
    }
   },
   "camp-healer-listening": {
    "bright": {
-    "intense": "art/lit/portraits/camp-healer-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-listening-bright-softened.webp"
+    "original": "art/lit/portraits/camp-healer-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/camp-healer-listening-night-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-listening-night-softened.webp"
+    "original": "art/lit/portraits/camp-healer-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/camp-healer-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/camp-healer-listening-ordinary-original.webp"
    }
   },
   "camp-healer-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/camp-healer-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/camp-healer-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/camp-healer-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-speaking-night-softened.webp"
+    "original": "art/lit/portraits/camp-healer-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/camp-healer-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/camp-healer-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/camp-healer-speaking-ordinary-original.webp"
    }
   },
   "departing-captain-listening": {
    "bright": {
-    "intense": "art/lit/portraits/departing-captain-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-listening-bright-softened.webp"
+    "original": "art/lit/portraits/departing-captain-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/departing-captain-listening-night-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-listening-night-softened.webp"
+    "original": "art/lit/portraits/departing-captain-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/departing-captain-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/departing-captain-listening-ordinary-original.webp"
    }
   },
   "departing-captain-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/departing-captain-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/departing-captain-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/departing-captain-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-speaking-night-softened.webp"
+    "original": "art/lit/portraits/departing-captain-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/departing-captain-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/departing-captain-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/departing-captain-speaking-ordinary-original.webp"
    }
   },
   "elin-later-listening": {
    "bright": {
-    "intense": "art/lit/portraits/elin-later-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/elin-later-listening-bright-softened.webp"
+    "original": "art/lit/portraits/elin-later-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/elin-later-listening-night-intense.webp",
-    "softened": "art/lit/portraits/elin-later-listening-night-softened.webp"
+    "original": "art/lit/portraits/elin-later-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/elin-later-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/elin-later-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/elin-later-listening-ordinary-original.webp"
    }
   },
   "elin-later-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/elin-later-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/elin-later-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/elin-later-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/elin-later-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/elin-later-speaking-night-softened.webp"
+    "original": "art/lit/portraits/elin-later-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/elin-later-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/elin-later-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/elin-later-speaking-ordinary-original.webp"
    }
   },
   "elin-listening": {
    "bright": {
-    "intense": "art/lit/portraits/elin-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/elin-listening-bright-softened.webp"
+    "original": "art/lit/portraits/elin-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/elin-listening-night-intense.webp",
-    "softened": "art/lit/portraits/elin-listening-night-softened.webp"
+    "original": "art/lit/portraits/elin-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/elin-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/elin-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/elin-listening-ordinary-original.webp"
    }
   },
   "elin-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/elin-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/elin-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/elin-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/elin-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/elin-speaking-night-softened.webp"
+    "original": "art/lit/portraits/elin-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/elin-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/elin-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/elin-speaking-ordinary-original.webp"
    }
   },
   "escort-listening": {
    "bright": {
-    "intense": "art/lit/portraits/escort-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/escort-listening-bright-softened.webp"
+    "original": "art/lit/portraits/escort-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/escort-listening-night-intense.webp",
-    "softened": "art/lit/portraits/escort-listening-night-softened.webp"
+    "original": "art/lit/portraits/escort-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/escort-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/escort-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/escort-listening-ordinary-original.webp"
    }
   },
   "escort-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/escort-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/escort-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/escort-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/escort-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/escort-speaking-night-softened.webp"
+    "original": "art/lit/portraits/escort-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/escort-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/escort-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/escort-speaking-ordinary-original.webp"
    }
   },
   "ferryman-listening": {
    "bright": {
-    "intense": "art/lit/portraits/ferryman-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/ferryman-listening-bright-softened.webp"
+    "original": "art/lit/portraits/ferryman-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/ferryman-listening-night-intense.webp",
-    "softened": "art/lit/portraits/ferryman-listening-night-softened.webp"
+    "original": "art/lit/portraits/ferryman-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/ferryman-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/ferryman-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/ferryman-listening-ordinary-original.webp"
    }
   },
   "ferryman-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/ferryman-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/ferryman-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/ferryman-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/ferryman-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/ferryman-speaking-night-softened.webp"
+    "original": "art/lit/portraits/ferryman-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/ferryman-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/ferryman-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/ferryman-speaking-ordinary-original.webp"
    }
   },
   "governor-listening": {
    "bright": {
-    "intense": "art/lit/portraits/governor-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/governor-listening-bright-softened.webp"
+    "original": "art/lit/portraits/governor-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/governor-listening-night-intense.webp",
-    "softened": "art/lit/portraits/governor-listening-night-softened.webp"
+    "original": "art/lit/portraits/governor-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/governor-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/governor-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/governor-listening-ordinary-original.webp"
    }
   },
   "governor-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/governor-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/governor-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/governor-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/governor-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/governor-speaking-night-softened.webp"
+    "original": "art/lit/portraits/governor-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/governor-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/governor-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/governor-speaking-ordinary-original.webp"
    }
   },
   "hest-listening": {
    "bright": {
-    "intense": "art/lit/portraits/hest-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/hest-listening-bright-softened.webp"
+    "original": "art/lit/portraits/hest-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/hest-listening-night-intense.webp",
-    "softened": "art/lit/portraits/hest-listening-night-softened.webp"
+    "original": "art/lit/portraits/hest-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/hest-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/hest-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/hest-listening-ordinary-original.webp"
    }
   },
   "hest-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/hest-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/hest-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/hest-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/hest-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/hest-speaking-night-softened.webp"
+    "original": "art/lit/portraits/hest-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/hest-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/hest-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/hest-speaking-ordinary-original.webp"
    }
   },
   "iven-attentive": {
    "bright": {
-    "intense": "art/lit/portraits/iven-attentive-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-bright-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-attentive-night-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-night-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-attentive-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-ordinary-original.webp"
    }
   },
   "iven-attentive-listening": {
    "bright": {
-    "intense": "art/lit/portraits/iven-attentive-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-listening-bright-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-attentive-listening-night-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-listening-night-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-attentive-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-listening-ordinary-original.webp"
    }
   },
   "iven-attentive-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/iven-attentive-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-attentive-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-speaking-night-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-attentive-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-speaking-ordinary-original.webp"
    }
   },
   "iven-attentive-treatment-listening": {
    "bright": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-listening-bright-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-listening-night-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-listening-night-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-listening-ordinary-original.webp"
    }
   },
   "iven-attentive-treatment-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-night-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-attentive-treatment-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-attentive-treatment-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-attentive-treatment-speaking-ordinary-original.webp"
    }
   },
   "iven-concerned": {
    "bright": {
-    "intense": "art/lit/portraits/iven-concerned-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-bright-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-concerned-night-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-night-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-concerned-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-ordinary-original.webp"
    }
   },
   "iven-concerned-listening": {
    "bright": {
-    "intense": "art/lit/portraits/iven-concerned-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-listening-bright-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-concerned-listening-night-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-listening-night-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-concerned-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-listening-ordinary-original.webp"
    }
   },
   "iven-concerned-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/iven-concerned-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-concerned-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-speaking-night-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-concerned-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-speaking-ordinary-original.webp"
    }
   },
   "iven-concerned-treatment-listening": {
    "bright": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-listening-bright-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-listening-night-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-listening-night-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-listening-ordinary-original.webp"
    }
   },
   "iven-concerned-treatment-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-night-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-concerned-treatment-speaking-ordinary-original.webp"
    }
   },
   "iven-harrow-listening": {
    "bright": {
-    "intense": "art/lit/portraits/iven-harrow-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-listening-bright-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-harrow-listening-night-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-listening-night-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-harrow-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-listening-ordinary-original.webp"
    }
   },
   "iven-harrow-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/iven-harrow-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/iven-harrow-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-speaking-night-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/iven-harrow-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/iven-harrow-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/iven-harrow-speaking-ordinary-original.webp"
    }
   },
   "lucan-early-listening": {
    "bright": {
-    "intense": "art/lit/portraits/lucan-early-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-listening-bright-softened.webp"
+    "original": "art/lit/portraits/lucan-early-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/lucan-early-listening-night-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-listening-night-softened.webp"
+    "original": "art/lit/portraits/lucan-early-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/lucan-early-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/lucan-early-listening-ordinary-original.webp"
    }
   },
   "lucan-early-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/lucan-early-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/lucan-early-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/lucan-early-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-speaking-night-softened.webp"
+    "original": "art/lit/portraits/lucan-early-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/lucan-early-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/lucan-early-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/lucan-early-speaking-ordinary-original.webp"
    }
   },
   "lucan-later-listening": {
    "bright": {
-    "intense": "art/lit/portraits/lucan-later-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-listening-bright-softened.webp"
+    "original": "art/lit/portraits/lucan-later-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/lucan-later-listening-night-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-listening-night-softened.webp"
+    "original": "art/lit/portraits/lucan-later-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/lucan-later-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/lucan-later-listening-ordinary-original.webp"
    }
   },
   "lucan-later-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/lucan-later-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/lucan-later-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/lucan-later-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-speaking-night-softened.webp"
+    "original": "art/lit/portraits/lucan-later-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/lucan-later-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/lucan-later-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/lucan-later-speaking-ordinary-original.webp"
    }
   },
   "mara-campaign-listening": {
    "bright": {
-    "intense": "art/lit/portraits/mara-campaign-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-listening-bright-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-campaign-listening-night-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-listening-night-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-campaign-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-listening-ordinary-original.webp"
    }
   },
   "mara-campaign-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/mara-campaign-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-campaign-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-speaking-night-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-campaign-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-campaign-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-campaign-speaking-ordinary-original.webp"
    }
   },
   "mara-citadel-listening": {
    "bright": {
-    "intense": "art/lit/portraits/mara-citadel-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-listening-bright-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-citadel-listening-night-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-listening-night-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-citadel-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-listening-ordinary-original.webp"
    }
   },
   "mara-citadel-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/mara-citadel-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-citadel-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-speaking-night-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-citadel-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-citadel-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-citadel-speaking-ordinary-original.webp"
    }
   },
   "mara-controlled": {
    "bright": {
-    "intense": "art/lit/portraits/mara-controlled-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-bright-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-controlled-night-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-night-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-controlled-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-ordinary-original.webp"
    }
   },
   "mara-controlled-listening": {
    "bright": {
-    "intense": "art/lit/portraits/mara-controlled-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-listening-bright-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-controlled-listening-night-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-listening-night-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-controlled-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-listening-ordinary-original.webp"
    }
   },
   "mara-controlled-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/mara-controlled-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-controlled-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-speaking-night-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-controlled-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-controlled-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-controlled-speaking-ordinary-original.webp"
    }
   },
   "mara-uneasy": {
    "bright": {
-    "intense": "art/lit/portraits/mara-uneasy-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-bright-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-uneasy-night-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-night-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-uneasy-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-ordinary-original.webp"
    }
   },
   "mara-uneasy-listening": {
    "bright": {
-    "intense": "art/lit/portraits/mara-uneasy-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-listening-bright-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mara-uneasy-listening-night-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-listening-night-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mara-uneasy-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mara-uneasy-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/mara-uneasy-listening-ordinary-original.webp"
    }
   },
   "marren-listening": {
    "bright": {
-    "intense": "art/lit/portraits/marren-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/marren-listening-bright-softened.webp"
+    "original": "art/lit/portraits/marren-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/marren-listening-night-intense.webp",
-    "softened": "art/lit/portraits/marren-listening-night-softened.webp"
+    "original": "art/lit/portraits/marren-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/marren-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/marren-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/marren-listening-ordinary-original.webp"
    }
   },
   "marren-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/marren-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/marren-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/marren-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/marren-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/marren-speaking-night-softened.webp"
+    "original": "art/lit/portraits/marren-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/marren-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/marren-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/marren-speaking-ordinary-original.webp"
    }
   },
   "messenger": {
    "bright": {
-    "intense": "art/lit/portraits/messenger-bright-intense.webp",
-    "softened": "art/lit/portraits/messenger-bright-softened.webp"
+    "original": "art/lit/portraits/messenger-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/messenger-night-intense.webp",
-    "softened": "art/lit/portraits/messenger-night-softened.webp"
+    "original": "art/lit/portraits/messenger-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/messenger-ordinary-intense.webp",
-    "softened": "art/lit/portraits/messenger-ordinary-softened.webp"
+    "original": "art/lit/portraits/messenger-ordinary-original.webp"
    }
   },
   "messenger-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/messenger-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/messenger-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/messenger-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/messenger-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/messenger-speaking-night-softened.webp"
+    "original": "art/lit/portraits/messenger-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/messenger-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/messenger-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/messenger-speaking-ordinary-original.webp"
    }
   },
   "mother": {
    "bright": {
-    "intense": "art/lit/portraits/mother-bright-intense.webp",
-    "softened": "art/lit/portraits/mother-bright-softened.webp"
+    "original": "art/lit/portraits/mother-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mother-night-intense.webp",
-    "softened": "art/lit/portraits/mother-night-softened.webp"
+    "original": "art/lit/portraits/mother-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mother-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mother-ordinary-softened.webp"
+    "original": "art/lit/portraits/mother-ordinary-original.webp"
    }
   },
   "mother-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/mother-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/mother-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/mother-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/mother-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/mother-speaking-night-softened.webp"
+    "original": "art/lit/portraits/mother-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/mother-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/mother-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/mother-speaking-ordinary-original.webp"
    }
   },
   "olan": {
    "bright": {
-    "intense": "art/lit/portraits/olan-bright-intense.webp",
-    "softened": "art/lit/portraits/olan-bright-softened.webp"
+    "original": "art/lit/portraits/olan-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/olan-night-intense.webp",
-    "softened": "art/lit/portraits/olan-night-softened.webp"
+    "original": "art/lit/portraits/olan-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/olan-ordinary-intense.webp",
-    "softened": "art/lit/portraits/olan-ordinary-softened.webp"
+    "original": "art/lit/portraits/olan-ordinary-original.webp"
    }
   },
   "olan-soldier-listening": {
    "bright": {
-    "intense": "art/lit/portraits/olan-soldier-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-listening-bright-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/olan-soldier-listening-night-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-listening-night-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/olan-soldier-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-listening-ordinary-original.webp"
    }
   },
   "olan-soldier-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/olan-soldier-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/olan-soldier-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-speaking-night-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/olan-soldier-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/olan-soldier-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/olan-soldier-speaking-ordinary-original.webp"
    }
   },
   "olan-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/olan-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/olan-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/olan-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/olan-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/olan-speaking-night-softened.webp"
+    "original": "art/lit/portraits/olan-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/olan-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/olan-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/olan-speaking-ordinary-original.webp"
    }
   },
   "orra": {
    "bright": {
-    "intense": "art/lit/portraits/orra-bright-intense.webp",
-    "softened": "art/lit/portraits/orra-bright-softened.webp"
+    "original": "art/lit/portraits/orra-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/orra-night-intense.webp",
-    "softened": "art/lit/portraits/orra-night-softened.webp"
+    "original": "art/lit/portraits/orra-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/orra-ordinary-intense.webp",
-    "softened": "art/lit/portraits/orra-ordinary-softened.webp"
+    "original": "art/lit/portraits/orra-ordinary-original.webp"
    }
   },
   "orra-listening": {
    "bright": {
-    "intense": "art/lit/portraits/orra-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/orra-listening-bright-softened.webp"
+    "original": "art/lit/portraits/orra-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/orra-listening-night-intense.webp",
-    "softened": "art/lit/portraits/orra-listening-night-softened.webp"
+    "original": "art/lit/portraits/orra-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/orra-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/orra-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/orra-listening-ordinary-original.webp"
    }
   },
   "orra-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/orra-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/orra-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/orra-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/orra-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/orra-speaking-night-softened.webp"
+    "original": "art/lit/portraits/orra-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/orra-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/orra-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/orra-speaking-ordinary-original.webp"
    }
   },
   "orren-listening": {
    "bright": {
-    "intense": "art/lit/portraits/orren-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/orren-listening-bright-softened.webp"
+    "original": "art/lit/portraits/orren-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/orren-listening-night-intense.webp",
-    "softened": "art/lit/portraits/orren-listening-night-softened.webp"
+    "original": "art/lit/portraits/orren-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/orren-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/orren-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/orren-listening-ordinary-original.webp"
    }
   },
   "orren-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/orren-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/orren-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/orren-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/orren-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/orren-speaking-night-softened.webp"
+    "original": "art/lit/portraits/orren-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/orren-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/orren-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/orren-speaking-ordinary-original.webp"
    }
   },
   "petitioner": {
    "bright": {
-    "intense": "art/lit/portraits/petitioner-bright-intense.webp",
-    "softened": "art/lit/portraits/petitioner-bright-softened.webp"
+    "original": "art/lit/portraits/petitioner-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/petitioner-night-intense.webp",
-    "softened": "art/lit/portraits/petitioner-night-softened.webp"
+    "original": "art/lit/portraits/petitioner-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/petitioner-ordinary-intense.webp",
-    "softened": "art/lit/portraits/petitioner-ordinary-softened.webp"
+    "original": "art/lit/portraits/petitioner-ordinary-original.webp"
    }
   },
   "petitioner-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/petitioner-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/petitioner-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/petitioner-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/petitioner-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/petitioner-speaking-night-softened.webp"
+    "original": "art/lit/portraits/petitioner-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/petitioner-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/petitioner-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/petitioner-speaking-ordinary-original.webp"
    }
   },
   "picket-officer-listening": {
    "bright": {
-    "intense": "art/lit/portraits/picket-officer-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-listening-bright-softened.webp"
+    "original": "art/lit/portraits/picket-officer-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/picket-officer-listening-night-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-listening-night-softened.webp"
+    "original": "art/lit/portraits/picket-officer-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/picket-officer-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/picket-officer-listening-ordinary-original.webp"
    }
   },
   "picket-officer-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/picket-officer-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/picket-officer-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/picket-officer-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-speaking-night-softened.webp"
+    "original": "art/lit/portraits/picket-officer-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/picket-officer-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/picket-officer-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/picket-officer-speaking-ordinary-original.webp"
    }
   },
   "priest": {
    "bright": {
-    "intense": "art/lit/portraits/priest-bright-intense.webp",
-    "softened": "art/lit/portraits/priest-bright-softened.webp"
+    "original": "art/lit/portraits/priest-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/priest-night-intense.webp",
-    "softened": "art/lit/portraits/priest-night-softened.webp"
+    "original": "art/lit/portraits/priest-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/priest-ordinary-intense.webp",
-    "softened": "art/lit/portraits/priest-ordinary-softened.webp"
+    "original": "art/lit/portraits/priest-ordinary-original.webp"
    }
   },
   "priest-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/priest-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/priest-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/priest-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/priest-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/priest-speaking-night-softened.webp"
+    "original": "art/lit/portraits/priest-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/priest-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/priest-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/priest-speaking-ordinary-original.webp"
    }
   },
   "runner-listening": {
    "bright": {
-    "intense": "art/lit/portraits/runner-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/runner-listening-bright-softened.webp"
+    "original": "art/lit/portraits/runner-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/runner-listening-night-intense.webp",
-    "softened": "art/lit/portraits/runner-listening-night-softened.webp"
+    "original": "art/lit/portraits/runner-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/runner-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/runner-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/runner-listening-ordinary-original.webp"
    }
   },
   "runner-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/runner-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/runner-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/runner-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/runner-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/runner-speaking-night-softened.webp"
+    "original": "art/lit/portraits/runner-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/runner-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/runner-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/runner-speaking-ordinary-original.webp"
    }
   },
   "scholar-listening": {
    "bright": {
-    "intense": "art/lit/portraits/scholar-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/scholar-listening-bright-softened.webp"
+    "original": "art/lit/portraits/scholar-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/scholar-listening-night-intense.webp",
-    "softened": "art/lit/portraits/scholar-listening-night-softened.webp"
+    "original": "art/lit/portraits/scholar-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/scholar-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/scholar-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/scholar-listening-ordinary-original.webp"
    }
   },
   "scholar-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/scholar-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/scholar-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/scholar-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/scholar-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/scholar-speaking-night-softened.webp"
+    "original": "art/lit/portraits/scholar-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/scholar-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/scholar-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/scholar-speaking-ordinary-original.webp"
    }
   },
   "senn-assuring": {
    "bright": {
-    "intense": "art/lit/portraits/senn-assuring-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-bright-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-assuring-night-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-night-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-assuring-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-ordinary-original.webp"
    }
   },
   "senn-assuring-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/senn-assuring-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-assuring-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-speaking-night-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-assuring-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-assuring-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-assuring-speaking-ordinary-original.webp"
    }
   },
   "senn-attentive-listening": {
    "bright": {
-    "intense": "art/lit/portraits/senn-attentive-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-attentive-listening-bright-softened.webp"
+    "original": "art/lit/portraits/senn-attentive-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-attentive-listening-night-intense.webp",
-    "softened": "art/lit/portraits/senn-attentive-listening-night-softened.webp"
+    "original": "art/lit/portraits/senn-attentive-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-attentive-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-attentive-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-attentive-listening-ordinary-original.webp"
    }
   },
   "senn-evasive": {
    "bright": {
-    "intense": "art/lit/portraits/senn-evasive-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-bright-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-evasive-night-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-night-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-evasive-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-ordinary-original.webp"
    }
   },
   "senn-evasive-listening": {
    "bright": {
-    "intense": "art/lit/portraits/senn-evasive-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-listening-bright-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-evasive-listening-night-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-listening-night-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-evasive-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-listening-ordinary-original.webp"
    }
   },
   "senn-evasive-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/senn-evasive-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-evasive-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-speaking-night-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-evasive-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-evasive-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-evasive-speaking-ordinary-original.webp"
    }
   },
   "senn-listening": {
    "bright": {
-    "intense": "art/lit/portraits/senn-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/senn-listening-bright-softened.webp"
+    "original": "art/lit/portraits/senn-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/senn-listening-night-intense.webp",
-    "softened": "art/lit/portraits/senn-listening-night-softened.webp"
+    "original": "art/lit/portraits/senn-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/senn-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/senn-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/senn-listening-ordinary-original.webp"
    }
   },
   "serat-listening": {
    "bright": {
-    "intense": "art/lit/portraits/serat-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/serat-listening-bright-softened.webp"
+    "original": "art/lit/portraits/serat-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/serat-listening-night-intense.webp",
-    "softened": "art/lit/portraits/serat-listening-night-softened.webp"
+    "original": "art/lit/portraits/serat-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/serat-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/serat-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/serat-listening-ordinary-original.webp"
    }
   },
   "serat-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/serat-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/serat-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/serat-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/serat-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/serat-speaking-night-softened.webp"
+    "original": "art/lit/portraits/serat-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/serat-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/serat-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/serat-speaking-ordinary-original.webp"
    }
   },
   "surgeon-listening": {
    "bright": {
-    "intense": "art/lit/portraits/surgeon-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/surgeon-listening-bright-softened.webp"
+    "original": "art/lit/portraits/surgeon-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/surgeon-listening-night-intense.webp",
-    "softened": "art/lit/portraits/surgeon-listening-night-softened.webp"
+    "original": "art/lit/portraits/surgeon-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/surgeon-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/surgeon-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/surgeon-listening-ordinary-original.webp"
    }
   },
   "surgeon-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/surgeon-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/surgeon-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/surgeon-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/surgeon-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/surgeon-speaking-night-softened.webp"
+    "original": "art/lit/portraits/surgeon-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/surgeon-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/surgeon-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/surgeon-speaking-ordinary-original.webp"
    }
   },
   "tessa-attentive-arrival-cloak-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-ordinary-original.webp"
    }
   },
   "tessa-attentive-formal-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-listening-ordinary-original.webp"
    }
   },
   "tessa-attentive-formal-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-attentive-formal-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-formal-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-formal-speaking-ordinary-original.webp"
    }
   },
   "tessa-attentive-working-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-attentive-working-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-attentive-working-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-attentive-working-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-listening-ordinary-original.webp"
    }
   },
   "tessa-attentive-working-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-attentive-working-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-attentive-working-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-attentive-working-speaking-ordinary-original.webp"
    }
   },
   "tessa-campaign-early-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-campaign-early-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-campaign-early-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-campaign-early-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-listening-ordinary-original.webp"
    }
   },
   "tessa-campaign-early-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-campaign-early-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-campaign-early-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-campaign-early-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-early-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-early-speaking-ordinary-original.webp"
    }
   },
   "tessa-campaign-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-campaign-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-campaign-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-campaign-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-listening-ordinary-original.webp"
    }
   },
   "tessa-campaign-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-campaign-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-campaign-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-campaign-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-campaign-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-campaign-speaking-ordinary-original.webp"
    }
   },
   "tessa-citadel-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-citadel-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-citadel-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-citadel-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-listening-ordinary-original.webp"
    }
   },
   "tessa-citadel-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-citadel-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-citadel-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-citadel-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-citadel-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-citadel-speaking-ordinary-original.webp"
    }
   },
   "tessa-harrow-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-harrow-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-harrow-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-harrow-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-listening-ordinary-original.webp"
    }
   },
   "tessa-harrow-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-harrow-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-harrow-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-harrow-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-harrow-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-harrow-speaking-ordinary-original.webp"
    }
   },
   "tessa-hurt-arrival-cloak-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-listening-ordinary-original.webp"
    }
   },
   "tessa-hurt-arrival-cloak-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-cloak-speaking-ordinary-original.webp"
    }
   },
   "tessa-hurt-arrival-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-arrival-speaking-ordinary-original.webp"
    }
   },
   "tessa-hurt-formal-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-listening-ordinary-original.webp"
    }
   },
   "tessa-hurt-formal-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-formal-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-formal-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-formal-speaking-ordinary-original.webp"
    }
   },
   "tessa-hurt-working-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-working-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-working-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-working-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-listening-ordinary-original.webp"
    }
   },
   "tessa-hurt-working-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-hurt-working-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-hurt-working-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-original.webp"
    }
   },
   "tessa-injured-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-injured-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-injured-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-injured-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-listening-ordinary-original.webp"
    }
   },
   "tessa-injured-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-injured-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-injured-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-injured-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-injured-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-injured-speaking-ordinary-original.webp"
    }
   },
   "tessa-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-listening-ordinary-original.webp"
    }
   },
   "tessa-postwar-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-postwar-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-postwar-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-postwar-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-listening-ordinary-original.webp"
    }
   },
   "tessa-postwar-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-postwar-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-postwar-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-postwar-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-postwar-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-postwar-speaking-ordinary-original.webp"
    }
   },
   "tessa-resolute": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-ordinary-original.webp"
    }
   },
   "tessa-resolute-arrival-cloak-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-listening-ordinary-original.webp"
    }
   },
   "tessa-resolute-arrival-cloak-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-cloak-speaking-ordinary-original.webp"
    }
   },
   "tessa-resolute-arrival-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-listening-ordinary-original.webp"
    }
   },
   "tessa-resolute-arrival-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-arrival-speaking-ordinary-original.webp"
    }
   },
   "tessa-resolute-formal-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-listening-ordinary-original.webp"
    }
   },
   "tessa-resolute-formal-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-formal-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-formal-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-formal-speaking-ordinary-original.webp"
    }
   },
   "tessa-resolute-working-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-resolute-working-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-working-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-working-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-resolute-working-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-working-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-working-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-resolute-working-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-resolute-working-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-resolute-working-speaking-ordinary-original.webp"
    }
   },
   "tessa-startled": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-startled-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-startled-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-night-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-startled-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-ordinary-original.webp"
    }
   },
   "tessa-startled-arrival-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-listening-ordinary-original.webp"
    }
   },
   "tessa-startled-arrival-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-arrival-speaking-ordinary-original.webp"
    }
   },
   "tessa-startled-working-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-startled-working-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-working-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-working-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-startled-working-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-working-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-working-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-startled-working-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-startled-working-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-startled-working-speaking-ordinary-original.webp"
    }
   },
   "tessa-winter-listening": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-winter-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-listening-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-winter-listening-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-listening-night-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-winter-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-listening-ordinary-original.webp"
    }
   },
   "tessa-winter-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-winter-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-winter-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-speaking-night-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-winter-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-winter-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-winter-speaking-ordinary-original.webp"
    }
   },
   "tessa-wounded": {
    "bright": {
-    "intense": "art/lit/portraits/tessa-wounded-bright-intense.webp",
-    "softened": "art/lit/portraits/tessa-wounded-bright-softened.webp"
+    "original": "art/lit/portraits/tessa-wounded-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/tessa-wounded-night-intense.webp",
-    "softened": "art/lit/portraits/tessa-wounded-night-softened.webp"
+    "original": "art/lit/portraits/tessa-wounded-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/tessa-wounded-ordinary-intense.webp",
-    "softened": "art/lit/portraits/tessa-wounded-ordinary-softened.webp"
+    "original": "art/lit/portraits/tessa-wounded-ordinary-original.webp"
    }
   },
   "valcair-listening": {
    "bright": {
-    "intense": "art/lit/portraits/valcair-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/valcair-listening-bright-softened.webp"
+    "original": "art/lit/portraits/valcair-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/valcair-listening-night-intense.webp",
-    "softened": "art/lit/portraits/valcair-listening-night-softened.webp"
+    "original": "art/lit/portraits/valcair-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/valcair-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/valcair-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/valcair-listening-ordinary-original.webp"
    }
   },
   "valcair-private-listening": {
    "bright": {
-    "intense": "art/lit/portraits/valcair-private-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-listening-bright-softened.webp"
+    "original": "art/lit/portraits/valcair-private-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/valcair-private-listening-night-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-listening-night-softened.webp"
+    "original": "art/lit/portraits/valcair-private-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/valcair-private-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/valcair-private-listening-ordinary-original.webp"
    }
   },
   "valcair-private-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/valcair-private-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/valcair-private-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/valcair-private-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-speaking-night-softened.webp"
+    "original": "art/lit/portraits/valcair-private-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/valcair-private-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/valcair-private-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/valcair-private-speaking-ordinary-original.webp"
    }
   },
   "valcair-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/valcair-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/valcair-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/valcair-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/valcair-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/valcair-speaking-night-softened.webp"
+    "original": "art/lit/portraits/valcair-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/valcair-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/valcair-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/valcair-speaking-ordinary-original.webp"
    }
   },
   "vask-listening": {
    "bright": {
-    "intense": "art/lit/portraits/vask-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/vask-listening-bright-softened.webp"
+    "original": "art/lit/portraits/vask-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/vask-listening-night-intense.webp",
-    "softened": "art/lit/portraits/vask-listening-night-softened.webp"
+    "original": "art/lit/portraits/vask-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/vask-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/vask-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/vask-listening-ordinary-original.webp"
    }
   },
   "vask-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/vask-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/vask-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/vask-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/vask-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/vask-speaking-night-softened.webp"
+    "original": "art/lit/portraits/vask-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/vask-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/vask-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/vask-speaking-ordinary-original.webp"
    }
   },
   "warden-listening": {
    "bright": {
-    "intense": "art/lit/portraits/warden-listening-bright-intense.webp",
-    "softened": "art/lit/portraits/warden-listening-bright-softened.webp"
+    "original": "art/lit/portraits/warden-listening-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/warden-listening-night-intense.webp",
-    "softened": "art/lit/portraits/warden-listening-night-softened.webp"
+    "original": "art/lit/portraits/warden-listening-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/warden-listening-ordinary-intense.webp",
-    "softened": "art/lit/portraits/warden-listening-ordinary-softened.webp"
+    "original": "art/lit/portraits/warden-listening-ordinary-original.webp"
    }
   },
   "warden-speaking": {
    "bright": {
-    "intense": "art/lit/portraits/warden-speaking-bright-intense.webp",
-    "softened": "art/lit/portraits/warden-speaking-bright-softened.webp"
+    "original": "art/lit/portraits/warden-speaking-bright-original.webp"
    },
    "night": {
-    "intense": "art/lit/portraits/warden-speaking-night-intense.webp",
-    "softened": "art/lit/portraits/warden-speaking-night-softened.webp"
+    "original": "art/lit/portraits/warden-speaking-night-original.webp"
    },
    "ordinary": {
-    "intense": "art/lit/portraits/warden-speaking-ordinary-intense.webp",
-    "softened": "art/lit/portraits/warden-speaking-ordinary-softened.webp"
+    "original": "art/lit/portraits/warden-speaking-ordinary-original.webp"
    }
   }
  },
@@ -2117,1296 +1677,648 @@
   "window-together": "ordinary"
  },
  "shade": {
-  "art/lit/arch-call-intense.webp": {
-   "soft": "art/lit/soft/arch-call-intense.webp",
-   "tint": [
-    0.215,
-    0.196,
-    0.195
-   ]
-  },
-  "art/lit/arch-call-softened.webp": {
-   "soft": "art/lit/soft/arch-call-softened.webp",
+  "art/lit/arch-call-original.webp": {
+   "soft": "art/lit/soft/arch-call-original.webp",
    "tint": [
     0.211,
     0.196,
     0.203
    ]
   },
-  "art/lit/arch-promise-intense.webp": {
-   "soft": "art/lit/soft/arch-promise-intense.webp",
-   "tint": [
-    0.216,
-    0.196,
-    0.193
-   ]
-  },
-  "art/lit/arch-promise-softened.webp": {
-   "soft": "art/lit/soft/arch-promise-softened.webp",
+  "art/lit/arch-promise-original.webp": {
+   "soft": "art/lit/soft/arch-promise-original.webp",
    "tint": [
     0.212,
     0.196,
     0.201
    ]
   },
-  "art/lit/arch-question-intense.webp": {
-   "soft": "art/lit/soft/arch-question-intense.webp",
-   "tint": [
-    0.218,
-    0.196,
-    0.187
-   ]
-  },
-  "art/lit/arch-question-softened.webp": {
-   "soft": "art/lit/soft/arch-question-softened.webp",
+  "art/lit/arch-question-original.webp": {
+   "soft": "art/lit/soft/arch-question-original.webp",
    "tint": [
     0.214,
     0.196,
     0.196
    ]
   },
-  "art/lit/arch-raised-intense.webp": {
-   "soft": "art/lit/soft/arch-raised-intense.webp",
-   "tint": [
-    0.217,
-    0.196,
-    0.188
-   ]
-  },
-  "art/lit/arch-raised-softened.webp": {
-   "soft": "art/lit/soft/arch-raised-softened.webp",
+  "art/lit/arch-raised-original.webp": {
+   "soft": "art/lit/soft/arch-raised-original.webp",
    "tint": [
     0.213,
     0.196,
     0.197
    ]
   },
-  "art/lit/arch-refusal-intense.webp": {
-   "soft": "art/lit/soft/arch-refusal-intense.webp",
-   "tint": [
-    0.217,
-    0.196,
-    0.189
-   ]
-  },
-  "art/lit/arch-refusal-softened.webp": {
-   "soft": "art/lit/soft/arch-refusal-softened.webp",
+  "art/lit/arch-refusal-original.webp": {
+   "soft": "art/lit/soft/arch-refusal-original.webp",
    "tint": [
     0.213,
     0.196,
     0.198
    ]
   },
-  "art/lit/arrival-intense.webp": {
-   "soft": "art/lit/soft/arrival-intense.webp",
-   "tint": [
-    0.226,
-    0.196,
-    0.165
-   ]
-  },
-  "art/lit/arrival-softened.webp": {
-   "soft": "art/lit/soft/arrival-softened.webp",
+  "art/lit/arrival-original.webp": {
+   "soft": "art/lit/soft/arrival-original.webp",
    "tint": [
     0.232,
     0.195,
     0.159
    ]
   },
-  "art/lit/ceremony-applause-intense.webp": {
-   "soft": "art/lit/soft/ceremony-applause-intense.webp",
-   "tint": [
-    0.23,
-    0.194,
-    0.172
-   ]
-  },
-  "art/lit/ceremony-applause-softened.webp": {
-   "soft": "art/lit/soft/ceremony-applause-softened.webp",
+  "art/lit/ceremony-applause-original.webp": {
+   "soft": "art/lit/soft/ceremony-applause-original.webp",
    "tint": [
     0.241,
     0.192,
     0.162
    ]
   },
-  "art/lit/ceremony-dais-intense.webp": {
-   "soft": "art/lit/soft/ceremony-dais-intense.webp",
-   "tint": [
-    0.243,
-    0.19,
-    0.169
-   ]
-  },
-  "art/lit/ceremony-dais-softened.webp": {
-   "soft": "art/lit/soft/ceremony-dais-softened.webp",
+  "art/lit/ceremony-dais-original.webp": {
+   "soft": "art/lit/soft/ceremony-dais-original.webp",
    "tint": [
     0.25,
     0.188,
     0.173
    ]
   },
-  "art/lit/ceremony-intervention-intense.webp": {
-   "soft": "art/lit/soft/ceremony-intervention-intense.webp",
-   "tint": [
-    0.231,
-    0.193,
-    0.181
-   ]
-  },
-  "art/lit/ceremony-intervention-softened.webp": {
-   "soft": "art/lit/soft/ceremony-intervention-softened.webp",
+  "art/lit/ceremony-intervention-original.webp": {
+   "soft": "art/lit/soft/ceremony-intervention-original.webp",
    "tint": [
     0.227,
     0.193,
     0.188
    ]
   },
-  "art/lit/ceremony-mantle-intense.webp": {
-   "soft": "art/lit/soft/ceremony-mantle-intense.webp",
-   "tint": [
-    0.23,
-    0.194,
-    0.169
-   ]
-  },
-  "art/lit/ceremony-mantle-softened.webp": {
-   "soft": "art/lit/soft/ceremony-mantle-softened.webp",
+  "art/lit/ceremony-mantle-original.webp": {
+   "soft": "art/lit/soft/ceremony-mantle-original.webp",
    "tint": [
     0.234,
     0.193,
     0.164
    ]
   },
-  "art/lit/ceremony-orders-intense.webp": {
-   "soft": "art/lit/soft/ceremony-orders-intense.webp",
-   "tint": [
-    0.234,
-    0.191,
-    0.19
-   ]
-  },
-  "art/lit/ceremony-orders-softened.webp": {
-   "soft": "art/lit/soft/ceremony-orders-softened.webp",
+  "art/lit/ceremony-orders-original.webp": {
+   "soft": "art/lit/soft/ceremony-orders-original.webp",
    "tint": [
     0.231,
     0.192,
     0.192
    ]
   },
-  "art/lit/ceremony-refusal-intense.webp": {
-   "soft": "art/lit/soft/ceremony-refusal-intense.webp",
-   "tint": [
-    0.243,
-    0.192,
-    0.156
-   ]
-  },
-  "art/lit/ceremony-refusal-softened.webp": {
-   "soft": "art/lit/soft/ceremony-refusal-softened.webp",
+  "art/lit/ceremony-refusal-original.webp": {
+   "soft": "art/lit/soft/ceremony-refusal-original.webp",
    "tint": [
     0.254,
     0.189,
     0.15
    ]
   },
-  "art/lit/ceremony-refused-chair-intense.webp": {
-   "soft": "art/lit/soft/ceremony-refused-chair-intense.webp",
-   "tint": [
-    0.238,
-    0.193,
-    0.16
-   ]
-  },
-  "art/lit/ceremony-refused-chair-softened.webp": {
-   "soft": "art/lit/soft/ceremony-refused-chair-softened.webp",
+  "art/lit/ceremony-refused-chair-original.webp": {
+   "soft": "art/lit/soft/ceremony-refused-chair-original.webp",
    "tint": [
     0.248,
     0.191,
     0.152
    ]
   },
-  "art/lit/ceremony-yield-intense.webp": {
-   "soft": "art/lit/soft/ceremony-yield-intense.webp",
-   "tint": [
-    0.223,
-    0.194,
-    0.194
-   ]
-  },
-  "art/lit/ceremony-yield-softened.webp": {
-   "soft": "art/lit/soft/ceremony-yield-softened.webp",
+  "art/lit/ceremony-yield-original.webp": {
+   "soft": "art/lit/soft/ceremony-yield-original.webp",
    "tint": [
     0.221,
     0.194,
     0.199
    ]
   },
-  "art/lit/cloak-intense.webp": {
-   "soft": "art/lit/soft/cloak-intense.webp",
-   "tint": [
-    0.231,
-    0.192,
-    0.183
-   ]
-  },
-  "art/lit/cloak-softened.webp": {
-   "soft": "art/lit/soft/cloak-softened.webp",
+  "art/lit/cloak-original.webp": {
+   "soft": "art/lit/soft/cloak-original.webp",
    "tint": [
     0.22,
     0.195,
     0.194
    ]
   },
-  "art/lit/closure-intense.webp": {
-   "soft": "art/lit/soft/closure-intense.webp",
-   "tint": [
-    0.243,
-    0.193,
-    0.15
-   ]
-  },
-  "art/lit/closure-softened.webp": {
-   "soft": "art/lit/soft/closure-softened.webp",
+  "art/lit/closure-original.webp": {
+   "soft": "art/lit/soft/closure-original.webp",
    "tint": [
     0.243,
     0.192,
     0.151
    ]
   },
-  "art/lit/convoy-guards-intense.webp": {
-   "soft": "art/lit/soft/convoy-guards-intense.webp",
-   "tint": [
-    0.209,
-    0.199,
-    0.179
-   ]
-  },
-  "art/lit/convoy-guards-softened.webp": {
-   "soft": "art/lit/soft/convoy-guards-softened.webp",
+  "art/lit/convoy-guards-original.webp": {
+   "soft": "art/lit/soft/convoy-guards-original.webp",
    "tint": [
     0.214,
     0.197,
     0.19
    ]
   },
-  "art/lit/convoy-mother-intense.webp": {
-   "soft": "art/lit/soft/convoy-mother-intense.webp",
-   "tint": [
-    0.209,
-    0.199,
-    0.179
-   ]
-  },
-  "art/lit/convoy-mother-softened.webp": {
-   "soft": "art/lit/soft/convoy-mother-softened.webp",
+  "art/lit/convoy-mother-original.webp": {
+   "soft": "art/lit/soft/convoy-mother-original.webp",
    "tint": [
     0.219,
     0.196,
     0.182
    ]
   },
-  "art/lit/message-intense.webp": {
-   "soft": "art/lit/soft/message-intense.webp",
-   "tint": [
-    0.224,
-    0.192,
-    0.204
-   ]
-  },
-  "art/lit/message-softened.webp": {
-   "soft": "art/lit/soft/message-softened.webp",
+  "art/lit/message-original.webp": {
+   "soft": "art/lit/soft/message-original.webp",
    "tint": [
     0.211,
     0.194,
     0.224
    ]
   },
-  "art/lit/milk-intense.webp": {
-   "soft": "art/lit/soft/milk-intense.webp",
-   "tint": [
-    0.221,
-    0.196,
-    0.174
-   ]
-  },
-  "art/lit/milk-softened.webp": {
-   "soft": "art/lit/soft/milk-softened.webp",
+  "art/lit/milk-original.webp": {
+   "soft": "art/lit/soft/milk-original.webp",
    "tint": [
     0.217,
     0.197,
     0.177
    ]
   },
-  "art/lit/night-alone-intense.webp": {
-   "soft": "art/lit/soft/night-alone-intense.webp",
-   "tint": [
-    0.233,
-    0.19,
-    0.206
-   ]
-  },
-  "art/lit/night-alone-softened.webp": {
-   "soft": "art/lit/soft/night-alone-softened.webp",
+  "art/lit/night-alone-original.webp": {
+   "soft": "art/lit/soft/night-alone-original.webp",
    "tint": [
     0.26,
     0.181,
     0.15
    ]
   },
-  "art/lit/night-blocked-intense.webp": {
-   "soft": "art/lit/soft/night-blocked-intense.webp",
-   "tint": [
-    0.229,
-    0.191,
-    0.203
-   ]
-  },
-  "art/lit/night-blocked-softened.webp": {
-   "soft": "art/lit/soft/night-blocked-softened.webp",
+  "art/lit/night-blocked-original.webp": {
+   "soft": "art/lit/soft/night-blocked-original.webp",
    "tint": [
     0.234,
     0.192,
     0.176
    ]
   },
-  "art/lit/night-chair-intense.webp": {
-   "soft": "art/lit/soft/night-chair-intense.webp",
-   "tint": [
-    0.247,
-    0.186,
-    0.205
-   ]
-  },
-  "art/lit/night-chair-softened.webp": {
-   "soft": "art/lit/soft/night-chair-softened.webp",
+  "art/lit/night-chair-original.webp": {
+   "soft": "art/lit/soft/night-chair-original.webp",
    "tint": [
     0.26,
     0.18,
     0.15
    ]
   },
-  "art/lit/night-cloak-intense.webp": {
-   "soft": "art/lit/soft/night-cloak-intense.webp",
-   "tint": [
-    0.22,
-    0.194,
-    0.2
-   ]
-  },
-  "art/lit/night-cloak-softened.webp": {
-   "soft": "art/lit/soft/night-cloak-softened.webp",
+  "art/lit/night-cloak-original.webp": {
+   "soft": "art/lit/soft/night-cloak-original.webp",
    "tint": [
     0.26,
     0.177,
     0.158
    ]
   },
-  "art/lit/night-drawing-intense.webp": {
-   "soft": "art/lit/soft/night-drawing-intense.webp",
-   "tint": [
-    0.245,
-    0.186,
-    0.202
-   ]
-  },
-  "art/lit/night-drawing-softened.webp": {
-   "soft": "art/lit/soft/night-drawing-softened.webp",
+  "art/lit/night-drawing-original.webp": {
+   "soft": "art/lit/soft/night-drawing-original.webp",
    "tint": [
     0.26,
     0.177,
     0.15
    ]
   },
-  "art/lit/night-exchange-intense.webp": {
-   "soft": "art/lit/soft/night-exchange-intense.webp",
-   "tint": [
-    0.222,
-    0.193,
-    0.204
-   ]
-  },
-  "art/lit/night-exchange-softened.webp": {
-   "soft": "art/lit/soft/night-exchange-softened.webp",
+  "art/lit/night-exchange-original.webp": {
+   "soft": "art/lit/soft/night-exchange-original.webp",
    "tint": [
     0.235,
     0.192,
     0.172
    ]
   },
-  "art/lit/night-restart-intense.webp": {
-   "soft": "art/lit/soft/night-restart-intense.webp",
-   "tint": [
-    0.25,
-    0.185,
-    0.202
-   ]
-  },
-  "art/lit/night-restart-softened.webp": {
-   "soft": "art/lit/soft/night-restart-softened.webp",
+  "art/lit/night-restart-original.webp": {
+   "soft": "art/lit/soft/night-restart-original.webp",
    "tint": [
     0.26,
     0.174,
     0.15
    ]
   },
-  "art/lit/night-window-intense.webp": {
-   "soft": "art/lit/soft/night-window-intense.webp",
-   "tint": [
-    0.226,
-    0.192,
-    0.203
-   ]
-  },
-  "art/lit/night-window-softened.webp": {
-   "soft": "art/lit/soft/night-window-softened.webp",
+  "art/lit/night-window-original.webp": {
+   "soft": "art/lit/soft/night-window-original.webp",
    "tint": [
     0.26,
     0.185,
     0.15
    ]
   },
-  "art/lit/opening--cg--detail-drawing-intense.webp": {
-   "soft": "art/lit/soft/opening--cg--detail-drawing-intense.webp",
+  "art/lit/opening--cg--detail-drawing-original.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-drawing-original.webp",
    "tint": [
     0.26,
     0.15,
     0.15
    ]
   },
-  "art/lit/opening--cg--detail-drawing-softened.webp": {
-   "soft": "art/lit/soft/opening--cg--detail-drawing-softened.webp",
-   "tint": [
-    0.26,
-    0.15,
-    0.15
-   ]
-  },
-  "art/lit/opening--cg--detail-phone-intense.webp": {
-   "soft": "art/lit/soft/opening--cg--detail-phone-intense.webp",
-   "tint": [
-    0.258,
-    0.192,
-    0.15
-   ]
-  },
-  "art/lit/opening--cg--detail-phone-softened.webp": {
-   "soft": "art/lit/soft/opening--cg--detail-phone-softened.webp",
+  "art/lit/opening--cg--detail-phone-original.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-phone-original.webp",
    "tint": [
     0.23,
     0.202,
     0.15
    ]
   },
-  "art/lit/opening--cg--drawing-restart-intense.webp": {
-   "soft": "art/lit/soft/opening--cg--drawing-restart-intense.webp",
-   "tint": [
-    0.245,
-    0.186,
-    0.201
-   ]
-  },
-  "art/lit/opening--cg--drawing-restart-softened.webp": {
-   "soft": "art/lit/soft/opening--cg--drawing-restart-softened.webp",
+  "art/lit/opening--cg--drawing-restart-original.webp": {
+   "soft": "art/lit/soft/opening--cg--drawing-restart-original.webp",
    "tint": [
     0.26,
     0.174,
     0.15
    ]
   },
-  "art/lit/opening--cg--purification-cleared-intense.webp": {
-   "soft": "art/lit/soft/opening--cg--purification-cleared-intense.webp",
-   "tint": [
-    0.223,
-    0.197,
-    0.157
-   ]
-  },
-  "art/lit/opening--cg--purification-cleared-softened.webp": {
-   "soft": "art/lit/soft/opening--cg--purification-cleared-softened.webp",
+  "art/lit/opening--cg--purification-cleared-original.webp": {
+   "soft": "art/lit/soft/opening--cg--purification-cleared-original.webp",
    "tint": [
     0.23,
     0.195,
     0.159
    ]
   },
-  "art/lit/petition-intense.webp": {
-   "soft": "art/lit/soft/petition-intense.webp",
-   "tint": [
-    0.225,
-    0.194,
-    0.189
-   ]
-  },
-  "art/lit/petition-softened.webp": {
-   "soft": "art/lit/soft/petition-softened.webp",
+  "art/lit/petition-original.webp": {
+   "soft": "art/lit/soft/petition-original.webp",
    "tint": [
     0.223,
     0.194,
     0.186
    ]
   },
-  "art/lit/release-intense.webp": {
-   "soft": "art/lit/soft/release-intense.webp",
-   "tint": [
-    0.223,
-    0.194,
-    0.193
-   ]
-  },
-  "art/lit/release-softened.webp": {
-   "soft": "art/lit/soft/release-softened.webp",
+  "art/lit/release-original.webp": {
+   "soft": "art/lit/soft/release-original.webp",
    "tint": [
     0.219,
     0.195,
     0.193
    ]
   },
-  "art/lit/return-intense.webp": {
-   "soft": "art/lit/soft/return-intense.webp",
-   "tint": [
-    0.229,
-    0.195,
-    0.166
-   ]
-  },
-  "art/lit/return-softened.webp": {
-   "soft": "art/lit/soft/return-softened.webp",
+  "art/lit/return-original.webp": {
+   "soft": "art/lit/soft/return-original.webp",
    "tint": [
     0.234,
     0.194,
     0.16
    ]
   },
-  "art/lit/rovel--cg--ceremony-applause-intense.webp": {
-   "soft": "art/lit/soft/rovel--cg--ceremony-applause-intense.webp",
-   "tint": [
-    0.23,
-    0.194,
-    0.172
-   ]
-  },
-  "art/lit/rovel--cg--ceremony-applause-softened.webp": {
-   "soft": "art/lit/soft/rovel--cg--ceremony-applause-softened.webp",
+  "art/lit/rovel--cg--ceremony-applause-original.webp": {
+   "soft": "art/lit/soft/rovel--cg--ceremony-applause-original.webp",
    "tint": [
     0.241,
     0.192,
     0.162
    ]
   },
-  "art/lit/rovel--details--applause-hand-intense.webp": {
-   "soft": "art/lit/soft/rovel--details--applause-hand-intense.webp",
-   "tint": [
-    0.247,
-    0.19,
-    0.164
-   ]
-  },
-  "art/lit/rovel--details--applause-hand-softened.webp": {
-   "soft": "art/lit/soft/rovel--details--applause-hand-softened.webp",
+  "art/lit/rovel--details--applause-hand-original.webp": {
+   "soft": "art/lit/soft/rovel--details--applause-hand-original.webp",
    "tint": [
     0.25,
     0.19,
     0.157
    ]
   },
-  "art/lit/rovel--details--treatment-blue-intense.webp": {
-   "soft": "art/lit/soft/rovel--details--treatment-blue-intense.webp",
-   "tint": [
-    0.26,
-    0.183,
-    0.15
-   ]
-  },
-  "art/lit/rovel--details--treatment-blue-softened.webp": {
-   "soft": "art/lit/soft/rovel--details--treatment-blue-softened.webp",
+  "art/lit/rovel--details--treatment-blue-original.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-blue-original.webp",
    "tint": [
     0.26,
     0.18,
     0.15
    ]
   },
-  "art/lit/rovel--details--treatment-white-intense.webp": {
-   "soft": "art/lit/soft/rovel--details--treatment-white-intense.webp",
-   "tint": [
-    0.243,
-    0.192,
-    0.155
-   ]
-  },
-  "art/lit/rovel--details--treatment-white-softened.webp": {
-   "soft": "art/lit/soft/rovel--details--treatment-white-softened.webp",
+  "art/lit/rovel--details--treatment-white-original.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-white-original.webp",
    "tint": [
     0.249,
     0.19,
     0.155
    ]
   },
-  "art/lit/scenes--s006-convoy-camp-intense.webp": {
-   "soft": "art/lit/soft/scenes--s006-convoy-camp-intense.webp",
-   "tint": [
-    0.21,
-    0.199,
-    0.181
-   ]
-  },
-  "art/lit/scenes--s006-convoy-camp-softened.webp": {
-   "soft": "art/lit/soft/scenes--s006-convoy-camp-softened.webp",
+  "art/lit/scenes--s006-convoy-camp-original.webp": {
+   "soft": "art/lit/soft/scenes--s006-convoy-camp-original.webp",
    "tint": [
     0.217,
     0.197,
     0.178
    ]
   },
-  "art/lit/scenes--s007-roadside-inn-intense.webp": {
-   "soft": "art/lit/soft/scenes--s007-roadside-inn-intense.webp",
-   "tint": [
-    0.26,
-    0.161,
-    0.15
-   ]
-  },
-  "art/lit/scenes--s007-roadside-inn-softened.webp": {
-   "soft": "art/lit/soft/scenes--s007-roadside-inn-softened.webp",
+  "art/lit/scenes--s007-roadside-inn-original.webp": {
+   "soft": "art/lit/soft/scenes--s007-roadside-inn-original.webp",
    "tint": [
     0.26,
     0.165,
     0.15
    ]
   },
-  "art/lit/scenes--s008-bellweir-market-intense.webp": {
-   "soft": "art/lit/soft/scenes--s008-bellweir-market-intense.webp",
-   "tint": [
-    0.198,
-    0.201,
-    0.198
-   ]
-  },
-  "art/lit/scenes--s008-bellweir-market-softened.webp": {
-   "soft": "art/lit/soft/scenes--s008-bellweir-market-softened.webp",
+  "art/lit/scenes--s008-bellweir-market-original.webp": {
+   "soft": "art/lit/soft/scenes--s008-bellweir-market-original.webp",
    "tint": [
     0.205,
     0.199,
     0.199
    ]
   },
-  "art/lit/scenes--s009-bellweir-river-intense.webp": {
-   "soft": "art/lit/soft/scenes--s009-bellweir-river-intense.webp",
-   "tint": [
-    0.219,
-    0.198,
-    0.166
-   ]
-  },
-  "art/lit/scenes--s009-bellweir-river-softened.webp": {
-   "soft": "art/lit/soft/scenes--s009-bellweir-river-softened.webp",
+  "art/lit/scenes--s009-bellweir-river-original.webp": {
+   "soft": "art/lit/soft/scenes--s009-bellweir-river-original.webp",
    "tint": [
     0.231,
     0.195,
     0.16
    ]
   },
-  "art/lit/scenes--s009-boat-drawing-intense.webp": {
-   "soft": "art/lit/soft/scenes--s009-boat-drawing-intense.webp",
-   "tint": [
-    0.229,
-    0.195,
-    0.161
-   ]
-  },
-  "art/lit/scenes--s009-boat-drawing-softened.webp": {
-   "soft": "art/lit/soft/scenes--s009-boat-drawing-softened.webp",
+  "art/lit/scenes--s009-boat-drawing-original.webp": {
+   "soft": "art/lit/soft/scenes--s009-boat-drawing-original.webp",
    "tint": [
     0.238,
     0.193,
     0.157
    ]
   },
-  "art/lit/scenes--s009-rowing-intense.webp": {
-   "soft": "art/lit/soft/scenes--s009-rowing-intense.webp",
-   "tint": [
-    0.19,
-    0.203,
-    0.204
-   ]
-  },
-  "art/lit/scenes--s009-rowing-softened.webp": {
-   "soft": "art/lit/soft/scenes--s009-rowing-softened.webp",
+  "art/lit/scenes--s009-rowing-original.webp": {
+   "soft": "art/lit/soft/scenes--s009-rowing-original.webp",
    "tint": [
     0.203,
     0.2,
     0.192
    ]
   },
-  "art/lit/scenes--s010-bellweir-hills-intense.webp": {
-   "soft": "art/lit/soft/scenes--s010-bellweir-hills-intense.webp",
-   "tint": [
-    0.26,
-    0.179,
-    0.15
-   ]
-  },
-  "art/lit/scenes--s010-bellweir-hills-softened.webp": {
-   "soft": "art/lit/soft/scenes--s010-bellweir-hills-softened.webp",
+  "art/lit/scenes--s010-bellweir-hills-original.webp": {
+   "soft": "art/lit/soft/scenes--s010-bellweir-hills-original.webp",
    "tint": [
     0.26,
     0.173,
     0.15
    ]
   },
-  "art/lit/scenes--s011-bellweir-causeway-intense.webp": {
-   "soft": "art/lit/soft/scenes--s011-bellweir-causeway-intense.webp",
-   "tint": [
-    0.244,
-    0.188,
-    0.186
-   ]
-  },
-  "art/lit/scenes--s011-bellweir-causeway-softened.webp": {
-   "soft": "art/lit/soft/scenes--s011-bellweir-causeway-softened.webp",
+  "art/lit/scenes--s011-bellweir-causeway-original.webp": {
+   "soft": "art/lit/soft/scenes--s011-bellweir-causeway-original.webp",
    "tint": [
     0.24,
     0.189,
     0.194
    ]
   },
-  "art/lit/scenes--s011-sanctuary-intense.webp": {
-   "soft": "art/lit/soft/scenes--s011-sanctuary-intense.webp",
-   "tint": [
-    0.241,
-    0.19,
-    0.182
-   ]
-  },
-  "art/lit/scenes--s011-sanctuary-softened.webp": {
-   "soft": "art/lit/soft/scenes--s011-sanctuary-softened.webp",
+  "art/lit/scenes--s011-sanctuary-original.webp": {
+   "soft": "art/lit/soft/scenes--s011-sanctuary-original.webp",
    "tint": [
     0.248,
     0.187,
     0.189
    ]
   },
-  "art/lit/scenes--s012-temple-reading-room-intense.webp": {
-   "soft": "art/lit/soft/scenes--s012-temple-reading-room-intense.webp",
-   "tint": [
-    0.26,
-    0.161,
-    0.15
-   ]
-  },
-  "art/lit/scenes--s012-temple-reading-room-softened.webp": {
-   "soft": "art/lit/soft/scenes--s012-temple-reading-room-softened.webp",
+  "art/lit/scenes--s012-temple-reading-room-original.webp": {
+   "soft": "art/lit/soft/scenes--s012-temple-reading-room-original.webp",
    "tint": [
     0.26,
     0.163,
     0.15
    ]
   },
-  "art/lit/scenes--s013-summoning-chamber-later-intense.webp": {
-   "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-intense.webp",
-   "tint": [
-    0.246,
-    0.192,
-    0.15
-   ]
-  },
-  "art/lit/scenes--s013-summoning-chamber-later-softened.webp": {
-   "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-softened.webp",
+  "art/lit/scenes--s013-summoning-chamber-later-original.webp": {
+   "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-original.webp",
    "tint": [
     0.251,
     0.19,
     0.15
    ]
   },
-  "art/lit/scenes--s014-boots-and-cap-intense.webp": {
-   "soft": "art/lit/soft/scenes--s014-boots-and-cap-intense.webp",
-   "tint": [
-    0.242,
-    0.19,
-    0.174
-   ]
-  },
-  "art/lit/scenes--s014-boots-and-cap-softened.webp": {
-   "soft": "art/lit/soft/scenes--s014-boots-and-cap-softened.webp",
+  "art/lit/scenes--s014-boots-and-cap-original.webp": {
+   "soft": "art/lit/soft/scenes--s014-boots-and-cap-original.webp",
    "tint": [
     0.254,
     0.187,
     0.169
    ]
   },
-  "art/lit/scenes--s014-relief-warehouse-intense.webp": {
-   "soft": "art/lit/soft/scenes--s014-relief-warehouse-intense.webp",
-   "tint": [
-    0.224,
-    0.195,
-    0.18
-   ]
-  },
-  "art/lit/scenes--s014-relief-warehouse-softened.webp": {
-   "soft": "art/lit/soft/scenes--s014-relief-warehouse-softened.webp",
+  "art/lit/scenes--s014-relief-warehouse-original.webp": {
+   "soft": "art/lit/soft/scenes--s014-relief-warehouse-original.webp",
    "tint": [
     0.236,
     0.192,
     0.175
    ]
   },
-  "art/lit/scenes--s015-elin-lodging-intense.webp": {
-   "soft": "art/lit/soft/scenes--s015-elin-lodging-intense.webp",
-   "tint": [
-    0.231,
-    0.195,
-    0.16
-   ]
-  },
-  "art/lit/scenes--s015-elin-lodging-softened.webp": {
-   "soft": "art/lit/soft/scenes--s015-elin-lodging-softened.webp",
+  "art/lit/scenes--s015-elin-lodging-original.webp": {
+   "soft": "art/lit/soft/scenes--s015-elin-lodging-original.webp",
    "tint": [
     0.24,
     0.192,
     0.158
    ]
   },
-  "art/lit/scenes--s016-council-room-intense.webp": {
-   "soft": "art/lit/soft/scenes--s016-council-room-intense.webp",
-   "tint": [
-    0.254,
-    0.188,
-    0.161
-   ]
-  },
-  "art/lit/scenes--s016-council-room-softened.webp": {
-   "soft": "art/lit/soft/scenes--s016-council-room-softened.webp",
+  "art/lit/scenes--s016-council-room-original.webp": {
+   "soft": "art/lit/soft/scenes--s016-council-room-original.webp",
    "tint": [
     0.26,
     0.186,
     0.154
    ]
   },
-  "art/lit/scenes--s016-hearing-door-intense.webp": {
-   "soft": "art/lit/soft/scenes--s016-hearing-door-intense.webp",
-   "tint": [
-    0.26,
-    0.183,
-    0.15
-   ]
-  },
-  "art/lit/scenes--s016-hearing-door-softened.webp": {
-   "soft": "art/lit/soft/scenes--s016-hearing-door-softened.webp",
+  "art/lit/scenes--s016-hearing-door-original.webp": {
+   "soft": "art/lit/soft/scenes--s016-hearing-door-original.webp",
    "tint": [
     0.26,
     0.18,
     0.15
    ]
   },
-  "art/lit/scenes--s017-council-corridor-intense.webp": {
-   "soft": "art/lit/soft/scenes--s017-council-corridor-intense.webp",
-   "tint": [
-    0.2,
-    0.201,
-    0.188
-   ]
-  },
-  "art/lit/scenes--s017-council-corridor-softened.webp": {
-   "soft": "art/lit/soft/scenes--s017-council-corridor-softened.webp",
+  "art/lit/scenes--s017-council-corridor-original.webp": {
+   "soft": "art/lit/soft/scenes--s017-council-corridor-original.webp",
    "tint": [
     0.211,
     0.198,
     0.187
    ]
   },
-  "art/lit/scenes--s018-gray-scar-ferry-approach-intense.webp": {
-   "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-intense.webp",
-   "tint": [
-    0.236,
-    0.193,
-    0.163
-   ]
-  },
-  "art/lit/scenes--s018-gray-scar-ferry-approach-softened.webp": {
-   "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-softened.webp",
+  "art/lit/scenes--s018-gray-scar-ferry-approach-original.webp": {
+   "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-original.webp",
    "tint": [
     0.247,
     0.191,
     0.152
    ]
   },
-  "art/lit/scenes--s019-gray-scar-ferryhouse-intense.webp": {
-   "soft": "art/lit/soft/scenes--s019-gray-scar-ferryhouse-intense.webp",
-   "tint": [
-    0.244,
-    0.189,
-    0.18
-   ]
-  },
-  "art/lit/scenes--s019-gray-scar-ferryhouse-softened.webp": {
-   "soft": "art/lit/soft/scenes--s019-gray-scar-ferryhouse-softened.webp",
+  "art/lit/scenes--s019-gray-scar-ferryhouse-original.webp": {
+   "soft": "art/lit/soft/scenes--s019-gray-scar-ferryhouse-original.webp",
    "tint": [
     0.254,
     0.187,
     0.173
    ]
   },
-  "art/lit/scenes--s020-gray-scar-riverbank-intense.webp": {
-   "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-intense.webp",
-   "tint": [
-    0.209,
-    0.198,
-    0.197
-   ]
-  },
-  "art/lit/scenes--s020-gray-scar-riverbank-softened.webp": {
-   "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-softened.webp",
+  "art/lit/scenes--s020-gray-scar-riverbank-original.webp": {
+   "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-original.webp",
    "tint": [
     0.222,
     0.195,
     0.189
    ]
   },
-  "art/lit/scenes--s021-gray-scar-covered-landing-intense.webp": {
-   "soft": "art/lit/soft/scenes--s021-gray-scar-covered-landing-intense.webp",
-   "tint": [
-    0.207,
-    0.198,
-    0.193
-   ]
-  },
-  "art/lit/scenes--s021-gray-scar-covered-landing-softened.webp": {
-   "soft": "art/lit/soft/scenes--s021-gray-scar-covered-landing-softened.webp",
+  "art/lit/scenes--s021-gray-scar-covered-landing-original.webp": {
+   "soft": "art/lit/soft/scenes--s021-gray-scar-covered-landing-original.webp",
    "tint": [
     0.222,
     0.195,
     0.182
    ]
   },
-  "art/lit/scenes--s021-lucan-returns-intense.webp": {
-   "soft": "art/lit/soft/scenes--s021-lucan-returns-intense.webp",
-   "tint": [
-    0.218,
-    0.195,
-    0.195
-   ]
-  },
-  "art/lit/scenes--s021-lucan-returns-softened.webp": {
-   "soft": "art/lit/soft/scenes--s021-lucan-returns-softened.webp",
+  "art/lit/scenes--s021-lucan-returns-original.webp": {
+   "soft": "art/lit/soft/scenes--s021-lucan-returns-original.webp",
    "tint": [
     0.233,
     0.192,
     0.18
    ]
   },
-  "art/lit/scenes--s021-rescue-intense.webp": {
-   "soft": "art/lit/soft/scenes--s021-rescue-intense.webp",
-   "tint": [
-    0.218,
-    0.196,
-    0.19
-   ]
-  },
-  "art/lit/scenes--s021-rescue-softened.webp": {
-   "soft": "art/lit/soft/scenes--s021-rescue-softened.webp",
+  "art/lit/scenes--s021-rescue-original.webp": {
+   "soft": "art/lit/soft/scenes--s021-rescue-original.webp",
    "tint": [
     0.231,
     0.193,
     0.173
    ]
   },
-  "art/lit/scenes--s022-river-picket-intense.webp": {
-   "soft": "art/lit/soft/scenes--s022-river-picket-intense.webp",
-   "tint": [
-    0.243,
-    0.189,
-    0.178
-   ]
-  },
-  "art/lit/scenes--s022-river-picket-softened.webp": {
-   "soft": "art/lit/soft/scenes--s022-river-picket-softened.webp",
+  "art/lit/scenes--s022-river-picket-original.webp": {
+   "soft": "art/lit/soft/scenes--s022-river-picket-original.webp",
    "tint": [
     0.249,
     0.188,
     0.176
    ]
   },
-  "art/lit/scenes--s023-northern-field-quarters-intense.webp": {
-   "soft": "art/lit/soft/scenes--s023-northern-field-quarters-intense.webp",
-   "tint": [
-    0.26,
-    0.179,
-    0.152
-   ]
-  },
-  "art/lit/scenes--s023-northern-field-quarters-softened.webp": {
-   "soft": "art/lit/soft/scenes--s023-northern-field-quarters-softened.webp",
+  "art/lit/scenes--s023-northern-field-quarters-original.webp": {
+   "soft": "art/lit/soft/scenes--s023-northern-field-quarters-original.webp",
    "tint": [
     0.26,
     0.17,
     0.15
    ]
   },
-  "art/lit/scenes--s024-northern-wharf-intense.webp": {
-   "soft": "art/lit/soft/scenes--s024-northern-wharf-intense.webp",
-   "tint": [
-    0.241,
-    0.192,
-    0.164
-   ]
-  },
-  "art/lit/scenes--s024-northern-wharf-softened.webp": {
-   "soft": "art/lit/soft/scenes--s024-northern-wharf-softened.webp",
+  "art/lit/scenes--s024-northern-wharf-original.webp": {
+   "soft": "art/lit/soft/scenes--s024-northern-wharf-original.webp",
    "tint": [
     0.248,
     0.19,
     0.159
    ]
   },
-  "art/lit/scenes--s025-royal-infirmary-corridor-intense.webp": {
-   "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-intense.webp",
-   "tint": [
-    0.231,
-    0.194,
-    0.17
-   ]
-  },
-  "art/lit/scenes--s025-royal-infirmary-corridor-softened.webp": {
-   "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-softened.webp",
+  "art/lit/scenes--s025-royal-infirmary-corridor-original.webp": {
+   "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-original.webp",
    "tint": [
     0.246,
     0.19,
     0.165
    ]
   },
-  "art/lit/stretcher-intense.webp": {
-   "soft": "art/lit/soft/stretcher-intense.webp",
-   "tint": [
-    0.231,
-    0.192,
-    0.189
-   ]
-  },
-  "art/lit/stretcher-softened.webp": {
-   "soft": "art/lit/soft/stretcher-softened.webp",
+  "art/lit/stretcher-original.webp": {
+   "soft": "art/lit/soft/stretcher-original.webp",
    "tint": [
     0.219,
     0.195,
     0.198
    ]
   },
-  "art/lit/ward-assessment-intense.webp": {
-   "soft": "art/lit/soft/ward-assessment-intense.webp",
-   "tint": [
-    0.221,
-    0.199,
-    0.15
-   ]
-  },
-  "art/lit/ward-assessment-softened.webp": {
-   "soft": "art/lit/soft/ward-assessment-softened.webp",
+  "art/lit/ward-assessment-original.webp": {
+   "soft": "art/lit/soft/ward-assessment-original.webp",
    "tint": [
     0.232,
     0.196,
     0.15
    ]
   },
-  "art/lit/ward-blue-intense.webp": {
-   "soft": "art/lit/soft/ward-blue-intense.webp",
-   "tint": [
-    0.218,
-    0.199,
-    0.161
-   ]
-  },
-  "art/lit/ward-blue-softened.webp": {
-   "soft": "art/lit/soft/ward-blue-softened.webp",
+  "art/lit/ward-blue-original.webp": {
+   "soft": "art/lit/soft/ward-blue-original.webp",
    "tint": [
     0.227,
     0.196,
     0.161
    ]
   },
-  "art/lit/ward-cleared-intense.webp": {
-   "soft": "art/lit/soft/ward-cleared-intense.webp",
-   "tint": [
-    0.223,
-    0.197,
-    0.158
-   ]
-  },
-  "art/lit/ward-cleared-softened.webp": {
-   "soft": "art/lit/soft/ward-cleared-softened.webp",
+  "art/lit/ward-cleared-original.webp": {
+   "soft": "art/lit/soft/ward-cleared-original.webp",
    "tint": [
     0.229,
     0.195,
     0.159
    ]
   },
-  "art/lit/ward-entry-intense.webp": {
-   "soft": "art/lit/soft/ward-entry-intense.webp",
-   "tint": [
-    0.208,
-    0.198,
-    0.192
-   ]
-  },
-  "art/lit/ward-entry-softened.webp": {
-   "soft": "art/lit/soft/ward-entry-softened.webp",
+  "art/lit/ward-entry-original.webp": {
+   "soft": "art/lit/soft/ward-entry-original.webp",
    "tint": [
     0.224,
     0.195,
     0.183
    ]
   },
-  "art/lit/ward-hand-intense.webp": {
-   "soft": "art/lit/soft/ward-hand-intense.webp",
-   "tint": [
-    0.204,
-    0.202,
-    0.173
-   ]
-  },
-  "art/lit/ward-hand-softened.webp": {
-   "soft": "art/lit/soft/ward-hand-softened.webp",
+  "art/lit/ward-hand-original.webp": {
+   "soft": "art/lit/soft/ward-hand-original.webp",
    "tint": [
     0.216,
     0.198,
     0.17
    ]
   },
-  "art/lit/ward-last-patch-intense.webp": {
-   "soft": "art/lit/soft/ward-last-patch-intense.webp",
-   "tint": [
-    0.222,
-    0.198,
-    0.158
-   ]
-  },
-  "art/lit/ward-last-patch-softened.webp": {
-   "soft": "art/lit/soft/ward-last-patch-softened.webp",
+  "art/lit/ward-last-patch-original.webp": {
+   "soft": "art/lit/soft/ward-last-patch-original.webp",
    "tint": [
     0.232,
     0.195,
     0.159
    ]
   },
-  "art/lit/ward-lit-intense.webp": {
-   "soft": "art/lit/soft/ward-lit-intense.webp",
-   "tint": [
-    0.226,
-    0.197,
-    0.154
-   ]
-  },
-  "art/lit/ward-lit-softened.webp": {
-   "soft": "art/lit/soft/ward-lit-softened.webp",
+  "art/lit/ward-lit-original.webp": {
+   "soft": "art/lit/soft/ward-lit-original.webp",
    "tint": [
     0.23,
     0.195,
     0.156
    ]
   },
-  "art/lit/ward-pause-intense.webp": {
-   "soft": "art/lit/soft/ward-pause-intense.webp",
-   "tint": [
-    0.211,
-    0.199,
-    0.178
-   ]
-  },
-  "art/lit/ward-pause-softened.webp": {
-   "soft": "art/lit/soft/ward-pause-softened.webp",
+  "art/lit/ward-pause-original.webp": {
+   "soft": "art/lit/soft/ward-pause-original.webp",
    "tint": [
     0.221,
     0.196,
     0.175
    ]
   },
-  "art/lit/ward-purification-intense.webp": {
-   "soft": "art/lit/soft/ward-purification-intense.webp",
-   "tint": [
-    0.22,
-    0.198,
-    0.158
-   ]
-  },
-  "art/lit/ward-purification-softened.webp": {
-   "soft": "art/lit/soft/ward-purification-softened.webp",
+  "art/lit/ward-purification-original.webp": {
+   "soft": "art/lit/soft/ward-purification-original.webp",
    "tint": [
     0.228,
     0.196,
     0.161
    ]
   },
-  "art/lit/ward-unlit-intense.webp": {
-   "soft": "art/lit/soft/ward-unlit-intense.webp",
-   "tint": [
-    0.229,
-    0.197,
-    0.15
-   ]
-  },
-  "art/lit/ward-unlit-softened.webp": {
-   "soft": "art/lit/soft/ward-unlit-softened.webp",
+  "art/lit/ward-unlit-original.webp": {
+   "soft": "art/lit/soft/ward-unlit-original.webp",
    "tint": [
     0.233,
     0.195,
     0.153
    ]
   },
-  "art/lit/ward-water-intense.webp": {
-   "soft": "art/lit/soft/ward-water-intense.webp",
-   "tint": [
-    0.204,
-    0.202,
-    0.171
-   ]
-  },
-  "art/lit/ward-water-softened.webp": {
-   "soft": "art/lit/soft/ward-water-softened.webp",
+  "art/lit/ward-water-original.webp": {
+   "soft": "art/lit/soft/ward-water-original.webp",
    "tint": [
     0.219,
     0.198,
     0.166
    ]
   },
-  "art/lit/window-packing-intense.webp": {
-   "soft": "art/lit/soft/window-packing-intense.webp",
-   "tint": [
-    0.26,
-    0.184,
-    0.15
-   ]
-  },
-  "art/lit/window-packing-softened.webp": {
-   "soft": "art/lit/soft/window-packing-softened.webp",
+  "art/lit/window-packing-original.webp": {
+   "soft": "art/lit/soft/window-packing-original.webp",
    "tint": [
     0.26,
     0.177,
     0.15
    ]
   },
-  "art/lit/window-pause-intense.webp": {
-   "soft": "art/lit/soft/window-pause-intense.webp",
-   "tint": [
-    0.26,
-    0.182,
-    0.15
-   ]
-  },
-  "art/lit/window-pause-softened.webp": {
-   "soft": "art/lit/soft/window-pause-softened.webp",
+  "art/lit/window-pause-original.webp": {
+   "soft": "art/lit/soft/window-pause-original.webp",
    "tint": [
     0.26,
     0.175,
     0.15
    ]
   },
-  "art/lit/window-together-intense.webp": {
-   "soft": "art/lit/soft/window-together-intense.webp",
-   "tint": [
-    0.26,
-    0.184,
-    0.15
-   ]
-  },
-  "art/lit/window-together-softened.webp": {
-   "soft": "art/lit/soft/window-together-softened.webp",
+  "art/lit/window-together-original.webp": {
+   "soft": "art/lit/soft/window-together-original.webp",
    "tint": [
     0.26,
     0.179,
@@ -3416,188 +2328,142 @@
  },
  "stages": {
   "arch-call": {
-   "intense": "art/lit/arch-call-intense.webp",
-   "softened": "art/lit/arch-call-softened.webp"
+   "original": "art/lit/arch-call-original.webp"
   },
   "arch-promise": {
-   "intense": "art/lit/arch-promise-intense.webp",
-   "softened": "art/lit/arch-promise-softened.webp"
+   "original": "art/lit/arch-promise-original.webp"
   },
   "arch-question": {
-   "intense": "art/lit/arch-question-intense.webp",
-   "softened": "art/lit/arch-question-softened.webp"
+   "original": "art/lit/arch-question-original.webp"
   },
   "arch-raised": {
-   "intense": "art/lit/arch-raised-intense.webp",
-   "softened": "art/lit/arch-raised-softened.webp"
+   "original": "art/lit/arch-raised-original.webp"
   },
   "arch-refusal": {
-   "intense": "art/lit/arch-refusal-intense.webp",
-   "softened": "art/lit/arch-refusal-softened.webp"
+   "original": "art/lit/arch-refusal-original.webp"
   },
   "arrival": {
-   "intense": "art/lit/arrival-intense.webp",
-   "softened": "art/lit/arrival-softened.webp"
+   "original": "art/lit/arrival-original.webp"
   },
   "ceremony-applause": {
-   "intense": "art/lit/ceremony-applause-intense.webp",
-   "softened": "art/lit/ceremony-applause-softened.webp"
+   "original": "art/lit/ceremony-applause-original.webp"
   },
   "ceremony-dais": {
-   "intense": "art/lit/ceremony-dais-intense.webp",
-   "softened": "art/lit/ceremony-dais-softened.webp"
+   "original": "art/lit/ceremony-dais-original.webp"
   },
   "ceremony-intervention": {
-   "intense": "art/lit/ceremony-intervention-intense.webp",
-   "softened": "art/lit/ceremony-intervention-softened.webp"
+   "original": "art/lit/ceremony-intervention-original.webp"
   },
   "ceremony-mantle": {
-   "intense": "art/lit/ceremony-mantle-intense.webp",
-   "softened": "art/lit/ceremony-mantle-softened.webp"
+   "original": "art/lit/ceremony-mantle-original.webp"
   },
   "ceremony-orders": {
-   "intense": "art/lit/ceremony-orders-intense.webp",
-   "softened": "art/lit/ceremony-orders-softened.webp"
+   "original": "art/lit/ceremony-orders-original.webp"
   },
   "ceremony-refusal": {
-   "intense": "art/lit/ceremony-refusal-intense.webp",
-   "softened": "art/lit/ceremony-refusal-softened.webp"
+   "original": "art/lit/ceremony-refusal-original.webp"
   },
   "ceremony-refused-chair": {
-   "intense": "art/lit/ceremony-refused-chair-intense.webp",
-   "softened": "art/lit/ceremony-refused-chair-softened.webp"
+   "original": "art/lit/ceremony-refused-chair-original.webp"
   },
   "ceremony-yield": {
-   "intense": "art/lit/ceremony-yield-intense.webp",
-   "softened": "art/lit/ceremony-yield-softened.webp"
+   "original": "art/lit/ceremony-yield-original.webp"
   },
   "cloak": {
-   "intense": "art/lit/cloak-intense.webp",
-   "softened": "art/lit/cloak-softened.webp"
+   "original": "art/lit/cloak-original.webp"
   },
   "closure": {
-   "intense": "art/lit/closure-intense.webp",
-   "softened": "art/lit/closure-softened.webp"
+   "original": "art/lit/closure-original.webp"
   },
   "convoy-guards": {
-   "intense": "art/lit/convoy-guards-intense.webp",
-   "softened": "art/lit/convoy-guards-softened.webp"
+   "original": "art/lit/convoy-guards-original.webp"
   },
   "convoy-mother": {
-   "intense": "art/lit/convoy-mother-intense.webp",
-   "softened": "art/lit/convoy-mother-softened.webp"
+   "original": "art/lit/convoy-mother-original.webp"
   },
   "message": {
-   "intense": "art/lit/message-intense.webp",
-   "softened": "art/lit/message-softened.webp"
+   "original": "art/lit/message-original.webp"
   },
   "milk": {
-   "intense": "art/lit/milk-intense.webp",
-   "softened": "art/lit/milk-softened.webp"
+   "original": "art/lit/milk-original.webp"
   },
   "night-alone": {
-   "intense": "art/lit/night-alone-intense.webp",
-   "softened": "art/lit/night-alone-softened.webp"
+   "original": "art/lit/night-alone-original.webp"
   },
   "night-blocked": {
-   "intense": "art/lit/night-blocked-intense.webp",
-   "softened": "art/lit/night-blocked-softened.webp"
+   "original": "art/lit/night-blocked-original.webp"
   },
   "night-chair": {
-   "intense": "art/lit/night-chair-intense.webp",
-   "softened": "art/lit/night-chair-softened.webp"
+   "original": "art/lit/night-chair-original.webp"
   },
   "night-cloak": {
-   "intense": "art/lit/night-cloak-intense.webp",
-   "softened": "art/lit/night-cloak-softened.webp"
+   "original": "art/lit/night-cloak-original.webp"
   },
   "night-drawing": {
-   "intense": "art/lit/night-drawing-intense.webp",
-   "softened": "art/lit/night-drawing-softened.webp"
+   "original": "art/lit/night-drawing-original.webp"
   },
   "night-exchange": {
-   "intense": "art/lit/night-exchange-intense.webp",
-   "softened": "art/lit/night-exchange-softened.webp"
+   "original": "art/lit/night-exchange-original.webp"
   },
   "night-restart": {
-   "intense": "art/lit/night-restart-intense.webp",
-   "softened": "art/lit/night-restart-softened.webp"
+   "original": "art/lit/night-restart-original.webp"
   },
   "night-window": {
-   "intense": "art/lit/night-window-intense.webp",
-   "softened": "art/lit/night-window-softened.webp"
+   "original": "art/lit/night-window-original.webp"
   },
   "petition": {
-   "intense": "art/lit/petition-intense.webp",
-   "softened": "art/lit/petition-softened.webp"
+   "original": "art/lit/petition-original.webp"
   },
   "release": {
-   "intense": "art/lit/release-intense.webp",
-   "softened": "art/lit/release-softened.webp"
+   "original": "art/lit/release-original.webp"
   },
   "return": {
-   "intense": "art/lit/return-intense.webp",
-   "softened": "art/lit/return-softened.webp"
+   "original": "art/lit/return-original.webp"
   },
   "stretcher": {
-   "intense": "art/lit/stretcher-intense.webp",
-   "softened": "art/lit/stretcher-softened.webp"
+   "original": "art/lit/stretcher-original.webp"
   },
   "ward-assessment": {
-   "intense": "art/lit/ward-assessment-intense.webp",
-   "softened": "art/lit/ward-assessment-softened.webp"
+   "original": "art/lit/ward-assessment-original.webp"
   },
   "ward-blue": {
-   "intense": "art/lit/ward-blue-intense.webp",
-   "softened": "art/lit/ward-blue-softened.webp"
+   "original": "art/lit/ward-blue-original.webp"
   },
   "ward-cleared": {
-   "intense": "art/lit/ward-cleared-intense.webp",
-   "softened": "art/lit/ward-cleared-softened.webp"
+   "original": "art/lit/ward-cleared-original.webp"
   },
   "ward-entry": {
-   "intense": "art/lit/ward-entry-intense.webp",
-   "softened": "art/lit/ward-entry-softened.webp"
+   "original": "art/lit/ward-entry-original.webp"
   },
   "ward-hand": {
-   "intense": "art/lit/ward-hand-intense.webp",
-   "softened": "art/lit/ward-hand-softened.webp"
+   "original": "art/lit/ward-hand-original.webp"
   },
   "ward-last-patch": {
-   "intense": "art/lit/ward-last-patch-intense.webp",
-   "softened": "art/lit/ward-last-patch-softened.webp"
+   "original": "art/lit/ward-last-patch-original.webp"
   },
   "ward-lit": {
-   "intense": "art/lit/ward-lit-intense.webp",
-   "softened": "art/lit/ward-lit-softened.webp"
+   "original": "art/lit/ward-lit-original.webp"
   },
   "ward-pause": {
-   "intense": "art/lit/ward-pause-intense.webp",
-   "softened": "art/lit/ward-pause-softened.webp"
+   "original": "art/lit/ward-pause-original.webp"
   },
   "ward-purification": {
-   "intense": "art/lit/ward-purification-intense.webp",
-   "softened": "art/lit/ward-purification-softened.webp"
+   "original": "art/lit/ward-purification-original.webp"
   },
   "ward-unlit": {
-   "intense": "art/lit/ward-unlit-intense.webp",
-   "softened": "art/lit/ward-unlit-softened.webp"
+   "original": "art/lit/ward-unlit-original.webp"
   },
   "ward-water": {
-   "intense": "art/lit/ward-water-intense.webp",
-   "softened": "art/lit/ward-water-softened.webp"
+   "original": "art/lit/ward-water-original.webp"
   },
   "window-packing": {
-   "intense": "art/lit/window-packing-intense.webp",
-   "softened": "art/lit/window-packing-softened.webp"
+   "original": "art/lit/window-packing-original.webp"
   },
   "window-pause": {
-   "intense": "art/lit/window-pause-intense.webp",
-   "softened": "art/lit/window-pause-softened.webp"
+   "original": "art/lit/window-pause-original.webp"
   },
   "window-together": {
-   "intense": "art/lit/window-together-intense.webp",
-   "softened": "art/lit/window-together-softened.webp"
+   "original": "art/lit/window-together-original.webp"
   }
  }
 }

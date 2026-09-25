@@ -146,7 +146,7 @@ One establishing painting per scene puts the scene on its picture, and the portr
 - Keep faces, hands, contact points and plot props above the bottom fifth (y ≈ 840 of 1080), which sits under the reading shade.
 - Keep the lower-left corner (about x 116–516, y 748–1004) free of anything important; the portrait windows sit there.
 - Leave room at the top; the game can lift a painting up to about 70 px.
-- Paint real light with visible sources, in even, readable exposure. Don't bake in glare or darkness; the game renders each scene into its light register (bright, ordinary or night), permanently distorted, in Intense and Softened.
+- Paint real light with visible sources, in even, readable exposure. Don't bake in glare or darkness; the game renders each scene into its light register (bright, ordinary or night), permanently distorted, in the original timeline's light.
 
 **Places that recur stay recognizable** across states: the Bellweir market is intact (S008), destroyed (S011) and rebuilt (S058). The [intact heron study](scene-studies/bellweir-heron/README.md) is a working reference for the first. The palace infirmary, the Harrow bridge and the citadel stair recur too.
 
@@ -292,7 +292,7 @@ Write each brief into its scene study first. Claude puts them in the game (stagi
 | Portrait | `art/portraits/<name>.png` | square, at least 1254×1254, head and shoulders | `tools/crop-portraits.py`, then `tools/grade-light.py --portraits` |
 | Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | `tools/grade-light.py` |
 
-- **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in both Intense and Softened. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make Softened versions.
+- **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in the original timeline's light. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make separate lighter or darker versions.
 - **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. The crop sits in a closed laurel window, 228×256 for the speaker and 150×168 for the listener.
 - **Names decide direction.** A `-speaking` file must look toward screen right and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
 - **Stand-ins go as files arrive.** Until a scene's painted portraits exist, the game shows the old head crops, mirrored where needed. Each new file replaces its stand-in.

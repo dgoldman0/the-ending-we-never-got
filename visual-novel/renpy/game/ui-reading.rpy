@@ -348,7 +348,7 @@ init -1 python:
         return _top_cache[key]
 
     def page_ground(light):
-        return 'ui/page-' + light + '-soft.webp'
+        return 'ui/page-' + light + '.webp'
 
     def page_colors(light):
         if light == 'day':

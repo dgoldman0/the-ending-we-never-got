@@ -17,11 +17,15 @@ detail is separated out (an edge-aware split in log luminance) and put back:
             a floor so shapes survive, cold blue-grey shade, warm sources
             glowing with halation, heavy vignette, grain
 
-Softened uses the same operations at lower strength, so both modes always come
-from one source and match exactly.
+Each register is applied at one strength, the 'original' mode: the original
+timeline's light (user decision, 24 September 2026). It was called "Softened"
+while a full-strength "Intense" mode existed; the user removed that mode and
+the lighting setting. Stage II, after the player answers Yes (not yet built),
+is to add a 'softened' mode: regular, undistorted light. Output names carry
+the mode: <name>-original.webp.
 
-S001-S005 stages are composited from their layers (the Softened grades, which
-are the least processed) before grading, so glare crosses figure edges the way
+S001-S005 stages are composited from their layers (the corrected base images
+in art/base/, the least processed) before grading, so glare crosses figure edges the way
 light does. Staging paintings for S006 onward are graded from the painting as
 delivered. Outputs go to renpy/game/art/lit/ with lit-assets.json; the game
 uses them automatically.
@@ -247,7 +251,8 @@ def portrait_night(rgb, k):
 PORTRAIT_REGISTERS = {'bright': portrait_bright, 'ordinary': portrait_ordinary, 'night': portrait_night}
 PORTRAIT_FOLDERS = ('art/cast',)  # GIMP crops from tools/crop-portraits.py
 
-STRENGTH = {'intense': 1.0, 'softened': 0.45}
+# Strength of each register per light mode (full strength would be 1.0).
+STRENGTH = {'original': 0.45}
 REGISTERS = {name: {mode: (lambda s, f=fn, k=k: f(s, k)) for mode, k in STRENGTH.items()}
              for name, fn in (('bright', bright), ('ordinary', ordinary), ('night', night))}
 REGISTERS['night-detail'] = {mode: (lambda s, k=k: night(s, k * 0.4)) for mode, k in STRENGTH.items()}
@@ -256,7 +261,7 @@ REGISTERS['night-detail'] = {mode: (lambda s, k=k: night(s, k * 0.4)) for mode, 
 # ------------------------------------------------------------ what to grade
 
 def neutral(path, variants):
-    """The least processed source: the Softened grade where one exists."""
+    """The least processed source: the corrected base image where one exists."""
     return variants.get(path, path)
 
 
@@ -396,7 +401,7 @@ def main():
     manifest = {'stages': {}, 'images': {}, 'registers': {}, 'shade': {}}
     graded = 0
     for key, register, source, inputs in plan_items():
-        paths = {mode: output_path(key, mode) for mode in ('intense', 'softened')}
+        paths = {mode: output_path(key, mode) for mode in STRENGTH}
         # regrade when an output is missing or older than any file it is made from
         done = [GAME / p for p in paths.values()]
         stale = not all(d.is_file() for d in done) or \

@@ -66,8 +66,8 @@ def required_assets(game=GAME):
     for registers in lit.get('portraits', {}).values():
         for pair in registers.values():
             expected.update(pair.values())
-    # Staging art for S006 onward, whatever has arrived, with Softened twins.
-    for folder in ('art/scenes', 'art/softened/scenes'):
+    # Staging art for S006 onward, whatever has arrived, with base twins.
+    for folder in ('art/scenes', 'art/base/scenes'):
         if (game / folder).is_dir():
             expected.update(path.relative_to(game).as_posix()
                             for path in (game / folder).glob('*.png'))
@@ -91,9 +91,9 @@ def audit_assets(game, package_path, expected, scene_assets, variants):
     errors = []
     for path in sorted(scene_assets):
         if path not in variants:
-            errors.append('Missing Softened mapping: ' + path)
-        elif path.startswith('art/rovel/') and not variants[path].startswith('art/softened/rovel/'):
-            errors.append('Rovel Softened path is outside its runtime folder: ' + path)
+            errors.append('Missing base mapping: ' + path)
+        elif path.startswith('art/rovel/') and not variants[path].startswith('art/base/rovel/'):
+            errors.append('Rovel base path is outside its runtime folder: ' + path)
 
     for path in sorted(expected):
         if not (game / path).is_file():
@@ -101,7 +101,7 @@ def audit_assets(game, package_path, expected, scene_assets, variants):
     for path, alternate in sorted(variants.items()):
         if (game / path).is_file() and (game / alternate).is_file():
             if (game / path).read_bytes() == (game / alternate).read_bytes():
-                errors.append('Identical Intense/Softened files: ' + path)
+                errors.append('Identical scene/base files: ' + path)
 
     if not package_path.is_file():
         errors.append('Missing web package: ' + str(package_path))

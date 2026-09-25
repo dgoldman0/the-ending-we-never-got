@@ -16,7 +16,7 @@ The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, reje
 
 Click, Space or Enter advances; hold Ctrl to skip read lines (Tab no longer toggles skipping, and skipping stops whenever the game window loses focus). Page Up/mouse wheel up rolls back; Esc opens or returns from menus. Save/load, reading history, larger text, fullscreen, reduced motion, image descriptions and Ren'Py self-voicing are available. Look closer and Threads return to the same reading point. All knowledge state is per playthrough/save, not global completion data.
 
-**Light** is fixed at the Softened strength of each register (user decision, 24 September 2026); there is no lighting setting. Stage II, after Yes, is to use regular light.
+**Light** is the original timeline's light in every register, fixed (user decision, 24 September 2026); there is no lighting setting. It was called Softened while an Intense mode existed. Stage II, after Yes, is to use regular, softened light.
 
 ## Browser preview
 
