@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="440" viewBox="0 0 1140 440">
+<rect width="1140" height="440" fill="#f4f1e8"/>
+<text x="25" y="30" font-family="sans-serif" font-size="22" fill="#263741">STRUCTURE ONLY — downstream side elevation, not a camera composition</text>
+<rect x="10" y="350" width="1120" height="75" fill="#8cb4c2"/>
+<rect x="20" y="206" width="210" height="190" fill="#b2b1a7" stroke="#4c5153" stroke-width="3"/>
+<rect x="910" y="206" width="215" height="190" fill="#b2b1a7" stroke="#4c5153" stroke-width="3"/>
+<path d="M215 206 H945 V195 H215 Z" fill="#896245" stroke="#453829" stroke-width="3"/>
+<path d="M220 110 H938 L930 85 H230 Z" fill="#685346" stroke="#453829" stroke-width="3"/>
+<g stroke="#76543a" stroke-width="11"><path d="M234 110 V195 M345 110 V195 M456 110 V195 M567 110 V195 M678 110 V195 M789 110 V195 M900 110 V195"/><path d="M234 114 L340 190 M345 190 L450 114 M456 114 L561 190 M567 190 L672 114 M678 114 L784 190 M789 190 L895 114"/></g>
+<path d="M933 298 L810 211" stroke="#34424a" stroke-width="12"/>
+<rect x="919" y="285" width="25" height="34" fill="#34424a"/>
+<rect x="797" y="204" width="30" height="14" fill="#34424a"/>
+<path d="M814 229 V270 M908 224 V270 M817 262 H904" stroke="#2c6870" stroke-width="2"/>
+<text x="666" y="296" font-family="sans-serif" font-size="18" fill="#2c6870">3 m timber bay OVER WATER</text>
+<text x="586" y="327" font-family="sans-serif" font-size="18" fill="#263741">Brace upper joint LEFT of stone edge</text>
+<text x="962" y="248" font-family="sans-serif" font-size="17" fill="#263741">FIXED</text><text x="962" y="272" font-family="sans-serif" font-size="17" fill="#263741">SOUTH</text><text x="962" y="296" font-family="sans-serif" font-size="17" fill="#263741">STONE</text>
+<text x="48" y="247" font-family="sans-serif" font-size="18" fill="#263741">NORTH STONE</text>
+<text x="357" y="389" font-family="sans-serif" font-size="20" fill="#263741">Deep river — NO central masonry pier</text>
+<text x="45" y="430" font-family="sans-serif" font-size="17" fill="#263741">Plain schematic checks the load path only. Final painting must be an intact naturalistic covered bridge.</text>
+</svg>

@@ -1,3 +1,5 @@
+> **Batch continuation25September2026:** after the S033 correction in `ca0e1e2`, the user explicitly requested “Alright let's finish the wider batch.” The generation hold recorded below is superseded by that instruction. S033 remains a source-art delivery, not a claim of connected runtime approval.
+
 # Current delivery — correction of overall squat proportions, 25 September 2026
 
 The user rejected the seated version in `4d6c954` as still looking compressed in one axis, then explicitly requested “Okay fix.” The export was isotropic:1872×1053 to1920×1080 uses the same factor in both axes. The distortion was already present in the generated composition: large heads and broad shoulder masses, short-looking neck/torso intervals, and a long heavy frontal tabletop. The earlier seated-version clearance did not resolve it and is superseded.
