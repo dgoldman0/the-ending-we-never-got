@@ -24,3 +24,10 @@ The selected wide room `exec-8c13bdcc-d587-412a-8fd7-ceebe9c2693e.png` is a comp
 The source/finish is1672×941. Fresh reopening of `office-local-master.xcf` reproduced the native RGBA pixels exactly. GIMP crops1664×936 at(4,2) and uniformly resamples with NoHalo to1920×1080; this adds no newly rendered detail. Exact generation and GIMP recipes are saved with the prompts. No body-axis stretch, runtime edit or game grading is included.
 
 Independent reviewer then opened the actual final whole/native image and passed the continuous counter/support plane, adult hip/knee/boot chains, passable doors, Vask's left gaze and head/neck join, two circled rows, healthy hand/pen contacts, canonical stars/three bars and the officer's small horn. No further concrete defect was found. This remains source-art review, not user or runtime approval.
+
+
+## Requested horn correction — 25 September, item9
+
+The receiving team's check found Marren's horns missing/unreadable in the delivered office. That correction supersedes the earlier favorable horn check. The final replacement adds his actual small rounded horn surfaces from `marren-speaking.png` as two independently masked and uniformly scaled layers; it preserves the face, hair outside the horn roots, body, counter and every other person. The near horn sits above his ear; the far horn remains partly occluded by the turned head. An initial placement doubled an indistinct old hair bump and left the far root too far out; it was discarded before delivery.
+
+Root opened the final whole and native head; the independent S004 correction producer compared both original and portrait, then the whole/native replacement. Individual horn shapes, scale, roots and masks pass without enlarging them into a different design. `office-horns-correction-master.xcf` reopens to the candidate's RGBA pixels exactly. `marren-horns-correction.scm` restarts from the retained original `office-local-master.xcf`, not the overwritten scene PNG. Source exposure and dimensions remain1920×1080; no new generation was needed.

@@ -1,5 +1,7 @@
 # S027 — River camp gate
 
+**25 September corrective pass:** the user identified missing horns on Serat, the camp healer and the governor, and an insufficient sword binding. The earlier positive claims below did not clear those defects. The same-path scene now contains the bounded corrections; see [correction provenance and final review](correction-2026-09-25.md).
+
 Chapter05 source-art brief, written before generation after the seven prioritized repaint requests were delivered in `2ef1982`. Read the complete S026–S031 interaction, current character/location/prop notes, staging portrait assignments and actual S024 launch plus current character/field references. No runtime changes.
 
 ## Exact moment and progression
