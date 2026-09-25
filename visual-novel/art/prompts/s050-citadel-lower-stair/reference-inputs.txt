@@ -1,0 +1,5 @@
+Source-state: Chapter09 released by root after Chapter08 commit b2527cb.
+1. visual-novel/renpy/game/art/scenes/s049-command-tent.png (whole inspected).
+2. current-cast-reference.jpg compiled only as reference collage from current tessa-citadel-listening, mara-citadel-listening, olan-soldier-speaking portraits, all inspected.
+3. visual-novel/art/character-keys/tessa/campaign-coat.png full costume key, displayed as JPEG reference.
+Scene/geometry briefs and complete S050–S057 source plus adjacent049/058 read.

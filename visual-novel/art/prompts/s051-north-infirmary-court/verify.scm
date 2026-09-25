@@ -1,0 +1,12 @@
+(define (check-master path out finalout)
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE path path))) (flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im flat out out 0 9 0 0 0 0 0)
+(if (> (string-length finalout) 0) (begin
+(gimp-context-set-interpolation INTERPOLATION-NOHALO)
+(gimp-image-scale im 1920 1080)
+(set! flat (car (gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im flat finalout finalout 0 9 0 0 0 0 0)))
+(gimp-image-delete im)))
+(check-master "visual-novel/art/scene-studies/s051-north-infirmary-court/defense-master.xcf" "/tmp/s051-defense-reopened.png" "")
+(check-master "visual-novel/art/scene-studies/s051-north-infirmary-court/court-master.xcf" "/tmp/s051-native-reopened.png" "/tmp/s051-final-reopened.png")
+(gimp-quit 0)

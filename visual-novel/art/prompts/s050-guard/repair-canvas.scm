@@ -1,0 +1,5 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s050-guard/generation-initial.png" "visual-novel/art/scene-studies/s050-guard/generation-initial.png"))) (layer (car (gimp-image-get-active-layer img))))
+(gimp-context-set-interpolation INTERPOLATION-NOHALO)(gimp-image-scale img 1505 847)
+(gimp-image-resize img 1920 1080 208 70)(gimp-layer-resize-to-image-size layer)
+(file-png-save RUN-NONINTERACTIVE img layer "/tmp/s050-guard-repair-target.png" "/tmp/s050-guard-repair-target.png" 0 9 0 0 0 0 0)(gimp-image-delete img))
+(gimp-quit 0)

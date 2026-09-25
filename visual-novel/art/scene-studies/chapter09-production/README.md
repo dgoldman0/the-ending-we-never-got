@@ -1,8 +1,8 @@
 # Chapter 09 — The citadel, preflight
 
-**Paused at the user’s request after Chapter07.** This is retained planning only; do not interpret it as generated art or authorization to continue during the pause. Resume from the actual delivered Chapter07 references when the user asks.
+**Released25September2026 after the updated request, corrections `50e4d86` and Chapter08 delivery `b2527cb`.** The thirteen requested Chapter09 paintings are now in production; actual reviews will be recorded below.
 
-**Source preparation only, 25 September 2026. No rendering or approval.** Read S050–S057 in full (`screenplay/original-timeline/source.fountain`1988–2173), preceding bag handoff1986 and the S058 transition. Read current character/location/prop continuity, approved campaign costume, actual citadel/injured Tessa portraits, surgeon portrait and the user-selected [storm infirmary anchor](../north-infirmary/north-infirmary-storm.png). Companion [Chapter08 preflight](../chapter08-production/README.md) establishes the infirmary and maps; it is a plan, not an accepted visual foundation.
+**Source preparation, 25 September 2026; this plan is not visual approval.** Read S050–S057 in full (`screenplay/original-timeline/source.fountain`1988–2173), preceding bag handoff1986 and the S058 transition. Read current character/location/prop continuity, approved campaign costume, actual citadel/injured Tessa portraits, surgeon portrait and the user-selected [storm infirmary anchor](../north-infirmary/north-infirmary-storm.png). Companion [Chapter08 preflight](../chapter08-production/README.md) establishes the infirmary and maps; it is a plan, not an accepted visual foundation.
 
 ## Exact proposed base/key moments
 
@@ -48,3 +48,9 @@ Useful references: approved [campaign construction](../../character-keys/tessa/c
 - **S053 requested reuse is physically incompatible with an acted S050 promise/embrace image:** Tessa is now inside the hall; Mara alone closes the gap after sending her last uninjured soldier up with a wounded man2052. Root/integration needs a separate defense state or another explicit coverage solution; do not claim the requested reuse proves continuity. No extra image is generated here.
 - The requested three S054 paintings do not show every transition: initial pinning, fatal strike, weighted lever release and Elin's binding are distinct later actions. S055's surrender terms, S056's healthy-hand clasp, and S057's covered-body gesture also remain beyond the proposed bases/keys. Preserve those source beats in integration and review their visual coverage explicitly.
 - All key contacts above y760 in left two-thirds/y840 right, ≥70px headroom; retain full-body force paths, floor supports and object scale instead of cropping away impossible geometry. Source light remains neutral/readable; final-original-timeline grading belongs to the other team. This preflight approves no result and changes no runtime data.
+
+## Resumed shared state
+
+Use actual Chapter08 ward/boat/tent identities. S050/052 share the narrow-stair plan in `s050-citadel-lower-stair/stair-and-landing-plan.md`; actual images must validate it. Bronze threshold working opening is3.2m×3.6m, two inward-open leaves with restrained recessed rectangular panels under a shallow segmental stone arch. Hall maker and landing maker coordinate both views.
+
+Elin’s working sleeve-strip laterality is LEFT: outer ocher sleeve pushed back, pale sleeve cuff/forearm section torn with a ragged below-elbow edge; RIGHT cuff intact. Root S055 establishes actual wrapping of Tessa’s wounded RIGHT hand after the S054 outcome; S056 preserves that state through unwrapping. This fills an unspecified side in the screenplay, not new canon.

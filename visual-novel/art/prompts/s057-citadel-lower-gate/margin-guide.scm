@@ -1,0 +1,7 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s057-citadel-lower-gate/gate-source.png" "gate-source.png"))) (source (car (gimp-image-get-active-layer im))) (bg 0) (flat 0))
+(gimp-image-resize im 1920 1080 124 20)
+(set! bg (car (gimp-layer-new im 1920 1080 RGB-IMAGE "Only gray perimeter to extend" 100 NORMAL-MODE)))
+(gimp-image-insert-layer im bg 0 0) (gimp-image-lower-item-to-bottom im bg)
+(gimp-context-set-foreground '(60 60 60)) (gimp-drawable-fill bg FOREGROUND-FILL)
+(set! flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s057-margin-guide.png" "/tmp/s057-margin-guide.png" 0 9 0 0 0 0 0) (gimp-image-delete im)) (gimp-quit 0)

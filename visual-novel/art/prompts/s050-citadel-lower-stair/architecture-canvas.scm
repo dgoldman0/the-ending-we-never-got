@@ -1,0 +1,6 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s050-citadel-lower-stair/generation-initial.png" "visual-novel/art/scene-studies/s050-citadel-lower-stair/generation-initial.png"))) (layer (car (gimp-image-get-active-layer img))))
+ (gimp-image-resize img 1920 1080 124 70)
+ (gimp-layer-resize-to-image-size layer)
+ (file-png-save RUN-NONINTERACTIVE img layer "/tmp/s050-architecture-canvas.png" "/tmp/s050-architecture-canvas.png" 0 9 0 0 0 0 0)
+ (gimp-image-delete img))
+(gimp-quit 0)
