@@ -25,7 +25,7 @@ HERE = Path(__file__).resolve().parent
 VN = HERE.parents[1]
 UI = HERE / 'ui'
 kit = runpy.run_path(str(VN / 'tools/build-ui-assets.py'), run_name='frames')
-light_relief, GILT, ramp = kit['light_relief'], kit['GILT'], kit['ramp']
+light_relief, GILT, ramp, sun_masks = kit['light_relief'], kit['GILT'], kit['ramp'], kit['sun_masks']
 OSS = 3
 
 SIZES = {'vignette': {'speaker': (270, 310), 'listener': (150, 172)},
@@ -192,6 +192,108 @@ def hairline():
     save(np.dstack([np.ones_like(a)[..., None] * np.array([0.86, 0.72, 0.46], np.float32), a]), 'hairline.png')
 
 
+def to_lin(c):
+    return np.where(c <= 0.04045, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
+
+
+def to_srgb(c):
+    c = np.clip(c, 0, 1)
+    return np.where(c <= 0.0031308, c * 12.92, 1.055 * np.power(c, 1 / 2.4) - 0.055)
+
+
+def lens(lin, r):
+    """A lens (disc) blur in linear light, so highlights bloom like a real
+    out-of-focus lens rather than smearing like a Gaussian."""
+    if r <= 0:
+        return lin
+    k = int(np.ceil(r)) * 2 + 1
+    yy, xx = np.mgrid[0:k, 0:k].astype(np.float32) - k // 2
+    disc = np.clip(r + 0.5 - np.sqrt(xx ** 2 + yy ** 2), 0, 1)
+    return cv2.filter2D(lin, -1, disc / disc.sum(), borderType=cv2.BORDER_REFLECT)
+
+
+def soft_masks():
+    """The shade for the chosen treatment: deepest behind the portrait and the
+    text, fading right and up (no pool under the menu, which is now hidden);
+    and the pool behind the pop-up controls."""
+    w, h = 1920, 1080
+    xx, yy = grid(w, h)
+    left = np.sqrt(((xx - 720) / 1050) ** 2 + ((yy - 960) / 290) ** 2)
+    shaped = (1 - smoothstep((left - 0.45) / 0.55)) * np.interp(yy, [680, 780, 870, 1080], [0, 0.5, 0.95, 1.0])
+    corner = np.sqrt(((xx - 1920) / 640) ** 2 + ((yy - 1080) / 740) ** 2)
+    pool = (1 - smoothstep((corner - 0.32) / 0.68)).astype(np.float32)
+    for name, m in (('soft', shaped.astype(np.float32)), ('controls', pool)):
+        save(np.dstack([np.ones_like(m)] * 3 + [m]), 'mask-shade-%s.png' % name)
+    return shaped.astype(np.float32), pool
+
+
+def soft_paintings(shaped):
+    """For each graded painting: a progressive lens blur that deepens toward
+    the text (untouched above the shade), with the painting's grain restored
+    so it never looks smeared; and an evenly blurred copy for the controls."""
+    rng = np.random.default_rng(3)
+    noise = cv2.GaussianBlur(rng.normal(0, 1, (1080, 1920)).astype(np.float32), (0, 0), 0.7)
+    t = shaped * 4
+    weights = [np.clip(1 - np.abs(t - i), 0, 1)[..., None] for i in range(5)]
+    for sub in ('soft', 'blur'):
+        (UI / sub).mkdir(parents=True, exist_ok=True)
+    for path in sorted((VN / 'renpy/game/art/lit').glob('*-intense.webp')):
+        src = np.asarray(Image.open(path).convert('RGB').resize((1920, 1080)), np.float32) / 255
+        lin = to_lin(src)
+        levels = [lin, lens(lin, 3), lens(lin, 7), lens(lin, 13), lens(lin, 20)]
+        out = to_srgb(sum(w * l for w, l in zip(weights, levels)))
+        lum = out @ np.array([0.2126, 0.7152, 0.0722], np.float32)
+        out = out + (noise * 0.045 * shaped * lum * (1 - lum))[..., None]
+        Image.fromarray((np.clip(out, 0, 1) * 255 + 0.5).astype('uint8')).save(UI / 'soft' / path.name, quality=90, method=4)
+        blur = to_srgb(lens(lin, 12))
+        Image.fromarray((np.clip(blur, 0, 1) * 255 + 0.5).astype('uint8')).save(UI / 'blur' / path.name, quality=88, method=4)
+
+
+def engraved_line(w, name, glow=True):
+    """A hairline that reads on white and on black: a dark cut beneath, a gilt
+    line and a faint highlight above, fading out at both ends."""
+    h = 11
+    xx, yy = grid(w, h)
+    ends = smoothstep(np.minimum(xx, w - xx) / (w * 0.26))
+    cut = np.exp(-((yy - 6.6) / 0.9) ** 2) * 0.55
+    gilt = np.exp(-((yy - 5.2) / 0.75) ** 2)
+    shine = np.exp(-((yy - 4.2) / 0.6) ** 2) * 0.35
+    halo = np.exp(-((yy - 5.2) / 2.6) ** 2) * (0.22 if glow else 0)
+    gold = np.array([0.86, 0.71, 0.44], np.float32)
+    rgb = (gold * (gilt + halo)[..., None] + np.array([1.0, 0.95, 0.8], np.float32) * shine[..., None]
+           + np.array([0.09, 0.06, 0.04], np.float32) * cut[..., None])
+    a = np.clip(gilt + shine + halo + cut, 0, 1)
+    rgb = rgb / np.maximum(a, 1e-4)[..., None]
+    save(np.dstack([np.clip(rgb, 0, 1), (a * ends).astype(np.float32)]), name)
+
+
+def trigger():
+    """The controls' trigger: the temple's twelve-ray sun in gilt relief on a
+    soft shadow, so it reads on white marble and in the dark; and the glow
+    that breathes around it when something can be looked at more closely."""
+    S = 44
+    W = S * OSS
+    disc, ray, ring = sun_masks((W, W), (W / 2, W / 2), W * 0.2, W * 0.42)
+    dome = kit['dome']
+    height = np.maximum(dome(disc, W * 0.12) * 1.2 - ring * 0.3, dome(ray, W * 0.03) * 0.8)
+    cover = np.clip(disc + ray, 0, 1)
+    albedo = np.ones(height.shape + (3,), np.float32) * GILT
+    rgba = light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.5 * OSS), albedo,
+                        np.ones_like(height) * 0.9, cover.astype(np.float32))
+    rgba = cv2.resize(rgba, (S, S), interpolation=cv2.INTER_AREA)
+    xx, yy = grid(S, S)
+    r = np.sqrt((xx - S / 2) ** 2 + (yy - S / 2 - 1) ** 2)
+    shadow = np.exp(-(r / 13) ** 2) * 0.55
+    a = rgba[..., 3] + shadow * (1 - rgba[..., 3])
+    rgb = (rgba[..., :3] * rgba[..., 3:4] + np.array([0.05, 0.04, 0.03], np.float32) * (shadow * (1 - rgba[..., 3]))[..., None]) / np.maximum(a, 1e-4)[..., None]
+    save(np.dstack([rgb, a]), 'ctl-sun.png')
+    G = 96
+    xx, yy = grid(G, G)
+    r = np.sqrt((xx - G / 2) ** 2 + (yy - G / 2) ** 2)
+    glow = (np.exp(-((r - 17) / 7) ** 2) * 0.55 + np.exp(-(r / 28) ** 2) * 0.25).astype(np.float32)
+    save(np.dstack([np.ones_like(glow)[..., None] * np.array([0.98, 0.84, 0.55], np.float32), glow]), 'ctl-glow.png')
+
+
 def lozenge():
     s = 13 * 4
     yy, xx = np.mgrid[0:s, 0:s].astype(np.float32) + 0.5
@@ -214,6 +316,11 @@ def main():
     shadow_tints()
     shade_masks()
     hairline()
+    shaped, _ = soft_masks()
+    engraved_line(1000, 'hairline-engraved.png')
+    engraved_line(150, 'ctl-underline.png', glow=False)
+    trigger()
+    soft_paintings(shaped)
     lozenge()
     print('portrait-frame samples written to', UI.relative_to(VN))
 

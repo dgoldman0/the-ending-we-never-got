@@ -13,6 +13,8 @@
 init offset = 10
 
 default frame_style = 'oval-halo'
+default ctl_open = False
+default ctl_hidden = False
 default shade_style = 'plain'
 define FRAME_TEXT_X = 424
 define FRAME_TEXT_W = 1030
@@ -88,6 +90,44 @@ init python:
         layers.append(Transform(tint, blend='multiply'))
         return Fixed(*layers, xysize=(1920, 1080))
 
+    def soft_scene_shade():
+        """The chosen shade, refined: a progressive lens blur of the painting that
+        deepens toward the text (baked, with the grain kept), deepened in the
+        painting's own shadow colour, and an engraved hairline."""
+        image, lift = shown_stage()
+        layers = []
+        if image:
+            name = image.split('/')[-1]
+            if renpy.loadable('frames/soft/' + name):
+                layers.append(Transform('frames/soft/' + name, xysize=(1920, 1080), yoffset=-lift))
+            r, g, b = SHADOW_TINTS.get(image, [0.2, 0.19, 0.18])
+        else:
+            r, g, b = 0.2, 0.19, 0.18
+        tint = AlphaMask(Solid((int(r * 255), int(g * 255), int(b * 255), 255), xysize=(1920, 1080)),
+                         'frames/mask-shade-soft.png')
+        layers.append(Transform(tint, blend='multiply'))
+        return Fixed(*layers, xysize=(1920, 1080))
+
+    def controls_pool():
+        """Behind the open controls: the painting blurred and deepened in its own
+        shadow colour, in a soft pool at the corner."""
+        image, lift = shown_stage()
+        layers = []
+        r, g, b = 0.2, 0.19, 0.18
+        if image:
+            name = image.split('/')[-1]
+            if renpy.loadable('frames/blur/' + name):
+                layers.append(AlphaMask(Fixed(Transform('frames/blur/' + name, xysize=(1920, 1080), yoffset=-lift),
+                                              xysize=(1920, 1080)), 'frames/mask-shade-controls.png'))
+            r, g, b = SHADOW_TINTS.get(image, [r, g, b])
+        tint = AlphaMask(Solid((int(r * 255), int(g * 255), int(b * 255), 255), xysize=(1920, 1080)),
+                         'frames/mask-shade-controls.png')
+        layers.append(Transform(tint, blend='multiply'))
+        return Fixed(*layers, xysize=(1920, 1080))
+
+    def close_controls_then(action):
+        return [SetVariable('ctl_open', False), action]
+
     def frame_text_top(what, who):
         t = Text(what, style='stage_speech' if who else 'stage_action', size=text_size(38), xmaximum=FRAME_TEXT_W)
         height = renpy.render(t, FRAME_TEXT_W, 4000, 0, 0).height
@@ -111,7 +151,10 @@ screen say(who, what):
         # shading samples: the current shade; a deeper gradient; the current
         # shade plus a soft pool behind the text; the deeper gradient plus a
         # soft shadow around the letters. None is solid.
-        if shade_style in ('colour', 'colour-focus', 'shaped', 'shaped-line'):
+        if shade_style == 'soft':
+            add soft_scene_shade()
+            add lit_ornament("frames/hairline-engraved.png") xpos 330 ypos 745
+        elif shade_style in ('colour', 'colour-focus', 'shaped', 'shaped-line'):
             add scene_shadow('shaped' if shade_style.startswith('shaped') else 'band', shade_style != 'colour')
             if shade_style == 'shaped-line':
                 add lit_ornament("frames/hairline.png") xpos 330 ypos 748
@@ -135,4 +178,74 @@ screen say(who, what):
             text what id "what" pos (FRAME_TEXT_X, top) xmaximum FRAME_TEXT_W size text_size(38) outlines [(absolute(12), "#00000022", 0, 2), (absolute(7), "#00000040", 0, 2), (absolute(3), "#00000066", 0, 1), (absolute(1), "#0000007a", 0, 0)]
         else:
             text what id "what" pos (FRAME_TEXT_X, top) xmaximum FRAME_TEXT_W size text_size(38)
-    use quick_menu('stage')
+    if shade_style == 'soft':
+        use reading_controls
+    else:
+        use quick_menu('stage')
+
+
+# ------------------------------------------------------------ hidden controls
+# The reading controls stay out of the picture: a small gilt sun at the
+# corner opens them (and breathes when something can be looked at closely).
+# Open, they rise over a soft pool of the scene's own shadow, set in small
+# capitals; the one under the pointer gains an engraved gilt underline.
+
+transform ctl_rise:
+    alpha 0.0 yoffset 12
+    easein 0.28 alpha 1.0 yoffset 0
+
+transform ctl_breathe:
+    alpha 0.25
+    block:
+        easein 1.4 alpha 0.9
+        easeout 1.4 alpha 0.25
+        repeat
+
+transform ctl_sun_idle:
+    alpha 0.62
+
+style ctl_button:
+    padding (18, 7, 18, 9)
+    xalign 1.0
+    hover_foreground Transform("frames/ctl-underline.png", xalign=1.0, yalign=1.0, xoffset=-6)
+    selected_foreground Transform("frames/ctl-underline.png", xalign=1.0, yalign=1.0, xoffset=-6)
+
+style ctl_button_text:
+    font ui_caps
+    size 26
+    kerning 3.4
+    color "#e9e0cfe6"
+    hover_color ui_gold_bright
+    insensitive_color "#e9e0cf55"
+    text_align 1.0
+    outlines [(absolute(4), "#00000026", 0, 1), (absolute(2), "#00000040", 0, 0)]
+
+screen reading_controls():
+    zorder 50
+    $ closer = closer_here()
+    if ctl_open:
+        # a click anywhere else closes the controls without turning the page
+        button:
+            xysize (1920, 1080)
+            background None
+            action SetVariable('ctl_open', False)
+        add controls_pool()
+        vbox at ctl_rise:
+            style_prefix "ctl"
+            xalign 1.0 xoffset -52 yalign 1.0 yoffset -96 spacing 0
+            textbutton _("Back") action close_controls_then(Rollback())
+            textbutton _("History") action close_controls_then(ShowMenu('history'))
+            if closer:
+                textbutton _("Look closer") id "look_closer" action close_controls_then(ShowMenu('look_closer')) text_color ui_gold_bright
+            textbutton _("Threads") action (close_controls_then(ShowMenu('threads')) if available_details() else None)
+            textbutton _("Save") action close_controls_then(ShowMenu('save'))
+            textbutton _("Load") action close_controls_then(ShowMenu('load'))
+            textbutton _("Settings") id "open_menu" action close_controls_then(ShowMenu('preferences'))
+    if closer and not ctl_open:
+        add "frames/ctl-glow.png" at ctl_breathe pos (1920 - 58 - 48, 1080 - 50 - 48)
+    imagebutton:
+        idle Transform(lit_ornament("frames/ctl-sun.png"), alpha=(1.0 if (ctl_open or closer) else 0.75))
+        hover lit_ornament("frames/ctl-sun.png")
+        pos (1920 - 58 - 22, 1080 - 50 - 22)
+        action ToggleVariable('ctl_open')
+        alt "Reading controls"

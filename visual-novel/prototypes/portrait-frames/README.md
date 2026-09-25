@@ -60,3 +60,27 @@ now replace the shade with:
 `shadow-samples.png` and `shadow-detail.png`. A first pass came out salmon
 pink, too weak, barely blurred and with a stray-looking line; it was redrawn
 before showing.
+
+## Fifth round: refined shade and hidden controls
+
+The user found no. 4 (shadow colour, soft focus, shaped, hairline) best but not
+perfect: the hairline vanished on the bright S004, the blur wasn't quite nice
+enough, and the controls were hard to read; they should be hidden behind a
+pop-up and, when open, very elegant.
+
+- The hairline is now engraved: a dark cut beneath a gilt line with a faint
+  highlight, so it reads on white marble and in the dark.
+- The soft focus is a progressive lens (disc) blur baked for each graded
+  painting (`ui/soft/`), done in linear light so highlights bloom, deepening
+  toward the text and untouched above the shade, with the painting's grain
+  restored so it doesn't look smeared.
+- The controls are hidden. A small gilt sun at the lower right opens them; it
+  breathes with a soft glow when Look closer is available. Open, they rise over
+  a pool of the scene's own blurred shadow, in small capitals (Back, History,
+  Look closer when available, Threads, Save, Load, Settings); the item under
+  the pointer gains an engraved underline. A click anywhere else closes them
+  without turning the page.
+
+`refined-samples.png`, `refined-detail.png` and `controls-detail.png`. The
+first capture's pool didn't reach the top items over bright robes; it was
+enlarged before showing.

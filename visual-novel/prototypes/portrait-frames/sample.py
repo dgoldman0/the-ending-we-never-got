@@ -23,8 +23,8 @@ VN = HERE.parents[1]
 GAME = VN / 'renpy/game'
 SHOTS = VN / 'renpy/test-output/frames'
 OUT = VN / 'renpy/test-output/review'
-LINES = [('s001', 1, 24), ('s004', 4, 211), ('s008', 8, 339), ('s023', 23, 1012)]
-VARIANTS = [('oval-halo', s) for s in ('plain', 'colour', 'colour-focus', 'shaped', 'shaped-line')]
+LINES = [('s001', 1, 24), ('s003', 3, 172), ('s004', 4, 211), ('s008', 8, 339), ('s023', 23, 1012)]
+VARIANTS = [('oval-halo', 'shaped-line'), ('oval-halo', 'soft'), ('oval-halo', 'soft-open')]
 
 
 def capture_test():
@@ -41,14 +41,16 @@ def capture_test():
             steps += ["    run Jump('s%03d')" % scene, '    pause 0.5']
         steps += ['    advance until eval (current_scene, source_line) == (%d, %d)' % (scene, line), '    pause 0.8']
         for frame, shade in VARIANTS:
-            steps += ["    $ frame_style, shade_style = %r, %r" % (frame, shade),
+            steps += ["    $ ctl_open = %r" % shade.endswith('-open'),
+                      "    $ frame_style, shade_style = %r, %r" % (frame, shade.replace('-open', '')),
                       '    $ renpy.restart_interaction()', '    pause 0.6',
                       "    screenshot '%s-%s-%s.png'" % (frame, shade, name)]
     return '\n'.join(steps) + '\n'
 
 
 def main():
-    subprocess.run(['python3', str(HERE / 'build-frames.py')], check=True)
+    if not (HERE / 'ui/soft').is_dir():
+        subprocess.run(['python3', str(HERE / 'build-frames.py')], check=True)
     placed = [GAME / 'zz-frames-prototype.rpy', GAME / 'zz-frames-capture.rpy']
     shutil.copy(HERE / 'zz-frames-prototype.rpy', placed[0])
     placed[1].write_text(capture_test())
@@ -84,21 +86,34 @@ def sheet(rows, cols, out, W=960, H=540):
 
 
 def sheets():
-    rows = [('s004', 'S004 (bright)'), ('s001', 'S001 (bright)'), ('s008', 'S008 (day, narration)'), ('s023', 'S023 (night)')]
-    cols = [('oval-halo-plain-', 'Current shade'), ('oval-halo-colour-', '1: shadow colour'),
-            ('oval-halo-colour-focus-', '2: + soft focus'), ('oval-halo-shaped-', '3: + shaped'),
-            ('oval-halo-shaped-line-', '4: + hairline')]
-    sheet(rows, cols, 'shadow-samples.png', W=900, H=506)
+    rows = [('s004', 'S004 (bright)'), ('s001', 'S001 (bright)'), ('s003', 'S003 (Look closer available)'),
+            ('s008', 'S008 (day, narration)'), ('s023', 'S023 (night)')]
+    cols = [('oval-halo-shaped-line-', 'Last round, no. 4'), ('oval-halo-soft-', 'Refined, controls hidden'),
+            ('oval-halo-soft-open-', 'Refined, controls open')]
+    sheet(rows, cols, 'refined-samples.png')
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 24)
-    img = Image.new('RGB', (2 * 1250 + 10, len(cols) * 440), (16, 16, 16))
+    crops = [('oval-halo-shaped-line-s004', (40, 660, 1290, 1060), 'Last round, S004'),
+             ('oval-halo-soft-s004', (40, 660, 1290, 1060), 'Refined, S004'),
+             ('oval-halo-shaped-line-s008', (40, 660, 1290, 1060), 'Last round, S008'),
+             ('oval-halo-soft-s008', (40, 660, 1290, 1060), 'Refined, S008')]
+    img = Image.new('RGB', (2 * 1250 + 10, 2 * 440), (16, 16, 16))
     draw = ImageDraw.Draw(img)
-    for i, (prefix, label) in enumerate(cols):
-        for j, scene in enumerate(('s004', 's008')):
-            x, y = j * 1260, i * 440
-            img.paste(shot(prefix + scene).crop((40, 660, 1290, 1060)), (x, y + 38))
-            draw.text((x + 6, y + 8), '%s, %s, full size' % (label, scene.upper()), fill=(235, 235, 235), font=font)
-    img.save(OUT / 'shadow-detail.png')
-    print('wrote', (OUT / 'shadow-detail.png').relative_to(VN))
+    for i, (name, box, label) in enumerate(crops):
+        x, y = (i % 2) * 1260, (i // 2) * 440
+        img.paste(shot(name).crop(box), (x, y + 38))
+        draw.text((x + 6, y + 8), label + ', full size', fill=(235, 235, 235), font=font)
+    img.save(OUT / 'refined-detail.png')
+    ctl = [('oval-halo-soft-s004', 'Closed, S004'), ('oval-halo-soft-open-s004', 'Open, S004'),
+           ('oval-halo-soft-s003', 'Closed, Look closer available, S003'), ('oval-halo-soft-open-s003', 'Open, S003'),
+           ('oval-halo-soft-s023', 'Closed, S023'), ('oval-halo-soft-open-s023', 'Open, S023')]
+    img = Image.new('RGB', (3 * 560 + 20, 2 * 560), (16, 16, 16))
+    draw = ImageDraw.Draw(img)
+    for i, (name, label) in enumerate(ctl):
+        x, y = (i % 3) * 570, (i // 3) * 560
+        img.paste(shot(name).crop((1400, 560, 1920, 1080)), (x, y + 38))
+        draw.text((x + 6, y + 8), label, fill=(235, 235, 235), font=font)
+    img.save(OUT / 'controls-detail.png')
+    print('wrote refined-samples, refined-detail and controls-detail')
 
 if __name__ == '__main__':
     main()
