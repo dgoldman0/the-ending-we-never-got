@@ -125,6 +125,28 @@ def lacquer_shade():
     save(np.dstack([rgb, np.repeat(alpha[:, None], w, 1)]), 'shade-lacquer.png')
 
 
+def deep_shade():
+    """The reading shade in two deeper strengths: still gradients that start
+    transparent above the portraits, never solid at the foot of the screen.
+    Around the text line (y 874-980) the current shade is about 55% dark;
+    'medium' is about 70% and 'strong' about 82%."""
+    h = 560
+    for name, stops in (('shade-medium.png', [(0, 0), (0.26, 24), (0.48, 150), (0.66, 186), (1, 200)]),
+                        ('shade-strong.png', [(0, 0), (0.24, 30), (0.44, 176), (0.62, 212), (1, 225)])):
+        alpha = ramp(h, stops) / 255.0
+        save(np.dstack([np.zeros((h, 4, 3), np.float32), np.repeat(alpha[:, None], 4, 1)]), name)
+
+
+def text_pool():
+    """A soft dark pool behind the text block only, over the current shade;
+    the rest of the band keeps the painting."""
+    w, h = 1400, 420
+    xx, yy = grid(w, h)
+    r = np.sqrt(((xx - w * 0.47) / (w * 0.50)) ** 2 + ((yy - h * 0.52) / (h * 0.46)) ** 2)
+    a = (1 - smoothstep((r - 0.22) / 0.78)) * 0.72
+    save(np.dstack([np.zeros((h, w, 3), np.float32), a.astype(np.float32)]), 'shade-pool.png')
+
+
 def lozenge():
     s = 13 * 4
     yy, xx = np.mgrid[0:s, 0:s].astype(np.float32) + 0.5
@@ -142,6 +164,8 @@ def main():
         oval(role)
         rect(role)
     lacquer_shade()
+    deep_shade()
+    text_pool()
     lozenge()
     print('portrait-frame samples written to', UI.relative_to(VN))
 

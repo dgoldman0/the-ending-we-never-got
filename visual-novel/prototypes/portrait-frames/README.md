@@ -29,3 +29,14 @@ now captures `oval-bare` (no outline), `oval` (fine gilt line) and
 `oval-halo` (a soft gilt glow around the edge, fading at the base), speaker
 only, into `ovals-samples.png` and `ovals-detail.png`. The first halo was too
 strong (it read as a glowing sticker) and was softened before showing.
+
+## Third round: text shading with the golden-halo oval
+
+The user chose the golden-halo oval and asked for more shading behind the
+text, never opaque. `sample.py` now captures four shadings, speaker only, on
+S004 and S001 (bright), S008 (day, heading and narration) and S023 (night)
+into `shading-samples.png` and `shading-detail.png`: A the current shade
+(about 55% dark at the text line), B a medium gradient (about 70%), C a
+strong gradient (about 82%), D the current shade plus a soft pool behind the
+text and a soft shadow around the letters. A first ladder differed too little
+to judge and was redrawn before showing.

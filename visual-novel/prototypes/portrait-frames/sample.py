@@ -23,8 +23,8 @@ VN = HERE.parents[1]
 GAME = VN / 'renpy/game'
 SHOTS = VN / 'renpy/test-output/frames'
 OUT = VN / 'renpy/test-output/review'
-LINES = [('s002', 2, 75), ('s004', 4, 211), ('s008', 8, 352), ('s023', 23, 1012)]
-VARIANTS = [(f, 'plain') for f in ('oval-bare', 'oval', 'oval-halo')]
+LINES = [('s001', 1, 24), ('s004', 4, 211), ('s008', 8, 339), ('s023', 23, 1012)]
+VARIANTS = [('oval-halo', s) for s in ('plain', 'medium', 'strong', 'pool-shadow')]
 
 
 def capture_test():
@@ -36,8 +36,8 @@ def capture_test():
              "    run Preference('display', 'fullscreen')",
              '    pause 1.0',
              "    click id 'main_begin'"]
-    for name, scene, line in LINES:
-        if scene != 2:
+    for i, (name, scene, line) in enumerate(LINES):
+        if i:
             steps += ["    run Jump('s%03d')" % scene, '    pause 0.5']
         steps += ['    advance until eval (current_scene, source_line) == (%d, %d)' % (scene, line), '    pause 0.8']
         for frame, shade in VARIANTS:
@@ -84,21 +84,21 @@ def sheet(rows, cols, out, W=960, H=540):
 
 
 def sheets():
-    rows = [('s004', 'S004 (bright)'), ('s002', 'S002 (night)'), ('s008', 'S008 (day)'), ('s023', 'S023 (night)')]
-    sheet(rows, [('current-', 'Current'), ('oval-bare-plain-', 'Oval, no outline'), ('oval-plain-', 'Oval, gilt line'),
-                 ('oval-halo-plain-', 'Oval, golden halo')], 'ovals-samples.png')
+    rows = [('s004', 'S004 (bright, speech)'), ('s001', 'S001 (bright, speech)'),
+            ('s008', 'S008 (day, heading and narration)'), ('s023', 'S023 (night, speech)')]
+    cols = [('oval-halo-plain-', 'A: current shade (~55% at the text)'), ('oval-halo-medium-', 'B: medium gradient (~70%)'),
+            ('oval-halo-strong-', 'C: strong gradient (~82%)'), ('oval-halo-pool-shadow-', 'D: current + pool behind text + letter shadow')]
+    sheet(rows, cols, 'shading-samples.png')
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 24)
-    crops = [(v + scene, '%s, %s' % (label, scene.upper()))
-             for scene in ('s004', 's008', 's023') for v, label in
-             (('oval-bare-plain-', 'No outline'), ('oval-plain-', 'Gilt line'), ('oval-halo-plain-', 'Golden halo'))]
-    img = Image.new('RGB', (3 * 650 + 20, 3 * 410), (16, 16, 16))
+    img = Image.new('RGB', (2 * 1250 + 10, 4 * 400), (16, 16, 16))
     draw = ImageDraw.Draw(img)
-    for i, (name, label) in enumerate(crops):
-        x, y = (i % 3) * 660, (i // 3) * 410
-        img.paste(shot(name).crop((60, 700, 710, 1060)), (x, y + 40))
-        draw.text((x + 6, y + 8), label + ', full size', fill=(235, 235, 235), font=font)
-    img.save(OUT / 'ovals-detail.png')
-    print('wrote', (OUT / 'ovals-detail.png').relative_to(VN))
+    for i, (prefix, label) in enumerate(cols):
+        for j, scene in enumerate(('s004', 's008')):
+            x, y = j * 1260, i * 400
+            img.paste(shot(prefix + scene).crop((60, 690, 1310, 1050)), (x, y + 38))
+            draw.text((x + 6, y + 8), '%s, %s, full size' % (label, scene.upper()), fill=(235, 235, 235), font=font)
+    img.save(OUT / 'shading-detail.png')
+    print('wrote', (OUT / 'shading-detail.png').relative_to(VN))
 
 if __name__ == '__main__':
     main()

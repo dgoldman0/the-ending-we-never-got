@@ -12,7 +12,7 @@
 #   - shade_style 'lacquer' tints the gradient deep celadon with a faint grain.
 init offset = 10
 
-default frame_style = 'oval'
+default frame_style = 'oval-halo'
 default shade_style = 'plain'
 define FRAME_TEXT_X = 424
 define FRAME_TEXT_W = 1030
@@ -79,10 +79,15 @@ screen say(who, what):
         text what id "what" pos (tx, ty) xmaximum tw size text_size(38)
     else:
         $ top = frame_text_top(what, who)
-        if shade_style == 'lacquer':
-            add "frames/shade-lacquer.png" pos (0, 520) alpha scrim_strength(beat)
+        # shading samples: the current shade; a deeper gradient; the current
+        # shade plus a soft pool behind the text; the deeper gradient plus a
+        # soft shadow around the letters. None is solid.
+        if shade_style in ('medium', 'strong'):
+            add "frames/shade-%s.png" % shade_style xsize 1920 ysize 560 ypos 520
         else:
             add "ui/scrim.png" xsize 1920 ysize 560 ypos 520 alpha scrim_strength(beat)
+        if shade_style == 'pool-shadow':
+            add "frames/shade-pool.png" pos (FRAME_TEXT_X - 380, top - 170)
         if portrait_ready(speaker):
             add "ui/portrait-pool.png" pos (0, 620)
             add framed_portrait(speaker, 'speaker') pos FRAME_SPEAKER_POS[frame_style]
@@ -92,5 +97,8 @@ screen say(who, what):
             text scene_heading_line() style "stage_heading" pos (FRAME_TEXT_X, top - 100)
         if who:
             text who.lower() id "who" pos (FRAME_TEXT_X, top - 50)
-        text what id "what" pos (FRAME_TEXT_X, top) xmaximum FRAME_TEXT_W size text_size(38)
+        if shade_style == 'pool-shadow':
+            text what id "what" pos (FRAME_TEXT_X, top) xmaximum FRAME_TEXT_W size text_size(38) outlines [(absolute(12), "#00000022", 0, 2), (absolute(7), "#00000040", 0, 2), (absolute(3), "#00000066", 0, 1), (absolute(1), "#0000007a", 0, 0)]
+        else:
+            text what id "what" pos (FRAME_TEXT_X, top) xmaximum FRAME_TEXT_W size text_size(38)
     use quick_menu('stage')
