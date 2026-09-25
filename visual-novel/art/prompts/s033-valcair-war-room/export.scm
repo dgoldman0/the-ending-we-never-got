@@ -1,0 +1,7 @@
+(let* ((p "/home/kir/.codex/generated_images/01a0cf96-3dfc-7501-b20b-81a2b39d7ac6/exec-f2b943ba-3c65-4c6c-b4c0-967227fadf31.png") (i(car(gimp-file-load RUN-NONINTERACTIVE p p))) (l(car(gimp-image-get-active-layer i))))
+(gimp-context-set-interpolation INTERPOLATION-NOHALO)
+(gimp-image-crop i 1472 828 100 40)
+(gimp-image-scale i 1920 1080)
+(file-png-save RUN-NONINTERACTIVE i l "visual-novel/renpy/game/art/scenes/s033-valcair-war-room.png" "visual-novel/renpy/game/art/scenes/s033-valcair-war-room.png" 0 9 0 0 0 0 0)
+(gimp-image-delete i))
+(gimp-quit 0)
