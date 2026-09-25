@@ -1,0 +1,8 @@
+(let* ((im (car (gimp-image-new 1728 972 RGB))) (bg (car (gimp-layer-new im 1728 972 RGB-IMAGE "Narrow missing background only" 100 NORMAL-MODE))) (base 0) (flat 0))
+ (gimp-image-insert-layer im bg 0 -1)
+ (gimp-context-set-foreground '(214 211 202)) (gimp-drawable-fill bg FOREGROUND-FILL)
+ (set! base (car (gimp-file-load-layer RUN-NONINTERACTIVE im "/home/kir/.codex/generated_images/01a0d813-f663-7722-bc3f-28105deca2e9/exec-059bde00-0bd5-4e7d-851d-319d29c0f6ed.png")))
+ (gimp-image-insert-layer im base 0 -1) (gimp-layer-set-offsets base 28 0)
+ (set! flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+ (file-jpeg-save RUN-NONINTERACTIVE im flat "/tmp/s042-base-margin-guide.jpg" "guide" 0.94 0 1 1 "" 0 1 0 0)
+ (gimp-image-delete im)) (gimp-quit 0)

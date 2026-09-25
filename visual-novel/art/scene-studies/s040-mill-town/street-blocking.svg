@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+<rect width="900" height="650" fill="#f2ede2"/>
+<text x="24" y="28" font-family="sans-serif" font-size="18" fill="#24221f">TOP VIEW — one continuous cart route; not a camera composition</text>
+<rect x="310" y="60" width="290" height="565" fill="#c6beb0" stroke="#84796a" stroke-width="3"/>
+<path d="M440 605 L440 160" fill="none" stroke="#667c4b" stroke-width="8"/>
+<path d="M422 184 L440 151 L458 184" fill="none" stroke="#667c4b" stroke-width="8"/>
+<text x="385" y="550" font-family="sans-serif" font-size="18">CONTINUOUS ROAD</text>
+<text x="370" y="578" font-family="sans-serif" font-size="16">no water / no steps / no fence</text>
+<rect x="324" y="75" width="260" height="42" fill="#161a23"/>
+<rect x="413" y="76" width="55" height="40" fill="#faf6e1"/>
+<text x="306" y="55" font-family="sans-serif" font-size="17">Gateway: black LIGHT only</text>
+<rect x="610" y="50" width="214" height="174" fill="#aaa391" stroke="#595548" stroke-width="5"/>
+<text x="656" y="100" font-family="sans-serif" font-size="21">STONE TOWER</text>
+<rect x="670" y="206" width="60" height="20" fill="#382d22"/>
+<text x="659" y="259" font-family="sans-serif" font-size="16">small side door</text>
+<rect x="611" y="106" width="16" height="48" fill="#53524d"/>
+<text x="650" y="152" font-family="sans-serif" font-size="16">one window above road</text>
+<path d="M596 470 L596 245 L690 245" fill="none" stroke="#9e6757" stroke-width="4" stroke-dasharray="8 5"/>
+<text x="625" y="400" font-family="sans-serif" font-size="15">narrow foot passage</text>
+<text x="625" y="421" font-family="sans-serif" font-size="15">not a cart bypass</text>
+<rect x="60" y="204" width="232" height="410" fill="#b7ad99" stroke="#746750" stroke-width="6"/>
+<text x="71" y="190" font-family="sans-serif" font-size="18">COVERED LOADING ARCH/BAY</text>
+<path d="M188 270 C232 249 286 271 343 323 C365 343 392 308 397 270 L397 157" fill="none" stroke="#667c4b" stroke-width="5" stroke-dasharray="9 6"/>
+<rect x="166" y="298" width="76" height="102" fill="#8e6848" stroke="#4c3e2d" stroke-width="3"/>
+<rect x="158" y="317" width="10" height="53" fill="#3c3932"/><rect x="241" y="317" width="10" height="53" fill="#3c3932"/>
+<rect x="170" y="304" width="68" height="18" fill="#493925"/>
+<rect x="183" y="242" width="36" height="48" rx="14" fill="#78563b"/><path d="M176 300 L180 247 M230 300 L222 247" stroke="#403525" stroke-width="4"/>
+<text x="61" y="279" font-family="sans-serif" font-size="14">bay horse / hitched</text>
+<rect x="166" y="498" width="76" height="96" fill="#8e6848" stroke="#4c3e2d" stroke-width="3"/>
+<rect x="158" y="516" width="10" height="52" fill="#3c3932"/><rect x="241" y="516" width="10" height="52" fill="#3c3932"/>
+<rect x="183" y="437" width="36" height="50" rx="14" fill="#78563b"/>
+<text x="79" y="585" font-family="sans-serif" font-size="14">second cart behind</text>
+<circle cx="300" cy="355" r="14" fill="#1f3453"/><circle cx="275" cy="335" r="14" fill="#6c523d"/>
+<text x="322" y="365" font-family="sans-serif" font-size="16">Mara holds driver</text>
+<circle cx="345" cy="472" r="16" fill="#5d6b78"/><text x="366" y="484" font-family="sans-serif" font-size="17">Tessa</text>
+<path d="M350 453 L435 113" stroke="#fffdf3" stroke-width="7"/>
+<circle cx="287" cy="440" r="13" fill="#ae813e"/><text x="185" y="422" font-family="sans-serif" font-size="15">Elin points to window</text>
+<circle cx="106" cy="355" r="14" fill="#4b5a70"/><rect x="119" y="339" width="14" height="39" rx="4" fill="#675343"/>
+<text x="70" y="391" font-family="sans-serif" font-size="14">Olan/family</text>
+<text x="64" y="413" font-family="sans-serif" font-size="14">RIGHT shield</text>
+<text x="655" y="570" font-family="sans-serif" font-size="16">Mill channel runs elsewhere</text>
+<text x="655" y="593" font-family="sans-serif" font-size="16">beside workshops, out of frame.</text>
+</svg>

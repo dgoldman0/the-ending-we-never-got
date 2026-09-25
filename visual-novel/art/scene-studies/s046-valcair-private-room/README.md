@@ -1,0 +1,17 @@
+# S046 — Valcair's private room
+
+## Brief before generation
+
+Prepared25September2026 during the Harrow finishing pass; **not generated**. Read the complete source1784–1841, adjacent extraction/infirmary dressing and next predawn scene, current character/location/continuity notes and Chapter08 preflight. Choose1822: Valcair has stopped after one step toward Lucan, and Lucan presses his bandaged LEFT forearm against his side before speaking again. The later glance at the dry coat, bargain and departure are not simultaneous added actions.
+
+Two named people only. Lucan stays near the open entrance at screen-left; Valcair stands farther into the room at screen-right, a real walking gap between them. A tall-backed chair beside the hearth carries the offered clean dry coat and folded clothes. They remain on that chair, not worn by Lucan. A small ordinary side table/lamp may establish the private room; no sprawling command table or throne. Use an oblique chest-height view with natural adult bodies and visible floor support, sufficient negative space to make the stopped approach legible. No theatrical looming, giant heads, shrunken legs or furniture merging with the floor.
+
+Lucan is the current later portrait: tall lean mid-twenties man, warm medium-brown face, dark jaw-length/tied hair, short dark swept-back horns, bottle-green coat/pale shirt/dark trousers/boots, small divided white eight-point star. LEFT sleeve is cut away around the plain cloth forearm dressing established in S045; his own right hand may support that dressed forearm against his side. No fresh new wound, sling, matching RIGHT dressing or Gray Scar crossbow. His shoulders and mouth show anger struggling through pain; this is not a calm model portrait. Valcair is the older early-fifties private key, gray-threaded dark hair/beard, broad angular medium-brown face and ridged horns, one charcoal household robe/tunic with simple clasp. No armored shoulder set, black combat ward or spear in a private exchange.
+
+Keep the same dressing/clothing wear as the actual final S045 before rendering. Identity portraits control face/horns; no rejected S033 table image is a reference. The room's chair/hearth/door positions are a modest workable adaptation choice, not additional canon. Clean dry coat should be a plausible fit for Lucan, visibly separate from Valcair's clothes.
+
+Neutral readable night source exposure from hearth and a safe modest oil lamp, no baked game grade or orange glamour. Target16:9,1920×1080 delivery; ≥70px top room, faces and supporting hand/dressing above y760, quiet lower reading band. Preserve actual full-body proportions by camera distance. Native review must inspect forearm side/length, finger contact, cloth dressing, horns/star, chair/clothes separation, planted feet and the route back out. Cross-compare with actual S045 and later S047 rather than treating this brief as visual approval.
+
+## Review
+
+Pending Chapter08 generation and whole/native/peer review. This one source image does not illustrate every state of the confrontation or establish runtime clearance.

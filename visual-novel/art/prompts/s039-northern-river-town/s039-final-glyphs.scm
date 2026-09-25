@@ -1,0 +1,8 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s039-northern-river-town/local-finish-master.xcf" "master"))) (layers (gimp-image-get-layers img)) (rows (aref (cadr layers) 1)))
+(gimp-selection-none img)
+(plug-in-gauss RUN-NONINTERACTIVE img rows 3.0 2.3 1)
+(gimp-item-set-name rows "Casualty rows: native glyphs unreadable; claim untouched")
+(gimp-xcf-save RUN-NONINTERACTIVE img rows "visual-novel/art/scene-studies/s039-northern-river-town/local-finish-master.xcf" "master")
+(let ((flat (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE img flat "visual-novel/renpy/game/art/scenes/s039-northern-river-town.png" "final" 0 9 0 0 0 0 0))
+(gimp-image-delete img))
+(gimp-quit 0)

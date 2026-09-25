@@ -1,0 +1,8 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s043-river-provinces/seasons-local-master.xcf" "visual-novel/art/scene-studies/s043-river-provinces/seasons-local-master.xcf"))) (flat 0))
+(set! flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s043-seasons-reopened-native.png" "/tmp/s043-seasons-reopened-native.png" 0 9 0 0 0 0 0)
+(gimp-context-set-interpolation INTERPOLATION-NOHALO)
+(gimp-image-crop im 1664 936 4 2) (gimp-image-scale im 1920 1080)
+(set! flat (car (gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s043-seasons-reopened-final.png" "/tmp/s043-seasons-reopened-final.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im)) (gimp-quit 0)
