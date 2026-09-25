@@ -311,6 +311,46 @@ def plan_items():
     return items
 
 
+# ------------------------------------------------------------ reading shade
+# Behind the text the painting falls softly out of focus and into its own
+# shadow colour (the reading screen's shade, chosen by the user on 24
+# September). For every graded painting this writes the blurred lower band
+# (art/lit/soft/) and records the painting's shadow colour in the manifest.
+
+SOFT_TOP = 640                               # the band starts above the shade
+
+
+def lens(lin, r):
+    """A lens (disc) blur, so highlights bloom like an out-of-focus lens."""
+    k = int(np.ceil(r)) * 2 + 1
+    yy, xx = np.mgrid[0:k, 0:k].astype(np.float32) - k // 2
+    disc = np.clip(r + 0.5 - np.sqrt(xx ** 2 + yy ** 2), 0, 1)
+    return cv2.filter2D(lin, -1, disc / disc.sum(), borderType=cv2.BORDER_REFLECT)
+
+
+def reading_shade(graded_path):
+    """(soft band path, shadow colour) for a graded painting."""
+    mask = np.asarray(Image.open(GAME / 'ui/reading-shade-mask.png'))[SOFT_TOP:, :, 3].astype(np.float32) / 255
+    src = np.asarray(Image.open(GAME / graded_path).convert('RGB').resize(SIZE, Image.LANCZOS), np.float32) / 255
+    band = to_lin(src[SOFT_TOP:])
+    t = mask * 4
+    levels = [band, lens(band, 3), lens(band, 7), lens(band, 13), lens(band, 20)]
+    out = to_srgb(sum(np.clip(1 - np.abs(t - i), 0, 1)[..., None] * level for i, level in enumerate(levels)))
+    # restore the painting's grain so the blur never looks smeared
+    noise = cv2.GaussianBlur(np.random.default_rng(3).normal(0, 1, mask.shape).astype(np.float32), (0, 0), 0.7)
+    l = lum(out)
+    out = out + (noise * 0.045 * mask * l * (1 - l))[..., None]
+    soft = 'art/lit/soft/' + Path(graded_path).name
+    (GAME / soft).parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray((np.clip(out, 0, 1) * 255 + 0.5).astype('uint8')).save(GAME / soft, quality=88, method=6)
+    # the shadow colour: the darkest fifth of the lower half, about 20% bright
+    small = cv2.resize(src, (480, 270), interpolation=cv2.INTER_AREA)[135:].reshape(-1, 3)
+    ls = lum(small)
+    dark = small[ls <= np.percentile(ls, 20)].mean(0) + 1e-3
+    hue = np.clip(dark / float(lum(dark[None])[0]), 0.75, 1.3)
+    return soft, [round(float(c), 3) for c in np.clip(hue * 0.20, 0.04, 0.4)]
+
+
 def output_path(key, mode):
     kind, name = key.split(':', 1)
     stem = name if kind == 'stage' else name[len('art/'):].rsplit('.', 1)[0].replace('/', '--')
@@ -352,7 +392,8 @@ def main():
         MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True) + '\n')
         print('%d portraits in the plan, %d files graded now.' % (len(manifest['portraits']), graded))
         return
-    manifest = {'stages': {}, 'images': {}, 'registers': {}}
+    old = json.loads(MANIFEST.read_text()) if MANIFEST.is_file() else {}
+    manifest = {'stages': {}, 'images': {}, 'registers': {}, 'shade': {}}
     graded = 0
     for key, register, source, inputs in plan_items():
         paths = {mode: output_path(key, mode) for mode in ('intense', 'softened')}
@@ -370,6 +411,14 @@ def main():
         kind, name = key.split(':', 1)
         manifest['stages' if kind == 'stage' else 'images'][name] = paths
         manifest['registers'][name] = register
+        for path in paths.values():
+            known = old.get('shade', {}).get(path)
+            if known and (GAME / known['soft']).is_file() and \
+                    (GAME / known['soft']).stat().st_mtime >= (GAME / path).stat().st_mtime:
+                manifest['shade'][path] = known
+            else:
+                soft, tint = reading_shade(path)
+                manifest['shade'][path] = {'soft': soft, 'tint': tint}
     manifest['portraits'], portrait_count = grade_portraits(args.force)
     MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True) + '\n')
     total = len(manifest['stages']) + len(manifest['images'])

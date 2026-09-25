@@ -10,6 +10,7 @@ testcase rovel_layout_gate:
     screenshot 'rovel-night-compact.png'
     advance until eval source_line == 112
     screenshot 'rovel-quiet-drawing.png'
+    click id 'reading_controls'
     click id 'look_closer'
     screenshot 'rovel-first-night-inspection.png'
     click id 'menu_return'

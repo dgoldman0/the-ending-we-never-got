@@ -104,10 +104,11 @@ define config.game_main_transition = motion(0.6)
 define config.default_textshader = "dissolve"
 define config.default_text_cps = 52
 
-# The reading knot that marks a finished line.
+# The small gilt lozenge that marks a finished line (the old ring read as a
+# registered-trademark sign).
 image ctc_knot:
-    "ui/knot-small.png"
-    yoffset 4
+    "ui/lozenge.png"
+    yoffset 3
     alpha 0.0
     easein 0.35 alpha 1.0
     block:

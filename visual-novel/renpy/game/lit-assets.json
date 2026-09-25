@@ -2116,6 +2116,1304 @@
   "window-pause": "ordinary",
   "window-together": "ordinary"
  },
+ "shade": {
+  "art/lit/arch-call-intense.webp": {
+   "soft": "art/lit/soft/arch-call-intense.webp",
+   "tint": [
+    0.215,
+    0.196,
+    0.195
+   ]
+  },
+  "art/lit/arch-call-softened.webp": {
+   "soft": "art/lit/soft/arch-call-softened.webp",
+   "tint": [
+    0.211,
+    0.196,
+    0.203
+   ]
+  },
+  "art/lit/arch-promise-intense.webp": {
+   "soft": "art/lit/soft/arch-promise-intense.webp",
+   "tint": [
+    0.216,
+    0.196,
+    0.193
+   ]
+  },
+  "art/lit/arch-promise-softened.webp": {
+   "soft": "art/lit/soft/arch-promise-softened.webp",
+   "tint": [
+    0.212,
+    0.196,
+    0.201
+   ]
+  },
+  "art/lit/arch-question-intense.webp": {
+   "soft": "art/lit/soft/arch-question-intense.webp",
+   "tint": [
+    0.218,
+    0.196,
+    0.187
+   ]
+  },
+  "art/lit/arch-question-softened.webp": {
+   "soft": "art/lit/soft/arch-question-softened.webp",
+   "tint": [
+    0.214,
+    0.196,
+    0.196
+   ]
+  },
+  "art/lit/arch-raised-intense.webp": {
+   "soft": "art/lit/soft/arch-raised-intense.webp",
+   "tint": [
+    0.217,
+    0.196,
+    0.188
+   ]
+  },
+  "art/lit/arch-raised-softened.webp": {
+   "soft": "art/lit/soft/arch-raised-softened.webp",
+   "tint": [
+    0.213,
+    0.196,
+    0.197
+   ]
+  },
+  "art/lit/arch-refusal-intense.webp": {
+   "soft": "art/lit/soft/arch-refusal-intense.webp",
+   "tint": [
+    0.217,
+    0.196,
+    0.189
+   ]
+  },
+  "art/lit/arch-refusal-softened.webp": {
+   "soft": "art/lit/soft/arch-refusal-softened.webp",
+   "tint": [
+    0.213,
+    0.196,
+    0.198
+   ]
+  },
+  "art/lit/arrival-intense.webp": {
+   "soft": "art/lit/soft/arrival-intense.webp",
+   "tint": [
+    0.226,
+    0.196,
+    0.165
+   ]
+  },
+  "art/lit/arrival-softened.webp": {
+   "soft": "art/lit/soft/arrival-softened.webp",
+   "tint": [
+    0.232,
+    0.195,
+    0.159
+   ]
+  },
+  "art/lit/ceremony-applause-intense.webp": {
+   "soft": "art/lit/soft/ceremony-applause-intense.webp",
+   "tint": [
+    0.23,
+    0.194,
+    0.172
+   ]
+  },
+  "art/lit/ceremony-applause-softened.webp": {
+   "soft": "art/lit/soft/ceremony-applause-softened.webp",
+   "tint": [
+    0.241,
+    0.192,
+    0.162
+   ]
+  },
+  "art/lit/ceremony-dais-intense.webp": {
+   "soft": "art/lit/soft/ceremony-dais-intense.webp",
+   "tint": [
+    0.243,
+    0.19,
+    0.169
+   ]
+  },
+  "art/lit/ceremony-dais-softened.webp": {
+   "soft": "art/lit/soft/ceremony-dais-softened.webp",
+   "tint": [
+    0.25,
+    0.188,
+    0.173
+   ]
+  },
+  "art/lit/ceremony-intervention-intense.webp": {
+   "soft": "art/lit/soft/ceremony-intervention-intense.webp",
+   "tint": [
+    0.231,
+    0.193,
+    0.181
+   ]
+  },
+  "art/lit/ceremony-intervention-softened.webp": {
+   "soft": "art/lit/soft/ceremony-intervention-softened.webp",
+   "tint": [
+    0.227,
+    0.193,
+    0.188
+   ]
+  },
+  "art/lit/ceremony-mantle-intense.webp": {
+   "soft": "art/lit/soft/ceremony-mantle-intense.webp",
+   "tint": [
+    0.23,
+    0.194,
+    0.169
+   ]
+  },
+  "art/lit/ceremony-mantle-softened.webp": {
+   "soft": "art/lit/soft/ceremony-mantle-softened.webp",
+   "tint": [
+    0.234,
+    0.193,
+    0.164
+   ]
+  },
+  "art/lit/ceremony-orders-intense.webp": {
+   "soft": "art/lit/soft/ceremony-orders-intense.webp",
+   "tint": [
+    0.234,
+    0.191,
+    0.19
+   ]
+  },
+  "art/lit/ceremony-orders-softened.webp": {
+   "soft": "art/lit/soft/ceremony-orders-softened.webp",
+   "tint": [
+    0.231,
+    0.192,
+    0.192
+   ]
+  },
+  "art/lit/ceremony-refusal-intense.webp": {
+   "soft": "art/lit/soft/ceremony-refusal-intense.webp",
+   "tint": [
+    0.243,
+    0.192,
+    0.156
+   ]
+  },
+  "art/lit/ceremony-refusal-softened.webp": {
+   "soft": "art/lit/soft/ceremony-refusal-softened.webp",
+   "tint": [
+    0.254,
+    0.189,
+    0.15
+   ]
+  },
+  "art/lit/ceremony-refused-chair-intense.webp": {
+   "soft": "art/lit/soft/ceremony-refused-chair-intense.webp",
+   "tint": [
+    0.238,
+    0.193,
+    0.16
+   ]
+  },
+  "art/lit/ceremony-refused-chair-softened.webp": {
+   "soft": "art/lit/soft/ceremony-refused-chair-softened.webp",
+   "tint": [
+    0.248,
+    0.191,
+    0.152
+   ]
+  },
+  "art/lit/ceremony-yield-intense.webp": {
+   "soft": "art/lit/soft/ceremony-yield-intense.webp",
+   "tint": [
+    0.223,
+    0.194,
+    0.194
+   ]
+  },
+  "art/lit/ceremony-yield-softened.webp": {
+   "soft": "art/lit/soft/ceremony-yield-softened.webp",
+   "tint": [
+    0.221,
+    0.194,
+    0.199
+   ]
+  },
+  "art/lit/cloak-intense.webp": {
+   "soft": "art/lit/soft/cloak-intense.webp",
+   "tint": [
+    0.231,
+    0.192,
+    0.183
+   ]
+  },
+  "art/lit/cloak-softened.webp": {
+   "soft": "art/lit/soft/cloak-softened.webp",
+   "tint": [
+    0.22,
+    0.195,
+    0.194
+   ]
+  },
+  "art/lit/closure-intense.webp": {
+   "soft": "art/lit/soft/closure-intense.webp",
+   "tint": [
+    0.243,
+    0.193,
+    0.15
+   ]
+  },
+  "art/lit/closure-softened.webp": {
+   "soft": "art/lit/soft/closure-softened.webp",
+   "tint": [
+    0.243,
+    0.192,
+    0.151
+   ]
+  },
+  "art/lit/convoy-guards-intense.webp": {
+   "soft": "art/lit/soft/convoy-guards-intense.webp",
+   "tint": [
+    0.209,
+    0.199,
+    0.179
+   ]
+  },
+  "art/lit/convoy-guards-softened.webp": {
+   "soft": "art/lit/soft/convoy-guards-softened.webp",
+   "tint": [
+    0.214,
+    0.197,
+    0.19
+   ]
+  },
+  "art/lit/convoy-mother-intense.webp": {
+   "soft": "art/lit/soft/convoy-mother-intense.webp",
+   "tint": [
+    0.209,
+    0.199,
+    0.179
+   ]
+  },
+  "art/lit/convoy-mother-softened.webp": {
+   "soft": "art/lit/soft/convoy-mother-softened.webp",
+   "tint": [
+    0.219,
+    0.196,
+    0.182
+   ]
+  },
+  "art/lit/message-intense.webp": {
+   "soft": "art/lit/soft/message-intense.webp",
+   "tint": [
+    0.224,
+    0.192,
+    0.204
+   ]
+  },
+  "art/lit/message-softened.webp": {
+   "soft": "art/lit/soft/message-softened.webp",
+   "tint": [
+    0.211,
+    0.194,
+    0.224
+   ]
+  },
+  "art/lit/milk-intense.webp": {
+   "soft": "art/lit/soft/milk-intense.webp",
+   "tint": [
+    0.221,
+    0.196,
+    0.174
+   ]
+  },
+  "art/lit/milk-softened.webp": {
+   "soft": "art/lit/soft/milk-softened.webp",
+   "tint": [
+    0.217,
+    0.197,
+    0.177
+   ]
+  },
+  "art/lit/night-alone-intense.webp": {
+   "soft": "art/lit/soft/night-alone-intense.webp",
+   "tint": [
+    0.233,
+    0.19,
+    0.206
+   ]
+  },
+  "art/lit/night-alone-softened.webp": {
+   "soft": "art/lit/soft/night-alone-softened.webp",
+   "tint": [
+    0.26,
+    0.181,
+    0.15
+   ]
+  },
+  "art/lit/night-blocked-intense.webp": {
+   "soft": "art/lit/soft/night-blocked-intense.webp",
+   "tint": [
+    0.229,
+    0.191,
+    0.203
+   ]
+  },
+  "art/lit/night-blocked-softened.webp": {
+   "soft": "art/lit/soft/night-blocked-softened.webp",
+   "tint": [
+    0.234,
+    0.192,
+    0.176
+   ]
+  },
+  "art/lit/night-chair-intense.webp": {
+   "soft": "art/lit/soft/night-chair-intense.webp",
+   "tint": [
+    0.247,
+    0.186,
+    0.205
+   ]
+  },
+  "art/lit/night-chair-softened.webp": {
+   "soft": "art/lit/soft/night-chair-softened.webp",
+   "tint": [
+    0.26,
+    0.18,
+    0.15
+   ]
+  },
+  "art/lit/night-cloak-intense.webp": {
+   "soft": "art/lit/soft/night-cloak-intense.webp",
+   "tint": [
+    0.22,
+    0.194,
+    0.2
+   ]
+  },
+  "art/lit/night-cloak-softened.webp": {
+   "soft": "art/lit/soft/night-cloak-softened.webp",
+   "tint": [
+    0.26,
+    0.177,
+    0.158
+   ]
+  },
+  "art/lit/night-drawing-intense.webp": {
+   "soft": "art/lit/soft/night-drawing-intense.webp",
+   "tint": [
+    0.245,
+    0.186,
+    0.202
+   ]
+  },
+  "art/lit/night-drawing-softened.webp": {
+   "soft": "art/lit/soft/night-drawing-softened.webp",
+   "tint": [
+    0.26,
+    0.177,
+    0.15
+   ]
+  },
+  "art/lit/night-exchange-intense.webp": {
+   "soft": "art/lit/soft/night-exchange-intense.webp",
+   "tint": [
+    0.222,
+    0.193,
+    0.204
+   ]
+  },
+  "art/lit/night-exchange-softened.webp": {
+   "soft": "art/lit/soft/night-exchange-softened.webp",
+   "tint": [
+    0.235,
+    0.192,
+    0.172
+   ]
+  },
+  "art/lit/night-restart-intense.webp": {
+   "soft": "art/lit/soft/night-restart-intense.webp",
+   "tint": [
+    0.25,
+    0.185,
+    0.202
+   ]
+  },
+  "art/lit/night-restart-softened.webp": {
+   "soft": "art/lit/soft/night-restart-softened.webp",
+   "tint": [
+    0.26,
+    0.174,
+    0.15
+   ]
+  },
+  "art/lit/night-window-intense.webp": {
+   "soft": "art/lit/soft/night-window-intense.webp",
+   "tint": [
+    0.226,
+    0.192,
+    0.203
+   ]
+  },
+  "art/lit/night-window-softened.webp": {
+   "soft": "art/lit/soft/night-window-softened.webp",
+   "tint": [
+    0.26,
+    0.185,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--detail-drawing-intense.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-drawing-intense.webp",
+   "tint": [
+    0.26,
+    0.15,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--detail-drawing-softened.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-drawing-softened.webp",
+   "tint": [
+    0.26,
+    0.15,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--detail-phone-intense.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-phone-intense.webp",
+   "tint": [
+    0.258,
+    0.192,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--detail-phone-softened.webp": {
+   "soft": "art/lit/soft/opening--cg--detail-phone-softened.webp",
+   "tint": [
+    0.23,
+    0.202,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--drawing-restart-intense.webp": {
+   "soft": "art/lit/soft/opening--cg--drawing-restart-intense.webp",
+   "tint": [
+    0.245,
+    0.186,
+    0.201
+   ]
+  },
+  "art/lit/opening--cg--drawing-restart-softened.webp": {
+   "soft": "art/lit/soft/opening--cg--drawing-restart-softened.webp",
+   "tint": [
+    0.26,
+    0.174,
+    0.15
+   ]
+  },
+  "art/lit/opening--cg--purification-cleared-intense.webp": {
+   "soft": "art/lit/soft/opening--cg--purification-cleared-intense.webp",
+   "tint": [
+    0.223,
+    0.197,
+    0.157
+   ]
+  },
+  "art/lit/opening--cg--purification-cleared-softened.webp": {
+   "soft": "art/lit/soft/opening--cg--purification-cleared-softened.webp",
+   "tint": [
+    0.23,
+    0.195,
+    0.159
+   ]
+  },
+  "art/lit/petition-intense.webp": {
+   "soft": "art/lit/soft/petition-intense.webp",
+   "tint": [
+    0.225,
+    0.194,
+    0.189
+   ]
+  },
+  "art/lit/petition-softened.webp": {
+   "soft": "art/lit/soft/petition-softened.webp",
+   "tint": [
+    0.223,
+    0.194,
+    0.186
+   ]
+  },
+  "art/lit/release-intense.webp": {
+   "soft": "art/lit/soft/release-intense.webp",
+   "tint": [
+    0.223,
+    0.194,
+    0.193
+   ]
+  },
+  "art/lit/release-softened.webp": {
+   "soft": "art/lit/soft/release-softened.webp",
+   "tint": [
+    0.219,
+    0.195,
+    0.193
+   ]
+  },
+  "art/lit/return-intense.webp": {
+   "soft": "art/lit/soft/return-intense.webp",
+   "tint": [
+    0.229,
+    0.195,
+    0.166
+   ]
+  },
+  "art/lit/return-softened.webp": {
+   "soft": "art/lit/soft/return-softened.webp",
+   "tint": [
+    0.234,
+    0.194,
+    0.16
+   ]
+  },
+  "art/lit/rovel--cg--ceremony-applause-intense.webp": {
+   "soft": "art/lit/soft/rovel--cg--ceremony-applause-intense.webp",
+   "tint": [
+    0.23,
+    0.194,
+    0.172
+   ]
+  },
+  "art/lit/rovel--cg--ceremony-applause-softened.webp": {
+   "soft": "art/lit/soft/rovel--cg--ceremony-applause-softened.webp",
+   "tint": [
+    0.241,
+    0.192,
+    0.162
+   ]
+  },
+  "art/lit/rovel--details--applause-hand-intense.webp": {
+   "soft": "art/lit/soft/rovel--details--applause-hand-intense.webp",
+   "tint": [
+    0.247,
+    0.19,
+    0.164
+   ]
+  },
+  "art/lit/rovel--details--applause-hand-softened.webp": {
+   "soft": "art/lit/soft/rovel--details--applause-hand-softened.webp",
+   "tint": [
+    0.25,
+    0.19,
+    0.157
+   ]
+  },
+  "art/lit/rovel--details--treatment-blue-intense.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-blue-intense.webp",
+   "tint": [
+    0.26,
+    0.183,
+    0.15
+   ]
+  },
+  "art/lit/rovel--details--treatment-blue-softened.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-blue-softened.webp",
+   "tint": [
+    0.26,
+    0.18,
+    0.15
+   ]
+  },
+  "art/lit/rovel--details--treatment-white-intense.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-white-intense.webp",
+   "tint": [
+    0.243,
+    0.192,
+    0.155
+   ]
+  },
+  "art/lit/rovel--details--treatment-white-softened.webp": {
+   "soft": "art/lit/soft/rovel--details--treatment-white-softened.webp",
+   "tint": [
+    0.249,
+    0.19,
+    0.155
+   ]
+  },
+  "art/lit/scenes--s006-convoy-camp-intense.webp": {
+   "soft": "art/lit/soft/scenes--s006-convoy-camp-intense.webp",
+   "tint": [
+    0.21,
+    0.199,
+    0.181
+   ]
+  },
+  "art/lit/scenes--s006-convoy-camp-softened.webp": {
+   "soft": "art/lit/soft/scenes--s006-convoy-camp-softened.webp",
+   "tint": [
+    0.217,
+    0.197,
+    0.178
+   ]
+  },
+  "art/lit/scenes--s007-roadside-inn-intense.webp": {
+   "soft": "art/lit/soft/scenes--s007-roadside-inn-intense.webp",
+   "tint": [
+    0.26,
+    0.161,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s007-roadside-inn-softened.webp": {
+   "soft": "art/lit/soft/scenes--s007-roadside-inn-softened.webp",
+   "tint": [
+    0.26,
+    0.165,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s008-bellweir-market-intense.webp": {
+   "soft": "art/lit/soft/scenes--s008-bellweir-market-intense.webp",
+   "tint": [
+    0.198,
+    0.201,
+    0.198
+   ]
+  },
+  "art/lit/scenes--s008-bellweir-market-softened.webp": {
+   "soft": "art/lit/soft/scenes--s008-bellweir-market-softened.webp",
+   "tint": [
+    0.205,
+    0.199,
+    0.199
+   ]
+  },
+  "art/lit/scenes--s009-bellweir-river-intense.webp": {
+   "soft": "art/lit/soft/scenes--s009-bellweir-river-intense.webp",
+   "tint": [
+    0.219,
+    0.198,
+    0.166
+   ]
+  },
+  "art/lit/scenes--s009-bellweir-river-softened.webp": {
+   "soft": "art/lit/soft/scenes--s009-bellweir-river-softened.webp",
+   "tint": [
+    0.231,
+    0.195,
+    0.16
+   ]
+  },
+  "art/lit/scenes--s009-boat-drawing-intense.webp": {
+   "soft": "art/lit/soft/scenes--s009-boat-drawing-intense.webp",
+   "tint": [
+    0.229,
+    0.195,
+    0.161
+   ]
+  },
+  "art/lit/scenes--s009-boat-drawing-softened.webp": {
+   "soft": "art/lit/soft/scenes--s009-boat-drawing-softened.webp",
+   "tint": [
+    0.238,
+    0.193,
+    0.157
+   ]
+  },
+  "art/lit/scenes--s009-rowing-intense.webp": {
+   "soft": "art/lit/soft/scenes--s009-rowing-intense.webp",
+   "tint": [
+    0.19,
+    0.203,
+    0.204
+   ]
+  },
+  "art/lit/scenes--s009-rowing-softened.webp": {
+   "soft": "art/lit/soft/scenes--s009-rowing-softened.webp",
+   "tint": [
+    0.203,
+    0.2,
+    0.192
+   ]
+  },
+  "art/lit/scenes--s010-bellweir-hills-intense.webp": {
+   "soft": "art/lit/soft/scenes--s010-bellweir-hills-intense.webp",
+   "tint": [
+    0.26,
+    0.179,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s010-bellweir-hills-softened.webp": {
+   "soft": "art/lit/soft/scenes--s010-bellweir-hills-softened.webp",
+   "tint": [
+    0.26,
+    0.173,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s011-bellweir-causeway-intense.webp": {
+   "soft": "art/lit/soft/scenes--s011-bellweir-causeway-intense.webp",
+   "tint": [
+    0.244,
+    0.188,
+    0.186
+   ]
+  },
+  "art/lit/scenes--s011-bellweir-causeway-softened.webp": {
+   "soft": "art/lit/soft/scenes--s011-bellweir-causeway-softened.webp",
+   "tint": [
+    0.24,
+    0.189,
+    0.194
+   ]
+  },
+  "art/lit/scenes--s011-sanctuary-intense.webp": {
+   "soft": "art/lit/soft/scenes--s011-sanctuary-intense.webp",
+   "tint": [
+    0.241,
+    0.19,
+    0.182
+   ]
+  },
+  "art/lit/scenes--s011-sanctuary-softened.webp": {
+   "soft": "art/lit/soft/scenes--s011-sanctuary-softened.webp",
+   "tint": [
+    0.248,
+    0.187,
+    0.189
+   ]
+  },
+  "art/lit/scenes--s012-temple-reading-room-intense.webp": {
+   "soft": "art/lit/soft/scenes--s012-temple-reading-room-intense.webp",
+   "tint": [
+    0.26,
+    0.161,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s012-temple-reading-room-softened.webp": {
+   "soft": "art/lit/soft/scenes--s012-temple-reading-room-softened.webp",
+   "tint": [
+    0.26,
+    0.163,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s013-summoning-chamber-later-intense.webp": {
+   "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-intense.webp",
+   "tint": [
+    0.246,
+    0.192,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s013-summoning-chamber-later-softened.webp": {
+   "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-softened.webp",
+   "tint": [
+    0.251,
+    0.19,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s014-boots-and-cap-intense.webp": {
+   "soft": "art/lit/soft/scenes--s014-boots-and-cap-intense.webp",
+   "tint": [
+    0.242,
+    0.19,
+    0.174
+   ]
+  },
+  "art/lit/scenes--s014-boots-and-cap-softened.webp": {
+   "soft": "art/lit/soft/scenes--s014-boots-and-cap-softened.webp",
+   "tint": [
+    0.254,
+    0.187,
+    0.169
+   ]
+  },
+  "art/lit/scenes--s014-relief-warehouse-intense.webp": {
+   "soft": "art/lit/soft/scenes--s014-relief-warehouse-intense.webp",
+   "tint": [
+    0.224,
+    0.195,
+    0.18
+   ]
+  },
+  "art/lit/scenes--s014-relief-warehouse-softened.webp": {
+   "soft": "art/lit/soft/scenes--s014-relief-warehouse-softened.webp",
+   "tint": [
+    0.236,
+    0.192,
+    0.175
+   ]
+  },
+  "art/lit/scenes--s015-elin-lodging-intense.webp": {
+   "soft": "art/lit/soft/scenes--s015-elin-lodging-intense.webp",
+   "tint": [
+    0.231,
+    0.195,
+    0.16
+   ]
+  },
+  "art/lit/scenes--s015-elin-lodging-softened.webp": {
+   "soft": "art/lit/soft/scenes--s015-elin-lodging-softened.webp",
+   "tint": [
+    0.24,
+    0.192,
+    0.158
+   ]
+  },
+  "art/lit/scenes--s016-council-room-intense.webp": {
+   "soft": "art/lit/soft/scenes--s016-council-room-intense.webp",
+   "tint": [
+    0.254,
+    0.188,
+    0.161
+   ]
+  },
+  "art/lit/scenes--s016-council-room-softened.webp": {
+   "soft": "art/lit/soft/scenes--s016-council-room-softened.webp",
+   "tint": [
+    0.26,
+    0.186,
+    0.154
+   ]
+  },
+  "art/lit/scenes--s016-hearing-door-intense.webp": {
+   "soft": "art/lit/soft/scenes--s016-hearing-door-intense.webp",
+   "tint": [
+    0.26,
+    0.183,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s016-hearing-door-softened.webp": {
+   "soft": "art/lit/soft/scenes--s016-hearing-door-softened.webp",
+   "tint": [
+    0.26,
+    0.18,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s017-council-corridor-intense.webp": {
+   "soft": "art/lit/soft/scenes--s017-council-corridor-intense.webp",
+   "tint": [
+    0.2,
+    0.201,
+    0.188
+   ]
+  },
+  "art/lit/scenes--s017-council-corridor-softened.webp": {
+   "soft": "art/lit/soft/scenes--s017-council-corridor-softened.webp",
+   "tint": [
+    0.211,
+    0.198,
+    0.187
+   ]
+  },
+  "art/lit/scenes--s018-gray-scar-ferry-approach-intense.webp": {
+   "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-intense.webp",
+   "tint": [
+    0.236,
+    0.193,
+    0.163
+   ]
+  },
+  "art/lit/scenes--s018-gray-scar-ferry-approach-softened.webp": {
+   "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-softened.webp",
+   "tint": [
+    0.247,
+    0.191,
+    0.152
+   ]
+  },
+  "art/lit/scenes--s019-gray-scar-ferryhouse-intense.webp": {
+   "soft": "art/lit/soft/scenes--s019-gray-scar-ferryhouse-intense.webp",
+   "tint": [
+    0.244,
+    0.189,
+    0.18
+   ]
+  },
+  "art/lit/scenes--s019-gray-scar-ferryhouse-softened.webp": {
+   "soft": "art/lit/soft/scenes--s019-gray-scar-ferryhouse-softened.webp",
+   "tint": [
+    0.254,
+    0.187,
+    0.173
+   ]
+  },
+  "art/lit/scenes--s020-gray-scar-riverbank-intense.webp": {
+   "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-intense.webp",
+   "tint": [
+    0.209,
+    0.198,
+    0.197
+   ]
+  },
+  "art/lit/scenes--s020-gray-scar-riverbank-softened.webp": {
+   "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-softened.webp",
+   "tint": [
+    0.222,
+    0.195,
+    0.189
+   ]
+  },
+  "art/lit/scenes--s021-gray-scar-covered-landing-intense.webp": {
+   "soft": "art/lit/soft/scenes--s021-gray-scar-covered-landing-intense.webp",
+   "tint": [
+    0.207,
+    0.198,
+    0.193
+   ]
+  },
+  "art/lit/scenes--s021-gray-scar-covered-landing-softened.webp": {
+   "soft": "art/lit/soft/scenes--s021-gray-scar-covered-landing-softened.webp",
+   "tint": [
+    0.222,
+    0.195,
+    0.182
+   ]
+  },
+  "art/lit/scenes--s021-lucan-returns-intense.webp": {
+   "soft": "art/lit/soft/scenes--s021-lucan-returns-intense.webp",
+   "tint": [
+    0.218,
+    0.195,
+    0.195
+   ]
+  },
+  "art/lit/scenes--s021-lucan-returns-softened.webp": {
+   "soft": "art/lit/soft/scenes--s021-lucan-returns-softened.webp",
+   "tint": [
+    0.233,
+    0.192,
+    0.18
+   ]
+  },
+  "art/lit/scenes--s021-rescue-intense.webp": {
+   "soft": "art/lit/soft/scenes--s021-rescue-intense.webp",
+   "tint": [
+    0.218,
+    0.196,
+    0.19
+   ]
+  },
+  "art/lit/scenes--s021-rescue-softened.webp": {
+   "soft": "art/lit/soft/scenes--s021-rescue-softened.webp",
+   "tint": [
+    0.231,
+    0.193,
+    0.173
+   ]
+  },
+  "art/lit/scenes--s022-river-picket-intense.webp": {
+   "soft": "art/lit/soft/scenes--s022-river-picket-intense.webp",
+   "tint": [
+    0.243,
+    0.189,
+    0.178
+   ]
+  },
+  "art/lit/scenes--s022-river-picket-softened.webp": {
+   "soft": "art/lit/soft/scenes--s022-river-picket-softened.webp",
+   "tint": [
+    0.249,
+    0.188,
+    0.176
+   ]
+  },
+  "art/lit/scenes--s023-northern-field-quarters-intense.webp": {
+   "soft": "art/lit/soft/scenes--s023-northern-field-quarters-intense.webp",
+   "tint": [
+    0.26,
+    0.179,
+    0.152
+   ]
+  },
+  "art/lit/scenes--s023-northern-field-quarters-softened.webp": {
+   "soft": "art/lit/soft/scenes--s023-northern-field-quarters-softened.webp",
+   "tint": [
+    0.26,
+    0.17,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s024-northern-wharf-intense.webp": {
+   "soft": "art/lit/soft/scenes--s024-northern-wharf-intense.webp",
+   "tint": [
+    0.241,
+    0.192,
+    0.164
+   ]
+  },
+  "art/lit/scenes--s024-northern-wharf-softened.webp": {
+   "soft": "art/lit/soft/scenes--s024-northern-wharf-softened.webp",
+   "tint": [
+    0.248,
+    0.19,
+    0.159
+   ]
+  },
+  "art/lit/scenes--s025-royal-infirmary-corridor-intense.webp": {
+   "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-intense.webp",
+   "tint": [
+    0.231,
+    0.194,
+    0.17
+   ]
+  },
+  "art/lit/scenes--s025-royal-infirmary-corridor-softened.webp": {
+   "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-softened.webp",
+   "tint": [
+    0.246,
+    0.19,
+    0.165
+   ]
+  },
+  "art/lit/stretcher-intense.webp": {
+   "soft": "art/lit/soft/stretcher-intense.webp",
+   "tint": [
+    0.231,
+    0.192,
+    0.189
+   ]
+  },
+  "art/lit/stretcher-softened.webp": {
+   "soft": "art/lit/soft/stretcher-softened.webp",
+   "tint": [
+    0.219,
+    0.195,
+    0.198
+   ]
+  },
+  "art/lit/ward-assessment-intense.webp": {
+   "soft": "art/lit/soft/ward-assessment-intense.webp",
+   "tint": [
+    0.221,
+    0.199,
+    0.15
+   ]
+  },
+  "art/lit/ward-assessment-softened.webp": {
+   "soft": "art/lit/soft/ward-assessment-softened.webp",
+   "tint": [
+    0.232,
+    0.196,
+    0.15
+   ]
+  },
+  "art/lit/ward-blue-intense.webp": {
+   "soft": "art/lit/soft/ward-blue-intense.webp",
+   "tint": [
+    0.218,
+    0.199,
+    0.161
+   ]
+  },
+  "art/lit/ward-blue-softened.webp": {
+   "soft": "art/lit/soft/ward-blue-softened.webp",
+   "tint": [
+    0.227,
+    0.196,
+    0.161
+   ]
+  },
+  "art/lit/ward-cleared-intense.webp": {
+   "soft": "art/lit/soft/ward-cleared-intense.webp",
+   "tint": [
+    0.223,
+    0.197,
+    0.158
+   ]
+  },
+  "art/lit/ward-cleared-softened.webp": {
+   "soft": "art/lit/soft/ward-cleared-softened.webp",
+   "tint": [
+    0.229,
+    0.195,
+    0.159
+   ]
+  },
+  "art/lit/ward-entry-intense.webp": {
+   "soft": "art/lit/soft/ward-entry-intense.webp",
+   "tint": [
+    0.208,
+    0.198,
+    0.192
+   ]
+  },
+  "art/lit/ward-entry-softened.webp": {
+   "soft": "art/lit/soft/ward-entry-softened.webp",
+   "tint": [
+    0.224,
+    0.195,
+    0.183
+   ]
+  },
+  "art/lit/ward-hand-intense.webp": {
+   "soft": "art/lit/soft/ward-hand-intense.webp",
+   "tint": [
+    0.204,
+    0.202,
+    0.173
+   ]
+  },
+  "art/lit/ward-hand-softened.webp": {
+   "soft": "art/lit/soft/ward-hand-softened.webp",
+   "tint": [
+    0.216,
+    0.198,
+    0.17
+   ]
+  },
+  "art/lit/ward-last-patch-intense.webp": {
+   "soft": "art/lit/soft/ward-last-patch-intense.webp",
+   "tint": [
+    0.222,
+    0.198,
+    0.158
+   ]
+  },
+  "art/lit/ward-last-patch-softened.webp": {
+   "soft": "art/lit/soft/ward-last-patch-softened.webp",
+   "tint": [
+    0.232,
+    0.195,
+    0.159
+   ]
+  },
+  "art/lit/ward-lit-intense.webp": {
+   "soft": "art/lit/soft/ward-lit-intense.webp",
+   "tint": [
+    0.226,
+    0.197,
+    0.154
+   ]
+  },
+  "art/lit/ward-lit-softened.webp": {
+   "soft": "art/lit/soft/ward-lit-softened.webp",
+   "tint": [
+    0.23,
+    0.195,
+    0.156
+   ]
+  },
+  "art/lit/ward-pause-intense.webp": {
+   "soft": "art/lit/soft/ward-pause-intense.webp",
+   "tint": [
+    0.211,
+    0.199,
+    0.178
+   ]
+  },
+  "art/lit/ward-pause-softened.webp": {
+   "soft": "art/lit/soft/ward-pause-softened.webp",
+   "tint": [
+    0.221,
+    0.196,
+    0.175
+   ]
+  },
+  "art/lit/ward-purification-intense.webp": {
+   "soft": "art/lit/soft/ward-purification-intense.webp",
+   "tint": [
+    0.22,
+    0.198,
+    0.158
+   ]
+  },
+  "art/lit/ward-purification-softened.webp": {
+   "soft": "art/lit/soft/ward-purification-softened.webp",
+   "tint": [
+    0.228,
+    0.196,
+    0.161
+   ]
+  },
+  "art/lit/ward-unlit-intense.webp": {
+   "soft": "art/lit/soft/ward-unlit-intense.webp",
+   "tint": [
+    0.229,
+    0.197,
+    0.15
+   ]
+  },
+  "art/lit/ward-unlit-softened.webp": {
+   "soft": "art/lit/soft/ward-unlit-softened.webp",
+   "tint": [
+    0.233,
+    0.195,
+    0.153
+   ]
+  },
+  "art/lit/ward-water-intense.webp": {
+   "soft": "art/lit/soft/ward-water-intense.webp",
+   "tint": [
+    0.204,
+    0.202,
+    0.171
+   ]
+  },
+  "art/lit/ward-water-softened.webp": {
+   "soft": "art/lit/soft/ward-water-softened.webp",
+   "tint": [
+    0.219,
+    0.198,
+    0.166
+   ]
+  },
+  "art/lit/window-packing-intense.webp": {
+   "soft": "art/lit/soft/window-packing-intense.webp",
+   "tint": [
+    0.26,
+    0.184,
+    0.15
+   ]
+  },
+  "art/lit/window-packing-softened.webp": {
+   "soft": "art/lit/soft/window-packing-softened.webp",
+   "tint": [
+    0.26,
+    0.177,
+    0.15
+   ]
+  },
+  "art/lit/window-pause-intense.webp": {
+   "soft": "art/lit/soft/window-pause-intense.webp",
+   "tint": [
+    0.26,
+    0.182,
+    0.15
+   ]
+  },
+  "art/lit/window-pause-softened.webp": {
+   "soft": "art/lit/soft/window-pause-softened.webp",
+   "tint": [
+    0.26,
+    0.175,
+    0.15
+   ]
+  },
+  "art/lit/window-together-intense.webp": {
+   "soft": "art/lit/soft/window-together-intense.webp",
+   "tint": [
+    0.26,
+    0.184,
+    0.15
+   ]
+  },
+  "art/lit/window-together-softened.webp": {
+   "soft": "art/lit/soft/window-together-softened.webp",
+   "tint": [
+    0.26,
+    0.179,
+    0.15
+   ]
+  }
+ },
  "stages": {
   "arch-call": {
    "intense": "art/lit/arch-call-intense.webp",

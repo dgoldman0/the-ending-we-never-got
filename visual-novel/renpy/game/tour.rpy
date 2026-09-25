@@ -24,6 +24,7 @@ testcase ui_tour:
     advance until eval source_line == 112
     pause 1.0
     screenshot '05-s002-quiet.png'
+    click id 'reading_controls'
     click id 'look_closer'
     pause 2.0
     screenshot '06-look-closer.png'
@@ -103,6 +104,7 @@ testcase ui_tour_states:
     pause 1.0
     screenshot 's2-softened-night.png'
     advance until eval source_line == 112
+    click id 'reading_controls'
     click id 'look_closer'
     pause 2.2
     screenshot 's3-softened-closer.png'
@@ -113,6 +115,7 @@ testcase ui_tour_states:
     $ persistent.intense_lighting = True
     $ persistent.large_text = True
     advance until eval source_line == 172
+    click id 'reading_controls'
     click id 'look_closer'
     pause 2.2
     screenshot 's5-large-treatment-closer.png'
@@ -160,6 +163,7 @@ testcase ui_tour_light:
     screenshot 'night-softened.png'
     $ persistent.intense_lighting = True
     advance until eval source_line == 112
+    click id 'reading_controls'
     click id 'look_closer'
     click id 'bring_alongside'
     pause 2.2

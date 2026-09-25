@@ -555,6 +555,111 @@ def initials(size=128):
         save(to_image(rgba, (size, size)), 'initials/' + letter + '.png')
 
 
+# ------------------------------------------------------------ reading, 24 September
+# Chosen by the user after the panel and arch samples (prototypes/portrait-frames):
+# the speaker alone in an oval with a soft golden halo, fading at its base; the
+# scene's own shadow behind the text (the per-painting blur and colour come from
+# tools/grade-light.py), an engraved hairline, and the controls hidden behind a
+# small gilt sun.
+
+OVAL = (224, 280)
+
+
+def oval_portrait():
+    """The oval's mask and its golden halo, both fading toward the base so
+    nothing cuts across the chest."""
+    w, h = OVAL
+    rx, ry = w / 2 - 3, h / 2 - 3
+
+    def dist(x, y):
+        return (np.sqrt(((x - w / 2) / rx) ** 2 + ((y - h / 2) / ry) ** 2) - 1) * min(rx, ry)
+
+    def base_fade(y, start):
+        return 1 - smoothstep((y / h - start) / (1 - start))
+
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32) + 0.5
+    inside = np.clip(0.5 - dist(xx, yy), 0, 1) * base_fade(yy, 0.70)
+    save(Image.fromarray((np.dstack([np.ones_like(inside)] * 3 + [inside]) * 255 + 0.5).astype('uint8')), 'oval-mask.png')
+    m = 26
+    yy, xx = np.mgrid[0:h + 2 * m, 0:w + 2 * m].astype(np.float32) + 0.5
+    d = dist(xx - m, yy - m)
+    halo = np.where(d > 0, np.exp(-(d / 7.0) ** 2) * 0.30 + np.exp(-(d / 18.0) ** 2) * 0.10, np.exp(-(d / 2.5) ** 2) * 0.32)
+    halo = (halo * base_fade(np.clip(yy - m, 0, None), 0.62)).astype(np.float32)
+    rgb = np.ones(halo.shape + (3,), np.float32) * np.array([0.93, 0.80, 0.52], np.float32)
+    save(Image.fromarray((np.dstack([rgb, halo]) * 255 + 0.5).astype('uint8')), 'oval-halo.png')
+
+
+def reading_shade_masks():
+    """Where the scene's shadow falls behind the text (deepest behind the
+    portrait and the words, fading right and up) and behind the open controls
+    (a pool at the lower right). White is full."""
+    w, h = 1920, 1080
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32) + 0.5
+    left = np.sqrt(((xx - 720) / 1050) ** 2 + ((yy - 960) / 290) ** 2)
+    shade = (1 - smoothstep((left - 0.45) / 0.55)) * np.interp(yy, [680, 780, 870, 1080], [0, 0.5, 0.95, 1.0])
+    corner = np.sqrt(((xx - 1920) / 640) ** 2 + ((yy - 1080) / 740) ** 2)
+    pool = 1 - smoothstep((corner - 0.32) / 0.68)
+    for name, m in (('reading-shade-mask.png', shade), ('controls-pool-mask.png', pool)):
+        m = m.astype(np.float32)
+        save(Image.fromarray((np.dstack([np.ones_like(m)] * 3 + [m]) * 255 + 0.5).astype('uint8')), name)
+
+
+def engraved_line(w, name, glow=True):
+    """A hairline that reads on white and on black: a dark cut beneath, a gilt
+    line and a faint highlight above, fading out at both ends."""
+    h = 11
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32) + 0.5
+    ends = smoothstep(np.minimum(xx, w - xx) / (w * 0.26))
+    cut = np.exp(-((yy - 6.6) / 0.9) ** 2) * 0.55
+    gilt = np.exp(-((yy - 5.2) / 0.75) ** 2)
+    shine = np.exp(-((yy - 4.2) / 0.6) ** 2) * 0.35
+    halo = np.exp(-((yy - 5.2) / 2.6) ** 2) * (0.22 if glow else 0)
+    rgb = (np.array([0.86, 0.71, 0.44], np.float32) * (gilt + halo)[..., None]
+           + np.array([1.0, 0.95, 0.8], np.float32) * shine[..., None]
+           + np.array([0.09, 0.06, 0.04], np.float32) * cut[..., None])
+    a = np.clip(gilt + shine + halo + cut, 0, 1)
+    rgb = rgb / np.maximum(a, 1e-4)[..., None]
+    save(Image.fromarray((np.dstack([np.clip(rgb, 0, 1), a * ends]) * 255 + 0.5).astype('uint8')), name)
+
+
+def controls_sun():
+    """The controls' trigger: the temple's twelve-ray sun in gilt relief on a
+    soft shadow, so it reads on white marble and in the dark; and the glow that
+    breathes around it when something can be looked at more closely."""
+    S = 44
+    W = S * OSS
+    disc, ray, ring = sun_masks((W, W), (W / 2, W / 2), W * 0.2, W * 0.42)
+    height = np.maximum(dome(disc, W * 0.12) * 1.2 - ring * 0.3, dome(ray, W * 0.03) * 0.8)
+    cover = np.clip(disc + ray, 0, 1)
+    albedo = np.ones(height.shape + (3,), np.float32) * GILT
+    rgba = light_relief(cv2.GaussianBlur(height.astype(np.float32), (0, 0), 0.5 * OSS), albedo,
+                        np.ones_like(height) * 0.9, cover.astype(np.float32))
+    rgba = cv2.resize(rgba, (S, S), interpolation=cv2.INTER_AREA)
+    yy, xx = np.mgrid[0:S, 0:S].astype(np.float32) + 0.5
+    shadow = np.exp(-(np.sqrt((xx - S / 2) ** 2 + (yy - S / 2 - 1) ** 2) / 13) ** 2) * 0.55
+    a = rgba[..., 3] + shadow * (1 - rgba[..., 3])
+    rgb = (rgba[..., :3] * rgba[..., 3:4] + np.array([0.05, 0.04, 0.03], np.float32)
+           * (shadow * (1 - rgba[..., 3]))[..., None]) / np.maximum(a, 1e-4)[..., None]
+    save(Image.fromarray((np.dstack([np.clip(rgb, 0, 1), a]) * 255 + 0.5).astype('uint8')), 'controls-sun.png')
+    G = 96
+    yy, xx = np.mgrid[0:G, 0:G].astype(np.float32) + 0.5
+    r = np.sqrt((xx - G / 2) ** 2 + (yy - G / 2) ** 2)
+    glow_ = (np.exp(-((r - 17) / 7) ** 2) * 0.55 + np.exp(-(r / 28) ** 2) * 0.25).astype(np.float32)
+    rgb = np.ones(glow_.shape + (3,), np.float32) * np.array([0.98, 0.84, 0.55], np.float32)
+    save(Image.fromarray((np.dstack([rgb, glow_]) * 255 + 0.5).astype('uint8')), 'controls-glow.png')
+
+
+def lozenge(name, color=(205, 176, 118), size=13):
+    """The mark at the end of a finished line (the old ring read as a (R) sign)."""
+    s = size * 4
+    yy, xx = np.mgrid[0:s, 0:s].astype(np.float32) + 0.5
+    d = (np.abs(xx - s / 2) + np.abs(yy - s / 2) * 1.35) / (s / 2)
+    rgba = np.zeros((s, s, 4), np.float32)
+    rgba[..., :3] = np.array(color, np.float32) / 255
+    rgba[..., 3] = np.clip((1 - d) * 6, 0, 1) * 0.95
+    save(Image.fromarray((rgba * 255).astype('uint8')).resize((size, size), Image.LANCZOS), name)
+
+
 def main():
     scrim()
     window_frame(228, 256, 'speaker')
@@ -588,6 +693,13 @@ def main():
     edge.putalpha(Image.fromarray(np.repeat(ramp(220, [(0, 0), (1, 255)])[:, None], 4, 1).clip(0, 255).astype('uint8')))
     save(edge, 'edge-fade.png')
     frame_line('frame-line.png')
+    oval_portrait()
+    reading_shade_masks()
+    engraved_line(1000, 'reading-hairline.png')
+    engraved_line(150, 'controls-underline.png', glow=False)
+    controls_sun()
+    lozenge('lozenge.png')
+    lozenge('lozenge-ink.png', color=(138, 99, 52))
     print('UI components written to', UI.relative_to(ROOT.parent))
 
 

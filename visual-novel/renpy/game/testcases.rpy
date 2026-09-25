@@ -65,6 +65,7 @@ testcase reading_and_discovery:
     advance until eval source_line == 112
     assert eval current_scene == 2 and closer_here()
     assert eval stage_framing().get('text')
+    click id 'reading_controls'
     click id 'look_closer'
     assert screen 'look_closer'
     assert eval inspected_details == {'drawing'} and not followed_connections
@@ -76,6 +77,7 @@ testcase reading_and_discovery:
     click id 'menu_return'
     assert screen 'say'
     assert eval (current_scene, source_line, source_page) == (2, 112, 0)
+    click id 'reading_controls'
     click 'Threads'
     assert screen 'threads'
     assert id 'thread_home'
@@ -197,6 +199,7 @@ testcase page_reading:
     keysym 'rollback'
     assert eval page_index == 0 and len(nvl_list) > 1
     advance until eval page_index == 1
+    click id 'reading_controls'
     click 'Save'
     click id 'file_slot_3'
     if screen 'confirm':
@@ -204,7 +207,8 @@ testcase page_reading:
     click id 'menu_return'
     advance
     advance
-    click 'Menu'
+    click id 'reading_controls'
+    click id 'open_menu'
     click 'Load'
     click id 'file_slot_3'
     if screen 'confirm':
@@ -228,6 +232,7 @@ testcase discovery_treatment_and_promise:
     assert eval not inspected_details and not followed_connections
     advance until eval source_line == 172
     assert eval available_inspections() == ['home', 'treatment'] and closer_here()
+    click id 'reading_controls'
     click id 'look_closer'
     assert screen 'look_closer'
     assert eval inspected_details == {'treatment_blue'} and not followed_connections
@@ -242,6 +247,7 @@ testcase discovery_treatment_and_promise:
     advance until eval source_line == 187
     assert eval available_inspections() == ['home', 'treatment', 'promise']
     assert eval not closer_here()
+    click id 'reading_controls'
     click 'Threads'
     assert screen 'threads'
     assert id 'thread_home' and id 'thread_treatment' and id 'thread_promise'
@@ -262,6 +268,7 @@ testcase discovery_treatment_and_promise:
     assert eval source_line == 185 and 'promise' not in available_inspections()
     advance until eval source_line == 250
     assert eval closer_here()
+    click id 'reading_controls'
     click id 'look_closer'
     assert screen 'look_closer'
     click id 'menu_return'
@@ -270,15 +277,18 @@ testcase discovery_treatment_and_promise:
 testcase discovery_save_and_restore:
     click id 'main_begin'
     advance until eval source_line == 112
+    click id 'reading_controls'
     click 'Save'
     click id 'file_slot_5'
     if screen 'confirm':
         click id 'confirm_yes'
     click id 'menu_return'
+    click id 'reading_controls'
     click id 'look_closer'
     click id 'bring_alongside'
     assert eval followed_connections == {'home'}
     click id 'menu_return'
+    click id 'reading_controls'
     click 'Save'
     click id 'file_slot_6'
     if screen 'confirm':
@@ -294,7 +304,8 @@ testcase discovery_save_and_restore:
     assert eval (current_scene, source_line, source_page) == (2, 112, 0)
     assert eval not inspected_details and not followed_connections
     assert eval persistent.large_text and not persistent.intense_lighting
-    click 'Menu'
+    click id 'reading_controls'
+    click id 'open_menu'
     click 'Load'
     click id 'file_slot_6'
     if screen 'confirm':
@@ -303,6 +314,7 @@ testcase discovery_save_and_restore:
     assert eval (current_scene, source_line, source_page) == (2, 112, 0)
     assert eval inspected_details == {'phone', 'drawing'} and followed_connections == {'home'}
     assert eval persistent.large_text and not persistent.intense_lighting
+    click id 'reading_controls'
     click 'Threads'
     assert screen 'threads'
     assert id 'thread_home'
@@ -311,6 +323,7 @@ testcase discovery_save_and_restore:
     assert eval source_line == 112
     keysym 'rollback'
     assert eval source_line == 110 and not available_inspections()
+    click id 'reading_controls'
     click 'History'
     assert screen 'history'
     keysym 'game_menu'
@@ -364,6 +377,7 @@ testcase opening_large_text:
     advance until eval source_line == 54
     screenshot 'large-promise.png'
     advance until eval source_line == 112
+    click id 'reading_controls'
     click id 'look_closer'
     assert eval persistent.large_text and inspected_details == {'drawing'}
     click id 'menu_return'
@@ -372,6 +386,7 @@ testcase opening_large_text:
     screenshot 'large-priest.png'
     advance until eval source_line == 187
     screenshot 'large-announcement.png'
+    click id 'reading_controls'
     click 'Threads'
     assert id 'thread_promise'
     click id 'menu_return'
@@ -397,7 +412,8 @@ testcase lighting_preference:
     advance until eval source_line == 54
     assert eval all(portrait_source(current_rovel_beat()[role]['image'], role).endswith('-bright-softened.webp') for role in ('speaker', 'listener'))
     screenshot 'softened-cast.png'
-    click 'Menu'
+    click id 'reading_controls'
+    click id 'open_menu'
     click id 'lighting_intense'
     click id 'menu_return'
     assert eval source_line == 54 and source_page == 0 and persistent.intense_lighting
@@ -406,15 +422,18 @@ testcase lighting_preference:
     assert eval painted_portrait_name(current_rovel_beat()['speaker']['image'], 'speaker') == 'senn-assuring-speaking'
     assert eval painted_portrait_name(current_rovel_beat()['listener']['image'], 'listener') == 'tessa-startled-arrival-listening'
     advance until eval source_line == 90
-    click 'Menu'
+    click id 'reading_controls'
+    click id 'open_menu'
     click id 'lighting_softened'
     click id 'menu_return'
     assert eval source_line == 90 and not persistent.intense_lighting
     screenshot 'softened-doorway.png'
     advance until eval source_line == 112
+    click id 'reading_controls'
     click id 'look_closer'
     assert eval all(lighting_art(detail_views[detail]['image']).endswith('-softened.webp') for detail in ('drawing', 'phone'))
     click id 'menu_return'
+    click id 'reading_controls'
     click 'Save'
     click id 'file_slot_4'
     if screen 'confirm':
@@ -427,7 +446,8 @@ testcase lighting_preference:
         click id 'confirm_yes'
     assert screen 'say'
     assert eval source_line == 112 and persistent.intense_lighting
-    click 'Menu'
+    click id 'reading_controls'
+    click id 'open_menu'
     click id 'lighting_softened'
     click id 'menu_return'
     advance until eval source_line == 176

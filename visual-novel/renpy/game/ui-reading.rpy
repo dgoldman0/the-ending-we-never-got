@@ -1,6 +1,9 @@
 # Reading presentation.
-# Illustrated scenes: the painting stays whole; text sits in a soft shade at
-# its foot, beside arched portraits that emerge from that shadow.
+# Illustrated scenes: the painting stays whole. Behind the text it falls softly
+# out of focus and into its own shadow colour; the speaker alone appears in an
+# oval with a golden halo (the person spoken to is in the painting). The
+# controls wait behind a small gilt sun. Chosen by the user on 24 September
+# 2026 from the samples in prototypes/portrait-frames.
 # Prose-only scenes: a typeset page, like a printed play, whose paper follows
 # the scene's light (day vellum, dusk slate, night ink).
 
@@ -15,8 +18,9 @@ define PAGE_NEXT_TOP = 150
 define PAGE_BOTTOM = 1010
 define PAGE_GAP = 20
 
-define STAGE_TEXT_X = 560
-define STAGE_TEXT_W = 1020
+define STAGE_TEXT_X = 424
+define STAGE_TEXT_W = 1030
+define SOFT_TOP = 640
 define STAGE_TEXT_TOP = 874
 define STAGE_LINE = 53
 
@@ -209,12 +213,12 @@ init -1 python:
                 raise AttributeError(attribute)
             return getattr(self.current(), attribute)
 
-    # Portrait windows. Every portrait is a rectangular crop of its painting,
-    # made in GIMP to one composition (tools/crop-portraits.py), so heads share
-    # a scale and eye line without per-image alignment. A closed laurel window
-    # frames each; the speaker is mirrored if needed to face the listener.
-    PORTRAIT_SIZES = {'speaker': (228, 256), 'listener': (150, 168)}
-    PORTRAIT_POS = {'speaker': (116, 748), 'listener': (366, 836)}
+    # The speaker's portrait. Every portrait is a rectangular crop of its
+    # painting, made in GIMP to one composition (tools/crop-portraits.py), so
+    # heads share a scale and eye line; it is shown in an oval that fades at
+    # its base, with a soft golden halo. Only the speaker is shown.
+    PORTRAIT_OVAL = (224, 280)
+    PORTRAIT_POS = {'speaker': (118, 750)}
     CROP_SIZE = (408.0, 466.0)
     PORTRAIT_CROPS = json.loads(renpy.file('portrait-crops.json').read())
 
@@ -276,11 +280,10 @@ init -1 python:
         matrix = frame_light()
         return Transform(image, matrixcolor=matrix) if matrix is not None else image
 
-    def portrait_cameo(face, role, grade=None, facing=None):
-        """A cropped portrait in its laurel window. `facing` is the direction the
-        head should look: by default the speaker looks right, toward the
-        listener and the text, and the listener looks back to the left."""
-        w, h = PORTRAIT_SIZES[role]
+    def portrait_cameo(face, role='speaker', grade=None, facing=None):
+        """The portrait in its oval with a golden halo. `facing` is the direction
+        the head should look; by default the speaker looks right, toward the text."""
+        w, h = PORTRAIT_OVAL
         key = portrait_choice(face['image'], role) or portrait_key(face['image'])
         want = facing or ('right' if role == 'speaker' else 'left')
         # Only the interim head crops can face the wrong way; painted portraits
@@ -290,15 +293,46 @@ init -1 python:
         cw, ch = int(round(CROP_SIZE[0] * scale)), int(round(CROP_SIZE[1] * scale))
         head = Transform(portrait_source(face['image'], role), xysize=(cw, ch), xzoom=(-1.0 if flip else 1.0),
                          xpos=(w - cw) // 2, ypos=(h - ch) // 2)
-        cameo = Fixed(AlphaMask(Fixed(head, xysize=(w, h)), 'ui/window-mask-' + role + '.png'),
-                      lit_ornament('ui/window-frame-' + role + '.png'), xysize=(w, h))
-        if role == 'listener' and grade != 'night':
-            cameo = Transform(cameo, matrixcolor=SaturationMatrix(0.85) * BrightnessMatrix(-0.04))
-        return cameo
+        return Fixed(Transform(lit_ornament('ui/oval-halo.png'), xpos=-26, ypos=-26),
+                     AlphaMask(Fixed(head, xysize=(w, h)), 'ui/oval-mask.png'), xysize=(w, h))
 
-    def scrim_strength(beat):
-        grade = beat.get('grade') if beat else (_scene_spec() or {}).get('grade')
-        return {'bright': 1.0, 'ordinary': 0.94, 'night': 0.8}.get(grade, 0.94)
+    def shown_stage():
+        """The graded painting on screen now, and how far it is lifted."""
+        beat = current_rovel_beat()
+        if beat:
+            image = lit_stage(beat['stage_id'])
+            return (image, stage_framing().get('lift', 0)) if image else (None, 0)
+        if current_scene > 5 and staging_stage():
+            return lighting_art(staging_stage()['image']), stage_framing().get('lift', 0)
+        return None, 0
+
+    def _shadow_tint(image, mask):
+        r, g, b = (LIT.get('shade', {}).get(image) or {}).get('tint', (0.2, 0.19, 0.18))
+        colour = Solid((int(r * 255), int(g * 255), int(b * 255), 255), xysize=(1920, 1080))
+        return Transform(AlphaMask(colour, mask), blend='multiply')
+
+    def reading_shade():
+        """Behind the text the painting falls softly out of focus (a lens blur
+        made per painting by tools/grade-light.py) and into its own shadow
+        colour, multiplied so it keeps its hue."""
+        image, lift = shown_stage()
+        layers = []
+        shade = LIT.get('shade', {}).get(image) if image else None
+        if shade:
+            layers.append(Transform(shade['soft'], ypos=SOFT_TOP - lift))
+        layers.append(_shadow_tint(image, 'ui/reading-shade-mask.png'))
+        return Fixed(*layers, xysize=(1920, 1080))
+
+    def controls_pool():
+        """Behind the open controls: the painting blurred and deepened in its
+        own shadow colour, in a soft pool at the corner."""
+        image, lift = shown_stage()
+        layers = []
+        if image:
+            soft = Transform(image, xysize=(1920, 1080), yoffset=-lift, blur=16)
+            layers.append(AlphaMask(Fixed(soft, xysize=(1920, 1080)), 'ui/controls-pool-mask.png'))
+        layers.append(_shadow_tint(image, 'ui/controls-pool-mask.png'))
+        return Fixed(*layers, xysize=(1920, 1080))
 
     _top_cache = {}
 
@@ -337,10 +371,8 @@ init -1 python:
             return what[i].upper(), prefix + what[i + 1:]
         return None, what
 
-    # In page mode the portraits sit in the left margin, outside the text frame.
-    # On book pages the speaker sits in the left margin looking right and the
-    # listener in the right margin looking left, both toward the page, eyes level.
-    PAGE_PORTRAIT_POS = {'speaker': (31, 250), 'listener': (1700, 294)}
+    # On book pages the speaker sits in the left margin, looking toward the page.
+    PAGE_PORTRAIT_POS = {'speaker': (33, 250)}
 
 define narrator = ReaderVoice(None)
 
@@ -414,13 +446,20 @@ style page_running:
     size 21
     kerning 3.0
 
-style quick_button is caps_button:
-    padding (12, 5)
+style controls_button:
+    padding (18, 7, 18, 9)
     xalign 1.0
-style quick_button_text is caps_button_text:
-    size 22
+    hover_foreground Transform("ui/controls-underline.png", xalign=1.0, yalign=1.0, xoffset=-6)
+    selected_foreground Transform("ui/controls-underline.png", xalign=1.0, yalign=1.0, xoffset=-6)
+style controls_button_text:
+    font ui_caps
+    size 26
+    kerning 3.4
+    color "#e9e0cfe6"
+    hover_color ui_gold_bright
+    insensitive_color "#e9e0cf55"
     text_align 1.0
-    outlines [(absolute(3), "#00000030", 0, 0)]
+    outlines [(absolute(4), "#00000026", 0, 1), (absolute(2), "#00000040", 0, 0)]
 
 style stage_heading:
     font ui_caps
@@ -432,10 +471,8 @@ style stage_heading:
 # ---------------------------------------------------------------- stage mode
 
 screen say(who, what):
-    $ beat = current_rovel_beat()
     $ framing = stage_framing()
     $ speaker, listener = stage_faces(who)
-    $ grade = beat.get('grade') if beat else (_scene_spec() or {}).get('grade')
     $ heading = first_line_of_scene()
     if framing.get('text'):
         # A quiet line set inside the painting's own shadow.
@@ -446,52 +483,78 @@ screen say(who, what):
         text what id "what" pos (tx, ty) xmaximum tw size text_size(38)
     else:
         $ top = stage_text_top(what, who)
-        add "ui/scrim.png" xsize 1920 ysize 560 ypos 520 alpha scrim_strength(beat)
+        add reading_shade()
+        add lit_ornament("ui/reading-hairline.png") pos (330, top - 129)
         if portrait_ready(speaker):
-            add "ui/portrait-pool.png" pos (0, 620)
-            add portrait_cameo(speaker, 'speaker', grade) pos PORTRAIT_POS['speaker']
-            if portrait_ready(listener):
-                add portrait_cameo(listener, 'listener', grade) pos PORTRAIT_POS['listener']
+            add portrait_cameo(speaker, 'speaker') pos PORTRAIT_POS['speaker']
         if heading:
-            text scene_heading_line() style "stage_heading" pos (STAGE_TEXT_X, top - (142 if who else 58))
+            text scene_heading_line() style "stage_heading" pos (STAGE_TEXT_X, top - 100)
         if who:
-            add lit_ornament("ui/speech-rail.png") pos (STAGE_TEXT_X - 50, top - 45)
-            text who.lower() id "who" pos (STAGE_TEXT_X + 8, top - 76)
+            text who.lower() id "who" pos (STAGE_TEXT_X, top - 50)
         text what id "what" pos (STAGE_TEXT_X, top) xmaximum STAGE_TEXT_W size text_size(38)
     if persistent.art_descriptions and current_art_description():
         frame:
             background Solid("#0b1014e8")
             xpos 1110 ypos 60 xsize 750 padding (28, 22)
             text current_art_description() size 24 color ui_ivory_soft line_spacing 5 font ui_serif
-    use quick_menu('stage')
+    use reading_controls('stage')
 
-screen quick_menu(light='stage'):
+# The reading controls stay out of the picture: a small gilt sun at the lower
+# right opens them, and breathes when something can be looked at more closely.
+# Open, they rise over a soft pool of the scene's own shadow, in small
+# capitals; the one under the pointer gains an engraved underline. A click
+# anywhere else closes them without turning the page.
+default controls_open = False
+
+transform controls_rise:
+    alpha 0.0 yoffset 12
+    easein 0.28 alpha 1.0 yoffset 0
+
+transform controls_breathe:
+    alpha 0.25
+    block:
+        easein 1.4 alpha 0.9
+        easeout 1.4 alpha 0.25
+        repeat
+
+init python:
+    def controls_then(action):
+        return [SetVariable('controls_open', False), action]
+
+screen reading_controls(light='stage'):
     zorder 50
-    $ ink = light == 'day'
-    $ idle = (ui_ink_soft + "c0") if ink else (ui_ivory_soft + "9a")
-    $ hover = ui_ink_gold if ink else ui_gold_bright
     $ closer = closer_here()
-    $ outlines = [] if ink else [(absolute(3), "#00000030", 0, 0)]
-    $ dim = (ui_ink_soft + "55") if ink else (ui_ivory_soft + "48")
-    vbox:
-        style_prefix "quick"
-        xalign 1.0 xoffset -46 yalign 1.0 yoffset -28 spacing 0
-        textbutton _("Back") action Rollback() text_color idle text_hover_color hover text_outlines outlines
-        textbutton _("History") action ShowMenu('history') text_color idle text_hover_color hover text_outlines outlines
-        hbox:
-            xalign 1.0 spacing 4
+    $ ink = light == 'day'
+    if controls_open:
+        button:
+            xysize (1920, 1080)
+            background None
+            action SetVariable('controls_open', False)
+        if not ink and staged_scene():
+            add controls_pool()
+        vbox at controls_rise:
+            style_prefix "controls"
+            xalign 1.0 xoffset -52 yalign 1.0 yoffset -96 spacing 0
+            $ idle = ui_ink_soft if ink else "#e9e0cfe6"
+            $ hover = ui_ink_gold if ink else ui_gold_bright
+            $ outlines = [] if ink else [(absolute(4), "#00000026", 0, 1), (absolute(2), "#00000040", 0, 0)]
+            textbutton _("Back") action controls_then(Rollback()) text_color idle text_hover_color hover text_outlines outlines
+            textbutton _("History") action controls_then(ShowMenu('history')) text_color idle text_hover_color hover text_outlines outlines
             if closer:
-                add "ctc_knot" yalign 0.55
-            textbutton _("Look closer"):
-                id "look_closer"
-                action (ShowMenu('look_closer') if closer else None)
-                text_color (hover if closer else idle)
-                text_hover_color hover
-                text_insensitive_color dim
-                text_outlines outlines
-        textbutton _("Threads") action (ShowMenu('threads') if available_details() else None) text_color idle text_hover_color hover text_insensitive_color dim text_outlines outlines
-        textbutton _("Save") action ShowMenu('save') text_color idle text_hover_color hover text_outlines outlines
-        textbutton _("Menu") id "open_menu" action ShowMenu('preferences') text_color idle text_hover_color hover text_outlines outlines
+                textbutton _("Look closer") id "look_closer" action controls_then(ShowMenu('look_closer')) text_color hover text_hover_color hover text_outlines outlines
+            textbutton _("Threads") action (controls_then(ShowMenu('threads')) if available_details() else None) text_color idle text_hover_color hover text_outlines outlines
+            textbutton _("Save") action controls_then(ShowMenu('save')) text_color idle text_hover_color hover text_outlines outlines
+            textbutton _("Load") action controls_then(ShowMenu('load')) text_color idle text_hover_color hover text_outlines outlines
+            textbutton _("Settings") id "open_menu" action controls_then(ShowMenu('preferences')) text_color idle text_hover_color hover text_outlines outlines
+    if closer and not controls_open:
+        add "ui/controls-glow.png" at controls_breathe pos (1920 - 58 - 48, 1080 - 50 - 48)
+    imagebutton:
+        id "reading_controls"
+        idle Transform(lit_ornament("ui/controls-sun.png"), alpha=(1.0 if (controls_open or closer) else 0.75))
+        hover lit_ornament("ui/controls-sun.png")
+        pos (1920 - 58 - 22, 1080 - 50 - 22)
+        action ToggleVariable('controls_open')
+        alt _("Reading controls")
 
 # ----------------------------------------------------------------- page mode
 
@@ -501,9 +564,7 @@ screen nvl(dialogue, items=None):
     add c['frame']
     $ speaker, listener = staging_faces()
     if portrait_ready(speaker):
-        add portrait_cameo(speaker, 'speaker', current_register()) pos PAGE_PORTRAIT_POS['speaker']
-        if portrait_ready(listener):
-            add portrait_cameo(listener, 'listener', current_register()) pos PAGE_PORTRAIT_POS['listener']
+        add portrait_cameo(speaker, 'speaker') pos PAGE_PORTRAIT_POS['speaker']
     if page_index == 0:
         vbox:
             xpos PAGE_X ypos 108
@@ -529,7 +590,7 @@ screen nvl(dialogue, items=None):
                     text d.what id d.what_id style "page_speech" color c['ink'] size text_size(36) xmaximum PAGE_W
             else:
                 text d.what id d.what_id style "page_action" color c['soft'] size text_size(36) xmaximum PAGE_W
-    use quick_menu(light)
+    use reading_controls(light)
 
 # ------------------------------------------------------- chapter and ending
 
