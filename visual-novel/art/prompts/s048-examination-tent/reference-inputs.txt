@@ -1,0 +1,4 @@
+Reference board assembled with Pillow for reference only, not production pixel editing.
+Left to right: current tessa-campaign-listening; mara-citadel-listening; marren-speaking; elin-later-speaking; wife face from S045 maker-supplied /tmp/s045-wife-reference.png, crop (195,0,397,236). The S045 source crop shows the same wife beside Marren; root inspected and cleared this actual S045 wife identity before S048 generation.
+Separate input: art/character-keys/tessa/campaign-coat.png (approved closed-garment construction only).
+Current faces/hair/horns stay fixed; Marren's portrait clothing is not reused because he now wears dry borrowed clothes. The wife retains her own blue coat.

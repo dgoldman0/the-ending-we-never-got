@@ -1,0 +1,1 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s046-valcair-private-room/private-room-master.xcf" "private-room-master.xcf"))) (l (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE im l "/tmp/s046-reopened.png" "/tmp/s046-reopened.png" 0 9 0 0 0 0 0) (gimp-image-delete im)) (gimp-quit 0)

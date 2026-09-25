@@ -1,0 +1,9 @@
+Use case: precise-object-edit
+Asset: environmental border extension for one finished 16:9 painted winter river landing scene.
+The image is a GIMP composition guide: the original painting is inset within flat gray margins. FILL ONLY THE GRAY MARGINS with a seamless continuation of the scene. Keep every original interior detail, person, boat, hand, horn, garment, object and camera angle unchanged, in exactly the same position and scale. Do not enlarge, shift or crop the inset painting.
+
+Continue cold dawn sky and depot roof only across the narrow upper margin. Continue peripheral stone wharf/winter river architecture naturally at the left and right edges. The broad lower gray margin must become quiet rippling river water with natural reflections and a plausible continuation of the near stone wharf edge only where it already enters the painting. No new foreground person, boat, railing, crate, symbol or plot object in the lower quarter. Do not add a frame, caption, UI or gray border.
+
+Preserve the weathered wooden fishing hull: left pointed bow, right square stern/tiller, old pale port-aft gunwale cloth patch. Preserve Serat sitting at the oars, three standing adults behind him, central Lucan between escort at left and Marren at right with his box. This is a background-extension task; do not repaint any person, move the hull or invent action. Match existing painted wood, stone, snow, water, cold readable dawn exposure and perspective. Keep new light neutral and detailed, no glowing white sky or dark wash.
+
+Return one complete 16:9 image; 2064x1161 requested, no altered aspect ratio.

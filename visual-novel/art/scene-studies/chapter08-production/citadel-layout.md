@@ -1,6 +1,6 @@
 # Shared citadel layout — source-art working plan
 
-**Paused after Chapter07 at the user’s request.** This is unrendered planning for a future resumption.
+**Resumed for Chapter08 after correction commit `50e4d86`.** This remains a working spatial plan; actual scene geometry must be reviewed before reuse.
 
 Preparation only,25September2026. Root read source1711–2173 in full and current location/continuity notes. This is a workable proposed arrangement for the requested paintings, not recovered screenplay compass directions, a runtime edit or an approval. Use it to agree shared sets before S045/S047/S051 and S050–S056 generation. Actual figures/furniture/path clearances must still be checked in the images.
 

@@ -1,0 +1,7 @@
+(let* ((src "visual-novel/art/scene-studies/s048-examination-tent/generation-initial.png") (img (car (gimp-file-load RUN-NONINTERACTIVE src src))) (layer (car (gimp-image-get-active-layer img))))
+(gimp-layer-add-alpha layer)
+(gimp-image-resize img 1920 1080 124 30)
+(gimp-layer-resize-to-image-size layer)
+(file-png-save RUN-NONINTERACTIVE img layer "/tmp/s048-outpaint-target.png" "/tmp/s048-outpaint-target.png" 0 9 0 0 0 0 0)
+(gimp-image-delete img))
+(gimp-quit 0)

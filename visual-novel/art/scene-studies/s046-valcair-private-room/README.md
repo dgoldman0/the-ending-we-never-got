@@ -2,7 +2,7 @@
 
 ## Brief before generation
 
-Prepared25September2026 during the Harrow finishing pass; **not generated**. Read the complete source1784–1841, adjacent extraction/infirmary dressing and next predawn scene, current character/location/continuity notes and Chapter08 preflight. Choose1822: Valcair has stopped after one step toward Lucan, and Lucan presses his bandaged LEFT forearm against his side before speaking again. The later glance at the dry coat, bargain and departure are not simultaneous added actions.
+Prepared25September2026 during the Harrow finishing pass; released and rendered after correction checkpoint `50e4d86`. Read the complete source1784–1841, adjacent extraction/infirmary dressing and next predawn scene, current character/location/continuity notes and Chapter08 preflight. Choose1822: Valcair has stopped after one step toward Lucan, and Lucan presses his bandaged LEFT forearm against his side before speaking again. The later glance at the dry coat, bargain and departure are not simultaneous added actions.
 
 Two named people only. Lucan stays near the open entrance at screen-left; Valcair stands farther into the room at screen-right, a real walking gap between them. A tall-backed chair beside the hearth carries the offered clean dry coat and folded clothes. They remain on that chair, not worn by Lucan. A small ordinary side table/lamp may establish the private room; no sprawling command table or throne. Use an oblique chest-height view with natural adult bodies and visible floor support, sufficient negative space to make the stopped approach legible. No theatrical looming, giant heads, shrunken legs or furniture merging with the floor.
 
@@ -14,4 +14,10 @@ Neutral readable night source exposure from hearth and a safe modest oil lamp, n
 
 ## Review
 
-Pending Chapter08 generation and whole/native/peer review. This one source image does not illustrate every state of the confrontation or establish runtime clearance.
+Delivered source: [s046-valcair-private-room.png](../../../renpy/game/art/scenes/s046-valcair-private-room.png),1920×1080. Root inspected the complete final composition and native Lucan face/horns/arm/hand support, Valcair, chair/clothes, floor and local symbols. An independent reviewer compared both current portraits and actual S045 treatment: body scales, supported LEFT dressing, healthy RIGHT arm, distinct younger/older identities and horns, doorway gap and separate offered outfit passed. The offered clothes remain untouched. Ordinary resting boots enter the lower reading band; the important hands/dressing and dry outfit are clear. Valcair's upper horn has approximately70px clearance in the final.
+
+The generated source was1672×941 despite requesting2560×1440. A small peripheral wall/floor extension gives1696×954; the center retains native body proportions, then the complete composition is uniformly sampled to1920×1080. This does not create additional native detail. Local cloth cleanup and three fixed divided-star components replace invented star shapes; the wall hanging was reduced to22% component opacity after the first preview looked too bright. The actual final reduced symbol was inspected. Neutral night source exposure retains room and costume detail; runtime grading is deferred.
+
+`private-room-master.xcf` keeps original scene, masked edge context, cloth cleanup and three separate canonical emblem layers. Reopening it reproduces the final PNG exactly. Retained original: `private-room-source.png`; exact generation/reference/finishing/reopen files are in [prompts](../../prompts/s046-valcair-private-room/). Built-in image generation, then GIMP2.10; cache source `exec-48693416-75f1-441e-ad3c-c22920e1b347.png`. No runtime code, staging or grade changed.
+
+This one source image depicts1822; it does not illustrate every state of the confrontation or establish connected runtime clearance.
