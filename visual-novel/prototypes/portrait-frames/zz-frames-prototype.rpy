@@ -12,7 +12,7 @@
 #   - shade_style 'lacquer' tints the gradient deep celadon with a faint grain.
 init offset = 10
 
-default frame_style = 'vignette'
+default frame_style = 'oval'
 default shade_style = 'plain'
 define FRAME_TEXT_X = 424
 define FRAME_TEXT_W = 1030
@@ -31,8 +31,13 @@ image ctc_knot:
 init python:
     FRAME_SIZES = {'vignette': {'speaker': (270, 310), 'listener': (150, 172)},
                    'oval': {'speaker': (224, 280), 'listener': (132, 165)},
+                   'oval-bare': {'speaker': (224, 280), 'listener': (132, 165)},
+                   'oval-halo': {'speaker': (224, 280), 'listener': (132, 165)},
                    'rect': {'speaker': (208, 262), 'listener': (124, 156)}}
-    FRAME_SPEAKER_POS = {'vignette': (98, 738), 'oval': (118, 750), 'rect': (126, 758)}
+    FRAME_SPEAKER_POS = {'vignette': (98, 738), 'oval': (118, 750), 'oval-bare': (118, 750),
+                         'oval-halo': (118, 750), 'rect': (126, 758)}
+    # speaker_only: the person spoken to is in the painting, so no listener portrait
+    speaker_only = True
 
     def framed_portrait(face, role):
         w, h = FRAME_SIZES[frame_style][role]
@@ -43,8 +48,12 @@ init python:
         cw, ch = int(round(CROP_SIZE[0] * scale)), int(round(CROP_SIZE[1] * scale))
         head = Transform(portrait_source(face['image'], role), xysize=(cw, ch), xzoom=(-1.0 if flip else 1.0),
                          xpos=(w - cw) // 2, ypos=(h - ch) // 2)
-        image = AlphaMask(Fixed(head, xysize=(w, h)), 'frames/mask-%s-%s.png' % (frame_style, role))
-        if frame_style != 'vignette':
+        shape = 'oval' if frame_style.startswith('oval') else frame_style
+        image = AlphaMask(Fixed(head, xysize=(w, h)), 'frames/mask-%s-%s.png' % (shape, role))
+        if frame_style == 'oval-halo':
+            image = Fixed(Transform(lit_ornament('frames/halo-oval-%s.png' % role), xpos=-26, ypos=-26),
+                          image, xysize=(w, h))
+        elif frame_style in ('oval', 'rect'):
             image = Fixed(image, lit_ornament('frames/rim-%s-%s.png' % (frame_style, role)), xysize=(w, h))
         if role == 'listener':
             image = Transform(image, alpha=0.84, matrixcolor=SaturationMatrix(0.8) * BrightnessMatrix(-0.03))
@@ -77,7 +86,7 @@ screen say(who, what):
         if portrait_ready(speaker):
             add "ui/portrait-pool.png" pos (0, 620)
             add framed_portrait(speaker, 'speaker') pos FRAME_SPEAKER_POS[frame_style]
-        if portrait_ready(listener):
+        if portrait_ready(listener) and not speaker_only:
             add framed_portrait(listener, 'listener') pos FRAME_LISTENER_POS
         if heading:
             text scene_heading_line() style "stage_heading" pos (FRAME_TEXT_X, top - 100)

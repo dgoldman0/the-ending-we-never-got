@@ -6,6 +6,7 @@ and the (smaller, quieter) listener:
 
   vignette  no frame: the bust emerges from the shade, chest dissolving
   oval      a portrait miniature with a fine gilt rim, fading at its base
+  halo      the same oval edged by a soft golden glow instead of a line
   rect      a plain miniature with a hairline gilt rim, fading at its base
 
 and a lacquer-toned version of the reading shade (deep celadon with grain,
@@ -86,6 +87,17 @@ def oval(role):
     inside = np.clip(0.5 - dist(xx, yy), 0, 1) * base_fade(yy, h, 0.70)
     save(np.dstack([np.ones_like(inside)] * 3 + [inside]), 'mask-oval-%s.png' % role)
     save(rim(dist, w, h, 0.66), 'rim-oval-%s.png' % role)
+    # the halo: gilt light blooming from the oval's edge, outward and a little
+    # inward, fading at the base like the portrait; drawn on a larger canvas
+    m = 26
+    W2, H2 = w + 2 * m, h + 2 * m
+    x2, y2 = grid(W2, H2)
+    d = dist(x2 - m, y2 - m)
+    glow = np.where(d > 0, np.exp(-(d / 7.0) ** 2) * 0.30 + np.exp(-(d / 18.0) ** 2) * 0.10,
+                    np.exp(-(d / 2.5) ** 2) * 0.32)
+    glow *= base_fade(np.clip(y2 - m, 0, None), h, 0.62)
+    colour = np.array([0.93, 0.80, 0.52], np.float32)
+    save(np.dstack([np.ones_like(glow)[..., None] * colour, glow.astype(np.float32)]), 'halo-oval-%s.png' % role)
 
 
 def rect(role):

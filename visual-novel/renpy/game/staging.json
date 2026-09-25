@@ -9,6 +9,11 @@
      "image": "art/scenes/s006-convoy-camp.png",
      "from": 0,
      "alt": "Convoy Camp, Afternoon"
+    },
+    {
+     "image": "art/scenes/s006-warden.png",
+     "from": 289,
+     "alt": "A road warden holds up a cart board split by three claw marks."
     }
    ],
    "cast": {
@@ -59,8 +64,18 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s008-bellweir-market.png",
+     "image": "art/scenes/s008-fountain.png",
      "from": 0,
+     "alt": "Tessa draws the stilled glass heron beside Elin; Ada squeezes between them holding up a scraped elbow."
+    },
+    {
+     "image": "art/scenes/s008-bench-drawing.png",
+     "from": 359,
+     "alt": "Tessa sketches Orren and Iven carrying a bench; Iven leans over her shoulder at the drawing."
+    },
+    {
+     "image": "art/scenes/s008-bellweir-market.png",
+     "from": 386,
      "alt": "Bellweir, Market Square, Day"
     }
    ],
@@ -474,8 +489,13 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s025-royal-infirmary-corridor.png",
+     "image": "art/scenes/s025-report.png",
      "from": 0,
+     "alt": "In the corridor Orra hands Mara back her signed account; Iven works in the ward behind them."
+    },
+    {
+     "image": "art/scenes/s025-royal-infirmary-corridor.png",
+     "from": 1084,
      "alt": "Royal Infirmary, Corridor, Day"
     }
    ],

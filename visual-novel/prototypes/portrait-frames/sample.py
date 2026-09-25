@@ -24,7 +24,7 @@ GAME = VN / 'renpy/game'
 SHOTS = VN / 'renpy/test-output/frames'
 OUT = VN / 'renpy/test-output/review'
 LINES = [('s002', 2, 75), ('s004', 4, 211), ('s008', 8, 352), ('s023', 23, 1012)]
-VARIANTS = [(f, s) for f in ('vignette', 'oval', 'rect') for s in ('plain', 'lacquer')]
+VARIANTS = [(f, 'plain') for f in ('oval-bare', 'oval', 'oval-halo')]
 
 
 def capture_test():
@@ -85,20 +85,20 @@ def sheet(rows, cols, out, W=960, H=540):
 
 def sheets():
     rows = [('s004', 'S004 (bright)'), ('s002', 'S002 (night)'), ('s008', 'S008 (day)'), ('s023', 'S023 (night)')]
-    sheet(rows, [('current-', 'Current'), ('vignette-plain-', 'No frame'), ('oval-plain-', 'Oval miniature'),
-                 ('rect-plain-', 'Rectangle miniature')], 'frames-samples.png')
-    sheet(rows, [('vignette-plain-', 'Old gradient'), ('vignette-lacquer-', 'Lacquer-toned gradient')], 'frames-shade.png')
+    sheet(rows, [('current-', 'Current'), ('oval-bare-plain-', 'Oval, no outline'), ('oval-plain-', 'Oval, gilt line'),
+                 ('oval-halo-plain-', 'Oval, golden halo')], 'ovals-samples.png')
     font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 24)
-    crops = [('vignette-plain-s004', 'No frame, S004'), ('oval-plain-s004', 'Oval, S004'), ('rect-plain-s004', 'Rectangle, S004'),
-             ('vignette-plain-s023', 'No frame, S023'), ('oval-plain-s023', 'Oval, S023'), ('rect-plain-s023', 'Rectangle, S023')]
-    img = Image.new('RGB', (1920, len(crops) * 420), (16, 16, 16))
+    crops = [(v + scene, '%s, %s' % (label, scene.upper()))
+             for scene in ('s004', 's008', 's023') for v, label in
+             (('oval-bare-plain-', 'No outline'), ('oval-plain-', 'Gilt line'), ('oval-halo-plain-', 'Golden halo'))]
+    img = Image.new('RGB', (3 * 650 + 20, 3 * 410), (16, 16, 16))
     draw = ImageDraw.Draw(img)
     for i, (name, label) in enumerate(crops):
-        img.paste(shot(name).crop((0, 700, 1920, 1080)), (0, i * 420 + 36))
-        draw.text((8, i * 420 + 6), label + ', full size', fill=(235, 235, 235), font=font)
-    img.save(OUT / 'frames-detail.png')
-    print('wrote', (OUT / 'frames-detail.png').relative_to(VN))
-
+        x, y = (i % 3) * 660, (i // 3) * 410
+        img.paste(shot(name).crop((60, 700, 710, 1060)), (x, y + 40))
+        draw.text((x + 6, y + 8), label + ', full size', fill=(235, 235, 235), font=font)
+    img.save(OUT / 'ovals-detail.png')
+    print('wrote', (OUT / 'ovals-detail.png').relative_to(VN))
 
 if __name__ == '__main__':
     main()

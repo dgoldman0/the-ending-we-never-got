@@ -19,3 +19,13 @@ of the gradient (deep celadon with grain) is sampled beside the old one.
 only for the run, removes them, and writes `frames-samples.png`,
 `frames-shade.png` and `frames-detail.png` to `renpy/test-output/review/`.
 The "current" column reuses the captures made by `prototypes/panel/sample.py`.
+
+## Second round: three ovals, speaker only
+
+The user preferred the oval, with or without an outline, and suggested a
+golden halo instead of a solid line, "a bit of a blend"; and asked to drop the
+second portrait, since the person spoken to is in the painting. `sample.py`
+now captures `oval-bare` (no outline), `oval` (fine gilt line) and
+`oval-halo` (a soft gilt glow around the edge, fading at the base), speaker
+only, into `ovals-samples.png` and `ovals-detail.png`. The first halo was too
+strong (it read as a glowing sticker) and was softened before showing.
