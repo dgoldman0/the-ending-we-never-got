@@ -14,7 +14,7 @@ Prompt: [baseline-v1](../../prompts/characters/iven-baseline-v1.txt).
 
 ## Manual review
 
-Checked a distinct long face, wide nose, black curls, intact olive knee-length coat, broad satchel strap and pale replacement fastening. A targeted edit exposed both hands and reduced the dirty clothing treatment. His long limbs, ordinary middle, relaxed hands and boot contact were inspected. This is a living early-convoy key; no Harrow sleeve tear is present.
+Checked a distinct long face, wide nose, black curls, intact olive knee-length coat (since recoloured: his coat is warm brown from 24 September 2026), broad satchel strap and pale replacement fastening. A targeted edit exposed both hands and reduced the dirty clothing treatment. His long limbs, ordinary middle, relaxed hands and boot contact were inspected. This is a living early-convoy key; no Harrow sleeve tear is present.
 
 The complete image and native detail crops were manually inspected; final GIMP exports were reviewed again. A mild shared exposure curve lives on a separate merged copy above the retained source and any local corrections. It is a baked curve, not a live filter: rebuild that copy after changing a lower layer. The XCF was reopened and its visible export matched the PNG pixel for pixel. This full-body key is not a rig, turnaround or transparent Ren'Py sprite.
 

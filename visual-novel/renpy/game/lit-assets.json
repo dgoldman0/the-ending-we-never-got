@@ -1744,7 +1744,7 @@
   "art/lit/ceremony-intervention-original.webp": {
    "soft": "art/lit/soft/ceremony-intervention-original.webp",
    "tint": [
-    0.226,
+    0.227,
     0.193,
     0.188
    ]
@@ -1928,9 +1928,9 @@
   "art/lit/opening--cg--purification-cleared-original.webp": {
    "soft": "art/lit/soft/opening--cg--purification-cleared-original.webp",
    "tint": [
-    0.23,
-    0.195,
-    0.159
+    0.233,
+    0.194,
+    0.161
    ]
   },
   "art/lit/petition-original.webp": {
@@ -1977,7 +1977,7 @@
    "soft": "art/lit/soft/rovel--details--treatment-blue-original.webp",
    "tint": [
     0.26,
-    0.18,
+    0.178,
     0.15
    ]
   },
@@ -2216,25 +2216,25 @@
   "art/lit/ward-assessment-original.webp": {
    "soft": "art/lit/soft/ward-assessment-original.webp",
    "tint": [
-    0.232,
-    0.196,
-    0.15
+    0.246,
+    0.191,
+    0.155
    ]
   },
   "art/lit/ward-blue-original.webp": {
    "soft": "art/lit/soft/ward-blue-original.webp",
    "tint": [
-    0.227,
-    0.196,
-    0.161
+    0.24,
+    0.192,
+    0.164
    ]
   },
   "art/lit/ward-cleared-original.webp": {
    "soft": "art/lit/soft/ward-cleared-original.webp",
    "tint": [
-    0.229,
-    0.195,
-    0.159
+    0.233,
+    0.194,
+    0.161
    ]
   },
   "art/lit/ward-entry-original.webp": {
@@ -2256,56 +2256,56 @@
   "art/lit/ward-last-patch-original.webp": {
    "soft": "art/lit/soft/ward-last-patch-original.webp",
    "tint": [
-    0.232,
-    0.195,
-    0.159
+    0.235,
+    0.194,
+    0.16
    ]
   },
   "art/lit/ward-lit-original.webp": {
    "soft": "art/lit/soft/ward-lit-original.webp",
    "tint": [
-    0.23,
-    0.195,
-    0.156
+    0.24,
+    0.192,
+    0.162
    ]
   },
   "art/lit/ward-pause-original.webp": {
    "soft": "art/lit/soft/ward-pause-original.webp",
    "tint": [
-    0.221,
-    0.196,
-    0.175
+    0.226,
+    0.195,
+    0.177
    ]
   },
   "art/lit/ward-purification-original.webp": {
    "soft": "art/lit/soft/ward-purification-original.webp",
    "tint": [
-    0.228,
-    0.196,
-    0.161
+    0.231,
+    0.195,
+    0.162
    ]
   },
   "art/lit/ward-unlit-original.webp": {
    "soft": "art/lit/soft/ward-unlit-original.webp",
    "tint": [
-    0.233,
-    0.195,
-    0.153
+    0.244,
+    0.191,
+    0.161
    ]
   },
   "art/lit/ward-water-original.webp": {
    "soft": "art/lit/soft/ward-water-original.webp",
    "tint": [
-    0.219,
-    0.198,
-    0.166
+    0.223,
+    0.197,
+    0.167
    ]
   },
   "art/lit/window-packing-original.webp": {
    "soft": "art/lit/soft/window-packing-original.webp",
    "tint": [
     0.26,
-    0.181,
+    0.177,
     0.15
    ]
   },
@@ -2313,7 +2313,7 @@
    "soft": "art/lit/soft/window-pause-original.webp",
    "tint": [
     0.26,
-    0.179,
+    0.175,
     0.15
    ]
   },
