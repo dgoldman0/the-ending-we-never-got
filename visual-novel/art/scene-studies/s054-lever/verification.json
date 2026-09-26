@@ -1,0 +1,16 @@
+{
+  "native_size": [
+    1672,
+    941
+  ],
+  "delivery_size": [
+    1920,
+    1080
+  ],
+  "alpha_range": [
+    255,
+    255
+  ],
+  "reopened_rgba_exact": true,
+  "sha256": "0383d775e86517ba2ff6d196f582e4f2eacdf0d1f05ab3a6234e92e545978758"
+}
