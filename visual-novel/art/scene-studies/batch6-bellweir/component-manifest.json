@@ -1,0 +1,92 @@
+[
+  {
+    "file": "components/human-temple-sun-template.png",
+    "sha256": "28180b5860ad540daf793038af0dc53553314a59cc9784980df5868dfbd284bc",
+    "bytes": 18201
+  },
+  {
+    "file": "components/orren-search-drawing.png",
+    "sha256": "b16ad6858684d35e0a0470616350b858aece8409da4565c7905c8a9685563d29",
+    "bytes": 1809474
+  },
+  {
+    "file": "components/s011-causeway-broken-heron-donor.png",
+    "sha256": "958aa38761e7586fb14f92e283a8768d20d2e13b840b2c4e0861d88a5700e1d6",
+    "bytes": 1846186
+  },
+  {
+    "file": "components/s011-causeway-hest-donor.png",
+    "sha256": "631c93fa01b1c5d5116ba48a0cf43f09ac2bd4570c5e3e583d2e39694f430807",
+    "bytes": 1862587
+  },
+  {
+    "file": "components/s011-causeway-mara-donor.png",
+    "sha256": "4c7e51895533d3bdd1e64352197c75ce7dccd5df83de550edbfd8bb9a2fbd9d0",
+    "bytes": 1995274
+  },
+  {
+    "file": "components/s011-causeway-shards-only-donor.png",
+    "sha256": "f558b9620026e77e85afa2352d36a5984fa94e3bbc31614512bc0263c9e4e361",
+    "bytes": 1833483
+  },
+  {
+    "file": "components/s011-heron-mara-donor.png",
+    "sha256": "0860da5dbba415dad8615bf6da2c9a270007e944a5cca537d3f3bb2881453ef5",
+    "bytes": 2100444
+  },
+  {
+    "file": "components/s011-sanctuary-broken-heron-donor.png",
+    "sha256": "7c93ec96ae1e4b8ea7336caa4135e09e85c2aef60fcbf5585693b630482e2d4d",
+    "bytes": 1793342
+  },
+  {
+    "file": "components/s011-sanctuary-family-donor.png",
+    "sha256": "276a16335f0bdec8603c24fb95cb90be58ae5b632defff2562285eb8d9a75085",
+    "bytes": 2122084
+  },
+  {
+    "file": "components/s011-sanctuary-flag-donor.png",
+    "sha256": "89fb6d03341566e01eba3cd9779c04b4d581b8007260932363766b32cab8c699",
+    "bytes": 1338466
+  },
+  {
+    "file": "components/s011-sanctuary-mara-donor.png",
+    "sha256": "8d00daef3d80369529d008c33f909da88060b1e67652ab1745a23ac41f82f5dc",
+    "bytes": 2057264
+  },
+  {
+    "file": "components/s012-banner-blank-donor.png",
+    "sha256": "e1e5be4778d593313928b2be9f3b27c6082d7403a381c72394721678077cefa4",
+    "bytes": 1302903
+  },
+  {
+    "file": "components/s014-blank-drawings-donor.png",
+    "sha256": "470a5d4ec93b1532c9616b5bffdbcc37cc4e491c85a468ebe36d88b6a21d1855",
+    "bytes": 1788869
+  },
+  {
+    "file": "components/s014-boots-elin-donor.png",
+    "sha256": "11e8601aafcb1dd326493bb3523f305c92979696ec4d6778644b05a84a59995b",
+    "bytes": 1440716
+  },
+  {
+    "file": "components/s014-boots-renn-donor.png",
+    "sha256": "1f702b47ca97dafccbfb5c2b528c61d0d15679c009683913ecd8b3c0f8d80e86",
+    "bytes": 1832382
+  },
+  {
+    "file": "components/s014-warehouse-renn-donor.png",
+    "sha256": "2551fdded6fe1fb77bb1aabb9e5b7be59306f13424155e8af7c7048f33d497d4",
+    "bytes": 2034482
+  },
+  {
+    "file": "components/s022-blank-drawing-donor.png",
+    "sha256": "8f3004df3013e32c1952de69084a787d2726beb2f31093871346ec6778608f13",
+    "bytes": 1435164
+  },
+  {
+    "file": "components/s024-blank-drawing-donor.png",
+    "sha256": "df2a313d2b79c69094bffa515b2c0d49a81754dc782db093e89ae020b099b0e5",
+    "bytes": 2089722
+  }
+]

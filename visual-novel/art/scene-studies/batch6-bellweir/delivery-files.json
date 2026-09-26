@@ -1,0 +1,98 @@
+[
+  {
+    "scene": "s011-bellweir-causeway",
+    "destination": "visual-novel/renpy/game/art/scenes/s011-bellweir-causeway.png",
+    "source_sha256": "246c876a249db1b51df5abe3bbaad26a97193635fe825a2cb9232c1320ff4438",
+    "delivered_sha256": "d489afe39ac3108308a57e50c8595f1282dcf78bd0f61fdc7293b2c9f0e59ccc",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s011-bellweir-causeway/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s011-sanctuary",
+    "destination": "visual-novel/renpy/game/art/scenes/s011-sanctuary.png",
+    "source_sha256": "9ea9d1d4c0278c3b5ed6b038f27242ef65b01f518a994cd989017f49ea69fa41",
+    "delivered_sha256": "4dae91ef6a99bcfc610dcd3d3644fc46c372629c83ee982c05e1e39012446e0b",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s011-sanctuary/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s011-heron",
+    "destination": "visual-novel/renpy/game/art/scenes/s011-heron.png",
+    "source_sha256": "924bf0436c8e196642bd90a40db2e197c010d0a2a3ac6eb85d63d898e82f0948",
+    "delivered_sha256": "2325cb68b792aa46e4504b805bea646269fde43e2fd634e18720bdadde837935",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s011-heron/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s014-relief-warehouse",
+    "destination": "visual-novel/renpy/game/art/scenes/s014-relief-warehouse.png",
+    "source_sha256": "43f097c332b3fbd68a9ce2a117a2aa26d8440417b65c1e38d3a17143cc7681ff",
+    "delivered_sha256": "a8cb8b655af03dc5078368e6e22421e145deaf6dff84dd15d7d3f0b536c998c4",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s014-relief-warehouse/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s014-boots-and-cap",
+    "destination": "visual-novel/renpy/game/art/scenes/s014-boots-and-cap.png",
+    "source_sha256": "f434b9da33e1e319736cb1fa36c94eaced97bbe5bad0419040382bd929cb6415",
+    "delivered_sha256": "d56329d5013e691d4a2daf804e61dd6c5a76167d8d871fbcfde45412472a6cfe",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s014-boots-and-cap/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s012-temple-reading-room",
+    "destination": "visual-novel/renpy/game/art/scenes/s012-temple-reading-room.png",
+    "source_sha256": "e61cfddef9fa6a1fc723b92c24765faf13ba89d6be7bd1488afdeddbe7a27783",
+    "delivered_sha256": "89e50cb58ddbc2f7325b58669e4839f4d986250f6f48a168f265c621226e3e08",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s012-temple-reading-room/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s022-river-picket",
+    "destination": "visual-novel/renpy/game/art/scenes/s022-river-picket.png",
+    "source_sha256": "b73fa220cdb2d61cf87823a1d4b2995d20c7a7f9dfb5bdca1a1c134b85d0fb06",
+    "delivered_sha256": "5eda0936466f3521613d9cf0a5c9eb4bcfe79014a8b8989e9012fb6472978c32",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s022-river-picket/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  },
+  {
+    "scene": "s024-northern-wharf",
+    "destination": "visual-novel/renpy/game/art/scenes/s024-northern-wharf.png",
+    "source_sha256": "2f0801e89a7d93cc328630f20333820678a5d74fe14fc323bc0ce0d5c3f351da",
+    "delivered_sha256": "e0fef0a71b42d4c667333aa701dd5f27e0683d15505b592a68bfdaf9ffcfd74f",
+    "master": "visual-novel/art/scene-studies/batch6-bellweir/s024-northern-wharf/repair-master.xcf",
+    "size": [
+      1920,
+      1080
+    ],
+    "review": "Final whole and native: producer, citadel peer, root; bounded repair cleared"
+  }
+]

@@ -1,0 +1,23 @@
+# Batch 6 — Bellweir and the search drawing
+
+Completed and promoted, 26 September 2026. Assigned repairs 37, 42–46, across eight current neutral scene PNGs. Citadel peer and root independently reviewed all eight whole compositions and native details before promotion. No runtime/staging/grading changes.
+
+Read the complete source interactions: Bellweir's destruction and retreat (approximately 485–532), the reading-room/Elin revelation and winter warehouse (534–623), Lucan's safe passage at the picket (950–995), and the northern wharf (1046–1069). Read current character, location and continuity designs. Current source pixels govern composition, exposure and every unaffected actor/prop.
+
+- **S011 causeway and sanctuary:** the glass heron has already burst, so only broken glass remains around its base among the black crystal. Hest is the established deep warm-brown woman with broad round face, broad nose and black curls under her rust scarf. Mara has one sheathed sword on her anatomical LEFT hip and a shield on her LEFT arm. Her pointing/right arm remains usable. Sanctuary also needs the distant northern flag above occupied Bellweir (white eight-point star, vertically split, four principal points), and Renn must read six beside eight-year-old Ada.
+- **S011 heron:** retain the actual rupture event. Move Mara's one sword from right front hip to left hip; shield remains her left-arm equipment.
+- **S012 reading room:** replace the malformed chalice mark on its hanging banner with the established brass sun disk and exactly twelve short rays. The archivist is the established older woman. No identity or scene changes.
+- **S014 warehouse and boots/cap:** Renn is six, smaller and younger than Ada at eight, holding Orren's burgundy cap. Preserve clothing and seated action. In boots/cap also correct doorway Elin to her early portrait: deep-brown skin, tightly curled short twist, compact round-cheeked face, ocher jacket/dark teal skirt. Orren's copied search portrait must be the same drawing used below.
+- **S022 picket and S024 wharf:** preserve actual paper sheet placement/perspective and hands; replace only its drawn face with the single shared Orren design. Hest's address remains on the reverse, no invented readable text on the face. Orren: early forties, medium-brown skin, receding dark hair, long chin with a short scar beneath it. Keep healthy market-era appearance in the drawing, not later captivity injuries.
+
+All production bitmap edits use built-in generation and GIMP masks/transforms, with original pixel invariants outside requested regions, opaque original dimensions, layered masters and exact reopening checks. Comparisons and engineering checks cannot clear the connected runtime experience.
+
+## Candidate delivery and review
+
+Each scene directory contains its exact current neutral `before.png`, final `candidate.png` and editable `repair-master.xcf`. Exact prompts and the GIMP recipes/build/reopen/audit scripts are in `../../prompts/batch6-bellweir/`. Donor images and the copied fixed sun template are in `components/`; their hashes are in `component-manifest.json`. One shared Orren pencil drawing is perspective-fitted in multiply layers across the source book, Tessa's lighter copy, the picket handoff and the wharf chart.
+
+Whole candidates and native equipment, family, continuity and drawing boards were inspected. The independent citadel reviewer then viewed all eight whole scenes and the native repairs against actual Hest and Elin portraits, clearing these bounded repairs. The producing pass caught and corrected residual sanctuary heron fragments, an old scabbard tip, a brass crossguard speck and remaining high glass wing fragment. Earlier versions and favorable checks do not substitute for the final candidate inspection.
+
+`verification.json` records the final candidates: all eight retain opaque 1920×1080 pixels, every XCF reopens to the exact exported candidate, and zero changed pixels lie outside the actual editable mask unions. Immediately before promotion, each current scene PNG was hash-checked against its saved neutral original. All eight reviewed candidates were then copied to the same scene paths and their delivery hashes checked; `delivery-files.json` records the exact files. No exposure pass, runtime code, staging, grading, canonical design or request changes are included. This repair review does not clear connected runtime/presentation gates.
+
+Root reviewed all eight final whole candidates individually and the equipment, family, continuity and drawing native boards, finding no additional visible blocker. The optional minor-detail set is separate from this completed repair group.
