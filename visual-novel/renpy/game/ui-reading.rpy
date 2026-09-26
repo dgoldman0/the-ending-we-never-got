@@ -314,12 +314,16 @@ init -1 python:
     def reading_shade():
         """Behind the text the painting falls softly out of focus (a lens blur
         made per painting by tools/grade-light.py) and into its own shadow
-        colour, multiplied so it keeps its hue."""
+        colour, multiplied so it keeps its hue. A band made for a raised
+        painting already starts where the focus falls away on screen."""
         image, lift = shown_stage()
         layers = []
         shade = LIT.get('shade', {}).get(image) if image else None
         if shade:
-            layers.append(Transform(shade['soft'], ypos=SOFT_TOP - lift))
+            layers.append(Transform(shade['soft'], ypos=SOFT_TOP - lift + shade.get('lift', 0)))
+            if lift:
+                # the raised painting's lower edge fades into the dark beneath it
+                layers.append(Transform('ui/edge-fade.png', xsize=1920, ysize=220, ypos=1080 - lift - 220))
         layers.append(_shadow_tint(image, 'ui/reading-shade-mask.png'))
         return Fixed(*layers, xysize=(1920, 1080))
 

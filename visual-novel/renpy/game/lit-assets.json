@@ -27,11 +27,20 @@
   "art/scenes/s006-convoy-camp.png": {
    "original": "art/lit/scenes--s006-convoy-camp-original.webp"
   },
+  "art/scenes/s006-warden.png": {
+   "original": "art/lit/scenes--s006-warden-original.webp"
+  },
   "art/scenes/s007-roadside-inn.png": {
    "original": "art/lit/scenes--s007-roadside-inn-original.webp"
   },
   "art/scenes/s008-bellweir-market.png": {
    "original": "art/lit/scenes--s008-bellweir-market-original.webp"
+  },
+  "art/scenes/s008-bench-drawing.png": {
+   "original": "art/lit/scenes--s008-bench-drawing-original.webp"
+  },
+  "art/scenes/s008-fountain.png": {
+   "original": "art/lit/scenes--s008-fountain-original.webp"
   },
   "art/scenes/s009-bellweir-river.png": {
    "original": "art/lit/scenes--s009-bellweir-river-original.webp"
@@ -47,6 +56,9 @@
   },
   "art/scenes/s011-bellweir-causeway.png": {
    "original": "art/lit/scenes--s011-bellweir-causeway-original.webp"
+  },
+  "art/scenes/s011-heron.png": {
+   "original": "art/lit/scenes--s011-heron-original.webp"
   },
   "art/scenes/s011-sanctuary.png": {
    "original": "art/lit/scenes--s011-sanctuary-original.webp"
@@ -102,8 +114,128 @@
   "art/scenes/s024-northern-wharf.png": {
    "original": "art/lit/scenes--s024-northern-wharf-original.webp"
   },
+  "art/scenes/s025-report.png": {
+   "original": "art/lit/scenes--s025-report-original.webp"
+  },
   "art/scenes/s025-royal-infirmary-corridor.png": {
    "original": "art/lit/scenes--s025-royal-infirmary-corridor-original.webp"
+  },
+  "art/scenes/s026-quarry-loading-ramp.png": {
+   "original": "art/lit/scenes--s026-quarry-loading-ramp-original.webp"
+  },
+  "art/scenes/s027-river-camp-gate.png": {
+   "original": "art/lit/scenes--s027-river-camp-gate-original.webp"
+  },
+  "art/scenes/s028-river-camp-infirmary.png": {
+   "original": "art/lit/scenes--s028-river-camp-infirmary-original.webp"
+  },
+  "art/scenes/s029-barge.png": {
+   "original": "art/lit/scenes--s029-barge-original.webp"
+  },
+  "art/scenes/s029-cap.png": {
+   "original": "art/lit/scenes--s029-cap-original.webp"
+  },
+  "art/scenes/s029-launch.png": {
+   "original": "art/lit/scenes--s029-launch-original.webp"
+  },
+  "art/scenes/s029-leg-support.png": {
+   "original": "art/lit/scenes--s029-leg-support-original.webp"
+  },
+  "art/scenes/s029-quarry-refusal.png": {
+   "original": "art/lit/scenes--s029-quarry-refusal-original.webp"
+  },
+  "art/scenes/s029-river-camps-visits.png": {
+   "original": "art/lit/scenes--s029-river-camps-visits-original.webp"
+  },
+  "art/scenes/s030-laughing-portrait.png": {
+   "original": "art/lit/scenes--s030-laughing-portrait-original.webp"
+  },
+  "art/scenes/s030-river-camp-infirmary-evening.png": {
+   "original": "art/lit/scenes--s030-river-camp-infirmary-evening-original.webp"
+  },
+  "art/scenes/s031-grain-wharf.png": {
+   "original": "art/lit/scenes--s031-grain-wharf-original.webp"
+  },
+  "art/scenes/s032-harrow-bridge.png": {
+   "original": "art/lit/scenes--s032-harrow-bridge-original.webp"
+  },
+  "art/scenes/s033-valcair-war-room.png": {
+   "original": "art/lit/scenes--s033-valcair-war-room-original.webp"
+  },
+  "art/scenes/s034-return-cargo-shed.png": {
+   "original": "art/lit/scenes--s034-return-cargo-shed-original.webp"
+  },
+  "art/scenes/s035-collapse.png": {
+   "original": "art/lit/scenes--s035-collapse-original.webp"
+  },
+  "art/scenes/s035-harrow-bridge-crossing.png": {
+   "original": "art/lit/scenes--s035-harrow-bridge-crossing-original.webp"
+  },
+  "art/scenes/s035-iven.png": {
+   "original": "art/lit/scenes--s035-iven-original.webp"
+  },
+  "art/scenes/s036-harrow-south-bank.png": {
+   "original": "art/lit/scenes--s036-harrow-south-bank-original.webp"
+  },
+  "art/scenes/s036-south-bank.png": {
+   "original": "art/lit/scenes--s036-south-bank-original.webp"
+  },
+  "art/scenes/s037-coat.png": {
+   "original": "art/lit/scenes--s037-coat-original.webp"
+  },
+  "art/scenes/s037-relief-camp.png": {
+   "original": "art/lit/scenes--s037-relief-camp-original.webp"
+  },
+  "art/scenes/s038-northern-stores-office.png": {
+   "original": "art/lit/scenes--s038-northern-stores-office-original.webp"
+  },
+  "art/scenes/s039-northern-river-town.png": {
+   "original": "art/lit/scenes--s039-northern-river-town-original.webp"
+  },
+  "art/scenes/s040-mill-town.png": {
+   "original": "art/lit/scenes--s040-mill-town-original.webp"
+  },
+  "art/scenes/s041-curse-tower.png": {
+   "original": "art/lit/scenes--s041-curse-tower-original.webp"
+  },
+  "art/scenes/s041-wardkeeper.png": {
+   "original": "art/lit/scenes--s041-wardkeeper-original.webp"
+  },
+  "art/scenes/s042-cart.png": {
+   "original": "art/lit/scenes--s042-cart-original.webp"
+  },
+  "art/scenes/s042-mara-hand.png": {
+   "original": "art/lit/scenes--s042-mara-hand-original.webp"
+  },
+  "art/scenes/s042-mill-town-later.png": {
+   "original": "art/lit/scenes--s042-mill-town-later-original.webp"
+  },
+  "art/scenes/s043-river-provinces.png": {
+   "original": "art/lit/scenes--s043-river-provinces-original.webp"
+  },
+  "art/scenes/s043-seasons.png": {
+   "original": "art/lit/scenes--s043-seasons-original.webp"
+  },
+  "art/scenes/s044-upper-stores-landing.png": {
+   "original": "art/lit/scenes--s044-upper-stores-landing-original.webp"
+  },
+  "art/scenes/s045-citadel-north-infirmary.png": {
+   "original": "art/lit/scenes--s045-citadel-north-infirmary-original.webp"
+  },
+  "art/scenes/s046-valcair-private-room.png": {
+   "original": "art/lit/scenes--s046-valcair-private-room-original.webp"
+  },
+  "art/scenes/s047-citadel-north-infirmary-before-dawn.png": {
+   "original": "art/lit/scenes--s047-citadel-north-infirmary-before-dawn-original.webp"
+  },
+  "art/scenes/s048-examination-tent.png": {
+   "original": "art/lit/scenes--s048-examination-tent-original.webp"
+  },
+  "art/scenes/s049-command-tent.png": {
+   "original": "art/lit/scenes--s049-command-tent-original.webp"
+  },
+  "art/scenes/s054-throne-hall.png": {
+   "original": "art/lit/scenes--s054-throne-hall-original.webp"
   }
  },
  "portraits": {
@@ -1609,13 +1741,17 @@
   "art/rovel/details/treatment-blue.png": "ordinary",
   "art/rovel/details/treatment-white.png": "ordinary",
   "art/scenes/s006-convoy-camp.png": "ordinary",
+  "art/scenes/s006-warden.png": "ordinary",
   "art/scenes/s007-roadside-inn.png": "night",
   "art/scenes/s008-bellweir-market.png": "ordinary",
+  "art/scenes/s008-bench-drawing.png": "ordinary",
+  "art/scenes/s008-fountain.png": "ordinary",
   "art/scenes/s009-bellweir-river.png": "ordinary",
   "art/scenes/s009-boat-drawing.png": "ordinary",
   "art/scenes/s009-rowing.png": "ordinary",
   "art/scenes/s010-bellweir-hills.png": "night",
   "art/scenes/s011-bellweir-causeway.png": "night",
+  "art/scenes/s011-heron.png": "night",
   "art/scenes/s011-sanctuary.png": "night",
   "art/scenes/s012-temple-reading-room.png": "night",
   "art/scenes/s013-summoning-chamber-later.png": "ordinary",
@@ -1634,7 +1770,47 @@
   "art/scenes/s022-river-picket.png": "ordinary",
   "art/scenes/s023-northern-field-quarters.png": "night",
   "art/scenes/s024-northern-wharf.png": "ordinary",
+  "art/scenes/s025-report.png": "ordinary",
   "art/scenes/s025-royal-infirmary-corridor.png": "ordinary",
+  "art/scenes/s026-quarry-loading-ramp.png": "ordinary",
+  "art/scenes/s027-river-camp-gate.png": "ordinary",
+  "art/scenes/s028-river-camp-infirmary.png": "ordinary",
+  "art/scenes/s029-barge.png": "ordinary",
+  "art/scenes/s029-cap.png": "ordinary",
+  "art/scenes/s029-launch.png": "ordinary",
+  "art/scenes/s029-leg-support.png": "ordinary",
+  "art/scenes/s029-quarry-refusal.png": "ordinary",
+  "art/scenes/s029-river-camps-visits.png": "ordinary",
+  "art/scenes/s030-laughing-portrait.png": "ordinary",
+  "art/scenes/s030-river-camp-infirmary-evening.png": "ordinary",
+  "art/scenes/s031-grain-wharf.png": "ordinary",
+  "art/scenes/s032-harrow-bridge.png": "ordinary",
+  "art/scenes/s033-valcair-war-room.png": "night",
+  "art/scenes/s034-return-cargo-shed.png": "ordinary",
+  "art/scenes/s035-collapse.png": "ordinary",
+  "art/scenes/s035-harrow-bridge-crossing.png": "ordinary",
+  "art/scenes/s035-iven.png": "ordinary",
+  "art/scenes/s036-harrow-south-bank.png": "ordinary",
+  "art/scenes/s036-south-bank.png": "ordinary",
+  "art/scenes/s037-coat.png": "night",
+  "art/scenes/s037-relief-camp.png": "night",
+  "art/scenes/s038-northern-stores-office.png": "ordinary",
+  "art/scenes/s039-northern-river-town.png": "ordinary",
+  "art/scenes/s040-mill-town.png": "ordinary",
+  "art/scenes/s041-curse-tower.png": "ordinary",
+  "art/scenes/s041-wardkeeper.png": "ordinary",
+  "art/scenes/s042-cart.png": "ordinary",
+  "art/scenes/s042-mara-hand.png": "ordinary",
+  "art/scenes/s042-mill-town-later.png": "ordinary",
+  "art/scenes/s043-river-provinces.png": "ordinary",
+  "art/scenes/s043-seasons.png": "ordinary",
+  "art/scenes/s044-upper-stores-landing.png": "ordinary",
+  "art/scenes/s045-citadel-north-infirmary.png": "ordinary",
+  "art/scenes/s046-valcair-private-room.png": "night",
+  "art/scenes/s047-citadel-north-infirmary-before-dawn.png": "ordinary",
+  "art/scenes/s048-examination-tent.png": "ordinary",
+  "art/scenes/s049-command-tent.png": "night",
+  "art/scenes/s054-throne-hall.png": "ordinary",
   "ceremony-applause": "bright",
   "ceremony-dais": "bright",
   "ceremony-intervention": "bright",
@@ -1997,6 +2173,14 @@
     0.178
    ]
   },
+  "art/lit/scenes--s006-warden-original.webp": {
+   "soft": "art/lit/soft/scenes--s006-warden-original.webp",
+   "tint": [
+    0.25,
+    0.188,
+    0.171
+   ]
+  },
   "art/lit/scenes--s007-roadside-inn-original.webp": {
    "soft": "art/lit/soft/scenes--s007-roadside-inn-original.webp",
    "tint": [
@@ -2011,6 +2195,22 @@
     0.205,
     0.199,
     0.199
+   ]
+  },
+  "art/lit/scenes--s008-bench-drawing-original.webp": {
+   "soft": "art/lit/soft/scenes--s008-bench-drawing-original.webp",
+   "tint": [
+    0.222,
+    0.196,
+    0.177
+   ]
+  },
+  "art/lit/scenes--s008-fountain-original.webp": {
+   "soft": "art/lit/soft/scenes--s008-fountain-original.webp",
+   "tint": [
+    0.209,
+    0.199,
+    0.185
    ]
   },
   "art/lit/scenes--s009-bellweir-river-original.webp": {
@@ -2051,6 +2251,14 @@
     0.24,
     0.189,
     0.194
+   ]
+  },
+  "art/lit/scenes--s011-heron-original.webp": {
+   "soft": "art/lit/soft/scenes--s011-heron-original.webp",
+   "tint": [
+    0.26,
+    0.181,
+    0.184
    ]
   },
   "art/lit/scenes--s011-sanctuary-original.webp": {
@@ -2197,12 +2405,333 @@
     0.159
    ]
   },
+  "art/lit/scenes--s025-report-original.webp": {
+   "soft": "art/lit/soft/scenes--s025-report-original.webp",
+   "tint": [
+    0.242,
+    0.189,
+    0.183
+   ]
+  },
   "art/lit/scenes--s025-royal-infirmary-corridor-original.webp": {
    "soft": "art/lit/soft/scenes--s025-royal-infirmary-corridor-original.webp",
    "tint": [
     0.246,
     0.19,
     0.165
+   ]
+  },
+  "art/lit/scenes--s026-quarry-loading-ramp-original.webp": {
+   "soft": "art/lit/soft/scenes--s026-quarry-loading-ramp-original.webp",
+   "tint": [
+    0.248,
+    0.19,
+    0.159
+   ]
+  },
+  "art/lit/scenes--s027-river-camp-gate-original.webp": {
+   "soft": "art/lit/soft/scenes--s027-river-camp-gate-original.webp",
+   "tint": [
+    0.243,
+    0.192,
+    0.158
+   ]
+  },
+  "art/lit/scenes--s028-river-camp-infirmary-original.webp": {
+   "soft": "art/lit/soft/scenes--s028-river-camp-infirmary-original.webp",
+   "tint": [
+    0.26,
+    0.188,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s029-barge-original.webp": {
+   "soft": "art/lit/soft/scenes--s029-barge-original.webp",
+   "tint": [
+    0.246,
+    0.19,
+    0.158
+   ]
+  },
+  "art/lit/scenes--s029-cap-original.webp": {
+   "soft": "art/lit/soft/scenes--s029-cap-original.webp",
+   "tint": [
+    0.26,
+    0.183,
+    0.151
+   ]
+  },
+  "art/lit/scenes--s029-launch-original.webp": {
+   "lift": 70,
+   "soft": "art/lit/soft/scenes--s029-launch-original.webp",
+   "tint": [
+    0.26,
+    0.186,
+    0.152
+   ]
+  },
+  "art/lit/scenes--s029-leg-support-original.webp": {
+   "soft": "art/lit/soft/scenes--s029-leg-support-original.webp",
+   "tint": [
+    0.26,
+    0.186,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s029-quarry-refusal-original.webp": {
+   "soft": "art/lit/soft/scenes--s029-quarry-refusal-original.webp",
+   "tint": [
+    0.237,
+    0.194,
+    0.156
+   ]
+  },
+  "art/lit/scenes--s029-river-camps-visits-original.webp": {
+   "soft": "art/lit/soft/scenes--s029-river-camps-visits-original.webp",
+   "tint": [
+    0.246,
+    0.191,
+    0.158
+   ]
+  },
+  "art/lit/scenes--s030-laughing-portrait-original.webp": {
+   "soft": "art/lit/soft/scenes--s030-laughing-portrait-original.webp",
+   "tint": [
+    0.26,
+    0.177,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s030-river-camp-infirmary-evening-original.webp": {
+   "soft": "art/lit/soft/scenes--s030-river-camp-infirmary-evening-original.webp",
+   "tint": [
+    0.26,
+    0.181,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s031-grain-wharf-original.webp": {
+   "soft": "art/lit/soft/scenes--s031-grain-wharf-original.webp",
+   "tint": [
+    0.253,
+    0.189,
+    0.158
+   ]
+  },
+  "art/lit/scenes--s032-harrow-bridge-original.webp": {
+   "soft": "art/lit/soft/scenes--s032-harrow-bridge-original.webp",
+   "tint": [
+    0.239,
+    0.191,
+    0.17
+   ]
+  },
+  "art/lit/scenes--s033-valcair-war-room-original.webp": {
+   "soft": "art/lit/soft/scenes--s033-valcair-war-room-original.webp",
+   "tint": [
+    0.26,
+    0.169,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s034-return-cargo-shed-original.webp": {
+   "soft": "art/lit/soft/scenes--s034-return-cargo-shed-original.webp",
+   "tint": [
+    0.257,
+    0.187,
+    0.159
+   ]
+  },
+  "art/lit/scenes--s035-collapse-original.webp": {
+   "soft": "art/lit/soft/scenes--s035-collapse-original.webp",
+   "tint": [
+    0.185,
+    0.203,
+    0.211
+   ]
+  },
+  "art/lit/scenes--s035-harrow-bridge-crossing-original.webp": {
+   "soft": "art/lit/soft/scenes--s035-harrow-bridge-crossing-original.webp",
+   "tint": [
+    0.26,
+    0.183,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s035-iven-original.webp": {
+   "soft": "art/lit/soft/scenes--s035-iven-original.webp",
+   "tint": [
+    0.216,
+    0.197,
+    0.177
+   ]
+  },
+  "art/lit/scenes--s036-harrow-south-bank-original.webp": {
+   "soft": "art/lit/soft/scenes--s036-harrow-south-bank-original.webp",
+   "tint": [
+    0.248,
+    0.19,
+    0.161
+   ]
+  },
+  "art/lit/scenes--s036-south-bank-original.webp": {
+   "soft": "art/lit/soft/scenes--s036-south-bank-original.webp",
+   "tint": [
+    0.26,
+    0.182,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s037-coat-original.webp": {
+   "soft": "art/lit/soft/scenes--s037-coat-original.webp",
+   "tint": [
+    0.26,
+    0.172,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s037-relief-camp-original.webp": {
+   "soft": "art/lit/soft/scenes--s037-relief-camp-original.webp",
+   "tint": [
+    0.26,
+    0.164,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s038-northern-stores-office-original.webp": {
+   "soft": "art/lit/soft/scenes--s038-northern-stores-office-original.webp",
+   "tint": [
+    0.256,
+    0.19,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s039-northern-river-town-original.webp": {
+   "soft": "art/lit/soft/scenes--s039-northern-river-town-original.webp",
+   "tint": [
+    0.26,
+    0.188,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s040-mill-town-original.webp": {
+   "soft": "art/lit/soft/scenes--s040-mill-town-original.webp",
+   "tint": [
+    0.228,
+    0.192,
+    0.195
+   ]
+  },
+  "art/lit/scenes--s041-curse-tower-original.webp": {
+   "soft": "art/lit/soft/scenes--s041-curse-tower-original.webp",
+   "tint": [
+    0.231,
+    0.193,
+    0.173
+   ]
+  },
+  "art/lit/scenes--s041-wardkeeper-original.webp": {
+   "soft": "art/lit/soft/scenes--s041-wardkeeper-original.webp",
+   "tint": [
+    0.24,
+    0.191,
+    0.168
+   ]
+  },
+  "art/lit/scenes--s042-cart-original.webp": {
+   "soft": "art/lit/soft/scenes--s042-cart-original.webp",
+   "tint": [
+    0.229,
+    0.193,
+    0.183
+   ]
+  },
+  "art/lit/scenes--s042-mara-hand-original.webp": {
+   "soft": "art/lit/soft/scenes--s042-mara-hand-original.webp",
+   "tint": [
+    0.239,
+    0.189,
+    0.195
+   ]
+  },
+  "art/lit/scenes--s042-mill-town-later-original.webp": {
+   "soft": "art/lit/soft/scenes--s042-mill-town-later-original.webp",
+   "tint": [
+    0.235,
+    0.191,
+    0.19
+   ]
+  },
+  "art/lit/scenes--s043-river-provinces-original.webp": {
+   "soft": "art/lit/soft/scenes--s043-river-provinces-original.webp",
+   "tint": [
+    0.235,
+    0.193,
+    0.168
+   ]
+  },
+  "art/lit/scenes--s043-seasons-original.webp": {
+   "soft": "art/lit/soft/scenes--s043-seasons-original.webp",
+   "tint": [
+    0.205,
+    0.197,
+    0.211
+   ]
+  },
+  "art/lit/scenes--s044-upper-stores-landing-original.webp": {
+   "soft": "art/lit/soft/scenes--s044-upper-stores-landing-original.webp",
+   "tint": [
+    0.202,
+    0.198,
+    0.214
+   ]
+  },
+  "art/lit/scenes--s045-citadel-north-infirmary-original.webp": {
+   "soft": "art/lit/soft/scenes--s045-citadel-north-infirmary-original.webp",
+   "tint": [
+    0.249,
+    0.191,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s046-valcair-private-room-original.webp": {
+   "soft": "art/lit/soft/scenes--s046-valcair-private-room-original.webp",
+   "tint": [
+    0.26,
+    0.179,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s047-citadel-north-infirmary-before-dawn-original.webp": {
+   "soft": "art/lit/soft/scenes--s047-citadel-north-infirmary-before-dawn-original.webp",
+   "tint": [
+    0.225,
+    0.196,
+    0.166
+   ]
+  },
+  "art/lit/scenes--s048-examination-tent-original.webp": {
+   "soft": "art/lit/soft/scenes--s048-examination-tent-original.webp",
+   "tint": [
+    0.257,
+    0.189,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s049-command-tent-original.webp": {
+   "soft": "art/lit/soft/scenes--s049-command-tent-original.webp",
+   "tint": [
+    0.26,
+    0.176,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s054-throne-hall-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-throne-hall-original.webp",
+   "tint": [
+    0.215,
+    0.197,
+    0.19
    ]
   },
   "art/lit/stretcher-original.webp": {

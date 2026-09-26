@@ -333,11 +333,21 @@ def lens(lin, r):
     return cv2.filter2D(lin, -1, disc / disc.sum(), borderType=cv2.BORDER_REFLECT)
 
 
-def reading_shade(graded_path):
-    """(soft band path, shadow colour) for a graded painting."""
-    mask = np.asarray(Image.open(GAME / 'ui/reading-shade-mask.png'))[SOFT_TOP:, :, 3].astype(np.float32) / 255
+def staging_lifts():
+    """{painting: lift} for staged paintings the reading screen raises
+    (framing 'lift' in staging.json)."""
+    scenes = json.loads((GAME / 'staging.json').read_text())['scenes']
+    return {stage['image']: stage['framing']['lift'] for spec in scenes.values()
+            for stage in spec.get('stages', []) if stage.get('framing', {}).get('lift')}
+
+
+def reading_shade(graded_path, lift=0):
+    """(soft band path, shadow colour) for a graded painting. For a painting
+    raised by `lift` the band is cut from the raised position, so its focus
+    falls away at the same place on screen as everywhere else."""
+    mask = np.asarray(Image.open(GAME / 'ui/reading-shade-mask.png'))[SOFT_TOP:SIZE[1] - lift, :, 3].astype(np.float32) / 255
     src = np.asarray(Image.open(GAME / graded_path).convert('RGB').resize(SIZE, Image.LANCZOS), np.float32) / 255
-    band = to_lin(src[SOFT_TOP:])
+    band = to_lin(src[SOFT_TOP + lift:])
     t = mask * 4
     levels = [band, lens(band, 3), lens(band, 7), lens(band, 13), lens(band, 20)]
     out = to_srgb(sum(np.clip(1 - np.abs(t - i), 0, 1)[..., None] * level for i, level in enumerate(levels)))
@@ -400,6 +410,7 @@ def main():
     old = json.loads(MANIFEST.read_text()) if MANIFEST.is_file() else {}
     manifest = {'stages': {}, 'images': {}, 'registers': {}, 'shade': {}}
     graded = 0
+    lifts = staging_lifts()
     for key, register, source, inputs in plan_items():
         paths = {mode: output_path(key, mode) for mode in STRENGTH}
         # regrade when an output is missing or older than any file it is made from
@@ -416,14 +427,15 @@ def main():
         kind, name = key.split(':', 1)
         manifest['stages' if kind == 'stage' else 'images'][name] = paths
         manifest['registers'][name] = register
+        lift = lifts.get(name, 0) if kind == 'image' else 0
         for path in paths.values():
             known = old.get('shade', {}).get(path)
-            if known and (GAME / known['soft']).is_file() and \
+            if known and known.get('lift', 0) == lift and (GAME / known['soft']).is_file() and \
                     (GAME / known['soft']).stat().st_mtime >= (GAME / path).stat().st_mtime:
                 manifest['shade'][path] = known
             else:
-                soft, tint = reading_shade(path)
-                manifest['shade'][path] = {'soft': soft, 'tint': tint}
+                soft, tint = reading_shade(path, lift)
+                manifest['shade'][path] = dict(soft=soft, tint=tint, **({'lift': lift} if lift else {}))
     manifest['portraits'], portrait_count = grade_portraits(args.force)
     MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True) + '\n')
     total = len(manifest['stages']) + len(manifest['images'])

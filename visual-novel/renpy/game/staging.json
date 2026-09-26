@@ -70,12 +70,12 @@
     },
     {
      "image": "art/scenes/s008-bench-drawing.png",
-     "from": 359,
+     "from": 360,
      "alt": "Tessa sketches Orren and Iven carrying a bench; Iven leans over her shoulder at the drawing."
     },
     {
      "image": "art/scenes/s008-bellweir-market.png",
-     "from": 386,
+     "from": 387,
      "alt": "Bellweir, Market Square, Day"
     }
    ],
@@ -495,7 +495,7 @@
     },
     {
      "image": "art/scenes/s025-royal-infirmary-corridor.png",
-     "from": 1084,
+     "from": 1085,
      "alt": "Royal Infirmary, Corridor, Day"
     }
    ],
@@ -579,9 +579,39 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s029-river-camps-visits.png",
+     "image": "art/scenes/s029-cap.png",
      "from": 0,
-     "alt": "River Camps, Successive Visits"
+     "alt": "On the next visit Hest brings Orren's cap to his bed; Iven readies linen behind them."
+    },
+    {
+     "image": "art/scenes/s029-leg-support.png",
+     "from": 1196,
+     "page": 1,
+     "alt": "Wearing the cap, Orren watches Iven fit the new support to his leg; Hest sits beside him."
+    },
+    {
+     "image": "art/scenes/s029-launch.png",
+     "from": 1198,
+     "alt": "On the launch Lucan and Orren's apprentice bend over the river chart; the boy points out the upper quarry.",
+     "framing": {
+      "lift": 70
+     }
+    },
+    {
+     "image": "art/scenes/s029-quarry-refusal.png",
+     "from": 1198,
+     "page": 1,
+     "alt": "At the quarry landing a guard turns Lucan's launch back."
+    },
+    {
+     "image": "art/scenes/s029-river-camps-visits.png",
+     "from": 1200,
+     "alt": "Next morning Lucan waits across the channel with a boatman from the quarry, who points out the boy at the barge's winch."
+    },
+    {
+     "image": "art/scenes/s029-barge.png",
+     "from": 1202,
+     "alt": "Lucan calls from the launch; on the barge a guard pulls the boy back from the rail."
     }
    ],
    "cast": {},
@@ -594,7 +624,12 @@
     {
      "image": "art/scenes/s030-river-camp-infirmary-evening.png",
      "from": 0,
-     "alt": "River Camp, Infirmary, Evening"
+     "alt": "Lucan laughs with Orren and the apprentice over the chart; Tessa sketches him from the next bed."
+    },
+    {
+     "image": "art/scenes/s030-laughing-portrait.png",
+     "from": 1227,
+     "alt": "Tessa turns her sketch toward Lucan: his head thrown back, laughing."
     }
    ],
    "cast": {
@@ -680,7 +715,17 @@
     {
      "image": "art/scenes/s035-harrow-bridge-crossing.png",
      "from": 0,
-     "alt": "Harrow Ford, Covered Bridge, Day"
+     "alt": "At the bridge entrance Lucan walks with the others beside Orren's stretcher cart as the courier waits on his horse."
+    },
+    {
+     "image": "art/scenes/s035-collapse.png",
+     "from": 1408,
+     "alt": "The deck has burst. Tessa's light holds the roof beam over Orren's cart; Mara and a soldier heave the shaft while Iven crawls in to free Renn."
+    },
+    {
+     "image": "art/scenes/s035-iven.png",
+     "from": 1434,
+     "alt": "Iven's sleeve tears away in Tessa's hands as he falls; her light spreads beneath him over the river."
     }
    ],
    "cast": {
@@ -698,7 +743,12 @@
     {
      "image": "art/scenes/s036-harrow-south-bank.png",
      "from": 0,
-     "alt": "Harrow Ford, South Bank, Late Afternoon"
+     "alt": "Lucan steps off a search boat; Tessa comes down the bank to meet him, Iven's sleeve in her fist, and Mara follows."
+    },
+    {
+     "image": "art/scenes/s036-south-bank.png",
+     "from": 1482,
+     "alt": "Tessa steps back from Lucan's reach, the sleeve in her fist, as Mara blocks an officer coming from the landing."
     }
    ],
    "cast": {
@@ -717,9 +767,14 @@
    "grade": "night",
    "stages": [
     {
-     "image": "art/scenes/s037-relief-camp.png",
+     "image": "art/scenes/s037-coat.png",
      "from": 0,
-     "alt": "Relief Camp, Night"
+     "alt": "Beside the screen Tessa holds Iven's coat across her knees, fitting the torn sleeve to its shoulder; Mara reaches for a corner."
+    },
+    {
+     "image": "art/scenes/s037-relief-camp.png",
+     "from": 1546,
+     "alt": "Mara holds the coat while Tessa cries into the sleeve; at the entrance Hest takes a bowl past the guard to a northern searcher."
     }
    ],
    "cast": {
@@ -783,7 +838,12 @@
     {
      "image": "art/scenes/s041-curse-tower.png",
      "from": 0,
-     "alt": "Curse Tower, Continuous"
+     "alt": "At the top of the stair, behind Olan's shield, Tessa sees the wardkeeper at the window, dark light between his hands."
+    },
+    {
+     "image": "art/scenes/s041-wardkeeper.png",
+     "from": 1645,
+     "alt": "The wardkeeper drives Olan back against his shield; Tessa thrusts past it into the side of his neck."
     }
    ],
    "cast": {},
@@ -794,9 +854,19 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s042-mill-town-later.png",
+     "image": "art/scenes/s042-cart.png",
      "from": 0,
-     "alt": "Mill Town, Later"
+     "alt": "In the cart Tessa keeps missing the scabbard as Mara reaches for her wrist; Olan waits with the horse."
+    },
+    {
+     "image": "art/scenes/s042-mill-town-later.png",
+     "from": 1669,
+     "alt": "Mara sits on the cart's step below Tessa; Olan waits with the unhitched horse."
+    },
+    {
+     "image": "art/scenes/s042-mara-hand.png",
+     "from": 1682,
+     "alt": "Mara sits beside Tessa in the cart; Tessa reaches for her hand."
     }
    ],
    "cast": {
@@ -810,9 +880,14 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s043-river-provinces.png",
+     "image": "art/scenes/s043-seasons.png",
      "from": 0,
-     "alt": "River Provinces, Changing Seasons"
+     "alt": "Spring, summer, winter: Mara helps Tessa stand in a bell tower; Tessa searches an emptied village; southern flags rise over a river town as troops load barges."
+    },
+    {
+     "image": "art/scenes/s043-river-provinces.png",
+     "from": 1696,
+     "alt": "At a wharf Lucan's former boatman finds him repairing a hired fishing boat with Serat, the river chart beside them."
     }
    ],
    "cast": {

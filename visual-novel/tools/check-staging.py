@@ -4,8 +4,9 @@
     python3 visual-novel/tools/check-staging.py            # summary
     python3 visual-novel/tools/check-staging.py --missing  # every awaited file
 
-Errors (exit 1): unknown scenes, override lines that are not source lines,
-cast names that never speak in their scene. Missing art is not an error; those
+Errors (exit 1): unknown scenes, stages that start on a line or page the
+scene does not have or out of order, override lines that are not source
+lines, cast names that never speak in their scene. Missing art is not an error; those
 scenes simply stay on the typeset page until their files arrive. New
 portraits need tools/crop-portraits.py (GIMP crop to the shared composition),
 then every new file needs tools/grade-light.py (both light modes).
@@ -73,6 +74,20 @@ def painted_plan():
     return batches
 
 
+def story_pages():
+    """{(scene, source line): number of pages} as story.rpy reads them."""
+    counts, scene, line = {}, 0, 0
+    for text in (GAME / 'story.rpy').read_text().splitlines():
+        text = text.strip()
+        if text.startswith('label s') and text.endswith(':'):
+            scene = int(text[7:-1])
+        elif text.startswith('$ source_line = '):
+            line = int(text.split('= ')[1])
+        elif text.startswith('$ source_page = '):
+            counts[scene, line] = int(text.split('= ')[1]) + 1
+    return counts
+
+
 def portrait_files(entry):
     """The planned files for a cast entry; for a list, the first (planned) choice."""
     if isinstance(entry, list):
@@ -90,6 +105,7 @@ def main():
     source = json.loads((GAME / 'source-map.json').read_text())
     staging = json.loads((GAME / 'staging.json').read_text())['scenes']
     errors, stages, portraits = [], {}, {}
+    page_counts = story_pages()
     for key, spec in sorted(staging.items(), key=lambda item: int(item[0])):
         number = int(key)
         if not 1 <= number <= len(source['scenes']):
@@ -106,8 +122,19 @@ def main():
                 errors.append('S%03d cast lists %s, who does not speak in the scene' % (number, name))
             for path in portrait_files(entry):
                 portraits.setdefault(path, []).append(number)
+        previous = (-1, 0)
         for stage in spec.get('stages', []):
             stages.setdefault(stage['image'], []).append(number)
+            start = (stage.get('from', 0), stage.get('page', 0))
+            if start[0] and start[0] not in lines:
+                errors.append('S%03d stage %s starts on line %d, which is not a source line'
+                              % (number, stage['image'], start[0]))
+            elif start[0] and start[1] >= page_counts.get((number, start[0]), 1):
+                errors.append('S%03d stage %s starts on page %d of line %d, which has %d'
+                              % (number, stage['image'], start[1], start[0], page_counts.get((number, start[0]), 1)))
+            if start <= previous:
+                errors.append('S%03d stage %s is out of order' % (number, stage['image']))
+            previous = start
 
     def present(path):
         return (GAME / path).is_file()
