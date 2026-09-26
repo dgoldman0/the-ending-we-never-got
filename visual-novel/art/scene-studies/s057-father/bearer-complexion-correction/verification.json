@@ -1,0 +1,18 @@
+{
+  "size": [
+    2240,
+    1260
+  ],
+  "opaque": true,
+  "reopened_exact": true,
+  "outside_new_correction_mask": 0,
+  "changed_pixels": 20442,
+  "changed_bbox": [
+    1714,
+    132,
+    1894,
+    319
+  ],
+  "original_forearm_and_grip_exact": true,
+  "candidate_sha256": "62e369e33f43dce241d437e34911870d37261a21f6667f474a1597f35a7285a9"
+}

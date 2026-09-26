@@ -1,0 +1,9 @@
+{
+  "path": "visual-novel/renpy/game/art/scenes/s057-father.png",
+  "sha256": "62e369e33f43dce241d437e34911870d37261a21f6667f474a1597f35a7285a9",
+  "supersedes": "7e1c17ee4676b7b459330906dfe7e68c19c7fdd1f6bcbd48f07913805abda233",
+  "active_master": "visual-novel/art/scene-studies/s057-father/bearer-complexion-correction/repair-master.xcf",
+  "root_review": "Compared whole and native head/neck to original dark bearer; cleared2026-09-26",
+  "scope": "Only right-bearer head/ear/neck/hair; original horn core excluded from correction; body/forearms/hands/grips and all other scene unchanged",
+  "independent_peer": "Citadel whole/native original-comparison checked and cleared2026-09-26"
+}

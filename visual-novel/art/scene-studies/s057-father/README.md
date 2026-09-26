@@ -1,5 +1,8 @@
 # S057 — Lucan covers his father's hand
 
+**Current correction,26September2026:** the user rejected the RIGHT bearer being changed from a dark-skinned Black man to a pale redhead. That earlier delivered recast and its favorable review notes are explicitly superseded. The corrected source restores his original complexion and natural black hair while giving him a distinct mature face, preserving the original forearm/hands and all scene geometry. See [the bounded correction](bearer-complexion-correction/README.md); the active editable master is `bearer-complexion-correction/repair-master.xcf`, current source SHA256`62e369e33f43dce241d437e34911870d37261a21f6667f474a1597f35a7285a9`.
+
+
 ## Brief before generation
 Read the complete lower-gate scene2156–2173 plus the preceding hand examination and following Bellweir ending. Select2173 after the limited terms are accepted, wagons begin passing and Lucan sends Marren's protection condition. He stands beside his father's covered body, gently tucks the exposed hand under the cloth, then steps aside for bearers. This is separate from the earlier reply-reading painting.
 
@@ -11,7 +14,7 @@ Lucan remains mid-twenties, lean185cm, medium-brown skin, gray-green eyes, jaw-l
 
 Composition: cinematic16:9, coherent adult/stretcher scale and floor contacts. Lucan head in upper middle, body-covering hand action around x1050–1300/y550–680 at1920×1080. Bearer faces and handles above y760. Lower-left quiet stone, lower text band free of plot detail, top headroom70px. No stretched bodies, no oversized low table, no multiple impossible support legs. Neutral exposure, natural material detail; game grading remains outside scope.
 
-## Delivery
+## Earlier delivery — right-bearer head now rejected and superseded
 
 Delivered new source `../../../renpy/game/art/scenes/s057-father.png`, 2240×1260, opaque. This is the first of nine new Batch6 moments. Art delivery does not establish runtime or experience clearance.
 
