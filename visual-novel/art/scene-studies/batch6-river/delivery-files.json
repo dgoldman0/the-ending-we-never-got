@@ -1,0 +1,93 @@
+{
+  "s026-quarry-loading-ramp": {
+    "path": "visual-novel/renpy/game/art/scenes/s026-quarry-loading-ramp.png",
+    "sha256": "4d940fc85dcc0b82c7b80b3f4e6525d36d1da4ca2cb96925ce300fb5173bd042",
+    "master": "visual-novel/art/scene-studies/batch6-river/s026-quarry-loading-ramp-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s027-river-camp-gate": {
+    "path": "visual-novel/renpy/game/art/scenes/s027-river-camp-gate.png",
+    "sha256": "daa46da7b75c2fa229096b40b6617a7e9664c42c17f2b6697cf0b305743e6259",
+    "master": "visual-novel/art/scene-studies/batch6-river/s027-river-camp-gate-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s028-river-camp-infirmary": {
+    "path": "visual-novel/renpy/game/art/scenes/s028-river-camp-infirmary.png",
+    "sha256": "3ef5609b4c94f8ec5fe8ca2fee8f5bec9cac3c9a9d94cccd7f5220967e83fe3a",
+    "master": "visual-novel/art/scene-studies/batch6-river/s028-river-camp-infirmary-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s029-cap": {
+    "path": "visual-novel/renpy/game/art/scenes/s029-cap.png",
+    "sha256": "156e85793d9e6be8ba7c6d112dba261726e8398037946ce0112a36e4852bf9c4",
+    "master": "visual-novel/art/scene-studies/batch6-river/s029-cap-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s029-leg-support": {
+    "path": "visual-novel/renpy/game/art/scenes/s029-leg-support.png",
+    "sha256": "9867930b5b35304886c3153e4f8aa46505d7b51d5ba2ad0875f386c4d32d52bb",
+    "master": "visual-novel/art/scene-studies/batch6-river/s029-leg-support-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s030-river-camp-infirmary-evening": {
+    "path": "visual-novel/renpy/game/art/scenes/s030-river-camp-infirmary-evening.png",
+    "sha256": "a1643984dac8c46fff7c021f812715796e835ab31cded3902ac7bfc9cb38a903",
+    "master": "visual-novel/art/scene-studies/batch6-river/s030-river-camp-infirmary-evening-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  },
+  "s030-laughing-portrait": {
+    "path": "visual-novel/renpy/game/art/scenes/s030-laughing-portrait.png",
+    "sha256": "66d7bcd38a905afb91efb3ba92737a29eb12c3ecd07c5101db9fa2cbaf42b5c7",
+    "master": "visual-novel/art/scene-studies/batch6-river/s030-laughing-portrait-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_master_exact_RGBA": true
+  }
+}

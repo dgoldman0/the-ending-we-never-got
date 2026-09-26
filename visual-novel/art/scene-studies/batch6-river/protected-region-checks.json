@@ -1,0 +1,259 @@
+{
+  "s026-quarry-loading-ramp": {
+    "Lucan face neck": {
+      "box": [
+        745,
+        215,
+        828,
+        330
+      ],
+      "changed_pixels": 0
+    },
+    "badge": {
+      "box": [
+        792,
+        306,
+        822,
+        338
+      ],
+      "changed_pixels": 0
+    },
+    "apprentice entire head": {
+      "box": [
+        870,
+        162,
+        1030,
+        330
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s027-river-camp-gate": {
+    "Lucan face": {
+      "box": [
+        821,
+        180,
+        915,
+        287
+      ],
+      "changed_pixels": 0
+    },
+    "Mara face": {
+      "box": [
+        507,
+        220,
+        619,
+        330
+      ],
+      "changed_pixels": 0
+    },
+    "Tessa face": {
+      "box": [
+        632,
+        183,
+        750,
+        323
+      ],
+      "changed_pixels": 0
+    },
+    "entire right half incl repaired badges": {
+      "box": [
+        920,
+        0,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "boatman hands and cargo": {
+      "box": [
+        220,
+        408,
+        396,
+        600
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s028-river-camp-infirmary": {
+    "Lucan face": {
+      "box": [
+        500,
+        111,
+        595,
+        216
+      ],
+      "changed_pixels": 0
+    },
+    "Lucan badge": {
+      "box": [
+        590,
+        192,
+        620,
+        225
+      ],
+      "changed_pixels": 0
+    },
+    "Serat entire person": {
+      "box": [
+        623,
+        55,
+        817,
+        666
+      ],
+      "changed_pixels": 0
+    },
+    "Hest face": {
+      "box": [
+        1348,
+        304,
+        1460,
+        452
+      ],
+      "changed_pixels": 0
+    },
+    "Orren face": {
+      "box": [
+        1515,
+        305,
+        1700,
+        450
+      ],
+      "changed_pixels": 0
+    },
+    "all treatment and furniture below window": {
+      "box": [
+        0,
+        303,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "center window timber": {
+      "box": [
+        1420,
+        5,
+        1460,
+        270
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s029-cap": {
+    "Hest face and hands": {
+      "box": [
+        540,
+        320,
+        1035,
+        895
+      ],
+      "changed_pixels": 0
+    },
+    "Orren face": {
+      "box": [
+        1240,
+        395,
+        1390,
+        555
+      ],
+      "changed_pixels": 0
+    },
+    "hands cap and bedding": {
+      "box": [
+        0,
+        480,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "center left frame timber": {
+      "box": [
+        1204,
+        200,
+        1253,
+        440
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s029-leg-support": {
+    "Hest and Orren faces and treatment": {
+      "box": [
+        0,
+        250,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "center window timber": {
+      "box": [
+        1305,
+        0,
+        1340,
+        230
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s030-river-camp-infirmary-evening": {
+    "all main cast except Orren forehead": {
+      "box": [
+        0,
+        0,
+        1250,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "Orren face and cap": {
+      "box": [
+        1500,
+        336,
+        1737,
+        518
+      ],
+      "changed_pixels": 0
+    },
+    "all chart treatment furniture": {
+      "box": [
+        0,
+        386,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s030-laughing-portrait": {
+    "Tessa Lucan apprentice and drawing": {
+      "box": [
+        0,
+        0,
+        1255,
+        1080
+      ],
+      "changed_pixels": 0
+    },
+    "Orren face and cap": {
+      "box": [
+        1500,
+        288,
+        1736,
+        489
+      ],
+      "changed_pixels": 0
+    },
+    "all chart treatment furniture": {
+      "box": [
+        0,
+        346,
+        1920,
+        1080
+      ],
+      "changed_pixels": 0
+    }
+  }
+}
