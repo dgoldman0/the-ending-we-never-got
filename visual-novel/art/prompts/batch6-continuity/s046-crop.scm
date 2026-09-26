@@ -1,0 +1,5 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/before.png" "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/before.png")))(l 0))
+(gimp-image-crop im 365 440 230 430)
+(set! l(car(gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im l "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/hem-target.png" "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/hem-target.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)

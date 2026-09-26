@@ -1,0 +1,4 @@
+# Batch6 item33: scabbard and two-wheel cart
+Source1655–1675: after killing the wardkeeper, Tessa sits in the cart, still missing the sheath; Mara reaches, Tessa recoils, then permits her to take it. Olan waits with unhitched horse. Preserve current framing, action, exhausted faces, gloves/injury state, sun shield and winter street. Extend the held sheath to fit the full existing blade; its closed tip must hang in front of the seat support, not merge into the bench. Remove impossible extra spokes under the footboard while retaining the genuine large outer wheel, its hub/axle, cart frame and footboard.
+
+Root whole/native review and independent river-agent whole/native review found no blocker in this bounded change. Layered GIMP master reopens to exact opaque1920×1080 delivery; verification records pixel bounds and source hashes. Current source promoted after before-hash check. No user approval or runtime clearance implied.

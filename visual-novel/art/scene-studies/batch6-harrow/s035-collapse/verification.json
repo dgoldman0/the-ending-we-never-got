@@ -1,0 +1,23 @@
+{
+  "file": "s035-collapse",
+  "size": [
+    1920,
+    1080
+  ],
+  "exact_reopened": true,
+  "alpha_range": [
+    255,
+    255
+  ],
+  "changed_pixels": 13761,
+  "changed_bbox": [
+    1009,
+    219,
+    1210,
+    328
+  ],
+  "source_before_sha256": "72ef0a09bc062fe41d8c00e48ab58ee850809013d70004a407bbfe7ba4499924",
+  "delivery_sha256": "227b19d790dca3416a7045503b2ec74bbfbb9df49a102189fdcb560a15521330",
+  "status": "partial: Orren support only; Renn pose unresolved",
+  "promoted": true
+}

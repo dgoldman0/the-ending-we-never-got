@@ -1,0 +1,23 @@
+{
+  "file": "s042-cart",
+  "size": [
+    1920,
+    1080
+  ],
+  "exact_reopened": true,
+  "alpha_range": [
+    255,
+    255
+  ],
+  "changed_pixels": 15848,
+  "changed_bbox": [
+    1132,
+    448,
+    1314,
+    721
+  ],
+  "source_before_sha256": "e774d19a40a6a0a9b36f814e17849fef6cd66b904af828681fe19b574bd71b99",
+  "delivery_sha256": "b3f039df261927348674b90902182dec144547f02839abc9d6cb101910aaafe2",
+  "status": "reviewed bounded repair",
+  "promoted": true
+}

@@ -1,0 +1,5 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/before.png" "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/before.png"))) (f 0))
+(gimp-image-crop im 790 440 760 180)
+(set! f(car(gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im f "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/rescue-target.png" "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/rescue-target.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)

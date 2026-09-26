@@ -1,0 +1,23 @@
+{
+  "file": "s046-valcair-private-room",
+  "size": [
+    1920,
+    1080
+  ],
+  "exact_reopened": true,
+  "alpha_range": [
+    255,
+    255
+  ],
+  "changed_pixels": 30432,
+  "changed_bbox": [
+    255,
+    665,
+    581,
+    799
+  ],
+  "source_before_sha256": "b67eee2f2d3dc03d30263a35d1a30970b6d56198f021edc7e1f8acd885ff1c73",
+  "delivery_sha256": "1a219848cfae385d41c2d6c7e06ca684a2fe895d68fb6ecef0294b85e1838204",
+  "status": "reviewed bounded repair",
+  "promoted": true
+}

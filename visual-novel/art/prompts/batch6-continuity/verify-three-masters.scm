@@ -1,0 +1,7 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-continuity/s042-cart/repair-master.xcf" "visual-novel/art/scene-studies/batch6-continuity/s042-cart/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s042-cart-reopened.png" "/tmp/s042-cart-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/repair-master.xcf" "visual-novel/art/scene-studies/batch6-continuity/s046-valcair-private-room/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s046-valcair-private-room-reopened.png" "/tmp/s046-valcair-private-room-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/partial-repair-master.xcf" "visual-novel/art/scene-studies/batch6-harrow/s035-collapse/partial-repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s035-collapse-reopened.png" "/tmp/s035-collapse-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(gimp-quit 0)
