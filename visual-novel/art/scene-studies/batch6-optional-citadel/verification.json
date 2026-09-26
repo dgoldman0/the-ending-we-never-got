@@ -1,0 +1,46 @@
+{
+  "s048-examination-tent": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "reopened_rgba_equal": true,
+    "reopened_changed_pixels": 0,
+    "changed_bounds": [
+      1320,
+      695,
+      1861,
+      1080
+    ],
+    "source_before_sha256": "8ccf6892f322ed98685fb3e7da004a4c59e0508974718935174bcc78062395f1",
+    "candidate_sha256": "c292aafb563f1c48d5fa6b6049e3a5194bbefebb911e95e4de7e46d84aace650",
+    "source_still_before": false,
+    "master": "visual-novel/art/scene-studies/batch6-optional-citadel/s048-examination-tent/repair-master.xcf",
+    "promoted": true
+  },
+  "s057-citadel-lower-gate": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "reopened_rgba_equal": true,
+    "reopened_changed_pixels": 0,
+    "changed_bounds": [
+      591,
+      482,
+      863,
+      612
+    ],
+    "source_before_sha256": "e2682798b1ad1725da6cefaf8bf73035e8b5efde4cc8797f600f0e1616a2d856",
+    "candidate_sha256": "62863f2222bd4d0ddf5fb8a424f459db999839a6fab8eb2d9ea1696137839bb7",
+    "source_still_before": false,
+    "master": "visual-novel/art/scene-studies/batch6-optional-citadel/s057-citadel-lower-gate/repair-master.xcf",
+    "promoted": true
+  }
+}
