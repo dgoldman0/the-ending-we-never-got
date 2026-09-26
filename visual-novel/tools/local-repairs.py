@@ -32,6 +32,10 @@ and from the sweep of every painting of 26 September 2026:
             share one figure) came out a saturated copper red; the same day
             in S004, and in her likeness reference, it is chestnut. Its colour
             is moved to the S004 hair's, keeping its own light and strands
+  star      northern badges painted as an undivided star: the vertical
+            split of the northern emblem is drawn through the star's most
+            vertical point, in the cloth's own dark (found on Lucan's, Serat's,
+            a captain's and Vask's badges in ten paintings)
   recolour  (again) Iven's coat in four S003 paintings, re-masked from
             hand-placed points: the first masks missed a front panel and a
             sleeve and ran onto the apron as mauve blotches
@@ -52,6 +56,8 @@ Making them needs torch and transformers (the local tools venv):
 """
 from pathlib import Path
 import argparse
+import hashlib
+import json
 import shutil
 import subprocess
 import tempfile
@@ -65,6 +71,7 @@ GAME = VN / 'renpy/game'
 HERE = VN / 'art/local-repairs'
 ORIGINALS = HERE / 'originals'
 MASKS = HERE / 'masks'
+WRITTEN = HERE / 'written.json'          # the files this tool last wrote into GPT's paintings
 
 # The stray sliver on the S002 drawing: a thin diagonal strip from p0 to p1.
 SLIVERS = {
@@ -178,6 +185,20 @@ HAIR = {
                neg=[(415, 230), (415, 300), (400, 335), (300, 150), (530, 150), (412, 190)])
     for path in ('art/base/rovel/cg/window-packing.png', 'art/base/rovel/cg/window-pause.png',
                  'art/base/rovel/cg/window-together.png')
+}
+
+# Northern badges without the emblem's vertical split: a box around each star.
+STARS = {
+    'art/scenes/s010-bellweir-hills.png': [(1255, 300, 1300, 345)],
+    'art/scenes/s026-quarry-loading-ramp.png': [(806, 302, 854, 348)],
+    'art/scenes/s027-river-camp-gate.png': [(869, 259, 919, 309), (1035, 303, 1060, 328)],
+    'art/scenes/s028-river-camp-infirmary.png': [(562, 182, 612, 232), (737, 182, 793, 232)],
+    'art/scenes/s029-barge.png': [(449, 414, 486, 451)],
+    'art/scenes/s029-launch.png': [(794, 374, 846, 424)],
+    'art/scenes/s029-quarry-refusal.png': [(700, 380, 725, 407)],
+    'art/scenes/s029-river-camps-visits.png': [(399, 384, 451, 436)],
+    'art/scenes/s047-citadel-north-infirmary-before-dawn.png': [(684, 270, 724, 312)],
+    'art/scenes/s057-citadel-lower-gate.png': [(1359, 299, 1411, 341), (1514, 256, 1566, 298)],
 }
 
 # Pointed ear tips to cover with hair: the area to cover (a polygon whose
@@ -404,6 +425,78 @@ def match_hair(rgb, mask, target):
     return np.clip(out + 0.5, 0, 255).astype(np.uint8)
 
 
+
+def fit_star(rgb, box):
+    """Centre, axis angle (degrees from vertical) and half-length of the most
+    vertical principal point of a bright star inside box."""
+    x0, y0, x1, y1 = box
+    crop = rgb[y0:y1, x0:x1].astype(np.float32)
+    L = crop @ np.array([0.299, 0.587, 0.114], np.float32)
+    bg = np.percentile(L, 40)
+    w = np.clip((L - bg - 25) / 40, 0, 1)
+    w = w * (cv2.GaussianBlur(w, (0, 0), 2) > 0.15)
+    n, labels, stats, cents = cv2.connectedComponentsWithStats((w > 0.3).astype(np.uint8), 8)
+    if n <= 1:
+        return None
+    big = 1 + np.argmax(stats[1:, cv2.CC_STAT_AREA])
+    w = w * (cv2.dilate((labels == big).astype(np.uint8), np.ones((3, 3), np.uint8)) > 0)
+    ys, xs = np.nonzero(w > 0.05)
+    ww = w[ys, xs]
+    cx, cy = (xs * ww).sum() / ww.sum(), (ys * ww).sum() / ww.sum()
+    best = None
+    for ang in np.arange(-30, 30.5, 1.0):
+        t = np.radians(ang)
+        dx, dy = np.sin(t), -np.cos(t)
+        score, reach = 0.0, 0.0
+        for sgn in (1, -1):
+            for r in np.arange(1, 40, 0.5):
+                px, py = cx + sgn * r * dx, cy + sgn * r * dy
+                if not (0 <= px < w.shape[1] - 1 and 0 <= py < w.shape[0] - 1):
+                    break
+                v = cv2.getRectSubPix(w, (1, 1), (px, py))[0, 0]
+                if v < 0.25:
+                    break
+                score += v
+                reach = max(reach, r) if sgn == 1 else reach
+        if best is None or score > best[0]:
+            best = (score, ang)
+    ang = best[1]
+    t = np.radians(ang)
+    ext = []
+    for sgn in (1, -1):
+        r_end = 0
+        for r in np.arange(1, 40, 0.5):
+            px, py = cx + sgn * r * np.sin(t), cy - sgn * r * np.cos(t)
+            if not (0 <= px < w.shape[1] - 1 and 0 <= py < w.shape[0] - 1):
+                break
+            if cv2.getRectSubPix(w, (1, 1), (px, py))[0, 0] < 0.2:
+                break
+            r_end = r
+        ext.append(r_end)
+    return (x0 + cx, y0 + cy, ang, ext[0], ext[1], bg)
+
+def split(rgb, star, width=1.4, scale=8):
+    """Draw the split: a thin line of the cloth's own dark along the axis,
+    from 1 px short of each tip."""
+    cx, cy, ang, up, down, bg = star
+    h, w = rgb.shape[:2]
+    t = np.radians(ang)
+    x0, y0 = int(cx) - 45, int(cy) - 45
+    x0, y0 = max(0, x0), max(0, y0)
+    x1, y1 = min(w, x0 + 90), min(h, y0 + 90)
+    patch = rgb[y0:y1, x0:x1].astype(np.float32)
+    L = patch @ np.array([0.299, 0.587, 0.114], np.float32)
+    dark = patch[L <= np.percentile(L, 25)].mean(0)
+    big = np.zeros(((y1 - y0) * scale, (x1 - x0) * scale), np.uint8)
+    a = ((cx - x0 + (up - 0.8) * np.sin(t)) * scale, (cy - y0 - (up - 0.8) * np.cos(t)) * scale)
+    b = ((cx - x0 - (down - 0.8) * np.sin(t)) * scale, (cy - y0 + (down - 0.8) * np.cos(t)) * scale)
+    cv2.line(big, tuple(int(round(v)) for v in a), tuple(int(round(v)) for v in b), 255, max(1, int(round(width * scale))), cv2.LINE_AA)
+    alpha = cv2.resize(big.astype(np.float32) / 255, (x1 - x0, y1 - y0), interpolation=cv2.INTER_AREA)[..., None]
+    out = rgb.copy().astype(np.float32)
+    out[y0:y1, x0:x1] = patch * (1 - alpha) + dark * alpha
+    return np.clip(out + 0.5, 0, 255).astype(np.uint8), alpha
+
+
 def cover_tip(rgb, poly, offset, feather=1.6):
     """Copy the hair above over the lit skin inside the polygon, with soft
     edges. Returns the new image and the changed area (0-1)."""
@@ -419,16 +512,24 @@ def cover_tip(rgb, poly, offset, feather=1.6):
     return np.clip(out + 0.5, 0, 255).astype(np.uint8), m
 
 
+def _sha(path):
+    return hashlib.sha256((GAME / path).read_bytes()).hexdigest()
+
+
 def guarded_write(path, after):
-    """Write a repair only over the file it was made from (or its own last
-    result). If the painting was since redelivered, say so and leave it. (To
-    redo a repair with new settings, put its kept original back first.)"""
+    """Write a repair into one of GPT's paintings only over the file it was
+    made from, or over this tool's own last output (recorded in WRITTEN). If
+    the painting was since redelivered, say so and leave it."""
+    written = json.loads(WRITTEN.read_text()) if WRITTEN.is_file() else {}
     current = np.asarray(Image.open(GAME / path))
     keep = np.asarray(Image.open(ORIGINALS / path.replace('/', '--')))
-    if current.shape == after.shape and (np.array_equal(current, keep) or np.array_equal(current, after)):
+    ours = written.get(path) == _sha(path)
+    if ours or (current.shape == keep.shape and np.array_equal(current, keep)):
         write(path, after)
+        written[path] = _sha(path)
+        WRITTEN.write_text(json.dumps(written, indent=1, sort_keys=True) + '\n')
         return True
-    print('SKIPPED, the painting changed since this repair was made; review it:', path)
+    print('SKIPPED, the painting changed since this tool last wrote it; review it:', path)
     return False
 
 
@@ -601,9 +702,17 @@ def coat_mask(run, name, spec):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--adopt', nargs='+', metavar='PATH',
+                        help='record these files (paths under renpy/game/) as this tool\'s own output, after review')
     parser.add_argument('--segment', nargs='*', metavar='NAME',
                         help='make the coat masks, or only the named ones (needs torch, transformers)')
     args = parser.parse_args()
+    if args.adopt:
+        written = json.loads(WRITTEN.read_text()) if WRITTEN.is_file() else {}
+        for path in args.adopt:
+            written[path] = _sha(path)
+        WRITTEN.write_text(json.dumps(written, indent=1, sort_keys=True) + '\n')
+        return
     if args.segment is not None:
         segment(args.segment)
         return
@@ -635,6 +744,8 @@ def main():
         write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb)
         print('hair colour matched:', path)
     for path, spec in EARS.items():
+        if path in STARS:                   # written below, with its badge
+            continue
         pixels = original(path)
         rgb, _ = cover_tip(pixels[..., :3], spec['poly'], spec['offset'])
         after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
@@ -642,6 +753,18 @@ def main():
             changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
             xcf = save_master('ears', path, pixels[..., :3], rgb, changed, rgb)
             print('ear tip covered:', path, '->', xcf.relative_to(VN))
+    for path, boxes in STARS.items():
+        pixels = original(path)
+        rgb = pixels[..., :3]
+        if path in EARS:
+            rgb, _ = cover_tip(rgb, EARS[path]['poly'], EARS[path]['offset'])
+        for box in boxes:
+            rgb, _ = split(rgb, fit_star(rgb, box))
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('star-split', path, pixels[..., :3], rgb, changed, rgb)
+            print('star split drawn:', path, '(%d)' % len(boxes), '->', xcf.relative_to(VN))
     for path in RESTORE:
         if path in HAIR:            # written from its original above, with the hair matched
             continue
