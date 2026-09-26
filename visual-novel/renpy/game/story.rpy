@@ -2002,7 +2002,10 @@ label s018:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Second summer. The ferry bell calls across the river as Mara leads families from the upper farms down a wooded trail. Four soldiers carry an injured woman on a litter; Iven and her husband walk beside her."
+    "Second summer. The ferry bell calls across the river as Mara leads families from the upper farms down a wooded trail."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Four soldiers carry an injured woman on a litter; Iven and her husband walk beside her."
     # Source lines 797–797
     $ source_line = 797
     $ scene_speaker = None
@@ -2050,10 +2053,10 @@ label s018:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Northerners emerge from another track: six soldiers surrounding families on foot. PRINCE LUCAN, mid-twenties, carries a child, a crossbow slung across his back. His lieutenant, SERAT, supports an injured man."
+    "Northerners emerge from another track: six soldiers surrounding families on foot. PRINCE LUCAN, mid-twenties, carries a child, a crossbow slung across his back."
     $ source_page = 1
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Two crossbowmen cover their retreat, firing in turns as the cats follow the slowest walkers."
+    "His lieutenant, SERAT, supports an injured man. Two crossbowmen cover their retreat, firing in turns as the cats follow the slowest walkers."
     # Source lines 814–814
     $ source_line = 814
     $ scene_speaker = None
@@ -2214,7 +2217,10 @@ label s019:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "At Lucan's nod, Serat gives the woman to Iven and retrieves his crossbow. Two northerners take the injured soldier, freeing Lucan to draw his own bow. Mara sheathes her sword and takes the flank with her shield."
+    "At Lucan's nod, Serat gives the woman to Iven and retrieves his crossbow. Two northerners take the injured soldier, freeing Lucan to draw his own bow."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Mara sheathes her sword and takes the flank with her shield."
     # Source lines 877–877
     $ source_line = 877
     $ scene_speaker = None
@@ -2314,7 +2320,10 @@ label s021:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Lucan's bolt strikes beneath the adult's jaw. He sets the spent bow against the gatepost and takes a litter handle. A young cat leaps at his back, catching Serat's shield instead. Its claws rake the lieutenant's thigh."
+    "Lucan's bolt strikes beneath the adult's jaw. He sets the spent bow against the gatepost and takes a litter handle. A young cat leaps at his back, catching Serat's shield instead."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Its claws rake the lieutenant's thigh."
     # Source lines 909–909
     $ source_line = 909
     $ scene_speaker = None
@@ -5403,7 +5412,10 @@ label s054:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "She hits the floor beside the last pillar, close to the dais. Her sword skids past her left shoulder; as she reaches across for it with her right hand, Valcair drives the spear through that hand and pins it to the stone."
+    "She hits the floor beside the last pillar, close to the dais."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Her sword skids past her left shoulder; as she reaches across for it with her right hand, Valcair drives the spear through that hand and pins it to the stone."
     # Source lines 2082–2082
     $ source_line = 2082
     $ scene_speaker = None
@@ -5546,7 +5558,10 @@ label s055:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Orra's guards bring Lucan from the north infirmary with two of Serat's men. His coat is torn and he keeps one arm tight against his ribs. He starts toward Tessa, but Olan blocks him. She turns back to Mara."
+    "Orra's guards bring Lucan from the north infirmary with two of Serat's men. His coat is torn and he keeps one arm tight against his ribs. He starts toward Tessa, but Olan blocks him."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "She turns back to Mara."
     # Source lines 2131–2131
     $ source_line = 2131
     $ scene_speaker = None
@@ -5688,7 +5703,10 @@ label s058:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Four years after the summoning. New roofs stand between burned walls. The glass heron turns above the fountain with one wing still missing. At the lock, inspectors from both banks let a northern grain barge through."
+    "Four years after the summoning. New roofs stand between burned walls. The glass heron turns above the fountain with one wing still missing."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "At the lock, inspectors from both banks let a northern grain barge through."
     # Source lines 2179–2179
     $ source_line = 2179
     $ scene_speaker = None

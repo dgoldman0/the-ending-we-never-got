@@ -10,6 +10,8 @@ import hashlib
 import json
 import re
 
+from PIL import ImageFont
+
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'screenplay/original-timeline/source.fountain'
 GAME = ROOT / 'visual-novel/renpy/game'
@@ -26,26 +28,49 @@ PICTURE_BREAKS = {
     (29, 1196): ['He wears it'],
     (29, 1198): ['Lucan circles it'],
 }
-# From S006 on, pages are read over paintings in a band of at most three lines
-# (about 220 characters), which keeps the scene heading and the hairline inside
-# the painting's shade. S001-S005 keep their pagination: their authored beats
-# are keyed to it.
-STAGED_PAGE_LIMIT = 220
+# From S006 on, pages are read over paintings in a band of at most three
+# lines, which keeps the scene heading and the hairline inside the painting's
+# shade. Each page is measured in the game's reading font at 990 px, a little
+# narrower than the band's 1030, so Ren'Py's own kerning never pushes a fourth
+# line (checked against the game's layout of every page, 26 September 2026: a
+# character count was not enough). S001-S005 keep their pagination: their
+# authored beats are keyed to it.
+BAND_WIDTH = 990
+BAND_LINES = 3
+_FONTS = {}
+
+
+def band_lines(text, italic):
+    """Lines the text takes in the reading band (narration is italic)."""
+    if italic not in _FONTS:
+        name = 'EBGaramond12-Italic.ttf' if italic else 'EBGaramond12-Regular.ttf'
+        _FONTS[italic] = ImageFont.truetype(str(GAME / 'fonts' / name), 38)
+    font, lines, current = _FONTS[italic], 0, ''
+    for word in text.split():
+        candidate = (current + ' ' + word).strip()
+        if font.getlength(candidate) <= BAND_WIDTH:
+            current = candidate
+        else:
+            lines, current = lines + 1, word
+    return lines + (1 if current else 0)
 
 
 def q(value):
     return json.dumps(value, ensure_ascii=False)
 
 
-def pages(text, limit=270):
-    # Break long action blocks at sentences, never silently shorten them.
+def pages(text, limit=270, fits=None):
+    # Break long action blocks at sentences, never silently shorten them. A
+    # page holds sentences while it fits: within `limit` characters, or, when
+    # `fits` is given, while fits(page) holds.
     sentences = re.split(r'(?<=[.!?]) (?=[A-Z“])', text)
     result, current = [], ''
     for sentence in sentences:
-        if current and len(current) + len(sentence) + 1 > limit:
+        candidate = current + (' ' if current else '') + sentence
+        if current and not (fits(candidate) if fits else len(candidate) <= limit):
             result.append(current)
-            current = ''
-        current += (' ' if current else '') + sentence
+            candidate = sentence
+        current = candidate
     if current:
         result.append(current)
     if any(len(p) > 410 for p in result):
@@ -96,14 +121,16 @@ def adapt():
             out += [f'    # Source lines {start + 1}–{i}',
                     f'    $ source_line = {start + 1}',
                     f'    $ scene_speaker = {q(who) if who else "None"}']
-            limit = STAGED_PAGE_LIMIT if n > 5 else 270
+            fits = (lambda page, italic=who is None: band_lines(page, italic) <= BAND_LINES) if n > 5 else None
             parts, rest = [], text
             for marker in PICTURE_BREAKS.get((n, start + 1), []):
                 before, found, after = rest.partition(marker)
                 assert found and before, (n, start + 1, marker)
                 parts.append(before.rstrip())
                 rest = marker + after
-            scene_pages = [page for part in parts + [rest] for page in pages(part, limit)]
+            scene_pages = [page for part in parts + [rest] for page in pages(part, fits=fits)]
+            if fits and not all(map(fits, scene_pages)):
+                raise ValueError('A single sentence is longer than the reading band: %s' % text)
             for page_index, page in enumerate(scene_pages):
                 out += [f'    $ source_page = {page_index}',
                         '    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)']
