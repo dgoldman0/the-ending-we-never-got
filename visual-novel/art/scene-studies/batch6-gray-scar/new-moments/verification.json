@@ -1,0 +1,41 @@
+{
+  "s018-cats": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "reopened_xcf_rgba_exact": true,
+    "sha256": "058aa9aed13c7c3da8b99eb63b1c2e737bf02bba50bdb2b9e39a5166f35ba0ae",
+    "target_exists_before_promotion": false,
+    "reopened_final_layer_count": 7
+  },
+  "s021-serat": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "reopened_xcf_rgba_exact": true,
+    "sha256": "bcf48e90b64b5226d66ff5bcb4741def4a4b06831cdee34e0788f2efa661afce",
+    "target_exists_before_promotion": false,
+    "reopened_final_layer_count": 10
+  },
+  "s021-boat": {
+    "size": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "reopened_xcf_rgba_exact": true,
+    "sha256": "253283b66e6aad37398a2ec31d54fbb6c15fcdfcf4d55de63035f3f658bab0a2",
+    "target_exists_before_promotion": false,
+    "reopened_final_layer_count": 7
+  }
+}

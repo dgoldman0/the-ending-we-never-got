@@ -1,0 +1,44 @@
+[
+  {
+    "name": "s018-cats",
+    "candidate": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s018-cats-candidate.png",
+    "master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s018-cats-master.xcf",
+    "native_master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s018-cats-native-master.xcf",
+    "target": "visual-novel/renpy/game/art/scenes/s018-cats.png",
+    "sha256": "058aa9aed13c7c3da8b99eb63b1c2e737bf02bba50bdb2b9e39a5166f35ba0ae",
+    "status": "delivered_root_and_opening_peer_cleared",
+    "reviews": [
+      "producing_agent_whole_and_native",
+      "root_final_whole_and_native",
+      "opening_peer_final_whole_and_native"
+    ]
+  },
+  {
+    "name": "s021-serat",
+    "candidate": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-serat-candidate.png",
+    "master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-serat-master.xcf",
+    "native_master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-serat-native-master.xcf",
+    "target": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+    "sha256": "bcf48e90b64b5226d66ff5bcb4741def4a4b06831cdee34e0788f2efa661afce",
+    "status": "delivered_root_and_opening_peer_cleared",
+    "reviews": [
+      "producing_agent_whole_and_native",
+      "root_final_whole_and_native",
+      "opening_peer_final_whole_and_native"
+    ]
+  },
+  {
+    "name": "s021-boat",
+    "candidate": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-boat-candidate.png",
+    "master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-boat-master.xcf",
+    "native_master": "visual-novel/art/scene-studies/batch6-gray-scar/new-moments/s021-boat-native-master.xcf",
+    "target": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+    "sha256": "253283b66e6aad37398a2ec31d54fbb6c15fcdfcf4d55de63035f3f658bab0a2",
+    "status": "delivered_root_and_opening_peer_cleared",
+    "reviews": [
+      "producing_agent_whole_and_native",
+      "root_final_whole_and_native",
+      "opening_peer_final_whole_and_native"
+    ]
+  }
+]
