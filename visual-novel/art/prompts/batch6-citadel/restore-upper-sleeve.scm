@@ -1,0 +1,4 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/batch6-citadel/s055-citadel-lower-stair-morning") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (ls (cadr (gimp-image-get-layers im))) (i 0))
+(while (< i (vector-length ls)) (let ((ly (vector-ref ls i))) (if (string=? (car (gimp-item-get-name ly)) "Torn coat reveals charcoal fabric, never bare thigh") (gimp-item-set-visible ly FALSE))) (set! i (+ i 1)))
+(gimp-xcf-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/candidate.png") (string-append dir "/candidate.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im)) (gimp-quit 0)

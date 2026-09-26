@@ -1,0 +1,58 @@
+[
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png",
+    "sha256": "b224e434ba8b4811e210f3a1efc1f56b46470f5f82ea2b796d50ba1221338b14",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s050-citadel-lower-stair/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png",
+    "sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s051-north-infirmary-court/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s052-citadel-inner-landing.png",
+    "sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s052-citadel-inner-landing/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png",
+    "sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s052-entrance-ward/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s055-citadel-lower-stair-morning.png",
+    "sha256": "358c5d7044c7c244240f46675b67edcdda2b27394f91906ef3f66ebbbc9915fa",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s055-citadel-lower-stair-morning/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s055-mara.png",
+    "sha256": "0824546b3946c36668de471ce4b7ddc7a15fc8aba542b19c676c68e2834624fc",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s055-mara/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s058-final.png",
+    "sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184",
+    "master": "visual-novel/art/scene-studies/batch6-citadel/s058-final/repair-master.xcf",
+    "width": 1920,
+    "height": 1080,
+    "alpha": 255
+  }
+]

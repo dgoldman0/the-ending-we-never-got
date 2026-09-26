@@ -1,0 +1,334 @@
+{
+  "s050-citadel-lower-stair": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 1102967,
+    "candidate_sha256": "b224e434ba8b4811e210f3a1efc1f56b46470f5f82ea2b796d50ba1221338b14",
+    "protected_face_cores": [
+      {
+        "rect": [
+          844,
+          263,
+          892,
+          325
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          926,
+          211,
+          978,
+          269
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s051-north-infirmary-court": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 126166,
+    "candidate_sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1",
+    "protected_face_cores": [
+      {
+        "rect": [
+          591,
+          378,
+          665,
+          477
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1290,
+          240,
+          1350,
+          309
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1650,
+          332,
+          1720,
+          407
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s052-citadel-inner-landing": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 750689,
+    "candidate_sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e",
+    "protected_face_cores": [
+      {
+        "rect": [
+          924,
+          173,
+          982,
+          230
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1064,
+          306,
+          1112,
+          350
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          640,
+          420,
+          699,
+          478
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          343,
+          292,
+          403,
+          375
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s052-entrance-ward": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 750690,
+    "candidate_sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4",
+    "protected_face_cores": [
+      {
+        "rect": [
+          924,
+          173,
+          982,
+          230
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1064,
+          306,
+          1112,
+          350
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          640,
+          420,
+          699,
+          478
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          343,
+          292,
+          403,
+          375
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s055-citadel-lower-stair-morning": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 202851,
+    "candidate_sha256": "358c5d7044c7c244240f46675b67edcdda2b27394f91906ef3f66ebbbc9915fa",
+    "protected_face_cores": [
+      {
+        "rect": [
+          352,
+          327,
+          412,
+          396
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          478,
+          300,
+          545,
+          376
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          285,
+          510,
+          343,
+          550
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1134,
+          102,
+          1188,
+          175
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1391,
+          109,
+          1433,
+          175
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s055-mara": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 1355368,
+    "candidate_sha256": "0824546b3946c36668de471ce4b7ddc7a15fc8aba542b19c676c68e2834624fc",
+    "protected_face_cores": [
+      {
+        "rect": [
+          830,
+          192,
+          920,
+          280
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1060,
+          155,
+          1130,
+          238
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          860,
+          452,
+          920,
+          510
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  },
+  "s058-final": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 712209,
+    "candidate_sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184",
+    "protected_face_cores": [
+      {
+        "rect": [
+          539,
+          250,
+          605,
+          330
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          694,
+          151,
+          741,
+          207
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          904,
+          140,
+          966,
+          196
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1070,
+          218,
+          1130,
+          281
+        ],
+        "changed_pixels": 0
+      },
+      {
+        "rect": [
+          1306,
+          300,
+          1380,
+          359
+        ],
+        "changed_pixels": 0
+      }
+    ],
+    "reopened_master_rgba_equal": true,
+    "promoted_to_scene_source": true
+  }
+}
