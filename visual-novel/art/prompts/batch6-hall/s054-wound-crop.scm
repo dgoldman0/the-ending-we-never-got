@@ -1,0 +1,5 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-hall/s054-wound/before.png" "visual-novel/art/scene-studies/batch6-hall/s054-wound/before.png"))) (f 0))
+(gimp-image-crop im 460 360 490 430)
+(set! f(car(gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im f "visual-novel/art/scene-studies/batch6-hall/s054-wound/hand-target.png" "visual-novel/art/scene-studies/batch6-hall/s054-wound/hand-target.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)

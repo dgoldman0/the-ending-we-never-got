@@ -1,0 +1,55 @@
+[
+  {
+    "file": "s054-throne-hall",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_range": [
+      255,
+      255
+    ],
+    "exact_reopened_pixels": true,
+    "changed_pixels": 374826,
+    "changed_bbox": [
+      115,
+      147,
+      1920,
+      1080
+    ],
+    "protected_changed_pixels": {
+      "Tessa_face": 0,
+      "Valcair_face": 0,
+      "front_grip_core": 0,
+      "rear_grip_core": 0
+    },
+    "before_sha256": "9ca2bd1c5aa69d3298e6772e648c977217c437e54669f6336033a7a2e01f6211",
+    "candidate_sha256": "4345aae4353b40d7e66ff9ee5dc98c78352bd64dbbcb2ac7ae89e62a94a83a2b"
+  },
+  {
+    "file": "s054-wound",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_range": [
+      255,
+      255
+    ],
+    "exact_reopened_pixels": true,
+    "changed_pixels": 6152,
+    "changed_bbox": [
+      619,
+      566,
+      728,
+      648
+    ],
+    "protected_changed_pixels": {
+      "Tessa_face": 0,
+      "left_sword_hand": 0,
+      "Valcair": 0
+    },
+    "before_sha256": "0c8cc557fdfcc0868439a965a2e68fb92491b6d1c097804c2c486bff2db4a372",
+    "candidate_sha256": "dd7df37f9e5bc2cff040824fe46462729313f9ba0b87b9cc396c919674020cd5"
+  }
+]

@@ -1,0 +1,5 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-hall/s054-throne-hall/repair-master.xcf" "visual-novel/art/scene-studies/batch6-hall/s054-throne-hall/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s054-throne-hall-reopened.png" "/tmp/s054-throne-hall-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-hall/s054-wound/repair-master.xcf" "visual-novel/art/scene-studies/batch6-hall/s054-wound/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s054-wound-reopened.png" "/tmp/s054-wound-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(gimp-quit 0)
