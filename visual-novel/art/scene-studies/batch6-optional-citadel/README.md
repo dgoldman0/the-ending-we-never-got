@@ -11,3 +11,9 @@ Tent table support and scabbard corrections are conditional. Tessa's left hip in
 Use built-in imagegen for bounded prop/background donors and GIMP masked production. Whole/native peer review and reopened-XCF pixel equivalence precede source replacement. No runtime or shared canon changes.
 
 Root and independent opening agent inspected both whole images and before/after native board: teal skirt drape/boots and retained corner support coherent; wagon shafts connect the frame through visible leather tug loops outside the horse. Promoted after original-source hash check. No user approval or runtime clearance implied.
+
+## Review results
+
+S048 and S057 candidates passed independent whole/native review. The S048 donor removes the redundant intermediate right-side plank and preserves the nearest table corner and far chair; the dark-teal hem and boots join cleanly. The S057 near/far wooden shafts attach to the frame and leather tug loops, outside the horse's body with correct occlusion. Both layered GIMP masters reopen to exactly the candidate's 1920×1080 opaque RGBA pixels; `verification.json` records hashes and bounded changed rectangles.
+
+Deferred: S052 both scabbards and S049 scabbard relocation, because the target anatomical left hip is hidden by existing foreground bodies/table and a clear move would require broader actor reconstruction. S049 alleged extra table support is also deferred: this local inspection could not distinguish a redundant member confidently from the front/back corner supports and shield overlap. No source pixels in those files were altered.

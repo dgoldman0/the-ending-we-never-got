@@ -1,0 +1,4 @@
+# Batch6 item32: barrier spans the road
+Read source1614–1675: Tessa attacks the black barrier closing the whole road, wardkeeper renews it from tower window; Elin points and Mara holds the carts beneath stone loading arch. Side entrance into tower is a separate smaller ward later. Preserve current winter street, cast, carts, camera and neutral exposure; extend the black road-seal between the tower masonry and opposite house, behind Tessa and Elin, with an unbroken contact across the paving. No walkable street bypass.
+
+Root and independent opening-agent final whole/native review clear the source-preserving figure contours, pointing/casting/hanging hands, horse/mane and all arm/coat gaps. The full road is visibly sealed. Promoted after current-source hash verification; this does not imply user approval or runtime clearance.

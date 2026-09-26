@@ -1,0 +1,3 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/batch6-continuity/s040-mill-town") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/reopened.png") (string-append dir "/reopened.png") 0 9 0 0 0 0 0 0 0) (gimp-image-delete im))
+(gimp-quit 0)

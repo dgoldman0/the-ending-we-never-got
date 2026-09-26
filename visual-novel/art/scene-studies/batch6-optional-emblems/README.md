@@ -1,0 +1,4 @@
+# Batch6 bounded emblem details
+Optional repairs only. S044 current split badge has lost its principal top/bottom points; restore those using four tiny GIMP-painted triangles in the existing white, preserving the central division and existing other six points. S042 Olan's shield must use the same twelve-ray disk across the three cart shots. No changes to faces, hands, staging, garments or light.
+
+Root reviewed all three final whole images and enlarged native emblems. Opening agent independently confirms twelve rays in both S042 disks, no old-ray fragments or circular donor seams, and S044 upper/lower principal points with preserved central split. Reopened XCFs reproduce every RGBA pixel; alpha255,1920×1080. Only1639/1637/107 pixels change respectively. Hash-checked source promotion completed. No runtime clearance or user approval implied.

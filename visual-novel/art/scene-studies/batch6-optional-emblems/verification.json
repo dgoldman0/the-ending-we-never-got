@@ -1,0 +1,59 @@
+{
+  "s042-mill-town-later": {
+    "exact_reopened": true,
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 1639,
+    "changed_bbox": [
+      337,
+      308,
+      381,
+      354
+    ],
+    "before_sha256": "12cbdb5f0d1d9f59298827b04057ad1ff0bfb74d08c3ae70a71264996fd54e21",
+    "candidate_sha256": "0730aec9519f9fb62bc5b02222733e574f4124d693a1ffea0897efd1cc520785",
+    "promoted": true
+  },
+  "s042-mara-hand": {
+    "exact_reopened": true,
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 1637,
+    "changed_bbox": [
+      333,
+      275,
+      377,
+      321
+    ],
+    "before_sha256": "f5eb73b216719beb85bb4c50d62d586e22ed0739a6e8fa1e736a9879dd3983a2",
+    "candidate_sha256": "1357193ca98bf82e6897535a864074f62daea6dafdf3d8b480cb8b1e8641a4ea",
+    "promoted": true
+  },
+  "s044-upper-stores-landing": {
+    "exact_reopened": true,
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "changed_pixels": 107,
+    "changed_bbox": [
+      878,
+      184,
+      886,
+      204
+    ],
+    "before_sha256": "1588b4258eb33ab053d20765ec5d36c6dbc9d4112db20f473fecea8bfa6a02bc",
+    "candidate_sha256": "a9a870324b3b44c683d60bec9d0a45530c0f8c3aa51ce2b451bb167f684aa8f1",
+    "promoted": true
+  }
+}

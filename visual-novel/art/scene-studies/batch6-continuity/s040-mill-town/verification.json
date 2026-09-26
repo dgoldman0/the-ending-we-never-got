@@ -1,0 +1,69 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "mode": "RGBA",
+  "alpha_min": 255,
+  "alpha_max": 255,
+  "reopened_rgba_equal": true,
+  "reopened_changed_pixels": 0,
+  "changed_bounds": [
+    783,
+    125,
+    1712,
+    618
+  ],
+  "source_before_sha256": "25d73a26bdbbdd55936a4610a29b1ca0230576d70f1f8ebbcf5201f8456a6f24",
+  "candidate_sha256": "8318592f4f956fa16ea10439f6ca590afea27328b00d80b1bd1bcda39857e519",
+  "source_still_before": false,
+  "protected_cores": {
+    "tessa_face": {
+      "box": [
+        1005,
+        315,
+        1026,
+        345
+      ],
+      "changed_pixels": 0
+    },
+    "elin_face": {
+      "box": [
+        1070,
+        327,
+        1096,
+        353
+      ],
+      "changed_pixels": 0
+    },
+    "olan": {
+      "box": [
+        350,
+        190,
+        480,
+        480
+      ],
+      "changed_pixels": 0
+    },
+    "mara": {
+      "box": [
+        605,
+        255,
+        710,
+        415
+      ],
+      "changed_pixels": 0
+    },
+    "driver": {
+      "box": [
+        704,
+        268,
+        777,
+        390
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "master": "repair-master.xcf",
+  "promoted": true
+}

@@ -1,0 +1,7 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-optional-emblems/s042-mill-town-later/repair-master.xcf" "visual-novel/art/scene-studies/batch6-optional-emblems/s042-mill-town-later/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s042-mill-town-later-emblem-reopened.png" "/tmp/s042-mill-town-later-emblem-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-optional-emblems/s042-mara-hand/repair-master.xcf" "visual-novel/art/scene-studies/batch6-optional-emblems/s042-mara-hand/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s042-mara-hand-emblem-reopened.png" "/tmp/s042-mara-hand-emblem-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch6-optional-emblems/s044-upper-stores-landing/repair-master.xcf" "visual-novel/art/scene-studies/batch6-optional-emblems/s044-upper-stores-landing/repair-master.xcf")))(f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im f "/tmp/s044-upper-stores-landing-emblem-reopened.png" "/tmp/s044-upper-stores-landing-emblem-reopened.png" 0 9 0 0 0 0 0)(gimp-image-delete im))
+(gimp-quit 0)
