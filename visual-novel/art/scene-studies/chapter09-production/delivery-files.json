@@ -1,0 +1,119 @@
+[
+  {
+    "file": "renpy/game/art/scenes/s050-guard.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "d9301fdc13b5ed706765460af0bb5bb94d71efa1fd2aed0e67ac6d789efb3261",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s050-citadel-lower-stair.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "3643c74cd4ca31f9d2e991c18a1579b980e54f5063b730f394c03570559e461b",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s051-north-infirmary-court.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "74f332c87a9b561d49d80776362abace362288d224ad972f12b1fc5a495a08ce",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s052-citadel-inner-landing.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "460f4ddc83fa50eef362d463296702cbfcf243d10ba431f8e2e76eca06dd9b00",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s052-entrance-ward.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "337ee4173a56ea871212ed60afe011fe850ac6ed56839a36d22d5c5630e5bd48",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s054-throne-hall.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "9ca2bd1c5aa69d3298e6772e648c977217c437e54669f6336033a7a2e01f6211",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s054-duel.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "987a4794dbbbe330901fc95efbd3029554504abf370a615b33c147903240bf86",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s054-wound.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "0c8cc557fdfcc0868439a965a2e68fb92491b6d1c097804c2c486bff2db4a372",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s055-mara.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "5f41e3f52718529dc57034385917e11dbd3cd6ba7888eb477237ee5a00a6e2ff",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s055-citadel-lower-stair-morning.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "457a37ce135e35bcc8e94e57a365d667b6aa7fe957762489e504794fdd8fb7ec",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s056-north-infirmary.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "bc3406400bac6104915361996374579b7447c550adccd58dac95d1a5f016be76",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s056-hand.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "44e396947d563d8e30d64d4e0b032cfdc1d56e2a8563e7aa1c5d43add67bb9a4",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s057-citadel-lower-gate.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "82b41313584819666df5d32d3c0722912199db474f05bd65f8a3aec91a822b5d",
+    "opaque": true
+  }
+]

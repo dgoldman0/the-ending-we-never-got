@@ -1,0 +1,2 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s050-guard/guard-master.xcf" "visual-novel/art/scene-studies/s050-guard/guard-master.xcf"))) (layer (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE img layer "/tmp/s050-guard-master-reopened.png" "/tmp/s050-guard-master-reopened.png" 0 9 0 0 0 0 0) (gimp-image-delete img))
+(gimp-quit 0)

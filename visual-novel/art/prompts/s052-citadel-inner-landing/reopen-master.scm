@@ -1,0 +1,2 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s052-citadel-inner-landing/landing-master.xcf" "visual-novel/art/scene-studies/s052-citadel-inner-landing/landing-master.xcf"))) (layer (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE)))) (file-png-save RUN-NONINTERACTIVE img layer "/tmp/s052-citadel-inner-landing-master-reopened.png" "/tmp/s052-citadel-inner-landing-master-reopened.png" 0 9 0 0 0 0 0) (gimp-image-delete img))
+(gimp-quit 0)

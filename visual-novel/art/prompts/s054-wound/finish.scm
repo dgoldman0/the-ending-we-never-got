@@ -1,0 +1,7 @@
+(load "visual-novel/art/prompts/s054-wound/07-cast-and-room-mask.scm")
+(load "visual-novel/art/prompts/s054-wound/08-rear-release-mask.scm")
+(load "visual-novel/art/prompts/s054-wound/09-first-framing.scm")
+(load "visual-novel/art/prompts/s054-wound/10-final-framing.scm")
+(load "visual-novel/art/prompts/s054-wound/11-horn-diagnostic-cleanup.scm")
+(load "visual-novel/art/prompts/s054-wound/12-horn-component-mask.scm")
+(gimp-quit 0)
