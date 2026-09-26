@@ -5,7 +5,9 @@ Repairs found in the S001-S005 sweep of 24 September 2026, done locally
 instead of re-requesting the paintings:
 
   sliver    a stray metal sliver the image generator left on Tessa's drawing
-            (S002), painted out from the surrounding paper by inpainting
+            (S002), painted out from the surrounding paper by inpainting; the
+            close-up of the drawing was since repainted by GPT (25 September),
+            so only the table painting keeps this repair
   recolour  Iven's coat, changed from olive to brown because green is the
             northern side's colour (user decision): the S003 paintings and
             close-ups, his ten portraits, and the two S004 ceremony paintings
@@ -45,7 +47,6 @@ MASKS = HERE / 'masks'
 # The stray sliver on the S002 drawing: a thin diagonal strip from p0 to p1.
 SLIVERS = {
     'art/base/opening/cg/drawing-restart.png': ((941, 744), (964, 768)),
-    'art/base/opening/cg/detail-drawing.png': ((224, 40), (246, 64)),
 }
 
 # Iven's coat, recoloured from olive to brown (user decision, 24 September
