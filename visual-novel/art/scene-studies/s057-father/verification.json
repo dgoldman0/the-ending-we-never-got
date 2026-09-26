@@ -1,0 +1,18 @@
+{
+  "size": [
+    2240,
+    1260
+  ],
+  "alpha_range": [
+    255,
+    255
+  ],
+  "reopened_rgba_exact": true,
+  "protected_native_core_changed_pixels": {
+    "Lucan_face_and_core": 0,
+    "hand_cloth_contact": 0,
+    "left_porter_grip": 0,
+    "right_porter_grip": 0
+  },
+  "sha256": "7e1c17ee4676b7b459330906dfe7e68c19c7fdd1f6bcbd48f07913805abda233"
+}
