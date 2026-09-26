@@ -1,0 +1,1 @@
+Local donor on source crop(580,0,885,230): preserve wall/window/snow/perspective; turn orange internal window light to bright white combat flash with restrained white spill on reveals and sill. No new objects.

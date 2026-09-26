@@ -1,0 +1,14 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "mode": "RGBA",
+  "alpha_min": 255,
+  "alpha_max": 255,
+  "reopened_rgba_equal": true,
+  "reopened_changed_pixels": 0,
+  "candidate_sha256": "62c3a84c6c0803eebb469d69e3e8e2b1d5946c2bd06a4193f90087e6883c72fc",
+  "master": "delivery-master.xcf",
+  "promoted": true
+}
