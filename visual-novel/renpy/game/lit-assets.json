@@ -2343,6 +2343,7 @@
    ]
   },
   "art/lit/scenes--s013-summoning-chamber-later-original.webp": {
+   "lift": 70,
    "soft": "art/lit/soft/scenes--s013-summoning-chamber-later-original.webp",
    "tint": [
     0.251,

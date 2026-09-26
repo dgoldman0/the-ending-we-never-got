@@ -208,7 +208,10 @@
     {
      "image": "art/scenes/s013-summoning-chamber-later.png",
      "from": 0,
-     "alt": "Summoning Chamber, Later"
+     "alt": "In the summoning chamber the scholar sits among his instruments; Elin kneels beside him with the book open at its missing pages.",
+     "framing": {
+      "lift": 70
+     }
     }
    ],
    "cast": {
@@ -410,6 +413,16 @@
      "image": "art/scenes/s021-rescue.png",
      "from": 909,
      "alt": "The landing, the bank, the gate, the shelter and the two boats as the rescue goes on."
+    },
+    {
+     "image": "art/scenes/s021-serat.png",
+     "from": 913,
+     "alt": "Beneath the rock by the boats, Iven presses a cloth to Serat's torn thigh while Tessa's light joins its edges; Lucan kneels beside him, and the adult cat's paw reaches through the bars of the shut gate."
+    },
+    {
+     "image": "art/scenes/s021-boat.png",
+     "from": 937,
+     "alt": "On the second boat, pulling into the current toward the human pickets, Tessa kneels between Serat and the injured woman; Lucan holds Serat steady while Iven binds the wound under her light."
     }
    ],
    "cast": {
