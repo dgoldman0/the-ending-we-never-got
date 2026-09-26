@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "exact_reopened_rgba": true,
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "changed_bounds": [
+    431,
+    67,
+    628,
+    296
+  ],
+  "changed_pixels": 33321,
+  "marren_and_vask_unchanged": true,
+  "candidate_sha256": "bfae56ea1752708c1d8a9d6647b81774ae2b2a79ff1f9af2e108036be3a19de2"
+}

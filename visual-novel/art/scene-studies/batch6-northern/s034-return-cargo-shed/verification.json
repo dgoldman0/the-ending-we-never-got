@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "exact_reopened_rgba": true,
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "changed_bounds": [
+    490,
+    67,
+    1286,
+    768
+  ],
+  "changed_pixels": 185099,
+  "doorway_clerk_guards_unchanged": true,
+  "candidate_sha256": "29b5b12660d72634888739b5ba47f8e435149a0d924d09d52bd2a1377d5bd163"
+}

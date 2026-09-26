@@ -1,0 +1,5 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s038-northern-stores-office.png" "visual-novel/renpy/game/art/scenes/s038-northern-stores-office.png"))) (f 0))
+(gimp-image-crop im 430 465 350 25)
+(set! f(car(gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im f "visual-novel/art/scene-studies/batch6-northern/s038-northern-stores-office/head-target.png" "visual-novel/art/scene-studies/batch6-northern/s038-northern-stores-office/head-target.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)
