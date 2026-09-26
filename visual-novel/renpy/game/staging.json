@@ -885,6 +885,26 @@
      "alt": "Spring, summer, winter: Mara helps Tessa stand in a bell tower; Tessa searches an emptied village; southern flags rise over a river town as troops load barges."
     },
     {
+     "image": "art/scenes/s043-upper-stores.png",
+     "from": 1688,
+     "alt": "Spring: at the upper stores a guard hands Lucan's letter back unopened while Marren watches from a high window. The next summer, Marren's wife walks away with her returned parcel."
+    },
+    {
+     "image": "art/scenes/s043-seasons.png",
+     "from": 1690,
+     "alt": "Spring, summer, winter: Mara helps Tessa stand in a bell tower; Tessa searches an emptied village; southern flags rise over a river town as troops load barges."
+    },
+    {
+     "image": "art/scenes/s043-upper-stores.png",
+     "from": 1692,
+     "alt": "Spring: at the upper stores a guard hands Lucan's letter back unopened while Marren watches from a high window. The next summer, Marren's wife walks away with her returned parcel."
+    },
+    {
+     "image": "art/scenes/s043-seasons.png",
+     "from": 1694,
+     "alt": "Spring, summer, winter: Mara helps Tessa stand in a bell tower; Tessa searches an emptied village; southern flags rise over a river town as troops load barges."
+    },
+    {
      "image": "art/scenes/s043-river-provinces.png",
      "from": 1696,
      "alt": "At a wharf Lucan's former boatman finds him repairing a hired fishing boat with Serat, the river chart beside them."
@@ -903,7 +923,12 @@
     {
      "image": "art/scenes/s044-upper-stores-landing.png",
      "from": 0,
-     "alt": "Upper Stores, River Landing, Dawn"
+     "alt": "At the upper stores landing Lucan reaches for Marren, who holds a box against his chest; an escort steps in, and Serat waits at the oars of the fishing boat."
+    },
+    {
+     "image": "art/scenes/s044-arch.png",
+     "from": 1753,
+     "alt": "Through the low arch Marren presses his coat against the leaking seam while Serat ships the oars and Lucan steers; the patrol boat is stopped behind the arch."
     }
    ],
    "cast": {
@@ -1013,9 +1038,14 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s050-citadel-lower-stair.png",
+     "image": "art/scenes/s050-guard.png",
      "from": 0,
-     "alt": "Citadel, Lower Stair, Pre-Dawn"
+     "alt": "Tessa fastens the buckle of Mara's forearm guard; Mara's hand is trembling."
+    },
+    {
+     "image": "art/scenes/s050-citadel-lower-stair.png",
+     "from": 2005,
+     "alt": "Mara holds Tessa on the landing below the stair; above them Olan signals as the last tower goes dark."
     }
    ],
    "cast": {
@@ -1031,7 +1061,7 @@
     {
      "image": "art/scenes/s051-north-infirmary-court.png",
      "from": 0,
-     "alt": "Citadel, North Infirmary Court, Dawn"
+     "alt": "At the outer gate Lucan fires through a slit beside two bowmen while Serat moves the last patients into the covered court."
     }
    ],
    "cast": {
@@ -1046,7 +1076,12 @@
     {
      "image": "art/scenes/s052-citadel-inner-landing.png",
      "from": 0,
-     "alt": "Citadel, Inner Landing, Dawn"
+     "alt": "Behind Olan's shield Tessa works at the black ward sealing the open bronze doors, Elin crouched beside him; the runner has come up from below."
+    },
+    {
+     "image": "art/scenes/s052-entrance-ward.png",
+     "from": 2041,
+     "alt": "The ward darkens across the doorway; Tessa presses her bare left palm to the frame."
     }
    ],
    "cast": {
@@ -1061,9 +1096,9 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s050-citadel-lower-stair.png",
+     "image": "art/scenes/s053-bend.png",
      "from": 0,
-     "alt": "Citadel, Lower Stair, Continuous"
+     "alt": "At the bend Mara holds the gap behind her shield as her last soldier carries a wounded man up the stair."
     }
    ],
    "cast": {},
@@ -1076,7 +1111,32 @@
     {
      "image": "art/scenes/s054-throne-hall.png",
      "from": 0,
-     "alt": "Citadel, Throne Hall, Continuous"
+     "alt": "Valcair blocks the way to the throne, spear lowered; Tessa advances with her sword in her right hand and light gathered in her left."
+    },
+    {
+     "image": "art/scenes/s054-duel.png",
+     "from": 2070,
+     "alt": "Valcair's spear drives along Tessa's sanctuary into a pillar as her blade turns on the black light at his elbow."
+    },
+    {
+     "image": "art/scenes/s054-wound.png",
+     "from": 2080,
+     "alt": "Tessa lies by the last pillar, her torn right hand against her chest and the sword in her left; Valcair lifts the bloodied spear."
+    },
+    {
+     "image": "art/scenes/s054-strike.png",
+     "from": 2090,
+     "alt": "Inside the spear's reach Tessa drives the blade beneath Valcair's raised arm; his knees buckle against the lowest step."
+    },
+    {
+     "image": "art/scenes/s054-lever.png",
+     "from": 2100,
+     "alt": "Behind the throne Tessa leans her weight on the release with her left hand; across the hall the entrance ward fades."
+    },
+    {
+     "image": "art/scenes/s054-binding.png",
+     "from": 2104,
+     "alt": "At the entrance Olan holds Tessa up as the wounded come in; Elin binds her hand with a strip torn from her sleeve."
     }
    ],
    "cast": {
@@ -1090,9 +1150,14 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s055-citadel-lower-stair-morning.png",
+     "image": "art/scenes/s055-mara.png",
      "from": 0,
-     "alt": "Citadel, Lower Stair, Morning"
+     "alt": "Tessa feels for a pulse at Mara's neck with her left hand, her bound right hand against her chest; Elin and the healer kneel with her."
+    },
+    {
+     "image": "art/scenes/s055-citadel-lower-stair-morning.png",
+     "from": 2129,
+     "alt": "Olan blocks Lucan on the stair as Orra's guards bring him down; Tessa stays beside Mara with Elin."
     }
    ],
    "cast": {
@@ -1109,7 +1174,12 @@
     {
      "image": "art/scenes/s056-north-infirmary.png",
      "from": 0,
-     "alt": "North Infirmary, Day"
+     "alt": "In the rain-dark infirmary the surgeon unwraps Tessa's right hand while Elin holds the lamp."
+    },
+    {
+     "image": "art/scenes/s056-hand.png",
+     "from": 2148,
+     "alt": "Tessa tries again to straighten the fingers of her wounded hand; the surgeon supports it."
     }
    ],
    "cast": {
@@ -1125,7 +1195,12 @@
     {
      "image": "art/scenes/s057-citadel-lower-gate.png",
      "from": 0,
-     "alt": "Citadel, Lower Gate, Evening"
+     "alt": "Medical wagons pass through the lower gate between the lines; Vask watches as Lucan reads Orra's reply beside Serat."
+    },
+    {
+     "image": "art/scenes/s057-father.png",
+     "from": 2173,
+     "alt": "Lucan tucks his father's exposed hand beneath the cloth over the body."
     }
    ],
    "cast": {
@@ -1141,7 +1216,22 @@
     {
      "image": "art/scenes/s058-bellweir-market-spring.png",
      "from": 0,
-     "alt": "Bellweir, Market Square, Spring Day"
+     "alt": "Four years on: Tessa sits on the fountain rim with her letter, I WILL REMAIN IN BELLWEIR; Elin lays the catalog entry beside it. The glass heron turns with one wing missing."
+    },
+    {
+     "image": "art/scenes/s058-drawings.png",
+     "from": 2207,
+     "alt": "Tessa's drawings: her mother's kitchen, and Iven with his hair sticking up."
+    },
+    {
+     "image": "art/scenes/s058-bellweir-market-spring.png",
+     "from": 2209,
+     "alt": "Four years on: Tessa sits on the fountain rim with her letter, I WILL REMAIN IN BELLWEIR; Elin lays the catalog entry beside it. The glass heron turns with one wing missing."
+    },
+    {
+     "image": "art/scenes/s058-final.png",
+     "from": 2213,
+     "alt": "Inside the bakery Tessa takes the chair Orren has moved for her, with Elin, Hest, the apprentices, Ada and Renn around the table."
     }
    ],
    "cast": {

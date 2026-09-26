@@ -216,6 +216,12 @@
   "art/scenes/s043-seasons.png": {
    "original": "art/lit/scenes--s043-seasons-original.webp"
   },
+  "art/scenes/s043-upper-stores.png": {
+   "original": "art/lit/scenes--s043-upper-stores-original.webp"
+  },
+  "art/scenes/s044-arch.png": {
+   "original": "art/lit/scenes--s044-arch-original.webp"
+  },
   "art/scenes/s044-upper-stores-landing.png": {
    "original": "art/lit/scenes--s044-upper-stores-landing-original.webp"
   },
@@ -234,8 +240,50 @@
   "art/scenes/s049-command-tent.png": {
    "original": "art/lit/scenes--s049-command-tent-original.webp"
   },
+  "art/scenes/s050-citadel-lower-stair.png": {
+   "original": "art/lit/scenes--s050-citadel-lower-stair-original.webp"
+  },
+  "art/scenes/s050-guard.png": {
+   "original": "art/lit/scenes--s050-guard-original.webp"
+  },
+  "art/scenes/s051-north-infirmary-court.png": {
+   "original": "art/lit/scenes--s051-north-infirmary-court-original.webp"
+  },
+  "art/scenes/s052-citadel-inner-landing.png": {
+   "original": "art/lit/scenes--s052-citadel-inner-landing-original.webp"
+  },
+  "art/scenes/s052-entrance-ward.png": {
+   "original": "art/lit/scenes--s052-entrance-ward-original.webp"
+  },
+  "art/scenes/s054-duel.png": {
+   "original": "art/lit/scenes--s054-duel-original.webp"
+  },
   "art/scenes/s054-throne-hall.png": {
    "original": "art/lit/scenes--s054-throne-hall-original.webp"
+  },
+  "art/scenes/s054-wound.png": {
+   "original": "art/lit/scenes--s054-wound-original.webp"
+  },
+  "art/scenes/s055-citadel-lower-stair-morning.png": {
+   "original": "art/lit/scenes--s055-citadel-lower-stair-morning-original.webp"
+  },
+  "art/scenes/s055-mara.png": {
+   "original": "art/lit/scenes--s055-mara-original.webp"
+  },
+  "art/scenes/s056-hand.png": {
+   "original": "art/lit/scenes--s056-hand-original.webp"
+  },
+  "art/scenes/s056-north-infirmary.png": {
+   "original": "art/lit/scenes--s056-north-infirmary-original.webp"
+  },
+  "art/scenes/s057-citadel-lower-gate.png": {
+   "original": "art/lit/scenes--s057-citadel-lower-gate-original.webp"
+  },
+  "art/scenes/s058-bellweir-market-spring.png": {
+   "original": "art/lit/scenes--s058-bellweir-market-spring-original.webp"
+  },
+  "art/scenes/s058-final.png": {
+   "original": "art/lit/scenes--s058-final-original.webp"
   }
  },
  "portraits": {
@@ -1804,13 +1852,29 @@
   "art/scenes/s042-mill-town-later.png": "ordinary",
   "art/scenes/s043-river-provinces.png": "ordinary",
   "art/scenes/s043-seasons.png": "ordinary",
+  "art/scenes/s043-upper-stores.png": "ordinary",
+  "art/scenes/s044-arch.png": "ordinary",
   "art/scenes/s044-upper-stores-landing.png": "ordinary",
   "art/scenes/s045-citadel-north-infirmary.png": "ordinary",
   "art/scenes/s046-valcair-private-room.png": "night",
   "art/scenes/s047-citadel-north-infirmary-before-dawn.png": "ordinary",
   "art/scenes/s048-examination-tent.png": "ordinary",
   "art/scenes/s049-command-tent.png": "night",
+  "art/scenes/s050-citadel-lower-stair.png": "ordinary",
+  "art/scenes/s050-guard.png": "ordinary",
+  "art/scenes/s051-north-infirmary-court.png": "ordinary",
+  "art/scenes/s052-citadel-inner-landing.png": "ordinary",
+  "art/scenes/s052-entrance-ward.png": "ordinary",
+  "art/scenes/s054-duel.png": "ordinary",
   "art/scenes/s054-throne-hall.png": "ordinary",
+  "art/scenes/s054-wound.png": "ordinary",
+  "art/scenes/s055-citadel-lower-stair-morning.png": "ordinary",
+  "art/scenes/s055-mara.png": "ordinary",
+  "art/scenes/s056-hand.png": "ordinary",
+  "art/scenes/s056-north-infirmary.png": "ordinary",
+  "art/scenes/s057-citadel-lower-gate.png": "ordinary",
+  "art/scenes/s058-bellweir-market-spring.png": "ordinary",
+  "art/scenes/s058-final.png": "ordinary",
   "ceremony-applause": "bright",
   "ceremony-dais": "bright",
   "ceremony-intervention": "bright",
@@ -2678,6 +2742,22 @@
     0.211
    ]
   },
+  "art/lit/scenes--s043-upper-stores-original.webp": {
+   "soft": "art/lit/soft/scenes--s043-upper-stores-original.webp",
+   "tint": [
+    0.203,
+    0.2,
+    0.186
+   ]
+  },
+  "art/lit/scenes--s044-arch-original.webp": {
+   "soft": "art/lit/soft/scenes--s044-arch-original.webp",
+   "tint": [
+    0.203,
+    0.199,
+    0.202
+   ]
+  },
   "art/lit/scenes--s044-upper-stores-landing-original.webp": {
    "soft": "art/lit/soft/scenes--s044-upper-stores-landing-original.webp",
    "tint": [
@@ -2726,12 +2806,124 @@
     0.15
    ]
   },
+  "art/lit/scenes--s050-citadel-lower-stair-original.webp": {
+   "soft": "art/lit/soft/scenes--s050-citadel-lower-stair-original.webp",
+   "tint": [
+    0.212,
+    0.196,
+    0.2
+   ]
+  },
+  "art/lit/scenes--s050-guard-original.webp": {
+   "soft": "art/lit/soft/scenes--s050-guard-original.webp",
+   "tint": [
+    0.214,
+    0.194,
+    0.222
+   ]
+  },
+  "art/lit/scenes--s051-north-infirmary-court-original.webp": {
+   "soft": "art/lit/soft/scenes--s051-north-infirmary-court-original.webp",
+   "tint": [
+    0.234,
+    0.193,
+    0.164
+   ]
+  },
+  "art/lit/scenes--s052-citadel-inner-landing-original.webp": {
+   "soft": "art/lit/soft/scenes--s052-citadel-inner-landing-original.webp",
+   "tint": [
+    0.229,
+    0.193,
+    0.186
+   ]
+  },
+  "art/lit/scenes--s052-entrance-ward-original.webp": {
+   "soft": "art/lit/soft/scenes--s052-entrance-ward-original.webp",
+   "tint": [
+    0.186,
+    0.199,
+    0.253
+   ]
+  },
+  "art/lit/scenes--s054-duel-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-duel-original.webp",
+   "tint": [
+    0.228,
+    0.194,
+    0.18
+   ]
+  },
   "art/lit/scenes--s054-throne-hall-original.webp": {
    "soft": "art/lit/soft/scenes--s054-throne-hall-original.webp",
    "tint": [
     0.215,
     0.197,
     0.19
+   ]
+  },
+  "art/lit/scenes--s054-wound-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-wound-original.webp",
+   "tint": [
+    0.21,
+    0.198,
+    0.192
+   ]
+  },
+  "art/lit/scenes--s055-citadel-lower-stair-morning-original.webp": {
+   "soft": "art/lit/soft/scenes--s055-citadel-lower-stair-morning-original.webp",
+   "tint": [
+    0.208,
+    0.198,
+    0.194
+   ]
+  },
+  "art/lit/scenes--s055-mara-original.webp": {
+   "soft": "art/lit/soft/scenes--s055-mara-original.webp",
+   "tint": [
+    0.222,
+    0.195,
+    0.191
+   ]
+  },
+  "art/lit/scenes--s056-hand-original.webp": {
+   "soft": "art/lit/soft/scenes--s056-hand-original.webp",
+   "tint": [
+    0.26,
+    0.183,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s056-north-infirmary-original.webp": {
+   "soft": "art/lit/soft/scenes--s056-north-infirmary-original.webp",
+   "tint": [
+    0.26,
+    0.188,
+    0.15
+   ]
+  },
+  "art/lit/scenes--s057-citadel-lower-gate-original.webp": {
+   "soft": "art/lit/soft/scenes--s057-citadel-lower-gate-original.webp",
+   "tint": [
+    0.238,
+    0.191,
+    0.176
+   ]
+  },
+  "art/lit/scenes--s058-bellweir-market-spring-original.webp": {
+   "soft": "art/lit/soft/scenes--s058-bellweir-market-spring-original.webp",
+   "tint": [
+    0.231,
+    0.193,
+    0.175
+   ]
+  },
+  "art/lit/scenes--s058-final-original.webp": {
+   "soft": "art/lit/soft/scenes--s058-final-original.webp",
+   "tint": [
+    0.26,
+    0.187,
+    0.15
    ]
   },
   "art/lit/stretcher-original.webp": {
