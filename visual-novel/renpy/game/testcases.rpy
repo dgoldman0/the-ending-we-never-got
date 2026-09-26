@@ -36,7 +36,7 @@ testcase reading_and_discovery:
     assert screen 'main_menu'
     assert eval isinstance(cast, dict) and callable(cast['TESSA'])
     assert eval len(source_map['scenes']) == 58
-    assert eval source_map['source_sha256'] == 'e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88'
+    assert eval source_map['source_sha256'] == '240b42b193791b1764fac701123369361c709899a2728a820b2720986cb300c0'
     click id 'main_begin'
     assert screen 'say'
     assert not screen 'nvl'
