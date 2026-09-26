@@ -2246,6 +2246,7 @@
    ]
   },
   "art/lit/scenes--s007-roadside-inn-original.webp": {
+   "lift": 45,
    "soft": "art/lit/soft/scenes--s007-roadside-inn-original.webp",
    "tint": [
     0.26,

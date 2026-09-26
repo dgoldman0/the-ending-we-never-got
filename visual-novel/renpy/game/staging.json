@@ -40,7 +40,10 @@
     {
      "image": "art/scenes/s007-roadside-inn.png",
      "from": 0,
-     "alt": "Roadside Inn, Night"
+     "alt": "Roadside Inn, Night",
+     "framing": {
+      "lift": 45
+     }
     }
    ],
    "cast": {
@@ -330,9 +333,14 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s018-gray-scar-ferry-approach.png",
+     "image": "art/scenes/s018-cats.png",
      "from": 0,
-     "alt": "Gray Scar, Ferry Approach, Afternoon"
+     "alt": "On the wooded trail a young crag cat drops at a litter bearer; Tessa's light catches it as Mara drives the other back with her shield."
+    },
+    {
+     "image": "art/scenes/s018-gray-scar-ferry-approach.png",
+     "from": 810,
+     "alt": "At the ferryhouse door Mara holds her sword and shield as a northern mother and child go in and Lucan brings the wounded man; his party follows along the track from the landing's iron gate."
     }
    ],
    "cast": {
