@@ -1,0 +1,90 @@
+[
+  {
+    "scene": "s037-relief-camp",
+    "size": [
+      1920,
+      1080
+    ],
+    "opaque": true,
+    "reopened_exact": true,
+    "changed_pixels": 20825,
+    "outside_layer_masks": 19004,
+    "rgb_outside_layer_masks": 0,
+    "alpha_only_normalization": true,
+    "normalized_alpha_pixels": 19004,
+    "changed_bbox": [
+      0,
+      0,
+      1920,
+      185
+    ],
+    "before_sha256": "39adbdcb9e26d50a764d3e917bdc66c0b511ea99ef17e3c20d1b4bc715cb041a",
+    "candidate_sha256": "fad4ff77b64a1b26d3ef4f58f87d2464da715d74718e30eff76c1651390a083e"
+  },
+  {
+    "scene": "s043-seasons",
+    "size": [
+      1920,
+      1080
+    ],
+    "opaque": true,
+    "reopened_exact": true,
+    "changed_pixels": 10166,
+    "outside_layer_masks": 0,
+    "rgb_outside_layer_masks": 0,
+    "alpha_only_normalization": false,
+    "normalized_alpha_pixels": 0,
+    "changed_bbox": [
+      1286,
+      335,
+      1888,
+      555
+    ],
+    "before_sha256": "7e1b90c3928e2435780d7e9142b7ac34f2af425c4a575a2589fd512ce3633ac2",
+    "candidate_sha256": "b29023c058ce3f55a20b4134288073c5daf891bd5e4ec56b2988d7fb018b253c"
+  },
+  {
+    "scene": "s058-bellweir-market-spring",
+    "size": [
+      1920,
+      1080
+    ],
+    "opaque": true,
+    "reopened_exact": true,
+    "changed_pixels": 12710,
+    "outside_layer_masks": 0,
+    "rgb_outside_layer_masks": 0,
+    "alpha_only_normalization": false,
+    "normalized_alpha_pixels": 0,
+    "changed_bbox": [
+      1425,
+      267,
+      1787,
+      787
+    ],
+    "before_sha256": "a2793e03cb0e60f9306643e0a256f468e5078459bfed3aecaea661bd2cc313c2",
+    "candidate_sha256": "f5adf86d95feb924601dd90aad47c6ea55fbab87c4a10a8255138a737dd3ff27"
+  },
+  {
+    "scene": "s010-bellweir-hills",
+    "size": [
+      1920,
+      1080
+    ],
+    "opaque": true,
+    "reopened_exact": true,
+    "changed_pixels": 6340,
+    "outside_layer_masks": 0,
+    "rgb_outside_layer_masks": 0,
+    "alpha_only_normalization": false,
+    "normalized_alpha_pixels": 0,
+    "changed_bbox": [
+      352,
+      234,
+      1040,
+      486
+    ],
+    "before_sha256": "da98c9fdbf7788f440fe901ea293f5a1f7b7c57d3d632869ed3bae3d97744ee3",
+    "candidate_sha256": "c9478ed7c4935e823d9ef5c931d48e31c4a20c1435341b5938d83d48a39872e4"
+  }
+]

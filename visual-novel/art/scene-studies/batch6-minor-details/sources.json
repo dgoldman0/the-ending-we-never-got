@@ -1,0 +1,22 @@
+[
+  {
+    "scene": "s010-bellweir-hills",
+    "source": "visual-novel/renpy/game/art/scenes/s010-bellweir-hills.png",
+    "destination": "visual-novel/renpy/game/art/scenes/s010-bellweir-hills.png"
+  },
+  {
+    "scene": "s037-relief-camp",
+    "source": "visual-novel/renpy/game/art/scenes/s037-relief-camp.png",
+    "destination": "visual-novel/renpy/game/art/scenes/s037-relief-camp.png"
+  },
+  {
+    "scene": "s043-seasons",
+    "source": "visual-novel/renpy/game/art/scenes/s043-seasons.png",
+    "destination": "visual-novel/renpy/game/art/scenes/s043-seasons.png"
+  },
+  {
+    "scene": "s058-bellweir-market-spring",
+    "source": "visual-novel/renpy/game/art/scenes/s058-bellweir-market-spring.png",
+    "destination": "visual-novel/renpy/game/art/scenes/s058-bellweir-market-spring.png"
+  }
+]
