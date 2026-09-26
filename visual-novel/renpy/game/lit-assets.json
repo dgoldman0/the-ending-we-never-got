@@ -2939,7 +2939,7 @@
    "tint": [
     0.246,
     0.191,
-    0.155
+    0.154
    ]
   },
   "art/lit/ward-blue-original.webp": {
@@ -2993,7 +2993,7 @@
   "art/lit/ward-pause-original.webp": {
    "soft": "art/lit/soft/ward-pause-original.webp",
    "tint": [
-    0.226,
+    0.225,
     0.195,
     0.177
    ]
@@ -3018,7 +3018,7 @@
    "soft": "art/lit/soft/ward-water-original.webp",
    "tint": [
     0.223,
-    0.197,
+    0.196,
     0.167
    ]
   },
