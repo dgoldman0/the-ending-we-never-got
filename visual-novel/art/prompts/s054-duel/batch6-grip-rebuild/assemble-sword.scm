@@ -1,0 +1,8 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-duel/batch6-grip-rebuild") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (ly (car (gimp-file-load-layer RUN-NONINTERACTIVE im (string-append dir "/sword-arm-elbow-donor.png")))) (mask 0))
+(gimp-image-insert-layer im ly 0 0) (gimp-layer-scale ly 600 365 TRUE) (gimp-layer-set-offsets ly 560 25) (gimp-item-set-name ly "Tessa connected right forearm glove and sword; actual Valcair elbow ward")
+(set! mask (car (gimp-layer-create-mask ly ADD-BLACK-MASK))) (gimp-layer-add-mask ly mask)
+(gimp-image-select-polygon im CHANNEL-OP-REPLACE 42 #(562 100 640 100 800 100 945 35 1035 35 1060 178 1065 200 1045 222 1035 270 1030 360 1015 379 999 360 979 280 946 215 850 227 780 244 720 263 651 255 562 245 562 180 562 145))
+(gimp-selection-feather im 4) (gimp-context-set-foreground '(255 255 255)) (gimp-edit-fill mask FOREGROUND-FILL) (gimp-selection-none im)
+(gimp-xcf-save RUN-NONINTERACTIVE im ly (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/candidate.png") (string-append dir "/candidate.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im))
+(gimp-quit 0)

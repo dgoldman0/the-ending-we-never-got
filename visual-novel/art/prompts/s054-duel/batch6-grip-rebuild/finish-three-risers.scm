@@ -1,0 +1,8 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-duel/batch6-grip-rebuild") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (ly (car (gimp-file-load-layer RUN-NONINTERACTIVE im (string-append dir "/three-risers-donor.png")))) (mask 0))
+(gimp-image-insert-layer im ly 0 0) (gimp-layer-scale ly 450 220 TRUE) (gimp-layer-set-offsets ly 585 415) (gimp-item-set-name ly "Exactly three low dais risers; fourth generated riser rejected")
+(set! mask (car (gimp-layer-create-mask ly ADD-BLACK-MASK))) (gimp-layer-add-mask ly mask)
+(gimp-image-select-polygon im CHANNEL-OP-REPLACE 32 #(590 465 650 458 830 460 950 460 1025 470 1010 505 990 535 960 575 925 615 755 625 730 595 705 570 680 545 650 510 610 475 590 470))
+(gimp-selection-feather im 4) (gimp-context-set-foreground '(255 255 255)) (gimp-edit-fill mask FOREGROUND-FILL) (gimp-selection-none im)
+(gimp-xcf-save RUN-NONINTERACTIVE im ly (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/candidate.png") (string-append dir "/candidate.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im))
+(gimp-quit 0)

@@ -1,0 +1,7 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-duel/batch6-grip-rebuild") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (ly 0))
+(gimp-context-set-interpolation INTERPOLATION-CUBIC) (gimp-image-scale im 1920 1080) (set! ly (car (gimp-image-get-active-layer im)))
+(gimp-xcf-save RUN-NONINTERACTIVE im ly (string-append dir "/delivery-master.xcf") (string-append dir "/delivery-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/delivery.png") (string-append dir "/delivery.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im))
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-duel/batch6-grip-rebuild") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/delivery-master.xcf") (string-append dir "/delivery-master.xcf")))) (out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/reopened.png") (string-append dir "/reopened.png") 0 9 0 0 0 0 0 0 0) (gimp-image-delete im))
+(gimp-quit 0)

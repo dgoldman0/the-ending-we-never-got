@@ -1,0 +1,6 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-duel/batch6-grip-rebuild") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf")))) (ly (car (gimp-image-get-layer-by-name im "Three low dais steps, plain throne and continuous single-plane floor"))) (mask (car (gimp-layer-get-mask ly))))
+(gimp-image-select-polygon im CHANNEL-OP-REPLACE 36 #(310 540 365 535 405 600 510 580 570 550 595 580 565 650 530 665 500 645 475 630 435 641 407 670 376 689 331 670 310 650 312 620 316 590 311 565))
+(gimp-selection-feather im 3) (gimp-context-set-foreground '(255 255 255)) (gimp-edit-fill mask FOREGROUND-FILL) (gimp-selection-none im)
+(gimp-xcf-save RUN-NONINTERACTIVE im ly (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/candidate.png") (string-append dir "/candidate.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im))
+(gimp-quit 0)
