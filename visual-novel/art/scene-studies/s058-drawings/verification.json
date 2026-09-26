@@ -1,0 +1,21 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "opaque": true,
+  "reopened_exact": true,
+  "protected_native_foundation_region": [
+    50,
+    45,
+    1615,
+    850
+  ],
+  "placement": [
+    124,
+    20
+  ],
+  "protected_region_exact": true,
+  "protection_contains": "Entire drawings, paper edges, healthy LEFT grip, RIGHT soft brace and hands; no core rescaling",
+  "candidate_sha256": "40d99a87c742158c3f722429d752d2b1391ba70ae0a85d75bda164101ee1004b"
+}

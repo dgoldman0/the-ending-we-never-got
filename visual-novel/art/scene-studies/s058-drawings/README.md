@@ -1,0 +1,29 @@
+# S058 — packet of drawings at the fountain
+
+## Brief before generation
+
+Prepared 26 September 2026 after reading the entire final Bellweir interaction, source 2175–2215; S002 drawing/tear/restart; S008 bench-drawing interaction and S009 distinction; current location, prop continuity and character designs; and the user-retained postwar wrap construction. Actual current market painting, actual S008 bench page, current repaired S002 drawing close-up and actual postwar portrait were viewed. No historical approval note substitutes for current visual review.
+
+**Exact moment 2207:** after Elin lays the catalog entry beside the letter and agrees to remain with Tessa for the answer, Tessa slips it into her packet, sees her mother's kitchen and Iven's hair-up drawing, and lingers over his face. This precedes Ada's call, closing the packet, signing and walking to the bakery. Iven and Mara are dead; this is a memory in paper, with no living Iven figure, reunion or resolved grief.
+
+**Composition/blocking:** intimate view from above/behind Tessa's shoulder, looking down at her lap beside the pale stone fountain rim. Only Tessa's plum sleeves, forearms, two hands and lap need be visible; the drawings are the subject. Packet rests securely on the familiar thin lap board across her thighs. Her anatomical LEFT bare hand holds the packet/page open; anatomical RIGHT soft-braced hand rests separately beside it without gripping or writing. From this camera behind her, LEFT appears screen-left and RIGHT screen-right. Each forearm must connect naturally to its own wrist. No floating page, disconnected hand or extra fingers.
+
+**Props:** aged cream papers are a loose packet, not an invented modern album. Kitchen page is the reverse of the temple welcome letter: blue ballpoint lines, the same cabinets/sink/stove layout and mother's chair, with the small tear retained; faint reverse-side print may show through but no invented legible message. Iven is the actual S008 hair-up bench sketch, not the S009 boat/oars drawing or a new formal portrait: unruly curls, loosely sketched face and bent figure at a simple slatted bench. Its recognizable pose/drawing content should survive the closer viewpoint. The catalog entry is already slipped inside, subordinate, with no new claims/text. The letter reply and pencil need not be repeated in this tight crop.
+
+**Continuity/light:** single dusty-mulberry wrap robe with restrained botanical edging, no undershirt/shawl/badge; pale fabric RIGHT brace with modest leather stays/ties and exposed fingers. Spring fountain water and pale rim supply location at upper/background edge. Neutral even daylight, soft cloth and paper grain matching the market scene, no baked game grading or sentimental golden glow. The two drawings, left grip and right brace must be fully readable above y760 at 1920×1080; lower text area can contain only quiet plum cloth and stone. Allow top lift clearance. Preferred final2560×1440 or at least1920×1080, no anisotropic stretching.
+
+**Review gate:** producer whole/native review followed by root and independent peer; compare actual paper contents, brace side, hand anatomy, lap-board support and source market continuity. Retain exact prompts, generated components, meaningful GIMP framing/local-correction master, opaque export and exact reopened verification. No source promotion until review.
+
+## Production and verification
+
+Builtin generation used the approved postwar full figure, actual current S002 kitchen/tear close-up, and an actual S008 page crop rotated180 in GIMP into the reader's orientation. The foundation shows the same affectionate bench-carrying caricature, not the S009 rowing portrait. The closer view retains the old sketch's unruly hair/bench action and simple comic lines; it does not invent a present-day living Iven. The kitchen's window, cabinets, chair and torn slit carry through.
+
+Root and independent citadel peer inspected the foundation whole and native, directly comparing both actual paper references. They found no hand/prop ownership or anatomy blocker. The healthy LEFT hand holds the finite packet; RIGHT braced fingers rest beside it. One plum robe, supported lap board and ordinary fountain materials remain coherent.
+
+The generated peripheral extension slightly changed the core scale/position. Read-only feature registration measured that drift instead of trusting the outpaint. GIMP uniformly scaled and offset only the peripheral donor; the reviewed original remains at its original1672×941 resolution at(124,20) on the1920×1080 canvas. Its protected region [50,45,1615,850] contains complete drawings, paper edges, left grip and right brace; it is pixel-identical after placement. A real layer mask blends only outer cloth/stone/water. No actor or paper was stretched, mirrored or synthesized into an old cutout seam.
+
+`drawings-master.xcf` has the registered peripheral material layer and the original scene with an editable protection/edge mask. `verification.json` records opaque1920×1080 output, exact reopened RGBA and the exact protected core invariant. Native hand/paper and framing boundary boards are retained for final root/peer review. This source painting does not claim connected runtime, grade or interface clearance.
+
+## Delivery
+
+Completed26September2026. Root reviewed final whole composition and framing-native board; citadel independently reviewed final whole and joins after its actual-reference/core pass. No doubled cloth/stone boundary or rectangular splice was found. Producer inspected final native hands, both paper drawings and outer joins. The exact reviewed candidate was promoted to `renpy/game/art/scenes/s058-drawings.png`; its SHA-256 is `40d99a87c742158c3f722429d752d2b1391ba70ae0a85d75bda164101ee1004b`. Delivery does not clear runtime grading, connected scene coverage or the wider game.

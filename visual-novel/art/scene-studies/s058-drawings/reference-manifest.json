@@ -1,0 +1,22 @@
+[
+  {
+    "path": "visual-novel/art/character-keys/tessa/postwar-clothes.png",
+    "sha256": "8e2ddf68cec0fe85c3516ce59674765a9603a0e716e0ab525f04323c5f02e36e"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/portraits/tessa-postwar-listening.png",
+    "sha256": "6047c7a38eb76d2a266defc33b9a5623d2905b740e3aea70783f67048a5b459c"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/base/opening/cg/detail-drawing.png",
+    "sha256": "c482cdfdbcb8a36d6e85a654d26bdb32a3547f673cc93ae76cee0b4f0616b4c4"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s008-bench-drawing.png",
+    "sha256": "cdfd8589743b1bdee6473aebb2810768e5ca61b60e414b8504716339996b8444"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s058-bellweir-market-spring.png",
+    "sha256": "f5adf86d95feb924601dd90aad47c6ea55fbab87c4a10a8255138a737dd3ff27"
+  }
+]

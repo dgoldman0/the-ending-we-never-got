@@ -1,0 +1,7 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s008-bench-drawing.png" "bench"))) (l 0))
+(gimp-image-crop im 228 107 917 637)
+(gimp-image-rotate im ROTATE-180)
+(set! l (car (gimp-image-get-active-layer im)))
+(file-png-save2 RUN-NONINTERACTIVE im l "visual-novel/art/scene-studies/s058-drawings/actual-s008-page-reference.png" "reference" 0 9 0 0 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)

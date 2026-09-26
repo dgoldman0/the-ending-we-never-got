@@ -1,0 +1,19 @@
+[
+  {
+    "file": "foundation.png",
+    "generated_cache_basename": "exec-f8faafa4-754d-4079-81ac-cccb6889d1cf.png",
+    "role": "New composed packet close view; actual three reference inputs documented in prompt",
+    "sha256": "9951dbaf09ba4b485cc832b2f203148a42cba3e89f8e0ed856de8f1e8a6a5779"
+  },
+  {
+    "file": "peripheral-donor.png",
+    "generated_cache_basename": "exec-6dc6d3f3-ded6-4764-922b-6a249e66d26c.png",
+    "role": "Outer cloth/stone/water only; uniformly registered in GIMP; central donor papers/hands excluded",
+    "sha256": "0e65f6654d160acb1ec52294505b6ed8ce9d2e2ba4ba332738bf1dd230fb6388"
+  },
+  {
+    "file": "actual-s008-page-reference.png",
+    "role": "Actual current source page cropped and rotated180 in GIMP for reader orientation; reference only, not a new drawing",
+    "sha256": "0c6aaf69016662364969776f50354aaba7f0c6d96416f77ddc97c36e17ca6618"
+  }
+]

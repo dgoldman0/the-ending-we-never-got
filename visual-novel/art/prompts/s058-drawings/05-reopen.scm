@@ -1,0 +1,5 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s058-drawings/drawings-master.xcf" "master"))) (out 0))
+(set! out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save2 RUN-NONINTERACTIVE im out "visual-novel/art/scene-studies/s058-drawings/reopened.png" "reopened" 0 9 0 0 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)
