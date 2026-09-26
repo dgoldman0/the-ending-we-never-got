@@ -87,6 +87,9 @@
   "art/scenes/s017-council-corridor.png": {
    "original": "art/lit/scenes--s017-council-corridor-original.webp"
   },
+  "art/scenes/s018-cats.png": {
+   "original": "art/lit/scenes--s018-cats-original.webp"
+  },
   "art/scenes/s018-gray-scar-ferry-approach.png": {
    "original": "art/lit/scenes--s018-gray-scar-ferry-approach-original.webp"
   },
@@ -96,6 +99,9 @@
   "art/scenes/s020-gray-scar-riverbank.png": {
    "original": "art/lit/scenes--s020-gray-scar-riverbank-original.webp"
   },
+  "art/scenes/s021-boat.png": {
+   "original": "art/lit/scenes--s021-boat-original.webp"
+  },
   "art/scenes/s021-gray-scar-covered-landing.png": {
    "original": "art/lit/scenes--s021-gray-scar-covered-landing-original.webp"
   },
@@ -104,6 +110,9 @@
   },
   "art/scenes/s021-rescue.png": {
    "original": "art/lit/scenes--s021-rescue-original.webp"
+  },
+  "art/scenes/s021-serat.png": {
+   "original": "art/lit/scenes--s021-serat-original.webp"
   },
   "art/scenes/s022-river-picket.png": {
    "original": "art/lit/scenes--s022-river-picket-original.webp"
@@ -255,8 +264,20 @@
   "art/scenes/s052-entrance-ward.png": {
    "original": "art/lit/scenes--s052-entrance-ward-original.webp"
   },
+  "art/scenes/s053-bend.png": {
+   "original": "art/lit/scenes--s053-bend-original.webp"
+  },
+  "art/scenes/s054-binding.png": {
+   "original": "art/lit/scenes--s054-binding-original.webp"
+  },
   "art/scenes/s054-duel.png": {
    "original": "art/lit/scenes--s054-duel-original.webp"
+  },
+  "art/scenes/s054-lever.png": {
+   "original": "art/lit/scenes--s054-lever-original.webp"
+  },
+  "art/scenes/s054-strike.png": {
+   "original": "art/lit/scenes--s054-strike-original.webp"
   },
   "art/scenes/s054-throne-hall.png": {
    "original": "art/lit/scenes--s054-throne-hall-original.webp"
@@ -279,8 +300,14 @@
   "art/scenes/s057-citadel-lower-gate.png": {
    "original": "art/lit/scenes--s057-citadel-lower-gate-original.webp"
   },
+  "art/scenes/s057-father.png": {
+   "original": "art/lit/scenes--s057-father-original.webp"
+  },
   "art/scenes/s058-bellweir-market-spring.png": {
    "original": "art/lit/scenes--s058-bellweir-market-spring-original.webp"
+  },
+  "art/scenes/s058-drawings.png": {
+   "original": "art/lit/scenes--s058-drawings-original.webp"
   },
   "art/scenes/s058-final.png": {
    "original": "art/lit/scenes--s058-final-original.webp"
@@ -1809,12 +1836,15 @@
   "art/scenes/s016-council-room.png": "ordinary",
   "art/scenes/s016-hearing-door.png": "ordinary",
   "art/scenes/s017-council-corridor.png": "ordinary",
+  "art/scenes/s018-cats.png": "ordinary",
   "art/scenes/s018-gray-scar-ferry-approach.png": "ordinary",
   "art/scenes/s019-gray-scar-ferryhouse.png": "ordinary",
   "art/scenes/s020-gray-scar-riverbank.png": "ordinary",
+  "art/scenes/s021-boat.png": "ordinary",
   "art/scenes/s021-gray-scar-covered-landing.png": "ordinary",
   "art/scenes/s021-lucan-returns.png": "ordinary",
   "art/scenes/s021-rescue.png": "ordinary",
+  "art/scenes/s021-serat.png": "ordinary",
   "art/scenes/s022-river-picket.png": "ordinary",
   "art/scenes/s023-northern-field-quarters.png": "night",
   "art/scenes/s024-northern-wharf.png": "ordinary",
@@ -1865,7 +1895,11 @@
   "art/scenes/s051-north-infirmary-court.png": "ordinary",
   "art/scenes/s052-citadel-inner-landing.png": "ordinary",
   "art/scenes/s052-entrance-ward.png": "ordinary",
+  "art/scenes/s053-bend.png": "ordinary",
+  "art/scenes/s054-binding.png": "ordinary",
   "art/scenes/s054-duel.png": "ordinary",
+  "art/scenes/s054-lever.png": "ordinary",
+  "art/scenes/s054-strike.png": "ordinary",
   "art/scenes/s054-throne-hall.png": "ordinary",
   "art/scenes/s054-wound.png": "ordinary",
   "art/scenes/s055-citadel-lower-stair-morning.png": "ordinary",
@@ -1873,7 +1907,9 @@
   "art/scenes/s056-hand.png": "ordinary",
   "art/scenes/s056-north-infirmary.png": "ordinary",
   "art/scenes/s057-citadel-lower-gate.png": "ordinary",
+  "art/scenes/s057-father.png": "ordinary",
   "art/scenes/s058-bellweir-market-spring.png": "ordinary",
+  "art/scenes/s058-drawings.png": "ordinary",
   "art/scenes/s058-final.png": "ordinary",
   "ceremony-applause": "bright",
   "ceremony-dais": "bright",
@@ -2313,9 +2349,9 @@
   "art/lit/scenes--s011-bellweir-causeway-original.webp": {
    "soft": "art/lit/soft/scenes--s011-bellweir-causeway-original.webp",
    "tint": [
-    0.24,
+    0.241,
     0.189,
-    0.194
+    0.193
    ]
   },
   "art/lit/scenes--s011-heron-original.webp": {
@@ -2323,7 +2359,7 @@
    "tint": [
     0.26,
     0.181,
-    0.184
+    0.186
    ]
   },
   "art/lit/scenes--s011-sanctuary-original.webp": {
@@ -2354,7 +2390,7 @@
   "art/lit/scenes--s014-boots-and-cap-original.webp": {
    "soft": "art/lit/soft/scenes--s014-boots-and-cap-original.webp",
    "tint": [
-    0.254,
+    0.255,
     0.187,
     0.169
    ]
@@ -2399,11 +2435,19 @@
     0.187
    ]
   },
+  "art/lit/scenes--s018-cats-original.webp": {
+   "soft": "art/lit/soft/scenes--s018-cats-original.webp",
+   "tint": [
+    0.251,
+    0.189,
+    0.154
+   ]
+  },
   "art/lit/scenes--s018-gray-scar-ferry-approach-original.webp": {
    "soft": "art/lit/soft/scenes--s018-gray-scar-ferry-approach-original.webp",
    "tint": [
-    0.247,
-    0.191,
+    0.252,
+    0.189,
     0.152
    ]
   },
@@ -2418,9 +2462,17 @@
   "art/lit/scenes--s020-gray-scar-riverbank-original.webp": {
    "soft": "art/lit/soft/scenes--s020-gray-scar-riverbank-original.webp",
    "tint": [
-    0.222,
-    0.195,
-    0.189
+    0.23,
+    0.192,
+    0.192
+   ]
+  },
+  "art/lit/scenes--s021-boat-original.webp": {
+   "soft": "art/lit/soft/scenes--s021-boat-original.webp",
+   "tint": [
+    0.239,
+    0.191,
+    0.177
    ]
   },
   "art/lit/scenes--s021-gray-scar-covered-landing-original.webp": {
@@ -2442,9 +2494,17 @@
   "art/lit/scenes--s021-rescue-original.webp": {
    "soft": "art/lit/soft/scenes--s021-rescue-original.webp",
    "tint": [
-    0.231,
+    0.232,
     0.193,
     0.173
+   ]
+  },
+  "art/lit/scenes--s021-serat-original.webp": {
+   "soft": "art/lit/soft/scenes--s021-serat-original.webp",
+   "tint": [
+    0.226,
+    0.195,
+    0.176
    ]
   },
   "art/lit/scenes--s022-river-picket-original.webp": {
@@ -2523,7 +2583,7 @@
    "soft": "art/lit/soft/scenes--s029-cap-original.webp",
    "tint": [
     0.26,
-    0.183,
+    0.182,
     0.151
    ]
   },
@@ -2603,9 +2663,9 @@
   "art/lit/scenes--s034-return-cargo-shed-original.webp": {
    "soft": "art/lit/soft/scenes--s034-return-cargo-shed-original.webp",
    "tint": [
-    0.257,
+    0.258,
     0.187,
-    0.159
+    0.158
    ]
   },
   "art/lit/scenes--s035-collapse-original.webp": {
@@ -2683,9 +2743,9 @@
   "art/lit/scenes--s040-mill-town-original.webp": {
    "soft": "art/lit/soft/scenes--s040-mill-town-original.webp",
    "tint": [
-    0.228,
+    0.226,
     0.192,
-    0.195
+    0.202
    ]
   },
   "art/lit/scenes--s041-curse-tower-original.webp": {
@@ -2795,8 +2855,8 @@
   "art/lit/scenes--s048-examination-tent-original.webp": {
    "soft": "art/lit/soft/scenes--s048-examination-tent-original.webp",
    "tint": [
-    0.257,
-    0.189,
+    0.245,
+    0.192,
     0.15
    ]
   },
@@ -2811,9 +2871,9 @@
   "art/lit/scenes--s050-citadel-lower-stair-original.webp": {
    "soft": "art/lit/soft/scenes--s050-citadel-lower-stair-original.webp",
    "tint": [
-    0.212,
-    0.196,
-    0.2
+    0.208,
+    0.197,
+    0.206
    ]
   },
   "art/lit/scenes--s050-guard-original.webp": {
@@ -2835,9 +2895,9 @@
   "art/lit/scenes--s052-citadel-inner-landing-original.webp": {
    "soft": "art/lit/soft/scenes--s052-citadel-inner-landing-original.webp",
    "tint": [
-    0.229,
-    0.193,
-    0.186
+    0.231,
+    0.192,
+    0.185
    ]
   },
   "art/lit/scenes--s052-entrance-ward-original.webp": {
@@ -2848,20 +2908,52 @@
     0.253
    ]
   },
+  "art/lit/scenes--s053-bend-original.webp": {
+   "soft": "art/lit/soft/scenes--s053-bend-original.webp",
+   "tint": [
+    0.198,
+    0.2,
+    0.206
+   ]
+  },
+  "art/lit/scenes--s054-binding-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-binding-original.webp",
+   "tint": [
+    0.255,
+    0.187,
+    0.17
+   ]
+  },
   "art/lit/scenes--s054-duel-original.webp": {
    "soft": "art/lit/soft/scenes--s054-duel-original.webp",
    "tint": [
-    0.228,
-    0.194,
-    0.18
+    0.215,
+    0.196,
+    0.192
+   ]
+  },
+  "art/lit/scenes--s054-lever-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-lever-original.webp",
+   "tint": [
+    0.226,
+    0.195,
+    0.177
+   ]
+  },
+  "art/lit/scenes--s054-strike-original.webp": {
+   "soft": "art/lit/soft/scenes--s054-strike-original.webp",
+   "tint": [
+    0.26,
+    0.185,
+    0.158
    ]
   },
   "art/lit/scenes--s054-throne-hall-original.webp": {
    "soft": "art/lit/soft/scenes--s054-throne-hall-original.webp",
    "tint": [
-    0.215,
-    0.197,
-    0.19
+    0.217,
+    0.196,
+    0.192
    ]
   },
   "art/lit/scenes--s054-wound-original.webp": {
@@ -2883,9 +2975,9 @@
   "art/lit/scenes--s055-mara-original.webp": {
    "soft": "art/lit/soft/scenes--s055-mara-original.webp",
    "tint": [
-    0.222,
+    0.219,
     0.195,
-    0.191
+    0.192
    ]
   },
   "art/lit/scenes--s056-hand-original.webp": {
@@ -2912,12 +3004,28 @@
     0.176
    ]
   },
+  "art/lit/scenes--s057-father-original.webp": {
+   "soft": "art/lit/soft/scenes--s057-father-original.webp",
+   "tint": [
+    0.257,
+    0.188,
+    0.15
+   ]
+  },
   "art/lit/scenes--s058-bellweir-market-spring-original.webp": {
    "soft": "art/lit/soft/scenes--s058-bellweir-market-spring-original.webp",
    "tint": [
     0.231,
     0.193,
     0.175
+   ]
+  },
+  "art/lit/scenes--s058-drawings-original.webp": {
+   "soft": "art/lit/soft/scenes--s058-drawings-original.webp",
+   "tint": [
+    0.26,
+    0.169,
+    0.188
    ]
   },
   "art/lit/scenes--s058-final-original.webp": {
@@ -2931,9 +3039,9 @@
   "art/lit/stretcher-original.webp": {
    "soft": "art/lit/soft/stretcher-original.webp",
    "tint": [
-    0.219,
-    0.195,
-    0.198
+    0.208,
+    0.196,
+    0.217
    ]
   },
   "art/lit/ward-assessment-original.webp": {
@@ -3020,7 +3128,7 @@
    "soft": "art/lit/soft/ward-water-original.webp",
    "tint": [
     0.223,
-    0.196,
+    0.197,
     0.167
    ]
   },

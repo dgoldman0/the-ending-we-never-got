@@ -40,6 +40,17 @@ and from the sweep of every painting of 26 September 2026:
             hand-placed points: the first masks missed a front panel and a
             sleeve and ran onto the apron as mauve blotches
 
+and from the check of batch 6 (26 September 2026):
+
+  double    a figure the image generator doubled: the extra one is painted
+            out with what lies behind it (S021: a second, partly hidden head
+            behind Serat's own, as his brother holds him)
+  stray     a limb in a place no body could put it, replaced with the floor
+            it hides, in the shadow of what stays (S035: Renn's boot and shin
+            came out from under the broken axle beside his face, though he
+            lies prone with his legs behind him; now his leg is under the
+            axle, as the screenplay has it)
+
 Each repair works on the copy the game grades from (renpy/game/art/base/, or
 the portrait source in renpy/game/art/portraits/); the untouched original is
 kept in art/local-repairs/originals/. The sliver repair also has a layered
@@ -47,12 +58,19 @@ GIMP master (art/local-repairs/stray-sliver/); a coat recolour is reproduced
 from its original, its mask (art/local-repairs/masks/) and this script. Then
 run tools/crop-portraits.py and tools/grade-light.py.
 
+A repair is only written over the file it was made from or over this tool's
+own output. When GPT redelivers a painting (a repaint put in place from
+art/repaints/, or a scene painting saved at its path), the tool says so and
+leaves it; once the new painting is checked, a repair it carries over is
+listed in CARRIED.
+
 Coat masks come from the Segment Anything model (facebook/sam-vit-large)
 prompted with the points below; they are cached in art/local-repairs/masks/.
 Making them needs torch and transformers (the local tools venv):
 
     visual-novel/.tools/depth-venv/bin/python visual-novel/tools/local-repairs.py --segment
     python3 visual-novel/tools/local-repairs.py            # apply every repair
+    python3 visual-novel/tools/local-repairs.py --only art/scenes/s021-serat.png
 """
 from pathlib import Path
 import argparse
@@ -71,7 +89,7 @@ GAME = VN / 'renpy/game'
 HERE = VN / 'art/local-repairs'
 ORIGINALS = HERE / 'originals'
 MASKS = HERE / 'masks'
-WRITTEN = HERE / 'written.json'          # the files this tool last wrote into GPT's paintings
+WRITTEN = HERE / 'written.json'          # the files this tool last wrote, with their hashes
 
 # The stray sliver on the S002 drawing: a thin diagonal strip from p0 to p1.
 SLIVERS = {
@@ -199,6 +217,54 @@ STARS = {
     'art/scenes/s029-river-camps-visits.png': [(399, 384, 451, 436)],
     'art/scenes/s047-citadel-north-infirmary-before-dawn.png': [(684, 270, 724, 312)],
     'art/scenes/s057-citadel-lower-gate.png': [(1359, 299, 1411, 341), (1514, 256, 1566, 298)],
+}
+
+# Doubled figures to paint out: the region to fill (a polygon), the figure
+# beside it that stays and is not drawn on for the fill, how dark the fill
+# gets against that figure (the shadow it casts) and over what distance, and
+# a patch of the surrounding cloth whose grain the fill takes. In the S021
+# painting of Serat's wound, a second head (horn, curls, cheek, ear and neck)
+# sat behind Serat's own; it becomes his brother's coat in the shadow of
+# Serat's head, the strap across the brother's chest running on behind it.
+DOUBLES = {
+    'art/scenes/s021-serat.png': dict(
+        fill=[(930, 163), (947, 165), (952, 180), (958, 191), (960, 199), (953, 210), (947, 220), (940, 231),
+              (935, 239), (931, 243.5), (922, 245), (913, 249), (906, 256), (904, 265), (907, 276), (917, 285),
+              (911, 293), (896, 296), (879, 293), (872, 272), (872, 245), (875, 226), (882, 211), (889, 196),
+              (899, 184), (914, 177), (927, 175)],
+        keep=[(958, 191), (1010, 185), (1010, 320), (918, 320), (917, 285), (907, 276), (904, 265), (906, 256),
+              (913, 249), (922, 245), (931, 243.5), (935, 239), (940, 231), (947, 220), (953, 210), (960, 199)],
+        shade=(0.62, 55), grain=(885, 150, 925, 180)),
+}
+
+# Stray limbs to replace with the floor beneath: the region (a mask in
+# art/local-repairs/masks/, made with Segment Anything and checked by eye),
+# the object that stays and shades the floor next to it (a mask), the offset
+# (dx, dy) of the floor copied in, and the shade: base * (1 - depth *
+# exp(-distance / reach)), darkest against the object. The copy's brightness
+# is then brought to the floor's around the region (averaged over 'match'
+# pixels, leaving out the boxes in 'skip': people beside it), so no pale
+# outline of the removed limb is left, and its edge is feathered.
+STRAYS = {
+    'art/scenes/s035-collapse.png': dict(fill='stray--s035-collapse', keep='keep--s035-collapse',
+                                         clone=(0, 40), shade=(0.85, 0.5, 6.0), match=14, feather=1.6,
+                                         skip=[(1240, 430, 1320, 560), (1120, 440, 1185, 505)]),
+}
+
+# Paintings GPT repainted in batch 6 (26 September 2026) starting from the
+# repaired file, so the repair is already in the new painting: Olan's hand in
+# the S003 treatment paintings and close-ups (Iven's brown coat and the
+# cleared forearm kept), Mara's face at the ward entrance (the coat kept), and
+# scene paintings whose badges keep their split and whose catalog card keeps
+# its lettering. The tool leaves them alone; their kept originals and masters
+# record what was repaired.
+CARRIED = {
+    'art/base/opening/cg/ward-entrance.png', 'art/base/opening/cg/treatment-pause.png',
+    'art/base/opening/cg/after-first-treatment.png', 'art/base/opening/cg/rested-hand.png',
+    'art/base/rovel/details/treatment-blue.png', 'art/base/rovel/details/treatment-white.png',
+    'art/scenes/s010-bellweir-hills.png', 'art/scenes/s026-quarry-loading-ramp.png',
+    'art/scenes/s027-river-camp-gate.png', 'art/scenes/s028-river-camp-infirmary.png',
+    'art/scenes/s057-citadel-lower-gate.png', 'art/scenes/s058-bellweir-market-spring.png',
 }
 
 # Pointed ear tips to cover with hair: the area to cover (a polygon whose
@@ -512,19 +578,78 @@ def cover_tip(rgb, poly, offset, feather=1.6):
     return np.clip(out + 0.5, 0, 255).astype(np.uint8), m
 
 
+def paint_out(rgb, spec):
+    """Fill a region from its surroundings (Navier-Stokes inpainting) without
+    drawing on the figure beside it, darken it toward that figure as the
+    shadow it casts, and give it the surrounding cloth's grain."""
+    h, w = rgb.shape[:2]
+
+    def polygon(points):
+        m = np.zeros((h, w), np.uint8)
+        cv2.fillPoly(m, [np.round(np.array(points) * 8).astype(np.int32)], 255, lineType=cv2.LINE_AA, shift=3)
+        return m.astype(np.float32) / 255
+
+    region, keep = polygon(spec['fill']), polygon(spec['keep'])
+    hole = cv2.dilate(((region > 0.01) | (keep > 0.5)).astype(np.uint8), np.ones((3, 3), np.uint8))
+    base = cv2.inpaint(np.ascontiguousarray(rgb), hole, 9, cv2.INPAINT_NS).astype(np.float32)
+    darkest, reach = spec['shade']
+    near = cv2.distanceTransform((keep < 0.5).astype(np.uint8), cv2.DIST_L2, 5)
+    shade = darkest + (1 - darkest) * np.clip(near / reach, 0, 1)
+    x0, y0, x1, y1 = spec['grain']
+    patch = rgb[y0:y1, x0:x1].astype(np.float32)
+    sd = float((patch - cv2.GaussianBlur(patch, (0, 0), 1.5)).std())
+    noise = cv2.GaussianBlur(np.random.default_rng(11).normal(0, sd, (h, w)).astype(np.float32), (0, 0), 0.7)
+    fill = base * shade[..., None] + noise[..., None] * 0.9
+    alpha = cv2.GaussianBlur(region, (0, 0), 0.7)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + fill * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
+def clone_under(rgb, spec):
+    """Replace a region with the floor beside it (copied from the given
+    offset), shaded by the object next to it, and blended at the edge."""
+    region = np.asarray(Image.open(MASKS / (spec['fill'] + '.png'))).astype(np.float32) / 255
+    keep = np.asarray(Image.open(MASKS / (spec['keep'] + '.png'))) > 127
+    dx, dy = spec['clone']
+    floor = np.roll(np.roll(rgb.astype(np.float32), -dy, axis=0), -dx, axis=1)   # floor[y, x] = rgb[y + dy, x + dx]
+    base, depth, reach = spec['shade']
+    near = cv2.distanceTransform((~keep).astype(np.uint8), cv2.DIST_L2, 5)
+    fill = floor * (base * (1 - depth * np.exp(-near / reach)))[..., None]
+    hole = region > 0.5
+    ring = (cv2.dilate(hole.astype(np.uint8), np.ones((17, 17), np.uint8)) > 0) & ~hole & ~keep
+    for x0, y0, x1, y1 in spec['skip']:
+        ring[y0:y1, x0:x1] = False
+
+    def local_mean(image, mask):
+        weight = cv2.GaussianBlur(mask.astype(np.float32), (0, 0), spec['match'])[..., None]
+        return cv2.GaussianBlur(image * mask[..., None], (0, 0), spec['match']) / np.maximum(weight, 1e-4)
+
+    fill = fill * np.clip(local_mean(rgb.astype(np.float32), ring) / np.maximum(local_mean(fill, hole), 1), 0.3, 3)
+    alpha = cv2.GaussianBlur(region, (0, 0), spec['feather'])[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + fill * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
 def _sha(path):
     return hashlib.sha256((GAME / path).read_bytes()).hexdigest()
 
 
+ONLY = set()                            # --only: the files to repair this run
+
+
 def guarded_write(path, after):
-    """Write a repair into one of GPT's paintings only over the file it was
-    made from, or over this tool's own last output (recorded in WRITTEN). If
-    the painting was since redelivered, say so and leave it."""
+    """Write a repair only over the file it was made from, over this tool's
+    own last output (recorded in WRITTEN) or over a file that already holds
+    this result. If the painting was since redelivered, say so and leave it."""
+    if ONLY and path not in ONLY:
+        return False
+    if path in CARRIED:
+        print('carried into GPT\'s repaint, left alone:', path)
+        return False
     written = json.loads(WRITTEN.read_text()) if WRITTEN.is_file() else {}
     current = np.asarray(Image.open(GAME / path))
     keep = np.asarray(Image.open(ORIGINALS / path.replace('/', '--')))
-    ours = written.get(path) == _sha(path)
-    if ours or (current.shape == keep.shape and np.array_equal(current, keep)):
+    ours = written.get(path) == _sha(path) or any(
+        current.shape == other.shape and np.array_equal(current, other) for other in (keep, after))
+    if ours:
         write(path, after)
         written[path] = _sha(path)
         WRITTEN.write_text(json.dumps(written, indent=1, sort_keys=True) + '\n')
@@ -706,7 +831,11 @@ def main():
                         help='record these files (paths under renpy/game/) as this tool\'s own output, after review')
     parser.add_argument('--segment', nargs='*', metavar='NAME',
                         help='make the coat masks, or only the named ones (needs torch, transformers)')
+    parser.add_argument('--only', nargs='+', metavar='PATH',
+                        help='apply only the repairs to these files (paths under renpy/game/)')
     args = parser.parse_args()
+    if args.only:
+        ONLY.update(args.only)
     if args.adopt:
         written = json.loads(WRITTEN.read_text()) if WRITTEN.is_file() else {}
         for path in args.adopt:
@@ -722,11 +851,8 @@ def main():
         after, _ = remove_sliver(before, p0, p1, clone[0] if clone else None)
         changed = (after != before).any(axis=2).astype(np.float32)
         full = np.dstack([after, pixels[..., 3]]) if pixels.shape[2] == 4 else after
-        if path.startswith('art/scenes/'):                # a GPT painting, which may be redelivered
-            if not guarded_write(path, full):
-                continue
-        else:
-            write(path, full)
+        if not guarded_write(path, full):
+            continue
         xcf = save_master('stray-sliver', path, before, after, changed, after)
         print('sliver removed:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
     for path, spec in LETTERING.items():
@@ -741,8 +867,8 @@ def main():
         pixels = original(path)
         mask = np.asarray(Image.open(MASKS / ('hair--' + Path(path).stem + '.png'))).astype(np.float32) / 255
         rgb = match_hair(pixels[..., :3], mask, CHESTNUT)
-        write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb)
-        print('hair colour matched:', path)
+        if guarded_write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb):
+            print('hair colour matched:', path)
     for path, spec in EARS.items():
         if path in STARS:                   # written below, with its badge
             continue
@@ -765,12 +891,27 @@ def main():
             changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
             xcf = save_master('star-split', path, pixels[..., :3], rgb, changed, rgb)
             print('star split drawn:', path, '(%d)' % len(boxes), '->', xcf.relative_to(VN))
+    for path, spec in DOUBLES.items():
+        pixels = original(path)
+        rgb = paint_out(pixels[..., :3], spec)
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('doubles', path, pixels[..., :3], rgb, changed, rgb)
+            print('doubled figure painted out:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
+    for path, spec in STRAYS.items():
+        pixels = original(path)
+        rgb = clone_under(pixels[..., :3], spec)
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('strays', path, pixels[..., :3], rgb, changed, rgb)
+            print('stray limb replaced:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
     for path in RESTORE:
         if path in HAIR:            # written from its original above, with the hair matched
             continue
         keep = ORIGINALS / path.replace('/', '--')
-        if keep.is_file():
-            write(path, np.asarray(Image.open(keep)))
+        if keep.is_file() and guarded_write(path, np.asarray(Image.open(keep))):
             print('restored:', path)
     coated = {}
     for name, spec in COATS.items():
@@ -778,18 +919,16 @@ def main():
         mask = np.asarray(Image.open(MASKS / (name + '.png'))).astype(np.float32) / 255
         rgb = recolour(pixels[..., :3], mask, BROWN)
         coated[spec['path']] = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
-        if spec['path'].startswith('art/scenes/'):        # a GPT painting, which may be redelivered
-            if not guarded_write(spec['path'], coated[spec['path']]):
-                continue
-        else:
-            write(spec['path'], coated[spec['path']])
-        print('coat recoloured:', spec['path'])
+        if spec['path'] in SKIN:            # written below, with the skin smoothed
+            continue
+        if guarded_write(spec['path'], coated[spec['path']]):
+            print('coat recoloured:', spec['path'])
     for path, spec in SKIN.items():
         pixels = coated.get(path, original(path))
         mask = np.asarray(Image.open(MASKS / ('skin--' + Path(path).stem + '.png'))).astype(np.float32) / 255
         rgb = smooth_skin(pixels[..., :3], mask, spec['keep'], spec.get('marks', ()))
-        write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb)
-        print('skin pattern removed:', path)
+        if guarded_write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb):
+            print('coat recoloured and skin pattern removed:' if path in coated else 'skin pattern removed:', path)
 
 
 if __name__ == '__main__':
