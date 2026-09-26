@@ -54,3 +54,9 @@ git clone Tessa_Rebuild_11_History.bundle tessa-rebuild-11
 ```
 
 `source.fountain` and `components/` are the tracked text sources. Generated reading copies accompany the bundle. Fonts, page images and temporary working exports are excluded from the package.
+
+## Changes after Rebuild 11
+
+Each change is a Git commit on the delivered source (SHA-256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`). The editorial gates reopen for every changed interaction.
+
+- **26 September 2026, S012 line 539 (user decision).** The archivist is a woman, as in the character design and the visual novel's portrait and painting; the screenplay had called the archivist "he". With two women in the reading room, the sentence now names both: "When the archivist turns to another borrower, Elin takes her master's seal from the papers she carries for him." Reread with the whole scene (lines 532–541): every later "she" is Elin, and "him" and "his" remain her master. No story, knowledge or staging changed. Source SHA-256 after the change: `240b42b193791b1764fac701123369361c709899a2728a820b2720986cb300c0`.

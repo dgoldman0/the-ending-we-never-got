@@ -16,7 +16,7 @@
 
 This screenplay covers Tessa's original story, from involuntary summoning to postwar Bellweir. It ends before Neri's birth. The project-wide notes and older altered development now live in their own directories, separate from this manuscript.
 
-The original source remains unchanged. UTF-8 Fountain SHA-256: `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`.
+Rebuild 11 as delivered: UTF-8 Fountain SHA-256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. Later edits are Git commits, listed under [changes after Rebuild 11](original-timeline/review/editorial-record.md#changes-after-rebuild-11); the current source is `240b42b193791b1764fac701123369361c709899a2728a820b2720986cb300c0`.
 
 ## Working tree
 

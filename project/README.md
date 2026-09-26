@@ -29,7 +29,7 @@ For the active VN's physical design, read [character visuals](../characters/orig
 
 ## Current manuscript
 
-[Staged Rebuild 11, original Tessa timeline](../screenplay/original-timeline/source.fountain) is the current detailed screenplay. Its source SHA-256 is `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. This documentation import does not edit it.
+[Staged Rebuild 11, original Tessa timeline](../screenplay/original-timeline/source.fountain) is the current detailed screenplay. Its source SHA-256 as delivered was `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. This documentation import does not edit it; later edits are Git commits, listed in the [editorial record](../screenplay/original-timeline/review/editorial-record.md#changes-after-rebuild-11).
 
 The altered timeline has extensive earlier development but has not received the eleven rounds applied to the original opening. Its recovered events are preserved as development material, with conflicts and superseded assumptions identified. They are not silently promoted to current canon.
 

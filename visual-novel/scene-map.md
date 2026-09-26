@@ -77,4 +77,4 @@ V001 is a user-requested VN addition, separate from the screenplay’s 58 scenes
 
 ## Reference integrity
 
-Source snapshot: 2,215 lines, 58 scene headings; SHA-256 `e5c4f7b0af53249752d2d747ebfe756bc084c76002040282d8b7cd93253a6c88`. Line ranges are navigation aids for this snapshot. If the screenplay changes, remap the affected scene identities and dependencies rather than assuming old line numbers still apply.
+Source snapshot: 2,215 lines, 58 scene headings; SHA-256 `240b42b193791b1764fac701123369361c709899a2728a820b2720986cb300c0` (Rebuild 11 with one wording change at line 539, 26 September 2026; line numbers unchanged). Line ranges are navigation aids for this snapshot. If the screenplay changes, remap the affected scene identities and dependencies rather than assuming old line numbers still apply.

@@ -37,7 +37,7 @@ The developed [character designs](../../characters/original-visuals.md) govern t
 | Marren's wife | Blue coat, gray-threaded curls, small horns, cloth parcel | Planned |
 | Northern sapling family | Separate mother, father and late-teen son; son later in father's oversized coat | Planned |
 | Jo Rusk | Existing home drawing/memory references only; no invented reunion | Conditional |
-| Summoning scholar; archivist | Distinct people; scholar's existing scene is a working reference; verify source pronouns before rendering archivist | Planned |
+| Summoning scholar; archivist | Distinct people; scholar's existing scene is a working reference; the archivist is an older woman, and the screenplay was changed to match (user decision, 26 September 2026) | Planned |
 | Priest; petitioning temple woman; later infirmary mother | Three distinct people, matching developed designs | Planned |
 | Palace healer; northern camp healer; final surgeon | Three distinct people; final surgeon has an existing scene depiction | Planned |
 | Warden; ferryman; picket officer | Separate occupation/clothing/face keys | Planned |

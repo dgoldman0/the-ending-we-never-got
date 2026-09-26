@@ -1375,7 +1375,7 @@ label s012:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "When he turns to another borrower, she takes her master's seal from the papers she carries for him. She stamps the request and writes his name."
+    "When the archivist turns to another borrower, Elin takes her master's seal from the papers she carries for him. She stamps the request and writes his name."
     # Source lines 541–541
     $ source_line = 541
     $ scene_speaker = None
