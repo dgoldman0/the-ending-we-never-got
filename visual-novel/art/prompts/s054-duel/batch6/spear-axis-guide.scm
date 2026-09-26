@@ -1,0 +1,8 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s054-duel/batch6/spear-cleanup-donor.png" "visual-novel/art/scene-studies/s054-duel/batch6/spear-cleanup-donor.png"))) (l(car(gimp-layer-new 1 1672 941 RGBA-IMAGE "Spear axis diagram only" 100 NORMAL-MODE))) (f 0))
+(gimp-image-insert-layer im l 0 0)(gimp-drawable-fill l TRANSPARENT-FILL)
+(gimp-context-set-foreground '(244 0 211))
+(gimp-image-select-polygon im CHANNEL-OP-REPLACE 8 #(931 436 1582 306 1584 314 933 444))(gimp-edit-fill l FOREGROUND-FILL)
+(gimp-image-select-polygon im CHANNEL-OP-REPLACE 6 #(903 445 951 420 958 455))(gimp-edit-fill l FOREGROUND-FILL)
+(gimp-selection-none im)(set! f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im f "visual-novel/art/prompts/s054-duel/batch6/spear-axis-guide.png" "visual-novel/art/prompts/s054-duel/batch6/spear-axis-guide.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)

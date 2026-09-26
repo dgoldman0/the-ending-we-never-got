@@ -10,4 +10,6 @@ The first independent separate hand trace still retained masonry. It was rejecte
 
 Actual whole export and native silhouettes/hand gaps were inspected. The source Tessa and Elin face cores remain pixel-identical. A final reopened master export is checked over all RGBA pixels. Root and independent peer review remain the final promotion gate.
 
-Root reviewed the final whole and native composite: the road is genuinely sealed, old masonry wedges are absent, and the original figures/hands/light origin remain coherent. Final exact checks: 1920×1080 RGBA, alpha 255 throughout, reopened XCF has zero RGBA differences; all five protected face/actor cores are unchanged. Source replacement remains with root.
+Root reviewed the final whole and native composite: the road is genuinely sealed, old masonry wedges are absent, and the original figures/hands/light origin remain coherent. Final exact checks: 1920×1080 RGBA, alpha 255 throughout, reopened XCF has zero RGBA differences; all five protected face/actor cores are unchanged. Source replacement delivered in ca37719.
+
+Independent peer /root/batch6_opening inspected whole candidate and native board: barrier closes road; heads/mane/hands and arm/coat gaps clean; no remaining bounded blocker. Root promoted the reviewed candidate in ca37719.

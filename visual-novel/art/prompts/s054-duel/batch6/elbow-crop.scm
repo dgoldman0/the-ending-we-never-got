@@ -1,0 +1,6 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s054-duel/batch6/guided-spear-donor.png" "visual-novel/art/scene-studies/s054-duel/batch6/guided-spear-donor.png"))) (l 0))
+(gimp-image-crop im 660 450 680 60)
+(gimp-context-set-interpolation INTERPOLATION-NOHALO)(gimp-image-scale im 1320 900)
+(set! l(car(gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im l "visual-novel/art/prompts/s054-duel/batch6/elbow-crop.png" "visual-novel/art/prompts/s054-duel/batch6/elbow-crop.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)

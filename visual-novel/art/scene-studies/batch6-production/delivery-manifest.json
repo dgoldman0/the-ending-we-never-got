@@ -1,0 +1,996 @@
+{
+  "batch": 6,
+  "request_baseline_commit": "3b482c8630af9dfef98433df4885a2b631701df1",
+  "source_art_commit": "a666d8897c953e04f65ac5a7a2c5330097ab222a",
+  "scope": "Neutral source art only; no runtime grading or integration acceptance. Opening repaints await integration from art/repaints.",
+  "counts": {
+    "outputs": 67,
+    "new_moments": 9,
+    "repair_outputs": 58,
+    "partial_repair_outputs": 1
+  },
+  "mandatory_request_status": {
+    "completed_items": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "partial_items": [
+      24
+    ]
+  },
+  "deferred_optional": [
+    "S004 emblem set",
+    "S049 and S052 Tessa scabbard relocation",
+    "S049 ambiguous table support"
+  ],
+  "assets": [
+    {
+      "path": "visual-novel/art/repaints/after-first-treatment.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "91998853e1e1c86e3e3a2bc274477647a2c69848a57b54d7fdd488ab802c2839",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/arrival.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "5ec49c84a1315b58275ae0e3d4025041c9d91af2028dfcc1089c2d414c2d50b0",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/attempted-return.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "0c397595b12839b42cc99d2ebce9046de9ef8a474a352b41903b4ceeda4021c3",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/closure.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "c1d44ea5ab9957485fd3b4f9ef063e00346fd27bef8955c475813653a9b4d26c",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/phone-message.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "d178b330037ead93d72ceaf8c6d52a4491794e3469921c0d47f94d834f5b73aa",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/rested-hand.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 880,
+      "height": 495,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "ae81095407616f510cb127d6579d57be41e01882d059e1b0836a8cde6f53e343",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/stretcher-passes.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "700389d769a79e365c3d6e8491b4ebb93338c5529129b5e8b50c8137c22563fc",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/treatment-blue.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 640,
+      "height": 300,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "506cc6cf18ed94095e737d010639a84b3639610170ea5659935969dafc992216",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/treatment-pause.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "53c20cde9ea67c31da143b09ab185070bc634b67da890fec694b888ab9720cb7",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/treatment-white.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 640,
+      "height": 300,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "7df58448f3f8addc5733411e923aa9a416f46b2658758dad4e1bab9d52e41bf6",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/unanswered-cloak.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "85eb10f911474af7fa267fbc469870ae3da83a1575a0ad23b4f3c57d73e64348",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/art/repaints/ward-entrance.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "799f769b84428bea622eb55040302f4470890c9dd573c32e39df903ba84abfd6",
+      "last_asset_commit": "6110c3257d48d73056725a9cfae5491246fe5b4a"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s010-bellweir-hills.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "c9478ed7c4935e823d9ef5c931d48e31c4a20c1435341b5938d83d48a39872e4",
+      "last_asset_commit": "d872e016b492fb1c5c5985ee11763259d078b047"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s011-bellweir-causeway.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "d489afe39ac3108308a57e50c8595f1282dcf78bd0f61fdc7293b2c9f0e59ccc",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s011-heron.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "2325cb68b792aa46e4504b805bea646269fde43e2fd634e18720bdadde837935",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s011-sanctuary.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "4dae91ef6a99bcfc610dcd3d3644fc46c372629c83ee982c05e1e39012446e0b",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s012-temple-reading-room.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "89e50cb58ddbc2f7325b58669e4839f4d986250f6f48a168f265c621226e3e08",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s014-boots-and-cap.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "d56329d5013e691d4a2daf804e61dd6c5a76167d8d871fbcfde45412472a6cfe",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s014-relief-warehouse.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "a8cb8b655af03dc5078368e6e22421e145deaf6dff84dd15d7d3f0b536c998c4",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s018-cats.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "058aa9aed13c7c3da8b99eb63b1c2e737bf02bba50bdb2b9e39a5166f35ba0ae",
+      "last_asset_commit": "cbce2d01f418b6ff2c345ba0602970efee4bb7cf"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s018-gray-scar-ferry-approach.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "47fe53e1122a232e53f11e4d4b88239c5c9af4a0680db4d476f530cb2ddda3ea",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "f2760e5df0f06aae0e96d35b9191f8bf8c24301e2e15875b7119c9226e127954",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s020-gray-scar-riverbank.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "c3fee50e1e98801455f2f76f87a05c779f6df520baf89e5d6631a253e7568668",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "253283b66e6aad37398a2ec31d54fbb6c15fcdfcf4d55de63035f3f658bab0a2",
+      "last_asset_commit": "cbce2d01f418b6ff2c345ba0602970efee4bb7cf"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "ab34cebeff0427a369ef76e7dbe96aa21607823b0f066e28a3bde9171a1f3099",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-lucan-returns.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "9233996836cd22282abb4d033deda0e90724d47d77a4a4de92cd6ba92a7834ba",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-rescue.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "160347c84a39431799a81d811506cbc3ce59032cb356922512730340a430f9be",
+      "last_asset_commit": "c62994f289789802d333fce439bedc62b87678dd"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "bcf48e90b64b5226d66ff5bcb4741def4a4b06831cdee34e0788f2efa661afce",
+      "last_asset_commit": "cbce2d01f418b6ff2c345ba0602970efee4bb7cf"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s022-river-picket.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "5eda0936466f3521613d9cf0a5c9eb4bcfe79014a8b8989e9012fb6472978c32",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s024-northern-wharf.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "e0fef0a71b42d4c667333aa701dd5f27e0683d15505b592a68bfdaf9ffcfd74f",
+      "last_asset_commit": "c43b21dd24e059c77c2781de7114200ec59ad141"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s026-quarry-loading-ramp.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "4d940fc85dcc0b82c7b80b3f4e6525d36d1da4ca2cb96925ce300fb5173bd042",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s027-river-camp-gate.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "daa46da7b75c2fa229096b40b6617a7e9664c42c17f2b6697cf0b305743e6259",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s028-river-camp-infirmary.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "3ef5609b4c94f8ec5fe8ca2fee8f5bec9cac3c9a9d94cccd7f5220967e83fe3a",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s029-cap.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "156e85793d9e6be8ba7c6d112dba261726e8398037946ce0112a36e4852bf9c4",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s029-leg-support.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "9867930b5b35304886c3153e4f8aa46505d7b51d5ba2ad0875f386c4d32d52bb",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s030-laughing-portrait.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "66d7bcd38a905afb91efb3ba92737a29eb12c3ecd07c5101db9fa2cbaf42b5c7",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s030-river-camp-infirmary-evening.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "a1643984dac8c46fff7c021f812715796e835ab31cded3902ac7bfc9cb38a903",
+      "last_asset_commit": "f81e88d4707ce9cc8f5330248ec095b473cafcee"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s034-return-cargo-shed.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "29b5b12660d72634888739b5ba47f8e435149a0d924d09d52bd2a1377d5bd163",
+      "last_asset_commit": "5186f6fa9e40d789970b9490d87c3ae582b4b696"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s035-collapse.png",
+      "kind": "repair",
+      "status": "partial",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "227b19d790dca3416a7045503b2ec74bbfbb9df49a102189fdcb560a15521330",
+      "last_asset_commit": "3a4db0b8032f8ff8b6455dff818c96e0144a20df",
+      "limitation": "Orren right-leg support repaired; Renn pinned-left-leg/body geometry remains unresolved (request item 24)."
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s037-relief-camp.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "fad4ff77b64a1b26d3ef4f58f87d2464da715d74718e30eff76c1651390a083e",
+      "last_asset_commit": "d872e016b492fb1c5c5985ee11763259d078b047"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s038-northern-stores-office.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "bfae56ea1752708c1d8a9d6647b81774ae2b2a79ff1f9af2e108036be3a19de2",
+      "last_asset_commit": "5186f6fa9e40d789970b9490d87c3ae582b4b696"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s040-mill-town.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "8318592f4f956fa16ea10439f6ca590afea27328b00d80b1bd1bcda39857e519",
+      "last_asset_commit": "ca37719f92c2c5837bdf8b1133961e97a4571363"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s042-cart.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "b3f039df261927348674b90902182dec144547f02839abc9d6cb101910aaafe2",
+      "last_asset_commit": "3a4db0b8032f8ff8b6455dff818c96e0144a20df"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s042-mara-hand.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "1357193ca98bf82e6897535a864074f62daea6dafdf3d8b480cb8b1e8641a4ea",
+      "last_asset_commit": "ca37719f92c2c5837bdf8b1133961e97a4571363"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s042-mill-town-later.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "0730aec9519f9fb62bc5b02222733e574f4124d693a1ffea0897efd1cc520785",
+      "last_asset_commit": "ca37719f92c2c5837bdf8b1133961e97a4571363"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s043-seasons.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "b29023c058ce3f55a20b4134288073c5daf891bd5e4ec56b2988d7fb018b253c",
+      "last_asset_commit": "d872e016b492fb1c5c5985ee11763259d078b047"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s044-upper-stores-landing.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "a9a870324b3b44c683d60bec9d0a45530c0f8c3aa51ce2b451bb167f684aa8f1",
+      "last_asset_commit": "ca37719f92c2c5837bdf8b1133961e97a4571363"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s046-valcair-private-room.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "1a219848cfae385d41c2d6c7e06ca684a2fe895d68fb6ecef0294b85e1838204",
+      "last_asset_commit": "3a4db0b8032f8ff8b6455dff818c96e0144a20df"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s048-examination-tent.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "c292aafb563f1c48d5fa6b6049e3a5194bbefebb911e95e4de7e46d84aace650",
+      "last_asset_commit": "984e5a5c2aeec5536bfc1c7ea82ca8cfa581af88"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "b224e434ba8b4811e210f3a1efc1f56b46470f5f82ea2b796d50ba1221338b14",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s052-citadel-inner-landing.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s053-bend.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "62c3a84c6c0803eebb469d69e3e8e2b1d5946c2bd06a4193f90087e6883c72fc",
+      "last_asset_commit": "70efb4dd6902583952902be5c82f0da0986746ea"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-binding.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGB",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "559ef81d5c312669436572c6e11794093efa153f399c9a0a8c7b936fa9b3e3d0",
+      "last_asset_commit": "afb81cbd1b02586dcc560a440cd5a644aa10ea44"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-duel.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "158455f8068061d01406619e3334ee4793dee48bde37960c60f31f1c48c089a2",
+      "last_asset_commit": "f3b6c1858c399ba353382b0cd934c843eb3fa988"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-lever.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "0383d775e86517ba2ff6d196f582e4f2eacdf0d1f05ab3a6234e92e545978758",
+      "last_asset_commit": "a666d8897c953e04f65ac5a7a2c5330097ab222a"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-strike.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "d3ffc4f0992df196a29e313bbe57b9c8ad4ae52dcf7d0fde597b386d2d4caeec",
+      "last_asset_commit": "7f1ca7fd909a774a2afccddea4fca59021f17df4"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-throne-hall.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "4345aae4353b40d7e66ff9ee5dc98c78352bd64dbbcb2ac7ae89e62a94a83a2b",
+      "last_asset_commit": "36059009bb727d65913e0137af635244b3128de6"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-wound.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "dd7df37f9e5bc2cff040824fe46462729313f9ba0b87b9cc396c919674020cd5",
+      "last_asset_commit": "36059009bb727d65913e0137af635244b3128de6"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s055-citadel-lower-stair-morning.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "358c5d7044c7c244240f46675b67edcdda2b27394f91906ef3f66ebbbc9915fa",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s055-mara.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "0824546b3946c36668de471ce4b7ddc7a15fc8aba542b19c676c68e2834624fc",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s057-citadel-lower-gate.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "62863f2222bd4d0ddf5fb8a424f459db999839a6fab8eb2d9ea1696137839bb7",
+      "last_asset_commit": "984e5a5c2aeec5536bfc1c7ea82ca8cfa581af88"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s057-father.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 2240,
+      "height": 1260,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "62e369e33f43dce241d437e34911870d37261a21f6667f474a1597f35a7285a9",
+      "last_asset_commit": "b70c75905c3c80e06b4ebfdd1d0959ef9eaa708c"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s058-bellweir-market-spring.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "f5adf86d95feb924601dd90aad47c6ea55fbab87c4a10a8255138a737dd3ff27",
+      "last_asset_commit": "d872e016b492fb1c5c5985ee11763259d078b047"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s058-drawings.png",
+      "kind": "new_moment",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "40d99a87c742158c3f722429d752d2b1391ba70ae0a85d75bda164101ee1004b",
+      "last_asset_commit": "7b688199e5b5999148b6238d21f69e4c07fe0f35"
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s058-final.png",
+      "kind": "repair",
+      "status": "delivered_for_integration_review",
+      "width": 1920,
+      "height": 1080,
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184",
+      "last_asset_commit": "f2008ae5ef3f91de97b4bb359b104ec6a1fd6978"
+    }
+  ]
+}
