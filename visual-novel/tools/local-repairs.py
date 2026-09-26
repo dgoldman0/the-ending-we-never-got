@@ -24,6 +24,14 @@ and from the sweep of every painting of 26 September 2026:
             cleared forearm (S003 purification paintings and the close-up):
             the fine pattern is taken out of the skin, its shading and the
             healer's red morning mark are kept
+  ears      Lucan's ears came out pointed, like an elf's, in two S029
+            paintings; his design gives him human ears. The pointed tip is
+            covered with the hair just above it, so the ear's top reads round
+            under his hair
+  hair      Tessa's hair in the three S005 window paintings (GPT's repaints
+            share one figure) came out a saturated copper red; the same day
+            in S004, and in her likeness reference, it is chestnut. Its colour
+            is moved to the S004 hair's, keeping its own light and strands
   recolour  (again) Iven's coat in four S003 paintings, re-masked from
             hand-placed points: the first masks missed a front panel and a
             sleeve and ran onto the apron as mauve blotches
@@ -64,6 +72,10 @@ SLIVERS = {
     # the same sliver on the first drawing; its pen tip sits a little lower,
     # so the strip starts just past the tip and the pen still meets the paper
     'art/base/opening/cg/drawing-letter.png': ((949, 753), (966, 770)),
+    # S035 crossing: a second, thinner scabbard shaft splits off Lucan's
+    # below the hilt (sweep of 26 September); it is filled with the trouser
+    # cloth 16 px to its left rather than inpainted from the brass beside it
+    'art/scenes/s035-harrow-bridge-crossing.png': ((586, 610), (568, 735), (-16, 0)),
 }
 
 # Iven's coat, recoloured from olive to brown (user decision, 24 September
@@ -106,6 +118,11 @@ COATS = {
     'ceremony-yield': dict(path='art/base/rovel/cg/ceremony-yield.png',
                            pos=[(660, 321), (614, 407), (586, 492), (717, 378), (580, 350)],
                            neg=[(523, 492), (717, 492), (688, 583), (671, 213), (728, 458), (722, 429), (762, 321), (574, 652)]),
+    # S008 market (a GPT painting): his coat came out khaki, greener than
+    # his brown in the paintings on either side (sweep of 26 September).
+    's008-bellweir-market': dict(path='art/scenes/s008-bellweir-market.png', box=(110, 260, 320, 560), hand=dict(
+        pos=[(150, 330), (160, 400), (270, 320), (275, 380), (285, 511), (141, 505)],
+        neg=[(204, 311), (215, 395), (204, 474), (250, 460), (215, 250), (135, 442), (285, 442)])),
 }
 for _name in ('iven-attentive-speaking', 'iven-attentive-listening', 'iven-concerned-speaking',
               'iven-concerned-listening', 'iven-attentive-treatment-speaking', 'iven-attentive-treatment-listening',
@@ -152,6 +169,30 @@ SKIN = {
 }
 
 
+# Hair to bring to another painting's colour: prompts for Segment Anything,
+# and the colour it takes, measured over Tessa's hair in S004 ceremony-refusal
+# (OpenCV 8-bit Lab mean and spread).
+CHESTNUT = {'mean': np.array([71.2, 140.3, 142.7], np.float32), 'std': np.array([46.8, 4.1, 6.0], np.float32)}
+HAIR = {
+    path: dict(box=(310, 110, 520, 340), pos=[(410, 150), (350, 230), (470, 200)],
+               neg=[(415, 230), (415, 300), (400, 335), (300, 150), (530, 150), (412, 190)])
+    for path in ('art/base/rovel/cg/window-packing.png', 'art/base/rovel/cg/window-pause.png',
+                 'art/base/rovel/cg/window-together.png')
+}
+
+# Pointed ear tips to cover with hair: the area to cover (a polygon whose
+# lower edge is the new, round top of the ear; only the lit skin inside it
+# changes) and the offset of the hair copied over it (from above).
+EARS = {
+    'art/scenes/s029-river-camps-visits.png': dict(
+        poly=[(340, 200), (398, 200), (398, 236), (390, 238), (382, 239), (375, 242), (369, 247),
+              (365, 254), (363, 262), (340, 262)], offset=(0, 34)),
+    'art/scenes/s029-barge.png': dict(
+        poly=[(415, 210), (475, 210), (475, 247), (466, 249), (457, 250), (449, 254), (443, 260),
+              (439, 268), (437, 278), (415, 278)], offset=(0, 38)),
+}
+
+
 def original(path):
     """The file as it was before any local repair (saved on first use)."""
     keep = ORIGINALS / path.replace('/', '--')
@@ -169,9 +210,10 @@ def write(path, pixels):
         Image.fromarray(pixels).save(GAME / path.replace('art/base/', 'art/', 1))
 
 
-def remove_sliver(rgb, p0, p1):
+def remove_sliver(rgb, p0, p1, clone=None):
     """Inpaint the sliver: pixels near the segment that are far darker or
-    paler than the paper and pencil around them."""
+    paler than the paper and pencil around them. With `clone` (an offset),
+    they are filled from the image that far away instead."""
     h, w = rgb.shape[:2]
     yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
     (x0, y0), (x1, y1) = p0, p1
@@ -184,6 +226,12 @@ def remove_sliver(rgb, p0, p1):
     odd = band & ((lum < paper * 0.55) | (lum > paper + 22))
     mask = cv2.dilate(odd.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=2)
     mask &= band.astype(np.uint8) | cv2.dilate(band.astype(np.uint8), np.ones((3, 3), np.uint8))
+    if clone:
+        dx, dy = clone
+        src = cv2.warpAffine(rgb, np.float32([[1, 0, -dx], [0, 1, -dy]]), (w, h), borderMode=cv2.BORDER_REFLECT)
+        soft = cv2.GaussianBlur(cv2.dilate(mask, np.ones((3, 3), np.uint8)).astype(np.float32), (0, 0), 0.9)
+        out = rgb.astype(np.float32) * (1 - soft[..., None]) + src.astype(np.float32) * soft[..., None]
+        return np.clip(out + 0.5, 0, 255).astype(np.uint8), soft
     out = cv2.inpaint(rgb, mask * 255, 4, cv2.INPAINT_TELEA)
     noise = np.random.default_rng(5).normal(0, 2.2, rgb.shape[:2]).astype(np.float32)
     soft = cv2.GaussianBlur(mask.astype(np.float32), (0, 0), 0.8)
@@ -341,9 +389,40 @@ def smooth_skin(rgb, mask, keep, marks=()):
     return cv2.inpaint(result, specks * 255, 2, cv2.INPAINT_TELEA)
 
 
+def match_hair(rgb, mask, target):
+    """Give hair the target's colour (a and b: mean and spread) while its
+    lightness keeps its own strands and shine."""
+    lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB).astype(np.float32)
+    mean, std = lab_stats(rgb, mask)
+    new = lab.copy()
+    for c in (1, 2):
+        new[..., c] = target['mean'][c] + (lab[..., c] - mean[c]) * target['std'][c] / max(std[c], 1e-3)
+    # lightness: the target's mean, and a little of the gap in contrast
+    new[..., 0] = target['mean'][0] + (lab[..., 0] - mean[0]) * 0.85
+    full = cv2.cvtColor(np.clip(new, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB)
+    out = rgb.astype(np.float32) * (1 - mask[..., None]) + full.astype(np.float32) * mask[..., None]
+    return np.clip(out + 0.5, 0, 255).astype(np.uint8)
+
+
+def cover_tip(rgb, poly, offset, feather=1.6):
+    """Copy the hair above over the lit skin inside the polygon, with soft
+    edges. Returns the new image and the changed area (0-1)."""
+    h, w = rgb.shape[:2]
+    area = np.zeros((h, w), np.uint8)
+    cv2.fillPoly(area, [np.int32(poly)], 1)
+    lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)
+    skin = cv2.dilate((lab[..., 0] > 70).astype(np.uint8), np.ones((5, 5), np.uint8))
+    m = cv2.GaussianBlur((area & skin).astype(np.float32), (0, 0), feather)
+    dx, dy = offset
+    src = cv2.warpAffine(rgb, np.float32([[1, 0, dx], [0, 1, dy]]), (w, h), borderMode=cv2.BORDER_REFLECT)
+    out = rgb.astype(np.float32) * (1 - m[..., None]) + src.astype(np.float32) * m[..., None]
+    return np.clip(out + 0.5, 0, 255).astype(np.uint8), m
+
+
 def guarded_write(path, after):
     """Write a repair only over the file it was made from (or its own last
-    result). If the painting was since redelivered, say so and leave it."""
+    result). If the painting was since redelivered, say so and leave it. (To
+    redo a repair with new settings, put its kept original back first.)"""
     current = np.asarray(Image.open(GAME / path))
     keep = np.asarray(Image.open(ORIGINALS / path.replace('/', '--')))
     if current.shape == after.shape and (np.array_equal(current, keep) or np.array_equal(current, after)):
@@ -421,6 +500,14 @@ def segment(names=None):
         if names and name not in names:
             continue
         mask = coat_mask(run, name, spec)
+        Image.fromarray((mask * 255 + 0.5).astype(np.uint8)).save(MASKS / (name + '.png'))
+        print('mask', name)
+    for path, spec in HAIR.items():
+        name = 'hair--' + Path(path).stem
+        if names and name not in names:
+            continue
+        rgb = original(path)[..., :3].copy()
+        mask = clean_mask(run(rgb, spec['pos'], spec['neg'], spec['box']), spec['pos'])
         Image.fromarray((mask * 255 + 0.5).astype(np.uint8)).save(MASKS / (name + '.png'))
         print('mask', name)
     for path, spec in SKIN.items():
@@ -520,11 +607,17 @@ def main():
     if args.segment is not None:
         segment(args.segment)
         return
-    for path, (p0, p1) in SLIVERS.items():
-        before = original(path)[..., :3]
-        after, _ = remove_sliver(before, p0, p1)
+    for path, (p0, p1, *clone) in SLIVERS.items():
+        pixels = original(path)
+        before = pixels[..., :3]
+        after, _ = remove_sliver(before, p0, p1, clone[0] if clone else None)
         changed = (after != before).any(axis=2).astype(np.float32)
-        write(path, after)
+        full = np.dstack([after, pixels[..., 3]]) if pixels.shape[2] == 4 else after
+        if path.startswith('art/scenes/'):                # a GPT painting, which may be redelivered
+            if not guarded_write(path, full):
+                continue
+        else:
+            write(path, full)
         xcf = save_master('stray-sliver', path, before, after, changed, after)
         print('sliver removed:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
     for path, spec in LETTERING.items():
@@ -535,7 +628,23 @@ def main():
             changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
             xcf = save_master('lettering', path, pixels[..., :3], rgb, changed, rgb)
             print('lettering reset:', path, '->', xcf.relative_to(VN))
+    for path in HAIR:
+        pixels = original(path)
+        mask = np.asarray(Image.open(MASKS / ('hair--' + Path(path).stem + '.png'))).astype(np.float32) / 255
+        rgb = match_hair(pixels[..., :3], mask, CHESTNUT)
+        write(path, np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb)
+        print('hair colour matched:', path)
+    for path, spec in EARS.items():
+        pixels = original(path)
+        rgb, _ = cover_tip(pixels[..., :3], spec['poly'], spec['offset'])
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('ears', path, pixels[..., :3], rgb, changed, rgb)
+            print('ear tip covered:', path, '->', xcf.relative_to(VN))
     for path in RESTORE:
+        if path in HAIR:            # written from its original above, with the hair matched
+            continue
         keep = ORIGINALS / path.replace('/', '--')
         if keep.is_file():
             write(path, np.asarray(Image.open(keep)))
@@ -546,7 +655,11 @@ def main():
         mask = np.asarray(Image.open(MASKS / (name + '.png'))).astype(np.float32) / 255
         rgb = recolour(pixels[..., :3], mask, BROWN)
         coated[spec['path']] = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
-        write(spec['path'], coated[spec['path']])
+        if spec['path'].startswith('art/scenes/'):        # a GPT painting, which may be redelivered
+            if not guarded_write(spec['path'], coated[spec['path']]):
+                continue
+        else:
+            write(spec['path'], coated[spec['path']])
         print('coat recoloured:', spec['path'])
     for path, spec in SKIN.items():
         pixels = coated.get(path, original(path))
