@@ -1,0 +1,18 @@
+{
+  "native_size": [
+    1672,
+    941
+  ],
+  "delivery_size": [
+    1920,
+    1080
+  ],
+  "alpha_range": [
+    255,
+    255
+  ],
+  "reopened_rgba_exact": true,
+  "whole_frame_regenerated": true,
+  "older_core_composite_rejected": true,
+  "sha256": "559ef81d5c312669436572c6e11794093efa153f399c9a0a8c7b936fa9b3e3d0"
+}

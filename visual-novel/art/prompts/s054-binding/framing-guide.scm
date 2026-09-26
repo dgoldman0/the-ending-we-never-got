@@ -1,0 +1,8 @@
+(let* ((im(car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s054-binding/action-rebuild.png" "visual-novel/art/scene-studies/s054-binding/action-rebuild.png")))(bg 0)(f 0))
+(gimp-image-resize im 2240 1260 284 160)
+(set! bg(car(gimp-layer-new im 2240 1260 RGBA-IMAGE "Empty peripheral context guide" 100 NORMAL-MODE)))
+(gimp-image-insert-layer im bg 0 (car(gimp-image-get-layers im)))(gimp-context-set-foreground '(83 83 83))(gimp-drawable-fill bg FOREGROUND-FILL)
+(gimp-xcf-save RUN-NONINTERACTIVE im bg "visual-novel/art/scene-studies/s054-binding/framing-guide.xcf" "visual-novel/art/scene-studies/s054-binding/framing-guide.xcf")
+(set! f(car(gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im f "visual-novel/art/scene-studies/s054-binding/framing-guide.png" "visual-novel/art/scene-studies/s054-binding/framing-guide.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))(gimp-quit 0)
