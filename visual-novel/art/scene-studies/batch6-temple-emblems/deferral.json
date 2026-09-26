@@ -1,0 +1,32 @@
+[
+  {
+    "scene": "ceremony-mantle",
+    "current_source_unchanged": true,
+    "sha256": "8d86fecdfc5add750ff97c5071aab83b982e347ac46c87518ae4f1a99fb5b33a",
+    "status": "deferred; rejected material proof only"
+  },
+  {
+    "scene": "ceremony-dais",
+    "current_source_unchanged": true,
+    "sha256": "a4a60ccd8c88299ade662a64afadca7b55a50cf53c5d112a1d4b0726b8e19d32",
+    "status": "deferred; no generated repair"
+  },
+  {
+    "scene": "ceremony-refusal",
+    "current_source_unchanged": true,
+    "sha256": "db6cfa94513f46c362af88764d37b25f837be41de48b24befffbbd2854a09c76",
+    "status": "deferred; no generated repair"
+  },
+  {
+    "scene": "ceremony-refused-chair",
+    "current_source_unchanged": true,
+    "sha256": "2f19ce471dcf599584e2add2a531275eb662f580e28ffe3e14fbb69b542982ad",
+    "status": "deferred; no generated repair"
+  },
+  {
+    "scene": "ceremony-intervention",
+    "current_source_unchanged": true,
+    "sha256": "c1196f2bb74f11a8573914224a0b88720298170a214e5d90697bd0072e1b6978",
+    "status": "deferred; no generated repair"
+  }
+]

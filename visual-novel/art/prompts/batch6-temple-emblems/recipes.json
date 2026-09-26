@@ -1,0 +1,190 @@
+{
+  "ceremony-mantle": {
+    "components": [
+      {
+        "file": "s004-blank-banner-cloth-donor.png",
+        "name": "Local same-banner blue cloth clears wrong ray count",
+        "size": [
+          160,
+          230
+        ],
+        "offset": [
+          415,
+          -5
+        ],
+        "polygons": [],
+        "feather": 4,
+        "source_gold_mask": [
+          444,
+          0,
+          105,
+          143
+        ],
+        "brightness": [
+          20,
+          -8
+        ]
+      },
+      {
+        "file": "s004-embroidered-sun-donor.png",
+        "name": "Twelve-ray embroidered sun \u2014 material-matched donor",
+        "size": [
+          126,
+          147
+        ],
+        "offset": [
+          432,
+          -2
+        ],
+        "polygons": [
+          [
+            [
+              392,
+              -42
+            ],
+            [
+              597,
+              -42
+            ],
+            [
+              597,
+              183
+            ],
+            [
+              392,
+              183
+            ]
+          ]
+        ],
+        "feather": 0,
+        "blur": 2.3,
+        "brightness": [
+          15,
+          -10
+        ]
+      },
+      {
+        "file": "s004-blank-banner-cloth-donor.png",
+        "name": "Local same-banner blue cloth clears wrong right sun",
+        "size": [
+          215,
+          300
+        ],
+        "offset": [
+          1585,
+          0
+        ],
+        "polygons": [],
+        "feather": 4,
+        "source_gold_mask": [
+          1608,
+          0,
+          175,
+          182
+        ]
+      },
+      {
+        "file": "s004-embroidered-sun-donor.png",
+        "name": "Twelve-ray embroidered sun \u2014 material-matched donor",
+        "size": [
+          181,
+          187
+        ],
+        "offset": [
+          1601,
+          -12
+        ],
+        "polygons": [
+          [
+            [
+              1549,
+              -66
+            ],
+            [
+              1834,
+              -66
+            ],
+            [
+              1834,
+              229
+            ],
+            [
+              1549,
+              229
+            ]
+          ]
+        ],
+        "feather": 0,
+        "blur": 2.3,
+        "brightness": [
+          15,
+          -10
+        ]
+      },
+      {
+        "file": "s004-blank-banner-cloth-donor.png",
+        "name": "Local cloth removes northern-style star behind Senn",
+        "size": [
+          60,
+          98
+        ],
+        "offset": [
+          982,
+          -4
+        ],
+        "polygons": [],
+        "feather": 4,
+        "source_crop": [
+          150,
+          20,
+          700,
+          600
+        ],
+        "source_gold_mask": [
+          994,
+          0,
+          40,
+          88
+        ]
+      },
+      {
+        "file": "s004-embroidered-sun-donor.png",
+        "name": "Twelve-ray embroidered sun \u2014 material-matched donor",
+        "size": [
+          45,
+          62
+        ],
+        "offset": [
+          990,
+          8
+        ],
+        "polygons": [
+          [
+            [
+              977,
+              -7
+            ],
+            [
+              1047,
+              -7
+            ],
+            [
+              1047,
+              81
+            ],
+            [
+              977,
+              81
+            ]
+          ]
+        ],
+        "feather": 0,
+        "blur": 2.3,
+        "brightness": [
+          15,
+          -10
+        ]
+      }
+    ]
+  }
+}

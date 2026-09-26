@@ -1,0 +1,27 @@
+[
+  {
+    "scene": "ceremony-mantle",
+    "source": "visual-novel/renpy/game/art/base/rovel/cg/ceremony-mantle.png",
+    "destination": "visual-novel/art/repaints/ceremony-mantle.png"
+  },
+  {
+    "scene": "ceremony-dais",
+    "source": "visual-novel/renpy/game/art/base/rovel/cg/ceremony-dais.png",
+    "destination": "visual-novel/art/repaints/ceremony-dais.png"
+  },
+  {
+    "scene": "ceremony-refusal",
+    "source": "visual-novel/renpy/game/art/base/rovel/cg/ceremony-refusal.png",
+    "destination": "visual-novel/art/repaints/ceremony-refusal.png"
+  },
+  {
+    "scene": "ceremony-refused-chair",
+    "source": "visual-novel/renpy/game/art/base/rovel/cg/ceremony-refused-chair.png",
+    "destination": "visual-novel/art/repaints/ceremony-refused-chair.png"
+  },
+  {
+    "scene": "ceremony-intervention",
+    "source": "visual-novel/renpy/game/art/base/rovel/cg/ceremony-intervention.png",
+    "destination": "visual-novel/art/repaints/ceremony-intervention.png"
+  }
+]
