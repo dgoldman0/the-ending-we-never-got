@@ -1,0 +1,6 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s058-final/chair-delivery-master.xcf" "reopen")))
+       (layers (cadr (gimp-image-get-layers img))))
+ (gimp-message (string-append "Reopened final master; layer count " (number->string (vector-length layers))))
+ (let ((flat (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE))))
+  (file-png-save RUN-NONINTERACTIVE img flat "/tmp/s058-final-reopened.png" "reopened" 0 9 0 0 0 0 0))
+ (gimp-image-delete img)) (gimp-quit 0)

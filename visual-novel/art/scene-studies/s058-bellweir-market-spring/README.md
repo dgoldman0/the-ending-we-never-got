@@ -17,3 +17,15 @@ Wide oblique camera from open lower square preserves S008 orientation but adapts
 ## Review
 
 Pending Chapter10 generation, native contacts, old/new market and final interior cross-review. No ending/runtime clearance claimed.
+
+## Production and actual review, 26 September
+
+Built-in generation used the old square only as a geography/object reference and the six-person current cast board for people. The actual scene keeps Tessa and Elin at the fountain while Orren, Hest and the two older apprentices are inside the bakery. Old Iven/Mara figures did not return. Root and independent stair producer inspected the full adult bodies, ordinary rim height, supported lap board and real reach before local edits. Tessa retains her worn postwar face, one approved wrap/two LEFT wooden toggles, RIGHT brace and healthy LEFT hand; Elin wears repaired home sleeves, ocher jacket and dark teal skirt.
+
+The initial painting wrongly restored the near LEFT glass wing, put lace-up footwear on Tessa, kept the pencil upright on the offer, and gave the catalog a bird illustration. Local components now show the missing LEFT wing/short root with RIGHT wing surviving, low oxblood slip-ons, pencil laid down beneath relaxed LEFT fingers, and a book-catalog record beside the unchanged exact reply. The drawing packet stays closed. Only the title/classification is intentional catalog content; small generated bibliographic marks are decorative, not new story canon or confirmation of surviving pages.
+
+Background components keep Orren’s cane in LEFT, inside the bakery threshold; retain the original three barge crew with northern horns; distinguish human-blue/northern-green inspectors; and add bounded roofless burned masonry among repaired roofs. Unused donor recasts/additional sailors are excluded. Native mask review caught and removed old Orren gesture and cap remnants after his position changed. Final whole/native inspection finds two arms/one cap, connected cane/threshold, traceable pencil/catalog contacts, complete slip-ons and continuous paving. The independent stair producer reviewed those final corrected regions and the whole composite.
+
+The native1672×941 source remains at original scale at(124,80) in a1920×1080 canvas. A generated perimeter provides sky/roof/floor clearance; no actor was vertically stretched. The meaningful master has original scene, peripheral context, foreground corrections, background state masks and barge-head masks. `market-master.xcf` reopens to exactly the opaque PNG’s RGBA pixels. Root re-viewed the final whole image and native hands, shoes, bird, inspector and bakery contacts before promotion. Exposure is neutral; grading/runtime and remaining ending coverage are not cleared by this source painting.
+
+SHA-256: `ea64db74a81af5d944a88b82d10b9926fc4a2f71cc09a29225632af29b3b2473`. Exact prompts, framing/assembly/reopen scripts and selected components are retained beside this study.

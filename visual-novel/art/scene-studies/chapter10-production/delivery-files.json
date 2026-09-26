@@ -1,0 +1,20 @@
+[
+  {
+    "file": "renpy/game/art/scenes/s058-bellweir-market-spring.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "ea64db74a81af5d944a88b82d10b9926fc4a2f71cc09a29225632af29b3b2473",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s058-final.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "00e58594c64e8554fac554701b77486eb35bea6f259cf4229d1d8e1e248414bf",
+    "opaque": true
+  }
+]

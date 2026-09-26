@@ -1,0 +1,7 @@
+(let* ((im (car (gimp-image-new 1920 1080 RGB))) (bg (car (gimp-layer-new im 1920 1080 RGB-IMAGE "Margin guide only" 100 NORMAL-MODE))) (src 0) (flat 0))
+(gimp-image-insert-layer im bg 0 -1) (gimp-context-set-background '(112 112 112)) (gimp-drawable-fill bg BACKGROUND-FILL)
+(set! src (car (gimp-file-load-layer RUN-NONINTERACTIVE im "visual-novel/art/scene-studies/s058-bellweir-market-spring/market-source.png")))
+(gimp-image-insert-layer im src 0 -1) (gimp-layer-set-offsets src 124 80)
+(set! flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s058-market-framing-guide.png" "/tmp/s058-market-framing-guide.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im)) (gimp-quit 0)
