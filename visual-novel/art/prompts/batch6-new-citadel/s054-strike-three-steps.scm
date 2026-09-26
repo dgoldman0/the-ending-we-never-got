@@ -1,0 +1,7 @@
+(let* ((dir "/home/kir/Documents/Projects/the-ending-we-never-got/visual-novel/art/scene-studies/s054-strike") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append dir "/finishing-donor.png") (string-append dir "/finishing-donor.png")))) (ly (car (gimp-file-load-layer RUN-NONINTERACTIVE im (string-append dir "/third-riser-donor.png")))) (mask 0))
+(gimp-item-set-name (car (gimp-image-get-active-layer im)) "Selected new painting: corrected left sword/right short wound glove, left badge and failing armor ward")
+(gimp-image-insert-layer im ly 0 0) (gimp-item-set-name ly "Third low riser only; preserve flat top platform and all actors")
+(set! mask (car (gimp-layer-create-mask ly ADD-BLACK-MASK))) (gimp-layer-add-mask ly mask)
+(gimp-image-select-rectangle im CHANNEL-OP-REPLACE 105 545 1392 68) (gimp-selection-feather im 2) (gimp-context-set-foreground '(255 255 255)) (gimp-edit-fill mask FOREGROUND-FILL) (gimp-selection-none im)
+(gimp-xcf-save RUN-NONINTERACTIVE im ly (string-append dir "/repair-master.xcf") (string-append dir "/repair-master.xcf"))
+(let ((out (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))) (file-png-save2 RUN-NONINTERACTIVE im out (string-append dir "/candidate.png") (string-append dir "/candidate.png") 0 9 0 0 0 0 0 0 0)) (gimp-image-delete im)) (gimp-quit 0)
