@@ -1,0 +1,192 @@
+{
+  "s018-gray-scar-ferry-approach": {
+    "Mara face hands shield and coat": {
+      "box": [
+        355,
+        300,
+        560,
+        775
+      ],
+      "changed_pixels": 0
+    },
+    "Lucan face": {
+      "box": [
+        850,
+        349,
+        938,
+        430
+      ],
+      "changed_pixels": 0
+    },
+    "Lucan split badge": {
+      "box": [
+        894,
+        448,
+        932,
+        486
+      ],
+      "changed_pixels": 0
+    },
+    "Serat face": {
+      "box": [
+        1025,
+        399,
+        1090,
+        453
+      ],
+      "changed_pixels": 0
+    },
+    "Serat split badge": {
+      "box": [
+        1049,
+        455,
+        1090,
+        487
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s019-gray-scar-ferryhouse": {
+    "Tessa face right hand and torso": {
+      "box": [
+        637,
+        225,
+        910,
+        592
+      ],
+      "changed_pixels": 0
+    },
+    "Mara and ward": {
+      "box": [
+        918,
+        304,
+        1110,
+        710
+      ],
+      "changed_pixels": 0
+    },
+    "Serat face and badge": {
+      "box": [
+        1295,
+        275,
+        1408,
+        430
+      ],
+      "changed_pixels": 0
+    },
+    "Adult patient and litter": {
+      "box": [
+        515,
+        590,
+        1130,
+        850
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s021-gray-scar-covered-landing": {
+    "Lucan and Serat faces": {
+      "box": [
+        740,
+        137,
+        1123,
+        321
+      ],
+      "changed_pixels": 0
+    },
+    "Lucan split badge": {
+      "box": [
+        870,
+        320,
+        920,
+        379
+      ],
+      "changed_pixels": 0
+    },
+    "Boatman and second boat": {
+      "box": [
+        1620,
+        518,
+        1919,
+        1055
+      ],
+      "changed_pixels": 0
+    },
+    "First boat people": {
+      "box": [
+        1213,
+        242,
+        1740,
+        540
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s021-lucan-returns": {
+    "Lucan head and torso": {
+      "box": [
+        756,
+        79,
+        1110,
+        810
+      ],
+      "changed_pixels": 0
+    },
+    "Serat head and chest": {
+      "box": [
+        1100,
+        121,
+        1306,
+        479
+      ],
+      "changed_pixels": 0
+    },
+    "Boatman and second boat": {
+      "box": [
+        1450,
+        491,
+        1919,
+        1030
+      ],
+      "changed_pixels": 0
+    }
+  },
+  "s021-rescue": {
+    "Serat badge": {
+      "box": [
+        545,
+        421,
+        592,
+        469
+      ],
+      "changed_pixels": 0
+    },
+    "Boatman and both boat fronts": {
+      "box": [
+        1395,
+        393,
+        1880,
+        940
+      ],
+      "changed_pixels": 0
+    },
+    "Serat face below new horns": {
+      "box": [
+        506,
+        377,
+        551,
+        421
+      ],
+      "changed_pixels": 0
+    },
+    "Brother face": {
+      "box": [
+        465,
+        324,
+        495,
+        362
+      ],
+      "changed_pixels": 0
+    }
+  }
+}

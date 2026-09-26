@@ -1,0 +1,44 @@
+{
+  "s018-gray-scar-ferry-approach": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "4da28429e405595847ce777d1e175bcc80958a9c0e1f95242a902efc0e645103"
+  },
+  "s019-gray-scar-ferryhouse": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "1c35762c20a4a728c3f76e31c1f6208c1149ffc5231e61bbab2417ae957963cb"
+  },
+  "s020-gray-scar-riverbank": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "a0527e71c7659a404a7cb2321435b6269e963099ffcf68995401d1e8d310b0d4"
+  },
+  "s021-gray-scar-covered-landing": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "0ec7cfe728b00e359c3c7cc739c22f3fc653c9964103a8c8b2f683f351cb2e76"
+  },
+  "s021-lucan-returns": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "ef655ef1d48706e29c6281482441d41eb5f835b7630072314737b19bd45ba9cc"
+  },
+  "s021-rescue": {
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "4b43f35b6da9e1d47755cef231e69c7dca2b754fde22db5ea5bb64d3b52feb58"
+  }
+}

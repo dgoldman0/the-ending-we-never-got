@@ -1,0 +1,104 @@
+{
+  "s018-gray-scar-ferry-approach": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 551253,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "47fe53e1122a232e53f11e4d4b88239c5c9af4a0680db4d476f530cb2ddda3ea",
+    "allowed_pixel_fraction": 0.27131896219135804
+  },
+  "s019-gray-scar-ferryhouse": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 2510,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "f2760e5df0f06aae0e96d35b9191f8bf8c24301e2e15875b7119c9226e127954",
+    "allowed_pixel_fraction": 0.0019704861111111112
+  },
+  "s020-gray-scar-riverbank": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 2073570,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "c3fee50e1e98801455f2f76f87a05c779f6df520baf89e5d6631a253e7568668",
+    "allowed_pixel_fraction": 1.0
+  },
+  "s021-gray-scar-covered-landing": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 276780,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "ab34cebeff0427a369ef76e7dbe96aa21607823b0f066e28a3bde9171a1f3099",
+    "allowed_pixel_fraction": 0.1372535686728395
+  },
+  "s021-lucan-returns": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 119944,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "9233996836cd22282abb4d033deda0e90724d47d77a4a4de92cd6ba92a7834ba",
+    "allowed_pixel_fraction": 0.06039207175925926
+  },
+  "s021-rescue": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      255,
+      255
+    ],
+    "reopened_rgba_exact": true,
+    "changed_pixels": 199661,
+    "changed_outside_mask_plus_3px": 0,
+    "source_still_matches_preflight": true,
+    "sha256": "160347c84a39431799a81d811506cbc3ce59032cb356922512730340a430f9be",
+    "allowed_pixel_fraction": 0.1008299575617284
+  }
+}
