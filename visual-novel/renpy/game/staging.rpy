@@ -9,7 +9,10 @@
 #
 # Scene entry:
 #   "stages": [{"image": path, "from": first source line, "alt": description,
+#               "page": page of that line's paragraph where it starts (default 0),
 #               "framing": {"lift": px} or {"text": [x, y, width]}}]
+#   (after changing a lift, run tools/grade-light.py: the blur band behind the
+#   text is cut for the raised painting)
 #   "cast":   {"SPEAKER": portrait set name, or {"speaking": path, "listening": path},
 #              or a list of those, tried in order (a planned set, then a stand-in)}
 #   "lines":  {"<source line>": {"speaker_expression": name,
@@ -29,18 +32,19 @@ init -1 python:
     def _scene_spec(scene=None):
         return STAGING.get(str(current_scene if scene is None else scene))
 
-    def staging_stage(scene=None, line=None):
-        """The painting for this line, or None while the scene has no art."""
+    def staging_stage(scene=None, line=None, page=0):
+        """The painting for this line and page, or None while the scene has
+        no art. A stage can begin partway through a long paragraph."""
         spec = _scene_spec(scene)
         if not spec:
             return None
-        line = source_line if line is None else line
+        at = (source_line, source_page) if line is None else (line, page)
         available = [stage for stage in spec.get('stages', []) if renpy.loadable(stage['image'])]
         if not available:
             return None
         chosen = available[0]
         for stage in available:
-            if stage.get('from', 0) <= line:
+            if (stage.get('from', 0), stage.get('page', 0)) <= at:
                 chosen = stage
         return chosen
 

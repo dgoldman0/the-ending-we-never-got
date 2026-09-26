@@ -639,7 +639,10 @@ label s006:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Five weeks on the road. Mara feints around the pane of light Tessa holds between them. Tessa stretches a corner after the staff, thinning the middle; Mara's next stroke cracks through and stops against her padded shoulder."
+    "Five weeks on the road. Mara feints around the pane of light Tessa holds between them."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Tessa stretches a corner after the staff, thinning the middle; Mara's next stroke cracks through and stops against her padded shoulder."
     # Source lines 256–257
     $ source_line = 256
     $ scene_speaker = "TESSA"
@@ -663,7 +666,10 @@ label s006:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Mara steps inside the shelter, her blue shoulder ward still shining. Tessa lets the white light fade before touching the ward itself; the blue protection dissolves beneath her fingertips. Mara rekindles it when Tessa takes her hand away."
+    "Mara steps inside the shelter, her blue shoulder ward still shining. Tessa lets the white light fade before touching the ward itself; the blue protection dissolves beneath her fingertips."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Mara rekindles it when Tessa takes her hand away."
     # Source lines 266–266
     $ source_line = 266
     $ scene_speaker = None
@@ -1104,7 +1110,10 @@ label s010:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Eight months after the summoning. Northern troops wait among the trees while GENERAL VASK reports to VALCAIR. The Demon King's black horns sweep back from silver-streaked hair. Captured northern barges crowd the city's dock below them."
+    "Eight months after the summoning. Northern troops wait among the trees while GENERAL VASK reports to VALCAIR. The Demon King's black horns sweep back from silver-streaked hair."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Captured northern barges crowd the city's dock below them."
     # Source lines 438–438
     $ source_line = 438
     $ scene_speaker = None
@@ -3042,13 +3051,19 @@ label s029:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "On the next visit, Hest brings Orren's cap. He wears it while Iven fits the new support to his leg."
+    "On the next visit, Hest brings Orren's cap."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "He wears it while Iven fits the new support to his leg."
     # Source lines 1198–1198
     $ source_line = 1198
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Once the week is over and the boat is his again, Lucan returns with Orren's apprentice to the river chart. The boy points out the upper quarry. The other boy was sent there. Lucan circles it, but when his launch reaches the quarry landing, guards turn him back."
+    "Once the week is over and the boat is his again, Lucan returns with Orren's apprentice to the river chart. The boy points out the upper quarry. The other boy was sent there."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Lucan circles it, but when his launch reaches the quarry landing, guards turn him back."
     # Source lines 1200–1200
     $ source_line = 1200
     $ scene_speaker = None
@@ -3234,10 +3249,10 @@ label s032:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "A clock stands above the northern tollhouse. Below it, Mara and northern engineers finish inspecting the bridge's empty charge housings. A southern inspector checks two wagons of returned tools with MARREN, the northern stores clerk."
+    "A clock stands above the northern tollhouse. Below it, Mara and northern engineers finish inspecting the bridge's empty charge housings."
     $ source_page = 1
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "They seal the loads and keep matching copies of the cargo numbers."
+    "A southern inspector checks two wagons of returned tools with MARREN, the northern stores clerk. They seal the loads and keep matching copies of the cargo numbers."
     # Source lines 1267–1267
     $ source_line = 1267
     $ scene_speaker = None
@@ -4531,7 +4546,10 @@ label s044:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "The patrol pulls up short of the arch; its high bow cannot pass. Soldiers scramble onto the bank. A bolt punches through the fishing boat's side as Lucan takes the tiller again, holding it straight until the bend conceals them."
+    "The patrol pulls up short of the arch; its high bow cannot pass. Soldiers scramble onto the bank."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "A bolt punches through the fishing boat's side as Lucan takes the tiller again, holding it straight until the bend conceals them."
     # Source lines 1755–1755
     $ source_line = 1755
     $ scene_speaker = None
@@ -4822,7 +4840,10 @@ label s047:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "By daylight the outer gate is under attack. Lucan leaves Serat holding it while he draws a separate plan of the route to his father's hall. He marks the old interior passages; Serat corrects the outer guard positions from his men's reports."
+    "By daylight the outer gate is under attack. Lucan leaves Serat holding it while he draws a separate plan of the route to his father's hall."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "He marks the old interior passages; Serat corrects the outer guard positions from his men's reports."
     # Source lines 1873–1873
     $ source_line = 1873
     $ scene_speaker = None

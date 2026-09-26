@@ -18,6 +18,19 @@ CHAPTERS = [(1, 'Rovel'), (6, 'Bellweir'), (10, 'The broken promise'),
             (38, 'After Harrow'), (44, 'The witness'), (50, 'The citadel'),
             (58, 'Bellweir again')]
 ROUNDS = {5: 1, 17: 2, 31: 3, 43: 4, 49: 5}
+# Paragraphs holding more than one visual state are split where the picture
+# changes, keeping every word: (scene, source line) -> the text that begins
+# each later page.
+PICTURE_BREAKS = {
+    (1, 15): ['A SCHOLAR'],
+    (29, 1196): ['He wears it'],
+    (29, 1198): ['Lucan circles it'],
+}
+# From S006 on, pages are read over paintings in a band of at most three lines
+# (about 220 characters), which keeps the scene heading and the hairline inside
+# the painting's shade. S001-S005 keep their pagination: their authored beats
+# are keyed to it.
+STAGED_PAGE_LIMIT = 220
 
 
 def q(value):
@@ -83,13 +96,14 @@ def adapt():
             out += [f'    # Source lines {start + 1}–{i}',
                     f'    $ source_line = {start + 1}',
                     f'    $ scene_speaker = {q(who) if who else "None"}']
-            scene_pages = pages(text)
-            if n == 1 and start + 1 == 15:
-                # Two visual states occur inside one source paragraph. Preserve
-                # every word while changing the arch after the closure beat.
-                before, marker, after = text.partition('A SCHOLAR')
-                assert marker
-                scene_pages = [before.rstrip(), marker + after]
+            limit = STAGED_PAGE_LIMIT if n > 5 else 270
+            parts, rest = [], text
+            for marker in PICTURE_BREAKS.get((n, start + 1), []):
+                before, found, after = rest.partition(marker)
+                assert found and before, (n, start + 1, marker)
+                parts.append(before.rstrip())
+                rest = marker + after
+            scene_pages = [page for part in parts + [rest] for page in pages(part, limit)]
             for page_index, page in enumerate(scene_pages):
                 out += [f'    $ source_page = {page_index}',
                         '    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)']

@@ -454,8 +454,9 @@ testcase staging_pipeline:
     assert not screen 'nvl'
     assert eval staged_scene() and stage_image() == 'art/rovel/cg/convoy-guards.png'
     assert eval current_art_description() == 'Test stage.'
-    # Her line opens the scene, so the listener is Mara, who answers it.
-    assert eval scene_speaker == 'TESSA' and stage_faces('Tessa')[1]['who'] == 'MARA'
+    # Her line opens the scene's dialogue, so the listener is Mara, who answers it.
+    advance until eval scene_speaker == 'TESSA'
+    assert eval stage_faces('Tessa')[1]['who'] == 'MARA'
     assert eval stage_faces('Tessa')[0]['image'].endswith('tessa-resolute-working-ordinary.png')
     advance
     assert eval scene_speaker == 'MARA'

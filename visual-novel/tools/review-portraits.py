@@ -43,15 +43,16 @@ REFERENCES = {'tessa': VN / 'art/character-references/tessa/north-infirmary-face
 
 
 def plan_lines(scenes):
-    """[(scene, line, mode, label)] in reading order. mode is 'stage' (a line
-    over a painting), 'page' (a line on the typeset book page) or 'scene' (the
-    first line under each painting or key moment, kept as a full screen)."""
+    """[(scene, line, mode, label, page)] in reading order. mode is 'stage' (a
+    line over a painting), 'page' (a line on the typeset book page) or 'scene'
+    (the first line under each painting or key moment, kept as a full screen);
+    page is the page of the line's paragraph (a stage can start partway)."""
     beats = runpy.run_path(str(VN / 'tools/check-rovel-plan.py'), run_name='review')['load_plan']()['ROVEL_BEATS']
     lines = []
     for (scene, line, page), beat in sorted(beats.items()):
         if page == 0 and beat.get('speaker') and (not scenes or scene in scenes):
             faces = [beat[r]['expression'] for r in ('speaker', 'listener') if beat.get(r)]
-            lines.append((scene, line, 'stage', ' / '.join(faces)))
+            lines.append((scene, line, 'stage', ' / '.join(faces), 0))
     staging = json.loads((GAME / 'staging.json').read_text())['scenes']
     source = json.loads((GAME / 'source-map.json').read_text())
     present = {p.stem for p in (GAME / 'art/portraits').glob('*.png')}
@@ -65,7 +66,8 @@ def plan_lines(scenes):
         for st in painted_stages:
             first = next((b for b in blocks if b['line'] >= st.get('from', 0)), None)
             if first:
-                lines.append((number, first['line'], 'scene', Path(st['image']).stem))
+                page = st.get('page', 0) if first['line'] == st.get('from') else 0
+                lines.append((number, first['line'], 'scene', Path(st['image']).stem, page))
         sets = set()
         for entry in spec['cast'].values():
             for candidate in (entry if isinstance(entry, list) else [entry]):
@@ -81,12 +83,16 @@ def plan_lines(scenes):
             names = entry if isinstance(entry, list) else [entry]
             if who and who not in seen and any(isinstance(n, str) and n in painted for n in names):
                 seen.add(who)
-                lines.append((number, block['line'], mode, who.title()))
-    # one capture per line, in reading order
+                lines.append((number, block['line'], mode, who.title(), 0))
+    # one capture per line and page, in reading order
     unique = {}
     for entry in lines:
-        unique.setdefault(entry[:2], entry)
-    return sorted(unique.values(), key=lambda e: (e[0], e[1]))
+        unique.setdefault((entry[0], entry[1], entry[4]), entry)
+    return sorted(unique.values(), key=lambda e: (e[0], e[1], e[4]))
+
+
+def shot_name(scene, line, page):
+    return 's%03d-%03d%s.png' % (scene, line, '-p%d' % page if page else '')
 
 
 def write_test(lines):
@@ -99,22 +105,22 @@ def write_test(lines):
              '    pause 1.0',
              "    click id 'main_begin'"]
     current = 1
-    for scene, line, _page, _label in lines:
+    for scene, line, _mode, _label, page in lines:
         if scene > current + 1 or scene < current:
             steps.append("    run Jump('s%03d')" % scene)
             steps.append('    pause 0.5')
         current = scene
-        steps.append('    advance until eval (current_scene, source_line) == (%d, %d)' % (scene, line))
+        steps.append('    advance until eval (current_scene, source_line, source_page) == (%d, %d, %d)' % (scene, line, page))
         steps.append('    pause 0.8')
-        steps.append("    screenshot 's%03d-%03d.png'" % (scene, line))
+        steps.append("    screenshot '%s'" % shot_name(scene, line, page))
     TEST.write_text('\n'.join(steps) + '\n')
 
 
 def contact_sheets(lines):
     shots = OUT / 'shots'
     tiles = []
-    for scene, line, mode, label in lines:
-        path = shots / ('s%03d-%03d.png' % (scene, line))
+    for scene, line, mode, label, page in lines:
+        path = shots / shot_name(scene, line, page)
         if not path.is_file() or mode == 'scene':
             continue
         shot = Image.open(path).convert('RGB')
@@ -151,13 +157,14 @@ def scene_sheets(lines):
     for old in OUT.glob('scenes-*.png'):
         old.unlink()
     tiles = []
-    for scene, line, mode, label in lines:
-        path = shots / ('s%03d-%03d.png' % (scene, line))
+    for scene, line, mode, label, page in lines:
+        path = shots / shot_name(scene, line, page)
         if mode == 'scene' and path.is_file():
             shot = Image.open(path).convert('RGB').resize((960, 540), Image.LANCZOS)
             framed = Image.new('RGB', (960, 566), (22, 22, 22))
             framed.paste(shot, (0, 0))
-            ImageDraw.Draw(framed).text((6, 547), 'S%03d line %d  %s' % (scene, line, label), fill=(235, 235, 235))
+            where = 'S%03d line %d%s' % (scene, line, ', page %d' % (page + 1) if page else '')
+            ImageDraw.Draw(framed).text((6, 547), '%s  %s' % (where, label), fill=(235, 235, 235))
             tiles.append(framed)
     for n in range(0, len(tiles), 4):
         group = tiles[n:n + 4]
