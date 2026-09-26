@@ -1,0 +1,29 @@
+[
+  {
+    "file": "renpy/game/art/scenes/s038-northern-stores-office.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "061c8bff8b8d6690bfa7f494620c777a37ef8a76a0cf4ec50108abe4c3bdc26d",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s043-upper-stores.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "2355a89fc0897ed381682a13a84fafa9778b21c5c1fae155f92fe7456144da81",
+    "opaque": true
+  },
+  {
+    "file": "renpy/game/art/scenes/s044-arch.png",
+    "size": [
+      1920,
+      1080
+    ],
+    "sha256": "0e3ae09a18b2d872e8524c98924f24b21de4014a70e077e5ca50badc4038a454",
+    "opaque": true
+  }
+]

@@ -1,0 +1,6 @@
+(let* ((img (car(gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s043-upper-stores/casting-master.xcf" "visual-novel/art/scene-studies/s043-upper-stores/casting-master.xcf"))) (base 0))
+(gimp-image-resize img 1920 1080 124 70)
+(set! base(car(gimp-layer-new img 1920 1080 RGB-IMAGE "Empty border - outpaint guide" 100 NORMAL-MODE)))
+(gimp-image-insert-layer img base 0 99)(gimp-context-set-background '(128 128 128))(gimp-drawable-fill base BACKGROUND-FILL)
+(let* ((ly(car(gimp-image-merge-visible-layers img CLIP-TO-IMAGE))))(file-png-save RUN-NONINTERACTIVE img ly "visual-novel/art/prompts/s043-upper-stores/margin-canvas.png" "visual-novel/art/prompts/s043-upper-stores/margin-canvas.png" 0 9 0 0 0 0 0))
+(gimp-image-delete img))(gimp-quit 0)

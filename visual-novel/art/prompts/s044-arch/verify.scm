@@ -1,0 +1,7 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s044-arch/arch-delivery-master.xcf" "delivery master"))) (flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s044-arch-reopened.png" "/tmp/s044-arch-reopened.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s044-arch/arch-local-master.xcf" "local master"))) (flat (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE im flat "/tmp/s044-arch-local-reopened.png" "/tmp/s044-arch-local-reopened.png" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)

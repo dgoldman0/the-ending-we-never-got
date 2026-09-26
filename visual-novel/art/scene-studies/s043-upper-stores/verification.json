@@ -1,0 +1,46 @@
+{
+  "output_size": [
+    1920,
+    1080
+  ],
+  "native_original": [
+    1672,
+    940
+  ],
+  "native_casting": [
+    1674,
+    940
+  ],
+  "native_margin": [
+    1672,
+    941
+  ],
+  "reopen_exact_RGB": true,
+  "reopen_exact_RGBA": true,
+  "reopen_exact_file": false,
+  "candidate_sha256": "2355a89fc0897ed381682a13a84fafa9778b21c5c1fae155f92fe7456144da81",
+  "letter_hands_unchanged": true,
+  "parcel_hands_unchanged": true,
+  "wife_feet_unchanged": true,
+  "lucan_boots_unchanged": true,
+  "letter_hand_verification_box_native": [
+    427,
+    420,
+    548,
+    486
+  ],
+  "letter_wide_inspection_note": "The earlier wider x410..565 crop includes 3 pixels of upper sleeve/background feather at x410..412,y415..433; the actual opposing hand/letter contacts at x427..548,y420..486 are exact original pixels.",
+  "master_layers": 7,
+  "reopen_file_note": "PNG container bytes differ on independent export; all decoded RGB and RGBA pixels match exactly.",
+  "promoted_source": "visual-novel/renpy/game/art/scenes/s043-upper-stores.png",
+  "promoted_equals_reviewed_candidate": true,
+  "root_review": "Actual final whole/native approved, 2026-09-26",
+  "independent_peer_review": "/root/citadel_fight_finish actual final whole/native, actual wife045/048 comparison; passed 2026-09-26",
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "transparent_pixel_count": 0,
+  "opacity_repair_RGB_exact_to_prior_review": true,
+  "opacity_repair_note": "Root final numeric check caught 26180 partially transparent perimeter pixels (164..254), bbox119,65\u20131801,1015. An unmasked full-canvas margin foundation beneath all layers fixes alpha while every RGB pixel remains identical."
+}
