@@ -1,0 +1,573 @@
+{
+  "baseline": "8d6f4e4",
+  "scope": "neutral source art only; no runtime code, staging, crop or grading changes",
+  "status": "Batch 7 source-art delivery complete; awaiting connected in-game review",
+  "counts": {
+    "scenes": 22,
+    "portraits": 2
+  },
+  "assets": [
+    {
+      "path": "visual-novel/renpy/game/art/portraits/stair-healer-listening.png",
+      "sha256": "ad37ff27da428b96f888fcb00da70fe187a906c20c4860523f5969011a9cfe3f",
+      "dimensions": [
+        1394,
+        1394
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/stair-healer/listening-composition.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/stair-healer/listening-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "949bf01",
+      "new_source": true
+    },
+    {
+      "path": "visual-novel/renpy/game/art/portraits/stair-healer-speaking.png",
+      "sha256": "8d2f50b5320a77c7ab513d422319fd5d540f63547581611f735680e0d34378bc",
+      "dimensions": [
+        1394,
+        1394
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/stair-healer/speaking-composition.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/stair-healer/speaking-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "949bf01",
+      "new_source": true
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s011-bellweir-causeway.png",
+      "sha256": "9e0d0ac7a7d16c4e3c6bbf9aa82562230cdd10ccdbef7f845d1d1bac122a30b0",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/repair-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "86e9974",
+      "baseline_sha256": "d489afe39ac3108308a57e50c8595f1282dcf78bd0f61fdc7293b2c9f0e59ccc",
+      "changed_pixels": 58173,
+      "changed_bbox": [
+        1448,
+        397,
+        1659,
+        791
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s018-cats.png",
+      "sha256": "c4a1bfc0dca6d791d7319f9021afb30a2938810c13d97c404023acdffd296070",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/repair-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "86e9974",
+      "baseline_sha256": "058aa9aed13c7c3da8b99eb63b1c2e737bf02bba50bdb2b9e39a5166f35ba0ae",
+      "changed_pixels": 2073559,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s018-gray-scar-ferry-approach.png",
+      "sha256": "51b373c0cc15ac5990568e1c70f3992d4c18352f097e7bb83bf58f8d5aa7e84b",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s018-gray-scar-ferry-approach/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s018-gray-scar-ferry-approach/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "ff36c03f822684e367bb38352faacbf4258909ed3ce8a26a41629d2b960fe5c0",
+      "changed_pixels": 26901,
+      "changed_bbox": [
+        840,
+        330,
+        1366,
+        694
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+      "sha256": "9595410acd28ebf70153eea2799a3d306629297625bd8e6d7f824a1bd75bcbe4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "d0705a2582873dec0f4108241b85570c39288ee4fb77d374cad361eba88c32c9",
+      "changed_pixels": 20201,
+      "changed_bbox": [
+        452,
+        286,
+        1683,
+        608
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s020-gray-scar-riverbank.png",
+      "sha256": "73bddba64f23e62ba2290c075a541bdc6086d9993e9fd9dba6b60bdd6da969b7",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s020-gray-scar-riverbank/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s020-gray-scar-riverbank/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "31bbc21c73594b0eafb4f0e44a4de3ef4a98e13501a5d7af2eef644d586c6cc9",
+      "changed_pixels": 22296,
+      "changed_bbox": [
+        629,
+        244,
+        1044,
+        559
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+      "sha256": "969c3486396e41ff8f3eaf2adc78e69d4180445f269389e2a386a0a458e7dcb7",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s021-boat/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s021-boat/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "aa97936d9b8dc015b7c3ea6f9a3cd418311ae464c4acae62285f91d7ccfd151a",
+      "changed_pixels": 120776,
+      "changed_bbox": [
+        70,
+        36,
+        556,
+        623
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+      "sha256": "8cc16a6afa9d8e02cce9db597d2e25ad5a703ce625586b29f3a04008240897e5",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s021-gray-scar-covered-landing/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s021-gray-scar-covered-landing/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "dec365573c8a173f368f343c77e73bc479a5b3955b2b3a20e50c32d402a51da5",
+      "changed_pixels": 20086,
+      "changed_bbox": [
+        247,
+        366,
+        517,
+        491
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-lucan-returns.png",
+      "sha256": "fc6bad144ccf3eaafa388563a40c5635a5787f3b436a4a68cd233dc00d299082",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s021-lucan-returns/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s021-lucan-returns/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "d2a30092cc099c522dc11ff1aff792ab628505f7f8250a562198bdd772980ed1",
+      "changed_pixels": 7268,
+      "changed_bbox": [
+        446,
+        326,
+        610,
+        398
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+      "sha256": "6a81a4812807aefa7b210208ee392a2da59dde3f23efa3c7e8ad1ee9c837fc62",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-gray-scar/s021-serat/master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-gray-scar/s021-serat/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f20741e",
+      "baseline_sha256": "a04888ec1f8d0c157f6f3599dfb0d9322676573aa91f88bc58b31c3437747a7b",
+      "changed_pixels": 119504,
+      "changed_bbox": [
+        0,
+        6,
+        1141,
+        629
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s034-return-cargo-shed.png",
+      "sha256": "5898b5e4c9563021b026881507ea41b1672addf29906f3b81800781891fb851b",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/repair-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "86e9974",
+      "baseline_sha256": "29b5b12660d72634888739b5ba47f8e435149a0d924d09d52bd2a1377d5bd163",
+      "changed_pixels": 13293,
+      "changed_bbox": [
+        1149,
+        86,
+        1803,
+        280
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s040-mill-town.png",
+      "sha256": "f39fb9d15c68158724114d72d6cd7e70a644fe5119620a50b4379b9d3be0e72a",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/s040-mill-town/repair-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/s040-mill-town/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "37ce46a",
+      "baseline_sha256": "8318592f4f956fa16ea10439f6ca590afea27328b00d80b1bd1bcda39857e519",
+      "changed_pixels": 166219,
+      "changed_bbox": [
+        771,
+        107,
+        1730,
+        726
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png",
+      "sha256": "5a6de3c37707dc5c3d923e183227f86b8de4515338fb7d7d90ed2641a4548c1c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s050-citadel-lower-stair.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s050-citadel-lower-stair-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "facc215",
+      "baseline_sha256": "2a40433bcb5b091bf8d1f368aa01b5865105b3e939b1954e590ec97d0882d6c1",
+      "changed_pixels": 182727,
+      "changed_bbox": [
+        774,
+        383,
+        1808,
+        859
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png",
+      "sha256": "d9956bcd8594c7a0769b08b97f7efcedd10f0fd3e6653d4f4664411051488dcf",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s051-north-infirmary-court.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s051-north-infirmary-court-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "7337709",
+      "baseline_sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1",
+      "changed_pixels": 370,
+      "changed_bbox": [
+        546,
+        449,
+        574,
+        466
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s052-citadel-inner-landing.png",
+      "sha256": "436cc173ab19dec99227d83420cf50266c18f7739c768feee1ee7a2debde9136",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s052-citadel-inner-landing.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s052-citadel-inner-landing-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "7337709",
+      "baseline_sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e",
+      "changed_pixels": 450409,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png",
+      "sha256": "0aff2eda17fffe1558976242de1f7669552d91ead0a2de64080b668a10d134c5",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s052-entrance-ward.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s052-entrance-ward-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "7337709",
+      "baseline_sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4",
+      "changed_pixels": 319352,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s053-bend.png",
+      "sha256": "0de72bb6488d10cc89408d56989dd3d26032357aad7fb673218bf26a6504a1e6",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s053-bend.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s053-bend-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "7337709",
+      "baseline_sha256": "62c3a84c6c0803eebb469d69e3e8e2b1d5946c2bd06a4193f90087e6883c72fc",
+      "changed_pixels": 2073504,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-duel.png",
+      "sha256": "8574f1033fa6e97b08c4cf0da17abdf274f4fe41bb06d8df6bd38120d2379bac",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/s054-duel/batch7/independent/delivery-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/s054-duel/batch7/independent/delivery-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "72a624b",
+      "baseline_sha256": "158455f8068061d01406619e3334ee4793dee48bde37960c60f31f1c48c089a2",
+      "changed_pixels": 2073496,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s054-lever.png",
+      "sha256": "2d0afb53c691220b06c9301aa872d41600ad9b3436def1be3e1c45f5417f2105",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s054-lever-final.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s054-lever-final-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f642b2a",
+      "baseline_sha256": "0383d775e86517ba2ff6d196f582e4f2eacdf0d1f05ab3a6234e92e545978758",
+      "changed_pixels": 2072928,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s055-citadel-lower-stair-morning.png",
+      "sha256": "ff9f88eab7534290d49df62f04786d42c724b487efe65417d509247974b6492d",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s055-citadel-lower-stair-morning.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s055-citadel-lower-stair-morning-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "facc215",
+      "baseline_sha256": "40a6e2e80abc87da432c436657e2f9702c77cf17e969e4bb451c5fd3a57f2c2c",
+      "changed_pixels": 1256101,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s057-father.png",
+      "sha256": "5c39b4c57de84804a6547a5bb5f8e65a22292b179545c815297a1aaa8c8a4071",
+      "dimensions": [
+        2240,
+        1260
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/repair-master.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "b997759",
+      "baseline_sha256": "5a32c355003d75106ad21c1b352125be2f2f86d80fca16c50cdb9d3797826961",
+      "changed_pixels": 10207,
+      "changed_bbox": [
+        539,
+        349,
+        2075,
+        440
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s058-drawings.png",
+      "sha256": "cbaf889205719dbdac8169d980302f519b8d636c50fbe4cc6425a83c1f2efc41",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/s058-drawings/batch7/candidate.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/s058-drawings/batch7/candidate-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "f642b2a",
+      "baseline_sha256": "991ff56021c23916dde1bd09828d3f4a662c358bfb13ae4b934445e9dea91248",
+      "changed_pixels": 632383,
+      "changed_bbox": [
+        0,
+        0,
+        1920,
+        954
+      ]
+    },
+    {
+      "path": "visual-novel/renpy/game/art/scenes/s058-final.png",
+      "sha256": "ef7a142d10a6d03124447f28c27e39b9c8d2313cda89f90b4396bfd9473e47f4",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "alpha_range": [
+        255,
+        255
+      ],
+      "master": "visual-novel/art/scene-studies/batch7-citadel/s058-final.xcf",
+      "reopened_export": "visual-novel/art/scene-studies/batch7-citadel/s058-final-reopened.png",
+      "reopened_pixels_exact": true,
+      "last_delivery_commit": "facc215",
+      "baseline_sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184",
+      "changed_pixels": 17360,
+      "changed_bbox": [
+        458,
+        701,
+        1396,
+        1015
+      ]
+    }
+  ]
+}

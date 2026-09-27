@@ -1,32 +1,42 @@
-# Batch 7 — production handoff (in progress)
+# Batch 7 — neutral source-art delivery
 
-Request baseline: `8d6f4e4` (the other team's completed Batch 6 integration and new request). All edits start from its current neutral source PNGs, preserving the local repairs already applied by Claude. This is art production only: no screenplay, runtime, staging, crop or grading changes. The root `AGENTS.md` modification predates this work and is excluded.
+**22 repaired scene sources and two new portrait sources**, covering required items 47–61 and selected optional fixes. Request baseline: `8d6f4e4`, the other team’s completed Batch 6 integration and new request. The complete file list, hashes, dimensions, GIMP masters and exact reopened exports are in [delivery-manifest.json](delivery-manifest.json).
+
+This delivery changes neutral source art at the requested existing paths, plus the new healer portraits. It does not change screenplay, runtime code, staging, cropping or grading. The pre-existing root `AGENTS.md` modification is excluded.
 
 ## Delivered groups
 
-| Commit | Files / request items | Visual review |
+| Commit | Files / request items | Review and preservation |
 | --- | --- | --- |
-| `7337709` | S051 right hand; S052 pair stone; S053 defended bend (49,58,60) | Root whole/native; mask overlap on Tessa's bare fingers and Olan hair caught and removed before promotion; S053 blade and far horn repaired before review. |
-| `86e9974` | S018 cats, S011 Renn, S034 engineers/doorway (48,55,56) | Root whole/native and independent Gray Scar consistency check; litter-bearer interception, downhill house/gorge and Mara's footing checked; small Renn matches S011 sanctuary. |
-| `37ce46a` | S040 barrier/wheel (optional) | Root whole/native; wardkeeper hand retained after a donor halo was removed. |
-| `b997759` | S057 sentry horns/caps (59) | Root whole/native; foreground bearers, complexion, Lucan and litter unchanged. |
-| `facc215` | S050 stone/hand seam, S055 morning stone, S058 floor gaps (60 + optional S050) | Root whole/native; ordinary stone and preserved feet, furniture, dressings, coat tear and rail reviewed. |
-| `949bf01` | Stair healer speaking/listening (61) | Two separately painted directions, source scene likeness, root whole/native and independent review. Human healer, no horns; actual workcoat and apron. |
+| `7337709` | S051 right hand; S052 pair stone; S053 defended bend (49,58,60) | Root whole/native; mask overlap on Tessa’s fingers and Olan’s hair caught and removed; S053 blade and far horn repaired before promotion. |
+| `86e9974` | S018 cats, S011 Renn, S034 engineers/doorway (48,55,56) | Root whole/native and independent Gray Scar comparison; litter-bearer interception, downhill house/gorge, Mara’s footing and small Renn checked. |
+| `37ce46a` | S040 barrier/wheel (optional) | Root whole/native; wardkeeper’s hand retained after removing a donor halo. |
+| `b997759` | S057 sentry horns/caps (59) | Root whole/native; foreground bearers, their complexions, Lucan and litter unchanged. |
+| `facc215` | S050 stone/hand seam, S055 morning stone, S058 floor gaps (60 + optional S050) | Root whole/native; stone, feet, furniture, dressings, coat tear and rail checked. |
+| `949bf01` | Stair healer speaking/listening (61) | Separate directions, human source-scene identity, root whole/native and independent review. |
+| `f20741e` | Seven Gray Scar paintings (50–54,59; optional family boat/patient hair) | Root whole/native plus independent horn/patient review; functional crossbows, paired Lucan horns, adult litters and Serat’s distinct dark-skinned brother. |
+| `f642b2a` | S054 lever (57), S058 drawings (optional) | Connected three-step dais; Valcair’s uphill reach and horns; Tessa’s injured RIGHT hand and bare LEFT lever grip. Drawings face outward over paving; both reviewers caught and corrected mask fringes. |
+| `2e99f11` | Immutable pre-repair citadel inputs | Scripts now reopen the recorded starting snapshots; no further source-pixel change. |
+| `72a624b` | S054 duel (47) | Rebuilt from independently checked figure components, with root and peer whole/native review of the same final image; straight hilt/blade, valid grips, pillar impact outside the grounded shelter, black ward at the actual elbow contact. |
 
-Gray Scar seven-file group was delivered in `f20741e`: S018 approach, S019 ferryhouse, S020 riverbank, and four S021 paintings. Root whole/native review covered the actual crossbow strings, paired horns, matching dark-skinned brother, full-size adult litters, departing families and patient hair. Preserved earlier local repairs were checked against baseline hashes. The remaining S054/S058 studies are being finalized. This document is not a completion claim until their final status and manifest are added.
+`b3e01c7` is a diagnostic checkpoint, not a duel delivery. The early duel files named `candidate.png` and `delivery-master.xcf` in the parent study directory remain rejected. Use the selected [independent delivery](../s054-duel/batch7/independent/README.md), [PNG](../s054-duel/batch7/independent/delivery.png) and [layered master](../s054-duel/batch7/independent/delivery-master.xcf).
 
-## Required remaining work
+## What changed in the duel
 
-- S054 duel (47): unapproved drafts remain isolated in `../s054-duel/batch7/`. The user rejected the retained spear grip and thin sword. Research and a separate photographed-stance component replaced the earlier approach. Full spatial interaction must clear before source replacement; connected anatomy alone is not a passing review.
-- S054 lever (57): current candidate's three front risers merge into the hall at the rear. It was rejected for elevation inconsistency; a physically connected platform is being rebuilt.
-- Optional S058 drawings: local background replacement toward market paving, with the actual drawings, hands, brace and lap preserved.
+The rejected revisions had preserved the faulty interaction. The replacement retains a separately checked spear stance and Tessa’s correctly handed figure; their room, weapons, shelter, contact shadows and black ward are editable components in GIMP. The spear’s unheld forward section is deliberately shorter, stopping at a nearer pillar before reaching her head or palm. The sword passes in front of that pillar and its outer cutting edge meets the forward elbow, with the point extending past contact. A small rigid rotation of the complete glove and hilt aligns the handle with the straight blade; it does not redraw the fingers. Valcair retains two heavy backward horns and his black-and-silver hair.
 
-## Carried optional items
+Root and an independent reviewer inspected the same native image (`df48f5df…4029daf`), including both grips, cuff/guard/pommel alignment, elbow contact, shelter path, pillar depth, foot contacts and mask edges. The native assembly is 1672×941; delivery uses one uniform scale factor on both axes and a final canvas trim to 1920×1080. It is not a claim of newly generated native 1920 detail.
 
-The S004 emblem set and S049/S052 scabbard moves remain outside the delivered repairs unless explicitly listed in the final manifest. Prior attempts flattened decorated fabric, while the destination left hips are obscured by other figures or the table. The ambiguous S049 support also remains: inspection has not established which visible member could be removed without damaging the structure. These are explicit optional deferrals, not cleared fixes.
+## Optional carryovers
+
+Completed: S040 barrier/wheel; families in the first S021 boat; the patient’s light-brown hair across S019/S020; outward-facing S058 drawings; S050’s hand seam.
+
+Deferred: S004 emblems and the S049/S052 scabbard moves. Earlier emblem attempts flattened decorated fabric, and the destination hips are obscured by people or the table. The S049 table support remains: its current shape plausibly reads as a rear corner leg, so no member was removed without a clear structural case. These optional items are not marked fixed.
 
 ## Verification and next owner
 
-Each promoted group includes brief, generation prompts, meaningful GIMP masters, native review evidence, and exact reopened-export checks. Scene sources are neutral opaque1920×1080; healer portrait sources are transparent1394×1394 with independently composed gazes. Check each subgroup's verification record for its source hash and protected areas.
+Every delivered source matches its recorded reopened GIMP export. Scenes are opaque 16:9: 21 at 1920×1080; S057 father retains its existing 2240×1260. Both healer portraits are transparent 1394×1394. The manifest records baseline hashes and changed-pixel bounds; subgroup records describe protected areas. Full reblocks such as S053 and the duel intentionally change broad areas. The lever retains source face/hand details through uniform transforms, so those are not claimed byte-identical after resampling. The drawings preserve 1,437,648 foreground interior pixels exactly.
 
-Claude performs the next crop, grade and connected in-game check. Source-level visual review and an exact XCF export do not establish that the connected reading experience is accepted. Stop at this batch's handoff; the next batch awaits the other team's review.
+Generation used the built-in image tool; actual masks, assembly, corrections and exports use GIMP. Prompts are under [batch7-cats-minor](../../prompts/batch7-cats-minor/), [batch7-gray-scar](../../prompts/batch7-gray-scar/), [batch7-citadel](../../prompts/batch7-citadel/), [s054-duel/batch7](../../prompts/s054-duel/batch7/) and [s058-drawings/batch7](../../prompts/s058-drawings/batch7/). Masters and subgroup observations remain alongside their scene studies.
+
+**Stopped at the end of Batch 7.** The other team performs cropping, grading and connected in-game review before the next request. Source-level visual review and an exact export do not establish runtime or user approval.
