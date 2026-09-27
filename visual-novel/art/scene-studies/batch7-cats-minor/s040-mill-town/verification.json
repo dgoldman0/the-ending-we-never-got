@@ -1,0 +1,25 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "alpha_min": 255,
+  "exact_reopened": true,
+  "sha256": "f39fb9d15c68158724114d72d6cd7e70a644fe5119620a50b4379b9d3be0e72a",
+  "changed_pixels": 166219,
+  "change_bbox": [
+    771,
+    107,
+    1730,
+    726
+  ],
+  "protected_changed": {
+    "Tessa_face": 0,
+    "Elin_face": 0,
+    "Mara_face": 0,
+    "Olan_face": 0,
+    "wardkeeper_face": 0,
+    "wardkeeper_left_hand": 0,
+    "wardkeeper_right_hand": 0
+  }
+}
