@@ -1,0 +1,101 @@
+{
+  "source": "visual-novel/art/scene-studies/batch7-gray-scar/s021-lucan-returns/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch7-gray-scar/s021-lucan-returns",
+  "edits": [
+    {
+      "name": "Same adult woman and full-length litter at return beat",
+      "donor": "visual-novel/art/scene-studies/batch7-gray-scar/s021-lucan-returns/adult-litter-donor.png",
+      "scale": [
+        521,
+        439
+      ],
+      "offset": [
+        349,
+        190
+      ],
+      "polygon": [
+        [
+          447,
+          329
+        ],
+        [
+          467,
+          326
+        ],
+        [
+          490,
+          331
+        ],
+        [
+          509,
+          333
+        ],
+        [
+          529,
+          341
+        ],
+        [
+          549,
+          349
+        ],
+        [
+          565,
+          356
+        ],
+        [
+          585,
+          362
+        ],
+        [
+          602,
+          369
+        ],
+        [
+          609,
+          381
+        ],
+        [
+          604,
+          393
+        ],
+        [
+          592,
+          397
+        ],
+        [
+          574,
+          395
+        ],
+        [
+          551,
+          391
+        ],
+        [
+          529,
+          387
+        ],
+        [
+          507,
+          385
+        ],
+        [
+          485,
+          383
+        ],
+        [
+          462,
+          380
+        ],
+        [
+          451,
+          373
+        ],
+        [
+          448,
+          357
+        ]
+      ],
+      "feather": 1.5
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "source": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse",
+  "edits": [
+    {
+      "name": "Upright transverse-limb crossbow at wall",
+      "donor": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse/props-donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          1580,
+          402
+        ],
+        [
+          1616,
+          405
+        ],
+        [
+          1621,
+          438
+        ],
+        [
+          1680,
+          444
+        ],
+        [
+          1682,
+          482
+        ],
+        [
+          1654,
+          512
+        ],
+        [
+          1626,
+          523
+        ],
+        [
+          1614,
+          598
+        ],
+        [
+          1562,
+          607
+        ],
+        [
+          1555,
+          581
+        ],
+        [
+          1555,
+          526
+        ],
+        [
+          1564,
+          488
+        ],
+        [
+          1550,
+          474
+        ],
+        [
+          1556,
+          457
+        ],
+        [
+          1572,
+          447
+        ]
+      ],
+      "feather": 2
+    },
+    {
+      "name": "Wounded northern man temple horns",
+      "donor": "visual-novel/art/scene-studies/batch7-gray-scar/s019-gray-scar-ferryhouse/props-donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          592,
+          405
+        ],
+        [
+          602,
+          385
+        ],
+        [
+          625,
+          382
+        ],
+        [
+          642,
+          387
+        ],
+        [
+          659,
+          394
+        ],
+        [
+          671,
+          408
+        ],
+        [
+          665,
+          427
+        ],
+        [
+          650,
+          426
+        ],
+        [
+          637,
+          416
+        ],
+        [
+          621,
+          418
+        ],
+        [
+          612,
+          434
+        ],
+        [
+          598,
+          434
+        ]
+      ],
+      "feather": 2
+    },
+    {
+      "name": "Near solid backward horn",
+      "donor": "visual-novel/art/scene-studies/batch7-gray-scar/s020-gray-scar-riverbank/horns-visible-donor.png",
+      "scale": [
+        298,
+        175
+      ],
+      "offset": [
+        341,
+        251
+      ],
+      "flip": true,
+      "polygon": [
+        [
+          452.25,
+          304.75
+        ],
+        [
+          458.5,
+          307.25
+        ],
+        [
+          467.25,
+          306.0
+        ],
+        [
+          479.75,
+          297.25
+        ],
+        [
+          491.0,
+          292.25
+        ],
+        [
+          501.0,
+          293.5
+        ],
+        [
+          511.0,
+          297.25
+        ],
+        [
+          514.75,
+          301.0
+        ],
+        [
+          512.25,
+          304.75
+        ],
+        [
+          502.25,
+          299.75
+        ],
+        [
+          496.0,
+          299.75
+        ],
+        [
+          489.75,
+          302.25
+        ],
+        [
+          479.75,
+          307.25
+        ],
+        [
+          471.0,
+          311.0
+        ],
+        [
+          464.75,
+          312.25
+        ],
+        [
+          456.0,
+          309.75
+        ]
+      ],
+      "feather": 0.55
+    },
+    {
+      "name": "Far matched backward horn",
+      "donor": "visual-novel/art/scene-studies/batch7-gray-scar/s020-gray-scar-riverbank/horns-visible-donor.png",
+      "scale": [
+        298,
+        175
+      ],
+      "offset": [
+        341,
+        251
+      ],
+      "flip": true,
+      "polygon": [
+        [
+          462.25,
+          287.25
+        ],
+        [
+          467.25,
+          289.75
+        ],
+        [
+          476.0,
+          289.75
+        ],
+        [
+          484.75,
+          287.25
+        ],
+        [
+          491.0,
+          286.0
+        ],
+        [
+          496.0,
+          287.25
+        ],
+        [
+          491.0,
+          291.0
+        ],
+        [
+          483.5,
+          294.75
+        ],
+        [
+          474.75,
+          296.0
+        ],
+        [
+          469.75,
+          293.5
+        ],
+        [
+          464.75,
+          292.25
+        ]
+      ],
+      "feather": 0.55
+    }
+  ]
+}

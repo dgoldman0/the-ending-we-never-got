@@ -1,0 +1,48 @@
+{
+  "promoted_utc": "2026-09-27T06:02:07.038306+00:00",
+  "root_visual_review": "All seven whole scenes and native correction crops cleared before promotion; S019 horns and S020 patient hair re-reviewed after final edits.",
+  "sources": {
+    "s018-gray-scar-ferry-approach": {
+      "path": "visual-novel/renpy/game/art/scenes/s018-gray-scar-ferry-approach.png",
+      "previous_sha256": "ff36c03f822684e367bb38352faacbf4258909ed3ce8a26a41629d2b960fe5c0",
+      "promoted_sha256": "51b373c0cc15ac5990568e1c70f3992d4c18352f097e7bb83bf58f8d5aa7e84b",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s019-gray-scar-ferryhouse": {
+      "path": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+      "previous_sha256": "d0705a2582873dec0f4108241b85570c39288ee4fb77d374cad361eba88c32c9",
+      "promoted_sha256": "9595410acd28ebf70153eea2799a3d306629297625bd8e6d7f824a1bd75bcbe4",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s020-gray-scar-riverbank": {
+      "path": "visual-novel/renpy/game/art/scenes/s020-gray-scar-riverbank.png",
+      "previous_sha256": "31bbc21c73594b0eafb4f0e44a4de3ef4a98e13501a5d7af2eef644d586c6cc9",
+      "promoted_sha256": "73bddba64f23e62ba2290c075a541bdc6086d9993e9fd9dba6b60bdd6da969b7",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s021-serat": {
+      "path": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+      "previous_sha256": "a04888ec1f8d0c157f6f3599dfb0d9322676573aa91f88bc58b31c3437747a7b",
+      "promoted_sha256": "6a81a4812807aefa7b210208ee392a2da59dde3f23efa3c7e8ad1ee9c837fc62",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s021-boat": {
+      "path": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+      "previous_sha256": "aa97936d9b8dc015b7c3ea6f9a3cd418311ae464c4acae62285f91d7ccfd151a",
+      "promoted_sha256": "969c3486396e41ff8f3eaf2adc78e69d4180445f269389e2a386a0a458e7dcb7",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s021-gray-scar-covered-landing": {
+      "path": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+      "previous_sha256": "dec365573c8a173f368f343c77e73bc479a5b3955b2b3a20e50c32d402a51da5",
+      "promoted_sha256": "8cc16a6afa9d8e02cce9db597d2e25ad5a703ce625586b29f3a04008240897e5",
+      "promoted_bytes_equal_reviewed_candidate": true
+    },
+    "s021-lucan-returns": {
+      "path": "visual-novel/renpy/game/art/scenes/s021-lucan-returns.png",
+      "previous_sha256": "d2a30092cc099c522dc11ff1aff792ab628505f7f8250a562198bdd772980ed1",
+      "promoted_sha256": "fc6bad144ccf3eaafa388563a40c5635a5787f3b436a4a68cd233dc00d299082",
+      "promoted_bytes_equal_reviewed_candidate": true
+    }
+  }
+}

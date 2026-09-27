@@ -1,0 +1,21 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "alpha": [
+    255,
+    255
+  ],
+  "reopened_exact": true,
+  "source_current_unchanged": true,
+  "sha256": "6a81a4812807aefa7b210208ee392a2da59dde3f23efa3c7e8ad1ee9c837fc62",
+  "source_sha256": "a04888ec1f8d0c157f6f3599dfb0d9322676573aa91f88bc58b31c3437747a7b",
+  "changed_bbox": [
+    0,
+    6,
+    1141,
+    629
+  ],
+  "meaningful_layers": 4
+}

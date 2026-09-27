@@ -1,0 +1,149 @@
+{
+  "s018-gray-scar-ferry-approach": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "51b373c0cc15ac5990568e1c70f3992d4c18352f097e7bb83bf58f8d5aa7e84b",
+    "source_sha256": "ff36c03f822684e367bb38352faacbf4258909ed3ce8a26a41629d2b960fe5c0",
+    "changed_bbox": [
+      840,
+      330,
+      1366,
+      694
+    ],
+    "meaningful_layers": 6
+  },
+  "s019-gray-scar-ferryhouse": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "9595410acd28ebf70153eea2799a3d306629297625bd8e6d7f824a1bd75bcbe4",
+    "source_sha256": "d0705a2582873dec0f4108241b85570c39288ee4fb77d374cad361eba88c32c9",
+    "changed_bbox": [
+      452,
+      286,
+      1683,
+      608
+    ],
+    "meaningful_layers": 5
+  },
+  "s020-gray-scar-riverbank": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "73bddba64f23e62ba2290c075a541bdc6086d9993e9fd9dba6b60bdd6da969b7",
+    "source_sha256": "31bbc21c73594b0eafb4f0e44a4de3ef4a98e13501a5d7af2eef644d586c6cc9",
+    "changed_bbox": [
+      629,
+      244,
+      1044,
+      559
+    ],
+    "meaningful_layers": 4
+  },
+  "s021-serat": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "6a81a4812807aefa7b210208ee392a2da59dde3f23efa3c7e8ad1ee9c837fc62",
+    "source_sha256": "a04888ec1f8d0c157f6f3599dfb0d9322676573aa91f88bc58b31c3437747a7b",
+    "changed_bbox": [
+      0,
+      6,
+      1141,
+      629
+    ],
+    "meaningful_layers": 4
+  },
+  "s021-boat": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "969c3486396e41ff8f3eaf2adc78e69d4180445f269389e2a386a0a458e7dcb7",
+    "source_sha256": "aa97936d9b8dc015b7c3ea6f9a3cd418311ae464c4acae62285f91d7ccfd151a",
+    "changed_bbox": [
+      70,
+      36,
+      556,
+      623
+    ],
+    "meaningful_layers": 3
+  },
+  "s021-gray-scar-covered-landing": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "8cc16a6afa9d8e02cce9db597d2e25ad5a703ce625586b29f3a04008240897e5",
+    "source_sha256": "dec365573c8a173f368f343c77e73bc479a5b3955b2b3a20e50c32d402a51da5",
+    "changed_bbox": [
+      247,
+      366,
+      517,
+      491
+    ],
+    "meaningful_layers": 2
+  },
+  "s021-lucan-returns": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "source_current_unchanged": true,
+    "sha256": "fc6bad144ccf3eaafa388563a40c5635a5787f3b436a4a68cd233dc00d299082",
+    "source_sha256": "d2a30092cc099c522dc11ff1aff792ab628505f7f8250a562198bdd772980ed1",
+    "changed_bbox": [
+      446,
+      326,
+      610,
+      398
+    ],
+    "meaningful_layers": 2
+  }
+}
