@@ -1,0 +1,6 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/action-donor.png" "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/action-donor.png"))))
+ (gimp-image-crop im 290 400 140 190)
+ (gimp-image-scale im 870 1200)
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/tessa-edit-crop.png" "tessa-edit-crop.png" 0 9 0 0 0 0 0)
+ (gimp-image-delete im))
+(gimp-quit 0)

@@ -1,0 +1,5 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/action-donor.png" "base"))))
+ (gimp-image-crop im 552 641 1120 300)
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/mara-ground-target.png" "target" 0 9 0 0 0 0 0)
+ (gimp-image-delete im))
+(gimp-quit 0)

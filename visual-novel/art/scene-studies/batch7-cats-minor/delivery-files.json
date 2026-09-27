@@ -1,0 +1,20 @@
+[
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s018-cats.png",
+    "candidate": "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/candidate.png",
+    "master": "visual-novel/art/scene-studies/batch7-cats-minor/s018-cats/repair-master.xcf",
+    "sha256": "c4a1bfc0dca6d791d7319f9021afb30a2938810c13d97c404023acdffd296070"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s011-bellweir-causeway.png",
+    "candidate": "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/candidate.png",
+    "master": "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/repair-master.xcf",
+    "sha256": "9e0d0ac7a7d16c4e3c6bbf9aa82562230cdd10ccdbef7f845d1d1bac122a30b0"
+  },
+  {
+    "path": "visual-novel/renpy/game/art/scenes/s034-return-cargo-shed.png",
+    "candidate": "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/candidate.png",
+    "master": "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/repair-master.xcf",
+    "sha256": "5898b5e4c9563021b026881507ea41b1672addf29906f3b81800781891fb851b"
+  }
+]

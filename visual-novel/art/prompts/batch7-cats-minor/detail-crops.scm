@@ -1,0 +1,8 @@
+(define (crop file out x y w h)
+ (let* ((im (car (gimp-file-load RUN-NONINTERACTIVE file file))))
+ (gimp-image-crop im w h x y)
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) out out 0 9 0 0 0 0 0)
+ (gimp-image-delete im)))
+(crop "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/before.png" "visual-novel/art/scene-studies/batch7-cats-minor/s011-bellweir-causeway/edit-target.png" 1320 300 420 550)
+(crop "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/before.png" "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/edit-target.png" 1000 50 880 610)
+(gimp-quit 0)

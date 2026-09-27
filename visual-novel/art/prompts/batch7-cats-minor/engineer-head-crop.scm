@@ -1,0 +1,6 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/candidate.png" "base"))))
+ (gimp-image-crop im 200 190 1100 55)
+ (gimp-image-scale im 800 760)
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) "visual-novel/art/scene-studies/batch7-cats-minor/s034-return-cargo-shed/engineer-head-target.png" "target" 0 9 0 0 0 0 0)
+ (gimp-image-delete im))
+(gimp-quit 0)

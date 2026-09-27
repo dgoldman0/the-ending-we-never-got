@@ -1,0 +1,50 @@
+{
+  "s018-cats": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "exact_reopened": true,
+    "sha256": "c4a1bfc0dca6d791d7319f9021afb30a2938810c13d97c404023acdffd296070",
+    "changed_pixels": 2073559,
+    "change_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  },
+  "s011-bellweir-causeway": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "exact_reopened": true,
+    "sha256": "9e0d0ac7a7d16c4e3c6bbf9aa82562230cdd10ccdbef7f845d1d1bac122a30b0",
+    "changed_pixels": 58173,
+    "change_bbox": [
+      1448,
+      397,
+      1659,
+      791
+    ]
+  },
+  "s034-return-cargo-shed": {
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha_min": 255,
+    "exact_reopened": true,
+    "sha256": "5898b5e4c9563021b026881507ea41b1672addf29906f3b81800781891fb851b",
+    "changed_pixels": 13293,
+    "change_bbox": [
+      1149,
+      86,
+      1803,
+      280
+    ]
+  }
+}
