@@ -1,0 +1,7 @@
+(load "visual-novel/art/prompts/batch7-citadel/compose.scm")
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png" "current source"))))
+(gimp-item-set-name (car (gimp-image-get-active-layer img)) "CURRENT source; repaired right pillar and all embrace/costume fixes retained")
+(patch img "visual-novel/art/scene-studies/batch7-citadel/s050-stair-donor.png" "Plain limestone step faces; original silhouettes and Olan boots protected" 660 610 1220 320 #(1453 444 1795 426 1808 851 1287 859 1287 798 1320 795 1320 737 1352 735 1351 678 1366 675 1368 632 1387 630 1385 592 1401 589 1403 551 1422 547 1421 510 1437 506 1437 478 1453 475) 1.2)
+(patch img "visual-novel/art/scene-studies/batch7-citadel/s050-hand-donor.png" "Continuous back-of-hand skin removes former guard patch seam; fingers and sleeve remain" 200 140 730 350 #(780 388 790 384 806 387 815 393 813 414 810 421 788 423 779 416 775 406) 2)
+(finish img "visual-novel/art/scene-studies/batch7-citadel/s050-citadel-lower-stair"))
+(gimp-quit 0)

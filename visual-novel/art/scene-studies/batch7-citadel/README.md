@@ -13,3 +13,11 @@ Prompts and reproducible GIMP scripts are in `../../prompts/batch7-citadel/`. Th
 Native S053 generation is 1672×941; delivery uses uniform scaling to 1920×1081 and one bottom-row crop, not an aspect-ratio stretch. The other delivered PNGs keep their original 1920×1080 canvas.
 
 Other citadel candidates in this folder are still work in progress until explicitly recorded below.
+
+## Delivered second group: S050, S055 morning, S058 final
+
+- **S050 / item 60 and optional hand seam:** a crop-specific donor replaces the embossed stair-face pattern with restrained limestone while keeping step geometry, Olan's boots and the current repaired right pillar. A separate small skin mask repairs the straight paste seam across Mara's left hand without replacing her fingers, sleeve or embrace.
+- **S055 morning / item 60:** replace the architectural surfaces with matte limestone through an individual figure/rail exclusion mask. The snowy valley, current local winter patch, Tessa's right-hand dressing, Lucan's left dressing and both existing coat tears, all face cores, timber rail and hardware remain. Close review removed old-material islands behind the healer's forearm and the bald escort's head.
+- **S058 final / item 60:** finish the previously supplied limestone through the floor openings around the hem, shoes, table, chair and stool. The old floor donor is reused only as material input; the current source is the base. Its source hash matches the earlier delivered floor composite. The initial fuzzy-selection experiment selected furniture and was rejected; final masks trace individual floor gaps, with a separate original-shoe protection layer.
+
+Root reviewed these three whole and at native material/contact details before authorizing promotion. `subgroup-2-verification.json` records source/candidate hashes and exact reopened exports. Each source was checked against the committed current file immediately before replacement. The likeness, lighting, props and source action are unchanged. Layered masters and reproducible scripts accompany the candidates.

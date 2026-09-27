@@ -1,0 +1,90 @@
+[
+  {
+    "asset": "s050-citadel-lower-stair",
+    "source_sha256": "2a40433bcb5b091bf8d1f368aa01b5865105b3e939b1954e590ec97d0882d6c1",
+    "candidate_sha256": "5a6de3c37707dc5c3d923e183227f86b8de4515338fb7d7d90ed2641a4548c1c",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 182727,
+    "changed_bbox": [
+      774,
+      383,
+      1808,
+      859
+    ],
+    "protected_rectangles": {
+      "embrace faces": 0,
+      "repaired right pillar core": 0
+    }
+  },
+  {
+    "asset": "s055-citadel-lower-stair-morning",
+    "source_sha256": "40a6e2e80abc87da432c436657e2f9702c77cf17e969e4bb451c5fd3a57f2c2c",
+    "candidate_sha256": "ff9f88eab7534290d49df62f04786d42c724b487efe65417d509247974b6492d",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 1256101,
+    "changed_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "protected_rectangles": {
+      "Tessa face": 0,
+      "Elin face": 0,
+      "Mara face": 0,
+      "healer face": 0,
+      "Olan face": 0,
+      "Lucan face": 0,
+      "Tessa right dressing": 0,
+      "Lucan left dressing": 0,
+      "current upper coat tear": 0,
+      "current winter patch": 0,
+      "bald escort face": 0
+    }
+  },
+  {
+    "asset": "s058-final",
+    "source_sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184",
+    "candidate_sha256": "ef7a142d10a6d03124447f28c27e39b9c8d2313cda89f90b4396bfd9473e47f4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 17360,
+    "changed_bbox": [
+      458,
+      701,
+      1396,
+      1015
+    ],
+    "protected_rectangles": {
+      "all faces and table top": 0,
+      "Tessa hem": 0,
+      "father shoe": 0,
+      "chair left leg": 0,
+      "chair right leg": 0,
+      "stool leg": 0
+    }
+  }
+]
