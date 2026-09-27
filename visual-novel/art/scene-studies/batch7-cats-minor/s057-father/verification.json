@@ -1,0 +1,29 @@
+{
+  "size": [
+    2240,
+    1260
+  ],
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "xcf_layers": 7,
+  "reopened_rgba_exact": true,
+  "changed_pixels": 10207,
+  "changed_bbox": [
+    539,
+    349,
+    2075,
+    440
+  ],
+  "protected_changed_pixels": {
+    "all_foreground_hands_litter_bodies_below_heads": 0,
+    "lucan_face_horns": 0,
+    "lucan_coat": 0,
+    "left_bearer_face": 0,
+    "right_bearer_face_complexion_horns": 0,
+    "human_medics": 0
+  },
+  "source_sha256": "5a32c355003d75106ad21c1b352125be2f2f86d80fca16c50cdb9d3797826961",
+  "candidate_sha256": "5c39b4c57de84804a6547a5bb5f8e65a22292b179545c815297a1aaa8c8a4071"
+}

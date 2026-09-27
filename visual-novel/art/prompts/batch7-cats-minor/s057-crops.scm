@@ -1,0 +1,7 @@
+(define (crop out x y w h)
+ (let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/before.png" "source"))))
+ (gimp-image-crop im w h x y) (gimp-image-scale im (* 3 w) (* 3 h))
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) out out 0 9 0 0 0 0 0) (gimp-image-delete im)))
+(crop "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/left-target.png" 500 305 385 250)
+(crop "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/right-target.png" 1650 325 500 250)
+(gimp-quit 0)

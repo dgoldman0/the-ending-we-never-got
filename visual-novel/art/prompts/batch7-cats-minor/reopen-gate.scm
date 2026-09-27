@@ -1,0 +1,6 @@
+(let* ((d "visual-novel/art/scene-studies/batch7-cats-minor/s057-father/") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append d "repair-master.xcf") "master"))) (ly 0))
+(gimp-message (number->string (car (gimp-image-get-layers im))))
+(set! ly (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(file-png-save RUN-NONINTERACTIVE im ly (string-append d "reopened.png") "reopened" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)
