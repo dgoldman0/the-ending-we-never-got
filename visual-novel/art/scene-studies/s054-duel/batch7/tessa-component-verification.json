@@ -1,0 +1,22 @@
+{
+  "size": [
+    1672,
+    941
+  ],
+  "layer_count": 1,
+  "editable_alpha_mask": true,
+  "source": "08-rejected-folded-arm.png; Tessa only reused, rejected Valcair not included",
+  "unchanged_placement": true,
+  "source_rgb_preserved_at_every_nonzero_alpha_pixel": true,
+  "reopened_rgba_exact": true,
+  "visible_bbox": [
+    79,
+    219,
+    681,
+    889
+  ],
+  "opaque_pixels": 111031,
+  "partial_alpha_pixels": 3989,
+  "source_sha256": "a4dc3ed391f0c86ac070fa7c5055fd2a844d0c9fdd8dcea91cfadc79ef84e13c",
+  "component_sha256": "a11a8aa89ab2e75a89bb84baa4544a422ceba12b02efe60957be55b14715198c"
+}

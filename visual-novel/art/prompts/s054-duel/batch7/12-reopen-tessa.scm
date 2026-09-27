@@ -1,0 +1,6 @@
+(let* ((d "visual-novel/art/scene-studies/s054-duel/batch7/") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append d "tessa-component.xcf") "component"))) (ly 0))
+(set! ly (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(gimp-layer-resize-to-image-size ly)
+(file-png-save RUN-NONINTERACTIVE im ly (string-append d "tessa-component-reopened.png") "component" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)
