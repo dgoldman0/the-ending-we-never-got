@@ -1,0 +1,6 @@
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s058-drawings/batch7/candidate.xcf" "Final drawings master"))) (layers (cadr (gimp-image-get-layers img))) (fg (vector-ref layers 0)) (mask (car (gimp-layer-get-mask fg))) (out (car (gimp-image-new 1920 1080 GRAY))) (layer (car (gimp-layer-new-from-drawable mask out))))
+(gimp-image-insert-layer out layer 0 0)
+(file-png-save RUN-NONINTERACTIVE out layer "visual-novel/art/scene-studies/s058-drawings/batch7/foreground-mask.png" "Final foreground silhouette" 0 9 0 0 0 0 0)
+(gimp-image-delete out)
+(gimp-image-delete img))
+(gimp-quit 0)

@@ -1,0 +1,7 @@
+(load "visual-novel/art/prompts/batch7-citadel/compose.scm")
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s054-lever.png" "current source"))))
+(gimp-item-set-name (car (gimp-image-get-active-layer img)) "CURRENT source; bodies, both hands, spear and Tessa action retained")
+(patch img "visual-novel/art/scene-studies/batch7-citadel/s054-valcair-donor.png" "Coherent portrait-matched Valcair head; broad feather in adjacent floor and hair contact" 320 270 1080 300 #(1154 304 1324 304 1326 464 1287 489 1236 474 1204 437 1171 395 1145 365) 10)
+(patch img "visual-novel/renpy/game/art/scenes/s054-lever.png" "Restore original supporting forearm and hand at floor contact" 1920 1080 0 0 #(1270 432 1292 430 1307 443 1317 456 1332 465 1345 471 1347 485 1331 494 1309 491 1283 481 1267 468 1260 451) 2)
+(finish img "visual-novel/art/scene-studies/batch7-citadel/s054-rejected-rear-head"))
+(gimp-quit 0)

@@ -1,0 +1,19 @@
+{
+  "reopened_rgba_exact": true,
+  "size": [
+    1920,
+    1080
+  ],
+  "alpha_extrema": [
+    255,
+    255
+  ],
+  "only_final_fringe_changed_pixels": 1760,
+  "final_fringe_bbox": [
+    1677,
+    629,
+    1713,
+    860
+  ],
+  "candidate_sha256": "cbaf889205719dbdac8169d980302f519b8d636c50fbe4cc6425a83c1f2efc41"
+}

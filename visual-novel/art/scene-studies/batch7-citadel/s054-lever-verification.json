@@ -1,0 +1,22 @@
+{
+  "source_sha256": "0383d775e86517ba2ff6d196f582e4f2eacdf0d1f05ab3a6234e92e545978758",
+  "candidate_sha256": "2d0afb53c691220b06c9301aa872d41600ad9b3436def1be3e1c45f5417f2105",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "alpha": [
+    255,
+    255
+  ],
+  "reopened_exact": true,
+  "layers": 4,
+  "restored_source_regions": [
+    "Tessa facial and hair core",
+    "Tessa injured RIGHT glove with blood",
+    "Tessa bare LEFT lever grip"
+  ],
+  "source_region_transform": "GIMP uniform scale plus rotation and translation estimated from image correspondences; no exact source-pixel equality claim after interpolation",
+  "physical_rebuild": "Valcair relocated to the lower visible right stair; connected three-riser platform and left retaining wall; bounded rear top; spear butt toward reaching hand",
+  "source_promoted": true
+}

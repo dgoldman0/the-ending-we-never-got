@@ -1,0 +1,26 @@
+{
+  "source_sha256": "991ff56021c23916dde1bd09828d3f4a662c358bfb13ae4b934445e9dea91248",
+  "candidate_sha256": "cbaf889205719dbdac8169d980302f519b8d636c50fbe4cc6425a83c1f2efc41",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "alpha": [
+    255,
+    255
+  ],
+  "reopened_exact": true,
+  "opaque_foreground_core_one_pixel_inset_count": 1437648,
+  "changed_opaque_foreground_core_pixels": 0,
+  "protected_regions_changed_pixels": {
+    "kitchen drawing ink and interior paper": 0,
+    "Iven drawing including moustache removal": 0,
+    "left palm core": 0,
+    "right brace core": 0,
+    "wood board below papers": 0,
+    "foreground lap": 0
+  },
+  "changed_pixel_count": 632383,
+  "mask_export_note": "Ten antialiased boundary pixels round to 255 in the 8-bit exported mask but blend slightly in the XCF projection. Their output RGB differences are 1\u20134levels; all 1,437,648 fully inset foreground pixels are exact. No original RGB painting.",
+  "source_promoted": true
+}
