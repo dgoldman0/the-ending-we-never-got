@@ -50,6 +50,15 @@ sliver, the old weapon left behind a new crossbow, stars painted on Mara's
 shields, the old Renn's hair and boot, badges without the split, a patch of
 summer valley left in the S055 snow and the flat base of the S050 pillar.
 
+And from the check of batch 7 (27 September 2026), in BATCH7: blue banners
+with the temple's gold sun in Valcair's throne hall (S054), given the
+northern green and the white split star; a horn for an ear on the caged crag
+cat and a pavement notch in the brother's trouser leg (S021); the last
+stroke of Mara's removed scabbard (S011); two patches of the old floor at
+the S058 back room; Tessa's copper hair at the lever (and, in FIXES, in the
+strike); a ring floating round a horn and a hook on the wall (S053); half a
+hat brim (S057); and a green cloak on a fleeing human (S018).
+
 Each repair works on the copy the game grades from (renpy/game/art/base/, or
 the portrait source in renpy/game/art/portraits/); the untouched original is
 kept in art/local-repairs/originals/. The sliver repair also has a layered
@@ -61,7 +70,8 @@ A repair is only written over the file it was made from or over this tool's
 own output. When GPT redelivers a painting (a repaint put in place from
 art/repaints/, or a scene painting saved at its path), the tool says so and
 leaves it; once the new painting is checked, a repair it carries over is
-listed in CARRIED.
+listed in CARRIED. A later round of repairs (BATCH7) works on the painting as
+redelivered, whose own original is kept in art/local-repairs/originals/batch7/.
 
 Coat masks come from the Segment Anything model (facebook/sam-vit-large)
 prompted with the points below; they are cached in art/local-repairs/masks/.
@@ -223,6 +233,23 @@ def circle(cx, cy, r, n=24):
     return [(cx + r * np.cos(2 * np.pi * k / n), cy + r * np.sin(2 * np.pi * k / n)) for k in range(n)]
 
 
+def arc(cx, cy, rx, ry, start, end, n=40):
+    """Points along an ellipse from angle start to end (degrees; y down, so
+    180 to 360 is the upper half)."""
+    return [(cx + rx * np.cos(np.radians(a)), cy + ry * np.sin(np.radians(a))) for a in np.linspace(start, end, n)]
+
+
+def band(cx, cy, outer, inner, start, end, n=30):
+    """A polygon around part of an elliptical ring: outer and inner are (rx, ry)."""
+    return arc(cx, cy, *outer, start, end, n) + arc(cx, cy, *inner, end, start, n)
+
+
+# Tessa's hair in the S054 duel of batch 7, chestnut as in the throne hall and
+# the wound: OpenCV 8-bit Lab a and b, mean and spread over its mask
+# (masks/hair--s054-duel.png). The lever and the strike take it.
+DUEL_HAIR = ((136.9, 2.45), (140.4, 4.5))
+
+
 # Faults found in the check of batch 6 (26 September 2026), fixed by one or
 # more steps per painting, applied in order to the painting as delivered and
 # written once (a painting that needs several fixes gets all of them). Masks
@@ -275,9 +302,12 @@ FIXES = {
         ('seam', dict(row=608, cols=(130, 480), soft=14, sharp=2.0)),
     ],
     # line 2094: the hand on Tessa's shoulder was a pale, waxy bare hand;
-    # Valcair is in armour: it takes the dark steel of his other gauntlet
+    # Valcair is in armour: it takes the dark steel of his other gauntlet.
+    # (Check of batch 7:) her hair came out copper against the chestnut of
+    # the duel and the wound around it; it takes the duel's
     'art/scenes/s054-strike.png': [
         ('match', dict(region='match--s054-strike', like='like--s054-strike')),
+        ('hair', dict(mask='hair--s054-strike', ab=DUEL_HAIR)),
     ],
     # Lucan's horns came out ringed like a ram's; his are smooth
     'art/scenes/s057-father.png': [
@@ -399,6 +429,113 @@ FIXES = {
     ],
 }
 
+# Faults found in the check of batch 7 (27 September 2026), fixed like FIXES
+# on the painting as GPT delivered it in batch 7 (S021 Serat's carries the
+# batch 6 repairs above). One more kind of step:
+#
+#   banner     a banner painted in the temple's colours given the northern
+#              ones: its gold sun ('sun', an ellipse; the 'trim' lines along
+#              the edges are kept) filled from the plain field, the blue field
+#              turned green, and the white split star drawn in the sun's
+#              place ('star': centre and radii; 'split': the split's width;
+#              'white': the star's lightness where the cloth has its mean light)
+#   tone       a region darkened (or lightened) by 'gain', with soft edges
+#   hair       hair (a Segment Anything mask) given another painting's hair
+#              colour ('ab': Lab a and b, mean and spread) in its own light
+#   cloth      cloth given the colour of another garment in the painting
+#              ('like', a box, and 'like_select'), keeping its folds
+BATCH7 = {
+    # Valcair's throne hall, the northern capital's, hung with three blue
+    # banners bearing the temple's gold sun, the human side's emblem; none of
+    # the other S054 paintings shows banners, so they keep their place and
+    # take the northern colours (the S011 flag's green) rather than be
+    # painted out of the architecture
+    'art/scenes/s054-duel.png': [
+        ('banner', dict(mask='banner-centre--s054-duel', sun=(745, 176, 42, 56),
+                        trim=[((705.5, 100), (703, 250), 4), ((790, 100), (788.5, 250), 7)],
+                        star=(746.5, 176, 29, 37), split=2.2, white=152)),
+        # the side banners are seen at a slant, so their stars are narrow
+        # and their splits thinner, or the split eats the vertical points
+        ('banner', dict(mask='banner-left--s054-duel', sun=(97, 405, 22, 44), trim=[((116.5, 330), (112.5, 490), 4)],
+                        star=(101.5, 405, 12, 25), split=0.75, white=152)),
+        ('banner', dict(mask='banner-right--s054-duel', sun=(1855, 408, 24, 42), trim=[((1832, 330), (1837, 480), 3)],
+                        star=(1853, 405, 15.5, 28), split=0.85, white=152)),
+    ],
+    # the caged crag cat had a smooth dark horn for its right ear (the design
+    # gives it rounded ears): the horn is filled from the light behind the
+    # cage (not from the bar in front of it), its dark edge left of the bar
+    # from what is around it, and a rounded ear takes its place: the head's
+    # own fur from between the next two bars, its left side behind the bar,
+    # its outer edge a little darker, like the rounded ear on the other side
+    'art/scenes/s021-serat.png': [
+        ('paint_out', dict(fill=[(262, 39), (268, 39), (273, 49), (277, 61), (278.5, 80), (277.5, 95), (275, 108),
+                                 (268, 113), (263, 113)],
+                           keep=[(254.5, 18), (263.5, 18), (263.5, 132), (254.5, 132)], grain=(265, 0, 283, 16))),
+        ('paint_out', dict(fill=[(245, 46), (255, 44), (255, 76), (245, 76)], select={'a': (0, 133), 'b': (0, 135),
+                           'L': (0, 125)}, grow=1, keep=[(254.5, 18), (263.5, 18), (263.5, 130), (254.5, 130)],
+                           grain=(237, 0, 253, 16))),
+        ('clone', dict(fill=[(263.5, 104)] + arc(272.5, 70, 10.5, 24, 180, 360) +
+                       [(283, 84), (281, 96), (278, 106), (273, 112), (263.5, 113)], offset=(-28, 6), match=0,
+                       feather=0.8)),
+        ('tone', dict(fill=arc(272.5, 70, 10.5, 24, 185, 355, 30) + arc(272.5, 70, 8.3, 21.5, 355, 185, 30),
+                      gain=0.72, feather=0.7)),
+    ],
+    # a rectangle of the pale pavement, pasted in an earlier repair, cut a
+    # stepped notch into the brother's trouser leg below his coat: the leg
+    # carries on over it from just beside it
+    'art/scenes/s021-lucan-returns.png': [
+        ('clone', dict(fill=[(626, 587), (642, 587), (642, 624.5), (623.5, 624.5)], offset=(16, 0), match=0,
+                       feather=0.8)),
+    ],
+    # Tessa's hair came out copper at the lever, against the chestnut of the
+    # duel and the wound just before
+    'art/scenes/s054-lever.png': [
+        ('hair', dict(mask='hair--s054-lever', ab=DUEL_HAIR)),
+    ],
+    # a thin loose ring floating around the tip of the left attacker's horn,
+    # filled from the sky (not from the horn); a dark hook-shaped sliver on
+    # the pier wall beside Mara's pauldron (item 49 asked for no loose rods)
+    'art/scenes/s053-bend.png': [
+        ('paint_out', dict(fill=band(490.5, 218, (11.0, 13.0), (4.5, 6.5), -75, 192),
+                           keep=[(460, 250), (466, 232), (472, 220), (478, 212), (486, 204), (498, 197), (512, 189),
+                                 (520, 190), (517, 198), (504, 205), (493, 209), (486, 213), (482, 220), (480, 232),
+                                 (476, 250)],
+                           grain=(430, 150, 450, 170))),
+        ('paint_out', dict(fill=[(1193, 402), (1206, 401), (1214, 410), (1222, 420), (1226, 432), (1216, 437), (1204, 428),
+                                 (1195, 420), (1191, 410)], grain=(1176, 436, 1194, 452))),
+    ],
+    # (the file is 2240x1260) the soldier by the right brazier kept half of
+    # the hat batch 7 took off him, a flat brim left of his head with his horn
+    # rising through it; the wall and the spear behind him carry on over it
+    'art/scenes/s057-father.png': [
+        ('paint_out', dict(fill=[(2024, 397), (2044, 395), (2046, 404), (2044, 415), (2034, 418), (2024, 414)],
+                           keep=[(2046, 398), (2080, 398), (2080, 460), (2046, 460)], grain=(2000, 420, 2020, 440))),
+    ],
+    # a small fleeing figure crouched behind the wreck wore a green hooded
+    # cloak, the northern side's colour, before the northern party arrives
+    # (line 810): it takes the brown of the jacket of a woman walking ahead
+    'art/scenes/s018-cats.png': [
+        ('cloth', dict(fill=[(1762, 690), (1790, 684), (1812, 690), (1826, 720), (1828, 755), (1765, 757), (1758, 725)],
+                       select={'a': (0, 131), 'L': (30, 140)}, grow=1, like=(1675, 595, 1710, 655),
+                       like_select={'a': (130, 255), 'b': (133, 255)})),
+    ],
+    # batch 6 took the scabbard off Mara's right hip, but a thin dark stroke
+    # of its tip was left across the rock beside her coat
+    'art/scenes/s011-bellweir-causeway.png': [
+        ('paint_out', dict(fill=[(728.2, 543), (734.4, 543), (729, 571), (722.6, 571)],
+                           keep=[(735.5, 525), (770, 525), (770, 590), (735.5, 590)], grain=(706, 560, 722, 570))),
+    ],
+    # two rectangles of the old floor, darker and differently grained, left
+    # where the new flagstones meet the back room: the stones beside them
+    # carry on over them
+    'art/scenes/s058-final.png': [
+        ('clone', dict(fill=[(1542.5, 558.5), (1575, 558.5), (1575, 591.5), (1542.5, 591.5)], offset=(45, 0), match=8,
+                       feather=1.2)),
+        ('clone', dict(fill=[(1688.5, 568.5), (1711, 568.5), (1711, 591.5), (1688.5, 591.5)], offset=(26, 0), match=8,
+                       feather=1.2)),
+    ],
+}
+
 # Paintings GPT repainted in batch 6 (26 September 2026) starting from the
 # repaired file, so the repair is already in the new painting: Olan's hand in
 # the S003 treatment paintings and close-ups (Iven's brown coat and the
@@ -413,6 +550,15 @@ CARRIED = {
     'art/scenes/s010-bellweir-hills.png', 'art/scenes/s026-quarry-loading-ramp.png',
     'art/scenes/s027-river-camp-gate.png', 'art/scenes/s028-river-camp-infirmary.png',
     'art/scenes/s057-citadel-lower-gate.png', 'art/scenes/s058-bellweir-market-spring.png',
+    # repainted in batch 7 (27 September 2026) from the files the batch 6
+    # repairs above were written to: the repaired regions came through
+    # unchanged, apart from Serat's brother, repainted around the covered
+    # second head, which stays covered
+    'art/scenes/s018-gray-scar-ferry-approach.png', 'art/scenes/s019-gray-scar-ferryhouse.png',
+    'art/scenes/s020-gray-scar-riverbank.png', 'art/scenes/s021-boat.png',
+    'art/scenes/s021-gray-scar-covered-landing.png', 'art/scenes/s021-lucan-returns.png', 'art/scenes/s021-serat.png',
+    'art/scenes/s050-citadel-lower-stair.png', 'art/scenes/s055-citadel-lower-stair-morning.png',
+    'art/scenes/s057-father.png', 'art/scenes/s058-drawings.png',
 }
 
 # Pointed ear tips to cover with hair: the area to cover (a polygon whose
@@ -428,9 +574,10 @@ EARS = {
 }
 
 
-def original(path):
-    """The file as it was before any local repair (saved on first use)."""
-    keep = ORIGINALS / path.replace('/', '--')
+def original(path, folder=ORIGINALS):
+    """The file as it was before any local repair (saved on first use), or
+    before a later round's, kept in its own folder."""
+    keep = folder / path.replace('/', '--')
     if not keep.is_file():
         keep.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(GAME / path, keep)
@@ -1046,9 +1193,120 @@ def split_stars(rgb, spec):
     return rgb
 
 
+# The northern colours for a banner: the S011 flag's green (OpenCV Lab a, b)
+# and the star's off-white.
+NORTH_GREEN = (116.0, 134.0)
+STAR_WHITE = (127.0, 131.0)
+
+
+def northern_banner(rgb, spec):
+    """A banner in the temple's colours (a blue field, the gold twelve-ray
+    sun) given the northern ones: the sun is filled from the plain field
+    around it (gold trim and stone count as unknown, the trim is kept), the
+    blue turns green in its own light and folds (partly, where the blue shows
+    through something pale), and the white eight-point star with its vertical
+    split is drawn where the sun was, 4x and brought down, lit by the cloth's
+    folds and cut by the banner's outline (a Segment Anything mask)."""
+    src = np.ascontiguousarray(rgb)
+    h, w = src.shape[:2]
+    cloth = np.asarray(Image.open(MASKS / (spec['mask'] + '.png'))).astype(np.float32) / 255
+    inner = cv2.erode((cloth > 0.5).astype(np.uint8), np.ones((3, 3), np.uint8)) > 0
+    lab = cv2.cvtColor(src, cv2.COLOR_RGB2LAB).astype(np.float32)
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    cx, cy, rx, ry = spec['sun']
+    inside = ((xx - cx) / rx) ** 2 + ((yy - cy) / ry) ** 2 <= 1
+    trim = np.zeros((h, w), np.uint8)
+    for (x0, y0), (x1, y1), width in spec['trim']:
+        cv2.line(trim, (round(x0 * 4), round(y0 * 4)), (round(x1 * 4), round(y1 * 4)), 1, round(width + 2),
+                 cv2.LINE_8, shift=2)
+    sun = cv2.dilate((inside & inner & (lab[..., 2] >= 130)).astype(np.uint8), np.ones((5, 5), np.uint8))
+    sun = sun & inner.astype(np.uint8) & (1 - trim)
+    field = inner & (lab[..., 2] < 126) & ~inside
+    ys, xs = np.nonzero(sun)
+    x0, y0, x1, y1 = max(0, xs.min() - 14), max(0, ys.min() - 14), min(w, xs.max() + 15), min(h, ys.max() + 15)
+    unknown = (sun > 0) | ~(inner & (lab[..., 2] < 127))
+    filled = src.astype(np.float32).copy()
+    filled[y0:y1, x0:x1] = cv2.inpaint(np.ascontiguousarray(src[y0:y1, x0:x1]),
+                                       unknown[y0:y1, x0:x1].astype(np.uint8), 7, cv2.INPAINT_NS)
+    flat = src.astype(np.float32)
+    sd = float((flat - cv2.GaussianBlur(flat, (0, 0), 1.5))[field].std())
+    noise = cv2.GaussianBlur(np.random.default_rng(12).normal(0, sd, (h, w)).astype(np.float32), (0, 0), 0.7)
+    alpha = cv2.GaussianBlur(sun.astype(np.float32), (0, 0), 0.8)[..., None]
+    out = src * (1 - alpha) + (filled + noise[..., None] * 0.9) * alpha
+    lab = cv2.cvtColor(np.clip(out + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_RGB2LAB).astype(np.float32)
+    blue = np.clip((128 - lab[..., 2]) / 5, 0, 1) * cloth
+    navy = lab[blue > 0.99].mean(0)
+    lab[..., 1] += (NORTH_GREEN[0] - navy[1]) * blue
+    lab[..., 2] += (NORTH_GREEN[1] - navy[2]) * blue
+    green = cv2.cvtColor(np.clip(lab + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB).astype(np.float32)
+    out = np.where((blue > 0)[..., None], green, out)            # the rest keeps its exact values
+    ss = 4
+    sx, sy, srx, sry = spec['star']
+    x0, y0, x1, y1 = int(sx - srx - 4), int(sy - sry - 4), int(sx + srx + 5), int(sy + sry + 5)
+    star, cut = (Image.new('L', ((x1 - x0) * ss, (y1 - y0) * ss), 0) for _ in range(2))
+    px, py = (sx - x0) * ss, (sy - y0) * ss
+    points = []
+    for k in range(16):
+        a = -np.pi / 2 + k * np.pi / 8
+        rad = 1.0 if k % 4 == 0 else (0.6 if k % 4 == 2 else 0.37)
+        points.append((px + rad * srx * ss * np.cos(a), py + rad * sry * ss * np.sin(a)))
+    ImageDraw.Draw(star).polygon(points, fill=255)
+    ImageDraw.Draw(cut).line([(px, py - sry * ss * 1.02), (px, py + sry * ss * 1.02)], fill=255,
+                             width=max(1, int(round(spec['split'] * ss))))
+    star, cut = (np.asarray(m.resize((x1 - x0, y1 - y0), Image.LANCZOS)).astype(np.float32) / 255 for m in (star, cut))
+    on = cv2.GaussianBlur(np.clip(star - cut, 0, 1), (0, 0), 0.45) * cloth[y0:y1, x0:x1]
+    L = cv2.cvtColor(np.clip(out + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_RGB2LAB)[..., 0].astype(np.float32)
+    mean = L[field].mean()
+    light = cv2.GaussianBlur(np.where(field, L, mean).astype(np.float32), (0, 0), 2)[y0:y1, x0:x1] / mean
+    mark = np.empty((y1 - y0, x1 - x0, 3), np.float32)
+    mark[..., 0] = np.clip(spec['white'] * light + cv2.GaussianBlur(
+        np.random.default_rng(5).normal(0, 3.0, light.shape).astype(np.float32), (0, 0), 0.6), 0, 245)
+    mark[..., 1], mark[..., 2] = STAR_WHITE
+    mark = cv2.cvtColor(np.clip(mark + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB).astype(np.float32)
+    out[y0:y1, x0:x1] = out[y0:y1, x0:x1] * (1 - on[..., None]) + mark * on[..., None]
+    return np.clip(out + 0.5, 0, 255).astype(np.uint8)
+
+
+def tone_region(rgb, spec):
+    """Darken (gain below 1) or lighten a polygon, with feathered edges."""
+    alpha = cv2.GaussianBlur(_polygon(rgb.shape, spec['fill']), (0, 0), spec.get('feather', 1.0))[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha * (1 - spec['gain'])) + 0.5, 0, 255).astype(np.uint8)
+
+
+def hair_colour(rgb, spec):
+    """Give hair (a Segment Anything mask) another painting's hair colour:
+    a and b take the target's mean and spread; lightness, strands and shine
+    stay the painting's own, so the hair keeps this painting's light."""
+    mask = np.asarray(Image.open(MASKS / (spec['mask'] + '.png'))).astype(np.float32) / 255
+    lab = cv2.cvtColor(np.ascontiguousarray(rgb), cv2.COLOR_RGB2LAB).astype(np.float32)
+    mean, std = lab[mask > 0.5].mean(0), lab[mask > 0.5].std(0)
+    new = lab.copy()
+    for c, (target, spread) in zip((1, 2), spec['ab']):
+        new[..., c] = target + (lab[..., c] - mean[c]) * spread / max(std[c], 1e-3)
+    full = cv2.cvtColor(np.clip(new + 0.5, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB).astype(np.float32)
+    alpha = cv2.GaussianBlur(mask, (0, 0), 0.8)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + full * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
+def cloth_colour(rgb, spec):
+    """Give cloth (a polygon, or the pixels of it that 'select' picks) the
+    colour of another garment in the painting ('like', a box, narrowed by
+    'like_select'), keeping its own folds (as the coat recolour does)."""
+    region = _chosen(rgb, spec)
+    x0, y0, x1, y1 = spec['like']
+    like = np.zeros(rgb.shape[:2], np.float32)
+    like[y0:y1, x0:x1] = 1
+    if 'like_select' in spec:
+        like = like * _select(rgb, spec['like_select'])
+    mean, std = lab_stats(rgb, like)
+    mask = cv2.GaussianBlur(region.astype(np.float32), (0, 0), spec.get('feather', 0.8))
+    return recolour(rgb, mask, {'mean': mean, 'std': std})
+
+
 FIX_STEPS = {'paint_out': paint_out, 'seam': mend_seam, 'match': match_part, 'smooth': smooth_region,
              'pencil': erase_pencil, 'stray': clone_under, 'clone': clone_region, 'restore': restore_region,
-             'trim': trim_outline, 'hand': mirror_hand, 'flag': draw_flag, 'star': split_stars}
+             'trim': trim_outline, 'hand': mirror_hand, 'flag': draw_flag, 'star': split_stars,
+             'banner': northern_banner, 'tone': tone_region, 'hair': hair_colour, 'cloth': cloth_colour}
 
 
 def _sha(path):
@@ -1058,18 +1316,19 @@ def _sha(path):
 ONLY = set()                            # --only: the files to repair this run
 
 
-def guarded_write(path, after):
-    """Write a repair only over the file it was made from, over this tool's
-    own last output (recorded in WRITTEN) or over a file that already holds
-    this result. If the painting was since redelivered, say so and leave it."""
+def guarded_write(path, after, folder=ORIGINALS, carried=CARRIED):
+    """Write a repair only over the file it was made from (kept in folder),
+    over this tool's own last output (recorded in WRITTEN) or over a file
+    that already holds this result. If the painting was since redelivered,
+    say so and leave it."""
     if ONLY and path not in ONLY:
         return False
-    if path in CARRIED:
+    if path in carried:
         print('carried into GPT\'s repaint, left alone:', path)
         return False
     written = json.loads(WRITTEN.read_text()) if WRITTEN.is_file() else {}
     current = np.asarray(Image.open(GAME / path))
-    keep = np.asarray(Image.open(ORIGINALS / path.replace('/', '--')))
+    keep = np.asarray(Image.open(folder / path.replace('/', '--')))
     ours = written.get(path) == _sha(path) or any(
         current.shape == other.shape and np.array_equal(current, other) for other in (keep, after))
     if ours:
@@ -1314,17 +1573,19 @@ def main():
             changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
             xcf = save_master('star-split', path, pixels[..., :3], rgb, changed, rgb)
             print('star split drawn:', path, '(%d)' % len(boxes), '->', xcf.relative_to(VN))
-    for path, steps in FIXES.items():
-        pixels = original(path)
-        rgb = pixels[..., :3]
-        for kind, spec in steps:
-            rgb = FIX_STEPS[kind](rgb, spec)
-        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
-        if guarded_write(path, after):
-            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
-            xcf = save_master('batch6-check', path, pixels[..., :3], rgb, changed, rgb)
-            print('fixed (%s):' % ', '.join(kind for kind, _ in steps), path, '(%d px) ->' % changed.sum(),
-                  xcf.relative_to(VN))
+    for fixes, master, folder, carried in ((FIXES, 'batch6-check', ORIGINALS, CARRIED),
+                                           (BATCH7, 'batch7-check', ORIGINALS / 'batch7', ())):
+        for path, steps in fixes.items():
+            pixels = original(path, folder)
+            rgb = pixels[..., :3]
+            for kind, spec in steps:
+                rgb = FIX_STEPS[kind](rgb, spec)
+            after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+            if guarded_write(path, after, folder, carried):
+                changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+                xcf = save_master(master, path, pixels[..., :3], rgb, changed, rgb)
+                print('fixed (%s):' % ', '.join(kind for kind, _ in steps), path, '(%d px) ->' % changed.sum(),
+                      xcf.relative_to(VN))
     for path in RESTORE:
         if path in HAIR:            # written from its original above, with the hair matched
             continue

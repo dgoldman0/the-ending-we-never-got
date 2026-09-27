@@ -35,3 +35,7 @@ The final 5-layer master changes 13,293 pixels within the three local head masks
 - [Stair healer portraits](stair-healer/README.md), item 61: independently painted right-speaking and left-listening human healer matching S055 Mara. Root and Gray Scar peer reviewed the whole pair, native alpha edges, and scene identity; source portraits are delivered. Own scene repairs were completed first; root clarified that unrelated duel repairs did not delay these source-independent portraits.
 
 Each additional subgroup retains its own source snapshot where applicable, final candidate, reopened export, GIMP master, prompt/assembly files, exact RGBA checks and review notes. These checks do not establish runtime crop, grading or user approval.
+
+## Local fix after delivery (Claude, 27 September 2026)
+
+`s011-bellweir-causeway.png`: batch 6 took the scabbard off Mara's right hip, but a thin dark stroke of its tip was left across the rock beside her coat (about x 723-734, y 543-571). It is painted out from the rock and ground around it, without sampling her coat. BATCH7 table of `tools/local-repairs.py`; master `art/local-repairs/batch7-check/s011-bellweir-causeway.xcf`.

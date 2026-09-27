@@ -33,3 +33,13 @@ Tessa continues using her bare LEFT hand on the release while her injured RIGHT 
 Root independently inspected the final whole image and native Tessa face/hands, Valcair face/both horns/arm chains, spear butt, step contacts and rear tile termination before clearing promotion. `s054-lever-verification.json` records source and final hashes, opaque dimensions, four meaningful layers and exact reopened output. This is an art production clearance, not user or runtime acceptance.
 
 Composition inputs are frozen in `source-before/`, verified against the recorded pre-repair hashes; scripts read those snapshots rather than mutable runtime outputs. See its manifest for Git provenance. This follow-up changes reproducibility only; no delivered image pixels change.
+
+## Local fix after delivery (Claude, 27 September 2026)
+
+`s058-final.png`: two rectangles of the old floor, darker and differently grained, were still left where the new flagstones meet the back room (1544-1574 x 558-591 and 1688-1710 x 569-591). The flagstones beside each carry on over it, brought to the brightness around. BATCH7 table of `tools/local-repairs.py`; master `art/local-repairs/batch7-check/s058-final.xcf`.
+
+Further local fixes from the batch 7 check (Claude, 27 September 2026), in the same table:
+
+- `s054-lever.png`: Tessa's hair came out copper against the chestnut of the duel and the wound just before. It takes the colour of her hair in the duel (Lab a and b, over Segment Anything masks in `art/local-repairs/masks/hair--*`), keeping its own light, strands and shine. The strike (`s054-strike.png`, from batch 6) had the same copper and gets the same step in the FIXES table.
+- `s053-bend.png`: a thin loose ring floating round the tip of the left attacker's horn is filled from the sky around it, and a dark hook-shaped sliver on the pier wall beside Mara's pauldron is painted out.
+- `s057-father.png`: the soldier by the right brazier kept half of the hat batch 7 took off him, a flat brim left of his head with his horn rising through it; the wall and the spear behind carry on over it.

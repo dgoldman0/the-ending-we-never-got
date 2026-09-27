@@ -28,3 +28,11 @@ Whole candidates and native crops were inspected after assembly. A separate peer
 `verification.json` per scene records exact reopened RGBA equality, opaque alpha, current-source equality to the saved input, changed bounds and final candidate hashes. Technical equality does not confer artistic or runtime approval. Exactly these seven source paintings were promoted. No game code, screenplay, canon or request file was edited by this worker.
 
 Final pre-promotion technical audit: all seven candidates are 1920×1080 opaque RGBA; each exactly matches its reopened XCF export; each current runtime input still matches its saved source hash. `final-checks.json` aggregates those records. `final-horns-patient-review.jpg` and the S019/S020 `final-native-review.png` files show the final localized horn and patient-hair revisions. These inspection boards are references only, not production image composites.
+
+## Local fix after delivery (Claude, 27 September 2026)
+
+`s021-serat.png`: the caged crag cat behind the bars still had a smooth dark horn where its right ear should be (the design gives it rounded ears; noted in the batch 6 check). The horn is filled from the light behind the cage, not from the bar in front of it, and a rounded ear takes its place: the head's own fur, from between the next two bars, its left side behind the bar and its outer edge a little darker, like the rounded ear on the other side of the head. (A first version left a smooth pale column above a shapeless tuft; the batch 7 check caught it.) Recorded in the BATCH7 table of `tools/local-repairs.py`; master `art/local-repairs/batch7-check/s021-serat.xcf`. The batch 6 repairs in this painting (the covered second head, the mended seam) came through the brother's repaint intact.
+
+`s021-lucan-returns.png`: a rectangle of pale pavement, pasted in an earlier repair, cut a stepped notch into the brother's trouser leg below his coat; the leg carries on over it from just beside it. Master `art/local-repairs/batch7-check/s021-lucan-returns.xcf`.
+
+`s018-cats.png`: a small fleeing figure crouched behind the wreck wore a green hooded cloak, the northern side's colour, before the northern party arrives (line 810). It takes the brown of the jacket of a woman walking ahead of it, keeping its folds. Master `art/local-repairs/batch7-check/s018-cats.xcf`.

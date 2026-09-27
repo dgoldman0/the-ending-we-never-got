@@ -90,6 +90,8 @@
   "senn-evasive-speaking": "right",
   "serat-listening": "left",
   "serat-speaking": "right",
+  "stair-healer-listening": "left",
+  "stair-healer-speaking": "right",
   "surgeon-listening": "left",
   "surgeon-speaking": "right",
   "tessa-attentive-arrival-cloak-listening": "left",
@@ -671,6 +673,18 @@
    76,
    630,
    720
+  ],
+  "stair-healer-listening": [
+   214,
+   137,
+   780,
+   891
+  ],
+  "stair-healer-speaking": [
+   350,
+   133,
+   780,
+   891
   ],
   "surgeon-listening": [
    211,

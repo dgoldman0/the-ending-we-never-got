@@ -1249,6 +1249,28 @@
     "original": "art/lit/portraits/serat-speaking-ordinary-original.webp"
    }
   },
+  "stair-healer-listening": {
+   "bright": {
+    "original": "art/lit/portraits/stair-healer-listening-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/stair-healer-listening-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/stair-healer-listening-ordinary-original.webp"
+   }
+  },
+  "stair-healer-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/stair-healer-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/stair-healer-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/stair-healer-speaking-ordinary-original.webp"
+   }
+  },
   "surgeon-listening": {
    "bright": {
     "original": "art/lit/portraits/surgeon-listening-bright-original.webp"
@@ -2349,9 +2371,9 @@
   "art/lit/scenes--s011-bellweir-causeway-original.webp": {
    "soft": "art/lit/soft/scenes--s011-bellweir-causeway-original.webp",
    "tint": [
-    0.241,
+    0.24,
     0.189,
-    0.193
+    0.195
    ]
   },
   "art/lit/scenes--s011-heron-original.webp": {
@@ -2438,9 +2460,9 @@
   "art/lit/scenes--s018-cats-original.webp": {
    "soft": "art/lit/soft/scenes--s018-cats-original.webp",
    "tint": [
-    0.251,
+    0.248,
     0.189,
-    0.154
+    0.173
    ]
   },
   "art/lit/scenes--s018-gray-scar-ferry-approach-original.webp": {
@@ -2743,9 +2765,9 @@
   "art/lit/scenes--s040-mill-town-original.webp": {
    "soft": "art/lit/soft/scenes--s040-mill-town-original.webp",
    "tint": [
-    0.226,
+    0.227,
     0.192,
-    0.202
+    0.201
    ]
   },
   "art/lit/scenes--s041-curse-tower-original.webp": {
@@ -2897,23 +2919,23 @@
    "tint": [
     0.231,
     0.192,
-    0.185
+    0.186
    ]
   },
   "art/lit/scenes--s052-entrance-ward-original.webp": {
    "soft": "art/lit/soft/scenes--s052-entrance-ward-original.webp",
    "tint": [
-    0.186,
+    0.187,
     0.199,
-    0.253
+    0.252
    ]
   },
   "art/lit/scenes--s053-bend-original.webp": {
    "soft": "art/lit/soft/scenes--s053-bend-original.webp",
    "tint": [
-    0.198,
-    0.2,
-    0.206
+    0.227,
+    0.194,
+    0.179
    ]
   },
   "art/lit/scenes--s054-binding-original.webp": {
@@ -2927,17 +2949,17 @@
   "art/lit/scenes--s054-duel-original.webp": {
    "soft": "art/lit/soft/scenes--s054-duel-original.webp",
    "tint": [
-    0.215,
-    0.196,
-    0.192
+    0.234,
+    0.192,
+    0.178
    ]
   },
   "art/lit/scenes--s054-lever-original.webp": {
    "soft": "art/lit/soft/scenes--s054-lever-original.webp",
    "tint": [
-    0.226,
-    0.195,
-    0.177
+    0.255,
+    0.187,
+    0.166
    ]
   },
   "art/lit/scenes--s054-strike-original.webp": {
@@ -2967,9 +2989,9 @@
   "art/lit/scenes--s055-citadel-lower-stair-morning-original.webp": {
    "soft": "art/lit/soft/scenes--s055-citadel-lower-stair-morning-original.webp",
    "tint": [
-    0.208,
-    0.198,
-    0.194
+    0.206,
+    0.199,
+    0.197
    ]
   },
   "art/lit/scenes--s055-mara-original.webp": {

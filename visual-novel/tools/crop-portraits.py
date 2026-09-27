@@ -144,6 +144,10 @@ FACE_OVERRIDES = {
     # tighter than the rest of the set; sized to the set's usual face
     'iven-concerned-listening': (253, 248, 420),
     'olan-soldier-speaking': (569, 238, 460),
+    # no detector finds the stair healer's bearded, downcast face; measured by
+    # hand from his eyes and mouth, on the camp healer's scale, one size for both
+    'stair-healer-speaking': (670, 420, 410),
+    'stair-healer-listening': (300, 410, 410),
 }
 
 
