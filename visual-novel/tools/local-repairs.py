@@ -47,7 +47,8 @@ stray leg (S035), and the faults GPT's repaints left in S011-S021: the
 northern flag too small to see, Tessa's four-fingered hand, horn stubs on
 Iven, a second horn on the mother, the ferryman's cut fist, a floating stone
 sliver, the old weapon left behind a new crossbow, stars painted on Mara's
-shields, the old Renn's hair on a wall and badges without the split.
+shields, the old Renn's hair and boot, badges without the split, a patch of
+summer valley left in the S055 snow and the flat base of the S050 pillar.
 
 Each repair works on the copy the game grades from (renpy/game/art/base/, or
 the portrait source in renpy/game/art/portraits/); the untouched original is
@@ -376,6 +377,19 @@ FIXES = {
                                  (1430, 776)],
                            keep=[(1477, 690), (1620, 690), (1620, 900), (1477, 900)],
                            grain=(1395, 792, 1428, 812))),
+    ],
+    # a rectangle of the old green summer view left beside Tessa's head
+    # under the new snowy valley (item 29): the snowy town and river from
+    # higher on the slope fill it; her hair is left alone
+    'art/scenes/s055-citadel-lower-stair-morning.png': [
+        ('clone', dict(fill=[(246, 268), (337, 268), (337, 366), (246, 366)], select={'a': (0, 132)}, grow=1,
+                       offset=(-70, -62), match=0, feather=1.2)),
+    ],
+    # below y 837 the right-edge pillar became a flat grey rectangle: its own
+    # carved stone from higher up carries on down
+    'art/scenes/s050-citadel-lower-stair.png': [
+        ('clone', dict(fill=[(1809, 836), (1920, 836), (1920, 1080), (1809, 1080)], offset=(0, -243), match=0,
+                       feather=1.5)),
     ],
     # the old, taller Renn's hair left on the wall above the new boy, cut
     # off by the repaint's straight edge

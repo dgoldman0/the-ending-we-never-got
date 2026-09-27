@@ -1182,7 +1182,7 @@
     }
    ],
    "cast": {
-    "HEALER": "camp-healer",
+    "HEALER": "stair-healer",
     "LUCAN": "lucan-later",
     "TESSA": "tessa-injured"
    },

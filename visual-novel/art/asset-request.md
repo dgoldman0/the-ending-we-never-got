@@ -1,6 +1,6 @@
 # Asset request
 
-Updated 26 September 2026: batch 5 is finished and in the game, and a sweep of every picture found the repaints in **batch 6** below. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 26 September 2026: batch 6 is in the game, checked picture by picture and in play, and what it left is **batch 7** below. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
 
 The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger, in parts, and GPT checks its own work against the list below as it goes. **Batch 5 is the rest of the game's art**: Tessa's last portraits, repaints of the opening, and every scene painting through the ending. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
@@ -12,8 +12,91 @@ The user wants better portraits. The cast is being painted as head-and-shoulders
 - **Batch 4, first start, stopped 23 September.** The user rejected Tessa's layered ceremonial costume when GPT's first drafts showed it at bust size ("a shawl on a blue thing on a blueish thing"). The fault was the costume design, carried over unexamined, not GPT's painting. The partial work is kept in the git stash "Batch 4 partial (GPT, stopped 23 Sep)"; its four good files were restored into batch 4.
 - **Batch 4, checked 23 September.** All 62 portraits and the costume proposals arrived. Played every line that uses them in the game, and compared each character's new files with the ones already in it. Every new face matches its written design, and the returning cast (Iven, Mara, Olan, Senn, Valcair, Orra, the messenger) matches their earlier portraits; every pair faces each other. The three Tessa repaints now match her likeness reference: freckles, natural brows, no makeup. That leaves her three S003 *speaking* files looking more polished than the listening files they alternate with, so they are repainted in batch 5. Claude fixed the crops locally: the face detector had locked onto a shirt collar or part of a face in `iven-harrow-speaking`, `iven-attentive-listening` and `olan-soldier-listening`, and had framed `iven-concerned-listening`, `olan-soldier-speaking` and four older portraits (Olan, Serat and two of Tessa's) tighter than the rest of their sets.
 - **Batch 5, checked 26 September.** Everything is in the game, and every scene from S001 to S058 except S053 now reads over its paintings. Seven reviewers then went over all 138 pictures the game shows at native resolution: anatomy, stray objects, geometry, continuity with the lines each picture sits under, and identity against the designs and portraits. Claude checked each finding at full size before acting on it. The work holds together: Tessa is recognisably one person from S001 to S058, the costumes follow the chosen keys, and the late chapters carry the injuries and deaths through. Claude fixed these locally (recorded in `art/local-repairs/`): Iven's coat, re-masked in four S003 paintings and recoloured brown in the S008 market; the coverlet's lace printed onto Olan's forearm in S003; the pen sliver on the first S002 drawing; a split scabbard in the S035 crossing; the catalog card's garbled lettering in S058; Tessa's copper-red hair in the three S005 window paintings, back to chestnut; Lucan's pointed ears in two S029 paintings; and the northern split on 13 badges painted as an undivided star. Two paintings are lifted so their subject clears the text: the S007 inn 45 px (the checkerboard and the key) and the S013 chamber 70 px (the book open at its missing pages). Not a fault: Mara's blue shoulder ward is a spell she kindles, so it need not glow in every painting. The rest is batch 6.
+- **Batch 6, checked 26 September.** All 67 pictures are in the game (`b8550cf`): the twelve opening repaints replace the copies the game grades from, and every painting is graded and played under its lines. Every scene from S001 to S058 now reads over its paintings; S053 no longer falls back to the typeset page. Each repair was compared with the picture it replaced, three reviewers went over all 67 at native resolution, and Claude checked each finding at full size before acting on it. Most of the batch is right: the S001 scholar, the milk and Mara's face; Olan's hand in all five S003 pictures; the horns in S026–S028 and S038; the summer window; the broken heron, Hest, Elin and the smaller Renn; the rebuilt S020 shelter; the cats; the black ward in the throne hall; the S050 guard and the S055 snow; the S040 barrier, the S042 cart and the S046 coat. The new moments of S054, S057 and S058 play well at their lines. Claude fixed 24 faults locally (recorded in `art/local-repairs/`, the FIXES table of `tools/local-repairs.py`):
+  - in the new paintings: a second head behind Serat's and a paste seam across Lucan's knee (S021), Valcair's waxy bare hand (S054), Lucan's ringed ram horns (S057), a moustache on the sketch of Iven (S058);
+  - item 24, which came back partial: Renn's stray boot beside his face (S035); his leg is now under the axle;
+  - what the repaints left: the S011 flag too small to see, Tessa's four-fingered right hand (S019), horn stubs on Iven, the old weapon behind the new crossbow, a stone floating under the arch and the ferryman's cut fist (S021), a second horn on the northern mother (S018), stars painted on Mara's shield (S020, S021), the old Renn's hair and boot (S014), a patch of summer valley in the S055 snow, the flat base of the S050 pillar, and badges without the split.
 
-## Next for GPT: batch 6, repairs from the sweep and six missing moments
+  S055's healer is a grey-bearded human man in the painting, but his line showed the northern camp healer's portrait from S027; it shows no portrait until his own is painted (item 61). The rest is batch 7.
+
+## Next for GPT: batch 7, what batch 6 left
+
+Batch 6 fixed most of what it was given. What still reads wrong at full screen or against the story is below: **the repaints first, then one new portrait**, committing after each group, with one stop at the end. Batch 5's self-check, format and composition rules still apply, and so do the user's decisions: Iven's warm brown coat, no green on the human side, the chosen costumes.
+
+**How to repaint.** Change only what an item lists; keep the composition, camera, light and every other figure and object. Start from the file as it is now at `renpy/game/art/scenes/`: many carry Claude's local fixes (listed per painting in the FIXES table of `tools/local-repairs.py`), and an older master would undo them. Save each at the same path.
+
+### Repaints: wrong at full screen (do these first)
+
+47. **S054, the duel, again.** The spear no longer runs through Tessa, but three things still read wrong in `s054-duel.png`:
+   - The fighters have swapped sides. The throne hall before it and the wound, strike and lever after it all have Tessa on the left and Valcair on the right; here Valcair is on the left, so for one picture they cross the screen. Put Tessa on the left and Valcair on the right, with her sword still in her RIGHT hand and her bare left palm raised (both hands are healthy until line 2086).
+   - Line 2072: *he drives his spear along her shelter into a pillar*. The shaft now passes over the top of the shelter and behind her raised sword arm, beside her head. Make the shelter read as a dome around her, down to the floor, and the spear glance along its outside into a pillar, clear of her arm and head.
+   - *Black light turns her blade* at his elbow: there is only a small violet spark. Show the black light at his joints as the throne-hall painting now does. Also give Valcair his far horn (only one shows) and keep a gap between their feet.
+48. **S018, the cats on the trail.** `s018-cats.png` has to be repainted, keeping its cast, costumes and litter:
+   - Tessa's face is a woman in her forties: a long, hollow-cheeked face, lined, no freckles. She is about twenty, as in [her campaign-early portrait](../renpy/game/art/portraits/tessa-campaign-early-speaking.png) and [the likeness reference](character-references/tessa/north-infirmary-face.png).
+   - The place is a sunny lakeside with a pier and a porch house on the trail's own level. It is the Gray Scar gorge of `s018-gray-scar-ferry-approach.png` and S019–S021: grey cliffs and conifers, the timber ferryhouse *below* the trail; the families run downhill toward it (line 806).
+   - Line 804: the young cat drops at a litter bearer, not at Tessa; the dead mule and wrecked wagon block the turn ahead of the column (line 797).
+49. **S053, the bend.** Repaint `s053-bend.png`:
+   - Mara holds the gap: the attackers can reach her only two at a time, and the way up is behind her. The upper flight now rises behind the first attacker while she stands off to the side. Her last soldier climbs away with the wounded man above and behind her (line 2052).
+   - It is the stair of `s050-citadel-lower-stair.png` and `s055-mara.png` (S055 is this bend a few hours later): the wide, dry flagstone landing with its parapet and the straight flight along the wall, not a narrow snowy switchback on a tower's outer face. Before dawn, with light flashing in the hall's high windows (line 2054). No loose rods on the walls.
+50. **S020, Tessa's face.** In `s020-gray-scar-riverbank.png` she has frizzy copper curls and a heavier, older face with a longer nose and no freckles, one screen after S019. Repaint her head from her campaign-early portrait and S019.
+51. **S021, Serat's brother.** In `s021-serat.png` and `s021-boat.png` the man holding Serat is a second Lucan: the same face, long wavy hair, light skin and swept-back horns, beside Lucan himself. His design: Serat's dark skin and amber-brown eyes, slightly shorter and narrower than Serat, longer black hair tied back, horns placed like Serat's, a plain green coat with no lieutenant's bar, as he appears in the S021 landing and in S025. (Claude painted out a second head that sat behind Serat's in `s021-serat.png`; start from the current file.)
+52. **S021, the woman on the litter (item 38 again).** In `s021-gray-scar-covered-landing.png` and `s021-lucan-returns.png` she is still a child on a short litter. She is an adult on a full-size litter carried at both ends, as in `s020-gray-scar-riverbank.png` and `s021-rescue.png`, with her husband beside her.
+
+### Repaints: continuity and details
+
+53. **Crossbows (item 39 again).** A crossbow has a bow across its front and a string between the bow's two tips.
+   - Serat's in `s018-gray-scar-ferry-approach.png`: one limb stands up and the other points forward, with the string running back to the butt.
+   - The one propped against the wall in `s019-gray-scar-ferryhouse.png` (line 849) is still the rifle shape.
+   - The spent one leaning at the gatepost in `s021-serat.png` has no bow and reads as a folding stand.
+   - (Minor) The two rear escorts' crossbows in S018 line up end to end and read as one bar.
+54. **Lucan's horns at Gray Scar.** At his introduction in `s018-gray-scar-ferry-approach.png` his horn is a thin arc lost in his hair. In `s019-gray-scar-ferryhouse.png` his only horn reads as a hair comb. In `s020-gray-scar-riverbank.png` they rise forward like a bull's. His early portrait: a pair of smooth dark horns curving back close to the skull, as item 27 did for S026–S028.
+55. **S011, Renn on the causeway.** In `s011-bellweir-causeway.png` he is still nearly Ada's size; on the next screen, `s011-sanctuary.png`, he is the small boy of item 45. Make him the same boy.
+56. **S034, the engineers and the doorway (item 23 again).**
+   - In `s034-return-cargo-shed.png` the top engineer keeps the old shared face, with a small cone horn and a large ram curl as his pair. Give him his own face and a matched pair.
+   - In the doorway Marren has no horns; his design gives him small rounded horns above the ears.
+   - The green-coated guard's cap has no openings for horns.
+57. **S054, the lever.** In `s054-lever.png`:
+   - Valcair, lying at the step, has thin horns hooking forward and nearly grey hair. His portrait and `s054-strike.png` give him heavy ridged horns sweeping back and black hair streaked with silver.
+   - The throne stands on one low step where the other S054 paintings show three or four.
+   - The dais reads as embossed metal (item 31).
+58. **S051, Lucan's hands.** In `s051-north-infirmary-court.png` a pale wrap sits on the knuckles of his right hand, on the stock, while his left forearm is in an intact sleeve. The cut is on his LEFT forearm (S044). Take the wrap off the right hand; a dressing on the left forearm may show at the cuff or stay under the sleeve.
+59. **Horns on northern extras.**
+   - Several soldiers lining the gate in `s057-father.png` have none; one wears a brimmed hat without horn openings.
+   - The bearded wounded northerner beside Lucan in `s019-gray-scar-ferryhouse.png` (line 832) has none.
+60. **Item 31, finished.** Metal-looking texture remains:
+   - In both `s052-citadel-inner-landing.png` and `s052-entrance-ward.png`: the pilaster strip behind Tessa's head and hand; the threshold strip and the hall floor seen through the doors; the patches of old glossy floor kept around the runner's boots; the right door jamb, drawn with two inner edges.
+   - The stair faces of `s050-citadel-lower-stair.png`.
+   - The walls and steps of `s055-citadel-lower-stair-morning.png`: the same stair on the same morning as `s055-mara.png`, which now reads as stone.
+   - The patches of old floor kept around the chair, the stool and Tessa's feet in `s058-final.png`, which show as grey shapes with straight edges.
+
+### New portrait: the healer on the stair (2 files)
+
+61. **`stair-healer-speaking.png` and `stair-healer-listening.png`** in `renpy/game/art/portraits/`, in the format above. He is the healer who covers Mara's face in `s055-mara.png` and says "I'm sorry." (line 2119):
+   - a human man in his fifties, grey hair and a grey beard, a dark blue work coat with the sleeves pushed up, and a stained pale apron;
+   - worn out and quiet;
+   - no horns: he is not the northern camp healer of S027.
+
+   The speaking file looks toward screen right, lips parted; the listening file looks toward screen left.
+
+### Optional, if they can be done without disturbing the rest
+
+- Carried from batch 6:
+  - the S004 emblem set;
+  - Tessa's sword at her right hip in `s049-command-tent`, `s052-citadel-inner-landing` and `s052-entrance-ward` (her key puts it on the left);
+  - the ambiguous support under the S049 table.
+- S040:
+  - the barrier is a flat rectangle with a ruler-straight top and no glow or shadow on the street;
+  - the lower spokes of the front cart wheel are smeared.
+- S021 boat: the first boat, which leaves with the northern families (line 937), reads as a war party with no families.
+- The injured woman's hair changes: light brown in S019, black under a dark head covering in S020, brown in `s021-rescue`. Keep S019's.
+- S058 drawings: the close view looks into the fountain basin, while the rim painting before and after seats her facing out.
+- S050: Mara's left hand on Tessa's back has a hard seam where the old forearm guard was removed.
+
+**Stop after these** and tell the user; Claude checks them in the game and puts them in place.
+
+## Batch 6 (done): repairs from the sweep and nine missing moments
+
+Delivered in `6110c32`–`97cf84a` and put into the game in `b8550cf`; see **Batch 6, checked 26 September** under *Checked so far*. The request as GPT worked from it:
 
 Batch 5 put a painting under every scene. The sweep then found faults a reader would notice, and nine moments the paintings skip. Batch 6 is those: **the repaints first, then the nine new paintings**, committing after each group, with one stop at the end. Batch 5's self-check, format and composition rules still apply, and so do the user's decisions: Iven's warm brown coat, no green on the human side, the chosen costumes.
 

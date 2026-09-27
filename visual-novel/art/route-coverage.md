@@ -2,9 +2,9 @@
 
 This is a production ledger, not visual clearance. The complete original route remains in scope: all 58 screenplay scenes, the complete Bellweir ending and fade, then “Do you wish to save Tessa?” Post-Yes presentation remains deferred. Absent illustrations and cast remain defects.
 
-**Current state, 26 September 2026.** Every one of the 58 scenes now has art in the running game except S053. S001–S005 are read over their authored stages (`rovel.rpy`); S006–S058 over the paintings GPT delivered in batch 5, placed through `staging.json`, with key moments where their moments begin. The reading screen is the user's working choice of 24 September (the speaker alone in an oval portrait, the painting falling out of focus and into its own shadow behind the text, the controls behind a gilt sun). There are 865 reading pages from 849 source blocks: long paragraphs break at sentence ends, and from S006 on every page read over a painting fits the three-line reading band (measured in the game's own layout). S053 is read on the typeset page until its own painting arrives, because the only stair painting that exists shows Tessa on the stair while she is already in the hall.
+**Current state, 26 September 2026, after batch 6.** Every one of the 58 scenes now has art in the running game. S001–S005 are read over their authored stages (`rovel.rpy`); S006–S058 over the paintings GPT delivered in batches 5 and 6, placed through `staging.json`, with key moments where their moments begin. Batch 6 added the nine moments the scenes had skipped, among them S053's stand at the bend, the last scene that was read on the typeset page. The reading screen is the user's working choice of 24 September (the speaker alone in an oval portrait, the painting falling out of focus and into its own shadow behind the text, the controls behind a gilt sun). There are 865 reading pages from 849 source blocks: long paragraphs break at sentence ends, and from S006 on every page read over a painting fits the three-line reading band (measured in the game's own layout).
 
-A sweep of all 138 pictures the game shows, at native resolution, on 26 September found the faults listed in [the asset request](asset-request.md) as batch 6: some fixed locally, the rest requested from GPT, with nine moments no painting covers yet (their stages are already planned and appear as soon as the files exist). Art being present is not the experience gate below: no scene is cleared by this ledger.
+A sweep of all 138 pictures on 26 September found the faults GPT repaired in batch 6. Its 67 pictures were then checked against the ones they replaced and in the game; what is still wrong is listed in [the asset request](asset-request.md) as batch 7, and what could be fixed locally was (`art/local-repairs/`). Art being present is not the experience gate below: no scene is cleared by this ledger.
 
 | Scene | Source location | Source blocks | Reading pages | Current coverage |
 | --- | --- | ---: | ---: | --- |
@@ -25,10 +25,10 @@ A sweep of all 138 pictures the game shows, at native resolution, on 26 Septembe
 | S015 | INT. ELIN'S LODGING - DAY | 16 | 16 | 1 painting: `s015-elin-lodging` (opens). Speaker portraits: Elin, Tessa |
 | S016 | INT. PALACE COUNCIL ROOM - DAY | 46 | 46 | 2 paintings: `s016-council-room` (opens), `s016-hearing-door` (from 750). Speaker portraits: Elin, Mara, Orra, Senn, Tessa |
 | S017 | INT. PALACE COUNCIL CORRIDOR - CONTINUOUS | 6 | 6 | 1 painting: `s017-council-corridor` (opens). Speaker portraits: Mara, Tessa |
-| S018 | EXT. GRAY SCAR - FERRY APPROACH - AFTERNOON | 16 | 18 | 1 painting: `s018-gray-scar-ferry-approach` (from 810). Requested: `s018-cats` (opens). Speaker portraits: Lucan, Mara |
+| S018 | EXT. GRAY SCAR - FERRY APPROACH - AFTERNOON | 16 | 18 | 2 paintings: `s018-cats` (opens), `s018-gray-scar-ferry-approach` (from 810). Speaker portraits: Lucan, Mara |
 | S019 | INT. OLD FERRYHOUSE - CONTINUOUS | 19 | 20 | 1 painting: `s019-gray-scar-ferryhouse` (opens). Speaker portraits: Ferryman, Lucan, Mara, Tessa |
 | S020 | EXT. GRAY SCAR - RIVERBANK - CONTINUOUS | 4 | 4 | 1 painting: `s020-gray-scar-riverbank` (opens). Speaker portraits: no dialogue |
-| S021 | EXT. GRAY SCAR - COVERED LANDING - CONTINUOUS | 26 | 27 | 3 paintings: `s021-gray-scar-covered-landing` (opens), `s021-lucan-returns` (from 898), `s021-rescue` (from 909). Requested: `s021-serat` (from 913), `s021-boat` (from 937). Speaker portraits: Boatman, Iven, Lucan, Tessa |
+| S021 | EXT. GRAY SCAR - COVERED LANDING - CONTINUOUS | 26 | 27 | 5 paintings: `s021-gray-scar-covered-landing` (opens), `s021-lucan-returns` (from 898), `s021-rescue` (from 909), `s021-serat` (from 913), `s021-boat` (from 937). Speaker portraits: Boatman, Iven, Lucan, Tessa |
 | S022 | EXT. ROVEL RIVER PICKET - DUSK | 20 | 20 | 1 painting: `s022-river-picket` (opens). Speaker portraits: Iven, Lucan, Mara, Picket Officer, Tessa |
 | S023 | INT. NORTHERN FIELD QUARTERS - NIGHT | 16 | 16 | 1 painting: `s023-northern-field-quarters` (opens). Speaker portraits: Lucan, Valcair |
 | S024 | EXT. NORTHERN WHARF - MORNING | 8 | 8 | 1 painting: `s024-northern-wharf` (opens). Speaker portraits: Boatman, Lucan |
@@ -60,12 +60,12 @@ A sweep of all 138 pictures the game shows, at native resolution, on 26 Septembe
 | S050 | EXT. CITADEL - LOWER STAIR - PRE-DAWN | 10 | 10 | 2 paintings: `s050-guard` (opens), `s050-citadel-lower-stair` (from 2005). Speaker portraits: Mara, Tessa |
 | S051 | EXT. CITADEL - NORTH INFIRMARY COURT - DAWN | 4 | 4 | 1 painting: `s051-north-infirmary-court` (opens). Speaker portraits: Serat |
 | S052 | INT. CITADEL - INNER LANDING - DAWN | 10 | 10 | 2 paintings: `s052-citadel-inner-landing` (opens), `s052-entrance-ward` (from 2041). Speaker portraits: Elin, Runner, Tessa |
-| S053 | EXT. CITADEL - LOWER STAIR - CONTINUOUS | 2 | 2 | **Typeset page**. Requested: `s053-bend` (opens). Speaker portraits: no dialogue |
-| S054 | INT. CITADEL - THRONE HALL - CONTINUOUS | 24 | 25 | 3 paintings: `s054-throne-hall` (opens), `s054-duel` (from 2070), `s054-wound` (from 2080). Requested: `s054-strike` (from 2090), `s054-lever` (from 2100), `s054-binding` (from 2104). Speaker portraits: Tessa, Valcair |
+| S053 | EXT. CITADEL - LOWER STAIR - CONTINUOUS | 2 | 2 | 1 painting: `s053-bend` (opens). Speaker portraits: no dialogue |
+| S054 | INT. CITADEL - THRONE HALL - CONTINUOUS | 24 | 25 | 6 paintings: `s054-throne-hall` (opens), `s054-duel` (from 2070), `s054-wound` (from 2080), `s054-strike` (from 2090), `s054-lever` (from 2100), `s054-binding` (from 2104). Speaker portraits: Tessa, Valcair |
 | S055 | EXT. CITADEL - LOWER STAIR - MORNING | 12 | 13 | 2 paintings: `s055-mara` (opens), `s055-citadel-lower-stair-morning` (from 2129). Speaker portraits: Healer, Lucan, Tessa |
 | S056 | INT. NORTH INFIRMARY - DAY | 6 | 6 | 2 paintings: `s056-north-infirmary` (opens), `s056-hand` (from 2148). Speaker portraits: Surgeon, Tessa |
-| S057 | EXT. CITADEL - LOWER GATE - EVENING | 8 | 8 | 1 painting: `s057-citadel-lower-gate` (opens). Requested: `s057-father` (from 2173). Speaker portraits: Lucan, Vask |
-| S058 | EXT. BELLWEIR - MARKET SQUARE - SPRING DAY | 16 | 17 | 2 paintings: `s058-bellweir-market-spring` (opens), `s058-final` (from 2213). Requested: `s058-drawings` (from 2207). Speaker portraits: Elin, Orren, Tessa |
+| S057 | EXT. CITADEL - LOWER GATE - EVENING | 8 | 8 | 2 paintings: `s057-citadel-lower-gate` (opens), `s057-father` (from 2173). Speaker portraits: Lucan, Vask |
+| S058 | EXT. BELLWEIR - MARKET SQUARE - SPRING DAY | 16 | 17 | 3 paintings: `s058-bellweir-market-spring` (opens), `s058-drawings` (from 2207), `s058-final` (from 2213). Speaker portraits: Elin, Orren, Tessa |
 
 ### History
 
