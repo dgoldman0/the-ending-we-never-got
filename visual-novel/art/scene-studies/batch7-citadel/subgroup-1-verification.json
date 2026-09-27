@@ -1,0 +1,98 @@
+[
+  {
+    "asset": "s051-north-infirmary-court",
+    "source_sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1",
+    "candidate_sha256": "d9956bcd8594c7a0769b08b97f7efcedd10f0fd3e6653d4f4664411051488dcf",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 370,
+    "changed_bbox": [
+      546,
+      449,
+      574,
+      466
+    ]
+  },
+  {
+    "asset": "s052-citadel-inner-landing",
+    "source_sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e",
+    "candidate_sha256": "436cc173ab19dec99227d83420cf50266c18f7739c768feee1ee7a2debde9136",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 450409,
+    "changed_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "protected_rectangles": {
+      "Tessa face": 0,
+      "Olan face and curls": 0,
+      "Elin": 0,
+      "runner head": 0
+    }
+  },
+  {
+    "asset": "s052-entrance-ward",
+    "source_sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4",
+    "candidate_sha256": "0aff2eda17fffe1558976242de1f7669552d91ead0a2de64080b668a10d134c5",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 319352,
+    "changed_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "protected_rectangles": {
+      "Tessa face": 0,
+      "Olan face and curls": 0,
+      "Elin": 0,
+      "runner head": 0
+    }
+  },
+  {
+    "asset": "s053-bend",
+    "source_sha256": "62c3a84c6c0803eebb469d69e3e8e2b1d5946c2bd06a4193f90087e6883c72fc",
+    "candidate_sha256": "0de72bb6488d10cc89408d56989dd3d26032357aad7fb673218bf26a6504a1e6",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ],
+    "reopened_exact": true,
+    "changed_pixels": 2073504,
+    "changed_bbox": [
+      0,
+      0,
+      1920,
+      1080
+    ]
+  }
+]

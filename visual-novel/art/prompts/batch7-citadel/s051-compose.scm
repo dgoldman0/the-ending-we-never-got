@@ -1,0 +1,6 @@
+(load "visual-novel/art/prompts/batch7-citadel/compose.scm")
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png" "source"))))
+(gimp-item-set-name (car (gimp-image-get-active-layer img)) "CURRENT source, all previous fixes retained")
+(patch img "visual-novel/art/scene-studies/batch7-citadel/s051-hand-donor.png" "Bare right knuckles only; left cuff protected" 400 350 250 320 #(546 452 554 449 567 452 574 460 574 466 562 466 548 461) 1)
+(finish img "visual-novel/art/scene-studies/batch7-citadel/s051-north-infirmary-court"))
+(gimp-quit 0)
