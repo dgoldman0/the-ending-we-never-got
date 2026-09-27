@@ -1,0 +1,17 @@
+# Stair healer — item 61
+
+Portrait production began after this agent’s scene repairs were assembled and independently reviewable, following root’s explicit sequencing clarification.
+
+Source lines 2108–2124: after the hall fight, on the citadel’s lower stair in the morning, the healer covers Mara’s face. Tessa catches the cloth, checks Mara’s pulse with her healthy left hand; the healer kneels beside her and quietly says “I’m sorry.” This is a human attendant, not the northern camp healer.
+
+Likeness and wardrobe authority: the grey-bearded man kneeling on the right of current `renpy/game/art/scenes/s055-mara.png`. He reads in his fifties, with weathered light warm skin, wavy grey hair with darker roots/nape, ordinary deep-set eyes, a straight prominent nose, and a short full grey beard. No horns. Dark blue work coat, sleeves pushed up, pale stained apron with a low chest bib and simple pale straps visible over the work coat. A native source crop corrected the earlier mistaken waist-only description. His tired quiet expression should carry the effort and sorrow without theatrical grief or a smile.
+
+Produce two independently painted square transparent 1254×1254-or-larger head-and-shoulder busts to the shared portrait format. `stair-healer-speaking.png` looks screen right with lips parted softly; `stair-healer-listening.png` looks screen left with mouth closed. Keep apparent head size, headroom, upper-chest cutoff, identity, hair arrangement, fabric and neutral exposure consistent. No hands, scenic background, frame, badge, horn, green uniform or formal decorative robe. Preserve the simple straps and low bib visible in the native scene crop.
+
+## Candidate delivery and review
+
+Two independent built-in generations; neither direction is mirrored. Native output was 1254×1254. GIMP adds 70 px on each side and 140 px above without resampling, giving 1394×1394 true-alpha sources with roughly one-third-height faces and usable headroom. The generator returned skin/cloth at alpha 250–253; an editable alpha mask remaps 0–250 to 0–255 to make interiors opaque while preserving fine hair transparency. Each XCF contains the original portrait on the expanded canvas and this editable alpha mask, not separately painted character components. Reopened visible export matches candidate RGBA exactly.
+
+Actual final whole pair, 224 px raw portrait previews, and native face, beard and hair edges inspected on gray and pale backgrounds. Natural ears, gray-brown eyes, face age/complexion and workcoat/apron match across the pair and the scene. Speaking eyes look right with softly parted lips; listening looks left with closed mouth. No chopped crown, flat hair halo, gap in the neck/coat or repeated mirrored fabric. Peer Gray Scar agent independently compared both current candidates with the scene crop and cleared raw portrait identity/composition. Runtime crop, grading and user approval remain separate. Awaiting root review before source promotion.
+
+Root independently reviewed both whole portraits and native regions on gray/white against the scene identity. Age, face structure, hair, mouth/gaze and framing cleared. Gray Scar peer also inspected native alpha edges after opacity correction: fine hair remains clean, coat shoulders opaque without contour fringe. Exact export hashes and reopened RGBA checked again before adding the two previously absent portrait source paths. Runtime framing, grading and user approval remain separate.

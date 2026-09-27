@@ -1,0 +1,7 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s055-mara.png" "source"))) (ly 0))
+(gimp-image-crop im 410 450 1320 65)
+(gimp-image-scale im 820 900)
+(set! ly (car (gimp-image-get-active-layer im)))
+(file-png-save RUN-NONINTERACTIVE im ly "visual-novel/art/scene-studies/batch7-cats-minor/stair-healer/scene-identity-reference.png" "reference" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)

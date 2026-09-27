@@ -1,0 +1,62 @@
+{
+  "speaking": {
+    "size": [
+      1394,
+      1394
+    ],
+    "original_size": [
+      1254,
+      1254
+    ],
+    "composition": "Original image moved +70x,+140y onto larger transparent canvas without resampling",
+    "gimp_edit": "Transfer generated alpha into an editable mask; levels 0..250 to 0..255 makes nearly opaque skin and cloth opaque while preserving partial hair edge alpha. No face or clothing repaint.",
+    "xcf_layers": 1,
+    "editable_alpha_mask": true,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "opaque_pixels": 946673,
+    "transparent_pixels": 955112,
+    "partial_alpha_pixels": 41451,
+    "body_rgb_max_channel_difference": 0,
+    "alpha_bbox": [
+      70,
+      161,
+      1324,
+      1394
+    ],
+    "reopened_rgba_exact": true,
+    "sha256": "8d2f50b5320a77c7ab513d422319fd5d540f63547581611f735680e0d34378bc"
+  },
+  "listening": {
+    "size": [
+      1394,
+      1394
+    ],
+    "original_size": [
+      1254,
+      1254
+    ],
+    "composition": "Original image moved +70x,+140y onto larger transparent canvas without resampling",
+    "gimp_edit": "Transfer generated alpha into an editable mask; levels 0..250 to 0..255 makes nearly opaque skin and cloth opaque while preserving partial hair edge alpha. No face or clothing repaint.",
+    "xcf_layers": 1,
+    "editable_alpha_mask": true,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "opaque_pixels": 913589,
+    "transparent_pixels": 979868,
+    "partial_alpha_pixels": 49779,
+    "body_rgb_max_channel_difference": 0,
+    "alpha_bbox": [
+      70,
+      160,
+      1324,
+      1394
+    ],
+    "reopened_rgba_exact": true,
+    "sha256": "ad37ff27da428b96f888fcb00da70fe187a906c20c4860523f5969011a9cfe3f"
+  }
+}

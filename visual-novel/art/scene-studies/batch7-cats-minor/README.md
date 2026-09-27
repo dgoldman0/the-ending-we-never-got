@@ -1,4 +1,4 @@
-# Batch 7 — Gray Scar trail, Renn, and cargo heads
+# Batch 7 — Gray Scar trail, local cast repairs, and stair healer
 
 Production corrections delivered for review; this is not a runtime/user approval. Starts from the current scene PNGs after the other team’s batch 6 repairs. Source hashes were checked against each `before.png` at HEAD `7337709` before promotion.
 
@@ -28,4 +28,10 @@ The final 5-layer master changes 13,293 pixels within the three local head masks
 
 `verification.json` records full SHA256 values and exact reopened-XCF checks. All three delivered PNGs are 1920×1080 RGBA and opaque throughout; reopened visible-layer exports reproduce every RGBA pixel. Technical agreement does not establish artistic or runtime acceptance. Prompts and GIMP assembly scripts are in `art/prompts/batch7-cats-minor/`.
 
-S040 optional correction and the stair healer portraits are separate work; the portraits wait until the batch’s repaint group is complete.
+## Additional scoped deliveries
+
+- [S040 mill town](s040-mill-town/README.md), commit `37ce46a`: uneven barrier edge, grounded violet spill and restored radial wheel spokes. Five-layer master; both wardkeeper hands and face unchanged. Root whole/native review recorded.
+- [S057 father](s057-father/README.md), commit `b997759`: six background northern cap/horn corrections. Seven-layer master; foreground figures, complexions, Lucan’s smooth horns, litter and human medical attendants unchanged. Root whole/native review recorded.
+- [Stair healer portraits](stair-healer/README.md), item 61: independently painted right-speaking and left-listening human healer matching S055 Mara. Root and Gray Scar peer reviewed the whole pair, native alpha edges, and scene identity; source portraits are delivered. Own scene repairs were completed first; root clarified that unrelated duel repairs did not delay these source-independent portraits.
+
+Each additional subgroup retains its own source snapshot where applicable, final candidate, reopened export, GIMP master, prompt/assembly files, exact RGBA checks and review notes. These checks do not establish runtime crop, grading or user approval.
