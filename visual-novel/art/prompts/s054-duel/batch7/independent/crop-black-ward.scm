@@ -1,0 +1,5 @@
+(let* ((im (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/s054-duel/batch7/14-black-ward-component.png" "visual-novel/art/scene-studies/s054-duel/batch7/14-black-ward-component.png"))))
+ (gimp-image-crop im 720 540 80 680)
+ (file-png-save RUN-NONINTERACTIVE im (car (gimp-image-get-active-layer im)) "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png" "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png" 0 9 0 0 0 0 0)
+ (gimp-image-delete im))
+(gimp-quit 0)

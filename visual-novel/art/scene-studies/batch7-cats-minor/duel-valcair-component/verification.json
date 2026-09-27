@@ -1,0 +1,29 @@
+{
+  "size": [
+    1672,
+    941
+  ],
+  "placement_scale_and_rgb_unchanged": true,
+  "source_rgb_identical_at_every_visible_pixel": true,
+  "reopened_rgba_exact": true,
+  "layers": 1,
+  "editable_alpha_mask": true,
+  "visible_bbox": [
+    681,
+    92,
+    1638,
+    898
+  ],
+  "core_regions_opaque": {
+    "front_hand": true,
+    "front_forearm": true,
+    "front_elbow": true,
+    "rear_hand": true,
+    "rear_forearm": true,
+    "face": true
+  },
+  "opaque_pixels": 208741,
+  "partial_alpha_pixels": 4866,
+  "source_sha256": "a7ac394ca112c3dd4960399f23d988a5a74e4aacae5f6df5f96f56d4529654b5",
+  "component_sha256": "21183a47485bcceefc4be18a5eceafe780122d0fb46ebb2c6fa6f93418ace3dd"
+}

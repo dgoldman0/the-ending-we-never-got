@@ -1,0 +1,21 @@
+{
+  "source": "visual-novel/renpy/game/art/scenes/s054-duel.png",
+  "source_before_sha256": "158455f8068061d01406619e3334ee4793dee48bde37960c60f31f1c48c089a2",
+  "source_after_sha256": "8574f1033fa6e97b08c4cf0da17abdf274f4fe41bb06d8df6bd38120d2379bac",
+  "candidate": "visual-novel/art/scene-studies/s054-duel/batch7/independent/delivery.png",
+  "native_reviewed_sha256": "df48f5df6e74d8cebe8dfa38e6d4fd8e4cca3e7eb5504d4579b1a707e4029daf",
+  "reviewers": [
+    "root whole/native",
+    "batch7-cats-minor independent whole/native"
+  ],
+  "source_matches_candidate_bytes": true,
+  "delivery_reopened_pixels_exact": true,
+  "inputs": {
+    "visual-novel/art/scene-studies/s054-duel/batch7/09-spearman-foundation.png": "a7ac394ca112c3dd4960399f23d988a5a74e4aacae5f6df5f96f56d4529654b5",
+    "visual-novel/art/scene-studies/s054-duel/batch7/tessa-component.png": "a11a8aa89ab2e75a89bb84baa4544a422ceba12b02efe60957be55b14715198c",
+    "visual-novel/art/scene-studies/s054-duel/batch7/13-empty-hall-near-pillar.png": "e5f99d9d3a8058f491e54aa81b6c8a8e19922ebb25311053806d9692166c6616",
+    "visual-novel/art/scene-studies/s054-duel/batch7/14-black-ward-component.png": "82f4acafb58483a4eeaf98cc40d60eaba3f3d662ffadc4e9ccb0ddd9b076c23c",
+    "visual-novel/art/scene-studies/batch7-cats-minor/duel-valcair-component/valcair-component.png": "21183a47485bcceefc4be18a5eceafe780122d0fb46ebb2c6fa6f93418ace3dd",
+    "visual-novel/renpy/game/art/scenes/s054-throne-hall.png": "4345aae4353b40d7e66ff9ee5dc98c78352bd64dbbcb2ac7ae89e62a94a83a2b"
+  }
+}

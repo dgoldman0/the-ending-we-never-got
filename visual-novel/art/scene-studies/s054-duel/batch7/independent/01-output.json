@@ -1,0 +1,12 @@
+{
+  "generator": "builtin imagegen",
+  "cache_file": "/home/kir/.codex/generated_images/01a0e0f4-cbac-7783-bf63-4d527a4c9c4d/exec-1207142c-f1ea-4da9-b1f6-833fd8abeb2b.png",
+  "saved_file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/01-rejected-folded-arm-tip-contact.png",
+  "size": [
+    1672,
+    941
+  ],
+  "sha256": "5f100fd42d6c9ae65bf26780d9bf1f1cabf9714bc7ff12c24b2204c2089a0f68",
+  "status": "rejected: forward forearm folded back; sword tip contact; shaft exterior depth reading ambiguous",
+  "source_promoted": false
+}

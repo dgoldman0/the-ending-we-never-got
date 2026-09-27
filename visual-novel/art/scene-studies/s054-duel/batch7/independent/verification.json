@@ -1,0 +1,53 @@
+{
+  "deterministic-native.png": {
+    "sha256": "df48f5df6e74d8cebe8dfa38e6d4fd8e4cca3e7eb5504d4579b1a707e4029daf",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  "deterministic-reopened.png": {
+    "sha256": "51496572d98cd5ce08148ba667f0fcc330cd2b274cd954251313b6805f72f3d0",
+    "size": [
+      1672,
+      941
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  "delivery.png": {
+    "sha256": "8574f1033fa6e97b08c4cf0da17abdf274f4fe41bb06d8df6bd38120d2379bac",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  "delivery-reopened.png": {
+    "sha256": "a23d8788899ad85f46ade80e02761a38c88e9776236a10e8161571d99cfbaa06",
+    "size": [
+      1920,
+      1080
+    ],
+    "alpha": [
+      255,
+      255
+    ]
+  },
+  "native_reopened_exact": true,
+  "delivery_reopened_exact": true,
+  "source_before_sha256": "158455f8068061d01406619e3334ee4793dee48bde37960c60f31f1c48c089a2",
+  "uniform_scale": 1.1483253588516746,
+  "canvas_crop_bottom_native_equivalent": 0.5,
+  "master_sha256": "b4fb4ea159105b5756770efef2f19ce6c3d66c9a66d125f0d3f512f4951dd9cb",
+  "native_master_sha256": "71e86aa6b725f6da1be6cf0e25ac5139e8a75e0d6681c81d30e03cc56231a5f5"
+}

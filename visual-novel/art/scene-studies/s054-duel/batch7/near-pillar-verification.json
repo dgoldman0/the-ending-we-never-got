@@ -1,0 +1,24 @@
+{
+  "source_sha256": "b7bd66f6824c6422346c5328ef0d8d8c744b33df6a4440024969942ba77c73a6",
+  "candidate_sha256": "e5f99d9d3a8058f491e54aa81b6c8a8e19922ebb25311053806d9692166c6616",
+  "size": [
+    1672,
+    941
+  ],
+  "reopened_exact": true,
+  "alpha": [
+    255,
+    255
+  ],
+  "changed_pixels": 35475,
+  "changed_bbox": [
+    488,
+    517,
+    647,
+    784
+  ],
+  "shaft_at_impact_y279_exact": true,
+  "three_riser_dais_and_all_room_outside_patch_exact": true,
+  "gimp_layers": 5,
+  "base_translation_y": 140
+}

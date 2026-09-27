@@ -1,0 +1,615 @@
+{
+  "native_size": [
+    1672,
+    941
+  ],
+  "base": "visual-novel/art/scene-studies/s054-duel/batch7/13-empty-hall-near-pillar.png",
+  "layers": [
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/tessa-component.png",
+      "name": "Tessa soft floor shadow",
+      "polygon": null,
+      "matrix": [
+        0.9703,
+        -0.55,
+        489.665,
+        -0.06048,
+        -0.12,
+        997.136
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 18,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/batch7-cats-minor/duel-valcair-component/valcair-component.png",
+      "name": "Valcair soft floor shadow",
+      "polygon": null,
+      "matrix": [
+        1.02888,
+        -0.4,
+        307.344,
+        0.08303,
+        -0.15,
+        883.614
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 18,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/contact-shadows.svg",
+      "name": "Four boot contact shadows",
+      "polygon": null,
+      "matrix": null,
+      "scale": null,
+      "offset": null,
+      "opacity": 62,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/09-spearman-foundation.png",
+      "name": "Far heavy horn \u2014 rigid scaled original component behind crown",
+      "polygon": [
+        [
+          1111,
+          139
+        ],
+        [
+          1123,
+          118
+        ],
+        [
+          1148,
+          102
+        ],
+        [
+          1179,
+          91
+        ],
+        [
+          1208,
+          91
+        ],
+        [
+          1239,
+          103
+        ],
+        [
+          1260,
+          125
+        ],
+        [
+          1274,
+          135
+        ],
+        [
+          1287,
+          135
+        ],
+        [
+          1297,
+          127
+        ],
+        [
+          1294,
+          139
+        ],
+        [
+          1284,
+          147
+        ],
+        [
+          1269,
+          150
+        ],
+        [
+          1250,
+          145
+        ],
+        [
+          1225,
+          129
+        ],
+        [
+          1204,
+          119
+        ],
+        [
+          1181,
+          118
+        ],
+        [
+          1159,
+          130
+        ],
+        [
+          1140,
+          147
+        ],
+        [
+          1124,
+          152
+        ]
+      ],
+      "matrix": [
+        0.6,
+        0,
+        518,
+        0,
+        0.6,
+        17
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/pillar-impact-detail.svg",
+      "name": "Bounded pillar crack and stone chips",
+      "polygon": null,
+      "matrix": null,
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/09-spearman-foundation.png",
+      "name": "Short real wooden shaft ahead of source grip",
+      "polygon": [
+        [
+          399,
+          243
+        ],
+        [
+          467,
+          253
+        ],
+        [
+          467,
+          265
+        ],
+        [
+          398,
+          255
+        ]
+      ],
+      "matrix": null,
+      "scale": null,
+      "offset": [
+        275,
+        39
+      ],
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/09-spearman-foundation.png",
+      "name": "Real spearhead \u2014 shorter foregrip reach",
+      "polygon": [
+        [
+          162,
+          218
+        ],
+        [
+          274,
+          211
+        ],
+        [
+          300,
+          225
+        ],
+        [
+          314,
+          233
+        ],
+        [
+          314,
+          242
+        ],
+        [
+          286,
+          248
+        ],
+        [
+          173,
+          229
+        ]
+      ],
+      "matrix": [
+        0.45144,
+        -0.015607,
+        538.85,
+        0.015607,
+        0.45144,
+        177.14
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/batch7-cats-minor/duel-valcair-component/valcair-component.png",
+      "name": "Exact Valcair source anatomy and remaining rigid shaft",
+      "polygon": null,
+      "matrix": null,
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/tessa-component.png",
+      "name": "Exact Tessa body \u2014 only original glove patch removed for rigid wrist rotation",
+      "polygon": null,
+      "matrix": null,
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": [
+        [
+          590,
+          394
+        ],
+        [
+          706,
+          367
+        ],
+        [
+          714,
+          474
+        ],
+        [
+          588,
+          474
+        ],
+        [
+          588,
+          442
+        ],
+        [
+          587,
+          400
+        ]
+      ],
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/tessa-component.png",
+      "name": "Healthy right glove and entire hilt \u2014 rigid9.7deg wrist articulation",
+      "polygon": [
+        [
+          589,
+          396
+        ],
+        [
+          624,
+          393
+        ],
+        [
+          629,
+          374
+        ],
+        [
+          645,
+          373
+        ],
+        [
+          666,
+          389
+        ],
+        [
+          685,
+          383
+        ],
+        [
+          701,
+          413
+        ],
+        [
+          693,
+          451
+        ],
+        [
+          664,
+          456
+        ],
+        [
+          634,
+          461
+        ],
+        [
+          612,
+          467
+        ],
+        [
+          594,
+          463
+        ],
+        [
+          591,
+          444
+        ],
+        [
+          586,
+          441
+        ]
+      ],
+      "matrix": [
+        0.9857034690888535,
+        -0.16848937956500257,
+        79.24338224761098,
+        0.16848937956500257,
+        0.9857034690888535,
+        -93.909659099365
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/renpy/game/art/scenes/s054-throne-hall.png",
+      "name": "Existing arming-sword steel \u2014 rigid transform, edge at elbow and tip beyond",
+      "polygon": [
+        [
+          250,
+          557
+        ],
+        [
+          279,
+          575
+        ],
+        [
+          496,
+          705
+        ],
+        [
+          526,
+          728
+        ],
+        [
+          498,
+          718
+        ],
+        [
+          277,
+          592
+        ],
+        [
+          245,
+          575
+        ]
+      ],
+      "matrix": [
+        0.654117188826414,
+        0.9445375465649313,
+        -28.03485803313731,
+        -0.9445375465649313,
+        0.654117188826414,
+        285.68489848095953
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": null,
+      "mode": null,
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/shelter-light-donor.png",
+      "name": "Organic white sanctuary light \u2014 additive surface",
+      "polygon": null,
+      "matrix": null,
+      "scale": [
+        1672,
+        923
+      ],
+      "offset": [
+        13,
+        48
+      ],
+      "opacity": 54,
+      "mode": "SCREEN-MODE",
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/glance-ripple.svg",
+      "name": "Tiny sanctuary glancing ripple by spearhead",
+      "polygon": null,
+      "matrix": null,
+      "scale": null,
+      "offset": null,
+      "opacity": 72,
+      "mode": "SCREEN-MODE",
+      "remove": null,
+      "gamma": null
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png",
+      "name": "Forward elbow blade rejection",
+      "polygon": [
+        [
+          155,
+          135
+        ],
+        [
+          585,
+          135
+        ],
+        [
+          615,
+          420
+        ],
+        [
+          590,
+          470
+        ],
+        [
+          140,
+          470
+        ]
+      ],
+      "matrix": [
+        0.19,
+        0,
+        875.4,
+        0,
+        0.19,
+        243.61
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 92,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": 0.4
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png",
+      "name": "Rear elbow ward seam",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          680,
+          0
+        ],
+        [
+          720,
+          440
+        ],
+        [
+          670,
+          540
+        ],
+        [
+          0,
+          540
+        ]
+      ],
+      "matrix": [
+        0.1,
+        0,
+        1286.0,
+        0,
+        0.1,
+        324.9
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 34,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": 0.62
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png",
+      "name": "Front knee ward seam",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          680,
+          0
+        ],
+        [
+          720,
+          440
+        ],
+        [
+          670,
+          540
+        ],
+        [
+          0,
+          540
+        ]
+      ],
+      "matrix": [
+        0.09,
+        0,
+        1069.4,
+        0,
+        0.09,
+        587.71
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 30,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": 0.62
+    },
+    {
+      "file": "visual-novel/art/scene-studies/s054-duel/batch7/independent/black-ward-contact-donor.png",
+      "name": "Rear knee ward seam",
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          680,
+          0
+        ],
+        [
+          720,
+          440
+        ],
+        [
+          670,
+          540
+        ],
+        [
+          0,
+          540
+        ]
+      ],
+      "matrix": [
+        0.08,
+        0,
+        1457.8,
+        0,
+        0.08,
+        678.52
+      ],
+      "scale": null,
+      "offset": null,
+      "opacity": 30,
+      "mode": "MULTIPLY-MODE",
+      "remove": null,
+      "gamma": 0.62
+    }
+  ],
+  "root_review_status": "Root and independent peer whole/native cleared native SHA df48f5df6e74d8cebe8dfa38e6d4fd8e4cca3e7eb5504d4579b1a707e4029daf"
+}

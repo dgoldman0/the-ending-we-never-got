@@ -1,0 +1,6 @@
+(let* ((d "visual-novel/art/scene-studies/batch7-cats-minor/duel-valcair-component/") (im (car (gimp-file-load RUN-NONINTERACTIVE (string-append d "valcair-component.xcf") "component"))) (ly 0))
+(set! ly (car (gimp-image-merge-visible-layers im CLIP-TO-IMAGE)))
+(gimp-layer-resize-to-image-size ly)
+(file-png-save RUN-NONINTERACTIVE im ly (string-append d "reopened.png") "reopened" 0 9 0 0 0 0 0)
+(gimp-image-delete im))
+(gimp-quit 0)

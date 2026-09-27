@@ -1,0 +1,7 @@
+# Valcair component for deterministic duel assembly
+
+At root/Gray Scar request, extract the checked single-spearman foundation `s054-duel/batch7/09-spearman-foundation.png`. Preserve original 1672×941 placement, scale and every visible RGB pixel. No actor generation or repaint. Include full figure, hair/horns, both checked grips and arms, armor/coat/boots, and the existing rear shaft. Omit the rejected long forward spear span; retain a small clean wooden stub from x681 for Gray Scar’s new forward shaft/head connection.
+
+Actual GIMP production: one original source layer plus manually traced, antialiased silhouette mask, with separate mask regions for the shaft. Native inspection corrected armor plate edges, individual hand silhouette, hair/horn tip, full under-skirt panels and hanging strip, both soles and rear calf/boot edges. A bounded one-pixel mask inset removes old-floor fringe only from the soft skirt hem. No RGB paint, translation, scale, body warp or hand reconstruction. The exact whole character and native hands/arms, face/hair/horns, waist, skirt, knees, calves and soles were viewed against a contrasting solid field; source crops were inspected to resolve boundary ambiguity.
+
+Reopened visible export matches RGBA exactly. Every visible RGB pixel equals the source, and all named grip/arm/face core regions remain fully opaque. This is a component review, not final scene approval. Gray Scar owns the layout guide; root owns final hall/ward/weapons/scene and source promotion.
