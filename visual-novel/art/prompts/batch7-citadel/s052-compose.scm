@@ -18,7 +18,7 @@
 (gimp-selection-grow img 1)
 (gimp-edit-fill mask FOREGROUND-FILL)
 (gimp-selection-none img)
-(if (= ward 1) (patch img "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png" "Preserve original bare LEFT hand and fingertips exactly against pilaster" 1920 1080 0 0 #(1106 237 1125 237 1134 233 1138 220 1141 199 1146 195 1148 196 1148 184 1153 181 1157 182 1159 176 1164 176 1167 180 1168 190 1167 212 1166 227 1176 216 1181 214 1184 217 1183 222 1177 233 1167 243 1154 248 1133 253 1112 264 1105 269) 0.2))
+(if (= ward 1) (patch img "visual-novel/art/scene-studies/batch7-citadel/source-before/s052-entrance-ward.png" "Preserve original bare LEFT hand and fingertips exactly against pilaster" 1920 1080 0 0 #(1106 237 1125 237 1134 233 1138 220 1141 199 1146 195 1148 196 1148 184 1153 181 1157 182 1159 176 1164 176 1167 180 1168 190 1167 212 1166 227 1176 216 1181 214 1184 217 1183 222 1177 233 1167 243 1154 248 1133 253 1112 264 1105 269) 0.2))
 (finish img (string-append "visual-novel/art/scene-studies/batch7-citadel/" name))))
 (s052 "s052-citadel-inner-landing" 0)
 (s052 "s052-entrance-ward" 1)

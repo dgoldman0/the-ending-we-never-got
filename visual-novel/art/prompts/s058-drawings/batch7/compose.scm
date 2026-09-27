@@ -3,7 +3,7 @@
 (gimp-image-scale img 1920 1081)
 (gimp-image-resize img 1920 1080 0 0)
 (gimp-item-set-name base "Generated market paving — fountain behind viewer")
-(set! fg (car (gimp-file-load-layer RUN-NONINTERACTIVE img "visual-novel/renpy/game/art/scenes/s058-drawings.png")))
+(set! fg (car (gimp-file-load-layer RUN-NONINTERACTIVE img "visual-novel/art/scene-studies/s058-drawings/batch7/before.png")))
 (gimp-image-insert-layer img fg 0 0)
 (gimp-item-set-name fg "Untouched current drawings, board, hands, soft brace and lap — exact foreground")
 (set! mask (car (gimp-layer-create-mask fg ADD-BLACK-MASK)))

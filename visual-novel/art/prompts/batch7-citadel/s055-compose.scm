@@ -6,7 +6,7 @@
 (gimp-context-set-foreground '(0 0 0))
 (gimp-edit-fill mask FOREGROUND-FILL)
 (gimp-selection-none img))
-(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/renpy/game/art/scenes/s055-citadel-lower-stair-morning.png" "current source"))) (layer 0) (mask 0))
+(let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-citadel/source-before/s055-citadel-lower-stair-morning.png" "current source"))) (layer 0) (mask 0))
 (gimp-item-set-name (car (gimp-image-get-active-layer img)) "CURRENT source; winter, Lucan tears/left dressing and timber rail retained")
 (set! layer (patch img "visual-novel/art/scene-studies/batch7-citadel/s055-material-donor.png" "Matte limestone architecture only; individual figure and rail exclusion contours" 1920 1081 0 0 #(333 0 1920 0 1920 1080 0 1080 0 373 245 370 245 320 288 310 292 270 327 263) 1))
 (set! mask (car (gimp-layer-get-mask layer)))

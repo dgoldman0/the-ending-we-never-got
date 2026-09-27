@@ -1,0 +1,37 @@
+[
+  {
+    "asset": "s051-north-infirmary-court",
+    "historical_revision": "7337709^",
+    "source_sha256": "8905ff39cf787e0b3b115bb3c097c10eae03626de19fcf38709521c1323818d1"
+  },
+  {
+    "asset": "s052-citadel-inner-landing",
+    "historical_revision": "7337709^",
+    "source_sha256": "8d47c44ea78740aa2acabcd60b93d907d3a04c5daab84e7a7f677529f446f33e"
+  },
+  {
+    "asset": "s052-entrance-ward",
+    "historical_revision": "7337709^",
+    "source_sha256": "fdb855f78f617f6681bd677dc1c9f888233966c1de669a9fd6553f4bce1bd9b4"
+  },
+  {
+    "asset": "s050-citadel-lower-stair",
+    "historical_revision": "facc215^",
+    "source_sha256": "2a40433bcb5b091bf8d1f368aa01b5865105b3e939b1954e590ec97d0882d6c1"
+  },
+  {
+    "asset": "s055-citadel-lower-stair-morning",
+    "historical_revision": "facc215^",
+    "source_sha256": "40a6e2e80abc87da432c436657e2f9702c77cf17e969e4bb451c5fd3a57f2c2c"
+  },
+  {
+    "asset": "s058-final",
+    "historical_revision": "facc215^",
+    "source_sha256": "9b3811a1fb0ef0158cd7c5769f720c00309f76352befa67a32507b6818d53184"
+  },
+  {
+    "asset": "s054-lever",
+    "historical_revision": "f642b2a^",
+    "source_sha256": "0383d775e86517ba2ff6d196f582e4f2eacdf0d1f05ab3a6234e92e545978758"
+  }
+]

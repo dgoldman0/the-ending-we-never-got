@@ -1,6 +1,6 @@
 (load "visual-novel/art/prompts/batch7-citadel/compose.scm")
 (define (original-patch img name points feather a b c d tx ty)
-(let* ((layer (patch img "visual-novel/renpy/game/art/scenes/s054-lever.png" name 1920 1080 0 0 points feather)))
+(let* ((layer (patch img "visual-novel/art/scene-studies/batch7-citadel/source-before/s054-lever.png" name 1920 1080 0 0 points feather)))
 (gimp-context-set-interpolation INTERPOLATION-CUBIC)
 (gimp-item-transform-matrix layer a b tx c d ty 0 0 1)))
 (let* ((img (car (gimp-file-load RUN-NONINTERACTIVE "visual-novel/art/scene-studies/batch7-citadel/s054-spear-boundary-donor.png" "Physically reblocked three-step platform with Valcair below"))) (base (car (gimp-image-get-active-layer img))))
