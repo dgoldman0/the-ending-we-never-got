@@ -27,3 +27,5 @@ The generated peripheral extension slightly changed the core scale/position. Rea
 ## Delivery
 
 Completed26September2026. Root reviewed final whole composition and framing-native board; citadel independently reviewed final whole and joins after its actual-reference/core pass. No doubled cloth/stone boundary or rectangular splice was found. Producer inspected final native hands, both paper drawings and outer joins. The exact reviewed candidate was promoted to `renpy/game/art/scenes/s058-drawings.png`; its SHA-256 is `40d99a87c742158c3f722429d752d2b1391ba70ae0a85d75bda164101ee1004b`. Delivery does not clear runtime grading, connected scene coverage or the wider game.
+
+**Checked in the game, 26 September 2026 (Claude).** At line 2207 the sketch's nose stroke ran on into a moustache, which at full screen made the drawing read as an older man; Iven is clean-shaven. The stroke under the nose is erased back to the paper, keeping the nose's hook and the smile (380 px; `tools/local-repairs.py`, PENCIL, layered master in `art/local-repairs/pencil/`).

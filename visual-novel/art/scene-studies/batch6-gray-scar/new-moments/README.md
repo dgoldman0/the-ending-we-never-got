@@ -36,3 +36,5 @@ Failed foundations and intermediate components are retained only for provenance.
 
 Only the three requested neutral scene PNGs were added to the source-art directory. No source screenplay, shared canon, runtime code, staging, grading or UI files were changed.
 
+
+**Checked in the game, 26 September 2026 (Claude).** All three moments play at their lines (795, 913, 937). One fault was found and fixed locally: in `s021-serat.png` a second, partly hidden head (horn, curls, cheek and ear) sat behind Serat's own, between him and his brother. It is painted out as the brother's coat in the shadow of Serat's head (7154 px; `tools/local-repairs.py`, DOUBLES, with its layered master in `art/local-repairs/doubles/`). The delivered file is kept in `art/local-repairs/originals/`.

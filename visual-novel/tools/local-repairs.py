@@ -45,6 +45,17 @@ and from the check of batch 6 (26 September 2026):
   double    a figure the image generator doubled: the extra one is painted
             out with what lies behind it (S021: a second, partly hidden head
             behind Serat's own, as his brother holds him)
+  match     a part painted in the wrong material takes the colour of the
+            part it should match (S054 strike: the hand on Tessa's shoulder
+            was a pale, waxy bare hand; Valcair is in armour, and it takes
+            the dark steel of his other gauntlet)
+  smooth    a texture that changes what a thing is, smoothed away (S057:
+            Lucan's horns came out ringed like a ram's; his are smooth)
+  seam      a hard edge where two pasted pieces of a painting meet, blended
+            (S021: a horizontal cut across Lucan's knee)
+  pencil    a stroke that changes who a drawing shows, erased back to the
+            paper (S058: the sketch of Iven Tessa lingers over had a
+            moustache; he is clean-shaven)
   stray     a limb in a place no body could put it, replaced with the floor
             it hides, in the shadow of what stays (S035: Renn's boot and shin
             came out from under the broken axle beside his face, though he
@@ -235,6 +246,40 @@ DOUBLES = {
         keep=[(958, 191), (1010, 185), (1010, 320), (918, 320), (917, 285), (907, 276), (904, 265), (906, 256),
               (913, 249), (922, 245), (931, 243.5), (935, 239), (940, 231), (947, 220), (953, 210), (960, 199)],
         shade=(0.62, 55), grain=(885, 150, 925, 180)),
+}
+
+# Parts painted in the wrong material: the region takes the colour, and the
+# brightness and its spread, of another part (both masks from Segment
+# Anything, checked by eye, in art/local-repairs/masks/), keeping its own
+# modelling.
+MATCH = {
+    'art/scenes/s054-strike.png': dict(region='match--s054-strike', like='like--s054-strike'),
+}
+
+# Textures to smooth away: the region (a mask), the width of the masked
+# Gaussian (nothing from outside the region bleeds in) and the fine grain it
+# gets back so it is not plastic.
+SMOOTH = {
+    'art/scenes/s057-father.png': dict(region='smooth--s057-father', sigma=3.0, grain=1.5),
+}
+
+# Hard seams where two pasted pieces meet: the first row of the lower piece
+# and the columns the seam crosses. Each piece is mirrored across the seam
+# and the two are blended, broad tones over 'soft' rows and fine detail over
+# 'sharp' rows, so the step goes and the texture stays.
+SEAMS = {
+    'art/scenes/s021-serat.png': [dict(row=608, cols=(130, 480), soft=14, sharp=2.0)],
+}
+
+# Pencil strokes to erase from a drawing on paper: the stroke (a polygon;
+# the nose's short hook above it and the mouth below stay), the width of the
+# stroke the paper is recovered under (a morphological close), and a patch of
+# bare paper whose grain the erased area takes.
+PENCIL = {
+    'art/scenes/s058-drawings.png': dict(
+        erase=[(1281, 416.5), (1288.5, 416), (1289, 421.5), (1296, 421.5), (1297, 417.5), (1303, 417.5),
+               (1309, 418), (1309, 425.5), (1300, 426), (1290, 425.5), (1281, 423)],
+        close=11, grain=(1266, 400, 1282, 416)),
 }
 
 # Stray limbs to replace with the floor beneath: the region (a mask in
@@ -604,6 +649,76 @@ def paint_out(rgb, spec):
     return np.clip(rgb.astype(np.float32) * (1 - alpha) + fill * alpha + 0.5, 0, 255).astype(np.uint8)
 
 
+def match_part(rgb, spec):
+    """Give a region the colour and brightness of another (Lab mean and
+    spread), keeping its own light and shade."""
+    region = np.asarray(Image.open(MASKS / (spec['region'] + '.png'))) > 127
+    like = np.asarray(Image.open(MASKS / (spec['like'] + '.png'))) > 127
+    lab = cv2.cvtColor(np.ascontiguousarray(rgb), cv2.COLOR_RGB2LAB).astype(np.float32)
+    have, want = lab[region], lab[like]
+    new = lab.copy()
+    for c, most in ((0, 1.6), (1, 1.5), (2, 1.5)):
+        k = np.clip(want[:, c].std() / have[:, c].std(), 0.5, most)
+        new[..., c] = want[:, c].mean() + (lab[..., c] - have[:, c].mean()) * k
+    full = cv2.cvtColor(np.clip(new, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB).astype(np.float32)
+    alpha = cv2.GaussianBlur(region.astype(np.float32), (0, 0), 0.8)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + full * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
+def smooth_region(rgb, spec):
+    """Smooth a region's texture with a Gaussian taken only over the
+    region, and add back a fine grain."""
+    region = np.asarray(Image.open(MASKS / (spec['region'] + '.png'))) > 127
+    inner = cv2.erode(region.astype(np.uint8), np.ones((3, 3), np.uint8)).astype(np.float32)
+    lab = cv2.cvtColor(np.ascontiguousarray(rgb), cv2.COLOR_RGB2LAB).astype(np.float32)
+    smooth = cv2.GaussianBlur(lab * inner[..., None], (0, 0), spec['sigma']) / \
+        np.maximum(cv2.GaussianBlur(inner, (0, 0), spec['sigma'])[..., None], 1e-4)
+    smooth[..., 0] += cv2.GaussianBlur(np.random.default_rng(2).normal(0, spec['grain'], region.shape).astype(np.float32),
+                                       (0, 0), 0.6)
+    full = cv2.cvtColor(np.clip(smooth, 0, 255).astype(np.uint8), cv2.COLOR_LAB2RGB).astype(np.float32)
+    alpha = cv2.GaussianBlur(region.astype(np.float32), (0, 0), 0.8)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + full * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
+def mend_seam(rgb, spec):
+    """Blend the two pieces of a painting across a horizontal seam."""
+    src = rgb.astype(np.float32)
+    h, w = src.shape[:2]
+    row, (x0, x1) = spec['row'], spec['cols']
+    upper, lower = src.copy(), src.copy()
+    for k in range(60):
+        upper[row + k] = src[row - 1 - k]
+        lower[row - 1 - k] = src[row + k]
+    yy = np.arange(h, dtype=np.float32)[:, None] + 0.5
+    def ramp(width):
+        return np.clip((yy - row + width) / (2 * width), 0, 1)[..., None]
+    low_u, low_l = cv2.GaussianBlur(upper, (0, 0), 6), cv2.GaussianBlur(lower, (0, 0), 6)
+    soft, sharp = ramp(spec['soft']), ramp(spec['sharp'])
+    blend = low_u * (1 - soft) + low_l * soft + (upper - low_u) * (1 - sharp) + (lower - low_l) * sharp
+    xs = np.arange(w, dtype=np.float32)[None, :]
+    wx = np.clip((xs - x0) / 10, 0, 1) * np.clip((x1 - xs) / 10, 0, 1)
+    wy = np.clip(1.5 - np.abs(yy - row) / (spec['soft'] + 2), 0, 1)
+    alpha = (wx * wy)[..., None]
+    return np.clip(src * (1 - alpha) + blend * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
+def erase_pencil(rgb, spec):
+    """Take a pencil stroke off the paper: the paper's own tone under it
+    (a morphological close lifts thin dark strokes), with the paper's grain."""
+    h, w = rgb.shape[:2]
+    region = np.zeros((h, w), np.uint8)
+    cv2.fillPoly(region, [np.round(np.array(spec['erase']) * 8).astype(np.int32)], 255, lineType=cv2.LINE_AA, shift=3)
+    region = region.astype(np.float32) / 255
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (spec['close'], spec['close']))
+    paper = cv2.GaussianBlur(cv2.morphologyEx(np.ascontiguousarray(rgb), cv2.MORPH_CLOSE, kernel).astype(np.float32), (0, 0), 1.2)
+    x0, y0, x1, y1 = spec['grain']
+    patch = rgb[y0:y1, x0:x1].astype(np.float32)
+    sd = float((patch - cv2.GaussianBlur(patch, (0, 0), 1.2)).std())
+    noise = cv2.GaussianBlur(np.random.default_rng(3).normal(0, sd, (h, w)).astype(np.float32), (0, 0), 0.6)
+    alpha = cv2.GaussianBlur(region, (0, 0), 0.8)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + (paper + noise[..., None]) * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
 def clone_under(rgb, spec):
     """Replace a region with the floor beside it (copied from the given
     offset), shaded by the object next to it, and blended at the edge."""
@@ -894,11 +1009,43 @@ def main():
     for path, spec in DOUBLES.items():
         pixels = original(path)
         rgb = paint_out(pixels[..., :3], spec)
+        for seam in SEAMS.get(path, []):        # the same painting's seams, with it
+            rgb = mend_seam(rgb, seam)
         after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
         if guarded_write(path, after):
             changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
             xcf = save_master('doubles', path, pixels[..., :3], rgb, changed, rgb)
             print('doubled figure painted out:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
+    for path, specs in SEAMS.items():
+        if path in DOUBLES:                     # written above, with its doubled figure
+            continue
+        pixels = original(path)
+        rgb = pixels[..., :3]
+        for seam in specs:
+            rgb = mend_seam(rgb, seam)
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('seams', path, pixels[..., :3], rgb, changed, rgb)
+            print('seam mended:', path, '->', xcf.relative_to(VN))
+    for table, fix, folder, what in ((MATCH, match_part, 'match', 'part matched'),
+                                     (SMOOTH, smooth_region, 'smooth', 'texture smoothed')):
+        for path, spec in table.items():
+            pixels = original(path)
+            rgb = fix(pixels[..., :3], spec)
+            after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+            if guarded_write(path, after):
+                changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+                xcf = save_master(folder, path, pixels[..., :3], rgb, changed, rgb)
+                print(what + ':', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
+    for path, spec in PENCIL.items():
+        pixels = original(path)
+        rgb = erase_pencil(pixels[..., :3], spec)
+        after = np.dstack([rgb, pixels[..., 3]]) if pixels.shape[2] == 4 else rgb
+        if guarded_write(path, after):
+            changed = (rgb != pixels[..., :3]).any(axis=2).astype(np.float32)
+            xcf = save_master('pencil', path, pixels[..., :3], rgb, changed, rgb)
+            print('pencil stroke erased:', path, '(%d px) ->' % changed.sum(), xcf.relative_to(VN))
     for path, spec in STRAYS.items():
         pixels = original(path)
         rgb = clone_under(pixels[..., :3], spec)
