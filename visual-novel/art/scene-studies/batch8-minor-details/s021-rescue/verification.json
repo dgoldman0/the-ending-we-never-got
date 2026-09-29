@@ -1,0 +1,27 @@
+{
+  "status": "Inspected neutral-source correction, not runtime/user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "ea2778bdb77060da28003b7dbbd3c42b401b2c8f12b71b0e709ba7ccc71cd9e9",
+  "final_sha256": "406e7df450c24a60427874b9990f7b9e62e769c906aa01f0b3a6f60be74eaa03",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 9486,
+  "changed_percent": 0.4575,
+  "changed_bbox": [
+    338,
+    277,
+    803,
+    615
+  ],
+  "inspection": [
+    "complete source",
+    "native input crops",
+    "final native GIMP crops",
+    "magnified defect regions",
+    "complete final GIMP output"
+  ],
+  "observations": "Iven's upper lip, chin and jaw are clean-shaven; his original eyes, brows, curls, body and warm brown coat remain. The spent crossbow has a short relaxed straight string between the bow tips instead of the cocked triangle. Early narrow string masks exposed donor string stubs; final lower-bow region uses one coherent relaxed assembly. The rest of the scene is unchanged.",
+  "limitations": "No grade, runtime build or connected-play verdict."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "Inspected neutral-source correction, not runtime/user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "51b373c0cc15ac5990568e1c70f3992d4c18352f097e7bb83bf58f8d5aa7e84b",
+  "final_sha256": "8dcc08ef8fb6a7b6f4d4682b74ea48727037a06011a0c6cc7b66568700b69b55",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 78,
+  "changed_percent": 0.0038,
+  "changed_bbox": [
+    1189,
+    622,
+    1292,
+    675
+  ],
+  "inspection": [
+    "complete source",
+    "native input crops",
+    "final native GIMP crops",
+    "magnified defect regions",
+    "complete final GIMP output"
+  ],
+  "observations": "Both rear escort crossbows now have a string from the nut to each limb tip. The added lower halves match the existing upper half colour and thickness. Only the two thin line paths change; all figures, bows, repaired Lucan horns and Claude's human-cloak colour are pixel-preserved.",
+  "limitations": "No grade, runtime build or connected-play verdict."
+}

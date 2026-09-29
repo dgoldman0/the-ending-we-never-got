@@ -15,6 +15,11 @@ S058's first attempt to restore the old furniture silhouettes also restored narr
 
 Generation used the built-in tool. Filesystem attachments and `view_image` failed in the environment's `mountinfo` helper; inspection used read-only inline image derivatives, and generation used that conversation image. All actual component scaling, masks, assembly and export were performed in GIMP. Exact prompts are in `art/prompts/batch8-minor-details/`. `build.py` reproduces these four masters and their exports without altering runtime sources.
 
-## Follow-ups still in progress
+## Completed Gray Scar follow-ups
 
-The root agent subsequently assigned `s021-rescue.png` (spent string and clean-shaven Iven) and `s018-gray-scar-ferry-approach.png` (two missing string halves). Their working folders are not part of the completed four-source group above. No follow-up source has been delivered yet.
+The root agent subsequently assigned and received two additional current-source corrections:
+
+- `s018-gray-scar-ferry-approach.png`: finish the two rear escorts' lower string halves, joining the existing nuts to the opposite limb tips. This is a separate editable 1 px GIMP brush layer; only those thin paths change.
+- `s021-rescue.png`: remove Iven's moustache/stubble with a lower-face mask while protecting his source eyes, hair and coat; give the spent crossbow a straight relaxed string between its tips. An initial mixed string repair left tiny stubs, so the final mask uses one coherent lower-bow assembly. Upper stock and floor contact are preserved.
+
+`build-followups.py` reproduces these masters. Both full final paintings and their native crops were inspected, with magnified checks of the very small face and string regions. Reopened XCF exports match the delivered sources exactly. These follow-ups carry the same neutral-source-only limitations as the initial group.

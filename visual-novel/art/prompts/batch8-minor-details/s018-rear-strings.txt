@@ -1,0 +1,2 @@
+Local GIMP-only correction, no new generation.
+The two rear escort crossbows already have one drawn-string segment from their upper limb tips to the nut. Finish each string from that same nut to the lower limb tip, preserving all surrounding pixels. Existing upper segment endpoints are inherited from Batch 7's exact 497/1373 by 415/1145 donor transform at (891,409). Add an editable 1 px soft string layer, colour RGB (177,166,146), matching those upper halves, at (1195.06,622.48) to (1190.3,643.0) and (1291.36,654.82) to (1289.8,674.2).
