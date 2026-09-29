@@ -1,0 +1,96 @@
+{
+  "s052-citadel-inner-landing": {
+    "size": [
+      1920,
+      1080
+    ],
+    "master_reopen_pixel_equal": true,
+    "layer_count": 5,
+    "changed_pixels": 509656,
+    "difference_bounds": [
+      199,
+      0,
+      1847,
+      933
+    ],
+    "protected_region_changed_pixels": {
+      "runner head": 0,
+      "Elin face": 0,
+      "Tessa face": 0,
+      "Olan face skin": 0,
+      "Tessa gloved palm": 0
+    },
+    "candidate_sha256": "c397323b2fdbcd3acd63eff52aabf3ec34c30f54b9bdc424081f900bdac61061",
+    "runtime_matches_candidate": true
+  },
+  "s052-entrance-ward": {
+    "size": [
+      1920,
+      1080
+    ],
+    "master_reopen_pixel_equal": true,
+    "layer_count": 5,
+    "changed_pixels": 28187,
+    "difference_bounds": [
+      1020,
+      218,
+      1849,
+      944
+    ],
+    "protected_region_changed_pixels": {
+      "runner head": 0,
+      "Elin face": 0,
+      "Tessa face": 0,
+      "Olan face skin": 0,
+      "bare left palm": 0
+    },
+    "candidate_sha256": "d85ca61c7e39c756efbe39a8da88867fb0c6907b318743c10725f9fb6a7b2a20",
+    "runtime_matches_candidate": true
+  },
+  "s054-duel": {
+    "size": [
+      1920,
+      1080
+    ],
+    "master_reopen_pixel_equal": true,
+    "layer_count": 5,
+    "changed_pixels": 152983,
+    "difference_bounds": [
+      1020,
+      180,
+      1914,
+      1029
+    ],
+    "protected_region_changed_pixels": {
+      "Tessa body shelter pillar left": 0,
+      "Valcair face skin": 0,
+      "green centre banner": 0
+    },
+    "candidate_sha256": "1895f3c8dde2fdab68a9348fc85e8a2303e05486bc3945da1908aa752ead4774",
+    "runtime_matches_candidate": true
+  },
+  "s054-lever": {
+    "size": [
+      1920,
+      1080
+    ],
+    "master_reopen_pixel_equal": true,
+    "layer_count": 4,
+    "changed_pixels": 353165,
+    "difference_bounds": [
+      0,
+      39,
+      1571,
+      1003
+    ],
+    "protected_region_changed_pixels": {
+      "Tessa head": 0,
+      "injured right hand": 0,
+      "lever left hand": 0,
+      "Valcair head horns": 0,
+      "Valcair body": 0
+    },
+    "candidate_sha256": "d0ce49ab5da55e3b21ac7bb1e29fa9bae3c1b4bc0640b7b24afd8dc16d031f52",
+    "runtime_matches_candidate": true
+  }
+}
