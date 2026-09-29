@@ -1,0 +1,389 @@
+{
+  "date": "2026-09-29",
+  "initial_commit": "af94379",
+  "required_sources_completed": 15,
+  "partial_sources": 1,
+  "optional_sources_completed": 1,
+  "blocked_required_items": [
+    64,
+    72
+  ],
+  "game_graded_or_rebuilt": false,
+  "source_review_only": true,
+  "records": [
+    {
+      "scene": "s034-return-cargo-shed",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s034-return-cargo-shed.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s034-return-cargo-shed/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s034-return-cargo-shed/candidate.png",
+      "before_sha256": "5898b5e4c9563021b026881507ea41b1672addf29906f3b81800781891fb851b",
+      "delivered_sha256": "28ae6f1f3c0799c59efe4b44f56383748fc16db0699d0cbb96b7032df17b375b",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 2462,
+      "changed_bounds": [
+        1817,
+        250,
+        1843,
+        423
+      ]
+    },
+    {
+      "scene": "s050-citadel-lower-stair",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s050-citadel-lower-stair/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s050-citadel-lower-stair/candidate.png",
+      "before_sha256": "5a6de3c37707dc5c3d923e183227f86b8de4515338fb7d7d90ed2641a4548c1c",
+      "delivered_sha256": "63ddb7b542e2a4528d9e1f1bf77e0f17bed4864c79e22fb70a9812175bdb59e9",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 22526,
+      "changed_bounds": [
+        1241,
+        626,
+        1350,
+        861
+      ]
+    },
+    {
+      "scene": "s051-north-infirmary-court",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s051-north-infirmary-court/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s051-north-infirmary-court/candidate.png",
+      "before_sha256": "d9956bcd8594c7a0769b08b97f7efcedd10f0fd3e6653d4f4664411051488dcf",
+      "delivered_sha256": "c78ff8cf7c93d86c96320967870b350bf4c2561f11d33b74b0974ed6a2de6276",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 25657,
+      "changed_bounds": [
+        319,
+        402,
+        590,
+        553
+      ]
+    },
+    {
+      "scene": "s058-final",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s058-final.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s058-final/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s058-final/candidate.png",
+      "before_sha256": "d1ecbb47a9a57bc93f1d80c4b9a35d711efeb082b3042142ab6c02ef150773c2",
+      "delivered_sha256": "69af5245ed7179ddde9ad184d8380e1b84a4c60cbc756313367633032e17aed3",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 123206,
+      "changed_bounds": [
+        694,
+        677,
+        1487,
+        1034
+      ]
+    },
+    {
+      "scene": "s018-gray-scar-ferry-approach",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s018-gray-scar-ferry-approach.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s018-gray-scar-ferry-approach/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s018-gray-scar-ferry-approach/candidate.png",
+      "before_sha256": "51b373c0cc15ac5990568e1c70f3992d4c18352f097e7bb83bf58f8d5aa7e84b",
+      "delivered_sha256": "8dcc08ef8fb6a7b6f4d4682b74ea48727037a06011a0c6cc7b66568700b69b55",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 78,
+      "changed_bounds": [
+        1189,
+        622,
+        1292,
+        675
+      ]
+    },
+    {
+      "scene": "s021-rescue",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s021-rescue.png",
+      "master": "visual-novel/art/scene-studies/batch8-minor-details/s021-rescue/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-minor-details/s021-rescue/candidate.png",
+      "before_sha256": "ea2778bdb77060da28003b7dbbd3c42b401b2c8f12b71b0e709ba7ccc71cd9e9",
+      "delivered_sha256": "406e7df450c24a60427874b9990f7b9e62e769c906aa01f0b3a6f60be74eaa03",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 9486,
+      "changed_bounds": [
+        338,
+        277,
+        803,
+        615
+      ]
+    },
+    {
+      "scene": "s052-citadel-inner-landing",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s052-citadel-inner-landing.png",
+      "master": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s052-citadel-inner-landing/repair-master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s052-citadel-inner-landing/candidate.png",
+      "before_sha256": "436cc173ab19dec99227d83420cf50266c18f7739c768feee1ee7a2debde9136",
+      "delivered_sha256": "c397323b2fdbcd3acd63eff52aabf3ec34c30f54b9bdc424081f900bdac61061",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 509656,
+      "changed_bounds": [
+        199,
+        0,
+        1847,
+        933
+      ]
+    },
+    {
+      "scene": "s052-entrance-ward",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png",
+      "master": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s052-entrance-ward/repair-master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s052-entrance-ward/candidate.png",
+      "before_sha256": "0aff2eda17fffe1558976242de1f7669552d91ead0a2de64080b668a10d134c5",
+      "delivered_sha256": "d85ca61c7e39c756efbe39a8da88867fb0c6907b318743c10725f9fb6a7b2a20",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 28187,
+      "changed_bounds": [
+        1020,
+        218,
+        1849,
+        944
+      ]
+    },
+    {
+      "scene": "s054-duel",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s054-duel.png",
+      "master": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s054-duel/repair-master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s054-duel/candidate.png",
+      "before_sha256": "19c355da615a407d7ecfa04890657180e15ca4e901c20ec6feb3ad686e169f04",
+      "delivered_sha256": "1895f3c8dde2fdab68a9348fc85e8a2303e05486bc3945da1908aa752ead4774",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 152983,
+      "changed_bounds": [
+        1020,
+        180,
+        1914,
+        1029
+      ]
+    },
+    {
+      "scene": "s054-lever",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s054-lever.png",
+      "master": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s054-lever/repair-master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-citadel-ward-lever/s054-lever/candidate.png",
+      "before_sha256": "0f3ca9706f4e226c5eff186fdd6218bbf32fa16bbd8ace8ec99a0dd86a3f2056",
+      "delivered_sha256": "d0ce49ab5da55e3b21ac7bb1e29fa9bae3c1b4bc0640b7b24afd8dc16d031f52",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 353165,
+      "changed_bounds": [
+        0,
+        39,
+        1571,
+        1003
+      ]
+    },
+    {
+      "scene": "s019-gray-scar-ferryhouse",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+      "master": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/candidate.png",
+      "before_sha256": "9595410acd28ebf70153eea2799a3d306629297625bd8e6d7f824a1bd75bcbe4",
+      "delivered_sha256": "27884b27cc32bfcc4cc47d82a82a0e98de2997217bbc8d5a487e8dd9e862fbef",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 31370,
+      "changed_bounds": [
+        442,
+        276,
+        1698,
+        584
+      ]
+    },
+    {
+      "scene": "s021-gray-scar-covered-landing",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+      "master": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/candidate.png",
+      "before_sha256": "8cc16a6afa9d8e02cce9db597d2e25ad5a703ce625586b29f3a04008240897e5",
+      "delivered_sha256": "3cbeb33663d7c82456425f46e189d5ab9b102b83ac93f751d52d3452b1686ac2",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 3208,
+      "changed_bounds": [
+        1282,
+        303,
+        1694,
+        378
+      ]
+    },
+    {
+      "scene": "s021-lucan-returns",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s021-lucan-returns.png",
+      "master": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/candidate.png",
+      "before_sha256": "6db0de183c8621b302526ee308bccc470d65214f3b4b2fd18df92375fb3ce57c",
+      "delivered_sha256": "ed2cc6c10b779d2838e8750f435cb8b8f50289a493bff685cf7e19d9d7f22547",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 119786,
+      "changed_bounds": [
+        599,
+        97,
+        1523,
+        832
+      ]
+    },
+    {
+      "scene": "s021-serat",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+      "master": "visual-novel/art/scene-studies/batch8-gray-scar/s021-serat/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-gray-scar/s021-serat/candidate.png",
+      "before_sha256": "017d36be5d4b43744b4b8134b1837c14e882be4f457abe9181a14ad62a0d0a85",
+      "delivered_sha256": "e28b29e49e51ef22b5025d7e23019fa382db289579e276be7c785eb92d5403e6",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 92952,
+      "changed_bounds": [
+        0,
+        0,
+        1814,
+        417
+      ]
+    },
+    {
+      "scene": "s021-boat",
+      "status": "required-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+      "master": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat/candidate.png",
+      "before_sha256": "969c3486396e41ff8f3eaf2adc78e69d4180445f269389e2a386a0a458e7dcb7",
+      "delivered_sha256": "5f2b4fec13a625ed7c30277802f34d338e03087ed4496d29d57f364219faf50d",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 76397,
+      "changed_bounds": [
+        239,
+        259,
+        559,
+        617
+      ]
+    },
+    {
+      "scene": "s053-bend",
+      "status": "partial-carrier-hair-only",
+      "source": "visual-novel/renpy/game/art/scenes/s053-bend.png",
+      "master": "visual-novel/art/scene-studies/batch8-stair/s053-carrier-only.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-stair/s053-carrier-only.png",
+      "before_sha256": "adc0a785d6062c53e7d6922df227a7eda59afc9a024210f0667e069f798fdbb0",
+      "delivered_sha256": "2a3af96d5f4b5247d87215740f0e8d8fdbc91ab187e3d52787ad2666f1708285",
+      "size": [
+        1920,
+        1080
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 2324,
+      "changed_bounds": [
+        1467,
+        29,
+        1537,
+        78
+      ]
+    },
+    {
+      "scene": "s057-father",
+      "status": "optional-source-repair",
+      "source": "visual-novel/renpy/game/art/scenes/s057-father.png",
+      "master": "visual-novel/art/scene-studies/batch8-optional-horns/master.xcf",
+      "candidate": "visual-novel/art/scene-studies/batch8-optional-horns/candidate.png",
+      "before_sha256": "4277d995db841f8e06be1454819ed24f8f76332dcb23be66dd4e2caae001a8bb",
+      "delivered_sha256": "a3b0a9625ad02c6ffd16566069a47dae1f9eb537088710479b8851394dc8f5be",
+      "size": [
+        2240,
+        1260
+      ],
+      "opaque": true,
+      "reopened_rgba_equal": true,
+      "changed_pixels": 2045,
+      "changed_bounds": [
+        671,
+        367,
+        821,
+        423
+      ]
+    }
+  ]
+}
