@@ -1,0 +1,155 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-optional-horns/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch8-optional-horns",
+  "edits": [
+    {
+      "name": "Second sentry - short smooth swept-back horns",
+      "donor": "visual-novel/art/scene-studies/batch8-optional-horns/sentries-donor.png",
+      "scale": [
+        420,
+        220
+      ],
+      "offset": [
+        520,
+        320
+      ],
+      "polygon": [
+        [
+          674,
+          367
+        ],
+        [
+          697,
+          368
+        ],
+        [
+          708,
+          372
+        ],
+        [
+          715,
+          379
+        ],
+        [
+          718,
+          384
+        ],
+        [
+          710,
+          392
+        ],
+        [
+          700,
+          397
+        ],
+        [
+          689,
+          400
+        ],
+        [
+          676,
+          399
+        ],
+        [
+          671,
+          388
+        ]
+      ],
+      "feather": 1.2
+    },
+    {
+      "name": "Third sentry - left short conical horn",
+      "donor": "visual-novel/art/scene-studies/batch8-optional-horns/sentries-donor.png",
+      "scale": [
+        420,
+        220
+      ],
+      "offset": [
+        520,
+        320
+      ],
+      "polygon": [
+        [
+          775,
+          395
+        ],
+        [
+          784,
+          392
+        ],
+        [
+          793,
+          402
+        ],
+        [
+          798,
+          417
+        ],
+        [
+          799,
+          421
+        ],
+        [
+          790,
+          422
+        ],
+        [
+          781,
+          414
+        ],
+        [
+          775,
+          414
+        ]
+      ],
+      "feather": 1.2
+    },
+    {
+      "name": "Third sentry - right short conical horn",
+      "donor": "visual-novel/art/scene-studies/batch8-optional-horns/sentries-donor.png",
+      "scale": [
+        420,
+        220
+      ],
+      "offset": [
+        520,
+        320
+      ],
+      "polygon": [
+        [
+          813,
+          391
+        ],
+        [
+          821,
+          394
+        ],
+        [
+          818,
+          407
+        ],
+        [
+          816,
+          416
+        ],
+        [
+          809,
+          422
+        ],
+        [
+          802,
+          423
+        ],
+        [
+          804,
+          415
+        ],
+        [
+          808,
+          403
+        ]
+      ],
+      "feather": 1.2
+    }
+  ]
+}
