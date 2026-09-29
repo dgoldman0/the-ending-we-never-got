@@ -1,0 +1,82 @@
+{
+  "status": "Inspected Batch 8 neutral source correction; no runtime or user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "6db0de183c8621b302526ee308bccc470d65214f3b4b2fd18df92375fb3ce57c",
+  "final_sha256": "ed2cc6c10b779d2838e8750f435cb8b8f50289a493bff685cf7e19d9d7f22547",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 119786,
+  "changed_percent": 5.777,
+  "changed_bbox": [
+    599,
+    97,
+    1523,
+    832
+  ],
+  "protected_region_checks": {
+    "Lucan eyes nose mouth cheek": {
+      "box": [
+        808,
+        174,
+        884,
+        229
+      ],
+      "unchanged": true
+    },
+    "Serat loaded crossbow": {
+      "box": [
+        1110,
+        389,
+        1345,
+        637
+      ],
+      "unchanged": true
+    },
+    "Ferryman and front boat": {
+      "box": [
+        1430,
+        500,
+        1810,
+        980
+      ],
+      "unchanged": true
+    },
+    "Brother upper trouser outside former bow footprint": {
+      "box": [
+        622,
+        570,
+        660,
+        682
+      ],
+      "unchanged": true
+    }
+  },
+  "inspection": [
+    "complete frozen current source",
+    "inherited raised-pose candidate full and native",
+    "final head and weapon native crops",
+    "native and magnified passenger horn boundaries",
+    "final pose crop including former low hand and bow footprint",
+    "complete final export"
+  ],
+  "observations": [
+    "Inherited raised bent forearm and wrapped right-hand grip are retained; old lowered hand and crossbow are removed.",
+    "The empty crossbow sits across the waist above the reading shade, with a front-mounted shallow transverse bow and one straight relaxed string, no loaded bolt or drawn triangle.",
+    "Lucan has two short smooth horns sweeping back close to his temples; the crown comb is removed and dark hair restored.",
+    "Serat has the inherited short paired horns; his loaded crossbow remains unchanged.",
+    "The plaid mother, young woman behind the wounded man, and grey-haired injured passenger have visible horns. The latter required a separate donor; his far horn is partly occluded by the foreground shoulder.",
+    "Mask fringes in the first injured-man horn transfer included unrelated donor cloth; final masks follow only the horn outlines.",
+    "Native brother-before/after crops show the same brown trouser silhouettes and folds without a pale notch. A larger initial sample differed by 59 pixels solely along the coat-edge feather at x654\u2013659,y548\u2013563; the actual upper-trouser sample is pixel-identical. Reconstruction below it removes the former lowered bow and hand."
+  ],
+  "generation": "Built-in imagegen; exact prompts and GIMP construction guide under art/prompts/batch8-gray-scar/.",
+  "limitations": "No grading, runtime UI edit, build or connected-play approval. Root pose edits and this finishing pass remain layered and separately editable.",
+  "promotion": "Awaiting root final review; runtime source restored to frozen current input",
+  "peer_review": {
+    "reviewer": "stair_continuity",
+    "scope": "Final full painting and native head, bow, passenger, pose and brother-boundary crops",
+    "finding": "No definite mask or anatomy blocker found. Natural waist-high carrying grip; rolled empty bow with straight tip-to-tip string and no bolt; continuous coat/trouser/boot/paving boundaries without a pale notch; compact rooted horns on Lucan, Serat and the three specified passengers.",
+    "limit": "Local asset review only, not user approval or connected runtime clearance."
+  }
+}

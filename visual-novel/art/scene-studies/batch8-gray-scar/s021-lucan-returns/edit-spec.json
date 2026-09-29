@@ -1,0 +1,608 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns",
+  "edits": [
+    {
+      "name": "Lucan raised crossbow, bent right forearm; erase old hand and bow",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          718,
+          331
+        ],
+        [
+          783,
+          362
+        ],
+        [
+          833,
+          410
+        ],
+        [
+          945,
+          426
+        ],
+        [
+          1044,
+          454
+        ],
+        [
+          1061,
+          542
+        ],
+        [
+          1020,
+          566
+        ],
+        [
+          933,
+          551
+        ],
+        [
+          874,
+          537
+        ],
+        [
+          817,
+          548
+        ],
+        [
+          810,
+          607
+        ],
+        [
+          807,
+          690
+        ],
+        [
+          849,
+          782
+        ],
+        [
+          857,
+          817
+        ],
+        [
+          800,
+          831
+        ],
+        [
+          741,
+          823
+        ],
+        [
+          603,
+          798
+        ],
+        [
+          600,
+          727
+        ],
+        [
+          672,
+          695
+        ],
+        [
+          676,
+          617
+        ],
+        [
+          655,
+          550
+        ],
+        [
+          643,
+          471
+        ],
+        [
+          651,
+          421
+        ]
+      ],
+      "feather": 3
+    },
+    {
+      "name": "Serat short paired temple horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          1116,
+          173
+        ],
+        [
+          1114,
+          132
+        ],
+        [
+          1125,
+          131
+        ],
+        [
+          1134,
+          156
+        ],
+        [
+          1168,
+          163
+        ],
+        [
+          1184,
+          151
+        ],
+        [
+          1197,
+          145
+        ],
+        [
+          1196,
+          166
+        ],
+        [
+          1184,
+          180
+        ],
+        [
+          1167,
+          186
+        ],
+        [
+          1125,
+          184
+        ]
+      ],
+      "feather": 2
+    },
+    {
+      "name": "Empty raised crossbow: front transverse bow and relaxed straight string",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/empty-bow-donor.png",
+      "scale": [
+        335,
+        160
+      ],
+      "offset": [
+        730,
+        415
+      ],
+      "polygon": [
+        [
+          824,
+          455
+        ],
+        [
+          839,
+          448
+        ],
+        [
+          891,
+          425
+        ],
+        [
+          913,
+          427
+        ],
+        [
+          921,
+          444
+        ],
+        [
+          966,
+          470
+        ],
+        [
+          1012,
+          492
+        ],
+        [
+          1020,
+          451
+        ],
+        [
+          1035,
+          450
+        ],
+        [
+          1058,
+          504
+        ],
+        [
+          1060,
+          534
+        ],
+        [
+          1014,
+          568
+        ],
+        [
+          992,
+          569
+        ],
+        [
+          984,
+          547
+        ],
+        [
+          891,
+          550
+        ],
+        [
+          889,
+          515
+        ],
+        [
+          858,
+          496
+        ],
+        [
+          837,
+          487
+        ]
+      ],
+      "feather": 1.4
+    },
+    {
+      "name": "Restore dark crown hair where the old comb horn lay",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/lucan-horns-donor.png",
+      "scale": [
+        260,
+        245
+      ],
+      "offset": [
+        755,
+        72
+      ],
+      "polygon": [
+        [
+          854,
+          105
+        ],
+        [
+          890,
+          97
+        ],
+        [
+          934,
+          103
+        ],
+        [
+          943,
+          129
+        ],
+        [
+          923,
+          148
+        ],
+        [
+          869,
+          151
+        ],
+        [
+          850,
+          136
+        ]
+      ],
+      "feather": 1.2
+    },
+    {
+      "name": "Lucan near temple: short smooth backward horn",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/lucan-horns-donor.png",
+      "scale": [
+        260,
+        245
+      ],
+      "offset": [
+        755,
+        72
+      ],
+      "polygon": [
+        [
+          853,
+          156
+        ],
+        [
+          873,
+          143
+        ],
+        [
+          897,
+          138
+        ],
+        [
+          894,
+          149
+        ],
+        [
+          873,
+          168
+        ],
+        [
+          858,
+          171
+        ],
+        [
+          852,
+          166
+        ]
+      ],
+      "feather": 0.65
+    },
+    {
+      "name": "Lucan far temple: matching small backward horn",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/lucan-horns-donor.png",
+      "scale": [
+        182,
+        172
+      ],
+      "offset": [
+        731,
+        87
+      ],
+      "polygon": [
+        [
+          800.5,
+          148.5
+        ],
+        [
+          806,
+          141.2
+        ],
+        [
+          828,
+          133.0
+        ],
+        [
+          825,
+          139.5
+        ],
+        [
+          816,
+          149.0
+        ],
+        [
+          806,
+          154.5
+        ],
+        [
+          801,
+          153.0
+        ]
+      ],
+      "feather": 0.55
+    },
+    {
+      "name": "Northern mother in plaid: temple horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/passengers-donor.png",
+      "scale": [
+        350,
+        210
+      ],
+      "offset": [
+        1240,
+        290
+      ],
+      "polygon": [
+        [
+          1474,
+          338
+        ],
+        [
+          1478,
+          330
+        ],
+        [
+          1486,
+          335
+        ],
+        [
+          1494,
+          344
+        ],
+        [
+          1510,
+          342
+        ],
+        [
+          1518,
+          330
+        ],
+        [
+          1523,
+          334
+        ],
+        [
+          1523,
+          352
+        ],
+        [
+          1514,
+          361
+        ],
+        [
+          1492,
+          363
+        ],
+        [
+          1477,
+          353
+        ]
+      ],
+      "feather": 0.7
+    },
+    {
+      "name": "Northern young woman behind wounded man: temple horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-lucan-returns/passengers-donor.png",
+      "scale": [
+        350,
+        210
+      ],
+      "offset": [
+        1240,
+        290
+      ],
+      "polygon": [
+        [
+          1333,
+          309
+        ],
+        [
+          1335,
+          300
+        ],
+        [
+          1342,
+          300
+        ],
+        [
+          1348,
+          309
+        ],
+        [
+          1355,
+          308
+        ],
+        [
+          1360,
+          300
+        ],
+        [
+          1364,
+          303
+        ],
+        [
+          1363,
+          318
+        ],
+        [
+          1340,
+          321
+        ]
+      ],
+      "feather": 0.7
+    },
+    {
+      "name": "Grey-haired injured passenger: visible right temple horn",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/passengers-donor.png",
+      "scale": [
+        540,
+        270
+      ],
+      "offset": [
+        1150,
+        270
+      ],
+      "polygon": [
+        [
+          1290.8,
+          361.7
+        ],
+        [
+          1293.0,
+          358.8
+        ],
+        [
+          1294.5,
+          355.8
+        ],
+        [
+          1295.7,
+          351.9
+        ],
+        [
+          1296.8,
+          353.8
+        ],
+        [
+          1298.0,
+          357.0
+        ],
+        [
+          1299.1,
+          361.1
+        ],
+        [
+          1298.5,
+          365.0
+        ],
+        [
+          1296.0,
+          368.8
+        ],
+        [
+          1292.9,
+          367.5
+        ]
+      ],
+      "feather": 0.45
+    },
+    {
+      "name": "Grey-haired injured passenger: far horn partly behind Serat shoulder",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/passengers-donor.png",
+      "scale": [
+        540,
+        270
+      ],
+      "offset": [
+        1150,
+        270
+      ],
+      "polygon": [
+        [
+          1268.0,
+          361.0
+        ],
+        [
+          1268.6,
+          357.4
+        ],
+        [
+          1270.0,
+          355.1
+        ],
+        [
+          1270.7,
+          355.6
+        ],
+        [
+          1270.3,
+          359.2
+        ],
+        [
+          1271.5,
+          362.0
+        ],
+        [
+          1274.1,
+          365.0
+        ],
+        [
+          1273.0,
+          368.0
+        ],
+        [
+          1270.1,
+          369.0
+        ],
+        [
+          1268.0,
+          367.0
+        ]
+      ],
+      "feather": 0.45
+    }
+  ]
+}
