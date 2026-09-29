@@ -1,0 +1,6 @@
+(let* ((src "visual-novel/art/scene-studies/batch8-stair/s053-carrier-only.xcf") (img (car (gimp-file-load RUN-NONINTERACTIVE src src))) (merged (car (gimp-image-merge-visible-layers img CLIP-TO-IMAGE))))
+(file-png-save RUN-NONINTERACTIVE img merged "visual-novel/art/scene-studies/batch8-stair/s053-carrier-reopened.png" "reopened" 0 9 0 0 0 0 0)
+(gimp-image-crop img 520 520 1350 0)
+(file-jpeg-save RUN-NONINTERACTIVE img merged "/tmp/batch8-stair/carrier-native.jpg" "carrier-native" 0.94 0 1 0 "" 0 1 0 1)
+(gimp-image-delete img))
+(gimp-quit 0)

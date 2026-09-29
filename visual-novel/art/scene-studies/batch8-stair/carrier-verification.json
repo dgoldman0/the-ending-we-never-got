@@ -1,0 +1,16 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "changed_bounds": [
+    1467,
+    29,
+    1537,
+    78
+  ],
+  "changed_pixels": 2324,
+  "changed_blue_background_pixels_B_minus_R_gt10": 0,
+  "reopened_pixel_identical": true,
+  "candidate_sha256": "2a3af96d5f4b5247d87215740f0e8d8fdbc91ab187e3d52787ad2666f1708285"
+}
