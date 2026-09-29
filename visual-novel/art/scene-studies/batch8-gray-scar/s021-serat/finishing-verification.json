@@ -1,0 +1,16 @@
+{
+  "master_reopen_pixel_equal": true,
+  "layer_count": 5,
+  "finishing_changes_outside_two_local_regions": 0,
+  "protected_region_changed_pixels": {
+    "brother and shoulder exactly root widened-mask candidate": 0,
+    "cat rounded ear and head exactly current source": 0,
+    "cat paw centre exactly current source": 0,
+    "patient face interior exactly current source": 0
+  },
+  "source_sha256": "017d36be5d4b43744b4b8134b1837c14e882be4f457abe9181a14ad62a0d0a85",
+  "prefinish_sha256": "d902dfb66d758ae66ca2229aed3ed624cd425dead83ae9b626ea8e353ef33d2a",
+  "candidate_sha256": "e28b29e49e51ef22b5025d7e23019fa382db289579e276be7c785eb92d5403e6",
+  "runtime_matches_candidate": true,
+  "source_art_peer_review": "Full/native patient hair, bow/paw gap and brother shoulder rechecked; no definite new defect reported. Not graded/in-game."
+}
