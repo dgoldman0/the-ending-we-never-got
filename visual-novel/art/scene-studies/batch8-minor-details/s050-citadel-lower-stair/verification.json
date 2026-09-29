@@ -1,0 +1,28 @@
+{
+  "status": "Local asset correction inspected; not runtime or user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "5a6de3c37707dc5c3d923e183227f86b8de4515338fb7d7d90ed2641a4548c1c",
+  "final_sha256": "63ddb7b542e2a4528d9e1f1bf77e0f17bed4864c79e22fb70a9812175bdb59e9",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 22526,
+  "changed_percent": 1.086,
+  "changed_bbox": [
+    1241,
+    626,
+    1350,
+    861
+  ],
+  "inspection": [
+    "complete current input",
+    "native input crop",
+    "native generated component at placement scale",
+    "final native GIMP export",
+    "final complete GIMP export"
+  ],
+  "observations": "Two base stones and the left end of the bottom step now read as rough grey stone without the former small diamond pattern. The correction ends at actual mortar boundaries; steps, floor and cast remain unchanged.",
+  "limitations": "Neutral sources only. No grading, game UI edit, runtime rebuild or connected-play approval.",
+  "generation": "Built-in imagegen with conversation image input; local file input blocked by mountinfo helper."
+}

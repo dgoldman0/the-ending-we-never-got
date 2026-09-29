@@ -1,0 +1,28 @@
+{
+  "status": "Local asset correction inspected; not runtime or user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "d1ecbb47a9a57bc93f1d80c4b9a35d711efeb082b3042142ab6c02ef150773c2",
+  "final_sha256": "69af5245ed7179ddde9ad184d8380e1b84a4c60cbc756313367633032e17aed3",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 123206,
+  "changed_percent": 5.942,
+  "changed_bbox": [
+    694,
+    677,
+    1487,
+    1034
+  ],
+  "inspection": [
+    "complete current input",
+    "native input crop",
+    "native generated component at placement scale",
+    "final native GIMP export",
+    "final complete GIMP export"
+  ],
+  "observations": "Rectangles of small old tiles under the foreground chair and stool are gone. The floor continues as large worn flagstones with sunlight and furniture shadows. The two smaller remnants by the table and rear stool legs are blended. An early source-silhouette mask retained old-floor fringes and was replaced by the coherent matching lower-furniture donor inside the narrow repair region.",
+  "limitations": "Neutral sources only. No grading, game UI edit, runtime rebuild or connected-play approval.",
+  "generation": "Built-in imagegen with conversation image input; local file input blocked by mountinfo helper."
+}

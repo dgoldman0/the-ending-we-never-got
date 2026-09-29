@@ -1,0 +1,28 @@
+{
+  "status": "Local asset correction inspected; not runtime or user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "5898b5e4c9563021b026881507ea41b1672addf29906f3b81800781891fb851b",
+  "final_sha256": "28ae6f1f3c0799c59efe4b44f56383748fc16db0699d0cbb96b7032df17b375b",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 2462,
+  "changed_percent": 0.119,
+  "changed_bbox": [
+    1817,
+    250,
+    1843,
+    423
+  ],
+  "inspection": [
+    "complete current input",
+    "native input crop",
+    "native generated component at placement scale",
+    "final native GIMP export",
+    "final complete GIMP export"
+  ],
+  "observations": "The third doorway guard now has a bottle-green cap and shoulder with a visible compact horn. The other horn is occluded by the door. The current face, Marren, adjacent guard, lantern and doorway are unchanged outside the two small masks.",
+  "limitations": "Neutral sources only. No grading, game UI edit, runtime rebuild or connected-play approval.",
+  "generation": "Built-in imagegen with conversation image input; local file input blocked by mountinfo helper."
+}

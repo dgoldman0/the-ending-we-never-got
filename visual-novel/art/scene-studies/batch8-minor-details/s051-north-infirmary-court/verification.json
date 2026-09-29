@@ -1,0 +1,28 @@
+{
+  "status": "Local asset correction inspected; not runtime or user approval",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "source_sha256": "d9956bcd8594c7a0769b08b97f7efcedd10f0fd3e6653d4f4664411051488dcf",
+  "final_sha256": "c78ff8cf7c93d86c96320967870b350bf4c2561f11d33b74b0974ed6a2de6276",
+  "xcf_reopened_export_pixel_match": true,
+  "changed_pixels": 25657,
+  "changed_percent": 1.237,
+  "changed_bbox": [
+    319,
+    402,
+    590,
+    553
+  ],
+  "inspection": [
+    "complete current input",
+    "native input crop",
+    "native generated component at placement scale",
+    "final native GIMP export",
+    "final complete GIMP export"
+  ],
+  "observations": "The stock stays level through the slit. Its bow is foreshortened to an edge-on front fitting, with horizontal string planes; the entire former tall D and diagonal strings are removed. The grip hand has distinct bent fingers and the small upper hand has a visible natural thumb. Face, horns and the rest of the court stay unchanged.",
+  "limitations": "Neutral sources only. No grading, game UI edit, runtime rebuild or connected-play approval.",
+  "generation": "Built-in imagegen with conversation image input; local file input blocked by mountinfo helper."
+}
