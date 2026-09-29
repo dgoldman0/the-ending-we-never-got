@@ -1,0 +1,171 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing",
+  "edits": [
+    {
+      "name": "Injured grey-haired man \u2014 northern horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/passengers-donor.png",
+      "scale": [
+        540,
+        270
+      ],
+      "offset": [
+        1170,
+        260
+      ],
+      "polygon": [
+        [
+          1282,
+          348
+        ],
+        [
+          1283,
+          337
+        ],
+        [
+          1290,
+          337
+        ],
+        [
+          1296,
+          351
+        ],
+        [
+          1308,
+          352
+        ],
+        [
+          1317,
+          337
+        ],
+        [
+          1323,
+          335
+        ],
+        [
+          1326,
+          356
+        ],
+        [
+          1321,
+          368
+        ],
+        [
+          1290,
+          370
+        ]
+      ],
+      "feather": 1
+    },
+    {
+      "name": "Young woman \u2014 northern horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/passengers-donor.png",
+      "scale": [
+        540,
+        270
+      ],
+      "offset": [
+        1170,
+        260
+      ],
+      "polygon": [
+        [
+          1407,
+          316
+        ],
+        [
+          1409,
+          304
+        ],
+        [
+          1416,
+          305
+        ],
+        [
+          1421,
+          315
+        ],
+        [
+          1435,
+          315
+        ],
+        [
+          1443,
+          303
+        ],
+        [
+          1450,
+          308
+        ],
+        [
+          1446,
+          322
+        ],
+        [
+          1439,
+          329
+        ],
+        [
+          1415,
+          330
+        ]
+      ],
+      "feather": 1
+    },
+    {
+      "name": "Mother in plaid \u2014 northern horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/passengers-donor.png",
+      "scale": [
+        540,
+        270
+      ],
+      "offset": [
+        1170,
+        260
+      ],
+      "polygon": [
+        [
+          1640,
+          369
+        ],
+        [
+          1640,
+          342
+        ],
+        [
+          1648,
+          342
+        ],
+        [
+          1655,
+          358
+        ],
+        [
+          1672,
+          356
+        ],
+        [
+          1684,
+          340
+        ],
+        [
+          1692,
+          345
+        ],
+        [
+          1694,
+          367
+        ],
+        [
+          1680,
+          378
+        ],
+        [
+          1659,
+          378
+        ]
+      ],
+      "feather": 1
+    }
+  ]
+}

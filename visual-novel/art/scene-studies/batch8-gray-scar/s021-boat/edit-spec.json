@@ -1,0 +1,117 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat",
+  "edits": [
+    {
+      "name": "Brother \u2014 established face, ponytail, uniform, hand; water clears old pauldron",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat/donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          240,
+          420
+        ],
+        [
+          302,
+          354
+        ],
+        [
+          325,
+          295
+        ],
+        [
+          353,
+          261
+        ],
+        [
+          435,
+          261
+        ],
+        [
+          475,
+          284
+        ],
+        [
+          483,
+          343
+        ],
+        [
+          499,
+          360
+        ],
+        [
+          538,
+          379
+        ],
+        [
+          558,
+          487
+        ],
+        [
+          531,
+          498
+        ],
+        [
+          515,
+          515
+        ],
+        [
+          501,
+          537
+        ],
+        [
+          480,
+          548
+        ],
+        [
+          461,
+          564
+        ],
+        [
+          446,
+          593
+        ],
+        [
+          438,
+          613
+        ],
+        [
+          403,
+          616
+        ],
+        [
+          378,
+          586
+        ],
+        [
+          356,
+          578
+        ],
+        [
+          326,
+          571
+        ],
+        [
+          310,
+          558
+        ],
+        [
+          265,
+          552
+        ],
+        [
+          249,
+          526
+        ]
+      ],
+      "feather": 3
+    }
+  ]
+}

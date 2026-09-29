@@ -1,0 +1,26 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/source.png",
+  "source_sha256": "9595410acd28ebf70153eea2799a3d306629297625bd8e6d7f824a1bd75bcbe4",
+  "candidate_sha256": "27884b27cc32bfcc4cc47d82a82a0e98de2997217bbc8d5a487e8dd9e862fbef",
+  "size": [
+    1920,
+    1080
+  ],
+  "opaque": true,
+  "reopened_rgba_equal": true,
+  "changed_pixels": 31370,
+  "changed_bounds": [
+    442,
+    276,
+    1698,
+    584
+  ],
+  "protected_region_changed_pixels": {
+    "Tessa_and_hands": 0,
+    "Lucan_face": 0,
+    "human_husband_head": 0
+  },
+  "review_status": "Root and independent reviewer inspected full composition and native correction boundaries; source-art repair only, in-game grade/check pending.",
+  "delivered_source": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+  "delivered_equals_candidate": true
+}

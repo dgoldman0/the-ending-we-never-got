@@ -1,0 +1,24 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s021-gray-scar-covered-landing/source.png",
+  "source_sha256": "8cc16a6afa9d8e02cce9db597d2e25ad5a703ce625586b29f3a04008240897e5",
+  "candidate_sha256": "3cbeb33663d7c82456425f46e189d5ab9b102b83ac93f751d52d3452b1686ac2",
+  "size": [
+    1920,
+    1080
+  ],
+  "opaque": true,
+  "reopened_rgba_equal": true,
+  "changed_pixels": 3208,
+  "changed_bounds": [
+    1282,
+    303,
+    1694,
+    378
+  ],
+  "protected_region_changed_pixels": {
+    "foreground_cast": 0
+  },
+  "review_status": "Root and independent reviewer inspected full composition and native correction boundaries; source-art repair only, in-game grade/check pending.",
+  "delivered_source": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+  "delivered_equals_candidate": true
+}

@@ -1,0 +1,25 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s021-boat/source.png",
+  "source_sha256": "969c3486396e41ff8f3eaf2adc78e69d4180445f269389e2a386a0a458e7dcb7",
+  "candidate_sha256": "5f2b4fec13a625ed7c30277802f34d338e03087ed4496d29d57f364219faf50d",
+  "size": [
+    1920,
+    1080
+  ],
+  "opaque": true,
+  "reopened_rgba_equal": true,
+  "changed_pixels": 76397,
+  "changed_bounds": [
+    239,
+    259,
+    559,
+    617
+  ],
+  "protected_region_changed_pixels": {
+    "Tessa_and_two_patients": 0,
+    "Mara": 0
+  },
+  "review_status": "Root and independent reviewer inspected full composition and native correction boundaries; source-art repair only, in-game grade/check pending.",
+  "delivered_source": "visual-novel/renpy/game/art/scenes/s021-boat.png",
+  "delivered_equals_candidate": true
+}

@@ -1,0 +1,179 @@
+{
+  "source": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/source.png",
+  "output_dir": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse",
+  "edits": [
+    {
+      "name": "Lucan compact paired horns and separate slung stock",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          449,
+          277
+        ],
+        [
+          484,
+          277
+        ],
+        [
+          503,
+          284
+        ],
+        [
+          518,
+          295
+        ],
+        [
+          515,
+          306
+        ],
+        [
+          493,
+          321
+        ],
+        [
+          480,
+          338
+        ],
+        [
+          474,
+          352
+        ],
+        [
+          447,
+          364
+        ],
+        [
+          443,
+          345
+        ],
+        [
+          450,
+          318
+        ]
+      ],
+      "feather": 2
+    },
+    {
+      "name": "Wounded northern man \u2014 restored hair and two compact horns",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/wounded-donor.png",
+      "scale": [
+        130,
+        134
+      ],
+      "offset": [
+        574,
+        378
+      ],
+      "polygon": [
+        [
+          582,
+          418
+        ],
+        [
+          585,
+          397
+        ],
+        [
+          604,
+          395
+        ],
+        [
+          616,
+          403
+        ],
+        [
+          634,
+          411
+        ],
+        [
+          641,
+          428
+        ],
+        [
+          639,
+          443
+        ],
+        [
+          623,
+          438
+        ],
+        [
+          614,
+          438
+        ],
+        [
+          606,
+          442
+        ],
+        [
+          595,
+          450
+        ],
+        [
+          587,
+          460
+        ],
+        [
+          583,
+          449
+        ]
+      ],
+      "feather": 1
+    },
+    {
+      "name": "Weathered planks continuous around crossbow",
+      "donor": "visual-novel/art/scene-studies/batch8-gray-scar/s019-gray-scar-ferryhouse/donor.png",
+      "scale": [
+        1920,
+        1080
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "polygon": [
+        [
+          1550,
+          405
+        ],
+        [
+          1611,
+          410
+        ],
+        [
+          1684,
+          422
+        ],
+        [
+          1691,
+          552
+        ],
+        [
+          1655,
+          577
+        ],
+        [
+          1570,
+          578
+        ],
+        [
+          1554,
+          532
+        ],
+        [
+          1534,
+          454
+        ]
+      ],
+      "feather": 7
+    }
+  ]
+}
