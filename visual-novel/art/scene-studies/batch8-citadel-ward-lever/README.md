@@ -26,3 +26,7 @@ Every final full composition and native repair crop was inspected. A second agen
 Each `repair-master.xcf` opens with 4–5 genuinely editable source, donor and repair layers, with individual masks. Flattening freshly reopened masters reproduces all four delivered PNGs exactly; see [verification.json](verification.json). The records include source hashes, final hashes and measured unchanged face/hand/colour-fix regions. The [reproduction script](../../../tools/batch8-citadel-ward-lever.py) accepts scene names to rebuild a subset. [Exact prompts and input provenance](../../prompts/batch8-citadel-ward-lever/) are retained.
 
 The four files replace their same-named sources in `renpy/game/art/scenes/`. No light grading, interface, staging or gameplay code was changed. Claude's crop/grade/play pass remains next. Optional S052 sword relocation and the duel's banners, pillar/floor-ring relation and spear-tip clearance were left unchanged to avoid disturbing approved blocking.
+
+## Local fix after delivery (Claude, 30 September 2026)
+
+`s052-entrance-ward.png`: the ward's lower right corner was a flat black block whose hard diagonal top cut across the open door leaf, which ended in mid-air above the threshold. The ward's own streaks from beside it fill the corner and come in gradually over the leaf's lower end, so the leaf fades into the ward. BATCH8 table of `tools/local-repairs.py`; master `art/local-repairs/batch8-check/s052-entrance-ward.xcf`.

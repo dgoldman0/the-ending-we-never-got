@@ -31,3 +31,10 @@ Actual raster scaling, masks and assembly occur in GIMP. `edit-spec.json` record
 ## Return-view completion
 
 `s021-lucan-returns.png` now holds the empty crossbow at waist height, above the reading shade, with a credible bent right arm and wrapped hand. Its bow is held rolled broadside in a carrying pose, has a straight relaxed string and no bolt; Serat's loaded weapon stays unchanged. The original comb-shaped horn becomes Lucan's two compact smooth backward horns. Serat and the three northern boat passengers have their missing horns. The old low bow and hand are fully removed without returning the pale notch through the brother's trousers. Two intermediate bow donors were rejected for incomplete geometry; the selected local component follows a simple GIMP guide. Final root and independent full/native inspection found no remaining definite mask or anatomy defect. The reopened master and protected-region checks are recorded beside the candidate. This completes this five-source group, with the separately committed S018/S021-rescue follow-ups in the minor-details group.
+
+## Local fixes after delivery (Claude, 30 September 2026)
+
+In the BATCH8 table of `tools/local-repairs.py`; layered masters in `art/local-repairs/batch8-check/`.
+
+- `s021-rescue.png`: Tessa's hair, seen from behind at the gate, was copper-orange; in S019 and in `s021-serat.png` and `s021-boat.png` just after it is chestnut. It takes their colour, a little warmer for the sunlight (only its warm pixels; the mask ran onto her blue dress). A pale, hard-edged stroke down the side of Iven's neck, left by the shave, is painted out.
+- `s021-serat.png`: Serat's split-star badge sat on a dark disk with a hard curved edge, like a hole cut in the quilted coat; the coat's quilting carries on over it, the star untouched.

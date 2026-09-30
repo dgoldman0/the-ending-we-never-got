@@ -59,6 +59,13 @@ the S058 back room; Tessa's copper hair at the lever (and, in FIXES, in the
 strike); a ring floating round a horn and a hook on the wall (S053); half a
 hat brim (S057); and a green cloak on a fleeing human (S018).
 
+And from the check of batch 8 (30 September 2026), in BATCH8: the view
+beyond the S055 parapet (a valley town) replaced by the crags and tower seen
+from the same bend in the painting before it, a patch of old stone behind a
+soldier's horns, the bite the batch 7 ring fix had cut in an S053 horn, and
+the hard black corner of the S052 ward, Tessa's copper hair and a seam on
+Iven's neck in the S021 rescue, and a dark disk under Serat's badge.
+
 Each repair works on the copy the game grades from (renpy/game/art/base/, or
 the portrait source in renpy/game/art/portraits/); the untouched original is
 kept in art/local-repairs/originals/. The sliver repair also has a layered
@@ -259,7 +266,8 @@ DUEL_HAIR = ((136.9, 2.45), (140.4, 4.5))
 #
 #   paint_out  fill a polygon from its surroundings (Navier-Stokes inpainting),
 #              optionally only the pixels of one colour inside it ('select',
-#              OpenCV Lab bounds, grown by 'grow'), never drawing on 'keep';
+#              OpenCV Lab bounds, grown by 'grow'), never drawing on 'keep'
+#              (a polygon) or 'keep_mask' (a mask in masks/, never sampled);
 #              'shade' darkens it toward 'keep' (the shadow that casts) and
 #              'grain' is a patch whose fine grain the fill takes
 #   seam       blend the two pieces across a horizontal paste seam: each is
@@ -493,8 +501,9 @@ BATCH7 = {
         ('hair', dict(mask='hair--s054-lever', ab=DUEL_HAIR)),
     ],
     # a thin loose ring floating around the tip of the left attacker's horn,
-    # filled from the sky (not from the horn); a dark hook-shaped sliver on
-    # the pier wall beside Mara's pauldron (item 49 asked for no loose rods)
+    # filled from the sky (not from the horn; BATCH8 redoes this, as this
+    # outline of the horn cut into its underside); a dark hook-shaped sliver
+    # on the pier wall beside Mara's pauldron (item 49 asked for no loose rods)
     'art/scenes/s053-bend.png': [
         ('paint_out', dict(fill=band(490.5, 218, (11.0, 13.0), (4.5, 6.5), -75, 192),
                            keep=[(460, 250), (466, 232), (472, 220), (478, 212), (486, 204), (498, 197), (512, 189),
@@ -559,6 +568,74 @@ CARRIED = {
     'art/scenes/s021-gray-scar-covered-landing.png', 'art/scenes/s021-lucan-returns.png', 'art/scenes/s021-serat.png',
     'art/scenes/s050-citadel-lower-stair.png', 'art/scenes/s055-citadel-lower-stair-morning.png',
     'art/scenes/s057-father.png', 'art/scenes/s058-drawings.png',
+    # repainted in batch 8 (29 September 2026): the rescue's leaning crossbow
+    # was redrawn with a spent string, and the old tube and bipod leg the
+    # repair took out stay out
+    'art/scenes/s021-rescue.png',
+}
+
+# Paintings GPT repainted in batch 8 (29 September 2026) from the files the
+# BATCH7 repairs below were written to; every pixel those repairs changed came
+# through unchanged, so the tool leaves them alone.
+CARRIED_BATCH7 = {
+    'art/scenes/s054-duel.png', 'art/scenes/s054-lever.png', 'art/scenes/s021-serat.png',
+    'art/scenes/s021-lucan-returns.png', 'art/scenes/s053-bend.png', 'art/scenes/s057-father.png',
+    'art/scenes/s058-final.png',
+}
+
+# Faults found in the check of batch 8 (30 September 2026), fixed like FIXES
+# on the painting as GPT delivered it in batch 8 (originals in
+# originals/batch8/; masters in batch8-check/). Two more options: 'backdrop'
+# puts another painting's view behind the figures through a soft mask, and a
+# clone may come in gradually over rows ('fade').
+BATCH8 = {
+    # the view beyond the parapet was a snowy valley town with a bridge; from
+    # this same bend s055-mara (the screen before), S050 and S053 show the
+    # crags and the citadel tower on its hill above the outer walls, so that
+    # view takes its place, behind Tessa's hair (the mask keeps her warm hair
+    # and face and takes the bluish snow between the strands); and a dark
+    # patch of the old stone behind the soldier's horns, the wall above
+    # carried down over it (his head and horns kept by a mask)
+    'art/scenes/s055-citadel-lower-stair-morning.png': [
+        ('backdrop', dict(source='art/scenes/s055-mara.png', crop=(0, 0, 315, 305), box=(0, 0, 384, 372), extend=16,
+                          alpha='view--s055-citadel-lower-stair-morning')),
+        ('clone', dict(fill=[(1516, 294), (1588, 294), (1588, 346), (1516, 346)],
+                       keep_mask='soldier--s055-citadel-lower-stair-morning', offset=(0, -42), match=10, feather=1.0)),
+    ],
+    # the batch 7 fix of the ring round the attacker's horn tip (carried into
+    # this painting) had cut a bite out of the horn's underside and left a
+    # pale smear: the horn is put back from the painting before that fix
+    # (through its Segment Anything mask) and the ring filled from the sky
+    # again, the horn neither drawn on nor sampled
+    'art/scenes/s053-bend.png': [
+        ('restore', dict(reference='s053-bend--455-175', mask='horn--s053-bend', feather=0.5)),
+        ('paint_out', dict(fill=band(490.5, 218, (11.5, 13.5), (4.0, 6.0), -80, 195), keep_mask='horn--s053-bend',
+                           grain=(430, 150, 450, 170))),
+    ],
+    # the ward's lower right corner was a flat black block whose hard
+    # diagonal top cut across the open door leaf, which ended in mid-air above
+    # the threshold: the ward's own streaks from beside it fill the corner and
+    # come in gradually over the leaf's lower end, so the leaf fades into it
+    'art/scenes/s052-entrance-ward.png': [
+        ('clone', dict(fill=[(1784, 720), (1843, 720), (1843, 906), (1784, 906)], offset=(-60, 0), match=0, feather=1.5,
+                       fade=(730, 800))),
+    ],
+    # Tessa's hair, seen from behind at the gate, came out copper-orange; in
+    # S019 and in s021-serat and s021-boat just after it is chestnut: it takes
+    # their colour (a little warmer, for the sunlight here), only its warm
+    # pixels, not the blue dress the mask ran onto; and a pale, hard-edged
+    # stroke down the side of Iven's neck, left by the batch 8 shave
+    'art/scenes/s021-rescue.png': [
+        ('hair', dict(mask='hair--s021-rescue', ab=((138.5, 3.0), (143.5, 4.0)))),
+        ('paint_out', dict(fill=[(773.5, 280), (779.5, 280), (779.5, 299), (773.5, 299)], grain=(745, 300, 760, 315))),
+    ],
+    # Serat's split-star badge sat on a dark disk with a hard curved edge, like
+    # a hole cut in the quilted coat: the coat's quilting from below and to
+    # the left carries on over it, the bright star untouched
+    'art/scenes/s021-serat.png': [
+        ('clone', dict(fill=[(1016, 382), (1030, 384), (1043, 397), (1049, 414), (1045, 431), (1035, 444), (1016, 444)],
+                       select={'L': (0, 64)}, grow=1, offset=(-62, 34), match=0, feather=0.9)),
+    ],
 }
 
 # Pointed ear tips to cover with hair: the area to cover (a polygon whose
@@ -912,6 +989,10 @@ def paint_out(rgb, spec):
     h, w = rgb.shape[:2]
     region = _chosen(rgb, spec)
     keep = _polygon(rgb.shape, spec['keep']) if 'keep' in spec else np.zeros((h, w), np.float32)
+    if 'keep_mask' in spec:                 # a figure's mask: never drawn on, never sampled
+        figure = np.asarray(Image.open(MASKS / (spec['keep_mask'] + '.png'))).astype(np.float32) / 255
+        keep = np.maximum(keep, figure)
+        region = region * (figure < 0.5)
     hole = cv2.dilate(((region > 0.01) | (keep > 0.5)).astype(np.uint8), np.ones((3, 3), np.uint8))
     base = cv2.inpaint(np.ascontiguousarray(rgb), hole, 9, cv2.INPAINT_NS).astype(np.float32)
     shade = np.ones((h, w), np.float32)
@@ -1033,13 +1114,19 @@ def clone_region(rgb, spec):
     edge."""
     src = rgb.astype(np.float32)
     region = _chosen(rgb, spec) > 0.5
+    if 'keep_mask' in spec:                 # a figure's mask: never drawn on
+        region &= np.asarray(Image.open(MASKS / (spec['keep_mask'] + '.png'))) < 128
     dx, dy = spec['offset']
     moved = np.roll(np.roll(src, -dy, axis=0), -dx, axis=1)       # moved[y, x] = src[y + dy, x + dx]
     ring = (cv2.dilate(region.astype(np.uint8), np.ones((17, 17), np.uint8)) > 0) & ~region
     sigma = spec.get('match', 10)
     if sigma:
         moved = moved * np.clip(_local_mean(src, ring, sigma) / np.maximum(_local_mean(moved, region, sigma), 1), 0.3, 3)
-    alpha = cv2.GaussianBlur(region.astype(np.float32), (0, 0), spec.get('feather', 1.0))[..., None]
+    alpha = cv2.GaussianBlur(region.astype(np.float32), (0, 0), spec.get('feather', 1.0))
+    if 'fade' in spec:                      # rows y0..y1: the copy comes in gradually, from nothing to full
+        y0, y1 = spec['fade']
+        alpha = alpha * np.clip((np.arange(alpha.shape[0], dtype=np.float32)[:, None] - y0) / (y1 - y0), 0, 1)
+    alpha = alpha[..., None]
     return np.clip(src * (1 - alpha) + moved * alpha + 0.5, 0, 255).astype(np.uint8)
 
 
@@ -1051,7 +1138,10 @@ def restore_region(rgb, spec):
     ref = np.asarray(Image.open(HERE / 'references' / (name + '.png')).convert('RGB')).astype(np.float32)
     x0, y0 = (int(v) for v in name.rsplit('--', 1)[1].split('-'))
     h, w = ref.shape[:2]
-    alpha = _polygon(rgb.shape, spec['fill'])[y0:y0 + h, x0:x0 + w]
+    if 'mask' in spec:                      # through a mask in masks/ instead of a polygon
+        alpha = (np.asarray(Image.open(MASKS / (spec['mask'] + '.png'))).astype(np.float32) / 255)[y0:y0 + h, x0:x0 + w]
+    else:
+        alpha = _polygon(rgb.shape, spec['fill'])[y0:y0 + h, x0:x0 + w]
     if 'warm' in spec:
         lab = cv2.cvtColor(ref.astype(np.uint8), cv2.COLOR_RGB2LAB).astype(np.float32)
         warm = cv2.morphologyEx((lab[..., 1] > spec['warm']).astype(np.uint8), cv2.MORPH_OPEN, np.ones((2, 2), np.uint8))
@@ -1303,10 +1393,27 @@ def cloth_colour(rgb, spec):
     return recolour(rgb, mask, {'mean': mean, 'std': std})
 
 
+def backdrop(rgb, spec):
+    """Put another painting's view (a crop of it, scaled into 'box') behind
+    the figures, through a soft mask in masks/ ('alpha'); the last column is
+    carried on for 'extend' pixels where the mask reaches past the box."""
+    x0, y0, x1, y1 = spec['box']
+    view = Image.open(GAME / spec['source']).convert('RGB').crop(spec['crop']).resize((x1 - x0, y1 - y0), Image.LANCZOS)
+    view = np.asarray(view).astype(np.float32)
+    full = rgb.astype(np.float32).copy()
+    full[y0:y1, x0:x1] = view
+    extend = spec.get('extend', 0)
+    if extend:
+        full[y0:y1, x1:x1 + extend] = np.repeat(view[:, -1:], extend, axis=1)
+    alpha = (np.asarray(Image.open(MASKS / (spec['alpha'] + '.png'))).astype(np.float32) / 255)[..., None]
+    return np.clip(rgb.astype(np.float32) * (1 - alpha) + full * alpha + 0.5, 0, 255).astype(np.uint8)
+
+
 FIX_STEPS = {'paint_out': paint_out, 'seam': mend_seam, 'match': match_part, 'smooth': smooth_region,
              'pencil': erase_pencil, 'stray': clone_under, 'clone': clone_region, 'restore': restore_region,
              'trim': trim_outline, 'hand': mirror_hand, 'flag': draw_flag, 'star': split_stars,
-             'banner': northern_banner, 'tone': tone_region, 'hair': hair_colour, 'cloth': cloth_colour}
+             'banner': northern_banner, 'tone': tone_region, 'hair': hair_colour, 'cloth': cloth_colour,
+             'backdrop': backdrop}
 
 
 def _sha(path):
@@ -1574,7 +1681,8 @@ def main():
             xcf = save_master('star-split', path, pixels[..., :3], rgb, changed, rgb)
             print('star split drawn:', path, '(%d)' % len(boxes), '->', xcf.relative_to(VN))
     for fixes, master, folder, carried in ((FIXES, 'batch6-check', ORIGINALS, CARRIED),
-                                           (BATCH7, 'batch7-check', ORIGINALS / 'batch7', ())):
+                                           (BATCH7, 'batch7-check', ORIGINALS / 'batch7', CARRIED_BATCH7),
+                                           (BATCH8, 'batch8-check', ORIGINALS / 'batch8', ())):
         for path, steps in fixes.items():
             pixels = original(path, folder)
             rgb = pixels[..., :3]
