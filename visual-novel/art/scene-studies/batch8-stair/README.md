@@ -1,5 +1,7 @@
 # Batch 8 stair continuity — items 64 and 72
 
+**Current status:** the user explicitly authorized the four-reference transfer with “Proceed.” [S053 item 72 is now delivered](s053-completion/README.md), including the dry floor, open platform, bottleneck and preserved dark hair. S055 item 64 is undergoing final geometry correction. The earlier blocker and local trials below are historical.
+
 Working corrections, not approval of the full game. Start from current runtime scenes carrying the batch 6/7 local repairs; preserve those figures and effects through masked GIMP composition. No grading, staging or UI changes.
 
 ## Brief before generation
@@ -22,7 +24,7 @@ Two local GIMP architecture trials were made and **rejected before runtime insta
 
 `s053-carrier-only` is the clean local partial correction: source auburn hair changes to charcoal brown inside its existing outline; body, face, hands, weapons, sky, floor and all other pixels remain unaffected. It does **not** complete item 72's geometry/material corrections. Source-before snapshots stay intact.
 
-## Final safe partial — 29 September
+## Earlier safe partial — 29 September (superseded by the completion above)
 
 The first carrier-only mask did **not** pass closer review: its all-hue adjustment darkened a sliver of blue background and left orange source hairs at the right rim. That earlier favorable assessment is superseded. The final master uses two hue-specific corrections (red/yellow only), a corrected hair outline and a separate original-ear/nape restoration layer. Inspected the final full 1920×1080 scene, native carrier crop and 4× edge comparison. No angular backdrop fringe or missed orange hair band remains, and the ear keeps its source skin colour.
 

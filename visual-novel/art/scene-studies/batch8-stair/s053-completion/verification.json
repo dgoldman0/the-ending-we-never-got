@@ -1,0 +1,74 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "opaque": true,
+  "reopened_rgba_equal": true,
+  "layers": 12,
+  "source_sha256": "2a3af96d5f4b5247d87215740f0e8d8fdbc91ab187e3d52787ad2666f1708285",
+  "candidate_sha256": "0cb99084b11f5dbfdc45e5e91108a04e5cc6cf0f11caacb422f365d0b0254c05",
+  "changed_pixels": 761365,
+  "changed_bounds": [
+    0,
+    0,
+    1920,
+    1080
+  ],
+  "protected_rectangles": {
+    "foreground faces, hands, weapons and upper bodies": {
+      "bounds": [
+        200,
+        120,
+        1210,
+        690
+      ],
+      "changed_pixels": 0
+    },
+    "carrier interior dark hair": {
+      "bounds": [
+        1480,
+        44,
+        1518,
+        74
+      ],
+      "changed_pixels": 0
+    },
+    "carrier back and supporting arm": {
+      "bounds": [
+        1460,
+        160,
+        1635,
+        265
+      ],
+      "changed_pixels": 0
+    },
+    "carrier forward boot interior": {
+      "bounds": [
+        1490,
+        410,
+        1510,
+        500
+      ],
+      "changed_pixels": 0
+    },
+    "wounded man forward boot interior": {
+      "bounds": [
+        1640,
+        440,
+        1660,
+        495
+      ],
+      "changed_pixels": 0
+    },
+    "wounded man rear boot interior": {
+      "bounds": [
+        1640,
+        370,
+        1670,
+        411
+      ],
+      "changed_pixels": 0
+    }
+  }
+}
