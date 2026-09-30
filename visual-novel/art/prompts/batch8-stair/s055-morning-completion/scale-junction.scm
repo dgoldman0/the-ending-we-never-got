@@ -1,0 +1,6 @@
+(let* ((p "visual-novel/art/scene-studies/batch8-stair/s055-morning-completion/junction-donor.png") (img (car (gimp-file-load RUN-NONINTERACTIVE p p))))
+(gimp-image-scale img 750 510)
+(file-png-save RUN-NONINTERACTIVE img (car (gimp-image-get-active-layer img)) "visual-novel/art/scene-studies/batch8-stair/s055-morning-completion/junction-registered.png" "registered" 0 9 0 0 0 0 0)
+(file-jpeg-save RUN-NONINTERACTIVE img (car (gimp-image-get-active-layer img)) "/tmp/batch8-stair/junction-registered.jpg" "registered" 0.95 0 1 0 "" 0 1 0 1)
+(gimp-image-delete img))
+(gimp-quit 0)

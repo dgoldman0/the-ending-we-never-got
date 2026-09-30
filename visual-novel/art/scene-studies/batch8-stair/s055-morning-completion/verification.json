@@ -1,0 +1,32 @@
+{
+  "size": [
+    1920,
+    1080
+  ],
+  "mode": "RGBA",
+  "reopened_pixel_identical": true,
+  "candidate_sha256": "0ef1463cfd3e5b53b35b85ca3a3c7ef9c92398faa48f376f09c65f5079066fdb",
+  "source_sha256": "ff9f88eab7534290d49df62f04786d42c724b487efe65417d509247974b6492d",
+  "architecture_donor_size": [
+    1672,
+    941
+  ],
+  "junction_donor_size": [
+    1521,
+    1034
+  ],
+  "junction_registered_size": [
+    750,
+    510
+  ],
+  "junction_diff_bbox_xyxy": [
+    1073,
+    670,
+    1614,
+    1080
+  ],
+  "candidate_layers_reopened_in_gimp": 15,
+  "review": "Root and independent citadel reviewer inspected the same final full/native source export; installed after review. No graded/runtime clearance.",
+  "runtime_source_unchanged_at_pre_promotion_review": true,
+  "runtime_equals_candidate": true
+}
