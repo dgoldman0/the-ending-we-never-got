@@ -100,6 +100,22 @@
     "tessa-resolute-formal-speaking",
     "tessa-resolute-formal-listening"
    ]
+  },
+  {
+   "batch": 9,
+   "title": "Nine speaking portraits for the lines that carry the most",
+   "scenes": [],
+   "also": [
+    "iven-amused-speaking",
+    "lucan-early-laughing-speaking",
+    "lucan-early-pleading-speaking",
+    "mara-wry-speaking",
+    "tessa-amused-working-speaking",
+    "tessa-campaign-shaken-speaking",
+    "tessa-harrow-crying-out-speaking",
+    "tessa-harrow-grieving-speaking",
+    "tessa-injured-grieving-speaking"
+   ]
   }
  ]
 }

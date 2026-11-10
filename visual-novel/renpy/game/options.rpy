@@ -45,6 +45,10 @@ init python:
     config.periodic_callbacks.append(_stop_when_unfocused)
 define config.thumbnail_width = 384
 define config.thumbnail_height = 216
+# Where "Support the project" on the Coming soon screen leads (a page for
+# supporting the work). While this is empty the screen asks for support in
+# words and shows no button.
+define support_url = ""
 define build.name = "TheEndingWeNeverGot"
 define build.version = "0.5.0-dev"
 

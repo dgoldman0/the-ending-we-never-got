@@ -24,7 +24,6 @@ testsuite global:
         $ _test.screenshot_directory = 'test-output'
         $ persistent.large_text = False
         $ persistent.still_frames = False
-        $ persistent.camera_subject = 'speaker'
         $ _preferences.text_cps = 0
         # Captures are 1920x1080 in the 1920x1080 virtual display.
         if eval not _preferences.fullscreen:
@@ -331,8 +330,10 @@ testcase discovery_save_and_restore:
     assert eval source_line == 110
 
 testcase original_ending_without_discovery:
-    # All 58 scenes remain traversable without inspecting anything. This tests
-    # ordering through the question; the still-missing Yes affordance is not cleared.
+    # All 58 scenes remain traversable without inspecting anything, through
+    # the question, Yes and the Coming soon screen that stands in for the
+    # continuation.
+    $ persistent.wished_to_save = False
     $ _test.timeout = 200.0
     click id 'main_begin'
     advance until screen 'chapter_title' timeout 200.0
@@ -362,7 +363,18 @@ testcase original_ending_without_discovery:
     assert not screen 'final_question'
     click id 'ending_continue'
     assert screen 'final_question'
-    click id 'ending_title'
+    # No answer is on screen for the click that ended the scene.
+    assert eval renpy.get_widget('final_question', 'ending_yes') is None
+    pause 4.2
+    assert eval not persistent.wished_to_save
+    click id 'ending_yes'
+    assert screen 'coming_soon'
+    assert eval persistent.wished_to_save
+    assert eval renpy.get_widget('coming_soon', 'coming_soon_title') is None
+    pause 5.0
+    assert eval renpy.get_widget('coming_soon', 'coming_soon_support') is None
+    click id 'coming_soon_title'
+    assert screen 'main_menu'
     click id 'main_begin'
     assert screen 'say'
     assert eval (current_scene, source_line, source_page) == (1, 9, 0)
@@ -495,9 +507,23 @@ testcase page_portraits_and_initials:
     assert eval portrait_source(staging_faces()[1]['image']).startswith('art/lit/portraits/lucan-early-listening-')
     assert eval any(plain_initial(h.what).startswith('Tessa catches') for h in _history_list)
 
+testcase final_question_declined:
+    # Leaving the question without answering records nothing.
+    $ persistent.wished_to_save = False
+    click id 'main_begin'
+    run Jump('original_ending')
+    pause 2.5
+    click id 'ending_continue'
+    assert screen 'final_question'
+    pause 4.2
+    click id 'ending_title'
+    assert screen 'main_menu'
+    assert eval not persistent.wished_to_save
+
 testcase camera_direction:
-    # The camera frames each line from its painting (direction.rpy). These
-    # check which framing a line takes, not whether it is a good picture.
+    # The camera frames each line from its painting (direction.rpy), as the
+    # built table says (direction.json). These check which framing a line
+    # takes, not whether it is a good picture.
     click id 'main_begin'
     run Jump('s016')
     pause 0.5
@@ -505,37 +531,45 @@ testcase camera_direction:
     # A painting arrives whole.
     assert eval shot_key == ('art/scenes/s016-council-room.png', 'wide')
     assert eval tuple(stage_camera.target) == shotmath.WIDE
-    # A spoken line takes its speaker's framing.
-    advance until eval source_line == 657
-    assert eval scene_speaker == 'SENN' and shot_key[1] == 'SENN'
+    # A spoken line frames the person spoken to; the speaker is in the oval.
+    advance until eval source_line == 666
+    assert eval scene_speaker == 'TESSA' and shot_key[1] == 'SENN'
     assert eval stage_camera.target[2] > 1.3
-    # Framings and line choices made by hand (art/direction/plan.json).
+    assert eval portrait_ready(stage_faces('TESSA')[0])
+    # A framing set by hand (art/direction/plan.json).
     advance until eval source_line == 669
     assert eval shot_key[1] == 'book'
-    advance until eval source_line == 680
+    advance until eval source_line == 671
+    assert eval scene_speaker == 'SENN' and shot_key[1] == 'TESSA'
+    # Going back cuts to the earlier line's framing.
+    run Rollback()
+    assert eval source_line == 669 and shot_key[1] == 'book'
+    assert eval tuple(stage_camera.target) == tuple(stage_shots(stage_key())['book'])
+    advance until eval source_line == 671
     assert eval shot_key[1] == 'TESSA'
-    # Narration opening on She stays with the latest woman framed.
+    # The next painting of the scene is asked for ahead of its line.
+    advance until eval source_line == 702
+    assert eval any('s016-hearing-door' in name for name in camera_ahead)
+    # The second painting arrives, whole, on the line where she stands.
     advance until eval source_line == 705
+    assert eval shot_key == ('art/scenes/s016-hearing-door.png', 'wide')
+    # Narration frames the person it is about.
+    advance until eval source_line == 723
     assert eval scene_speaker is None and shot_key[1] == 'TESSA'
     # The reading shade has its four focus levels for this painting.
     assert eval len(LIT['shade'][shown_stage()[0]]['levels']) == 4
-    # Favouring the person spoken to: Tessa answers Senn, the picture shows Senn.
-    $ persistent.camera_subject = 'listener'
-    advance until eval source_line == 710
-    assert eval scene_speaker == 'TESSA' and shot_key[1] == 'SENN'
+    # Every line of the story has its framing in the built table.
+    assert eval all(str(b['line']) in DIRECTION['lines'][str(n + 1)] for n, s in enumerate(source_map['scenes']) for b in s['blocks'] if b.get('kind') != 'fade')
     # Still: every painting whole, as before the camera.
     $ persistent.still_frames = True
-    advance until eval source_line == 715
+    advance until eval source_line == 728
     assert eval shot_key[1] == 'wide' and tuple(stage_camera.target) == shotmath.WIDE
     keysym 'game_menu'
-    click 'On the speaker'
-    assert eval not persistent.still_frames and persistent.camera_subject == 'speaker'
-    click 'On the listener'
-    assert eval not persistent.still_frames and persistent.camera_subject == 'listener'
+    click 'Follows the scene'
+    assert eval not persistent.still_frames
     click 'Still'
     assert eval persistent.still_frames
     $ _test.screenshot_directory = 'test-output'
     screenshot 'camera-settings.png'
     click id 'menu_return'
-    assert eval source_line == 715
-
+    assert eval source_line == 728

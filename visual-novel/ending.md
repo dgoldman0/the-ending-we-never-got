@@ -1,6 +1,6 @@
 # Original ending and the question to the player
 
-Status: **ORIGINAL ENDPOINT REQUIREMENTS — realigned 17 September 2026.** The user established the complete original ending, then **“Do you wish to save Tessa?”**, with Yes only after that final scene. The Bellweir sequence is screenplay material; the question is VN framing. The hopeful/shattering presentation after Yes and the continuation are explicitly deferred. Runtime 0.3.2 displays the question but only offers Return to title; this remains an endpoint interaction gap.
+Status: **ORIGINAL ENDPOINT REQUIREMENTS — realigned 17 September 2026.** The user established the complete original ending, then **“Do you wish to save Tessa?”**, with Yes only after that final scene. The Bellweir sequence is screenplay material; the question is VN framing. The hopeful/shattering presentation after Yes and the continuation are explicitly deferred. Since 9 November 2026 the question offers **Yes**, which leads to a plain **Coming soon** screen with a request for support and a return to the title (user direction of that date); see *The Yes in the game* below. The continuation itself is still unbuilt.
 
 Source: [Rebuild 11](../screenplay/original-timeline/source.fountain), S058, beginning at line 2175. Preserve the earlier deaths, right-hand injury, loss of trust and unresolved route home. The player may also know the first Saint summoning's role in human-initiated war; Tessa does not learn it here.
 
@@ -32,6 +32,14 @@ Allow the final fade a beat before a fresh player advance reveals the question; 
 The original endpoint must eventually offer a deliberate **Yes** at this question; Return to title alone does not meet that intended interaction. Do not preselect, time, or accidentally trigger the answer with the advance that finishes the scene. A No option, response storage and revisit behavior remain design decisions, not established new story outcomes.
 
 The user has established the eventual shattering/hopeful change after Yes, but specifically deferred work on its UI/UX. Design the original endpoint's response handoff within that boundary when implementation reaches it; do not invent or advertise a playable rescue continuation. This realignment does not implement the response or settle its storage behavior. The placement of Yes is settled; those implementation particulars remain open.
+
+## The Yes in the game — 9 November 2026
+
+- The question fades in alone. Yes and Return to the title appear about three seconds later, so the click that ended the scene cannot land on an answer; neither is focused, preselected or timed.
+- **Yes** shows the Coming soon screen: the heading, one sentence saying the next part of the story is still being made, one asking for support, and Return to the title. Its words are four lines at the head of the ending screens in `renpy/game/ui-reading.rpy`. A "Support the project" button appears once `support_url` in `renpy/game/options.rpy` is set; until then the request is in words only.
+- The screen stays in the original timeline's plain black and type. It shows nothing of the continuation or its look, which remain deferred.
+- Yes is remembered (`persistent.wished_to_save`) for the continuation to use. Nothing in this edition reads it and the title does not change. This storage is provisional.
+- There is no No. Return to the title leaves the question without an answer and records nothing.
 
 ## What the question does and does not establish
 

@@ -11,6 +11,11 @@
      "alt": "Convoy Camp, Afternoon"
     },
     {
+     "image": "art/scenes/s006-bowls.png",
+     "from": 287,
+     "alt": "At the camp fire Tessa trades her bowl for the burned portion while Iven fetches the spoons; Mara sits beside his empty place."
+    },
+    {
      "image": "art/scenes/s006-warden.png",
      "from": 289,
      "alt": "A road warden holds up a cart board split by three claw marks."
@@ -31,7 +36,14 @@
     },
     "WARDEN": "warden"
    },
-   "lines": {}
+   "lines": {
+    "268": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "284": {
+     "speaker_portrait": "iven-amused-speaking"
+    }
+   }
   },
   "7": {
    "heading": "INT. ROADSIDE INN - NIGHT",
@@ -60,7 +72,23 @@
      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
     }
    },
-   "lines": {}
+   "lines": {
+    "308": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "319": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "311": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "316": {
+     "speaker_portrait": "mara-wry-speaking"
+    },
+    "332": {
+     "speaker_portrait": "mara-wry-speaking"
+    }
+   }
   },
   "8": {
    "heading": "EXT. BELLWEIR - MARKET SQUARE - DAY",
@@ -95,7 +123,26 @@
      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
     }
    },
-   "lines": {}
+   "lines": {
+    "357": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "370": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "381": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "373": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "378": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "384": {
+     "speaker_portrait": "iven-amused-speaking"
+    }
+   }
   },
   "9": {
    "heading": "EXT. RIVER BELOW BELLWEIR - LATE AFTERNOON",
@@ -131,7 +178,26 @@
      "listening": "art/rovel/portraits/tessa-listening-working-ordinary.png"
     }
    },
-   "lines": {}
+   "lines": {
+    "414": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "421": {
+     "speaker_portrait": "tessa-amused-working-speaking"
+    },
+    "403": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "411": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "424": {
+     "speaker_portrait": "iven-amused-speaking"
+    },
+    "406": {
+     "speaker_portrait": "mara-wry-speaking"
+    }
+   }
   },
   "10": {
    "heading": "EXT. HILLS ABOVE BELLWEIR - NIGHT",
@@ -161,6 +227,16 @@
     {
      "image": "art/scenes/s011-bellweir-causeway.png",
      "from": 497,
+     "alt": "Bellweir, East Causeway, Night"
+    },
+    {
+     "image": "art/scenes/s011-blue-door.png",
+     "from": 504,
+     "alt": "Across a rubble-choked alley Orren waves a lantern from a blue doorway; Tessa stretches her thinning arch toward him."
+    },
+    {
+     "image": "art/scenes/s011-bellweir-causeway.png",
+     "from": 511,
      "alt": "Bellweir, East Causeway, Night"
     },
     {
@@ -194,6 +270,11 @@
      "image": "art/scenes/s012-temple-reading-room.png",
      "from": 0,
      "alt": "Temple Reading Room, Night"
+    },
+    {
+     "image": "art/scenes/s012-cut-pages.png",
+     "from": 541,
+     "alt": "Elin alone at the reading-room table with the original open: four leaves have been cut from its binding."
     }
    ],
    "cast": {
@@ -253,8 +334,13 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s015-elin-lodging.png",
+     "image": "art/scenes/s015-book.png",
      "from": 0,
+     "alt": "At Elin’s table Tessa has turned past the cut pages to the last leaf of the original."
+    },
+    {
+     "image": "art/scenes/s015-elin-lodging.png",
+     "from": 629,
      "alt": "Elin'S Lodging, Day"
     }
    ],
@@ -281,7 +367,7 @@
     },
     {
      "image": "art/scenes/s016-hearing-door.png",
-     "from": 750,
+     "from": 705,
      "alt": "Across the council room: Mara at the reopened door, Orra, Senn, and Tessa standing at her chair; the mantle lies on the book."
     }
    ],
@@ -547,6 +633,11 @@
      "image": "art/scenes/s026-quarry-loading-ramp.png",
      "from": 0,
      "alt": "Quarry Camp, Loading Ramp, Day"
+    },
+    {
+     "image": "art/scenes/s026-stone.png",
+     "from": 1126,
+     "alt": "On the launch deck Lucan picks up a chalked stone with Orren’s name scratched into it; the apprentice looks away on the ramp."
     }
    ],
    "cast": {
@@ -665,7 +756,17 @@
      }
     ]
    },
-   "lines": {}
+   "lines": {
+    "1216": {
+     "speaker_portrait": "lucan-early-laughing-speaking"
+    },
+    "1224": {
+     "speaker_portrait": "lucan-early-laughing-speaking"
+    },
+    "1229": {
+     "speaker_portrait": "lucan-early-laughing-speaking"
+    }
+   }
   },
   "31": {
    "heading": "EXT. NORTHERN GRAIN WHARF - AUTUMN MORNING",
@@ -747,6 +848,11 @@
      "image": "art/scenes/s035-iven.png",
      "from": 1434,
      "alt": "Iven's sleeve tears away in Tessa's hands as he falls; her light spreads beneath him over the river."
+    },
+    {
+     "image": "art/scenes/s035-water.png",
+     "from": 1438,
+     "alt": "Mara holds Tessa back on the pier, Iven’s sleeve in her fist; below, wreckage rolls in empty water."
     }
    ],
    "cast": {
@@ -755,7 +861,14 @@
     "ORREN": "orren",
     "TESSA": "tessa-harrow"
    },
-   "lines": {}
+   "lines": {
+    "1429": {
+     "speaker_portrait": "tessa-harrow-crying-out-speaking"
+    },
+    "1442": {
+     "speaker_portrait": "tessa-harrow-crying-out-speaking"
+    }
+   }
   },
   "36": {
    "heading": "EXT. HARROW FORD - SOUTH BANK - LATE AFTERNOON",
@@ -770,6 +883,11 @@
      "image": "art/scenes/s036-south-bank.png",
      "from": 1482,
      "alt": "Tessa steps back from Lucan's reach, the sleeve in her fist, as Mara blocks an officer coming from the landing."
+    },
+    {
+     "image": "art/scenes/s036-sapling.png",
+     "from": 1514,
+     "alt": "Downriver the northern woman smooths her husband’s coat over his body; their son holds the sapling."
     }
    ],
    "cast": {
@@ -779,7 +897,29 @@
    },
    "lines": {
     "1504": {
-     "listener": "LUCAN"
+     "listener": "LUCAN",
+     "speaker_portrait": "tessa-harrow-crying-out-speaking"
+    },
+    "1484": {
+     "speaker_portrait": "tessa-harrow-crying-out-speaking"
+    },
+    "1497": {
+     "speaker_portrait": "tessa-harrow-grieving-speaking"
+    },
+    "1456": {
+     "speaker_portrait": "lucan-early-pleading-speaking"
+    },
+    "1467": {
+     "speaker_portrait": "lucan-early-pleading-speaking"
+    },
+    "1473": {
+     "speaker_portrait": "lucan-early-pleading-speaking"
+    },
+    "1479": {
+     "speaker_portrait": "lucan-early-pleading-speaking"
+    },
+    "1494": {
+     "speaker_portrait": "lucan-early-pleading-speaking"
     }
    }
   },
@@ -803,7 +943,20 @@
     "MARA": "mara-campaign",
     "TESSA": "tessa-harrow"
    },
-   "lines": {}
+   "lines": {
+    "1533": {
+     "speaker_portrait": "tessa-harrow-crying-out-speaking"
+    },
+    "1527": {
+     "speaker_portrait": "tessa-harrow-grieving-speaking"
+    },
+    "1538": {
+     "speaker_portrait": "tessa-harrow-grieving-speaking"
+    },
+    "1543": {
+     "speaker_portrait": "tessa-harrow-grieving-speaking"
+    }
+   }
   },
   "38": {
    "heading": "INT. NORTHERN STORES OFFICE - TWO WEEKS AFTER HARROW",
@@ -894,7 +1047,20 @@
     "MARA": "mara-campaign",
     "TESSA": "tessa-campaign"
    },
-   "lines": {}
+   "lines": {
+    "1661": {
+     "speaker_portrait": "tessa-campaign-shaken-speaking"
+    },
+    "1666": {
+     "speaker_portrait": "tessa-campaign-shaken-speaking"
+    },
+    "1673": {
+     "speaker_portrait": "tessa-campaign-shaken-speaking"
+    },
+    "1679": {
+     "speaker_portrait": "tessa-campaign-shaken-speaking"
+    }
+   }
   },
   "43": {
    "heading": "EXT. RIVER PROVINCES - CHANGING SEASONS",
@@ -1000,6 +1166,17 @@
      "image": "art/scenes/s047-citadel-north-infirmary-before-dawn.png",
      "from": 0,
      "alt": "Citadel, North Infirmary, Before Dawn"
+    },
+    {
+     "image": "art/scenes/s047-plan.png",
+     "from": 1871,
+     "alt": "Lucan writes at the edge of the plan of the route to the hall; two letters lie beside it.",
+     "page": 1
+    },
+    {
+     "image": "art/scenes/s047-citadel-north-infirmary-before-dawn.png",
+     "from": 1877,
+     "alt": "Citadel, North Infirmary, Before Dawn"
     }
    ],
    "cast": {
@@ -1034,6 +1211,11 @@
      "image": "art/scenes/s049-command-tent.png",
      "from": 0,
      "alt": "Forward Command Tent, Night"
+    },
+    {
+     "image": "art/scenes/s049-bag.png",
+     "from": 1986,
+     "alt": "Outside the command tent Tessa fastens Iven’s bag while a healer waits to take it to the wagons."
     }
    ],
    "cast": {
@@ -1186,7 +1368,14 @@
     "LUCAN": "lucan-later",
     "TESSA": "tessa-injured"
    },
-   "lines": {}
+   "lines": {
+    "2114": {
+     "speaker_portrait": "tessa-injured-grieving-speaking"
+    },
+    "2124": {
+     "speaker_portrait": "tessa-injured-grieving-speaking"
+    }
+   }
   },
   "56": {
    "heading": "INT. NORTH INFIRMARY - DAY",
@@ -1207,7 +1396,11 @@
     "SURGEON": "surgeon",
     "TESSA": "tessa-injured"
    },
-   "lines": {}
+   "lines": {
+    "2150": {
+     "speaker_portrait": "tessa-injured-grieving-speaking"
+    }
+   }
   },
   "57": {
    "heading": "EXT. CITADEL - LOWER GATE - EVENING",

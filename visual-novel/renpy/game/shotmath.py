@@ -10,8 +10,6 @@ person is framed in the upper two thirds: eyes about 37% down the screen, with
 room in front of the face in the direction they look.
 """
 
-import re
-
 W, H = 1920.0, 1080.0
 WIDE = (W / 2, H / 2, 1.0)
 
@@ -20,7 +18,7 @@ FACE_Y = 0.37           # where the middle of the face sits, down the screen
 LOOK_ROOM = 0.11        # how far off centre a face sits, away from where it looks
 ZOOM_MAX = 1.85         # the paintings are 1920 px wide; closer than this goes soft
 ZOOM_MIN = 1.12         # a "closer" framing that barely moves is not worth a cut
-CREEP = 0.032           # the slow push while a line is read; a framing must hold through it
+CREEP = 0.06            # the furthest the slow push goes while a framing is held; a framing must hold through it
 
 
 def clamp(framing):
@@ -127,65 +125,3 @@ def look_from(face, others):
         return 0
     mean = sum(xs) / len(xs)
     return 1 if mean > face[0] + 40 else -1 if mean < face[0] - 40 else 0
-
-
-_TAG = re.compile(r'\{[^}]*\}')
-# Who a line opening on She or He can mean, from the screenplay and designs.
-SHE = frozenset(('TESSA', 'MARA', 'ELIN', 'HEST', 'ADA', 'ORRA', 'VASK', 'ARCHIVIST', 'WOMAN', 'MOTHER'))
-HE = frozenset(('IVEN', 'SENN', 'OLAN', 'LUCAN', 'VALCAIR', 'ORREN', 'SERAT', 'MARREN', 'SCHOLAR', 'GOVERNOR',
-                'MESSENGER', 'APPRENTICE', 'BARGEMAN', 'ESCORT', 'BOATMAN', 'FERRYMAN'))
-
-
-def narration_shot(text, names):
-    """The framing a line of narration takes when none is directed: the name
-    of the person the sentence is about; 'hold:she', 'hold:he' or 'hold' when
-    it opens on a pronoun and continues with someone already framed (see
-    resolve_hold); None for the whole painting. names are the people who have
-    a framing in this painting. Text tags and case are ignored, so the game
-    (which sees typeset text) and the review tool (which sees the screenplay)
-    agree."""
-    plain = _TAG.sub('', text).replace('\u2019', "'").strip()
-    sentences = [part for part in re.split(r'[.!?]+\s+', plain) if part.strip()]
-    found = []
-    for name in names:
-        match = re.search(r'\b' + re.escape(name.split()[-1]) + r'\b', plain, re.I)
-        if match:
-            found.append((match.start(), name))
-    found.sort()
-    if len(sentences) > 2 or len(found) > 2:
-        return None
-    if found and found[0][0] == 0:
-        return found[0][1]
-    opening = plain.lower()
-    if opening.startswith(('she ', 'her ')):
-        return 'hold:she'
-    if opening.startswith(('he ', 'his ')):
-        return 'hold:he'
-    if opening.startswith(('they ', 'their ')):
-        return 'hold'
-    if len(found) == 1:
-        return found[0][1]
-    return None
-
-
-def resolve_hold(kind, recent, previous):
-    """Who a pronoun-led line stays with. recent lists the people framed on
-    this painting, latest first; previous is the framing before this line.
-    She keeps to the latest woman framed, He to the latest man; a person whose
-    pronoun isn't recorded is kept when they were the latest."""
-    if kind == 'hold':
-        return previous
-    want, other = (SHE, HE) if kind == 'hold:she' else (HE, SHE)
-    for name in recent[:2]:
-        if name in want:
-            return name
-    if recent and recent[0] not in other:
-        return recent[0]
-    return None
-
-
-def remember(recent, name):
-    """recent with a newly framed person put first (two are kept)."""
-    if not name or not name.isupper():
-        return recent
-    return [name] + [n for n in recent if n != name][:1]

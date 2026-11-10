@@ -12,20 +12,19 @@
 # each painting, composes a framing on them (eyes in the upper third, room in
 # front of the face, clear of the reading shade, no neighbour cut by the edge)
 # and writes direction.json; framings and line choices made by hand are kept
-# in art/direction/plan.json. Lines take the speaker's framing unless directed
-# otherwise. The same tool draws every framing for review.
+# in art/direction/plan.json. The same tool draws every framing for review.
 #
-# Settings > Camera chooses whom a spoken line favours (the speaker, or the
-# person spoken to); Still shows every painting whole and unmoving, as the
-# game did before. Reduced motion keeps the framings and drops the movement.
+# Which framing a line takes is decided when the direction is built, not here:
+# direction.json lists every line with its framing (a spoken line frames the
+# person spoken to, since the speaker is already in the oval). The game looks
+# the line up and moves the camera.
+#
+# Settings > Camera > Still shows every painting whole and unmoving, as the
+# game did before the camera; Reduced motion keeps the framings and drops the
+# movement.
 
 default shot_key = None
-default shot_recent = []
 default persistent.still_frames = False
-# Whom a spoken line's framing favours: the speaker, or the person spoken to
-# (the speaker is already shown in the oval). Both are kept so the two can be
-# compared in play; the one not chosen is to be removed.
-default persistent.camera_subject = 'speaker'
 
 define ui_shot_cut = motion(0.34)
 
@@ -70,54 +69,31 @@ init -1 python:
             return {}
         return entry if hasattr(entry, 'get') else {'shot': entry}
 
-    def line_listener():
-        """The person spoken to on the current line, where the game knows."""
-        beat = current_rovel_beat()
-        if beat:
-            face = beat.get('listener')
-            return face['who'] if face else None
-        spec = _scene_spec() if current_scene > 5 else None
-        if not spec or not scene_speaker:
-            return None
-        override = spec.get('lines', {}).get(str(source_line), {})
-        return override.get('listener', default_listener(current_scene, source_line, scene_speaker))
-
-    def line_direction(first, text=''):
-        """(shot name, framing, move) for the line about to be read. first is
-        true when the painting has just changed: it is seen whole, unless the
-        line is directed otherwise. A line that is not directed takes its
-        speaker's framing; narration takes the person it is about."""
+    def line_direction():
+        """(shot name, framing, move) for the line about to be read, as
+        direction.json gives it. A line it doesn't list, or a framing its
+        painting doesn't have, is read over the whole painting."""
         key = stage_key()
         if key is None or persistent.still_frames or stage_framing().get('text'):
             return 'wide', shotmath.WIDE, None
         shots = stage_shots(key)
         authored = directed_line()
-        name, move = authored.get('shot'), authored.get('move')
-        recent = list(store.shot_recent) if (not first and store.shot_key and store.shot_key[0] == key) else []
-        previous = store.shot_key[1] if (not first and store.shot_key and store.shot_key[0] == key) else None
-        if name is None and not first:
-            if scene_speaker:
-                name = scene_speaker
-                if persistent.camera_subject == 'listener' and line_listener() in shots:
-                    name = line_listener()
-            else:
-                name = shotmath.narration_shot(text, [n for n in shots if n.isupper()])
-                if name and name.startswith('hold'):
-                    name = shotmath.resolve_hold(name, recent, previous)
-        elif name == 'hold':
-            name = previous
+        name = authored.get('shot')
         if name not in shots:
             name = 'wide'
-        store.shot_recent = shotmath.remember(recent, name)
-        return name, tuple(shots.get(name, shotmath.WIDE)), move
+        return name, tuple(shots.get(name, shotmath.WIDE)), authored.get('move')
 
     class StageCamera(object):
         """Where the camera is now, and where it is going. Not saved: every
         line states its own framing, so a load or a rollback simply cuts."""
 
         OMEGA = 3.3           # an eased move settles in about a second and a half
-        CREEP = shotmath.CREEP   # the slow push while a line is read
-        CREEP_TIME = 18.0
+        # The slow push: most of it over the time a line takes to read, the
+        # rest drifting on for as long as the framing is held, so a two-shot
+        # kept through an exchange never goes dead.
+        PUSH, PUSH_TIME = 0.032, 18.0
+        DRIFT, DRIFT_TIME = shotmath.CREEP - 0.032, 60.0
+        ALIVE = 300.0
 
         def __init__(self):
             self.target = shotmath.WIDE
@@ -138,9 +114,11 @@ init -1 python:
             if persistent.reduced_motion or persistent.still_frames:
                 return 0.0
             if self.freeze:
-                return self.CREEP * 0.5
-            t = min(1.0, max(0.0, (now - self.creep_from) / self.CREEP_TIME))
-            return self.CREEP * t * t * (3 - 2 * t)
+                return self.PUSH * 0.5
+            held = max(0.0, now - self.creep_from)
+            t = min(1.0, held / self.PUSH_TIME)
+            drift = 1.0 - math.exp(-max(0.0, held - self.PUSH_TIME) / self.DRIFT_TIME)
+            return self.PUSH * t * t * (3 - 2 * t) + self.DRIFT * drift
 
         def _goal(self, now):
             cx, cy, z = shotmath.clamp((self.target[0], self.target[1], self.target[2] * (1 + self._creep(now))))
@@ -176,7 +154,7 @@ init -1 python:
                     far = max(far, abs(self.cur[i] - goal[i]) * scale, abs(self.vel[i]) * scale * 0.2)
                 still = persistent.reduced_motion or persistent.still_frames or self.freeze
                 self.moving = far > 0.03
-                self.busy = self.moving or (not still and self._creep(t) < self.CREEP * 0.999)
+                self.busy = self.moving or (not still and t - self.creep_from < self.ALIVE)
             return shotmath.clamp((self.cur[0], self.cur[1], math.exp(self.cur[2])))
 
         def redraw(self):
@@ -226,12 +204,52 @@ init -1 python:
             layers.append(Transform(Solid('#0b1014', xysize=(1920, lift)), ypos=1080 - lift))
         return Fixed(*layers, xysize=(1920, 1080))
 
-    def direct_line(text=''):
+    def stage_files(scene, line, page=0):
+        """The graded painting a line is read over, with its focus levels."""
+        if scene <= 5:
+            beat = ROVEL_BEATS.get((scene, line, page))
+            image = lit_stage(beat['stage_id']) if beat else None
+        else:
+            stage = staging_stage(scene, line, page)
+            image = lighting_art(stage['image']) if stage else None
+        if not image:
+            return []
+        return [image] + list((LIT.get('shade', {}).get(image) or {}).get('levels', []))
+
+    camera_ahead = []
+
+    def predict_ahead():
+        """Have the engine load the next painting while this line is read, so
+        a change of painting doesn't wait on its five files."""
+        here = stage_files(current_scene, source_line, source_page)
+        upcoming = []
+        if not source_page:
+            upcoming.append((current_scene, source_line, 1))      # a second page of this paragraph
+        later = [b['line'] for b in source_map['scenes'][current_scene - 1]['blocks'] if b['line'] > source_line]
+        upcoming += [(current_scene, line, 0) for line in later[:3]]
+        if len(later) < 3 and current_scene < len(source_map['scenes']):
+            opening = source_map['scenes'][current_scene]['blocks'][:1]
+            upcoming += [(current_scene + 1, b['line'], 0) for b in opening]
+        ahead = []
+        for scene, line, page in upcoming:
+            files = stage_files(scene, line, page)
+            if files and files != here:
+                ahead = files
+                break
+        if ahead != list(camera_ahead):
+            if camera_ahead:
+                renpy.stop_predict(*camera_ahead)
+            if ahead:
+                renpy.start_predict(*ahead)
+            camera_ahead[:] = ahead
+
+    def direct_line():
         """Aim the camera for the line about to be read. Called before the
         painting change is noted, so `first` sees the painting change."""
+        predict_ahead()
         key = stage_key()
         first = stage_image() != store.last_stage_image
-        name, framing, move = line_direction(first, text)
+        name, framing, move = line_direction()
         previous = store.shot_key
         store.shot_key = (key, name)
         quick = renpy.is_skipping() or renpy.in_rollback()

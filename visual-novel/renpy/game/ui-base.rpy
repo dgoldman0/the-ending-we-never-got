@@ -120,6 +120,11 @@ transform ui_fade_in(t=0.35):
     alpha 0.0
     easein (0.05 if persistent.reduced_motion else t) alpha 1.0
 
+transform ui_fade_after(delay=0.0, t=0.35):
+    alpha 0.0
+    pause (0.0 if persistent.reduced_motion else delay)
+    easein (0.05 if persistent.reduced_motion else t) alpha 1.0
+
 transform ui_caption_life:
     alpha 0.0
     pause 0.4

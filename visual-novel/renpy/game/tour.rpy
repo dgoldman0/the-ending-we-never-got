@@ -88,6 +88,9 @@ testcase ui_tour:
     click id 'ending_continue'
     pause 5.5
     screenshot '21-final-question.png'
+    click id 'ending_yes'
+    pause 7.0
+    screenshot '22-coming-soon.png'
 
 testcase ui_tour_states:
     $ _test.timeout = 60.0

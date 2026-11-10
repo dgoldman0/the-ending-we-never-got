@@ -114,9 +114,11 @@ def main():
         blocks = source['scenes'][number - 1]['blocks']
         lines = {block['line'] for block in blocks}
         speakers = {block.get('speaker') for block in blocks if block.get('speaker')}
-        for line in spec.get('lines', {}):
+        for line, override in spec.get('lines', {}).items():
             if int(line) not in lines:
                 errors.append('S%03d override names line %s, which is not a source line' % (number, line))
+            if override.get('speaker_portrait'):       # a portrait painted for particular lines
+                portraits.setdefault('art/portraits/%s.png' % override['speaker_portrait'], []).append(number)
         for name, entry in spec.get('cast', {}).items():
             if name not in speakers:
                 errors.append('S%03d cast lists %s, who does not speak in the scene' % (number, name))

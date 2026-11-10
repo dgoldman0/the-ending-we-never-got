@@ -4,11 +4,11 @@
 
 Run `../play.sh` from this directory, or `./visual-novel/play.sh` from the repository root. The local development SDK is Ren'Py 8.5.3. Elsewhere, install the [official SDK](https://www.renpy.org/release/8.5.3) and set `RENPY_SDK` to its extracted directory. The engine is not checked into Git.
 
-The original text route is traversable: 58 source scenes, ten working chapters, and the complete Bellweir ending followed by **Do you wish to save Tessa?** The question currently offers only Return to title. The intended Yes affordance remains unfinished; all post-Yes UI/UX and continuation are deferred. Text traversal is not completion of this visual novel.
+The original text route is traversable: 58 source scenes, ten working chapters, and the complete Bellweir ending followed by **Do you wish to save Tessa?** Since 9 November 2026 the question offers Yes, which leads to a Coming soon screen with a request for support; all post-Yes UI/UX and the continuation stay deferred. Text traversal is not completion of this visual novel.
 
 The archived opening maps 95 reading pages across S001–S005, with scene illustrations, action states and compact portraits. The user rejected the resulting presentation despite this coverage. GIMP masters retain source repairs and paired exposure layers. S004–S005 now have mapped cast/action rather than the earlier room-only fallback; S006–S058 still use prose/location cards. No music, voice or sound has been produced yet.
 
-**Camera, 9 November 2026.** Every scene from S001 to S058 is read over its paintings, and each line is framed from its painting: a closer framing on the speaker, on the person a narration line is about, or on a named detail (`game/direction.rpy`, `game/direction.json`; see [the VN instructions](../AGENTS.md#camera-direction--9-november-2026)). Settings → Camera chooses the speaker or the person spoken to, or Still, which turns it off. The paragraphs above and below predate this and the batch 5–8 paintings where they say later scenes are text only.
+**Camera, 9 November 2026.** Every scene from S001 to S058 is read over its paintings, and each line is framed from its painting: a closer framing on the speaker, on the person a narration line is about, or on a named detail (`game/direction.rpy`, `game/direction.json`; see [the VN instructions](../AGENTS.md#camera-direction--9-november-2026)). A spoken line frames the person spoken to, since the speaker is in the oval. Settings → Camera → Still turns the camera off. The paragraphs above and below predate this and the batch 5–8 paintings where they say later scenes are text only.
 
 ## Standalone Linux build
 

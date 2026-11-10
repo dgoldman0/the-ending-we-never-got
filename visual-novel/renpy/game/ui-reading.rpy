@@ -199,7 +199,7 @@ init -1 python:
                 if store.nvl_list:
                     nvl_clear()
                 store.page_scene = 0
-                direct_line(what)      # aims the camera; needs the painting change still unnoted
+                direct_line()          # aims the camera; needs the painting change still unnoted
                 note_stage_change()
             else:
                 store.last_stage_image = None
@@ -631,17 +631,77 @@ screen ending_breath():
         action Return()
     key "dismiss" action Return()
 
+# The words shown after Yes. Kept plain; change them here.
+define coming_soon_heading = _("Coming soon")
+define coming_soon_body = _("The next part of this story is still being made.")
+define coming_soon_support = _("If you would like to see it finished, please consider supporting the project.")
+define coming_soon_button = _("Support the project")
+
+default persistent.wished_to_save = False
+
 screen final_question():
     modal True
+    # The answers arrive once the question has settled, so the click that
+    # ended the scene cannot land on one. Neither is focused or timed: Yes has
+    # to be chosen.
+    default ready = False
     add Solid("#07090b")
     text "Do you wish to save Tessa?" at ui_fade_in(2.6):
         font ui_serif size 72 color ui_ivory align (0.5, 0.44)
-    textbutton _("Return to the title") at ui_fade_in(4.5):
-        id "ending_title"
-        style "caps_button"
-        text_color ui_ivory_soft
-        text_hover_color ui_gold_bright
-        align (0.5, 0.86)
-        action MainMenu(confirm=False)
-    # Response outcomes are intentionally not fabricated. This is the requested
-    # endpoint; no choice promises a continuation that does not exist.
+    timer (1.5 if persistent.reduced_motion else 3.4) action SetScreenVariable('ready', True)
+    if ready:
+        textbutton _("Yes") at ui_fade_in(1.6):
+            id "ending_yes"
+            style "serif_button"
+            text_size 60
+            text_color ui_gold_bright
+            text_hover_color "#fff1cf"
+            align (0.5, 0.61)
+            action Return('yes')
+        textbutton _("Return to the title") at ui_fade_in(2.6):
+            id "ending_title"
+            style "caps_button"
+            text_color ui_ivory_soft
+            text_hover_color ui_gold_bright
+            align (0.5, 0.86)
+            action MainMenu(confirm=False)
+
+# After Yes. The continuation does not exist yet: this says so, asks for
+# support, and returns to the title. It shows nothing of what the continuation
+# will be or look like.
+screen coming_soon():
+    modal True
+    default ready = False
+    add Solid("#07090b")
+    vbox:
+        xalign 0.5 yalign 0.40 spacing 0
+        text coming_soon_heading at ui_fade_in(1.8):
+            font ui_serif size 96 color ui_ivory xalign 0.5
+        null height 28
+        add "ui/rule.png" at ui_fade_after(0.9, 1.4) xalign 0.5
+        null height 36
+        text coming_soon_body at ui_fade_after(1.4, 1.6):
+            font ui_serif size 38 color ui_ivory_soft xalign 0.5 text_align 0.5 xmaximum 1200
+        null height 20
+        text coming_soon_support at ui_fade_after(2.6, 1.6):
+            font ui_italic size 34 color ui_ivory_soft xalign 0.5 text_align 0.5 xmaximum 1200
+    timer (1.5 if persistent.reduced_motion else 4.2) action SetScreenVariable('ready', True)
+    if ready:
+        vbox at ui_fade_in(1.6):
+            xalign 0.5 yalign 0.84 spacing 18
+            if support_url:
+                textbutton coming_soon_button:
+                    id "coming_soon_support"
+                    style "serif_button"
+                    text_size 44
+                    text_color ui_gold_bright
+                    text_hover_color "#fff1cf"
+                    xalign 0.5
+                    action OpenURL(support_url)
+            textbutton _("Return to the title"):
+                id "coming_soon_title"
+                style "caps_button"
+                text_color ui_ivory_soft
+                text_hover_color ui_gold_bright
+                xalign 0.5
+                action Return()

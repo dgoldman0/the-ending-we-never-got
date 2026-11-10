@@ -19,8 +19,12 @@ know where each person's face is in each painting. This tool:
                  "shots":   {"table": [960, 600, 1.3]}}},      a framing set outright: centre x, y, zoom
              "lines":  {"16": {"655": "book", "669": "hold",
                                "680": {"shot": "TESSA", "move": "ease"}}}
-           A line with no entry takes its speaker's framing; narration takes
-           the whole painting; "hold" keeps the framing of the line before.
+           A spoken line with no entry frames the person spoken to (the
+           speaker is in the oval), or the speaker when the listener has no
+           framing here; narration frames the person it is about, or the whole
+           painting; "hold" keeps the framing of the line before. build
+           writes the framing every line takes into direction.json, and the
+           game obeys that table.
   sheets   draws, for every painting with framings, the whole painting with
            each framing boxed and numbered faces, then each framing as the
            game shows it, with the reading shade over its lower third:
@@ -129,6 +133,190 @@ def load_plan():
                 key = other
         plan.append((scene, line, page, speaker, text, key))
     return plan, staging, beats
+
+
+def portrait_key(path):
+    """The graded portrait behind an S001-S005 plan path (ui-reading.rpy)."""
+    stem = Path(path).stem
+    if not path.startswith('art/rovel/portraits/'):
+        return stem
+    for suffix in ('-bright', '-night', '-ordinary'):
+        if stem.endswith(suffix):
+            stem = stem[:-len(suffix)]
+            break
+    for wardrobe in ('arrival-cloak', 'arrival', 'formal', 'working'):
+        if stem.endswith('-' + wardrobe):
+            return stem[:-len(wardrobe) - 1]
+    return stem
+
+
+class Roles(object):
+    """Who is spoken to on each line, and whether the speaker has a portrait
+    for the oval. These follow the game's own answers: staging.rpy
+    (default_listener, staging_faces) from S006 on, the authored beats of
+    rovel.rpy for S001-S005."""
+
+    def __init__(self, staging, beats):
+        self.staging, self.beats = staging, beats
+        self.blocks = [scene['blocks'] for scene in json.loads((GAME / 'source-map.json').read_text())['scenes']]
+        self.lit = json.loads((GAME / 'lit-assets.json').read_text()).get('portraits', {})
+
+    def _ready(self, image):
+        return bool(image) and (portrait_key(image) in self.lit or (GAME / image).is_file())
+
+    def _file(self, entry, expression, role):
+        if isinstance(entry, str):
+            for name in (entry + '-' + expression, entry):
+                if name in self.lit:
+                    return 'art/portraits/' + name + '.png'
+            return None
+        if isinstance(entry, dict):
+            path = entry.get(role) or entry.get('speaking')
+            return path if path and (GAME / path).is_file() else None
+        for candidate in entry:
+            path = self._file(candidate, expression, role)
+            if path:
+                return path
+        return None
+
+    def default_listener(self, scene, line, speaker):
+        blocks = self.blocks[scene - 1]
+        here = next((i for i, block in enumerate(blocks) if block['line'] >= line), len(blocks))
+        previous, action_since = None, False
+        for block in reversed(blocks[:here]):
+            who = block.get('speaker')
+            if who and who != speaker:
+                previous = who
+                break
+            if not who:
+                action_since = True
+        answer = blocks[here + 1].get('speaker') if here + 1 < len(blocks) else None
+        answer = answer if answer != speaker else None
+        if answer and (previous is None or action_since):
+            previous = answer
+        return previous
+
+    def of(self, scene, line, page, speaker):
+        """(the person spoken to, whether the speaker has a portrait)."""
+        if not speaker:
+            return None, False
+        if scene <= 5:
+            beat = self.beats.get((scene, line, page)) or {}
+            return (beat.get('listener') or {}).get('who'), self._ready((beat.get('speaker') or {}).get('image'))
+        spec = self.staging[str(scene)]
+        override = spec.get('lines', {}).get(str(line), {})
+        cast = spec.get('cast', {})
+        image = self._file(cast[speaker], override.get('speaker_expression', 'speaking'), 'speaking') if cast.get(speaker) else None
+        return override.get('listener', self.default_listener(scene, line, speaker)), self._ready(image)
+
+
+_TAG = re.compile(r'\{[^}]*\}')
+# Who a line opening on She or He can mean, from the screenplay and designs.
+SHE = frozenset(('TESSA', 'MARA', 'ELIN', 'HEST', 'ADA', 'ORRA', 'VASK', 'ARCHIVIST', 'WOMAN', 'MOTHER', 'HEALER'))
+HE = frozenset(('IVEN', 'SENN', 'OLAN', 'LUCAN', 'VALCAIR', 'ORREN', 'SERAT', 'MARREN', 'SCHOLAR', 'GOVERNOR',
+                'MESSENGER', 'APPRENTICE', 'BARGEMAN', 'ESCORT', 'BOATMAN', 'FERRYMAN', 'PRIEST', 'WARDEN',
+                'CAPTAIN', 'RUNNER', 'SURGEON', 'PICKET OFFICER'))
+
+
+def narration_shot(text, names):
+    """Whom a line of narration is about, when nothing is directed: a name;
+    'hold:she', 'hold:he' or 'hold' when it opens on a pronoun and continues
+    with someone already in the scene (see resolve_hold); None for the whole
+    painting. names are the people who have a framing in this painting."""
+    plain = _TAG.sub('', text).replace('\u2019', "'").strip()
+    sentences = [part for part in re.split(r'[.!?]+\s+', plain) if part.strip()]
+    found = []
+    for name in names:
+        match = re.search(r'\b' + re.escape(name.split()[-1]) + r'\b', plain, re.I)
+        if match:
+            found.append((match.start(), name))
+    found.sort()
+    if len(sentences) > 2 or len(found) > 2:
+        return None
+    if found and found[0][0] == 0:
+        return found[0][1]
+    opening = plain.lower()
+    if opening.startswith(('she ', 'her ')):
+        return 'hold:she'
+    if opening.startswith(('he ', 'his ')):
+        return 'hold:he'
+    if opening.startswith(('they ', 'their ')):
+        return 'hold'
+    if len(found) == 1:
+        return found[0][1]
+    return None
+
+
+def leading_name(text, names):
+    """The person a line opens on ("Lucan reads the recall..."), or None."""
+    plain = _TAG.sub('', text).replace('\u2019', "'").strip()
+    for name in names:
+        if re.match(re.escape(name.split()[-1]) + r'\b', plain, re.I):
+            return name
+    return None
+
+
+def resolve_hold(kind, recent, previous):
+    """Whom a pronoun-led line stays with. recent lists the people who last
+    spoke or were last written about, latest first; previous is the framing
+    before this line. She keeps to the latest woman, He to the latest man."""
+    if kind == 'hold':
+        return previous
+    want, other = (SHE, HE) if kind == 'hold:she' else (HE, SHE)
+    for name in recent[:2]:
+        if name in want:
+            return name
+    if recent and recent[0] not in other:
+        return recent[0]
+    return None
+
+
+def remember(recent, name):
+    """recent with a person put first (two are kept)."""
+    if not name or not name.isupper():
+        return recent
+    return [name] + [n for n in recent if n != name][:1]
+
+
+def resolve(plan, direction, roles, lines):
+    """The framing every page takes: [(page, first on its painting, shot
+    name, framing)]. A painting arrives whole. A spoken line frames the
+    person spoken to, because the speaker is already in the oval; it frames
+    the speaker when the listener has no framing in this painting or the
+    speaker has no portrait. Narration frames the person it is about.
+    plan.json's line choices win over all of these."""
+    rows, key, previous, recent = [], None, None, []
+    for page in plan:
+        scene, line, pg, speaker, text, stage = page
+        if not stage:
+            key = None
+            continue
+        first = stage != key
+        if first:
+            recent, previous = [], None
+        key = stage
+        shots = stage_shots(direction['stages'].get(stage))
+        people = [n for n in shots if n.isupper()]
+        name = directed(lines, scene, line, pg).get('shot')
+        subject = speaker
+        if name == 'hold':
+            name = previous
+        elif name is None and not first:
+            if speaker:
+                listener, has_portrait = roles.of(scene, line, pg, speaker)
+                name = listener if (listener in shots and has_portrait) else speaker
+            else:
+                name = narration_shot(text, people)
+                if name and name.startswith('hold'):
+                    name = resolve_hold(name, recent, previous)
+        if not speaker:
+            subject = leading_name(text, people) or (name if name in people else None)
+        if name not in shots:
+            name = 'wide'
+        recent = remember(recent, subject)
+        previous = name
+        rows.append((page, first, name, shots.get(name, shotmath.WIDE)))
+    return rows
 
 
 def stage_files(key):
@@ -283,6 +471,41 @@ def stage_people(key, known, authored):
     return people, faces
 
 
+ALIKE = 0.06        # framings whose centres differ by less than this share of the screen are one picture
+
+
+def alike(a, b):
+    z = (a[2] + b[2]) / 2.0
+    return (abs(a[0] - b[0]) * z / shotmath.W < ALIKE and abs(a[1] - b[1]) * z / shotmath.H < ALIKE
+            and max(a[2], b[2]) / min(a[2], b[2]) < 1.08)
+
+
+def merge_alike(shots, faces):
+    """People who stand close together get framings a few pixels apart, and
+    the camera would twitch between them from line to line. Framings that
+    show nearly the same picture become one framing, held: a two-shot."""
+    groups = []
+    for name in sorted(shots):
+        for group in groups:
+            if all(alike(shots[name], shots[other]) for other in group):
+                group.append(name)
+                break
+        else:
+            groups.append([name])
+    merged = dict(shots)
+    for group in groups:
+        if len(group) < 2:
+            continue
+        zoom = min(shots[n][2] for n in group)
+        mean = shotmath.clamp((sum(shots[n][0] for n in group) / len(group),
+                               sum(shots[n][1] for n in group) / len(group), zoom))
+        if shotmath.breaks(mean, [f for f in faces if f[2] >= 30]):
+            mean = min((shots[n] for n in group), key=lambda f: f[2])      # the widest of them was checked
+        for name in group:
+            merged[name] = mean
+    return merged
+
+
 def build(args=None, known=None):
     """Compose every framing and write the game's direction.json. Faces,
     details and hand-set framings are given in the painting's own
@@ -290,10 +513,10 @@ def build(args=None, known=None):
     known = known or (json.loads(FACES.read_text()) if FACES.is_file() else {})
     authored = load_authored()
     staging = json.loads((GAME / 'staging.json').read_text())['scenes']
-    direction = {'_note': 'Camera framings and line direction for direction.rpy. Built by tools/direct-shots.py '
-                          'from art/direction/ (faces.json and the hand-made plan.json); edit those, not this file. '
-                          'A framing is [centre x, centre y, zoom] on the 1920x1080 stage.',
-                 'stages': {}, 'lines': authored.get('lines', {})}
+    direction = {'_note': 'Camera framings, and the framing every line takes, for direction.rpy. Built by '
+                          'tools/direct-shots.py from art/direction/ (faces.json and the hand-made plan.json); edit '
+                          'those and rebuild, not this file. A framing is [centre x, centre y, zoom] on the 1920x1080 stage.',
+                 'stages': {}, 'lines': {}}
     for key in sorted(set(known) | set(authored['stages'])):
         spec = authored['stages'].get(key) or {}
         lift = stage_lift(key, staging)
@@ -306,6 +529,7 @@ def build(args=None, known=None):
             if look is None:
                 look = shotmath.look_from(face, list(people.values()))
             shots[name] = shotmath.single(face, look, faces)
+        shots = merge_alike(shots, faces)
         for name, corners in (spec.get('details') or {}).items():
             x0, y0, x1, y1 = corners
             shots[name] = shotmath.detail(x0, y0 - lift, x1, y1 - lift)
@@ -314,8 +538,19 @@ def build(args=None, known=None):
         shots = {name: [round(f[0], 1), round(f[1], 1), round(f[2], 3)] for name, f in shots.items() if f[2] > 1.001}
         if shots:
             direction['stages'][key] = {'shots': shots}
+    # Every line with the framing it takes; the game looks lines up here and
+    # decides nothing itself.
+    plan, _staging, beats = load_plan()
+    chosen = authored.get('lines', {})
+    rows = resolve(plan, direction, Roles(staging, beats), chosen)
+    table = {}
+    for (scene, line, pg, _speaker, _text, _stage), _first, name, _framing in rows:
+        entry = dict(directed(chosen, scene, line, pg))        # a hand-chosen painting or move stays
+        entry['shot'] = name
+        table.setdefault(str(scene), {})[str(line) + ('.%d' % pg if pg else '')] = name if len(entry) == 1 else entry
+    direction['lines'] = table
     save_direction(direction)
-    return direction
+    return direction, rows
 
 
 def save_direction(direction):
@@ -341,84 +576,66 @@ def stage_shots(spec):
     return {name: tuple(framing) for name, framing in ((spec or {}).get('shots') or {}).items()}
 
 
-class Shots(object):
-    """Walks the pages as the game does (direction.rpy: line_direction)."""
-
-    def __init__(self, direction):
-        self.direction = direction
-        self.key = self.previous = None
-        self.recent = []
-
-    def line(self, page):
-        scene, line, pg, speaker, text, key = page
-        first = key != self.key
-        if first:
-            self.recent, self.previous = [], None
-        self.key = key
-        shots = stage_shots(self.direction['stages'].get(key))
-        name = directed(self.direction['lines'], scene, line, pg).get('shot')
-        if name is None and not first:
-            if speaker:
-                name = speaker
-            else:
-                name = shotmath.narration_shot(text, [n for n in shots if n.isupper()])
-                if name and name.startswith('hold'):
-                    name = shotmath.resolve_hold(name, self.recent, self.previous)
-        elif name == 'hold':
-            name = self.previous
-        if name not in shots:
-            name = 'wide'
-        self.recent = shotmath.remember(self.recent, name)
-        self.previous = name
-        return first, name, shots.get(name, shotmath.WIDE)
-
-
 def board(args):
-    plan, _staging, _beats = load_plan()
-    walk = Shots(build())
-    for page in plan:
-        scene, line, pg, speaker, text, key = page
-        if not key:
-            walk.key = None
-            continue
-        first, name, framing = walk.line(page)
+    _direction, rows = build()
+    for (scene, line, pg, speaker, text, key), first, name, framing in rows:
         if scene in args.scene:
             if first:
                 print('\n== %s' % key)
             print('%4d%s %-8s %-10s z%.2f  %s' % (line, '.%d' % pg if pg else '  ', (speaker or '')[:8], name, framing[2], text[:86]))
 
 
+SAME_VIEW = 0.80        # framings sharing this much of their view are a reframing, not a new picture
+
+
 def stats(args=None):
-    """How often the picture changes: the measure the camera exists for."""
-    plan, _staging, _beats = load_plan()
-    walk = Shots(build())
-    rows = []
-    for page in plan:
-        if not page[5]:
-            walk.key = None
+    """How often the picture changes: the measure the camera exists for.
+    A change of framing within one painting counts as a new picture only when
+    the two views share less than SAME_VIEW of the smaller one, or differ in
+    size by a quarter or more (the whole painting to a close framing); a
+    smaller shift, toward the person spoken to in a two-shot, is a reframing."""
+    _direction, resolved = build()
+    rows = [(page[0], page[5], name, tuple(framing), bool(page[3])) for page, _first, name, framing in resolved]
+    paintings = pictures = moves = 1
+    held = quiet = 1
+    longest_painting, holds, quiets = 1, [], []
+    painting_run = 1
+    for a, b in zip(rows, rows[1:]):
+        if a[1] != b[1]:
+            paintings += 1; pictures += 1; moves += 1
+            holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2])); quiets.append((quiet, a[0], a[1].rsplit('/', 1)[-1]))
+            held = quiet = painting_run = 1
             continue
-        _first, name, framing = walk.line(page)
-        rows.append((page[0], page[5], name, tuple(framing), bool(page[3])))
-    pictures, held, holds = 1, 1, []
-    for a, b in zip(rows, rows[1:]):
-        if a[1] == b[1] and a[3] == b[3]:
-            held += 1
+        painting_run += 1
+        longest_painting = max(longest_painting, painting_run)
+        if a[3] == b[3]:
+            held += 1; quiet += 1
+            continue
+        moves += 1
+        holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2])); held = 1
+        scale = max(a[3][2], b[3][2]) / min(a[3][2], b[3][2])
+        if shotmath.overlap(a[3], b[3]) < SAME_VIEW or scale >= 1.25:      # another part, or a clear change of size
+            pictures += 1
+            quiets.append((quiet, a[0], a[1].rsplit('/', 1)[-1])); quiet = 1
         else:
-            holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2]))
-            pictures, held = pictures + 1, 1
+            quiet += 1
     holds.append((held, rows[-1][0], rows[-1][1].rsplit('/', 1)[-1], rows[-1][2]))
-    paintings, held, longest = 1, 1, 1
-    for a, b in zip(rows, rows[1:]):
-        held = held + 1 if a[1] == b[1] else 1
-        paintings += a[1] != b[1]
-        longest = max(longest, held)
+    quiets.append((quiet, rows[-1][0], rows[-1][1].rsplit('/', 1)[-1]))
+    n = float(len(rows))
     whole = sum(1 for r in rows if r[3][2] <= 1.001)
     spoken = [r for r in rows if r[4]]
     print('%d pages over paintings: %d shown whole, %d framed closer.' % (len(rows), whole, len(rows) - whole))
     print('Spoken lines: %d, of which %d over the whole painting.' % (len(spoken), sum(1 for r in spoken if r[3][2] <= 1.001)))
-    print('The picture changes every %.2f pages (every %.2f with the paintings alone; longest hold then %d pages).'
-          % (len(rows) / float(pictures), len(rows) / float(paintings), longest))
-    print('Longest holds now: ' + ', '.join('%d pages S%03d %s %s' % h for h in sorted(holds, reverse=True)[:6]))
+    print('A new painting every %.2f pages (longest stay on one painting: %d pages).' % (n / paintings, longest_painting))
+    print('A clearly different picture every %.2f pages; the framing moves at all every %.2f pages.' % (n / pictures, n / moves))
+    print('Longest runs without a clearly different picture: '
+          + ', '.join('%d pages S%03d %s' % q for q in sorted(quiets, reverse=True)[:8]))
+    print('Longest holds of one unmoving framing: '
+          + ', '.join('%d pages S%03d %s %s' % h for h in sorted(holds, reverse=True)[:6]))
+    named = sum(len(v['shots']) for v in _direction['stages'].values())
+    distinct = sum(len({tuple(f) for f in v['shots'].values()}) for v in _direction['stages'].values())
+    print('%d named framings over %d paintings make %d different framings (people standing together share one).'
+          % (named, len(_direction['stages']), distinct))
 
 
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
@@ -434,18 +651,12 @@ def render_shot(graded, framing, size, shade):
 
 
 def sheets(args):
-    plan, staging, _beats = load_plan()
-    direction = build()
+    _plan, staging, _beats = load_plan()
+    direction, resolved = build()
     known = json.loads(FACES.read_text()) if FACES.is_file() else {}
     used = {}       # stage -> {shot name: number of pages}
     order, speakers = [], {}
-    walk = Shots(direction)
-    for page in plan:
-        scene, _line, _pg, speaker, _text, key = page
-        if not key:
-            walk.key = None
-            continue
-        _first, name, _framing = walk.line(page)
+    for (scene, _line, _pg, speaker, _text, key), _first, name, _framing in resolved:
         if key not in used:
             order.append((scene, key))
         used.setdefault(key, {})

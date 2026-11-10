@@ -1,8 +1,8 @@
 # Asset request
 
-Updated 30 September 2026: batch 8 is in the game, checked picture by picture and in play, and what it left is **batch 9** below. The game takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it. This file says what GPT makes next, where it stops, and what is queued behind that stop.
+Updated 9 November 2026. **Batch 9, below, is the last batch.** The game no longer waits on new art: a camera now frames every line from the paintings it already has (see *What changed in the game*), and whatever this batch leaves wrong will be repaired locally or kept out of close view. So this batch carries everything that only painting can do: the repaints left from batch 8 (part A), nine moments no painting shows (part B) and nine speaking portraits for the lines that carry the most (part C). Parts B and C are additions of 9 November; the user may strike either before handing the batch over, and part A stands without them.
 
-The user wants better portraits. The cast is being painted as head-and-shoulders busts, with **one painting per role**, so speaker and listener face each other without mirroring. Batches 1–3 came through with the format, direction and scale right every time; the faults were individual faces and clothes. So the batches are now much larger, in parts, and GPT checks its own work against the list below as it goes. **Batch 5 is the rest of the game's art**: Tessa's last portraits, repaints of the opening, and every scene painting through the ending. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
+The game still takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it and found its faces. Earlier batches are recorded below as done. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
 
 ## Checked so far
 
@@ -36,46 +36,158 @@ The user wants better portraits. The cast is being painted as head-and-shoulders
 
   Item 69 went wrong in S051, where the bow was removed instead of turned, so the crossbow reads as a rifle; items 65, 67 and 72 were done in part. The rest is batch 9.
 
-## Next for GPT: batch 9, what batch 8 left
+## Next for GPT: batch 9, the last batch
 
-Batch 8 fixed most of what it was given: Serat's brother is one man in all seven paintings, the S055 landing is the dark, open floor of the screen before it, the S052 ward thins across the whole doorway, the duel's black light turns her blade at his elbow, the lever is stone, and the S053 landing is dry under an open sky. What is left is smaller: **repaints only**, the first group first, committing after each group, with one stop at the end. Batch 5's self-check, format and composition rules still apply, and so do the user's decisions: Iven's warm brown coat, no green on the human side, the chosen costumes, and Serat's brother as the ponytailed man of the S021 landing and S025.
+Three parts, in this order, committing after each group, with one stop at the end. Batch 5's self-check and format still apply, and so do the standing decisions: Iven's warm brown coat, no green on the human side, the chosen costumes, and Serat's brother as the ponytailed man of the S021 landing and S025.
 
-**How to repaint.** Change only what an item lists; keep the composition, camera, light and every other figure and object. Start from the file as it is now at `renpy/game/art/scenes/`: many carry Claude's local fixes (the FIXES, BATCH7 and BATCH8 tables of `tools/local-repairs.py`: among them the crags and tower beyond the S055 parapet, taken from `s055-mara.png`, and Tessa's chestnut hair in `s021-rescue.png`), and an older master would undo them. Save each at the same path. Blend every patch into what is around it and take out everything it covers.
+### What changed in the game since batch 8
 
-### Repaints: wrong at full screen (do these first)
+Until 9 November a painting stayed on screen whole for as long as its lines lasted. Now it is whole only when it arrives. For each line after that the game frames part of it: on a spoken line the person spoken to (the speaker is in the oval portrait), in narration the person the sentence is about, or a detail the text names. A framing enlarges the painting up to 1.85 times and sets the face about a third of the way down the screen. Three consequences for painting:
 
-74. **S021, Lucan at the gate.** In `s021-lucan-returns.png`:
-   - his horns are two short dark cones high on his crown. On the screens either side (the covered landing and the rescue) and in S018 he has a pair of smooth horns curving back close to the skull from the temples; give him those;
-   - the crossbow he takes from Serat (line 900) now hangs clear of the reading shade, but its bow is a small upright D through the stock. The bow lies across the front of the stock, level, its two tips out to either side, with the string between them.
-75. **S051, Lucan's crossbow (item 69 again).** In `s051-north-infirmary-court.png` the bow was taken off rather than turned, so the weapon at the firing slit reads as a rifle. Seen from beside it at eye level, a level bow is foreshortened: a narrow, nearly upright ellipse across the front of the stock (the near limb a little below, the far limb a little above), the string running back from its tips to the nut.
-76. **S021, the first boat (item 65 again).** It carries Lucan's families and his last injured soldier (lines 891 and 937), all northern:
-   - in `s021-gray-scar-covered-landing.png` and `s021-lucan-returns.png` several passengers still have no horns: a child and three adults in the landing; the man in the blue hood, the bald man, another seated man, the figure at the stern and a child in the return view. Northern children have horns too, as in S018;
-   - in `s021-rescue.png` the man standing in that boat wears the ferryman's red cap and has his grey beard and no horns, a second ferryman (the ferryman is at the gate at this moment). He is the boat's northern boatman of the landing painting, in his brown cap, with horns.
-77. **S053, the bend (item 72 again).** Line 2052: *at the bend, only two men can reach Mara at once.* The broken shields now lie behind her, beside the stair's foot, and the landing in front of her is still wide and open, so a third man could walk past her. Put the narrowing in front of her: the heap of broken shields, a fallen section of the parapet or the pier, so the attackers come at her through a gap two men wide with the stair behind her. The heap should read as broken shields: at present one piece is a red door with a sliding bolt.
+- **Faces are read close.** A face 70 px tall in a 1920×1080 painting is about 130 px tall on screen. Horns, hair, a collar, a hand beside the face and a weapon on a back are all read at that size, wherever that person speaks or is spoken to.
+- **Small faults are no longer small.** Items that earlier batches marked "under the reading shade" or "seen only at native size" can now sit in the middle of the screen. Part A is ordered by how often the game now shows each fault close.
+- **The shade covers the lower third of the screen, not of the painting.** Any part of a painting's upper two-thirds can be on screen above the text.
 
-### Repaints: continuity and details
+### What a new painting needs for the camera
 
-78. **S019, Lucan (item 67 again).** In `s019-gray-scar-ferryhouse.png` his horns now hook upward off his head; they curve back close to the skull. The crossbow slung on his back, which he draws at line 875 and which S018 shows, has become a short dark stub like a sword hilt: give it back its stock and bow. A flat brown wedge is still at the left tip of the crossbow propped against the wall.
-79. **S021, the rescue.** In `s021-rescue.png`: Serat's brother's horn lies flat along his head like a headband (it rises from the temple and curves back, as in the other six paintings); Serat's slung crossbow is a tangle of two crossing bars and strings.
-80. **S021, Serat.** In `s021-serat.png` his brother's crossed strap runs right behind Serat's ear, so the back of Serat's skull is cut off flush behind the ear. Give his head its full depth behind the ear, the strap passing behind it.
-81. **S034, the third guard (item 68, the last of it).** In `s034-return-cargo-shed.png` the guard at the door edge has horns and a green coat now, but still wears the beret, recoloured, and his left collar is still bright blue. A cap with openings for his horns, as the guard beside him wears, and the green collar.
-82. **Small leftovers** (under the reading shade, or seen only at native size):
-   - `s053-bend.png`: the flight rises about sixteen steps; in S050, minutes before, the same flight rises nine or ten to the platform where Olan stands. Line 2054 needs *light flashing in the hall's high windows*, which the new open platform no longer shows;
-   - `s052-citadel-inner-landing.png` and `s052-entrance-ward.png`: the open bronze door leaf at the right jamb ends in mid-air well above the threshold (Claude faded its lower end into the ward in the entrance-ward painting); a sliver of dark stone sticks out over the floor behind the runner's rear boot in the inner landing;
-   - `s050-citadel-lower-stair.png`: a pale cut-out halo along the top of Olan's raised arm, against the sky; the pier's stone keeps a diamond pattern above its repaired base;
-   - `s058-final.png`: a fifth leg under the front chair, between its front legs, ending above the floor;
+These add to *Reference: composition rules for scene paintings* at the end of this file; they apply to part B.
+
+1. **One moment per painting.** No diptychs or triptychs: the camera cannot show one tall panel by itself.
+2. **Named faces at least 75 px tall** (hairline to chin, in a 1920×1080 painting), in full likeness. Someone who only passes in the background can be smaller.
+3. **Named faces between y ≈ 120 and y ≈ 560,** and at least 200 px in from the left and right edges. A framing needs painting below the face for the lower third of the screen and room beside it to look into.
+4. **A head's width of clear space between neighbouring named faces** where the staging allows, so a framing on one person doesn't cut through another's face; or bring two people together on purpose, as an embrace or a shared task does.
+5. **Details the text names are painted to be read:** a letter, cut pages, a key or a stone sits above y ≈ 700, at least 250 px wide, in plain sight. Put no lettering on it beyond the words the screenplay gives.
+6. **Deliver the generator's own resolution** when it is larger than 1920×1080; don't upscale to reach a size.
+
+### How to work
+
+**Repaints (part A).** Change only what an item lists; keep the composition, camera, light and every other figure and object. Start from the file as it is now at `renpy/game/art/scenes/`: many carry Claude's local fixes (the FIXES, BATCH7 and BATCH8 tables of `tools/local-repairs.py`: among them the crags and tower beyond the S055 parapet, taken from `s055-mara.png`, and Tessa's chestnut hair in `s021-rescue.png`), and an older master would undo them. Save each at the same path. Blend every patch into what is around it and take out everything it covers.
+
+**New paintings (part B).** Write the brief first in `art/scene-studies/sNNN-<name>/README.md`, as for part E of batch 5: the exact lines and what comes just before and after; who is present and visible; where everyone stands and faces, and how they got there; who holds what; clothes and injuries for the period; the light. Paint from the written designs and the references named with each item, in neutral, readable exposure with visible light sources. Then add a line to the brief saying what you checked in the finished painting.
+
+**Portraits (part C).** The format of batch 5: square, 1254×1254 or larger, transparent background, head and shoulders in three-quarter view, even neutral light, looking toward screen right with lips parted mid-word. Each joins an existing set: same person, same age, same clothes, hair, horns and scars as the set's `-speaking` file, with only the expression changed. Never mirror and never edit an existing portrait into the new one.
+
+### Part A: repaints, in the order the game now shows them
+
+The item numbers are batch 8's and the 30 September check's, kept so earlier notes still match.
+
+1. **Item 78. S019, Lucan in the ferryhouse.** `s019-gray-scar-ferryhouse.png`. The game frames Lucan close on eight lines of this scene, more than any other fault in the game.
+   - His horns hook upward off his head; they curve back close to the skull, as in `s018-gray-scar-ferry-approach.png`.
+   - The crossbow slung on his back, which he draws at line 875 and which S018 shows, has become a short dark stub like a sword hilt: give it back its stock and bow.
+   - A flat brown wedge is still at the left tip of the crossbow propped against the wall.
+2. **Item 74. S021, Lucan at the gate.** `s021-lucan-returns.png`. Lucan is framed close on lines 900 and 902, where he trades crossbows with Serat.
+   - His horns are two short dark cones high on his crown. On the screens either side (the covered landing and the rescue) and in S018 he has a pair of smooth horns curving back close to the skull from the temples; give him those.
+   - The crossbow he takes from Serat hangs clear of the reading shade, but its bow is a small upright D through the stock. The bow lies across the front of the stock, level, its two tips out to either side, with the string between them.
+3. **Item 80. S021, Serat.** `s021-serat.png`. Seven lines are framed close here, on Tessa, Iven and Lucan, with Serat between them every time. His brother's crossed strap runs right behind Serat's ear, so the back of Serat's skull is cut off flush behind the ear. Give his head its full depth behind the ear, the strap passing behind it.
+4. **Item 81. S034, the third guard.** `s034-return-cargo-shed.png`. The doorway is framed close on lines 1376 and 1378. The guard at the door edge has horns and a green coat now, but still wears the beret, recoloured, and his left collar is still bright blue. A cap with openings for his horns, as the guard beside him wears, and the green collar.
+5. **Item 75. S051, Lucan's crossbow.** `s051-north-infirmary-court.png`. The bow was taken off rather than turned, so the weapon at the firing slit reads as a rifle. Seen from beside it at eye level, a level bow is foreshortened: a narrow, nearly upright ellipse across the front of the stock (the near limb a little below, the far limb a little above), the string running back from its tips to the nut. The game keeps this painting whole until the bow is right, because the slit would be the centre of the framing.
+6. **Item 76. S021, the first boat.** It carries Lucan's families and his last injured soldier (lines 891 and 937), all northern.
+   - In `s021-gray-scar-covered-landing.png` and `s021-lucan-returns.png` several passengers still have no horns: a child and three adults in the landing; the man in the blue hood, the bald man, another seated man, the figure at the stern and a child in the return view. Northern children have horns too, as in S018.
+   - In `s021-rescue.png` the man standing in that boat wears the ferryman's red cap and has his grey beard and no horns, a second ferryman (the ferryman is at the gate at this moment). He is the boat's northern boatman of the landing painting, in his brown cap, with horns.
+7. **Item 79. S021, the rescue.** In `s021-rescue.png`: Serat's brother's horn lies flat along his head like a headband (it rises from the temple and curves back, as in the other six paintings); Serat's slung crossbow is a tangle of two crossing bars and strings.
+8. **Item 77. S053, the bend.** `s053-bend.png`. Line 2052: *at the bend, only two men can reach Mara at once.* The broken shields lie behind her, beside the stair's foot, and the landing in front of her is still wide and open, so a third man could walk past her. Put the narrowing in front of her: the heap of broken shields, a fallen section of the parapet or the pier, so the attackers come at her through a gap two men wide with the stair behind her. The heap should read as broken shields: at present one piece is a red door with a sliding bolt.
+9. **Item 82. Small leftovers.**
+   - `s053-bend.png`: the flight rises about sixteen steps; in S050, minutes before, the same flight rises nine or ten to the platform where Olan stands. Line 2054 needs *light flashing in the hall's high windows*, which the open platform no longer shows.
+   - `s052-citadel-inner-landing.png` and `s052-entrance-ward.png` (both now framed close on Tessa): the open bronze door leaf at the right jamb ends in mid-air well above the threshold (Claude faded its lower end into the ward in the entrance-ward painting); a sliver of dark stone sticks out over the floor behind the runner's rear boot in the inner landing.
+   - `s050-citadel-lower-stair.png`: a pale cut-out halo along the top of Olan's raised arm, against the sky; the pier's stone keeps a diamond pattern above its repaired base.
+   - `s058-final.png`: a fifth leg under the front chair, between its front legs, ending above the floor.
    - `s054-lever.png`: faint beaded highlights along the edges of the throne base and the lever housing.
+
+### Part B: nine moments no painting shows (9 files)
+
+Each is read today over a painting of another moment; the camera can change where the reader looks but not what was painted. In order of need. Each file appears at its first line as soon as it exists. Follow *What a new painting needs for the camera*.
+
+**B1. `s035-water.png`, lines 1438–1447: the water closes.** Read today over `s035-iven.png`, where Iven is still in the air.
+- Just after the fall, on the stone of the southern pier. Mara has hauled Tessa back from the edge and holds her round the waist; Tessa strains toward the drop, calling, Iven's torn sleeve in her fist (line 1434).
+- Below them: broken deck timbers and a section of roof rolling over in white water. **Nobody is in the water:** no hand, no head, no coat. Line 1445: *nothing surfaces beneath it.* The cart has gone over with the deck.
+- Across the gap, small, Lucan at the broken northern end shouting for ropes (line 1447).
+- Behind Tessa and Mara, subordinate: Hest holding Renn, Ada, the two apprentices, Orren on his stretcher, the soldier who lifted the shaft (line 1419).
+- Same pier, light and clothes as `s035-iven.png` and `s035-collapse.png`: autumn afternoon just past four, Tessa in the field outfit with both hands whole, Mara as in the collapse.
+- For the camera: Tessa's and Mara's faces in the upper half at the right or centre; the empty water in the middle band of the picture, not only along the bottom; the sleeve in her fist above y ≈ 700.
+
+**B2. `s036-sapling.png`, line 1514: the woman with the sapling.** Read today over the argument on the bank.
+- Downriver from the broken bridge, late afternoon. On the gravel a drowned northern man lies on his back; his wife kneels beside him and smooths his dark brown coat over his body. Their surviving son, in his late teens, stands or kneels by her holding the young pear tree in its sacking.
+- Paint the three from [their written design](../../characters/original-visuals.md) ("Northern woman with the sapling") and from `s039-northern-river-town.png`, where the mother helps the son into this same coat weeks later. All three have horns.
+- Quiet: no wound, no gore, his face calm or half covered. Search boats and one or two searchers may work in the distance; Tessa, Mara and Lucan are not in this picture.
+- For the camera: mother's and son's faces in the upper half, a head's width apart; her hands on the coat and the sapling both above y ≈ 700.
+
+**B3. `s012-cut-pages.png`, line 541: four pages cut from the binding.** Read today over the reading room with the archivist still at the table.
+- Night in the temple reading room, at the same table as `s012-temple-reading-room.png`, one lamp. Elin alone: the wrapping cloth pushed back, the original open in front of her, her translations beside it.
+- In the gutter of the open book, **four narrow stubs** where leaves were cut out with a knife, clean and countable. Her fingertips rest at them. This is the first sight of the damage that S013, S015 and S016 turn on; keep the book the one painted in `s016-council-room.png`.
+- For the camera: a close view from beside her at table height. The stubs sit above y ≈ 700 and at least 250 px wide; Elin's face, looking down, in the upper half. No lettering has to be legible.
+
+**B4. `s011-blue-door.png`, lines 504–509: Orren's lantern.** Read today over the crowd under the arch.
+- Night, Bellweir square as in `s011-bellweir-causeway.png`, the wards failing and roofs coming down. Across a rubble-choked alley by the steps, Orren stands in a blue doorway and waves a lantern; the apprentices he went for may show behind him.
+- In the foreground Tessa, in the working dress, stretches her white arch toward him until its roof thins. A tile punches through it beside Iven, who is still carrying Ada (he hands her to Hest at line 511). Hest and Renn keep close to him.
+- A roof burns above the alley; it has not yet fallen across the path (line 509).
+- Orren as in `s008-bellweir-market.png` and his portraits. This is the last the family sees of him before the camps.
+- For the camera: Orren's face and lantern readable, at least 75 px, in the upper half on one side; Tessa's face in the upper half on the other; the alley between them.
+
+**B5. `s006-bowls.png`, line 287: the burned portion.** Read today over the sparring.
+- The convoy camp of `s006-convoy-camp.png`, late afternoon, after training: the wooden sword laid beside the grain sack, Mara's staff across her knees or propped beside her.
+- Iven has put three bowls down and gone back to the fire for the spoons, his back turned. Tessa, sitting, is trading bowls: her own going to his place, the scorched one he kept for himself coming to hers. Mara sits on the other side of his empty place; the screenplay gives her no reaction, so paint none in particular.
+- Clothes and faces as in `s006-convoy-camp.png`: the working dress with the padded training shoulder, Iven's warm brown coat.
+- For the camera: Tessa's and Mara's faces in the upper half, a head's width apart; the two bowls changing places above y ≈ 700; Iven complete, small, at the fire.
+
+**B6. `s026-stone.png`, line 1126: the chalked stone.** Read today over the loading ramp.
+- Day, at the quarry landing of `s026-quarry-loading-ramp.png`, the launch about to cast off. On its deck a fist-sized quarry stone, white with chalk, has just landed. ORREN is scratched into the chalk.
+- The stone lies where it fell, the name uppermost. The bed number beneath it is scratched too lightly, or turned too far from the viewer, to read: no figure is invented. Lucan stands over it, looking down.
+- Up on the ramp, small, the apprentice with his barrow looks away from him.
+- For the camera: the stone above y ≈ 700 and at least 250 px wide, the name plain; Lucan's face in the upper half; the apprentice in the upper half, far enough from Lucan to be framed by himself.
+
+**B7. `s015-book.png`, lines 608–627: the end of the book.** Read today over `s015-elin-lodging.png`, which shows the end of the scene (line 649: Tessa by the door in her coat, the book shut in her arms). That painting then starts at line 629.
+- Winter daylight in Elin's lodging, at her table by the window. The original lies open beside Elin's translations; Tessa has turned past the cut pages to the last leaf and stays there (line 622). Elin is at the table with her; the borrowing slip lies by the book (line 635).
+- Tessa's winter coat hangs on the peg by the door: she fetches it at line 649. Paint her in what [her winter key](character-keys/tessa/) shows beneath the coat. **If the key does not show it, skip this painting and say so;** don't invent a garment.
+- For the camera: both faces in the upper half, a head's width apart; the open book, its stubs toward the viewer, above y ≈ 700.
+
+**B8. `s047-plan.png`, lines 1871–1875: the plan and the letters.** Read today over the captains in the ward.
+- Daylight in the north infirmary of `s047-citadel-north-infirmary-before-dawn.png`, beds pushed from the windows. On an empty bed the plan of the route to the throne hall: the lower stair, the bend, the landing, the hall, the release behind the throne. Draw it as the plan on the table in `s049-command-tent.png`, where Elin opens it.
+- Lucan's hand writes at the plan's edge, in capitals: THE WATCHES HAVE CHANGED. CHECK THE APPROACH. These are the only words in the painting. Beside the plan lie two folded letters, one of them sealed separately.
+- His forearm is bandaged as in `s046-valcair-private-room.png`. Serat is holding the outer gate while Lucan draws (line 1871), so he is not at the bed.
+- For the camera: the plan and the capitals above y ≈ 700; Lucan's face in the upper half.
+
+**B9. `s049-bag.png`, line 1986: Iven's bag.** Read today over the command table.
+- Night outside the forward command tent, lamplight from the flap. Tessa fastens the strap of Iven's medical bag, the satchel he carries in `s032-harrow-bridge.png`, worn now. A healer waits to take it to the wagons, which stand behind.
+- Tessa in the campaign coat, nearly four years after the summoning, both hands whole, her sword on her left hip.
+- For the camera: Tessa's face, looking down at the bag, in the upper half; her hands and the buckle above y ≈ 700; the healer a head's width away.
+
+### Part C: nine speaking portraits (9 files)
+
+Since 24 September only the speaker is shown, in the oval, and since 9 November the painting shows the person spoken to. The oval is therefore the one place where a speaker's face changes with the line, and from S006 on each character has one speaking face per period. These nine give the lines that carry the most a face of their own. Each is one `-speaking` file saved in `art/portraits/`; the game already knows which lines take it.
+
+| File | Joins the set (same age, clothes, hair) | Expression | Lines |
+| --- | --- | --- | --- |
+| `tessa-amused-working-speaking.png` | `tessa-resolute-working-speaking` | Laughing as she talks, caught out and enjoying it; no makeup, freckles kept | S006 268; S007 308, 319; S008 357, 370, 381; S009 414, 421 |
+| `iven-amused-speaking.png` | `iven-attentive-speaking` | Teasing, a grin he is trying to keep down | S006 284; S007 311; S008 373, 378, 384; S009 403, 411, 424 |
+| `mara-wry-speaking.png` | `mara-controlled-speaking` | Dry, one corner of the mouth; warmth she doesn't announce | S007 316, 332; S009 406 |
+| `lucan-early-laughing-speaking.png` | `lucan-early-speaking` | Mid-story, laughing openly, unguarded | S030 1216, 1224, 1229 |
+| `tessa-harrow-crying-out-speaking.png` | `tessa-harrow-speaking` | Shouting through tears; raw, not pretty | S035 1429, 1442; S036 1484, 1504; S037 1533 |
+| `tessa-harrow-grieving-speaking.png` | `tessa-harrow-speaking` | Low and emptied, eyes swollen, speaking to no one in particular | S036 1497; S037 1527, 1538, 1543 |
+| `lucan-early-pleading-speaking.png` | `lucan-early-speaking` | Stricken, trying to be believed | S036 1456, 1467, 1473, 1479, 1494 |
+| `tessa-campaign-shaken-speaking.png` | `tessa-campaign-speaking` | After the tower: blank, the voice small | S042 1661, 1666, 1673, 1679 |
+| `tessa-injured-grieving-speaking.png` | `tessa-injured-speaking` | Beside Mara's body and at the surgeon's: past crying | S055 2114, 2124; S056 2150 |
+
+Compare each against its set side by side before saving, and all five Tessa files against [her face reference](character-references/tessa/north-infirmary-face.png). The war has aged and worn her by the Harrow, campaign and injured sets; an anguished face is not a younger or smoother one.
 
 ### Optional, if they can be done without disturbing the rest
 
-- Carried from batches 6–8: the S004 emblem set; the ambiguous support under the S049 table; Tessa's sword at her right hip in `s049-command-tent` and both S052 paintings (her key puts it on the left).
+- `s049-command-tent.png` and both S052 paintings: Tessa's sword at her right hip (her key puts it on the left). She is framed close on nine lines in S049.
+- `s049-command-tent.png`: the ambiguous support under the table. The S004 emblem set.
 - S054 duel: the banners appear only in this painting (the walls may go bare); the struck pillar stands inside the shelter's floor ring; the spear point stops just above her fingertips; a faint ghost of the old blade shows inside the black light.
-- S055 morning: Mara's shield, which leans at the parapet in `s055-mara.png`, is gone; a wooden handrail runs along the stair down, which no other painting of this stair has.
+- S055 morning (framed close on Tessa and on Lucan): Mara's shield, which leans at the parapet in `s055-mara.png`, is gone; a wooden handrail runs along the stair down, which no other painting of this stair has.
 - S058 drawings: large square setts where the market has small cobbles; the sketch of Iven reads as a child.
-- S040: the soft band of glow at the barrier's foot, and the smooth front wheel.
+- S040 (framed close on Tessa and Mara): the soft band of glow at the barrier's foot, and the smooth front wheel.
 - Serat's brother's horns sweep back low in S021 and rise upright in S025; one shape in both would be better.
 
-**Stop after these** and tell the user; Claude checks them in the game and puts them in place.
+### Save, commit, then stop
+
+1. Save each file at its path. Prompts go in `art/prompts/<scene>/` for paintings and `art/prompts/portraits-batch-9/` for portraits.
+2. Before each commit, lay the group's images side by side and go through batch 5's self-check; for part B also against each brief and the camera's six points.
+3. Commit after each numbered item of part A, each painting of part B and part C as a whole, naming the files in the message.
+4. Don't run the crop, grading or direction tools, and don't change game code, data or other documents.
+5. **Stop at the end and tell the user,** with any file that didn't pass the self-check and any item skipped (B7 if the winter key doesn't show what it needs).
+
+**What happens then.** Claude crops and grades the files, finds the faces in the new paintings (`tools/direct-shots.py find`), plays each changed scene in the game and fixes locally what it can. There is no batch 10: what is still wrong after that is repaired by hand or kept out of close framings.
 
 ## Batch 8 (done): what batch 7 left
 
@@ -587,7 +699,7 @@ Items 1–11 are done, 7–11 in `50e4d86` (the applause exposure, the S027 horn
 
 ## Queued behind the check
 
-**Already done:** every portrait in the game, Tessa's included, the S001–S005 scene paintings, and chapters 02–08 of part E, with the S054 throne hall from chapter 09. After batch 5 the game has art for every scene; what remains is below under "Needed, but not images".
+Nothing. Batch 9 is the last request; after its check the art is closed and what remains is listed under "Needed, but not images".
 
 ## Reference: how the game uses the files
 
@@ -597,7 +709,7 @@ Items 1–11 are done, 7–11 in `50e4d86` (the applause exposure, the S027 horn
 | Scene painting | `art/scenes/<file>.png` | 16:9, at least 1920×1080; 2560×1440 preferred | `tools/grade-light.py` |
 
 - **Deliver neutral images.** `grade-light.py` renders every painting and portrait into its light register, bright, ordinary or night, in the original timeline's light. The distortion is permanent in the image. So paint real light with its direction and sources in even, readable exposure. Don't bake in glare or darkness, and don't make separate lighter or darker versions.
-- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. Since 24 September the reading screen shows **only the speaker**, in an oval 224×280 at the lower left with a soft golden halo, fading at its base; the person spoken to is in the painting. No new `-listening` files are needed.
+- **Portraits are cropped, not cut out.** `crop-portraits.py` crops each painted bust in GIMP to one composition: the face 46% of the crop's height, the head centred on its silhouette with a little headroom above the hair and a little room on the side it looks toward, so hair, collar and shoulders show. Since 24 September the reading screen shows **only the speaker**, in an oval 224×280 at the lower left with a soft golden halo, fading at its base; the person spoken to is in the painting, and since 9 November the camera frames them there. No new `-listening` files are needed.
 - **Names decide direction.** A `-speaking` file must look toward screen right (toward the text) and a `-listening` file toward screen left. [portrait-plan.json](../renpy/game/portrait-plan.json) maps the S001–S005 plan's expressions to these names; [staging.json](../renpy/game/staging.json) names each later scene's paintings and portrait sets.
 - **Stand-ins go as files arrive.** Until a scene's painted portraits exist, the game shows the old head crops, mirrored where needed. Each new file replaces its stand-in.
 
@@ -608,6 +720,7 @@ Items 1–11 are done, 7–11 in `50e4d86` (the applause exposure, the S027 horn
 - **Keep the lower-right corner free of key detail.** The reading controls sit behind a small gilt sun at about x 1835–1890, y 1000–1055, and open upward from there over a soft pool of shadow.
 - **Leave room at the top.** The game can lift a painting up to about 70 px to clear the text, so no face should touch the top edge.
 - **Leave a quiet area where it helps.** A quiet dark area, such as one side of a night interior, lets a single line sit inside the picture, as the S002 drawing beats do.
+- **Compose for the camera.** Since 9 November the game frames part of a painting for each line, up to 1.85 times: see *What a new painting needs for the camera* under batch 9 for the six points (one moment, face size, face position, space between faces, readable details, native resolution).
 - **Paint the light, not the grade.** Place windows, lamps and candles so the register has sources to work with. The light column in the painting table is only a default from the scene heading; set the register in each scene's brief.
 
 ## Corrections to existing art
@@ -628,4 +741,4 @@ Found while building and reviewing the new screens:
 
 - **Look closer beyond the first three threads needs writing before art.** The R02–R05 threads in [investigation.md](../investigation.md) need authored material before any detail images are made.
 - **The game has no sound.** Music, ambience and sound effects don't exist yet.
-- **The final "Yes" is deferred.** The response to the final question stays deferred, as the brief says.
+- **The continuation after Yes is deferred.** Since 9 November the final question offers Yes, which leads to a plain Coming soon screen with a request for support. What follows Yes in the story, and how it looks, stays deferred.

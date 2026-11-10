@@ -248,8 +248,7 @@ screen preferences():
                 text "camera" style "menu_label"
                 hbox:
                     spacing 22
-                    textbutton _("On the speaker") style "choice_button" action [SetField(persistent, 'still_frames', False), SetField(persistent, 'camera_subject', 'speaker')] selected (not persistent.still_frames and persistent.camera_subject == 'speaker')
-                    textbutton _("On the listener") style "choice_button" action [SetField(persistent, 'still_frames', False), SetField(persistent, 'camera_subject', 'listener')] selected (not persistent.still_frames and persistent.camera_subject == 'listener')
+                    textbutton _("Follows the scene") style "choice_button" action SetField(persistent, 'still_frames', False) selected not persistent.still_frames
                     textbutton _("Still") style "choice_button" action SetField(persistent, 'still_frames', True) selected persistent.still_frames
                 null height 18
                 text "access" style "menu_label"

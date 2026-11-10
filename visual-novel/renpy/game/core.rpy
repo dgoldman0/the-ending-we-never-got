@@ -114,6 +114,12 @@ label original_ending:
     call screen ending_breath
     $ renpy.transition(motion(1.2))
     call screen final_question
+    if _return == 'yes':
+        # The answer is kept for the continuation; nothing in this edition
+        # reads it, and nothing changes on the title afterwards.
+        $ persistent.wished_to_save = True
+        $ renpy.transition(motion(1.6))
+        call screen coming_soon
     return
 
 image black = Solid('#07090b')

@@ -15,7 +15,8 @@
 #   text is cut for the raised painting)
 #   "cast":   {"SPEAKER": portrait set name, or {"speaking": path, "listening": path},
 #              or a list of those, tried in order (a planned set, then a stand-in)}
-#   "lines":  {"<source line>": {"speaker_expression": name,
+#   "lines":  {"<source line>": {"speaker_portrait": a portrait painted for the line,
+#                                "speaker_expression": name,
 #                                "listener": "NAME" or null,
 #                                "listener_expression": name}}
 # A set name resolves to art/portraits/<set>-<expression>.png, falling back
@@ -107,6 +108,11 @@ init -1 python:
         speaker_face = listener_face = None
         if cast.get(scene_speaker):
             path = _portrait_file(cast[scene_speaker], override.get('speaker_expression', 'speaking'), 'speaking')
+            # A line can name a portrait painted for it (a second expression of
+            # the same set); it is used once its graded crop exists.
+            named = override.get('speaker_portrait')
+            if named and named in LIT.get('portraits', {}):
+                path = 'art/portraits/' + named + '.png'
             if path:
                 speaker_face = dict(who=scene_speaker, image=path, alt=scene_speaker.title() + '.')
         listener = override.get('listener', default_listener(current_scene, source_line, scene_speaker))

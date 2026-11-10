@@ -1,5 +1,16 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## Listener framing, the final question and the whole read — 9 November 2026, second round
+
+Maker's checks only; the user chose the listener framing and has not yet reviewed the game.
+
+- **The whole game was played and read.** All 865 pages were captured in one headless session (37 minutes, no error) with the listener framing and read in order on 29 sheets, each page labelled with its speaker and framing. Corrected from that read: lines called across a room that framed the wrong person, narration that stayed on the previous speaker, and the second hearing painting brought in at the line where Tessa stands (it had waited 12 lines past the moment it shows).
+- **An overstated figure, corrected.** The first round reported that the picture changed every 1.23 pages. That counted shifts of a few pixels between framings of people standing side by side. Counted strictly (a new painting, another part of it, or a clear change of size) a different picture comes every 1.40 pages; the longest run without one is 8 pages. Near-identical framings are now one held framing, so the camera no longer twitches between them.
+- **After the read.** Hand-set framings were added for the scenes with least variety, and their framing sheets were looked at. Nine scenes changed by these corrections (S012, S013, S017, S028, S032, S036, S037, S043, S048; 119 pages) were captured again without error, and S013 and S037 were read from those captures.
+- **The final question.** Captured at four moments: the question alone; the question with Yes and Return to the title; Coming soon as it arrives; Coming soon complete. No support address is set, so no button shows.
+- **Engine.** Lint is clean. The whole suite passes on the final code: 18 cases, 221 assertions, 21 minutes 38 seconds. It includes `camera_direction` (19 assertions, among them going back to an earlier framing and loading the next painting ahead), the ending through Yes and Coming soon, and `final_question_declined`.
+- **Not done.** Nobody has judged the movement in play. The browser build was not rebuilt. The Coming soon wording is the maker's. Batch 9's files do not exist yet, so its planned stages and portraits are untested beyond the checker.
+
 ## Camera direction — 9 November 2026
 
 Maker's checks only; the user has not seen this and nothing here is approval.
