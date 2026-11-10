@@ -1,0 +1,4 @@
+GIMP-only controlled repairs, using the current sources:
+- Both S052 right bronze door leaves: clone the existing leaf downward by 110 px, mask to the narrow bronze plane from y733 through the threshold at y913–924, feather 2 px. Preserve the ward outside that plane.
+- s052-citadel-inner-landing.png: replace the stone sliver behind the runner's boot with nearby flat floor grain, clone offset (-80,-70), feather 3 px. Preserve the boot and pier above the floor.
+No generation, global grade or game data edit was used for these operations. The layered final exports are recorded in art/scene-studies/batch9-item-82/README.md.

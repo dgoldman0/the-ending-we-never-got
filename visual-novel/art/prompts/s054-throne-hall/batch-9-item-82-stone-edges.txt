@@ -1,0 +1,4 @@
+Use case: precise-object-edit
+Asset type: local stone-surface repair from a painted throne-hall scene.
+Input image: ONLY edit target. Keep the exact crop, camera, geometry and light.
+Primary request: Remove the faint evenly spaced beaded/rivet-like HIGHLIGHTS along the stone edges of the THRONE BASE at upper left and the SQUARE LEVER HOUSING at right. Both structures are carved dark gray stone, with ordinary chipped edges and irregular mineral grain. Their edge highlights should be irregular and continuous where the light catches them, never rows of round bright metal beads. Change only those tiny edge highlights; keep all broad stone planes, masonry seams, chipped corners and porosity. Keep the lever mechanism and all visible boots/legs unchanged, with the same neutral light, color and composition. No added decoration, engraving, extra object, text or global repaint.

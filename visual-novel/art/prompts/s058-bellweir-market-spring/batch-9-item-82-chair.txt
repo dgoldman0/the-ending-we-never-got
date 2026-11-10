@@ -1,0 +1,4 @@
+Use case: precise-object-edit
+Asset type: local furniture repair, exact crop from a painted bakery scene.
+Input image: ONLY edit target. Keep the exact crop, camera and all floor/wood texture.
+Primary request: This front chair has FIVE leg-like vertical members, and should have FOUR legs. Remove ONLY the stray fifth leg at the CENTER of this crop: a narrow vertical wooden strip dropping from the underside of the seat near x=180 of this 340-pixel-wide image and ending in mid-air around y=145, ABOVE the floor, behind the lower crossbar. Keep all FOUR real legs: the front legs at about x=30 and x=235 which reach the floor; the rear legs at about x=110 and x=295 which also reach the floor. Keep the horizontal stretchers/crossbars and seat untouched. Replace the stray center strip with the naturally continuing stone floor seen through the chair, with coherent light and shadow. No other changes, no added leg or bar, no text.
