@@ -1,0 +1,15 @@
+# S006 — the burned portion
+
+Batch 9 B5, new single-moment source painting for `renpy/game/art/scenes/s006-bowls.png`. Source line 287, read with 252–295: training has ended, Tessa's shelter has faded, she has set the wooden sword beside the grain sack, and Iven has brought three bowls. While he returns to the fire for spoons, Tessa exchanges her bowl for the scorched portion he kept. The road warden and damaged cart board arrive afterward and are absent here.
+
+Working staging: Tessa and Mara sit on camp stools with Iven's empty stool between them, a low supply crate/plank supporting their three bowls at a usable height. Tessa slides her bowl toward his place with one hand and draws his burned portion toward herself with the other. Mara sits beyond his empty place, with no special reaction assigned; her wooden staff rests across her knees or beside her. Iven stands complete at the nearby fire with his back turned, reaching for spoons, unaware of the exchange. The practice strip remains clear and the wagons/tents stay behind it.
+
+Match `s006-convoy-camp.png`: nineteen-year-old freckled Tessa in the long blue/ivory working dress, padded training shoulder, healthy hands and chestnut ponytail; thirty-two-year-old Mara in her blue padded training layer without armor; twenty-six-year-old clean-shaven Iven with black curls, warm-brown coat, pale open-neck shirt and no apron. No human wears green. The grain sack and grounded plank remain supplies, with the wooden sword laid beside the sack and the cooking pot supported at the fire. No active magic, drawn steel or additional participant.
+
+Compose a medium-wide seated exchange: both women's whole heads in the upper half with a head's width between, clear top/side margins and faces at least 75 px in a 1920 equivalent. The two moving bowls, hands and receiving place sit at the centre above y≈700, not on the ground under the text. Iven's full stance at the fire stays subordinate. Neutral readable late-afternoon daylight and local firelight, detailed matte cloth, wood and earthenware, without a baked grade. Lower foreground is quiet camp ground/table edge.
+
+## Finished painting check
+
+Inspected the whole painting beside the convoy-camp reference and the native bowl exchange, working fingers and faces. Three bowls are visible; Tessa takes the scorched portion while moving her own toward Iven's empty place. Mara retains a restrained expression and wooden training staff, while Iven stands complete at the fire with his back turned. The wooden practice blade and grain sack remain beside the seated group. Tessa's freckles, early working dress and healthy hands remain visible. The selected native render requires no compositing repair.
+
+Limits: native delivery is 1672×941 and was not upscaled. Faces have useful upper-half room, but the exchange/contact lies roughly at y≈720–790 in a 1080 equivalent, below the requested y≈700. A lift or detail framing needs integration review. No grade, direction rebuild or in-game inspection was performed.
