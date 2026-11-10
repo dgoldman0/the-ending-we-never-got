@@ -1,0 +1,628 @@
+{
+  "batch": 9,
+  "starting_revision": "9e2c408",
+  "source_art_only": true,
+  "generation_tool": "Built-in imagegen",
+  "local_edit_tool": "GIMP 2.10.36",
+  "delivered_counts": {
+    "A_repaired_scenes": 13,
+    "B_new_scenes": 8,
+    "C_new_portraits": 9,
+    "total_runtime_PNGs": 30
+  },
+  "skipped": [
+    {
+      "item": "B7",
+      "file": "visual-novel/renpy/game/art/scenes/s015-book.png",
+      "reason": "Winter key conceals the garment beneath the coat; explicit skip condition applies.",
+      "review": "visual-novel/art/scene-studies/s015-book/README.md"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "visual-novel/art/asset-request.md",
+      "sha256": "e1db267de61b499f928aca1ff3ab4e62207f0c05fe9cfb15b2521204f87166ba"
+    },
+    {
+      "file": "visual-novel/AGENTS.md",
+      "sha256": "f9f6cc447ef1e7b49d0ed9f8919c4fd13c012303f8fcd5997e59247e9f8a63ce"
+    },
+    {
+      "file": "visual-novel/production-controls.md",
+      "sha256": "0f03936b715dd5e232c11f199138aa9362a132951418e7aacf3642ed8a57a7d3"
+    },
+    {
+      "file": "screenplay/original-timeline/source.fountain",
+      "sha256": "240b42b193791b1764fac701123369361c709899a2728a820b2720986cb300c0"
+    },
+    {
+      "file": "characters/original-visuals.md",
+      "sha256": "13663d0bbb71e3eb0598247397a7f3db873e5721eb70086060ae294002a48f27"
+    },
+    {
+      "file": "worldbuilding/original-locations.md",
+      "sha256": "bcb3d07144dc4edb9999d2e7a2ce17548a36c1bd72a4156ec6754cfdbfadcce8"
+    },
+    {
+      "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+      "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/winter.md",
+      "sha256": "6a60ea3ddb88af8b9b1c31cfddbf874a5847b5221065878a6e31b4c7850d2ce6"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/winter.png",
+      "sha256": "964e02841b5e05f1f3b913427bc791141c863f6e1a4bfc0a8eaa2ab8891b010d"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/gray-scar-harrow.md",
+      "sha256": "5dd64cc1fa3451b21eeb73b529288217548f56e108004cbd48b357f5c83071c7"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/gray-scar-harrow.png",
+      "sha256": "0623fc7c25c6df0db92721654c05cc52c94105725554c32d0403d1f86cbaf4fb"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/campaign-coat.md",
+      "sha256": "50d8e0a8999202bb21497972a4f7889ce6fae710a8d020bce9f51a1a5009afc2"
+    },
+    {
+      "file": "visual-novel/art/character-keys/tessa/campaign-coat.png",
+      "sha256": "23856b2a1c8548f90f990ebefe05d0039508fd8c0da920905ace7bf19b3bec0a"
+    }
+  ],
+  "files": [
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s019-gray-scar-ferryhouse.png",
+      "items": [
+        78
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "41c202bbe8e9bea4e5785d504ddac8981cf596243b61e59def5b85ef9fcab2f6",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "27884b27cc32bfcc4cc47d82a82a0e98de2997217bbc8d5a487e8dd9e862fbef",
+      "review": "visual-novel/art/scene-studies/s019-gray-scar-ferryhouse/batch-9-review.md",
+      "final_master": "visual-novel/art/scene-studies/s019-gray-scar-ferryhouse/batch-9-item-78.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s021-lucan-returns.png",
+      "items": [
+        74,
+        76
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "c8d06dba7ac671597e1cb7ec246cafe6f6f8da275bb80376ed448fa9434adbae",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "ed2cc6c10b779d2838e8750f435cb8b8f50289a493bff685cf7e19d9d7f22547",
+      "review": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-item-76-review.md",
+      "final_master": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-a6-horn-finishing.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s021-serat.png",
+      "items": [
+        80
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "46325e747984b613ad9cfff731644c27389b888a490d0d605be155e36c430054",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "c8a0cc83970bb349af184e9dfbc4f681a9941d37c1df4f227f3cc291ff7c9cd8",
+      "review": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-item-80-review.md",
+      "final_master": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-item-80.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s034-return-cargo-shed.png",
+      "items": [
+        81
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "25448c89b162ca599e55147e8d58173b9cfc5887524daf68140d084b9a33362c",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "28ae6f1f3c0799c59efe4b44f56383748fc16db0699d0cbb96b7032df17b375b",
+      "review": "visual-novel/art/scene-studies/s034-return-cargo-shed/batch-9-review.md",
+      "final_master": "visual-novel/art/scene-studies/s034-return-cargo-shed/batch-9-a4.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s051-north-infirmary-court.png",
+      "items": [
+        75
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "d29396b759e47f51550b0c79218d56d704244e80b97c401ea97f80a28e62d481",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "c78ff8cf7c93d86c96320967870b350bf4c2561f11d33b74b0974ed6a2de6276",
+      "review": "visual-novel/art/scene-studies/s051-north-infirmary-court/batch-9-review.md",
+      "final_master": "visual-novel/art/scene-studies/s051-north-infirmary-court/batch-9-a5.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s021-gray-scar-covered-landing.png",
+      "items": [
+        76
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "7d95cb8e4783aa3395fe891ddcbfa074149cf84321d2c064fb48d0116dc657e4",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "3cbeb33663d7c82456425f46e189d5ab9b102b83ac93f751d52d3452b1686ac2",
+      "review": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-item-76-review.md",
+      "final_master": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-a6landing.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s021-rescue.png",
+      "items": [
+        76,
+        79
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "dd8a7b5b78396ce894541df983c8d06e07934e5296b41f4b77795f27e1c52662",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "5ec9846add3b44aa1ed03eefb282bd128e0a3a09c90c09067f855ee8e5000a90",
+      "review": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-item-79-review.md",
+      "final_master": "visual-novel/art/scene-studies/s021-gray-scar-covered-landing/batch-9-a7.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s053-bend.png",
+      "items": [
+        77,
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "b6de08c0485ea0cb58204266a7746d2715cc998c477ddcb4cc7ee5915b1b5399",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "8ca82606f5acc520449163eb6bf52671df1803cf0218cd73be66723f6110255d",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s053-bend/batch-9-a9stair.xcf",
+      "limitations": [
+        "Riser count remains greater than ten; continuity check unresolved."
+      ]
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s050-citadel-lower-stair.png",
+      "items": [
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "5b11dadc2e8fb7f5ebee72c79a15e7614b361a443dda3f2f908d10e7d6b92f41",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "63ddb7b542e2a4528d9e1f1bf77e0f17bed4864c79e22fb70a9812175bdb59e9",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s050-citadel-lower-stair/batch-9-a9pier.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s052-citadel-inner-landing.png",
+      "items": [
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "30a906f2d7537cd051794b6655ac88ada0feea86419d7bea8235316e61ecd52f",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "c397323b2fdbcd3acd63eff52aabf3ec34c30f54b9bdc424081f900bdac61061",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s052-citadel-inner-landing/batch-9-a9sliver.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s052-entrance-ward.png",
+      "items": [
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "1129c2d4cf9b213a9cfbd0ff552f4faf254c1d5bb17e5484833344b2bf33b0b3",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "c1fbc32d4210b84445100028a9e58d0147d87173afcb9f750fe9bd0c8ab2963f",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s052-citadel-inner-landing/batch-9-a9door2.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s054-lever.png",
+      "items": [
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "819c4a9a5e9e082a209bcf1d383b058fcde5d8fff42e85e05dda536e720da0cd",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "d0ce49ab5da55e3b21ac7bb1e29fa9bae3c1b4bc0640b7b24afd8dc16d031f52",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s054-throne-hall/batch-9-a9stone.xcf",
+      "limitations": []
+    },
+    {
+      "part": "A",
+      "file": "visual-novel/renpy/game/art/scenes/s058-final.png",
+      "items": [
+        82
+      ],
+      "pixels": [
+        1920,
+        1080
+      ],
+      "mode": "RGBA",
+      "sha256": "29417edacf442cea7f2e99a6d11310008de835b0287f9c2e81446ec3ab1eccba",
+      "starting_revision": "9e2c408",
+      "starting_sha256": "69af5245ed7179ddde9ad184d8380e1b84a4c60cbc756313367633032e17aed3",
+      "review": "visual-novel/art/scene-studies/batch9-item-82/README.md",
+      "final_master": "visual-novel/art/scene-studies/s058-bellweir-market-spring/batch-9-a9chair.xcf",
+      "limitations": []
+    },
+    {
+      "part": "B",
+      "item": "B1",
+      "file": "visual-novel/renpy/game/art/scenes/s035-water.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "72996ffc4e26931b55bcdc6591007888e95c3d0649ff0e4215ad891aa1d738ae",
+      "review": "visual-novel/art/scene-studies/s035-water/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s035-water",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Background heads closer to top than camera margin requested."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s035-water/north-stone-master.xcf"
+    },
+    {
+      "part": "B",
+      "item": "B2",
+      "file": "visual-novel/renpy/game/art/scenes/s036-sapling.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "e8e2a318ae77a527fc8553a853961b9f1466bd7464dc994ebaba8ed75f1b11d9",
+      "review": "visual-novel/art/scene-studies/s036-sapling/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s036-sapling",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Supporting hands around y700–760 in a 1080 equivalent."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s036-sapling/delivery-master.xcf"
+    },
+    {
+      "part": "B",
+      "item": "B3",
+      "file": "visual-novel/renpy/game/art/scenes/s012-cut-pages.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "fd55321415edecccd9b43b3d785c1b4d1088d33759a7e109c14c4c1f674741a1",
+      "review": "visual-novel/art/scene-studies/s012-cut-pages/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s012-cut-pages",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Gutter around y740 in a 1080 equivalent; four-stub group only about 25 native pixels wide."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s012-cut-pages/delivery-master.xcf"
+    },
+    {
+      "part": "B",
+      "item": "B4",
+      "file": "visual-novel/renpy/game/art/scenes/s011-blue-door.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "cf49f57ca50458996321992e0c69e88f9ee7c6b3f182eda953046904429d8f60",
+      "review": "visual-novel/art/scene-studies/s011-blue-door/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s011-blue-door",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Renn lacks the requested right-side camera margin."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s011-blue-door/delivery-master.xcf"
+    },
+    {
+      "part": "B",
+      "item": "B5",
+      "file": "visual-novel/renpy/game/art/scenes/s006-bowls.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "b968a5a4a19ab1cc2f24c00dee1e0a88a2d12b45d05bb55bfc90f97b177645e2",
+      "review": "visual-novel/art/scene-studies/s006-bowls/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s006-bowls",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Bowl/hand contacts around y720–790 in a 1080 equivalent."
+      ]
+    },
+    {
+      "part": "B",
+      "item": "B6",
+      "file": "visual-novel/renpy/game/art/scenes/s026-stone.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "e4e93f171913e5172c9dd3f542b3fe00f14bf9b0ab54cd89095c4c178f7f8b75",
+      "review": "visual-novel/art/scene-studies/s026-stone/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s026-stone",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Stone width about 230 in a 1920 equivalent, below 250; near-hand fist scale not independently established."
+      ]
+    },
+    {
+      "part": "B",
+      "item": "B8",
+      "file": "visual-novel/renpy/game/art/scenes/s047-plan.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "0e07cd0ed2bfe703b10468665f6ec0761d5b3e319185ed8262bd02dc5d2d6749",
+      "review": "visual-novel/art/scene-studies/s047-plan/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s047-plan",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling.",
+        "Warning moved into clear diagram field; extends to about y710 in a 1080 equivalent and needs camera-scale review."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s047-plan/delivery-master.xcf"
+    },
+    {
+      "part": "B",
+      "item": "B9",
+      "file": "visual-novel/renpy/game/art/scenes/s049-bag.png",
+      "pixels": [
+        1672,
+        941
+      ],
+      "mode": "RGBA",
+      "sha256": "c9cc1194a2bb0d9a2997e14a1c3f365a0dd74c1b5e52aaeb94a398c03b13bd74",
+      "review": "visual-novel/art/scene-studies/s049-bag/README.md",
+      "prompt_folder": "visual-novel/art/prompts/s049-bag",
+      "limitations": [
+        "Native 1672×941 is below the requested 1920×1080 minimum. No upscaling."
+      ],
+      "final_master": "visual-novel/art/scene-studies/s049-bag/delivery-master.xcf"
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/tessa-amused-working-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "5962cc2604cfd470828795d04c812d35f02584418dfd55bbf4ef7385479d0fbe",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-amused-working-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/iven-amused-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "98be789dd285e57b868d55c80f6bc022b33b3afe82943b592b02ab1ce9a3c47f",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/iven-amused-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/mara-wry-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "dba39bfa28d95c6bd484034129b4d80d0005409f46ed6449082bc327e263297f",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/mara-wry-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/lucan-early-laughing-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "7a478f8646c4f3a95efa5d32ddcc749fe675ee9f010c027fee2eb4f372f0cfae",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/lucan-early-laughing-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-crying-out-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "874fdfac94dd6cda7d36431863a3b1b11dd777c29863cb659102517d6b07ac5d",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-harrow-crying-out-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-grieving-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "fa67a80374c4ee1434032b80b818e5b9381024acd6fdae00d2080bf0f384881d",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-harrow-grieving-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/lucan-early-pleading-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "321fa67e8549f2d286ea13938f07a043c4889fdb71cfeb3f1536138fbf3acddc",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/lucan-early-pleading-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/tessa-campaign-shaken-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "861dcc167d67e93f210977acbb3b8b2abc261ee1421c07c74ce5ab4b8aa0cac6",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-campaign-shaken-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    },
+    {
+      "part": "C",
+      "file": "visual-novel/renpy/game/art/portraits/tessa-injured-grieving-speaking.png",
+      "pixels": [
+        1440,
+        1440
+      ],
+      "mode": "RGBA",
+      "sha256": "e8389b769aaea8d9caa13ebb63700fb41e0b994bf64b125cfd24544b7f53dba1",
+      "native_painted_pixels": [
+        1254,
+        1254
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-injured-grieving-speaking.txt",
+      "review": "visual-novel/art/scene-studies/portraits-batch-9/README.md",
+      "limitations": []
+    }
+  ]
+}
