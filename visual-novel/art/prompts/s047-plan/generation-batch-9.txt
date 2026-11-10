@@ -1,0 +1,9 @@
+Use case: illustration-story
+NEW finished visual-novel painting, one moment, 16:9 MEDIUM-WIDE, native 2560×1440 requested, no panels, border or UI.
+Inputs: Image 1 reference ONLY for the north infirmary and later Lucan. Image 2 reference ONLY for the PAPER PLAN at LEFT of the command table, not the separate exterior sketch or tent. Image 3 Lucan's likeness only.
+Daylight in the infirmary, beds pushed from windows. LUCAN ALONE works over a large plan on an EMPTY BED. Later twenties, worn long brown face, gray-green eyes, dark tied-back hair, paired smooth horns sweeping BACK CLOSE to the skull, green coat/pale shirt. LEFT FOREARM BANDAGED at bed edge; HEALTHY RIGHT HAND holds quill. No father, Serat or captains beside him; Serat holds the gate offscreen.
+Paper shows the lower stair, bend, landing, rectangular columned throne hall, dais/throne and release behind it, in Image 2's simple hand-drawn floor-plan vocabulary. At its edge, handwritten CAPITALS EXACTLY:
+THE WATCHES HAVE CHANGED.
+CHECK THE APPROACH.
+Those seven words and two periods are the ONLY READABLE WORDS in the entire painting: no map labels, signatures or addresses. TWO FOLDED LETTERS lie beside it, one visibly sealed separately in plain wax. Quill pauses beside the warning's final period.
+Whole head with generous headroom, face y200–430 in a 1080 equivalent; FULL plan, inscription, writing hand, wrap and letters in MIDDLE BAND ABOVE y700, quiet linen below. Slightly elevated three-quarter view makes paper readable while keeping face, posture, grip and reach coherent. Face at least 75px, 200px side margins. Gray stone, pale walls, bed frames and linen shelves, clear window daylight, rich naturalistic materials and neutral readable exposure, no baked grade or spotlight.
