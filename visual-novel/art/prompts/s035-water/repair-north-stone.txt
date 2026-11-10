@@ -1,0 +1,3 @@
+Use case: precise-object-edit
+Input image: ONLY edit target, detail of Lucan at northern Harrow.
+Keep Lucan's face, horns, hair, shouting hands, green coat, body pose, crop and light unchanged. Repair ONLY WHAT SUPPORTS HIM. The whole timber span has fallen; Lucan remains on the NORTHERN STONE APPROACH. Replace broken wooden planks/beams directly beneath his knees and feet with a broad intact gray STONE ABUTMENT continuous with the BANK AT THE LEFT EDGE. His planted boot/knee rests on sound stone. No floating island, mid-river pylon or cantilevered wooden remnant supporting him. A few loose planks may lie on top of the stone. Keep the river empty of people, match rough pale-gray masonry and neutral autumn light. No other change, text or new object.
