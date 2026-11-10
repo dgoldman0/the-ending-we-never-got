@@ -24,6 +24,10 @@ testsuite global:
         $ _test.screenshot_directory = 'test-output'
         $ persistent.large_text = False
         $ persistent.still_frames = False
+        $ persistent.camera_glide = False
+        # Tests advance faster than anyone reads; without this every line
+        # would be reached "in a rush" and shown as the whole painting.
+        $ stage_camera.notice_rush = False
         $ _preferences.text_cps = 0
         # Captures are 1920x1080 in the 1920x1080 virtual display.
         if eval not _preferences.fullscreen:
@@ -560,16 +564,34 @@ testcase camera_direction:
     assert eval len(LIT['shade'][shown_stage()[0]]['levels']) == 4
     # Every line of the story has its framing in the built table.
     assert eval all(str(b['line']) in DIRECTION['lines'][str(n + 1)] for n, s in enumerate(source_map['scenes']) for b in s['blocks'] if b.get('kind') != 'fade')
-    # Still: every painting whole, as before the camera.
-    $ persistent.still_frames = True
-    advance until eval source_line == 728
+    # The picture holds still: no glide and no push unless Gliding is chosen.
+    assert eval not stage_camera.gliding()
+    assert eval stage_camera._creep(stage_camera._time() + 30.0) == 0.0
+    # Pages turned fast show the painting whole; the next line read at an
+    # ordinary pace is framed again. (The clock is set, not waited on.)
+    $ stage_camera.notice_rush = True
+    $ stage_camera.line_time = time.time() + 30.0
+    advance until eval source_line == 725
     assert eval shot_key[1] == 'wide' and tuple(stage_camera.target) == shotmath.WIDE
+    $ stage_camera.line_time = 0.0
+    $ stage_camera.last_dwell = 99.0
+    advance until eval source_line == 728
+    assert eval scene_speaker == 'TESSA' and shot_key[1] == 'ORRA'
+    $ stage_camera.notice_rush = False
+    # Settings > Camera: framed and still, gliding, or whole paintings.
     keysym 'game_menu'
-    click 'Follows the scene'
-    assert eval not persistent.still_frames
-    click 'Still'
-    assert eval persistent.still_frames
+    click 'Whole paintings'
+    assert eval persistent.still_frames and not persistent.camera_glide
+    click 'Gliding'
+    assert eval persistent.camera_glide and not persistent.still_frames and stage_camera.gliding()
+    assert eval stage_camera._creep(stage_camera._time() + 30.0) > 0.0
+    click 'Framed'
+    assert eval not persistent.camera_glide and not persistent.still_frames and not stage_camera.gliding()
     $ _test.screenshot_directory = 'test-output'
     screenshot 'camera-settings.png'
     click id 'menu_return'
     assert eval source_line == 728
+    # Whole paintings: as before the camera.
+    $ persistent.still_frames = True
+    advance until eval source_line == 733
+    assert eval shot_key[1] == 'wide' and tuple(stage_camera.target) == shotmath.WIDE

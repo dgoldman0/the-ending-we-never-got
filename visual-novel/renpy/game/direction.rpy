@@ -3,9 +3,17 @@
 # A scene has a few paintings and many lines, so one painting is on screen for
 # a long time. The camera gives each line its own picture from the painting it
 # is read over: the whole frame to establish a place, a closer framing on the
-# person speaking, a detail the narration names. Between framings of one
-# painting it eases when they share most of their view and cuts, on a short
-# dissolve, when they don't; while a line is read it creeps slowly in.
+# person spoken to, a detail the narration names.
+#
+# The picture holds still. A new framing arrives on a cut (a very short
+# dissolve) and does not move while its line is read. Gliding between
+# framings and a slow push-in exist as an opt-in setting only: a whole
+# screen that moves on every line can make a reader motion-sick.
+#
+# Turning pages fast is not reading. While the reader skips, or turns two
+# lines in a row in well under a second, paintings are shown whole, as the
+# game showed them before the camera, so nothing jumps between close framings
+# at speed. The first line read at an ordinary pace is framed again.
 #
 # The paintings are never cropped on disk. A framing is a centre and a zoom
 # on the 1920x1080 stage. tools/direct-shots.py finds each person's face in
@@ -19,14 +27,15 @@
 # person spoken to, since the speaker is already in the oval). The game looks
 # the line up and moves the camera.
 #
-# Settings > Camera > Still shows every painting whole and unmoving, as the
-# game did before the camera; Reduced motion keeps the framings and drops the
-# movement.
+# Settings > Camera: Framed (the default), Gliding (the moving camera), or
+# Whole paintings (every painting whole, as before the camera). Reduced
+# motion keeps the framings and shortens every dissolve.
 
 default shot_key = None
 default persistent.still_frames = False
+default persistent.camera_glide = False
 
-define ui_shot_cut = motion(0.34)
+define ui_shot_cut = motion(0.16)
 
 init -1 python:
     import json
@@ -39,7 +48,9 @@ init -1 python:
     # The vignette graded into a painting sits at the painting's own corners,
     # which a close framing leaves behind; this much of it closes in again.
     CLOSE_VIGNETTE = {'ordinary': 0.17, 'night': 0.27, 'bright': 0.0}
-    EASE_OVERLAP = 0.62      # framings sharing this much of their view ease; others cut
+    EASE_OVERLAP = 0.62      # gliding only: framings sharing this much of their view ease; others cut
+    RUSH = 0.6               # seconds; two lines in a row turned faster than this is flipping, not reading
+    RUSH_ONE = 0.3           # one line turned faster than this is flipping too
 
     def stage_key():
         """The painting being read over: 'stage:<id>' for an authored opening
@@ -87,13 +98,10 @@ init -1 python:
         """Where the camera is now, and where it is going. Not saved: every
         line states its own framing, so a load or a rollback simply cuts."""
 
-        OMEGA = 3.3           # an eased move settles in about a second and a half
-        # The slow push: most of it over the time a line takes to read, the
-        # rest drifting on for as long as the framing is held, so a two-shot
-        # kept through an exchange never goes dead.
+        # Gliding only. An eased move settles in about a second and a half;
+        # the push goes in 3% over the time a line takes to read, then rests.
+        OMEGA = 3.3
         PUSH, PUSH_TIME = 0.032, 18.0
-        DRIFT, DRIFT_TIME = shotmath.CREEP - 0.032, 60.0
-        ALIVE = 300.0
 
         def __init__(self):
             self.target = shotmath.WIDE
@@ -104,21 +112,38 @@ init -1 python:
             self.creep_from = 0.0
             self.busy = False
             self.moving = False
-            self.freeze = False      # captures (tools/playthrough.py): no movement, the push held halfway
+            self.freeze = False      # captures (tools/playthrough.py): every page at its own framing, unmoving
+            self.notice_rush = True  # tests turn this off so fast advancing reaches a line's own framing
+            self.line_time = 0.0     # when the last line arrived, and how long the one before it was kept
+            self.last_dwell = 99.0
 
         def _time(self):
             interface = renpy.display.interface
             return getattr(interface, 'frame_time', None) or time.time()
 
+        def gliding(self):
+            return bool(persistent.camera_glide) and not (persistent.reduced_motion or persistent.still_frames or self.freeze)
+
         def _creep(self, now):
-            if persistent.reduced_motion or persistent.still_frames:
+            if not self.gliding():
                 return 0.0
-            if self.freeze:
-                return self.PUSH * 0.5
-            held = max(0.0, now - self.creep_from)
-            t = min(1.0, held / self.PUSH_TIME)
-            drift = 1.0 - math.exp(-max(0.0, held - self.PUSH_TIME) / self.DRIFT_TIME)
-            return self.PUSH * t * t * (3 - 2 * t) + self.DRIFT * drift
+            t = min(1.0, max(0.0, now - self.creep_from) / self.PUSH_TIME)
+            return self.PUSH * t * t * (3 - 2 * t)
+
+        def rushing(self):
+            """True when this line arrives too soon after the last to have
+            been read; also notes the time. Called once per line."""
+            now = time.time()
+            dwell, before = now - self.line_time, self.last_dwell
+            self.line_time, self.last_dwell = now, dwell
+            if self.freeze or not self.notice_rush:
+                return False
+            return bool(renpy.is_skipping()) or dwell < RUSH_ONE or (dwell < RUSH and before < RUSH)
+
+        def snap(self):
+            """Stop where the target is (a setting changed, or a cut)."""
+            self.cur = list(self._goal(self._time()))
+            self.vel = [0.0, 0.0, 0.0]
 
         def _goal(self, now):
             cx, cy, z = shotmath.clamp((self.target[0], self.target[1], self.target[2] * (1 + self._creep(now))))
@@ -130,9 +155,8 @@ init -1 python:
                 self.creep_from = now
             self.target = tuple(framing)
             self.key = key
-            if cut or self.freeze:
-                self.cur = list(self._goal(now))
-                self.vel = [0.0, 0.0, 0.0]
+            if cut or not self.gliding():
+                self.snap()
             self.busy = True
 
         def now(self):
@@ -152,9 +176,8 @@ init -1 python:
                     self.vel[i] = (b - self.OMEGA * (a + b * dt)) * decay
                     scale = 1.0 if i < 2 else 1000.0
                     far = max(far, abs(self.cur[i] - goal[i]) * scale, abs(self.vel[i]) * scale * 0.2)
-                still = persistent.reduced_motion or persistent.still_frames or self.freeze
                 self.moving = far > 0.03
-                self.busy = self.moving or (not still and t - self.creep_from < self.ALIVE)
+                self.busy = self.moving or (self.gliding() and t - self.creep_from < self.PUSH_TIME + 1.0)
             return shotmath.clamp((self.cur[0], self.cur[1], math.exp(self.cur[2])))
 
         def redraw(self):
@@ -250,6 +273,8 @@ init -1 python:
         key = stage_key()
         first = stage_image() != store.last_stage_image
         name, framing, move = line_direction()
+        if stage_camera.rushing():
+            name, framing = 'wide', shotmath.WIDE        # whole paintings while pages are flipped through
         previous = store.shot_key
         store.shot_key = (key, name)
         quick = renpy.is_skipping() or renpy.in_rollback()
@@ -260,9 +285,16 @@ init -1 python:
         else:
             ease = shotmath.overlap(stage_camera.target, framing) >= EASE_OVERLAP
             ease = {'ease': True, 'cut': False}.get(move, ease)
-            if ease and not quick and not persistent.reduced_motion:
+            if ease and not quick and stage_camera.gliding():
                 stage_camera.aim(store.shot_key, framing, cut=False)
             else:
                 stage_camera.aim(store.shot_key, framing, cut=True)
                 if not quick:
                     renpy.transition(ui_shot_cut)
+
+    def set_camera(glide=False, whole=False):
+        """Settings > Camera. The picture stops where it is headed."""
+        persistent.camera_glide = glide
+        persistent.still_frames = whole
+        stage_camera.snap()
+        renpy.restart_interaction()

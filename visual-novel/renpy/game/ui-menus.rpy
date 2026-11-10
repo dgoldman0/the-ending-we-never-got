@@ -248,8 +248,10 @@ screen preferences():
                 text "camera" style "menu_label"
                 hbox:
                     spacing 22
-                    textbutton _("Follows the scene") style "choice_button" action SetField(persistent, 'still_frames', False) selected not persistent.still_frames
-                    textbutton _("Still") style "choice_button" action SetField(persistent, 'still_frames', True) selected persistent.still_frames
+                    textbutton _("Framed") style "choice_button" action Function(set_camera) selected (not persistent.still_frames and not persistent.camera_glide)
+                    textbutton _("Gliding") style "choice_button" action Function(set_camera, glide=True) selected (not persistent.still_frames and persistent.camera_glide)
+                    textbutton _("Whole paintings") style "choice_button" action Function(set_camera, whole=True) selected persistent.still_frames
+                text _("Framed holds each picture still. Gliding moves between them.") style "menu_note" size 22
                 null height 18
                 text "access" style "menu_label"
                 textbutton _("Reduced motion") style "choice_button" action ToggleField(persistent, 'reduced_motion')

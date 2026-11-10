@@ -1,5 +1,13 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## The camera holds still — 10 November 2026
+
+The user played the build of 9 November and reported that the camera's movements made them nauseous; they had been flipping through chapters fast and were unsure how much was the camera.
+
+- **Changed.** By default nothing moves: framings change on a 0.16 s dissolve and hold, with no glide and no push. While pages are turned fast, paintings are shown whole. The moving camera is an opt-in setting (Gliding), without the long drift added on 9 November.
+- **Checked.** Lint is clean. `camera_direction` passes (25 assertions): no glide or push by default, the whole painting when a line arrives in a rush, the framing back at reading pace, and the three Settings choices. The Settings screen was looked at.
+- **Not checked.** Whether still cuts are comfortable for the user, which only they can tell.
+
 ## Listener framing, the final question and the whole read — 9 November 2026, second round
 
 Maker's checks only; the user chose the listener framing and has not yet reviewed the game.
