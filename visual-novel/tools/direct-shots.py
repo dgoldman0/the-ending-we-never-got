@@ -11,8 +11,8 @@ know where each person's face is in each painting. This tool:
            only file the game reads. What is decided by eye is kept in
            art/direction/plan.json and wins over what was found:
              "stages": {"<painting>": {
-                 "people":  {"TESSA": 3,              face number 3 is Tessa
-                             "MARA": [388, 204, 56],  a face set by hand: x, y, height
+                 "people":  {"MARA": [388, 204, 56],  Mara's face is here: x, y, height
+                                                      (the found face at that point takes the name)
                              "SENN": null},           do not frame this person
                  "look":    {"TESSA": 1},             she looks toward screen right (-1 left, 0 ahead)
                  "details": {"book": [800, 560, 1180, 760]},   a box of the painting to show
@@ -278,14 +278,17 @@ def remember(recent, name):
     return [name] + [n for n in recent if n != name][:1]
 
 
-def resolve(plan, direction, roles, lines):
+def resolve(plan, direction, roles, lines, stage_faces=None, whole=None):
     """The framing every page takes: [(page, first on its painting, shot
     name, framing)]. A painting arrives whole. A spoken line frames the
     person spoken to, because the speaker is already in the oval; it frames
-    the speaker when the listener has no framing in this painting or the
-    speaker has no portrait. Narration frames the person it is about.
-    plan.json's line choices win over all of these."""
-    rows, key, previous, recent = [], None, None, []
+    the speaker only when the listener is not found in this painting or the
+    speaker has no portrait; where the painting is already close on the
+    listener it is shown whole. Narration frames the person it is about.
+    plan.json's line choices win over all of these. Whatever is chosen, the
+    picture changes only for a clearly different view (same_view): otherwise
+    the framing on screen is held."""
+    rows, key, previous, recent, held, run = [], None, None, [], None, 0
     for page in plan:
         scene, line, pg, speaker, text, stage = page
         if not stage:
@@ -293,18 +296,24 @@ def resolve(plan, direction, roles, lines):
             continue
         first = stage != key
         if first:
-            recent, previous = [], None
+            recent, previous, held, run = [], None, None, 0
         key = stage
         shots = stage_shots(direction['stages'].get(stage))
         people = [n for n in shots if n.isupper()]
-        name = directed(lines, scene, line, pg).get('shot')
+        chosen = directed(lines, scene, line, pg)
+        name = chosen.get('shot')
         subject = speaker
         if name == 'hold':
             name = previous
         elif name is None and not first:
             if speaker:
                 listener, has_portrait = roles.of(scene, line, pg, speaker)
-                name = listener if (listener in shots and has_portrait) else speaker
+                if has_portrait and listener in shots:
+                    name = listener
+                elif has_portrait and listener in (whole or {}).get(stage, ()):
+                    name = 'wide'              # the painting is already close on the person spoken to
+                else:
+                    name = speaker
             else:
                 name = narration_shot(text, people)
                 if name and name.startswith('hold'):
@@ -313,9 +322,22 @@ def resolve(plan, direction, roles, lines):
             subject = leading_name(text, people) or (name if name in people else None)
         if name not in shots:
             name = 'wide'
+        framing = shots.get(name, shotmath.WIDE)
+        composed = chosen.get('shot') in shots and not chosen['shot'].isupper()      # a hand-set framing, chosen for this line
+        if held is not None and chosen.get('move') != 'cut' and not composed and \
+                same_view(held[1], framing, (stage_faces or {}).get(stage, ())):
+            name, framing = held                          # too alike to cut to: the picture holds
+            # ... but not for ever. Where people stand too close together to
+            # be framed apart, a close view is all the painting has; a line
+            # of narration then goes back to the whole painting, as a scene
+            # returns to its master shot for the action between speeches.
+            if run >= LONG_HOLD and not speaker and 'shot' not in chosen and framing[2] > 1.001:
+                name, framing = 'wide', shotmath.WIDE
+        run = run + 1 if (held is not None and tuple(held[1]) == tuple(framing)) else 1
+        held = (name, framing)
         recent = remember(recent, subject)
         previous = name
-        rows.append((page, first, name, shots.get(name, shotmath.WIDE)))
+        rows.append((page, first, name, framing))
     return rows
 
 
@@ -443,6 +465,8 @@ def find(args):
                     entry['named'][names[j]] = [int(i), round(float(scores[i, j]), 2)]
         known[key] = entry
         print('%-58s %d faces  %s' % (key, len(found), ' '.join('%s=%d(%.2f)' % (n, v[0], v[1]) for n, v in sorted(entry['named'].items()))))
+    for key in [k for k in known if k not in stages]:
+        del known[key]                  # a painting no longer read over
     FACES.write_text(json.dumps(known, sort_keys=True).replace('}, "', '},\n "') + '\n')
     build(known=known)
 
@@ -454,40 +478,70 @@ def load_authored():
 
 
 def stage_people(key, known, authored):
-    """({name: face}, every face in the painting) after the corrections."""
+    """({name: face}, every face in the painting) after the corrections. A
+    name given a position takes the found face at that position (and that
+    face's exact box), whoever was guessed there; with no found face near, it
+    stands as given."""
     entry = known.get(key) or {'faces': [], 'named': {}}
     faces = [tuple(face[:3]) for face in entry['faces']]
     people = {name: faces[index] for name, (index, _score) in entry['named'].items()}
     for name, value in ((authored['stages'].get(key) or {}).get('people') or {}).items():
         if value is None:
             people.pop(name, None)
-        elif isinstance(value, int):
-            for other in [n for n, face in people.items() if face == faces[value]]:
-                people.pop(other)           # a face named by hand is taken from whoever was guessed there
-            people[name] = faces[value]
-        else:
-            people[name] = tuple(value)
-            faces.append(tuple(value))
+            continue
+        if isinstance(value, int):                     # an older plan: the face's number
+            value = faces[value]
+        x, y, h = value[:3]
+        near = [f for f in faces if abs(f[0] - x) <= 0.6 * max(h, f[2]) and abs(f[1] - y) <= 0.6 * max(h, f[2])]
+        face = min(near, key=lambda f: (f[0] - x) ** 2 + (f[1] - y) ** 2) if near else tuple(value[:3])
+        for other in [n for n, f in people.items() if f == face]:
+            people.pop(other)                          # the face is taken from whoever was guessed there
+        people[name] = face
+        if not near:
+            faces.append(face)
     return people, faces
 
 
-ALIKE = 0.06        # framings whose centres differ by less than this share of the screen are one picture
+LONG_HOLD = 3           # pages a close framing is held before narration returns to the whole painting
 
 
-def alike(a, b):
-    z = (a[2] + b[2]) / 2.0
-    return (abs(a[0] - b[0]) * z / shotmath.W < ALIKE and abs(a[1] - b[1]) * z / shotmath.H < ALIKE
-            and max(a[2], b[2]) / min(a[2], b[2]) < 1.08)
+def principals(framing, faces):
+    """Who a framing shows: the faces whole inside it that are at least 0.6
+    of the largest one's size (people in the background don't count)."""
+    x0, y0, x1, y1 = shotmath.box(framing)
+    inside = [f for f in faces if x0 <= f[0] <= x1 and y0 <= f[1] <= y1 and not shotmath.cuts(framing, f)]
+    if not inside:
+        return frozenset()
+    largest = max(f[2] for f in inside)
+    return frozenset((round(f[0]), round(f[1])) for f in inside if f[2] >= 0.6 * largest)
+
+
+def same_view(a, b, faces=()):
+    """True when two framings of a painting are too alike to cut between.
+    The picture holds still (direction.rpy), so a change between two such
+    framings would be a jump of part of a frame, which reads as a glitch, not
+    as a new picture. They are alike when they are much the same size and
+    either share more than 70% of their view, or share more than half of it
+    and show the same people. Two sides of a table that share the person
+    sitting between them are different views; two framings of the same three
+    people are one."""
+    a, b = tuple(a), tuple(b)
+    if a == b:
+        return True
+    if max(a[2], b[2]) / min(a[2], b[2]) >= 1.25:
+        return False
+    shared = shotmath.overlap(a, b)
+    return shared > 0.70 or (shared > 0.50 and principals(a, faces) == principals(b, faces))
 
 
 def merge_alike(shots, faces):
-    """People who stand close together get framings a few pixels apart, and
-    the camera would twitch between them from line to line. Framings that
-    show nearly the same picture become one framing, held: a two-shot."""
+    """People who stand close together get framings a part of a frame apart.
+    Framings that are the same view become one framing between them, held: a
+    two-shot composed for both, not for whoever spoke first."""
     groups = []
     for name in sorted(shots):
         for group in groups:
-            if all(alike(shots[name], shots[other]) for other in group):
+            if all(same_view(shots[name], shots[other], faces) for other in group):
                 group.append(name)
                 break
         else:
@@ -517,12 +571,15 @@ def build(args=None, known=None):
                           'tools/direct-shots.py from art/direction/ (faces.json and the hand-made plan.json); edit '
                           'those and rebuild, not this file. A framing is [centre x, centre y, zoom] on the 1920x1080 stage.',
                  'stages': {}, 'lines': {}}
+    seen = {}                # every painting's faces, for telling who a framing shows
+    whole = {}               # per painting, the people the whole painting is the framing of
     for key in sorted(set(known) | set(authored['stages'])):
         spec = authored['stages'].get(key) or {}
         lift = stage_lift(key, staging)
         people, faces = stage_people(key, known, authored)
         people = {name: (f[0], f[1] - lift, f[2]) for name, f in people.items()}
         faces = [(f[0], f[1] - lift, f[2]) for f in faces]
+        seen[key] = [f for f in faces if f[2] >= 30]
         shots = {}
         for name, face in people.items():
             look = (spec.get('look') or {}).get(name)
@@ -530,6 +587,11 @@ def build(args=None, known=None):
                 look = shotmath.look_from(face, list(people.values()))
             shots[name] = shotmath.single(face, look, faces)
         shots = merge_alike(shots, faces)
+        # A framing on people that moves in by less than a quarter is the same
+        # picture as the whole painting with its edges lost (same_view): those
+        # people are shown by the whole painting instead.
+        whole[key] = sorted(name for name, f in shots.items() if f[2] < 1.25)
+        shots = {name: f for name, f in shots.items() if f[2] >= 1.25}
         for name, corners in (spec.get('details') or {}).items():
             x0, y0, x1, y1 = corners
             shots[name] = shotmath.detail(x0, y0 - lift, x1, y1 - lift)
@@ -542,7 +604,7 @@ def build(args=None, known=None):
     # decides nothing itself.
     plan, _staging, beats = load_plan()
     chosen = authored.get('lines', {})
-    rows = resolve(plan, direction, Roles(staging, beats), chosen)
+    rows = resolve(plan, direction, Roles(staging, beats), chosen, seen, whole)
     table = {}
     for (scene, line, pg, _speaker, _text, _stage), _first, name, _framing in rows:
         entry = dict(directed(chosen, scene, line, pg))        # a hand-chosen painting or move stays
@@ -585,53 +647,73 @@ def board(args):
             print('%4d%s %-8s %-10s z%.2f  %s' % (line, '.%d' % pg if pg else '  ', (speaker or '')[:8], name, framing[2], text[:86]))
 
 
-SAME_VIEW = 0.80        # framings sharing this much of their view are a reframing, not a new picture
+def who_is_shown(resolved):
+    """For the spoken lines: how many pictures hold the person spoken to (as
+    the game works it out), with or without the speaker, how many are the
+    whole painting, and how many are something else: a line with nobody to
+    answer it, or a framing chosen by hand."""
+    known = json.loads(FACES.read_text()) if FACES.is_file() else {}
+    authored = load_authored()
+    _plan, staging, beats = load_plan()
+    roles = Roles(staging, beats)
+    both = listener_only = whole = other = 0
+    for (scene, line, pg, speaker, _text, stage), _first, _name, framing in resolved:
+        if not speaker:
+            continue
+        if tuple(framing)[2] <= 1.001:
+            whole += 1
+            continue
+        listener, _portrait = roles.of(scene, line, pg, speaker)
+        people, _faces = stage_people(stage, known, authored)
+        lift = stage_lift(stage, staging)
+        x0, y0, x1, y1 = shotmath.box(tuple(framing))
+
+        def held(name):
+            face = people.get(name)
+            return bool(face) and x0 <= face[0] <= x1 and y0 <= face[1] - lift <= y1
+
+        if held(listener) and held(speaker):
+            both += 1
+        elif held(listener):
+            listener_only += 1
+        else:
+            other += 1
+    return ('%d the person spoken to alone, %d with the speaker also in the picture, %d the whole painting, '
+            '%d another choice (nobody to answer, or set by hand).' % (listener_only, both, whole, other))
 
 
 def stats(args=None):
     """How often the picture changes: the measure the camera exists for.
-    A change of framing within one painting counts as a new picture only when
-    the two views share less than SAME_VIEW of the smaller one, or differ in
-    size by a quarter or more (the whole painting to a close framing); a
-    smaller shift, toward the person spoken to in a two-shot, is a reframing."""
+    Every change in the table is a clear one (resolve holds the picture
+    between framings that are the same view)."""
     _direction, resolved = build()
     rows = [(page[0], page[5], name, tuple(framing), bool(page[3])) for page, _first, name, framing in resolved]
-    paintings = pictures = moves = 1
-    held = quiet = 1
-    longest_painting, holds, quiets = 1, [], []
-    painting_run = 1
+    paintings = pictures = 1
+    held, painting_run, longest_painting, holds = 1, 1, 1, []
     for a, b in zip(rows, rows[1:]):
-        if a[1] != b[1]:
-            paintings += 1; pictures += 1; moves += 1
-            holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2])); quiets.append((quiet, a[0], a[1].rsplit('/', 1)[-1]))
-            held = quiet = painting_run = 1
-            continue
-        painting_run += 1
+        painting_run = painting_run + 1 if a[1] == b[1] else 1
         longest_painting = max(longest_painting, painting_run)
-        if a[3] == b[3]:
-            held += 1; quiet += 1
+        paintings += a[1] != b[1]
+        if a[1] == b[1] and a[3] == b[3]:
+            held += 1
             continue
-        moves += 1
-        holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2])); held = 1
-        scale = max(a[3][2], b[3][2]) / min(a[3][2], b[3][2])
-        if shotmath.overlap(a[3], b[3]) < SAME_VIEW or scale >= 1.25:      # another part, or a clear change of size
-            pictures += 1
-            quiets.append((quiet, a[0], a[1].rsplit('/', 1)[-1])); quiet = 1
-        else:
-            quiet += 1
+        holds.append((held, a[0], a[1].rsplit('/', 1)[-1], a[2]))
+        pictures, held = pictures + 1, 1
     holds.append((held, rows[-1][0], rows[-1][1].rsplit('/', 1)[-1], rows[-1][2]))
-    quiets.append((quiet, rows[-1][0], rows[-1][1].rsplit('/', 1)[-1]))
     n = float(len(rows))
     whole = sum(1 for r in rows if r[3][2] <= 1.001)
     spoken = [r for r in rows if r[4]]
     print('%d pages over paintings: %d shown whole, %d framed closer.' % (len(rows), whole, len(rows) - whole))
     print('Spoken lines: %d, of which %d over the whole painting.' % (len(spoken), sum(1 for r in spoken if r[3][2] <= 1.001)))
     print('A new painting every %.2f pages (longest stay on one painting: %d pages).' % (n / paintings, longest_painting))
-    print('A clearly different picture every %.2f pages; the framing moves at all every %.2f pages.' % (n / pictures, n / moves))
-    print('Longest runs without a clearly different picture: '
-          + ', '.join('%d pages S%03d %s' % q for q in sorted(quiets, reverse=True)[:8]))
-    print('Longest holds of one unmoving framing: '
-          + ', '.join('%d pages S%03d %s %s' % h for h in sorted(holds, reverse=True)[:6]))
+    print('A different picture every %.2f pages.' % (n / pictures))
+    spread = {}
+    for h in holds:
+        spread[min(h[0], 7)] = spread.get(min(h[0], 7), 0) + 1
+    print('Pictures by how many pages they hold (7 = seven or more): '
+          + ', '.join('%d: %d' % kv for kv in sorted(spread.items())))
+    print('Longest holds: ' + ', '.join('%d pages S%03d %s %s' % h for h in sorted(holds, reverse=True)[:10]))
+    print('Who a spoken line shows: ' + who_is_shown(resolved))
     named = sum(len(v['shots']) for v in _direction['stages'].values())
     distinct = sum(len({tuple(f) for f in v['shots'].values()}) for v in _direction['stages'].values())
     print('%d named framings over %d paintings make %d different framings (people standing together share one).'

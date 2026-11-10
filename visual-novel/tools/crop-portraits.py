@@ -148,6 +148,29 @@ FACE_OVERRIDES = {
     # hand from his eyes and mouth, on the camp healer's scale, one size for both
     'stair-healer-speaking': (670, 420, 410),
     'stair-healer-listening': (300, 410, 410),
+    # batch 9's second expressions alternate line by line with their set's
+    # first portrait; the detectors boxed these four 8-18% larger than that
+    # portrait's face (an open or crying mouth, a turned head), so the heads
+    # came out smaller in the oval. Sized from the distance between the eyes
+    # and the tip of the nose, which an expression doesn't change, to the
+    # set's speaking portrait; the eyes sit at 45% of the box.
+    'mara-wry-speaking': (678, 372, 363),
+    'lucan-early-pleading-speaking': (621, 330, 440),
+    'tessa-harrow-crying-out-speaking': (693, 256, 464),
+    'tessa-harrow-grieving-speaking': (658, 328, 453),
+    # Five older speaking portraits sat out of scale with their own
+    # character's other sets, which showed once every speaking face was
+    # measured the same way (10 November 2026): Tessa in the campaign coat
+    # filled the oval, her hair cut at the top and her eyes far below the
+    # shared eye line; Serat was a third larger than Lucan beside him; Iven's
+    # road portrait (and the amused one painted to match it) and Olan's first
+    # were a fifth to a quarter smaller than their later ones. Each is sized
+    # to that character's other set.
+    'tessa-campaign-speaking': (548, 376, 414),
+    'serat-speaking': (575, 158, 381),
+    'iven-attentive-speaking': (556, 209, 447),
+    'iven-amused-speaking': (656, 308, 434),
+    'olan-speaking': (554, 253, 417),
 }
 
 

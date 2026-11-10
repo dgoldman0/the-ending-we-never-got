@@ -25,6 +25,8 @@ ROUNDS = {5: 1, 17: 2, 31: 3, 43: 4, 49: 5}
 # each later page.
 PICTURE_BREAKS = {
     (1, 15): ['A SCHOLAR'],
+    (6, 287): ['When Iven'],
+    (12, 541): ['Four pages'],
     (29, 1196): ['He wears it'],
     (29, 1198): ['Lucan circles it'],
 }

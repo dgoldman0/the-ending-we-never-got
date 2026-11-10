@@ -1,8 +1,8 @@
 # Asset request
 
-Updated 9 November 2026. **Batch 9, below, is the last batch.** The game no longer waits on new art: a camera now frames every line from the paintings it already has (see *What changed in the game*), and whatever this batch leaves wrong will be repaired locally or kept out of close view. So this batch carries everything that only painting can do: the repaints left from batch 8 (part A), nine moments no painting shows (part B) and nine speaking portraits for the lines that carry the most (part C). Parts B and C are additions of 9 November; the user may strike either before handing the batch over, and part A stands without them.
+Updated 10 November 2026. **Nothing further is requested.** Batch 9, the last batch, is in the game: thirteen repaints, seven of its eight new paintings and its nine portraits; one painting was skipped by the painter under the request's own condition and one is not used. What it left wrong is recorded under *Batch 9, checked 10 November* and stays as it is, repaired locally where that was possible or kept out of close framings. The rest of this file is the record of what was asked and what came back.
 
-The game still takes new art without code changes: a file saved at its listed path appears in play once Claude has cropped and graded it and found its faces. Earlier batches are recorded below as done. Scene paintings still need a written brief from the screenplay before generation, as [AGENTS.md](../AGENTS.md) requires. Nothing here approves an image or replaces the likeness, wardrobe and lighting references.
+Earlier batches are recorded below as done. Nothing here approves an image or replaces the likeness, wardrobe and lighting references. Should a painting ever be redone by hand, the game still takes it without code changes: a file saved at its listed path appears in play once it has been graded (`tools/grade-light.py`), its faces found (`tools/direct-shots.py find`) and its framings looked at.
 
 ## Checked so far
 
@@ -36,7 +36,28 @@ The game still takes new art without code changes: a file saved at its listed pa
 
   Item 69 went wrong in S051, where the bow was removed instead of turned, so the crossbow reads as a rifle; items 65, 67 and 72 were done in part. The rest is batch 9.
 
-## Next for GPT: batch 9, the last batch
+- **Batch 9, the last batch, checked 10 November.** Delivered in `02ceb47`–`ec13c9d`: 13 repainted scenes, 8 new paintings and 9 speaking portraits. B7 (`s015-book.png`) was skipped under its own condition: the winter key shows nothing beneath Tessa's coat. Each repaint was compared with the file it replaced, region by region at native size. The new paintings were looked at whole and at native size; an independent reviewer went over four of them (`s006-bowls`, `s011-blue-door`, `s012-cut-pages`, `s026-stone`), and a second reviewer's pass ended early with notes on three (`s036-sapling`, `s047-plan`, `s049-bag`), so `s035-water` was checked by Claude alone. Every changed scene was then read page by page from the running game.
+  - **Repaints that are right now:** Lucan's close-swept horns and slung crossbow in the ferryhouse (S019); his horns and the level, loaded bow at the gate, and horns on the first boat's passengers (S021); the back of Serat's skull; the brother's raised horns, Serat's spent slung bow and the brown-capped northern boatman in the rescue; the third guard's horn cap and green collar (S034); the foreshortened bow at the S051 firing slit, which the camera now frames close; fallen stone and broken shields narrowing the way to Mara at the bend, with light in the hall's windows (S053); the door leaves reaching the threshold in both S052 paintings; the stone edges of the lever's housing (S054); the fifth chair leg (S058).
+  - **Earlier local repairs came through.** Pixels Claude had repaired changed only inside regions an item asked to repaint. The S053 horn and wall and Tessa's hair at the lever are unchanged; the faded lower end of the S052 door leaf is superseded by the repaint, which carries the leaf to the threshold. `tools/local-repairs.py` lists these in `CARRIED_BATCH8`.
+  - **Still wrong in the repaints, left as they are:** the S053 flight still rises about sixteen steps against nine or ten in S050 (the painter's ten-riser trial failed; the painting is on screen whole for two pages); a faint vertical step in the floor's tone under the front chair of `s058-final.png`, where the leg was (a blend made no visible difference and was not kept); none of the optional items was attempted.
+  - **New paintings in the game (7 files):**
+    - `s035-water.png` (lines 1438–1447): Mara holds Tessa back on the pier, the torn sleeve in her fist, wreckage in empty water, Lucan across the gap. It carries the scene's worst moment and is the best of the batch. The game frames Mara and Tessa, then her hand over the empty water, then Tessa with Lucan beyond.
+    - `s036-sapling.png` (line 1514): the mother, the son with the sapling, the father under his coat; quiet, no wound. Shown whole.
+    - `s012-cut-pages.png` (line 541, now two pages): Elin alone with the open book. The four stubs are a comb about 17 px wide at the foot of the gutter, not "clean and countable" as asked. The game gives *Four pages have been cut from its binding.* its own page and a close insert, where the comb is about 40 px wide: findable, not striking.
+    - `s011-blue-door.png` (lines 504–509): Orren with the lantern in the blue doorway under the burning roof, Tessa's arch reaching toward him, the tile in mid-air beside Iven. Orren stands about two metres from her with an open hand toward her, where line 504 puts him across a rubble-choked alley; the two apprentices' hair is swapped against their designs.
+    - `s006-bowls.png` (line 287, now two pages): the trade of the bowls, Iven at the fire with his back turned. Mara's staff is a short stick against the long one of the sparring; Tessa looks stricken where the moment is a small kindness. The bowls sit under the reading text in the whole view, so the trade has its own page and a close insert on her hands.
+    - `s047-plan.png` (lines 1871–1875): Lucan writing at the plan's edge, the two letters beside it, his left forearm bandaged. He looks nearer forty than his late twenties and his horns are ridged where his design has them smooth; a paler, straight-edged band crosses the lower parchment (the insert on his writing is framed to keep it under the reading shade).
+    - `s049-bag.png` (line 1986): Tessa fastening Iven's satchel, the healer waiting, her sword on the left hip. Shown whole.
+  - **Not used: `s026-stone.png`.** The stone is a boulder roughly half a metre across or more, with the name cut in even capitals, where line 1126 has a stone drop onto the deck with the name scratched into its chalk: it reads as a headstone. Lucan's badge is a squiggle, not the split star, and his horn is ridged. Line 1126 stays over the loading ramp. The file is kept at `art/scene-studies/s026-stone/s026-stone-not-used.png`.
+  - **Fixed locally** (the `BATCH9` table of `tools/local-repairs.py`; originals in `art/local-repairs/originals/batch9/`, layered masters in `art/local-repairs/batch9-check/`):
+    - `s047-plan.png`: the warning read HAVF CI IANGED, the E without its bottom arm and the H without its crossbar. The two strokes are drawn in.
+    - `s011-blue-door.png`: Orren wore the maroon knit cap of the S008 market. The family has that cap afterwards: Renn holds it in S014 and Hest brings it to the camp in S029, where the painting shows the same cap. It is now a dark grey work cap. The request caused this by naming the S008 painting as his reference; the change is reversible from the kept original.
+  - **Portraits.** All nine are in and match their sets in face, clothes, hair and horns. Four (`mara-wry`, `lucan-early-pleading`, `tessa-harrow-crying-out`, `tessa-harrow-grieving`) came out 8–18% smaller in the oval than the portrait they alternate with, because the face detector boxes an open or crying mouth larger; their face size is now set by hand from the distance between the eyes and the nose (`FACE_OVERRIDES` in `tools/crop-portraits.py`). 43 lines use them. Measuring every speaking portrait the same way also showed five older ones out of scale with their own character's other sets (Tessa in the campaign coat, Serat, Iven's road portrait with the amused one painted to match it, and Olan's first); they are recropped to match.
+  - **Resolution.** The eight new paintings are 1672×941, below the 1920×1080 asked, and were delivered without upscaling as the request said. Close framings of them are softer than those of the older paintings.
+
+## Batch 9 (done): the last batch
+
+Delivered in `02ceb47`–`ec13c9d` and put into the game with Claude's local fixes; see **Batch 9, the last batch, checked 10 November** under *Checked so far*. The request as the painter worked from it:
 
 Three parts, in this order, committing after each group, with one stop at the end. Batch 5's self-check and format still apply, and so do the standing decisions: Iven's warm brown coat, no green on the human side, the chosen costumes, and Serat's brother as the ponytailed man of the S021 landing and S025.
 
@@ -699,7 +720,7 @@ Items 1–11 are done, 7–11 in `50e4d86` (the applause exposure, the S027 horn
 
 ## Queued behind the check
 
-Nothing. Batch 9 is the last request; after its check the art is closed and what remains is listed under "Needed, but not images".
+Nothing. Batch 9 was the last request and has been checked; what remains is listed under "Needed, but not images".
 
 ## Reference: how the game uses the files
 

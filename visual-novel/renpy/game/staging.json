@@ -334,13 +334,8 @@
    "grade": "ordinary",
    "stages": [
     {
-     "image": "art/scenes/s015-book.png",
-     "from": 0,
-     "alt": "At Elin’s table Tessa has turned past the cut pages to the last leaf of the original."
-    },
-    {
      "image": "art/scenes/s015-elin-lodging.png",
-     "from": 629,
+     "from": 0,
      "alt": "Elin'S Lodging, Day"
     }
    ],
@@ -633,11 +628,6 @@
      "image": "art/scenes/s026-quarry-loading-ramp.png",
      "from": 0,
      "alt": "Quarry Camp, Loading Ramp, Day"
-    },
-    {
-     "image": "art/scenes/s026-stone.png",
-     "from": 1126,
-     "alt": "On the launch deck Lucan picks up a chalked stone with Orren’s name scratched into it; the apprentice looks away on the ramp."
     }
    ],
    "cast": {

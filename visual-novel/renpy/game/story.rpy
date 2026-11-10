@@ -729,7 +729,10 @@ label s006:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Tessa lets the shelter fade and puts the sword beside the grain sack. When Iven goes back for the spoons, she trades her bowl for the burned portion he kept for himself."
+    "Tessa lets the shelter fade and puts the sword beside the grain sack."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "When Iven goes back for the spoons, she trades her bowl for the burned portion he kept for himself."
     # Source lines 289–289
     $ source_line = 289
     $ scene_speaker = None
@@ -1381,7 +1384,10 @@ label s012:
     $ scene_speaker = None
     $ source_page = 0
     $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
-    "Later, alone at the table, she unwraps the original. Four pages have been cut from its binding."
+    "Later, alone at the table, she unwraps the original."
+    $ source_page = 1
+    $ scene_art, scene_art_alt = scene_background(current_scene, source_line, source_page)
+    "Four pages have been cut from its binding."
     $ completed_scenes = max(completed_scenes, 12)
     jump s013
 

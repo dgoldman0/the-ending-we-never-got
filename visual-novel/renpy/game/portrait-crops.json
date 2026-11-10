@@ -44,6 +44,7 @@
   "governor-speaking": "right",
   "hest-listening": "left",
   "hest-speaking": "right",
+  "iven-amused-speaking": "right",
   "iven-attentive-listening": "left",
   "iven-attentive-speaking": "right",
   "iven-attentive-treatment-listening": "left",
@@ -54,7 +55,9 @@
   "iven-concerned-treatment-speaking": "right",
   "iven-harrow-listening": "left",
   "iven-harrow-speaking": "right",
+  "lucan-early-laughing-speaking": "right",
   "lucan-early-listening": "left",
+  "lucan-early-pleading-speaking": "right",
   "lucan-early-speaking": "right",
   "lucan-later-listening": "left",
   "lucan-later-speaking": "right",
@@ -65,6 +68,7 @@
   "mara-controlled-listening": "left",
   "mara-controlled-speaking": "right",
   "mara-uneasy-listening": "left",
+  "mara-wry-speaking": "right",
   "marren-listening": "left",
   "marren-speaking": "right",
   "messenger-speaking": "right",
@@ -94,6 +98,7 @@
   "stair-healer-speaking": "right",
   "surgeon-listening": "left",
   "surgeon-speaking": "right",
+  "tessa-amused-working-speaking": "right",
   "tessa-attentive-arrival-cloak-listening": "left",
   "tessa-attentive-formal-listening": "left",
   "tessa-attentive-formal-speaking": "right",
@@ -102,9 +107,12 @@
   "tessa-campaign-early-listening": "left",
   "tessa-campaign-early-speaking": "right",
   "tessa-campaign-listening": "left",
+  "tessa-campaign-shaken-speaking": "right",
   "tessa-campaign-speaking": "right",
   "tessa-citadel-listening": "left",
   "tessa-citadel-speaking": "right",
+  "tessa-harrow-crying-out-speaking": "right",
+  "tessa-harrow-grieving-speaking": "right",
   "tessa-harrow-listening": "left",
   "tessa-harrow-speaking": "right",
   "tessa-hurt-arrival-cloak-listening": "left",
@@ -114,6 +122,7 @@
   "tessa-hurt-formal-speaking": "right",
   "tessa-hurt-working-listening": "left",
   "tessa-hurt-working-speaking": "right",
+  "tessa-injured-grieving-speaking": "right",
   "tessa-injured-listening": "left",
   "tessa-injured-speaking": "right",
   "tessa-postwar-listening": "left",
@@ -398,6 +407,12 @@
    885,
    1011
   ],
+  "iven-amused-speaking": [
+   327,
+   111,
+   826,
+   943
+  ],
   "iven-attentive-listening": [
    126,
    55,
@@ -405,10 +420,10 @@
    1159
   ],
   "iven-attentive-speaking": [
-   132,
-   17,
-   1035,
-   1183
+   218,
+   27,
+   851,
+   972
   ],
   "iven-attentive-treatment-listening": [
    283,
@@ -458,11 +473,23 @@
    851,
    972
   ],
+  "lucan-early-laughing-speaking": [
+   315,
+   117,
+   817,
+   933
+  ],
   "lucan-early-listening": [
    173,
    22,
    832,
    950
+  ],
+  "lucan-early-pleading-speaking": [
+   305,
+   123,
+   837,
+   957
   ],
   "lucan-early-speaking": [
    220,
@@ -524,6 +551,12 @@
    611,
    698
   ],
+  "mara-wry-speaking": [
+   385,
+   212,
+   691,
+   789
+  ],
   "marren-listening": [
    234,
    104,
@@ -561,10 +594,10 @@
    1000
   ],
   "olan-speaking": [
-   187,
-   162,
-   891,
-   1017
+   232,
+   168,
+   794,
+   907
   ],
   "orra-listening": [
    265,
@@ -669,10 +702,10 @@
    1002
   ],
   "serat-speaking": [
-   349,
-   76,
-   630,
-   720
+   305,
+   71,
+   725,
+   828
   ],
   "stair-healer-listening": [
    214,
@@ -697,6 +730,12 @@
    25,
    895,
    1022
+  ],
+  "tessa-amused-working-speaking": [
+   377,
+   64,
+   744,
+   850
   ],
   "tessa-attentive-arrival-cloak-listening": [
    313,
@@ -746,11 +785,17 @@
    929,
    1061
   ],
+  "tessa-campaign-shaken-speaking": [
+   284,
+   73,
+   902,
+   1030
+  ],
   "tessa-campaign-speaking": [
-   309,
-   127,
-   643,
-   735
+   243,
+   119,
+   788,
+   900
   ],
   "tessa-citadel-listening": [
    152,
@@ -763,6 +808,18 @@
    94,
    855,
    976
+  ],
+  "tessa-harrow-crying-out-speaking": [
+   336,
+   49,
+   883,
+   1009
+  ],
+  "tessa-harrow-grieving-speaking": [
+   333,
+   93,
+   862,
+   985
   ],
   "tessa-harrow-listening": [
    160,
@@ -817,6 +874,12 @@
    9,
    883,
    1009
+  ],
+  "tessa-injured-grieving-speaking": [
+   315,
+   96,
+   919,
+   1050
   ],
   "tessa-injured-listening": [
    176,

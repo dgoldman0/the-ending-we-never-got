@@ -24,6 +24,9 @@
   "art/rovel/details/treatment-white.png": {
    "original": "art/lit/rovel--details--treatment-white-original.webp"
   },
+  "art/scenes/s006-bowls.png": {
+   "original": "art/lit/scenes--s006-bowls-original.webp"
+  },
   "art/scenes/s006-convoy-camp.png": {
    "original": "art/lit/scenes--s006-convoy-camp-original.webp"
   },
@@ -57,11 +60,17 @@
   "art/scenes/s011-bellweir-causeway.png": {
    "original": "art/lit/scenes--s011-bellweir-causeway-original.webp"
   },
+  "art/scenes/s011-blue-door.png": {
+   "original": "art/lit/scenes--s011-blue-door-original.webp"
+  },
   "art/scenes/s011-heron.png": {
    "original": "art/lit/scenes--s011-heron-original.webp"
   },
   "art/scenes/s011-sanctuary.png": {
    "original": "art/lit/scenes--s011-sanctuary-original.webp"
+  },
+  "art/scenes/s012-cut-pages.png": {
+   "original": "art/lit/scenes--s012-cut-pages-original.webp"
   },
   "art/scenes/s012-temple-reading-room.png": {
    "original": "art/lit/scenes--s012-temple-reading-room-original.webp"
@@ -183,8 +192,14 @@
   "art/scenes/s035-iven.png": {
    "original": "art/lit/scenes--s035-iven-original.webp"
   },
+  "art/scenes/s035-water.png": {
+   "original": "art/lit/scenes--s035-water-original.webp"
+  },
   "art/scenes/s036-harrow-south-bank.png": {
    "original": "art/lit/scenes--s036-harrow-south-bank-original.webp"
+  },
+  "art/scenes/s036-sapling.png": {
+   "original": "art/lit/scenes--s036-sapling-original.webp"
   },
   "art/scenes/s036-south-bank.png": {
    "original": "art/lit/scenes--s036-south-bank-original.webp"
@@ -243,8 +258,14 @@
   "art/scenes/s047-citadel-north-infirmary-before-dawn.png": {
    "original": "art/lit/scenes--s047-citadel-north-infirmary-before-dawn-original.webp"
   },
+  "art/scenes/s047-plan.png": {
+   "original": "art/lit/scenes--s047-plan-original.webp"
+  },
   "art/scenes/s048-examination-tent.png": {
    "original": "art/lit/scenes--s048-examination-tent-original.webp"
+  },
+  "art/scenes/s049-bag.png": {
+   "original": "art/lit/scenes--s049-bag-original.webp"
   },
   "art/scenes/s049-command-tent.png": {
    "original": "art/lit/scenes--s049-command-tent-original.webp"
@@ -600,6 +621,17 @@
     "original": "art/lit/portraits/hest-speaking-ordinary-original.webp"
    }
   },
+  "iven-amused-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/iven-amused-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/iven-amused-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/iven-amused-speaking-ordinary-original.webp"
+   }
+  },
   "iven-attentive": {
    "bright": {
     "original": "art/lit/portraits/iven-attentive-bright-original.webp"
@@ -732,6 +764,17 @@
     "original": "art/lit/portraits/iven-harrow-speaking-ordinary-original.webp"
    }
   },
+  "lucan-early-laughing-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/lucan-early-laughing-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/lucan-early-laughing-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/lucan-early-laughing-speaking-ordinary-original.webp"
+   }
+  },
   "lucan-early-listening": {
    "bright": {
     "original": "art/lit/portraits/lucan-early-listening-bright-original.webp"
@@ -741,6 +784,17 @@
    },
    "ordinary": {
     "original": "art/lit/portraits/lucan-early-listening-ordinary-original.webp"
+   }
+  },
+  "lucan-early-pleading-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/lucan-early-pleading-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/lucan-early-pleading-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/lucan-early-pleading-speaking-ordinary-original.webp"
    }
   },
   "lucan-early-speaking": {
@@ -873,6 +927,17 @@
    },
    "ordinary": {
     "original": "art/lit/portraits/mara-uneasy-listening-ordinary-original.webp"
+   }
+  },
+  "mara-wry-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/mara-wry-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/mara-wry-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/mara-wry-speaking-ordinary-original.webp"
    }
   },
   "marren-listening": {
@@ -1293,6 +1358,17 @@
     "original": "art/lit/portraits/surgeon-speaking-ordinary-original.webp"
    }
   },
+  "tessa-amused-working-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/tessa-amused-working-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/tessa-amused-working-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/tessa-amused-working-speaking-ordinary-original.webp"
+   }
+  },
   "tessa-attentive-arrival-cloak-listening": {
    "bright": {
     "original": "art/lit/portraits/tessa-attentive-arrival-cloak-listening-bright-original.webp"
@@ -1381,6 +1457,17 @@
     "original": "art/lit/portraits/tessa-campaign-listening-ordinary-original.webp"
    }
   },
+  "tessa-campaign-shaken-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/tessa-campaign-shaken-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/tessa-campaign-shaken-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/tessa-campaign-shaken-speaking-ordinary-original.webp"
+   }
+  },
   "tessa-campaign-speaking": {
    "bright": {
     "original": "art/lit/portraits/tessa-campaign-speaking-bright-original.webp"
@@ -1412,6 +1499,28 @@
    },
    "ordinary": {
     "original": "art/lit/portraits/tessa-citadel-speaking-ordinary-original.webp"
+   }
+  },
+  "tessa-harrow-crying-out-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/tessa-harrow-crying-out-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/tessa-harrow-crying-out-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/tessa-harrow-crying-out-speaking-ordinary-original.webp"
+   }
+  },
+  "tessa-harrow-grieving-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/tessa-harrow-grieving-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/tessa-harrow-grieving-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/tessa-harrow-grieving-speaking-ordinary-original.webp"
    }
   },
   "tessa-harrow-listening": {
@@ -1511,6 +1620,17 @@
    },
    "ordinary": {
     "original": "art/lit/portraits/tessa-hurt-working-speaking-ordinary-original.webp"
+   }
+  },
+  "tessa-injured-grieving-speaking": {
+   "bright": {
+    "original": "art/lit/portraits/tessa-injured-grieving-speaking-bright-original.webp"
+   },
+   "night": {
+    "original": "art/lit/portraits/tessa-injured-grieving-speaking-night-original.webp"
+   },
+   "ordinary": {
+    "original": "art/lit/portraits/tessa-injured-grieving-speaking-ordinary-original.webp"
    }
   },
   "tessa-injured-listening": {
@@ -1837,6 +1957,7 @@
   "art/rovel/details/applause-hand.png": "bright",
   "art/rovel/details/treatment-blue.png": "ordinary",
   "art/rovel/details/treatment-white.png": "ordinary",
+  "art/scenes/s006-bowls.png": "ordinary",
   "art/scenes/s006-convoy-camp.png": "ordinary",
   "art/scenes/s006-warden.png": "ordinary",
   "art/scenes/s007-roadside-inn.png": "night",
@@ -1848,8 +1969,10 @@
   "art/scenes/s009-rowing.png": "ordinary",
   "art/scenes/s010-bellweir-hills.png": "night",
   "art/scenes/s011-bellweir-causeway.png": "night",
+  "art/scenes/s011-blue-door.png": "night",
   "art/scenes/s011-heron.png": "night",
   "art/scenes/s011-sanctuary.png": "night",
+  "art/scenes/s012-cut-pages.png": "night",
   "art/scenes/s012-temple-reading-room.png": "night",
   "art/scenes/s013-summoning-chamber-later.png": "ordinary",
   "art/scenes/s014-boots-and-cap.png": "ordinary",
@@ -1890,7 +2013,9 @@
   "art/scenes/s035-collapse.png": "ordinary",
   "art/scenes/s035-harrow-bridge-crossing.png": "ordinary",
   "art/scenes/s035-iven.png": "ordinary",
+  "art/scenes/s035-water.png": "ordinary",
   "art/scenes/s036-harrow-south-bank.png": "ordinary",
+  "art/scenes/s036-sapling.png": "ordinary",
   "art/scenes/s036-south-bank.png": "ordinary",
   "art/scenes/s037-coat.png": "night",
   "art/scenes/s037-relief-camp.png": "night",
@@ -1910,7 +2035,9 @@
   "art/scenes/s045-citadel-north-infirmary.png": "ordinary",
   "art/scenes/s046-valcair-private-room.png": "night",
   "art/scenes/s047-citadel-north-infirmary-before-dawn.png": "ordinary",
+  "art/scenes/s047-plan.png": "ordinary",
   "art/scenes/s048-examination-tent.png": "ordinary",
+  "art/scenes/s049-bag.png": "night",
   "art/scenes/s049-command-tent.png": "night",
   "art/scenes/s050-citadel-lower-stair.png": "ordinary",
   "art/scenes/s050-guard.png": "ordinary",
@@ -2482,6 +2609,19 @@
     0.155
    ]
   },
+  "art/lit/scenes--s006-bowls-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s006-bowls-original-f1.webp",
+    "art/lit/soft/scenes--s006-bowls-original-f2.webp",
+    "art/lit/soft/scenes--s006-bowls-original-f3.webp",
+    "art/lit/soft/scenes--s006-bowls-original-f4.webp"
+   ],
+   "tint": [
+    0.227,
+    0.195,
+    0.175
+   ]
+  },
   "art/lit/scenes--s006-convoy-camp-original.webp": {
    "levels": [
     "art/lit/soft/scenes--s006-convoy-camp-original-f1.webp",
@@ -2625,6 +2765,19 @@
     0.195
    ]
   },
+  "art/lit/scenes--s011-blue-door-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s011-blue-door-original-f1.webp",
+    "art/lit/soft/scenes--s011-blue-door-original-f2.webp",
+    "art/lit/soft/scenes--s011-blue-door-original-f3.webp",
+    "art/lit/soft/scenes--s011-blue-door-original-f4.webp"
+   ],
+   "tint": [
+    0.253,
+    0.185,
+    0.19
+   ]
+  },
   "art/lit/scenes--s011-heron-original.webp": {
    "levels": [
     "art/lit/soft/scenes--s011-heron-original-f1.webp",
@@ -2649,6 +2802,19 @@
     0.248,
     0.187,
     0.188
+   ]
+  },
+  "art/lit/scenes--s012-cut-pages-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s012-cut-pages-original-f1.webp",
+    "art/lit/soft/scenes--s012-cut-pages-original-f2.webp",
+    "art/lit/soft/scenes--s012-cut-pages-original-f3.webp",
+    "art/lit/soft/scenes--s012-cut-pages-original-f4.webp"
+   ],
+   "tint": [
+    0.26,
+    0.181,
+    0.15
    ]
   },
   "art/lit/scenes--s012-temple-reading-room-original.webp": {
@@ -2841,7 +3007,7 @@
     "art/lit/soft/scenes--s021-lucan-returns-original-f4.webp"
    ],
    "tint": [
-    0.233,
+    0.232,
     0.192,
     0.181
    ]
@@ -3171,6 +3337,19 @@
     0.177
    ]
   },
+  "art/lit/scenes--s035-water-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s035-water-original-f1.webp",
+    "art/lit/soft/scenes--s035-water-original-f2.webp",
+    "art/lit/soft/scenes--s035-water-original-f3.webp",
+    "art/lit/soft/scenes--s035-water-original-f4.webp"
+   ],
+   "tint": [
+    0.222,
+    0.194,
+    0.193
+   ]
+  },
   "art/lit/scenes--s036-harrow-south-bank-original.webp": {
    "levels": [
     "art/lit/soft/scenes--s036-harrow-south-bank-original-f1.webp",
@@ -3182,6 +3361,19 @@
     0.248,
     0.19,
     0.161
+   ]
+  },
+  "art/lit/scenes--s036-sapling-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s036-sapling-original-f1.webp",
+    "art/lit/soft/scenes--s036-sapling-original-f2.webp",
+    "art/lit/soft/scenes--s036-sapling-original-f3.webp",
+    "art/lit/soft/scenes--s036-sapling-original-f4.webp"
+   ],
+   "tint": [
+    0.23,
+    0.194,
+    0.167
    ]
   },
   "art/lit/scenes--s036-south-bank-original.webp": {
@@ -3431,6 +3623,19 @@
     0.166
    ]
   },
+  "art/lit/scenes--s047-plan-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s047-plan-original-f1.webp",
+    "art/lit/soft/scenes--s047-plan-original-f2.webp",
+    "art/lit/soft/scenes--s047-plan-original-f3.webp",
+    "art/lit/soft/scenes--s047-plan-original-f4.webp"
+   ],
+   "tint": [
+    0.23,
+    0.195,
+    0.164
+   ]
+  },
   "art/lit/scenes--s048-examination-tent-original.webp": {
    "levels": [
     "art/lit/soft/scenes--s048-examination-tent-original-f1.webp",
@@ -3442,6 +3647,19 @@
     0.245,
     0.192,
     0.15
+   ]
+  },
+  "art/lit/scenes--s049-bag-original.webp": {
+   "levels": [
+    "art/lit/soft/scenes--s049-bag-original-f1.webp",
+    "art/lit/soft/scenes--s049-bag-original-f2.webp",
+    "art/lit/soft/scenes--s049-bag-original-f3.webp",
+    "art/lit/soft/scenes--s049-bag-original-f4.webp"
+   ],
+   "tint": [
+    0.225,
+    0.192,
+    0.212
    ]
   },
   "art/lit/scenes--s049-command-tent-original.webp": {
@@ -3465,7 +3683,7 @@
     "art/lit/soft/scenes--s050-citadel-lower-stair-original-f4.webp"
    ],
    "tint": [
-    0.209,
+    0.208,
     0.197,
     0.206
    ]
@@ -3506,7 +3724,7 @@
    "tint": [
     0.227,
     0.193,
-    0.194
+    0.193
    ]
   },
   "art/lit/scenes--s052-entrance-ward-original.webp": {
@@ -3517,9 +3735,9 @@
     "art/lit/soft/scenes--s052-entrance-ward-original-f4.webp"
    ],
    "tint": [
-    0.184,
+    0.185,
     0.199,
-    0.258
+    0.256
    ]
   },
   "art/lit/scenes--s053-bend-original.webp": {
@@ -3530,9 +3748,9 @@
     "art/lit/soft/scenes--s053-bend-original-f4.webp"
    ],
    "tint": [
-    0.248,
-    0.189,
-    0.164
+    0.236,
+    0.192,
+    0.173
    ]
   },
   "art/lit/scenes--s054-binding-original.webp": {

@@ -583,6 +583,44 @@ CARRIED_BATCH7 = {
     'art/scenes/s058-final.png',
 }
 
+# Paintings GPT repainted in batch 9 (9 November 2026) from the files the
+# BATCH8 repairs below were written to. In the rescue, Serat and the bend
+# every repaired pixel came through unchanged; at the S052 entrance the faded
+# lower end of the door leaf was repainted on purpose (the leaf now reaches
+# the threshold), which supersedes that repair. The tool leaves all four alone.
+CARRIED_BATCH8 = {
+    'art/scenes/s021-rescue.png', 'art/scenes/s021-serat.png', 'art/scenes/s053-bend.png',
+    'art/scenes/s052-entrance-ward.png',
+}
+
+# Faults found in the check of batch 9 (10 November 2026), the last batch,
+# fixed like FIXES on the painting as GPT delivered it in batch 9 (originals
+# in originals/batch9/; masters in batch9-check/). One more step: 'ink'
+# draws short pen strokes missing from painted lettering.
+BATCH9 = {
+    # Lucan's warning on the plan (the only words in the painting, and the
+    # subject of a close framing): the E of HAVE had no bottom arm and the H
+    # of CHANGED no crossbar, so it read HAVF CI IANGED. The two strokes are
+    # drawn in the lettering's own ink, one pixel wide like the rest.
+    # Orren leans from the blue doorway in his maroon knit cap, the cap of the
+    # S008 market. But the family has that cap afterwards: Renn holds it in
+    # S014 and Hest brings it to the camp in S029, where the painting shows
+    # the same maroon cap. So he cannot be wearing it when he is taken. Here it
+    # becomes a dark grey work cap, the colour of the apprentice's cap beside
+    # him, with its own knit and light.
+    'art/scenes/s011-blue-door.png': [
+        ('cloth', dict(fill=[(303, 217), (303, 200), (305, 186), (310, 175), (318, 167), (328, 162), (342, 159.5),
+                             (357, 160.5), (370, 164), (380, 169.5), (388, 175.5), (387.5, 178), (378, 177),
+                             (370, 177.5), (363, 179.5), (356.5, 183.5), (351.5, 188), (346.5, 193.5), (342, 200),
+                             (338, 207), (334, 213.5), (330, 219.5), (325, 223.5), (312, 225.5), (305, 222)],
+                       like=(240, 100, 310, 135), like_select={'L': (0, 80)}, feather=0.8)),
+    ],
+    'art/scenes/s047-plan.png': [
+        ('ink', dict(strokes=[((1098.5, 598.4), (1103.6, 598.4)), ((1131.6, 595.3), (1142.2, 595.3))],
+                     colour=(84, 68, 58), width=1.1, alpha=0.8)),
+    ],
+}
+
 # Faults found in the check of batch 8 (30 September 2026), fixed like FIXES
 # on the painting as GPT delivered it in batch 8 (originals in
 # originals/batch8/; masters in batch8-check/). Two more options: 'backdrop'
@@ -1062,6 +1100,26 @@ def mend_seam(rgb, spec):
     return np.clip(src * (1 - alpha) + blend * alpha + 0.5, 0, 255).astype(np.uint8)
 
 
+def ink_strokes(rgb, spec):
+    """Draw short pen strokes (missing parts of painted lettering): each from
+    one point to another, anti-aliased, in the given ink."""
+    scale = 8
+    h, w = rgb.shape[:2]
+    xs = [p[0] for stroke in spec['strokes'] for p in stroke]
+    ys = [p[1] for stroke in spec['strokes'] for p in stroke]
+    x0, y0, x1, y1 = int(min(xs)) - 4, int(min(ys)) - 4, int(max(xs)) + 5, int(max(ys)) + 5
+    big = np.zeros(((y1 - y0) * scale, (x1 - x0) * scale), np.uint8)
+    for (ax, ay), (bx, by) in spec['strokes']:
+        cv2.line(big, (int(round((ax - x0) * scale)), int(round((ay - y0) * scale))),
+                 (int(round((bx - x0) * scale)), int(round((by - y0) * scale))), 255,
+                 max(1, int(round(spec['width'] * scale))), lineType=cv2.LINE_AA)
+    cover = cv2.resize(big, (x1 - x0, y1 - y0), interpolation=cv2.INTER_AREA).astype(np.float32) / 255 * spec['alpha']
+    out = rgb.astype(np.float32).copy()
+    patch = out[y0:y1, x0:x1]
+    out[y0:y1, x0:x1] = patch * (1 - cover[..., None]) + np.array(spec['colour'], np.float32) * cover[..., None]
+    return np.clip(out + 0.5, 0, 255).astype(np.uint8)
+
+
 def erase_pencil(rgb, spec):
     """Take a pencil stroke off the paper: the paper's own tone under it
     (a morphological close lifts thin dark strokes), with the paper's grain."""
@@ -1413,7 +1471,7 @@ FIX_STEPS = {'paint_out': paint_out, 'seam': mend_seam, 'match': match_part, 'sm
              'pencil': erase_pencil, 'stray': clone_under, 'clone': clone_region, 'restore': restore_region,
              'trim': trim_outline, 'hand': mirror_hand, 'flag': draw_flag, 'star': split_stars,
              'banner': northern_banner, 'tone': tone_region, 'hair': hair_colour, 'cloth': cloth_colour,
-             'backdrop': backdrop}
+             'backdrop': backdrop, 'ink': ink_strokes}
 
 
 def _sha(path):
@@ -1682,7 +1740,8 @@ def main():
             print('star split drawn:', path, '(%d)' % len(boxes), '->', xcf.relative_to(VN))
     for fixes, master, folder, carried in ((FIXES, 'batch6-check', ORIGINALS, CARRIED),
                                            (BATCH7, 'batch7-check', ORIGINALS / 'batch7', CARRIED_BATCH7),
-                                           (BATCH8, 'batch8-check', ORIGINALS / 'batch8', ())):
+                                           (BATCH8, 'batch8-check', ORIGINALS / 'batch8', CARRIED_BATCH8),
+                                           (BATCH9, 'batch9-check', ORIGINALS / 'batch9', ())):
         for path, steps in fixes.items():
             pixels = original(path, folder)
             rgb = pixels[..., :3]

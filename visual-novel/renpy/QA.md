@@ -1,5 +1,18 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## Batch 9 in the game; cuts only between different pictures — 10 November 2026, second round
+
+Maker's checks only. The user has not seen this state.
+
+- **Batch 9 checked and placed.** Each of the 13 repaints was compared with the file it replaced, region by region at native size, and against its request item; the pixels of earlier local repairs changed only inside regions an item asked to repaint. The eight new paintings were looked at whole and at native size; an independent reviewer went over four of them at native size, and a second reviewer's pass ended early with notes on three, so `s035-water` was checked by the maker alone. The record is in [the asset request](../art/asset-request.md) under *Batch 9, checked 10 November*.
+- **Decisions taken from that check.** `s026-stone` is not used (the stone is a boulder with carved capitals). Two lines gained a page of their own for a close view (the bowls, the cut pages). Two local repairs: the plan's lettering and Orren's cap.
+- **Portraits.** Each new portrait was laid beside the portrait of its set that it alternates with. Four were sized by hand after measurement; measuring every speaking portrait then showed five older ones out of scale, which were recropped and looked at beside their character's other sets.
+- **Cuts.** With the picture still, a change between two similar framings is a small jump. 576 framing changes inside a painting were measured by how much view they share; the direction tool now holds the picture unless the next framing is clearly different, and returns narration to the whole painting after a close view has been held three pages. A different picture comes every 1.42 pages; none is held longer than six.
+- **Who is shown.** Counted for all 394 spoken lines: 125 show the person spoken to alone, 194 with the speaker also in the picture, 30 the whole painting, 45 another choice (nobody to answer, or set by hand).
+- **Read in sequence.** The whole game was captured (866 pages, 35 minutes, no error) and read on labelled sheets; eleven scenes changed by that read were captured again and four of them read. The whole game was then captured a second time (867 pages, 35 minutes, no error) and read on labelled sheets from S001 to S037 and in S047–S048, including the Harrow sequence over its new painting. Six scenes changed after that (S001, S002, S023, S033, S045, S048; 114 pages) were captured once more, and S023 and S048 read.
+- **Engine.** Lint is clean. The whole suite passed on the final game code: 18 cases, 227 assertions, 18 minutes 27 seconds. After it, only data and the direction tool changed (five portrait crops, hand-set framings, the rule that a painting already close on the listener is shown whole); `camera_direction` was run again on the final data and passes (25 assertions), and the 867-page and 114-page captures ran on it without error.
+- **Not done.** Nobody has judged the still cuts in play. The browser build was not rebuilt. The second reviewer's pass on four paintings was not completed. The last quarter of the second whole-game capture (S038–S046, S049–S058) was not read again; those scenes were read in the first capture and changed only where recorded above.
+
 ## The camera holds still — 10 November 2026
 
 The user played the build of 9 November and reported that the camera's movements made them nauseous; they had been flipping through chapters fast and were unsure how much was the camera.
