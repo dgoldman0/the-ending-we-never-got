@@ -20,7 +20,6 @@ define PAGE_GAP = 20
 
 define STAGE_TEXT_X = 424
 define STAGE_TEXT_W = 1030
-define SOFT_TOP = 640
 define STAGE_TEXT_TOP = 874
 define STAGE_LINE = 53
 
@@ -200,6 +199,7 @@ init -1 python:
                 if store.nvl_list:
                     nvl_clear()
                 store.page_scene = 0
+                direct_line(what)      # aims the camera; needs the painting change still unnoted
                 note_stage_change()
             else:
                 store.last_stage_image = None
@@ -313,17 +313,19 @@ init -1 python:
 
     def reading_shade():
         """Behind the text the painting falls softly out of focus (a lens blur
-        made per painting by tools/grade-light.py) and into its own shadow
-        colour, multiplied so it keeps its hue. A band made for a raised
-        painting already starts where the focus falls away on screen."""
+        baked per painting at four depths by tools/grade-light.py) and into
+        its own shadow colour, multiplied so it keeps its hue. The shade keeps
+        its shape and place on screen; beneath it the blurred painting follows
+        the camera (direction.rpy), so the focus falls away at the same place
+        whichever part of the painting is framed."""
         image, lift = shown_stage()
         layers = []
-        shade = LIT.get('shade', {}).get(image) if image else None
-        if shade:
-            layers.append(Transform(shade['soft'], ypos=SOFT_TOP - lift + shade.get('lift', 0)))
-            if lift:
-                # the raised painting's lower edge fades into the dark beneath it
-                layers.append(Transform('ui/edge-fade.png', xsize=1920, ysize=220, ypos=1080 - lift - 220))
+        if image and (LIT.get('shade', {}).get(image) or {}).get('levels'):
+            for depth in (1, 2, 3, 4):
+                layers.append(AlphaMask(camera_view(stage_canvas(depth)), 'ui/reading-soft-%d.png' % depth))
+            # fine grain back over the blur, so it never looks smeared
+            grain = Tile('ui/reading-grain.png', xysize=(1920, 1080))
+            layers.append(Transform(AlphaMask(grain, 'ui/reading-shade-mask.png'), blend='add', alpha=0.02))
         layers.append(_shadow_tint(image, 'ui/reading-shade-mask.png'))
         return Fixed(*layers, xysize=(1920, 1080))
 
@@ -333,7 +335,7 @@ init -1 python:
         image, lift = shown_stage()
         layers = []
         if image:
-            soft = Transform(image, xysize=(1920, 1080), yoffset=-lift, blur=16)
+            soft = Transform(camera_view(stage_canvas()), blur=16)
             layers.append(AlphaMask(Fixed(soft, xysize=(1920, 1080)), 'ui/controls-pool-mask.png'))
         layers.append(_shadow_tint(image, 'ui/controls-pool-mask.png'))
         return Fixed(*layers, xysize=(1920, 1080))

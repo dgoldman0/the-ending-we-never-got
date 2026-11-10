@@ -23,6 +23,8 @@ testsuite global:
         $ _test.timeout = 60.0
         $ _test.screenshot_directory = 'test-output'
         $ persistent.large_text = False
+        $ persistent.still_frames = False
+        $ persistent.camera_subject = 'speaker'
         $ _preferences.text_cps = 0
         # Captures are 1920x1080 in the 1920x1080 virtual display.
         if eval not _preferences.fullscreen:
@@ -492,3 +494,48 @@ testcase page_portraits_and_initials:
     assert eval staging_faces()[1]['image'] == 'art/portraits/lucan-early-listening.png'
     assert eval portrait_source(staging_faces()[1]['image']).startswith('art/lit/portraits/lucan-early-listening-')
     assert eval any(plain_initial(h.what).startswith('Tessa catches') for h in _history_list)
+
+testcase camera_direction:
+    # The camera frames each line from its painting (direction.rpy). These
+    # check which framing a line takes, not whether it is a good picture.
+    click id 'main_begin'
+    run Jump('s016')
+    pause 0.5
+    advance until eval source_line == 653
+    # A painting arrives whole.
+    assert eval shot_key == ('art/scenes/s016-council-room.png', 'wide')
+    assert eval tuple(stage_camera.target) == shotmath.WIDE
+    # A spoken line takes its speaker's framing.
+    advance until eval source_line == 657
+    assert eval scene_speaker == 'SENN' and shot_key[1] == 'SENN'
+    assert eval stage_camera.target[2] > 1.3
+    # Framings and line choices made by hand (art/direction/plan.json).
+    advance until eval source_line == 669
+    assert eval shot_key[1] == 'book'
+    advance until eval source_line == 680
+    assert eval shot_key[1] == 'TESSA'
+    # Narration opening on She stays with the latest woman framed.
+    advance until eval source_line == 705
+    assert eval scene_speaker is None and shot_key[1] == 'TESSA'
+    # The reading shade has its four focus levels for this painting.
+    assert eval len(LIT['shade'][shown_stage()[0]]['levels']) == 4
+    # Favouring the person spoken to: Tessa answers Senn, the picture shows Senn.
+    $ persistent.camera_subject = 'listener'
+    advance until eval source_line == 710
+    assert eval scene_speaker == 'TESSA' and shot_key[1] == 'SENN'
+    # Still: every painting whole, as before the camera.
+    $ persistent.still_frames = True
+    advance until eval source_line == 715
+    assert eval shot_key[1] == 'wide' and tuple(stage_camera.target) == shotmath.WIDE
+    keysym 'game_menu'
+    click 'On the speaker'
+    assert eval not persistent.still_frames and persistent.camera_subject == 'speaker'
+    click 'On the listener'
+    assert eval not persistent.still_frames and persistent.camera_subject == 'listener'
+    click 'Still'
+    assert eval persistent.still_frames
+    $ _test.screenshot_directory = 'test-output'
+    screenshot 'camera-settings.png'
+    click id 'menu_return'
+    assert eval source_line == 715
+

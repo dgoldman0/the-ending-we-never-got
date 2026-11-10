@@ -319,10 +319,16 @@ def plan_items():
 # ------------------------------------------------------------ reading shade
 # Behind the text the painting falls softly out of focus and into its own
 # shadow colour (the reading screen's shade, chosen by the user on 24
-# September). For every graded painting this writes the blurred lower band
-# (art/lit/soft/) and records the painting's shadow colour in the manifest.
+# September). The focus falls away by the shade's shape on screen
+# (ui/reading-shade-mask.png), wherever the camera has framed the painting
+# (direction.rpy), so the blur can't be cut from one fixed band. For every
+# graded painting this writes the whole frame at the four depths of that
+# progressive lens blur (art/lit/soft/<name>-f1..f4.webp) and records the
+# painting's shadow colour. The game lays the depths over the painting through
+# four screen masks (ui/reading-soft-1..4.png, tools/build-ui-assets.py), which
+# reproduces the old baked band exactly when the painting fills the frame.
 
-SOFT_TOP = 640                               # the band starts above the shade
+FOCUS_LEVELS = ((3, 1440, 84), (7, 1280, 84), (13, 960, 86), (20, 640, 88))   # lens radius, stored width, quality
 
 
 def lens(lin, r):
@@ -333,37 +339,34 @@ def lens(lin, r):
     return cv2.filter2D(lin, -1, disc / disc.sum(), borderType=cv2.BORDER_REFLECT)
 
 
-def staging_lifts():
-    """{painting: lift} for staged paintings the reading screen raises
-    (framing 'lift' in staging.json)."""
-    scenes = json.loads((GAME / 'staging.json').read_text())['scenes']
-    return {stage['image']: stage['framing']['lift'] for spec in scenes.values()
-            for stage in spec.get('stages', []) if stage.get('framing', {}).get('lift')}
+def focus_paths(graded_path):
+    stem = Path(graded_path).name.rsplit('.', 1)[0]
+    return ['art/lit/soft/%s-f%d.webp' % (stem, n + 1) for n in range(len(FOCUS_LEVELS))]
 
 
-def reading_shade(graded_path, lift=0):
-    """(soft band path, shadow colour) for a graded painting. For a painting
-    raised by `lift` the band is cut from the raised position, so its focus
-    falls away at the same place on screen as everywhere else."""
-    mask = np.asarray(Image.open(GAME / 'ui/reading-shade-mask.png'))[SOFT_TOP:SIZE[1] - lift, :, 3].astype(np.float32) / 255
+def reading_shade(graded_path):
+    """(focus level paths, shadow colour) for a graded painting. A blurred
+    frame holds no fine detail, so the deeper levels are stored smaller and
+    scaled up in the game."""
     src = np.asarray(Image.open(GAME / graded_path).convert('RGB').resize(SIZE, Image.LANCZOS), np.float32) / 255
-    band = to_lin(src[SOFT_TOP + lift:])
-    t = mask * 4
-    levels = [band, lens(band, 3), lens(band, 7), lens(band, 13), lens(band, 20)]
-    out = to_srgb(sum(np.clip(1 - np.abs(t - i), 0, 1)[..., None] * level for i, level in enumerate(levels)))
-    # restore the painting's grain so the blur never looks smeared
-    noise = cv2.GaussianBlur(np.random.default_rng(3).normal(0, 1, mask.shape).astype(np.float32), (0, 0), 0.7)
-    l = lum(out)
-    out = out + (noise * 0.045 * mask * l * (1 - l))[..., None]
-    soft = 'art/lit/soft/' + Path(graded_path).name
-    (GAME / soft).parent.mkdir(parents=True, exist_ok=True)
-    Image.fromarray((np.clip(out, 0, 1) * 255 + 0.5).astype('uint8')).save(GAME / soft, quality=88, method=6)
+    lin = to_lin(src)
+    paths = focus_paths(graded_path)
+    (GAME / paths[0]).parent.mkdir(parents=True, exist_ok=True)
+    for (radius, width, quality), path in zip(FOCUS_LEVELS, paths):
+        level = np.clip(to_srgb(lens(lin, radius)), 0, 1)
+        image = Image.fromarray((level * 255 + 0.5).astype('uint8'))
+        if width != SIZE[0]:
+            image = image.resize((width, width * SIZE[1] // SIZE[0]), Image.LANCZOS)
+        image.save(GAME / path, quality=quality, method=6)
+    old_band = GAME / 'art/lit/soft' / Path(graded_path).name      # the band this replaces
+    if old_band.is_file():
+        old_band.unlink()
     # the shadow colour: the darkest fifth of the lower half, about 20% bright
     small = cv2.resize(src, (480, 270), interpolation=cv2.INTER_AREA)[135:].reshape(-1, 3)
     ls = lum(small)
     dark = small[ls <= np.percentile(ls, 20)].mean(0) + 1e-3
     hue = np.clip(dark / float(lum(dark[None])[0]), 0.75, 1.3)
-    return soft, [round(float(c), 3) for c in np.clip(hue * 0.20, 0.04, 0.4)]
+    return paths, [round(float(c), 3) for c in np.clip(hue * 0.20, 0.04, 0.4)]
 
 
 def output_path(key, mode):
@@ -409,8 +412,8 @@ def main():
         return
     old = json.loads(MANIFEST.read_text()) if MANIFEST.is_file() else {}
     manifest = {'stages': {}, 'images': {}, 'registers': {}, 'shade': {}}
-    graded = 0
-    lifts = staging_lifts()
+    graded = softened = 0
+    cv2.setNumThreads(4)           # leave the rest of the machine to the reader
     for key, register, source, inputs in plan_items():
         paths = {mode: output_path(key, mode) for mode in STRENGTH}
         # regrade when an output is missing or older than any file it is made from
@@ -427,19 +430,20 @@ def main():
         kind, name = key.split(':', 1)
         manifest['stages' if kind == 'stage' else 'images'][name] = paths
         manifest['registers'][name] = register
-        lift = lifts.get(name, 0) if kind == 'image' else 0
         for path in paths.values():
             known = old.get('shade', {}).get(path)
-            if known and known.get('lift', 0) == lift and (GAME / known['soft']).is_file() and \
-                    (GAME / known['soft']).stat().st_mtime >= (GAME / path).stat().st_mtime:
+            levels = [GAME / p for p in (known or {}).get('levels', [])]
+            if len(levels) == len(FOCUS_LEVELS) and all(p.is_file() for p in levels) and \
+                    min(p.stat().st_mtime for p in levels) >= (GAME / path).stat().st_mtime:
                 manifest['shade'][path] = known
             else:
-                soft, tint = reading_shade(path, lift)
-                manifest['shade'][path] = dict(soft=soft, tint=tint, **({'lift': lift} if lift else {}))
+                levels, tint = reading_shade(path)
+                manifest['shade'][path] = dict(levels=levels, tint=tint)
+                softened += 1
     manifest['portraits'], portrait_count = grade_portraits(args.force)
     MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True) + '\n')
     total = len(manifest['stages']) + len(manifest['images'])
-    print('%d images in the plan, %d graded now; manifest written.' % (total, graded))
+    print('%d images in the plan, %d graded now, %d reading shades made; manifest written.' % (total, graded, softened))
 
 
 if __name__ == '__main__':

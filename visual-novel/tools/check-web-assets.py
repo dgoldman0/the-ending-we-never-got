@@ -66,6 +66,11 @@ def required_assets(game=GAME):
     for registers in lit.get('portraits', {}).values():
         for pair in registers.values():
             expected.update(pair.values())
+    # The reading shade's focus levels for each graded painting, and the
+    # camera's framings (direction.rpy), which the reading screen needs.
+    for shade in lit.get('shade', {}).values():
+        expected.update(shade.get('levels', []))
+    expected.update(('direction.json', 'shotmath.py'))
     # Staging art for S006 onward, whatever has arrived, with base twins.
     for folder in ('art/scenes', 'art/base/scenes'):
         if (game / folder).is_dir():

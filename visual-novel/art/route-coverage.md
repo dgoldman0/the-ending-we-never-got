@@ -6,6 +6,8 @@ This is a production ledger, not visual clearance. The complete original route r
 
 A sweep of all 138 pictures on 26 September found the faults GPT repaired in batch 6. Its 67 pictures, batch 7's 24 files on 27 September and batch 8's 18 on 30 September were checked against the ones they replaced and in the game; what is still wrong is listed in [the asset request](asset-request.md) as batch 9, and what could be fixed locally was (`art/local-repairs/`). Art being present is not the experience gate below: no scene is cleared by this ledger.
 
+**Direction, 9 November 2026.** The table counts paintings; since this date each line is also framed from its painting by the camera ([AGENTS.md](../AGENTS.md#camera-direction--9-november-2026)): 308 framings over 119 of the 142 paintings and stages, 21 scenes directed by hand. The picture changes every 1.23 pages on average instead of every 5.8. No art was added.
+
 | Scene | Source location | Source blocks | Reading pages | Current coverage |
 | --- | --- | ---: | ---: | --- |
 | S001 | INT. ROYAL TEMPLE - SUMMONING CHAMBER - DAWN | 23 | 24 | Authored stages (rovel.rpy): 14 paintings and composites, with speaker portraits |

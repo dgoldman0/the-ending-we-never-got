@@ -60,10 +60,12 @@ style reading_bar:
 style choice_button is caps_button:
     padding (0, 6)
 style choice_button_text is caps_button_text:
+    # The option in force is bright gold; the others sit back in a dim ivory.
     size 25
-    color ui_ivory_soft
+    color "#a39c8f"
+    hover_color ui_ivory
     selected_color ui_gold_bright
-    selected_hover_color ui_gold_bright
+    selected_hover_color "#fff1cf"
 
 # ------------------------------------------------------------------ title
 
@@ -243,6 +245,13 @@ screen preferences():
                     textbutton _("Window") style "choice_button" action Preference('display', 'window')
                     textbutton _("Fullscreen") style "choice_button" action Preference('display', 'fullscreen')
                 null height 18
+                text "camera" style "menu_label"
+                hbox:
+                    spacing 22
+                    textbutton _("On the speaker") style "choice_button" action [SetField(persistent, 'still_frames', False), SetField(persistent, 'camera_subject', 'speaker')] selected (not persistent.still_frames and persistent.camera_subject == 'speaker')
+                    textbutton _("On the listener") style "choice_button" action [SetField(persistent, 'still_frames', False), SetField(persistent, 'camera_subject', 'listener')] selected (not persistent.still_frames and persistent.camera_subject == 'listener')
+                    textbutton _("Still") style "choice_button" action SetField(persistent, 'still_frames', True) selected persistent.still_frames
+                null height 18
                 text "access" style "menu_label"
                 textbutton _("Reduced motion") style "choice_button" action ToggleField(persistent, 'reduced_motion')
                 textbutton _("Image descriptions") style "choice_button" action ToggleField(persistent, 'art_descriptions')
@@ -284,7 +293,7 @@ screen about():
                 text _("The original timeline") font ui_italic size 44 color ui_gold_bright
                 text _("A young woman is taken from home and asked to save a world she never chose.") style "menu_body" size 34
                 text _("Story by dgoldman0, adapted from Rebuild 11, from the summoning through the complete Bellweir ending.") style "menu_body"
-                text _("In development. The complete original story can be read; its illustrations are still being made, so later scenes are set as pages of text. Look closer and Threads begin on the first night.") style "menu_note"
+                text _("In development. The complete original story can be read over its paintings, from the summoning to the ending. Look closer and Threads begin on the first night.") style "menu_note"
                 text _("Illustrations: image generation with local GIMP editing. Interface drawn in code. Engine: Ren’Py 8.5.3. Type: EB Garamond (SIL Open Font License). Licences accompany this edition.") style "menu_note"
                 textbutton _("Ren’Py licence information") style "choice_button" action OpenURL('https://www.renpy.org/doc/html/license.html')
 

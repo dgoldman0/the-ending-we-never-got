@@ -42,6 +42,13 @@ init -1 python:
         available = [stage for stage in spec.get('stages', []) if renpy.loadable(stage['image'])]
         if not available:
             return None
+        # Direction can read a line over another of the scene's paintings
+        # (direction.json "stage"): a scene is cut between its pictures.
+        directed = directed_line(scene, at[0], at[1]).get('stage') if at[0] else None
+        if directed:
+            for stage in available:
+                if stage['image'] == directed:
+                    return stage
         chosen = available[0]
         for stage in available:
             if (stage.get('from', 0), stage.get('page', 0)) <= at:

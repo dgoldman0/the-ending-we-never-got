@@ -599,9 +599,27 @@ def reading_shade_masks():
     shade = (1 - smoothstep((left - 0.45) / 0.55)) * np.interp(yy, [680, 780, 870, 1080], [0, 0.5, 0.95, 1.0])
     corner = np.sqrt(((xx - 1920) / 640) ** 2 + ((yy - 1080) / 740) ** 2)
     pool = 1 - smoothstep((corner - 0.32) / 0.68)
-    for name, m in (('reading-shade-mask.png', shade), ('controls-pool-mask.png', pool)):
+    masks = [('reading-shade-mask.png', shade), ('controls-pool-mask.png', pool)]
+    # The focus falls away in four depths (tools/grade-light.py bakes each
+    # painting at lens radii 3, 7, 13 and 20). Depth n lies over the one before
+    # through its own mask, so the shade's shape sets the blur on screen
+    # whichever part of the painting the camera has framed.
+    masks += [('reading-soft-%d.png' % n, np.clip(shade * 4 - (n - 1), 0, 1)) for n in (1, 2, 3, 4)]
+    for name, m in masks:
         m = m.astype(np.float32)
         save(Image.fromarray((np.dstack([np.ones_like(m)] * 3 + [m]) * 255 + 0.5).astype('uint8')), name)
+    # Fine grain laid back over the blurred shade so it never looks smeared
+    # or bands in dark gradients: a tile of soft noise, added faintly.
+    noise = np.random.default_rng(3).normal(0, 1, (256, 256)).astype(np.float32)
+    noise = cv2.GaussianBlur(np.tile(noise, (3, 3)), (0, 0), 0.7)[256:512, 256:512]      # blurred so it tiles
+    noise = np.clip(0.5 + noise / (np.abs(noise).max() + 1e-6) * 0.5, 0, 1)
+    save(Image.fromarray((noise * 255 + 0.5).astype('uint8')), 'reading-grain.png')
+    # Close framings lose the vignette graded into the painting's own corners;
+    # this closes the frame in again (direction.rpy scales it with the zoom).
+    r = np.sqrt(((xx - w / 2) / (w / 2)) ** 2 + ((yy - h / 2) / (h / 2)) ** 2)
+    edge = (np.clip(r - 0.45, 0, 1) ** 1.3).astype(np.float32)
+    small = cv2.resize(edge, (480, 270), interpolation=cv2.INTER_AREA)
+    save(Image.fromarray((np.dstack([np.zeros_like(small)] * 3 + [small]) * 255 + 0.5).astype('uint8')), 'close-vignette.png')
 
 
 def engraved_line(w, name, glow=True):

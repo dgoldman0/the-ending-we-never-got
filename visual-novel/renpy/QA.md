@@ -1,5 +1,18 @@
 # QA — interface pass 0.5.0-dev under review; earlier presentations failed
 
+## Camera direction — 9 November 2026
+
+Maker's checks only; the user has not seen this and nothing here is approval.
+
+- **Baseline.** Every one of the 865 reading pages was captured from the running game at 1920×1080 before any change. Each painting was on screen whole for 5.8 pages on average, 36 at most.
+- **Reading shade parity.** With the camera held still, the 42 pages of S001–S002 were captured again and compared with the baseline: the mean difference per page is at most 1.3 levels of 255 (median 0.5), from the shade's blur now being laid in four layers and its grain being a tile.
+- **Framings.** All 308 framings were looked at on the review sheets (`tools/direct-shots.py sheets`), under the reading shade, beside the whole painting. Names were corrected or added in 34 paintings. The framing rule was changed twice after looking: first cuts through neighbouring faces, then headless bodies at the top of the frame.
+- **In sequence.** S001, S002, S007, S016, S033, S035, S046, S048 and S055 (213 pages) were played and read page by page with the camera on the speaker; S016 and S046 (67 pages) with the camera on the listener. One page was opened at full size: at 1.62 times the faces and cloth hold up, with the grade's colour fringing visible in a corner.
+- **Motion.** Thirteen frames captured across two line changes in S016 show an ease between overlapping framings and a cut between distant ones. Smoothness and pacing cannot be judged from captures.
+- **Engine.** The whole suite passed before the narration and listener refinements (16 cases, 192 assertions, 21 minutes). After them: lint is clean, the new `camera_direction` case passes (14 assertions: whole on arrival, speaker, hand-set insert, pronoun narration, listener, Still, the three Settings choices), and the 67-page listener capture ran without error. The whole suite was not run again after those refinements.
+- **Settings.** The option in force could barely be told from the others (ivory against pale gold); unselected options are now dim.
+- **Not done.** No person has played it. The browser build was not rebuilt or tested. 37 scenes use the automatic choices without hand direction.
+
 ## Portrait crops — 23 September 2026, third round
 
 The user rejected the portraits: the crop itself was wrong, with bare neck ending in a weird shape inside an open-bottomed arch, and the earlier edge cleanup had not fixed it. Every portrait is now recropped from its source painting in GIMP (`tools/crop-portraits.py`, which generates and runs a Script-Fu batch):

@@ -8,6 +8,8 @@ The original text route is traversable: 58 source scenes, ten working chapters, 
 
 The archived opening maps 95 reading pages across S001–S005, with scene illustrations, action states and compact portraits. The user rejected the resulting presentation despite this coverage. GIMP masters retain source repairs and paired exposure layers. S004–S005 now have mapped cast/action rather than the earlier room-only fallback; S006–S058 still use prose/location cards. No music, voice or sound has been produced yet.
 
+**Camera, 9 November 2026.** Every scene from S001 to S058 is read over its paintings, and each line is framed from its painting: a closer framing on the speaker, on the person a narration line is about, or on a named detail (`game/direction.rpy`, `game/direction.json`; see [the VN instructions](../AGENTS.md#camera-direction--9-november-2026)). Settings → Camera chooses the speaker or the person spoken to, or Still, which turns it off. The paragraphs above and below predate this and the batch 5–8 paintings where they say later scenes are text only.
+
 ## Standalone Linux build
 
 The local `../builds/TheEndingWeNeverGot-0.1.0-linux.tar.bz2` is the older, rejected first playable package; it does not include this checkpoint's changes. Extract it and run `TheEndingWeNeverGot.sh` inside the extracted directory; no separate SDK is needed. Create a diagnostic export from current source with `./visual-novel/build-linux.sh` from the repository root. Build artifacts stay out of Git. Neither edition is a completed illustrated release.
@@ -58,7 +60,9 @@ python3 visual-novel/tools/check-rovel-plan.py
 python3 visual-novel/tools/build-ui-assets.py   # redraw interface components
 python3 visual-novel/tools/check-staging.py      # S006+ art present or awaited
 python3 visual-novel/tools/crop-portraits.py     # after adding portraits: GIMP crops, one composition
-python3 visual-novel/tools/grade-light.py        # after adding art: light registers, both modes
+python3 visual-novel/tools/grade-light.py        # after adding art: light registers and reading-shade focus levels
+python3 visual-novel/tools/direct-shots.py find   # after adding paintings: faces, then build/sheets/board
+python3 visual-novel/tools/playthrough.py --scenes 16   # play scenes headless; every page in reading order
 ```
 
 New scene paintings and portraits go at the paths in `game/staging.json`; see the [asset request](../art/asset-request.md) for sizes and composition rules. No code change is needed for a scene to switch from the typeset page to its painting.
