@@ -1,0 +1,7 @@
+# Batch 9, item 76
+
+Source sequence: lines 891–937, the first boat carries northern families and the last injured northern soldier while the second remains for the litter. The human ferryman stays at the gate. Each painting keeps its existing point within that sequence.
+
+Used the current covered-landing, return and rescue PNGs, including the item 74 repair in the return. The built-in tool supplied passenger and boatman regions. GIMP masked individual heads into the current sources; no hull, body, route or composition was replaced. The bald seated passenger's two missing horns were finished on a separate painted GIMP layer after the wider render left them out. The return's child mask was extended to include the actual child's head rather than the adult behind it.
+
+Inspected all three complete exports side by side with their inputs, then native passenger and boatman crops. Missing adult and child horns now read above the temples, with shorter horns on the children. The standing rescue boatman has a brown cap with a visible horn and graying beard; the red-capped human ferryman at the gate is preserved. Serat's younger brother, chestnut-haired Tessa, clean-shaven brown-coated Iven, split badges and spent wall bow retain the current sources. The head repairs leave the boats' occupants, poses and hands intact. Every master reopened and reproduced its saved export exactly. The return's final master is `batch-9-a6-horn-finishing.xcf`, over the earlier masked passenger repair. Crop, grade, framing and connected play remain for integration.
