@@ -1,0 +1,250 @@
+{
+  "tool": "Built-in imagegen, new portrait paintings; GIMP 2.10.36 canvas padding and inspection previews",
+  "portraits": [
+    {
+      "file": "visual-novel/renpy/game/art/portraits/tessa-amused-working-speaking.png",
+      "sha256": "5962cc2604cfd470828795d04c812d35f02584418dfd55bbf4ef7385479d0fbe",
+      "native_painting": {
+        "file": "exec-67c21ad9-58b8-4806-adc7-7218a95f7887.png",
+        "sha256": "e22531c85f00b9362b1c246916cedee00b1a5ab5d3d13cdfd10952ab5737943f",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-amused-working-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/tessa-resolute-working-speaking.png",
+          "sha256": "2e75ab1e8f296defcbc686b68abe2343a902bbc005de1361092f3b2d5061d2ed"
+        },
+        {
+          "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+          "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/iven-amused-speaking.png",
+      "sha256": "98be789dd285e57b868d55c80f6bc022b33b3afe82943b592b02ab1ce9a3c47f",
+      "native_painting": {
+        "file": "exec-09a4a917-fe38-438e-81f0-eede4bb3abf8.png",
+        "sha256": "8ad7a763c75ef96b3497b949309df32d426a2bce1e41cea9dea16b0736bf81ed",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/iven-amused-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/iven-attentive-speaking.png",
+          "sha256": "079dca70edbd2a60bd7c95440ba0e114e236b1e2edb95b620d6395d4c2fb2dcf"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/mara-wry-speaking.png",
+      "sha256": "dba39bfa28d95c6bd484034129b4d80d0005409f46ed6449082bc327e263297f",
+      "native_painting": {
+        "file": "exec-6f7cb83d-5e00-4ab7-8ab2-b0716c7c06bd.png",
+        "sha256": "28d312d187fca3426cd9ce7119d1c1fb22c014d0bdc34f15f6b1458204b3cda4",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/mara-wry-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/mara-controlled-speaking.png",
+          "sha256": "eff98ff1f12524c0c9c24a9d31ef102f2f1ddfb26df0acb2dfc27cfa9bc67396"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/lucan-early-laughing-speaking.png",
+      "sha256": "7a478f8646c4f3a95efa5d32ddcc749fe675ee9f010c027fee2eb4f372f0cfae",
+      "native_painting": {
+        "file": "exec-dba9d11c-f3e8-42cb-b9e2-2090c01568ff.png",
+        "sha256": "b0c907ed76d90142e505e20b9089890806fe5c9038c20d2dd9dfa26c2dc9387d",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/lucan-early-laughing-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/lucan-early-speaking.png",
+          "sha256": "839c44919d5b3a7aec17f7b8549a8f7c13ff580b674eec210b4b7ae0200d5d96"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-crying-out-speaking.png",
+      "sha256": "874fdfac94dd6cda7d36431863a3b1b11dd777c29863cb659102517d6b07ac5d",
+      "native_painting": {
+        "file": "exec-bde6b4f7-621c-439d-a439-55c825fb2597.png",
+        "sha256": "3254fc9e1720fbe3fd1449ea1d03d4b586d9a4a724c593433f2a4d778e3cadd8",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-harrow-crying-out-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-speaking.png",
+          "sha256": "8f3642550d37dbbec5510ffb54469c09108ec136d47b367952aec7ea649cecce"
+        },
+        {
+          "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+          "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-grieving-speaking.png",
+      "sha256": "fa67a80374c4ee1434032b80b818e5b9381024acd6fdae00d2080bf0f384881d",
+      "native_painting": {
+        "file": "exec-6a3c56d3-d2ee-475a-9640-459e5cbe6dee.png",
+        "sha256": "57dece7f4d85b0e285bd900f788a25c074b82b895df17be807d4779a8466ee5d",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-harrow-grieving-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/tessa-harrow-speaking.png",
+          "sha256": "8f3642550d37dbbec5510ffb54469c09108ec136d47b367952aec7ea649cecce"
+        },
+        {
+          "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+          "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/lucan-early-pleading-speaking.png",
+      "sha256": "321fa67e8549f2d286ea13938f07a043c4889fdb71cfeb3f1536138fbf3acddc",
+      "native_painting": {
+        "file": "exec-cdaf3233-44c0-4322-bb85-d8ad278e9eb4.png",
+        "sha256": "be99e2e0180539cd17cf179d5a6eea18c543d4e5e62acd474218476358e4cc3f",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/lucan-early-pleading-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/lucan-early-speaking.png",
+          "sha256": "839c44919d5b3a7aec17f7b8549a8f7c13ff580b674eec210b4b7ae0200d5d96"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/tessa-campaign-shaken-speaking.png",
+      "sha256": "861dcc167d67e93f210977acbb3b8b2abc261ee1421c07c74ce5ab4b8aa0cac6",
+      "native_painting": {
+        "file": "exec-177f04e4-2563-4398-b6ed-7202f54575c1.png",
+        "sha256": "2a707bb57ea204785d63f7940ebf40a66c9cc4bd622e2ef4c07224d9c8975cbf",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-campaign-shaken-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/tessa-campaign-speaking.png",
+          "sha256": "11ca2a42269ab0ba0947d8f5c93b4ad3de3da23f8afafe2a2421e850dbcffaf2"
+        },
+        {
+          "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+          "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+        }
+      ]
+    },
+    {
+      "file": "visual-novel/renpy/game/art/portraits/tessa-injured-grieving-speaking.png",
+      "sha256": "e8389b769aaea8d9caa13ebb63700fb41e0b994bf64b125cfd24544b7f53dba1",
+      "native_painting": {
+        "file": "exec-317903c8-4a24-46ae-9303-75bf9d768f18.png",
+        "sha256": "1a73e75ac5afa3a9be7e992e1dea6945af337dec304847e7686b222ad640fec3",
+        "pixels": [
+          1254,
+          1254
+        ]
+      },
+      "delivered_canvas": [
+        1440,
+        1440
+      ],
+      "transparent_padding_each_edge": 93,
+      "resampling": false,
+      "prompt": "visual-novel/art/prompts/portraits-batch-9/tessa-injured-grieving-speaking.txt",
+      "references": [
+        {
+          "file": "visual-novel/renpy/game/art/portraits/tessa-injured-speaking.png",
+          "sha256": "905f7d0ca41c486486b9adddc72e11d06aee7f8d5a85118a9997b101b6724407"
+        },
+        {
+          "file": "visual-novel/art/character-references/tessa/north-infirmary-face.png",
+          "sha256": "77f72f90885ecaf70a6aa9e7181944ff45bf7cf9abcca124f263e181222b7cb8"
+        }
+      ]
+    }
+  ]
+}
